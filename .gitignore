@@ -1,0 +1,6 @@
+__pycache__/
+dumps/
+*.log
+characters.json
+inject.py
+reply.hex
