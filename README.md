@@ -1,6 +1,7 @@
 # vco-server-emulator
 
 Local server for the 2007 Voyage Century Online client. Game files are not included.
+https://discord.gg/9R7ar6yacY
 
 ## Setup
 
