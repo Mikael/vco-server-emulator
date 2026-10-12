@@ -1,31 +1,15 @@
-# vco-server-emulator
+# Voyage Century Online server emulator
 
-Local server for the 2007 Voyage Century Online client. Game files are not included.
 https://discord.gg/9R7ar6yacY
 
-## Setup
+Requires the .NET 9 SDK. Place this folder next to the client's `voyage` folder, or set `ClientPath` in `config/emulator.json`.
 
-Put this folder inside your game folder, next to `voyage\`.
+Start the server:
 
-In `voyage\login.ini` set:
+    start-server.bat
 
-```
-ip=127.0.0.1
-port=3000
-```
+Start the client (with `voyage/login.ini` pointing at 127.0.0.1 port 3000):
 
-## Start the server
+    voyage\Core.exe
 
-```
-python server.py
-```
-
-Needs Python 3. It listens on 127.0.0.1 ports 3000 and 3001.
-
-## Start the client
-
-```
-start_offline.bat
-```
-
-Click ENTER, pick the "Localhost" server, log in with any account, password and code.
+`play-local.bat` does both.

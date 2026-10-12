@@ -1,0 +1,25 @@
+{
+  "Names": [
+    "Anna",
+    "Diego",
+    "Marco",
+    "Sofia",
+    "Henrik",
+    "Leila",
+    "Tomas",
+    "Ines"
+  ],
+  "Lines": [
+    "Fair winds today.",
+    "Anyone sailing to Lisbon?",
+    "Selling potions, cheap!",
+    "Watch out for the thugs by the dock.",
+    "Good day, captain.",
+    "Which way to the shipyard?"
+  ],
+  "Emotes": [
+    216,
+    210,
+    213
+  ]
+}

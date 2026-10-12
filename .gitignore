@@ -1,6 +1,5 @@
-__pycache__/
-dumps/
-*.log
-characters.json
-inject.py
-reply.hex
+bin/
+obj/
+logs/
+data/accounts.json
+.vs/

@@ -1,0 +1,50 @@
+namespace VoyageCentury.Core.Persistence;
+
+public sealed class ItemStack
+{
+    public string Name { get; set; } = "";
+    public int Photo { get; set; }
+    public int Amount { get; set; } = 1;
+
+    public ItemStack Clone() => new() { Name = Name, Photo = Photo, Amount = Amount };
+}
+
+public sealed class ShortcutEntry
+{
+    public int Kind { get; set; }
+    public string Name { get; set; } = "";
+}
+
+public sealed class SkillEntry
+{
+    public int Id { get; set; }
+    public int Level { get; set; } = 1;
+}
+
+public sealed class CharacterRecord
+{
+    public string Name { get; set; } = "Player";
+    public int Role { get; set; } = 3001001;
+    public int Face { get; set; } = 3101001;
+    public int Body { get; set; } = 3401001;
+    public int Hair { get; set; }
+    public int HairColor { get; set; }
+    public int City { get; set; }
+    public int Level { get; set; } = 1;
+    public int Money { get; set; } = -1;
+    public int Bank { get; set; }
+    public int Scene { get; set; }
+    public float[]? Position { get; set; }
+    public string Title { get; set; } = "";
+    public List<SkillEntry> Skills { get; set; } = [];
+    public Dictionary<int, ItemStack>? Items { get; set; }
+    public Dictionary<int, Dictionary<int, ItemStack>>? Bags { get; set; }
+    public Dictionary<int, ShortcutEntry> Shortcuts { get; set; } = [];
+    public SortedSet<string> Friends { get; set; } = [];
+    public SortedSet<string> Blacklist { get; set; } = [];
+}
+
+public sealed class AccountRecord
+{
+    public List<CharacterRecord> Characters { get; set; } = [];
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "Id": 100,
+    "Scene": 1001001,
+    "Model": 3201001,
+    "Name": "Townsman",
+    "X": -86.65,
+    "Y": 13.81,
+    "Z": 118.74,
+    "Greeting": "Welcome to Athens. The docks are to the east.",
+    "Options": [
+      {
+        "Action": "Sail",
+        "Text": "Sail off"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Scene": 1001001,
+    "Model": 3201002,
+    "Name": "Merchant",
+    "X": -90.65,
+    "Y": 13.81,
+    "Z": 120.74,
+    "Greeting": "Have a look at my wares.",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Talk about trading"
+      },
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "17": [
+        "NEW_004",
+        "NEW_005",
+        "NEW_006",
+        "NEW_007",
+        "NEW_008",
+        "NEW_001"
+      ],
+      "23": [
+        "NEW_009",
+        "NEW_010"
+      ],
+      "15": []
+    }
+  },
+  {
+    "Id": 102,
+    "Scene": 1001001,
+    "Model": 3201005,
+    "Name": "Provisioner",
+    "X": -93.65,
+    "Y": 13.81,
+    "Z": 117.74,
+    "Greeting": "Food and water for the voyage, captain?",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Buy provisions"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "24": [
+        "NEW_009",
+        "NEW_010",
+        "NEW_004"
+      ]
+    }
+  },
+  {
+    "Id": 103,
+    "Scene": 1001001,
+    "Model": 3201006,
+    "Name": "Shipwright",
+    "X": -93.65,
+    "Y": 13.81,
+    "Z": 123.74,
+    "Greeting": "Welcome to the shipyard.",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Shipyard"
+      },
+      {
+        "Action": "Sail",
+        "Text": "Sail off"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "18": [
+        "NEW_010",
+        "NEW_009"
+      ]
+    }
+  }
+]

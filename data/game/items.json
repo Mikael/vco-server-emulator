@@ -1,0 +1,73 @@
+{
+  "Goods": {
+    "NEW_004": {
+      "Photo": 190150,
+      "Price": 40,
+      "Heal": 30
+    },
+    "NEW_005": {
+      "Photo": 190151,
+      "Price": 40,
+      "Heal": 30
+    },
+    "NEW_006": {
+      "Photo": 190152,
+      "Price": 40,
+      "Heal": 30
+    },
+    "NEW_007": {
+      "Photo": 190153,
+      "Price": 120,
+      "Heal": 60
+    },
+    "NEW_008": {
+      "Photo": 190154,
+      "Price": 120,
+      "Heal": 100
+    },
+    "NEW_001": {
+      "Photo": 190182,
+      "Price": 200,
+      "Heal": 0
+    },
+    "NEW_009": {
+      "Photo": 190155,
+      "Price": 30,
+      "Heal": 0
+    },
+    "NEW_010": {
+      "Photo": 190157,
+      "Price": 30,
+      "Heal": 0
+    }
+  },
+  "StarterItems": [
+    {
+      "Name": "NEW_004",
+      "Photo": 190150,
+      "Amount": 5
+    },
+    {
+      "Name": "NEW_005",
+      "Photo": 190151,
+      "Amount": 5
+    },
+    {
+      "Name": "NEW_001",
+      "Photo": 190182,
+      "Amount": 1
+    }
+  ],
+  "StarterEquipment": [
+    {
+      "Name": "IDName_XZB000001",
+      "Photo": 110101,
+      "Amount": 1
+    },
+    {
+      "Name": "IDName_ZB003292",
+      "Photo": 110201,
+      "Amount": 1
+    }
+  ]
+}
