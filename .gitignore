@@ -2,4 +2,5 @@ bin/
 obj/
 logs/
 data/accounts.json
+data/guilds.json
 .vs/

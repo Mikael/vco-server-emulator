@@ -48,6 +48,20 @@ public static class PropertyTable
 
     public static bool Has(string name) => Index.ContainsKey(name);
 
+    public static object? Parse(string name, string text)
+    {
+        if (!Index.TryGetValue(name, out int index)) return null;
+        switch (Definitions[index].Type)
+        {
+            case PropertyType.String or PropertyType.LongString:
+                return text;
+            case PropertyType.Float:
+                return float.TryParse(text, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out float number) ? number : null;
+            default:
+                return long.TryParse(text, out long integer) ? integer : null;
+        }
+    }
+
     public static PacketWriter WriteValues(PacketWriter writer, IReadOnlyDictionary<string, object> values)
     {
         writer.WriteUInt16((ushort)values.Count);

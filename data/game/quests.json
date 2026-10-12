@@ -1,0 +1,53 @@
+[
+  {
+    "Id": 44,
+    "Name": "Report to the Ares Warrior Alliance",
+    "Kind": "Talk",
+    "Giver": 120,
+    "Target": 110,
+    "Gold": 50,
+    "Experience": 40,
+    "Offer": "So you made it to the port of Athens. Go through the city gate and report to the Ares Warrior Alliance Master. Tell him the Docker sent you.",
+    "Done": "The Docker sent you? Good. Athens can always use another captain."
+  },
+  {
+    "Id": 15,
+    "Name": "Task of Hides",
+    "Kind": "Kill",
+    "Giver": 110,
+    "Target": 220,
+    "TargetName": "Red Fox",
+    "Count": 3,
+    "Gold": 200,
+    "Experience": 180,
+    "Offer": "Mahmoud of Alexander needs Red Fox hides to make battle uniforms. Hunt three Red Foxes in the suburb and come back to me.",
+    "Done": "These hides will do nicely. Here is your reward."
+  },
+  {
+    "Id": 16,
+    "Name": "Kill Depressed Poet",
+    "Kind": "Kill",
+    "Giver": 110,
+    "Target": 260,
+    "TargetName": "Depressed Poet",
+    "Count": 1,
+    "Gold": 800,
+    "Experience": 600,
+    "Offer": "There is a Depressed Poet in the suburb who attacks passers-by. He is very strong, so bring Healing Potions. Destroy him and return to me.",
+    "Done": "The road through the suburb is safe again. Well fought."
+  },
+  {
+    "Id": 13,
+    "Name": "Mining Task II: Pig Iron",
+    "Kind": "Bring",
+    "Giver": 111,
+    "Target": 121,
+    "Item": "IDName00003823",
+    "TargetName": "IDName00003823",
+    "Count": 5,
+    "Gold": 700,
+    "Experience": 200,
+    "Offer": "The Shipyard Boss at the port needs five pieces of Pig Iron for a ship reconstruction. The Blacksmith sells it. Bring them to him.",
+    "Done": "Five pieces of Pig Iron, just what the yard needed."
+  }
+]

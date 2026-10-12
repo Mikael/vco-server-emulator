@@ -32,7 +32,13 @@ public sealed partial class ClientSession
             ["Kind"] = 1,
             ["ItemType"] = 1,
         };
-        if (cost != null) bag["Cost"] = cost.Value;
+        if (cost == null) ApplyLetterPaper(bag, item.Name);
+        if (cost != null)
+        {
+            bag["Cost"] = cost.Value;
+            bag["ShowPrice"] = cost.Value;
+        }
+        Data.ItemCatalog.Extend(bag, item.Name);
         return bag;
     }
 
@@ -52,7 +58,9 @@ public sealed partial class ClientSession
             _handViewOpen = true;
             Send(ViewPackets.Create(ViewId.Hand, 1), "(hand view)");
         }
-        Send(ViewPackets.AddItem(ViewId.Hand, 1, ItemProperties(item, 1)), "(item in hand)");
+        PropertyBag inHand = ItemProperties(item, 1);
+        inHand["ItemSrcVID"] = ViewId.BagItems;
+        Send(ViewPackets.AddItem(ViewId.Hand, 1, inHand), "(item in hand)");
     }
 
     public void OpenShop(Dictionary<int, List<string>> stock)
@@ -90,6 +98,7 @@ public sealed partial class ClientSession
         Bags[target][free] = item;
         Send(ViewPackets.RemoveItem(view, index), "(move gear)");
         Send(ViewPackets.AddItem(target, free, ItemProperties(item, free)), "(move gear)");
+        RefreshDurability(target, free);
         Save();
         Log.Info(Tag, $"{Name} {(target == ViewId.Equipped ? "wears" : "takes off")} {item.Name}");
         return true;
@@ -104,7 +113,13 @@ public sealed partial class ClientSession
             SystemMessage("You are already at full health.");
             return true;
         }
-        if (heal > 0) SetHp(Hp + heal);
+        if (heal > 0)
+        {
+            int before = Hp;
+            SetHp(Hp + heal);
+            Send(ChatPackets.FloatingText(ProtocolConstants.SelfObjectId, $"+{Hp - before}", 0x00ff00), "(heal number)");
+            ToOthers(ChatPackets.FloatingText(ObjectId, $"+{Hp - before}", 0x00ff00), "(heal number)");
+        }
         TakeFromBag(index, 1, "(item used)");
         Save();
         Log.Info(Tag, $"{Name} uses {item.Name} (slot {index})");
@@ -119,6 +134,21 @@ public sealed partial class ClientSession
         {
             SystemMessage("Not enough money.");
             return false;
+        }
+        if (Data.ItemCatalog.Number(entry.Name, "ItemType") == 10)
+        {
+            int gearSlot = FreeSlot(Bags[ViewId.BagEquip], ViewId.BagSlots);
+            if (gearSlot == 0)
+            {
+                SystemMessage("Your equipment bag is full.");
+                return false;
+            }
+            Bags[ViewId.BagEquip][gearSlot] = new ItemStack { Name = entry.Name, Photo = entry.Photo, Amount = 1 };
+            Send(ViewPackets.AddItem(ViewId.BagEquip, gearSlot, ItemProperties(Bags[ViewId.BagEquip][gearSlot], gearSlot)), "(bought gear)");
+            SetMoney(Money - entry.Cost);
+            Save();
+            Log.Info(Tag, $"{Name} buys {entry.Name} for {entry.Cost}");
+            return true;
         }
         int slot = Items.FirstOrDefault(pair => pair.Value.Name == entry.Name, new KeyValuePair<int, ItemStack>(0, null!)).Key;
         if (slot == 0)
@@ -175,6 +205,21 @@ public sealed partial class ClientSession
         if (clear) Save();
     }
 
+    public void SendSocialTables(bool clear = true)
+    {
+        foreach ((TableDefinition table, IEnumerable<object[]> rows) in new (TableDefinition, IEnumerable<object[]>)[]
+        {
+            (GameTables.Friends, FriendRows()),
+            (GameTables.Blacklist, Character.Blacklist.Select(name => new object[] { name })),
+            (GameTables.TitleList, Character.Titles.Select(title => new object[] { title })),
+        })
+        {
+            if (clear) Send(TablePackets.Clear(table), $"(clear {table.Name})");
+            List<object[]> list = rows.ToList();
+            if (list.Count > 0) Send(TablePackets.Rows(table, list), $"({table.Name})");
+        }
+    }
+
     private void EnsureInventory()
     {
         if (Character.Items == null)
@@ -201,10 +246,66 @@ public sealed partial class ClientSession
             foreach ((int slot, ItemStack item) in slots.OrderBy(pair => pair.Key))
                 Send(ViewPackets.AddItem(view, slot, ItemProperties(item, slot)), $"(view {view} item {item.Name})");
         }
+        Send(ViewPackets.Create(ViewId.Ship, 1), "(ship view)");
+        Send(ViewPackets.AddItem(ViewId.Ship, 1, ShipDetails()), "(ship details)");
         Send(ViewPackets.Create(ViewId.BagItems, ViewId.BagSlots), "(bag view)");
         foreach ((int slot, ItemStack item) in Items.OrderBy(pair => pair.Key))
             Send(ViewPackets.AddItem(ViewId.BagItems, slot, ItemProperties(item, slot)), $"(bag item {item.Name})");
     }
+
+    public const int MaxSailors = 30;
+    public const int SailorPrice = 20;
+    public const int RepairPrice = 50;
+
+    public void HireSailors(int count)
+    {
+        count = Math.Min(count, MaxSailors - Character.Sailors);
+        if (count <= 0)
+        {
+            SystemMessage("Your ship cannot carry more sailors.");
+            return;
+        }
+        if (Money < count * SailorPrice)
+        {
+            SystemMessage("Not enough money.");
+            return;
+        }
+        Character.Sailors += count;
+        SetMoney(Money - count * SailorPrice);
+        SailorsChanged($"hires {count} sailor(s)");
+    }
+
+    public void FireSailors(int count)
+    {
+        count = Math.Min(count, Character.Sailors);
+        if (count <= 0) return;
+        Character.Sailors -= count;
+        SailorsChanged($"dismisses {count} sailor(s)");
+    }
+
+    public void RepairShip()
+    {
+        if (Money < RepairPrice)
+        {
+            SystemMessage("Not enough money.");
+            return;
+        }
+        SetMoney(Money - RepairPrice);
+        Send(ViewPackets.UpdateItem(ViewId.Ship, 1, new PropertyBag { ["S/HP"] = 100, ["S/SailHP"] = 100 }), "(ship repaired)");
+        SystemMessage("Your ship has been repaired.");
+        Save();
+    }
+
+    private void SailorsChanged(string what)
+    {
+        Send(ViewPackets.UpdateItem(ViewId.Ship, 1, new PropertyBag { ["NumSailor"] = Character.Sailors }), "(sailors)");
+        SetProperty("NumSailor", Character.Sailors);
+        SystemMessage($"You now have {Character.Sailors} sailors.");
+        Save();
+        Log.Info(Tag, $"{Name} {what}");
+    }
+
+    private PropertyBag ShipDetails() => FleetShipDetails();
 
     private void TakeFromBag(int index, int quantity, string note)
     {

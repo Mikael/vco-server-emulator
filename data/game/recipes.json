@@ -1,0 +1,87 @@
+[
+  {
+    "Name": "IDName00003637",
+    "Category": "SKILL_ALCHEMY",
+    "Photo": 190183,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      { "Name": "NEW_004", "Amount": 2, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003639",
+    "Category": "SKILL_ALCHEMY",
+    "Photo": 190184,
+    "Amount": 1,
+    "Seconds": 4,
+    "Ingredients": [
+      { "Name": "NEW_005", "Amount": 2, "Level": 1 },
+      { "Name": "NEW_006", "Amount": 1, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003643",
+    "Category": "SKILL_ALCHEMY",
+    "Photo": 190185,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      { "Name": "NEW_004", "Amount": 1, "Level": 1 },
+      { "Name": "NEW_006", "Amount": 1, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003898",
+    "Category": "SKILL_FOUNDRY",
+    "Photo": 190150,
+    "Amount": 1,
+    "Seconds": 5,
+    "Ingredients": [
+      { "Name": "NEW_009", "Amount": 2, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00000346",
+    "Category": "SKILL_FOUNDRY",
+    "Photo": 110101,
+    "Amount": 1,
+    "Seconds": 6,
+    "Ingredients": [
+      { "Name": "NEW_009", "Amount": 3, "Level": 1 },
+      { "Name": "NEW_007", "Amount": 1, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003835",
+    "Category": "SKILL_SEWING",
+    "Photo": 190212,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      { "Name": "NEW_010", "Amount": 1, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003858",
+    "Category": "SKILL_SEWING",
+    "Photo": 190215,
+    "Amount": 1,
+    "Seconds": 5,
+    "Ingredients": [
+      { "Name": "NEW_010", "Amount": 2, "Level": 1 },
+      { "Name": "IDName00003835", "Amount": 1, "Level": 1 }
+    ]
+  },
+  {
+    "Name": "IDName00003918",
+    "Category": "SKILL_SHIPBUILDING",
+    "Photo": 190160,
+    "Amount": 1,
+    "Seconds": 6,
+    "Ingredients": [
+      { "Name": "NEW_009", "Amount": 1, "Level": 1 },
+      { "Name": "NEW_010", "Amount": 1, "Level": 1 }
+    ]
+  }
+]

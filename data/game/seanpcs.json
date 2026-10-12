@@ -1,0 +1,178 @@
+{
+  "Rules": {
+    "HullMax": 100,
+    "CannonsPerSide": 2,
+    "StartCannonsPerSide": 2,
+    "StartAmmunition": 60,
+    "SailorPrice": 20,
+    "SailorsMax": 30,
+    "RepairPricePerPoint": 2,
+    "RenamePrice": 50,
+    "PortScene": 1024002,
+    "SinkSeconds": 8,
+    "AggroSeconds": 30,
+    "BroadsideScatter": 6.0
+  },
+  "Ships": [
+    {
+      "Id": 901,
+      "Scene": 1024003,
+      "Model": 2011001,
+      "Name": "Light Pirate Ship",
+      "Level": 1,
+      "Hull": 120,
+      "Cannons": 2,
+      "CannonModel": 2500001,
+      "ShellType": 1,
+      "DamageMin": 4,
+      "DamageMax": 8,
+      "Accuracy": 0.6,
+      "Range": 150.0,
+      "ReloadSeconds": 6.0,
+      "Gold": 150,
+      "Experience": 60,
+      "RespawnSeconds": 60,
+      "SailCloth": 2900006,
+      "X": 150.0,
+      "Z": 420.0,
+      "Heading": 900
+    },
+    {
+      "Id": 902,
+      "Scene": 1024003,
+      "Model": 2011001,
+      "Name": "Pirate Ship",
+      "Level": 2,
+      "Hull": 180,
+      "Cannons": 2,
+      "CannonModel": 2500001,
+      "ShellType": 1,
+      "DamageMin": 6,
+      "DamageMax": 10,
+      "Accuracy": 0.65,
+      "Range": 150.0,
+      "ReloadSeconds": 5.0,
+      "Gold": 300,
+      "Experience": 120,
+      "RespawnSeconds": 90,
+      "SailCloth": 2900009,
+      "X": -50.0,
+      "Z": 250.0,
+      "Heading": 2700
+    }
+  ],
+  "Ammunition": [
+    {
+      "Name": "IDName00000333",
+      "ShellType": 1,
+      "DamageMin": 8,
+      "DamageMax": 14,
+      "Price": 5,
+      "Lot": 10
+    },
+    {
+      "Name": "IDName00000334",
+      "ShellType": 2,
+      "DamageMin": 12,
+      "DamageMax": 18,
+      "Price": 12,
+      "Lot": 10
+    },
+    {
+      "Name": "IDName00000335",
+      "ShellType": 3,
+      "DamageMin": 6,
+      "DamageMax": 10,
+      "Price": 9,
+      "Lot": 10
+    },
+    {
+      "Name": "IDName00000336",
+      "ShellType": 4,
+      "DamageMin": 5,
+      "DamageMax": 9,
+      "Price": 9,
+      "Lot": 10
+    }
+  ],
+  "Cannons": [
+    {
+      "Name": "IDName00000579",
+      "Model": 2500001,
+      "Range": 150.0,
+      "FireAngle": 60.0,
+      "ReloadSeconds": 5.0,
+      "Accuracy": 0.75,
+      "BallSpeed": 60.0,
+      "Price": 300
+    }
+  ],
+  "SailCloths": [
+    {
+      "Cloth": 2900000,
+      "Name": "Plain sail",
+      "Item": "",
+      "Price": 0
+    },
+    {
+      "Cloth": 2900001,
+      "Name": "Blue strip sail",
+      "Item": "",
+      "Price": 200
+    },
+    {
+      "Cloth": 2900002,
+      "Name": "Yellow sail with red grid",
+      "Item": "",
+      "Price": 200
+    },
+    {
+      "Cloth": 2900003,
+      "Name": "Blue strip sail with red cross",
+      "Item": "",
+      "Price": 200
+    },
+    {
+      "Cloth": 2900004,
+      "Name": "Tri-coloured sail",
+      "Item": "",
+      "Price": 200
+    },
+    {
+      "Cloth": 2900005,
+      "Name": "Dual-coloured sail with blue strip",
+      "Item": "",
+      "Price": 200
+    },
+    {
+      "Cloth": 2900006,
+      "Name": "Dual-colour on red sail",
+      "Item": "",
+      "Price": 300
+    },
+    {
+      "Cloth": 2900007,
+      "Name": "Tri-colour on red sail",
+      "Item": "",
+      "Price": 300
+    },
+    {
+      "Cloth": 2900008,
+      "Name": "Faithful cross",
+      "Item": "",
+      "Price": 500
+    },
+    {
+      "Cloth": 2900009,
+      "Name": "Royal crown",
+      "Item": "",
+      "Price": 500
+    },
+    {
+      "Cloth": 2900010,
+      "Name": "Mighty dragon",
+      "Item": "",
+      "Price": 500
+    }
+  ]
+}

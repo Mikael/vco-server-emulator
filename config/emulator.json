@@ -11,10 +11,10 @@
     "File": "logs/emulator.log"
   },
   "World": {
-    "StartScene": 1001001,
-    "StartX": -87.65,
-    "StartY": 13.81,
-    "StartZ": 116.74,
+    "StartScene": 1024002,
+    "StartX": 45.4,
+    "StartY": 5.09,
+    "StartZ": -16.2,
     "RunSpeed": 4.0,
     "ShipSpeed": 14.0,
     "ShipModel": 2011001,

@@ -22,6 +22,8 @@ public sealed class Mover
 
     public float Speed { get; set; }
 
+    public int Heading { get; private set; }
+
     public (float X, float Z) Now()
     {
         float dx = DestinationX - _startX;
@@ -36,6 +38,13 @@ public sealed class Mover
     public (float X, float Z) MoveTo(float x, float z)
     {
         (_startX, _startZ) = Now();
+        float dx = x - _startX;
+        float dz = z - _startZ;
+        if (dx * dx + dz * dz > 1e-6f)
+        {
+            double tenths = Math.Atan2(dx, dz) * 1800.0 / Math.PI;
+            Heading = (int)Math.Round(tenths < 0 ? tenths + 3600.0 : tenths) % 3600;
+        }
         DestinationX = x;
         DestinationZ = z;
         _startedAt = Stopwatch.GetTimestamp();

@@ -107,6 +107,8 @@ public sealed partial class ClientSession
     {
         if (InWorld)
         {
+            LeaveWorldSocial();
+            LeaveWorldGuild();
             LeaveScene();
             (float x, float z) = Mover!.Now();
             Character.Position = [MathF.Round(x, 2), MathF.Round(Height, 2), MathF.Round(z, 2)];

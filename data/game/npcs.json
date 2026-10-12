@@ -1,17 +1,17 @@
 [
   {
     "Id": 100,
-    "Scene": 1001001,
-    "Model": 3201001,
-    "Name": "Townsman",
-    "X": -86.65,
-    "Y": 13.81,
-    "Z": 118.74,
-    "Greeting": "Welcome to Athens. The docks are to the east.",
+    "Scene": 1024001,
+    "Model": 3201074,
+    "Name": "Skill Tutor",
+    "X": 8,
+    "Y": 23.16,
+    "Z": 16,
+    "Greeting": "Every skill starts with a limit of level 31. Come to me to learn new skills and to open the second phase.",
     "Options": [
       {
-        "Action": "Sail",
-        "Text": "Sail off"
+        "Action": "SkillTutor",
+        "Text": "Learn skills"
       },
       {
         "Action": "Bye",
@@ -21,21 +21,128 @@
   },
   {
     "Id": 101,
-    "Scene": 1001001,
-    "Model": 3201002,
-    "Name": "Merchant",
-    "X": -90.65,
-    "Y": 13.81,
-    "Z": 120.74,
-    "Greeting": "Have a look at my wares.",
+    "Scene": 1024001,
+    "Model": 3201005,
+    "Name": "Bank Clerk",
+    "X": 21,
+    "Y": 24.42,
+    "Z": -13,
+    "Greeting": "Welcome to the Bank of Athens. Your silver is safe with us.",
+    "Options": [
+      {
+        "Action": "Bank",
+        "Text": "My account"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Scene": 1024001,
+    "Model": 3201032,
+    "Name": "Warehouse Manager",
+    "X": 32,
+    "Y": 24.24,
+    "Z": -38,
+    "Greeting": "Parcels and letters for every port pass through this warehouse.",
+    "Options": [
+      {
+        "Action": "Mail",
+        "Text": "Send a parcel"
+      },
+      {
+        "Action": "Collect",
+        "Text": "Collect my mail"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Scene": 1024001,
+    "Model": 3201012,
+    "Name": "Guild Manager",
+    "X": 48,
+    "Y": 23.95,
+    "Z": -53,
+    "Greeting": "If you have good Reputation, you can organize a guild.",
+    "Options": [
+      {
+        "Action": "Guild",
+        "Text": "Guild affairs"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Scene": 1024001,
+    "Model": 3201063,
+    "Name": "Blacksmith",
+    "X": 50,
+    "Y": 23.16,
+    "Z": -70,
+    "Greeting": "Weapons and tools, forged in Athens.",
     "Options": [
       {
         "Action": "Trade",
-        "Text": "Talk about trading"
+        "Text": "Buy weapons and tools"
       },
       {
-        "Action": "Bank",
-        "Text": "Bank"
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "17": [],
+      "23": [
+        "IDName00003397",
+        "IDName00003400",
+        "IDName00003403",
+        "IDName00003406",
+        "NEW_009",
+        "IDName00003823",
+        "IDName00003846"
+      ],
+      "15": [
+        "IDName00000342",
+        "IDName00000347",
+        "IDName00000394",
+        "IDName00000438",
+        "IDName00003542",
+        "IDName00000351",
+        "IDName00000398",
+        "IDName00000445",
+        "IDName00003546"
+      ]
+    }
+  },
+  {
+    "Id": 105,
+    "Scene": 1024001,
+    "Model": 3201064,
+    "Name": "Alchemist",
+    "X": 48,
+    "Y": 23.16,
+    "Z": -72,
+    "Greeting": "Potions, vessels, dyes and letter paper.",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Buy potions"
+      },
+      {
+        "Action": "Pet",
+        "Text": "About pets"
       },
       {
         "Action": "Bye",
@@ -44,33 +151,207 @@
     ],
     "Shop": {
       "17": [
+        "IDName00003637",
+        "IDName00003649",
+        "IDName00003655",
+        "IDName00003685",
+        "IDName00004391"
+      ],
+      "23": [
+        "IDName00000916",
+        "IDName00000919",
         "NEW_004",
         "NEW_005",
         "NEW_006",
-        "NEW_007",
-        "NEW_008",
-        "NEW_001"
-      ],
-      "23": [
-        "NEW_009",
-        "NEW_010"
+        "NEW_007"
       ],
       "15": []
     }
   },
   {
-    "Id": 102,
-    "Scene": 1001001,
-    "Model": 3201005,
-    "Name": "Provisioner",
-    "X": -93.65,
-    "Y": 13.81,
-    "Z": 117.74,
-    "Greeting": "Food and water for the voyage, captain?",
+    "Id": 106,
+    "Scene": 1024001,
+    "Model": 3201002,
+    "Name": "Tailor",
+    "X": 45,
+    "Y": 23.16,
+    "Z": -75,
+    "Greeting": "Clothes for sailors, soldiers and merchants.",
     "Options": [
       {
         "Action": "Trade",
+        "Text": "Buy clothes"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "17": [],
+      "23": [
+        "NEW_010",
+        "IDName00003835"
+      ],
+      "15": [
+        "IDName00000643",
+        "IDName00000644",
+        "IDName00000651",
+        "IDName00000652",
+        "IDName00000669",
+        "IDName00000670"
+      ]
+    }
+  },
+  {
+    "Id": 107,
+    "Scene": 1024001,
+    "Model": 3201022,
+    "Name": "Trader",
+    "X": 1,
+    "Y": 24.32,
+    "Z": -50,
+    "Greeting": "Bananas, seafood, salt, linen, glassware and oil paintings are the specialities of Athens.",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Buy trade goods"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Shop": {
+      "17": [
+        "IDName00003419",
+        "IDName00003428",
+        "IDName00003433",
+        "IDName00003456",
+        "IDName00003462",
+        "IDName00003492"
+      ],
+      "23": [],
+      "15": []
+    }
+  },
+  {
+    "Id": 108,
+    "Scene": 1024001,
+    "Model": 3201017,
+    "Name": "Official",
+    "X": 46,
+    "Y": 25.11,
+    "Z": -20,
+    "Greeting": "Greece welcomes honest captains.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Scene": 1024001,
+    "Model": 3201014,
+    "Name": "Adventurer Alliance Master",
+    "X": 69,
+    "Y": 23.36,
+    "Z": -49,
+    "Greeting": "The Adventurer Alliance charts the unknown seas.",
+    "Options": [
+      {
+        "Action": "Quests",
+        "Text": "Do you have work for me?"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Scene": 1024001,
+    "Model": 3201043,
+    "Name": "Ares Warrior Alliance Master",
+    "X": 38,
+    "Y": 23.16,
+    "Z": -76,
+    "Greeting": "The Ares Warrior Alliance keeps Athens safe.",
+    "Options": [
+      {
+        "Action": "Quests",
+        "Text": "Do you have work for me?"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Scene": 1024001,
+    "Model": 3201071,
+    "Name": "Master of Alliance",
+    "X": 40,
+    "Y": 23.34,
+    "Z": -57,
+    "Greeting": "Miners, loggers, farmers and craftsmen all belong to our alliance.",
+    "Options": [
+      {
+        "Action": "Quests",
+        "Text": "Do you have work for me?"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Scene": 1024001,
+    "Model": 3201046,
+    "Name": "Merchant Guild Master",
+    "X": 35,
+    "Y": 23.32,
+    "Z": -45,
+    "Greeting": "Buy low and sell high, that is all there is to it.",
+    "Options": [
+      {
+        "Action": "Quests",
+        "Text": "Do you have work for me?"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Scene": 1024002,
+    "Model": 3201016,
+    "Name": "Docker",
+    "X": -17,
+    "Y": 3.51,
+    "Z": -40,
+    "Greeting": "To sail you need a ship, a crew of sailors and enough provisions.",
+    "Options": [
+      {
+        "Action": "Sail",
+        "Text": "Set sail"
+      },
+      {
+        "Action": "Trade",
         "Text": "Buy provisions"
+      },
+      {
+        "Action": "Quests",
+        "Text": "Do you have work for me?"
       },
       {
         "Action": "Bye",
@@ -79,20 +360,18 @@
     ],
     "Shop": {
       "24": [
-        "NEW_009",
-        "NEW_010",
-        "NEW_004"
+        "IDName00004590"
       ]
     }
   },
   {
-    "Id": 103,
-    "Scene": 1001001,
-    "Model": 3201006,
-    "Name": "Shipwright",
-    "X": -93.65,
-    "Y": 13.81,
-    "Z": 123.74,
+    "Id": 121,
+    "Scene": 1024002,
+    "Model": 3201020,
+    "Name": "Shipyard Boss",
+    "X": 26,
+    "Y": 5.09,
+    "Z": -59,
     "Greeting": "Welcome to the shipyard.",
     "Options": [
       {
@@ -101,7 +380,7 @@
       },
       {
         "Action": "Sail",
-        "Text": "Sail off"
+        "Text": "Set sail"
       },
       {
         "Action": "Bye",
@@ -110,9 +389,25 @@
     ],
     "Shop": {
       "18": [
-        "NEW_010",
-        "NEW_009"
+        "IDName00000579",
+        "IDName00000333"
       ]
     }
+  },
+  {
+    "Id": 130,
+    "Scene": 1024006,
+    "Model": 3201013,
+    "Name": "Priest",
+    "X": 34,
+    "Y": 1.72,
+    "Z": 0,
+    "Greeting": "Peace be with you, child.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ]
   }
 ]

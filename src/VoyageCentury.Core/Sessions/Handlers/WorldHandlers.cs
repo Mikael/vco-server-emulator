@@ -13,10 +13,14 @@ public sealed class MoveHandler : IMessageHandler
 
     public void Handle(ClientSession session, PacketReader reader)
     {
-        if (!session.InWorld) return;
+        if (!session.InWorld || session.StallOpen) return;
         float x = reader.ReadSingle();
         float z = reader.ReadSingle();
-        if (float.IsFinite(x) && float.IsFinite(z)) session.MoveTo(x, z);
+        if (float.IsFinite(x) && float.IsFinite(z))
+        {
+            session.MoveTo(x, z);
+            session.OnMoveRequested(x, z);
+        }
     }
 }
 
@@ -29,20 +33,28 @@ public sealed class InteractHandler : IMessageHandler
         if (!session.InWorld) return;
         int target = (int)reader.Seek(0x16).ReadUInt32();
         GameData data = session.Context.Data;
+        if (session.OnSeaObjectClicked(target)) return;
+        if (session.OnLinkClicked(target)) return;
 
         if (data.Monsters.TryGetValue(target, out MonsterDefinition? monster) && monster.Scene == session.Scene)
         {
             Log.Debug(session.Tag, $"{session.Name} attacks {monster.Name}");
+            session.CombatTarget = monster.Id;
             session.Attack(monster);
         }
         else if (data.Npcs.TryGetValue(target, out NpcDefinition? npc) && npc.Scene == session.Scene)
         {
             Log.Info(session.Tag, $"{session.Name} talks to {npc.Name}");
+            session.OnNpcTalked(npc.Id);
             session.Talk(npc);
         }
-        else if (session.Context.World.Sessions.Any(other => other.ObjectId == target))
+        else if (session.ClickPet(target))
         {
-            Log.Debug(session.Tag, $"{session.Name} clicked player object {target}");
+        }
+        else if (session.Context.World.Sessions.FirstOrDefault(other => other.ObjectId == target) is { } player)
+        {
+            if (!session.OnPlayerClicked(player, reader.Seek(0x1e).ReadByte()))
+                Log.Debug(session.Tag, $"{session.Name} clicked player object {target}");
         }
         else
         {
@@ -66,16 +78,31 @@ public sealed class DialogueOptionHandler : IMessageHandler
     }
 }
 
+public sealed class ServiceChatHandler : IMessageHandler
+{
+    public ClientMsg Id => ClientMsg.ServiceChat;
+
+    public void Handle(ClientSession session, PacketReader reader)
+    {
+        string text = reader.ReadCString();
+        Log.Info(session.Tag, $"{session.Name} to GM: {text}");
+        session.Send(ChatPackets.ServiceChat("ECHO", text), "(service chat echo)");
+        session.Send(ChatPackets.ServiceChat("GM", "Your message has been written to the server log."), "(service chat reply)");
+    }
+}
+
 public sealed class TextCommandHandler : IMessageHandler
 {
     private readonly CommandRouter _commands;
     private readonly int _textOffset;
+    private readonly bool _alwaysCommand;
 
-    public TextCommandHandler(ClientMsg id, int textOffset, CommandRouter commands)
+    public TextCommandHandler(ClientMsg id, int textOffset, CommandRouter commands, bool alwaysCommand = false)
     {
         Id = id;
         _textOffset = textOffset;
         _commands = commands;
+        _alwaysCommand = alwaysCommand;
     }
 
     public ClientMsg Id { get; }
@@ -83,21 +110,26 @@ public sealed class TextCommandHandler : IMessageHandler
     public void Handle(ClientSession session, PacketReader reader)
     {
         if (!session.InWorld) return;
+        session.ExchangeTargetId = Id == ClientMsg.HashedCommand ? (int)reader.Seek(0x16).ReadUInt32() : 0;
         string text = reader.Seek(_textOffset).ReadCString();
         if (text.Length == 0) return;
 
         string[] words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (words.Length == 0) return;
 
-        if (_commands.Knows(words[0]))
-        {
-            if (!_commands.Execute(session, words))
-                Log.Missing(session.Tag, $"command '{text}'", reader.Data);
-        }
-        else if (text.StartsWith('/'))
+        if (text.StartsWith('/'))
         {
             Log.Info(session.Tag, $"{session.Name} slash command: {text}");
             _commands.Slash(session, words);
+        }
+        else if (text.StartsWith('#'))
+        {
+            Log.Debug(session.Tag, $"{session.Name} sent a path of {reader.Length - _textOffset} bytes");
+        }
+        else if (_alwaysCommand || _commands.Knows(words[0]))
+        {
+            if (!_commands.Execute(session, words))
+                Log.Missing(session.Tag, $"command '{(text.Length > 60 ? text[..60] : text)}'", reader.Data);
         }
         else
         {

@@ -1,0 +1,98 @@
+{
+  "Rules": {
+    "FleetMax": 4,
+    "MaxLevel": 4,
+    "UpgradeCost": 500,
+    "UpgradePricePercent": 20,
+    "HullPercentPerLevel": 15,
+    "SailPercentPerLevel": 15,
+    "LoadPercentPerLevel": 10,
+    "CannonsPerLevel": 1,
+    "Port": "Athens",
+    "UpgradeMaterials": [
+      { "Section": "ConsResWood", "Key": 1, "Item": "IDName00003846", "Count": 5 },
+      { "Section": "ConsResMetal", "Key": 1, "Item": "IDName00003823", "Count": 3 }
+    ],
+    "WearChance": 0.25,
+    "WearAlertPercent": 20,
+    "RepairPricePerPoint": 2
+  },
+  "Ships": [
+    {
+      "Model": 2011001, "Name": "IDName00004746", "Label": "Light Adventure Ship", "Photo": 200101, "Kind": 2,
+      "Price": 800, "Level": 1, "Hull": 100, "Sail": 100, "Sailors": 30, "Cannons": 2, "CannonsMax": 2,
+      "Load": 100, "Speed": 1.0, "Turn": 10,
+      "MastFront": 2211101, "MastMiddle": 2211401, "MastBack": 2211101, "Dyeable": false
+    },
+    {
+      "Model": 2011017, "Name": "IDName00004736", "Label": "Light Freighter", "Photo": 200117, "Kind": 1,
+      "Price": 3000, "Level": 2, "Hull": 140, "Sail": 120, "Sailors": 40, "Cannons": 2, "CannonsMax": 3,
+      "Load": 220, "Speed": 0.95, "Turn": 9,
+      "MastFront": 2211117, "MastMiddle": 2211417, "MastBack": 2211117, "Dyeable": true
+    },
+    {
+      "Model": 2011006, "Name": "IDName00004715", "Label": "Light Armed Ship", "Photo": 200106, "Kind": 0,
+      "Price": 5000, "Level": 3, "Hull": 180, "Sail": 130, "Sailors": 50, "Cannons": 3, "CannonsMax": 3,
+      "Load": 140, "Speed": 1.05, "Turn": 11,
+      "MastFront": 2211106, "MastMiddle": 2211406, "MastBack": 2211706, "Dyeable": true
+    },
+    {
+      "Model": 2011019, "Name": "IDName00004737", "Label": "Light Merchant Ship", "Photo": 200119, "Kind": 1,
+      "Price": 8000, "Level": 4, "Hull": 220, "Sail": 160, "Sailors": 60, "Cannons": 2, "CannonsMax": 5,
+      "Load": 320, "Speed": 0.9, "Turn": 8,
+      "MastFront": 2211119, "MastMiddle": 2211419, "MastBack": 2211719, "Dyeable": true
+    },
+    {
+      "Model": 2011002, "Name": "IDName00004716", "Label": "Armed Patrol Ship", "Photo": 200102, "Kind": 0,
+      "Price": 9000, "Level": 5, "Hull": 240, "Sail": 150, "Sailors": 70, "Cannons": 3, "CannonsMax": 5,
+      "Load": 180, "Speed": 1.0, "Turn": 10,
+      "MastFront": 2211102, "MastMiddle": 2211402, "MastBack": 2211702, "Dyeable": true
+    },
+    {
+      "Model": 2011008, "Name": "IDName00004747", "Label": "Heavy Adventure Ship", "Photo": 200108, "Kind": 2,
+      "Price": 14000, "Level": 6, "Hull": 300, "Sail": 220, "Sailors": 80, "Cannons": 4, "CannonsMax": 7,
+      "Load": 260, "Speed": 1.2, "Turn": 12,
+      "MastFront": 2211208, "MastMiddle": 2211408, "MastBack": 2211708, "Dyeable": true
+    },
+    {
+      "Model": 2011014, "Name": "IDName00004717", "Label": "Light Frigate", "Photo": 200114, "Kind": 0,
+      "Price": 20000, "Level": 8, "Hull": 380, "Sail": 200, "Sailors": 110, "Cannons": 6, "CannonsMax": 10,
+      "Load": 240, "Speed": 1.1, "Turn": 10,
+      "MastFront": 2211114, "MastMiddle": 2211414, "MastBack": 2211714, "Dyeable": true
+    },
+    {
+      "Model": 2011013, "Name": "IDName00004719", "Label": "Medium Armed Battleship", "Photo": 200113, "Kind": 0,
+      "Price": 45000, "Level": 12, "Hull": 600, "Sail": 260, "Sailors": 180, "Cannons": 10, "CannonsMax": 18,
+      "Load": 300, "Speed": 1.0, "Turn": 8,
+      "MastFront": 2211113, "MastMiddle": 2211413, "MastBack": 2211713, "Dyeable": true
+    }
+  ],
+  "Dyes": [
+    { "Name": "1", "Value": 1, "Sail": false, "Label": "Hull colour 1", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
+    { "Name": "2", "Value": 2, "Sail": false, "Label": "Hull colour 2", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
+    { "Name": "3", "Value": 3, "Sail": false, "Label": "Hull colour 3", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
+    { "Name": "2900001", "Value": 2900001, "Sail": true, "Label": "Blue strip sail", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
+    { "Name": "2900002", "Value": 2900002, "Sail": true, "Label": "Yellow sail with red grid", "Price": 200, "Item": "IDName00000921", "ItemCount": 1 },
+    { "Name": "2900003", "Value": 2900003, "Sail": true, "Label": "Blue strip sail with red cross", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
+    { "Name": "2900004", "Value": 2900004, "Sail": true, "Label": "Tri-coloured sail", "Price": 200, "Item": "IDName00000919", "ItemCount": 1 },
+    { "Name": "2900005", "Value": 2900005, "Sail": true, "Label": "Dual-coloured sail with blue strip", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
+    { "Name": "2900006", "Value": 2900006, "Sail": true, "Label": "Dual-colour on red sail", "Price": 300, "Item": "IDName00000919", "ItemCount": 1 },
+    { "Name": "2900007", "Value": 2900007, "Sail": true, "Label": "Tri-colour on red sail", "Price": 300, "Item": "IDName00000919", "ItemCount": 1 },
+    { "Name": "2900008", "Value": 2900008, "Sail": true, "Label": "Faithful cross", "Price": 500, "Item": "IDName00000920", "ItemCount": 2 },
+    { "Name": "2900009", "Value": 2900009, "Sail": true, "Label": "Royal crown", "Price": 500, "Item": "IDName00000921", "ItemCount": 2 },
+    { "Name": "2900010", "Value": 2900010, "Sail": true, "Label": "Mighty dragon", "Price": 500, "Item": "IDName00000917", "ItemCount": 2 },
+    { "Name": "2920001", "Value": 2920001, "Sail": true, "Label": "Bleached sail", "Price": 150, "Item": "IDName00000920", "ItemCount": 1 },
+    { "Name": "2920003", "Value": 2920003, "Sail": true, "Label": "Black sail", "Price": 150, "Item": "IDName00000914", "ItemCount": 1 }
+  ],
+  "Supplies": [
+    { "Item": "IDName00000918", "Label": "Paint", "Photo": 190840, "Price": 120 },
+    { "Item": "IDName00000914", "Label": "Black dye", "Photo": 190834, "Price": 80 },
+    { "Item": "IDName00000916", "Label": "Blue dye", "Photo": 190838, "Price": 80 },
+    { "Item": "IDName00000917", "Label": "Green dye", "Photo": 190839, "Price": 80 },
+    { "Item": "IDName00000919", "Label": "Red dye", "Photo": 190835, "Price": 80 },
+    { "Item": "IDName00000920", "Label": "White dye", "Photo": 190837, "Price": 80 },
+    { "Item": "IDName00000921", "Label": "Yellow dye", "Photo": 190836, "Price": 80 },
+    { "Item": "IDName00003846", "Label": "Ship timber", "Photo": 190182, "Price": 60 },
+    { "Item": "IDName00003823", "Label": "Ship fittings (metal)", "Photo": 190150, "Price": 90 }
+  ]
+}

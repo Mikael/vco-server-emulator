@@ -15,6 +15,13 @@ public static class TablePackets
         return writer.ToArray();
     }
 
+    public static byte[] UpdateCell(TableDefinition table, int row, int column, object value)
+    {
+        var writer = new PacketWriter(ServerMsg.TableUpdateRow).WriteByte(table.Id).WriteUInt16(1)
+            .WriteInt16((short)row).WriteByte((byte)column);
+        return PropertyTable.WriteValue(writer, table.Columns[column].Type, value).ToArray();
+    }
+
     public static byte[] DeleteRow(TableDefinition table, int row)
         => new PacketWriter(ServerMsg.TableDeleteRow).WriteByte(table.Id).WriteUInt16((ushort)row).ToArray();
 

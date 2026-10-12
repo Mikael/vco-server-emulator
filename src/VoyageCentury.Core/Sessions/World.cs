@@ -3,6 +3,7 @@ using VoyageCentury.Core.Data;
 using VoyageCentury.Core.Logging;
 using VoyageCentury.Core.Persistence;
 using VoyageCentury.Core.Protocol;
+using VoyageCentury.Core.Protocol.Packets;
 
 namespace VoyageCentury.Core.Sessions;
 
@@ -77,6 +78,44 @@ public sealed class World
             }
             Log.Debug("World", $"{definition.Name} returned");
         });
+    }
+
+    public ClientSession? FindPlayer(string name)
+        => _sessions.FirstOrDefault(session => session.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+    public void StartTicking(CancellationToken cancellationToken)
+    {
+        _ = Task.Run(async () =>
+        {
+            using var timer = new PeriodicTimer(TimeSpan.FromSeconds(6));
+            try
+            {
+                while (await timer.WaitForNextTickAsync(cancellationToken))
+                {
+                    lock (Sync) Tick();
+                }
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }, cancellationToken);
+    }
+
+    private void Tick()
+    {
+        foreach (ClientSession session in _sessions.ToList()) session.Regenerate();
+        foreach ((int id, MonsterState state) in _monsters)
+        {
+            MonsterDefinition definition = _context.Data.Monsters[id];
+            if (state.Dead || state.Hp >= definition.Hp) continue;
+            state.Hp = Math.Min(definition.Hp, state.Hp + Math.Max(1, definition.Hp / 10));
+            byte[] update = ScenePackets.ObjectProperties(id, new PropertyBag
+            {
+                ["HP"] = state.Hp,
+                ["RatioHP"] = 100 * state.Hp / Math.Max(1, definition.Hp),
+            });
+            foreach (ClientSession session in InScene(definition.Scene)) session.Send(update, "(monster recovers)");
+        }
     }
 
     public void Broadcast(byte[] body, string note)

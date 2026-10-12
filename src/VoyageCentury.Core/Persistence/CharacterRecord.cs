@@ -21,7 +21,7 @@ public sealed class SkillEntry
     public int Level { get; set; } = 1;
 }
 
-public sealed class CharacterRecord
+public sealed partial class CharacterRecord
 {
     public string Name { get; set; } = "Player";
     public int Role { get; set; } = 3001001;
@@ -31,6 +31,10 @@ public sealed class CharacterRecord
     public int HairColor { get; set; }
     public int City { get; set; }
     public int Level { get; set; } = 1;
+    public int Experience { get; set; }
+    public int ShortcutPage { get; set; }
+    public List<string> Titles { get; set; } = [];
+    public int Sailors { get; set; } = 10;
     public int Money { get; set; } = -1;
     public int Bank { get; set; }
     public int Scene { get; set; }

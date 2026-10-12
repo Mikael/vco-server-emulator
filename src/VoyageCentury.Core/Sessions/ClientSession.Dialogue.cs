@@ -11,6 +11,7 @@ public sealed partial class ClientSession
 
     public void Talk(NpcDefinition npc)
     {
+        if (npc.Shop?.ContainsKey(ViewId.Shipyard) == true && OpenShipyardMenu(npc.Id)) return;
         TalkingTo = npc.Id;
         var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, npc.Greeting) };
         if (npc.Options.Count == 0) entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
@@ -21,9 +22,19 @@ public sealed partial class ClientSession
 
     public void ChooseOption(int target, DialogueAction action)
     {
+        if (HandleProgressOption(target, (int)action)) return;
+        if (ChooseShipyardOption(target, (int)action)) return;
+        if (HandleFleetOption(target, (int)action)) return;
+        if (HandleGuildOption(target, (int)action)) return;
         Context.Data.Npcs.TryGetValue(target, out NpcDefinition? npc);
         switch (action)
         {
+            case DialogueAction.Mail:
+                OpenParcelDesk();
+                break;
+            case DialogueAction.Collect:
+                ReceiveMail();
+                break;
             case DialogueAction.Trade when npc?.Shop != null:
                 OpenShop(npc.Shop);
                 Send(ChatPackets.NpcDialogue(target,

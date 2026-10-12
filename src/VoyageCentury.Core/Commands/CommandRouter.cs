@@ -25,6 +25,8 @@ public sealed class CommandRouter
         "SetExchange", "SetTitle", "ShipDye", "ShortcutPage", "Skill", "StallBuy", "StallSell", "StartStall", "State",
         "StatueSetMessage", "TakeUp", "TeamInvite", "TeamObj", "TransferConsProffer", "Unlay", "UseTo",
         "UseToBoxItem", "UseUniqueSkill", "WarCitySetting",
+        "ChangePetName", "NoviceToNext", "PetCmd", "PetSkill", "ShowRewardInfo", "RecvSM", "RepairShip", "RenameShip", "ChangeShip", "NextAmmo",
+        "ConsQuit", "ConsDismiss", "CloseConsApply", "ProcessConsApply", "ChangeConsWarState", "BeforeConsBid",
     ];
 
     private readonly Dictionary<string, ITextCommand> _commands = [];
@@ -43,13 +45,40 @@ public sealed class CommandRouter
             .Add(new BuyCommand())
             .Add(new RemoveItemCommand())
             .Add(new ShortcutCommands())
-            .Add(new SocialCommands())
             .Add(new GroupCommands())
             .Add(new BankCommands())
             .Add(new DoActionCommand())
             .Add(new AdjShipSpeedCommand())
             .Add(new SetTitleCommand())
-            .Add(new GetPlayerInfoCommand());
+            .Add(new ShipServiceCommands())
+            .Add(new SendMoneyCommand())
+            .Add(new UnlayCommand())
+            .Add(new ChannelChatCommand())
+            .Add(new MotionCommands())
+            .Add(new TakeUpCommand())
+            .Add(new WorldActionCommands())
+            .Add(new SkillCommand())
+            .Add(new UseUniqueSkillCommand())
+            .Add(new QuestLogCommands())
+            .Add(new NoviceCommands())
+            .Add(new PetCommands())
+            .Add(new ExchangeCommand())
+            .Add(new SwitchExchangeCommand())
+            .Add(new TradeCommands())
+            .Add(new StallCommands())
+            .Add(new MailCommands())
+            .Add(new CraftingCommands())
+            .Add(new TeamCommands())
+            .Add(new TeamChatCommand())
+            .Add(new LogoutCommands())
+            .Add(new PlayerInfoCommand())
+            .Add(new FriendCommands())
+            .Add(new ChatChannelCommand())
+            .Add(new AnswerCommand())
+            .Add(new LeaveGroupCommand())
+            .Add(new GuildCommands())
+            .Add(new GuildChatCommand())
+            .Add(new FleetCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 
@@ -60,5 +89,5 @@ public sealed class CommandRouter
     public bool Execute(ClientSession session, string[] words)
         => _commands.TryGetValue(words[0], out ITextCommand? command) && command.Execute(session, words);
 
-    public void Slash(ClientSession session, string[] words) => _slash.Execute(session, words);
+    public void Slash(ClientSession session, string[] words) => _slash.Execute(session, words, this);
 }

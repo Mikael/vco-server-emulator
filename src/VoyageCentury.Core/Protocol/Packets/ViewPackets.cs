@@ -17,6 +17,9 @@ public static class ViewPackets
         => PropertyTable.WriteValues(
             new PacketWriter(ServerMsg.ViewUpdateItem).WriteByte((byte)view).WriteUInt32((uint)index), values).ToArray();
 
+    public static byte[] Properties(int view, IReadOnlyDictionary<string, object> values)
+        => PropertyTable.WriteValues(new PacketWriter(ServerMsg.ViewProperties).WriteByte((byte)view), values).ToArray();
+
     public static byte[] RemoveItem(int view, int index)
         => new PacketWriter(ServerMsg.ViewRemoveItem).WriteByte((byte)view).WriteUInt32((uint)index).ToArray();
 }

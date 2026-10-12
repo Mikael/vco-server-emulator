@@ -49,7 +49,9 @@ MessageRouter gameRouter = new MessageRouter()
     .Add(new InteractHandler())
     .Add(new DialogueOptionHandler())
     .Add(new TextCommandHandler(ClientMsg.TextCommand, 0x02, commands))
-    .Add(new TextCommandHandler(ClientMsg.HashedCommand, 0x1e, commands));
+    .Add(new TextCommandHandler(ClientMsg.HashedCommand, 0x1e, commands, alwaysCommand: true))
+    .Add(new ServiceChatHandler())
+    .Add(new SilentHandler(ClientMsg.Unknown0A));
 
 using var stopping = new CancellationTokenSource();
 Console.CancelKeyPress += (_, eventArgs) =>
@@ -74,6 +76,7 @@ try
 {
     List<Task> running = servers.Select(server => server.RunAsync(stopping.Token)).ToList();
     if (settings.Bots.Enabled) bots.SetCount(settings.Bots.Count, stopping.Token);
+    context.World.StartTicking(stopping.Token);
     console.Start();
     await Task.WhenAll(running);
 }

@@ -36,6 +36,15 @@ public sealed class AccountRepository
         }
     }
 
+    public CharacterRecord? FindCharacter(string name)
+    {
+        lock (_gate)
+        {
+            return _accounts.Values.SelectMany(account => account.Characters)
+                .FirstOrDefault(character => character.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
+    }
+
     public void Save()
     {
         lock (_gate) SaveLocked();

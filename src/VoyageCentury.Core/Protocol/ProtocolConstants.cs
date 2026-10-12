@@ -12,10 +12,12 @@ public enum ClientMsg : ushort
     HandshakeReply = 0x07,
     Interact = 0x08,
     DialogueOption = 0x09,
+    Unknown0A = 0x0a,
     TextCommand = 0x0b,
     SceneLoaded = 0x0f,
     HashedCommand = 0x10,
     Move = 0x12,
+    ServiceChat = 0x13,
 }
 
 public enum ServerMsg : ushort
@@ -30,12 +32,18 @@ public enum ServerMsg : ushort
     OwnProperties = 0x0b,
     SceneState = 0x0c,
     ObjectProperties = 0x0d,
+    PlayAction = 0x11,
+    AttackAction = 0x12,
+    MailAcknowledge = 0x17,
+    SailState = 0x19,
+    Script = 0x1b,
     Chat = 0x13,
     SystemMessage = 0x15,
     NpcDialogue = 0x16,
     CreateInfo = 0x1a,
     ViewCreate = 0x1c,
     ViewDelete = 0x1d,
+    ViewProperties = 0x1e,
     ViewAddItem = 0x1f,
     ViewRemoveItem = 0x20,
     ViewUpdateItem = 0x21,
@@ -43,10 +51,15 @@ public enum ServerMsg : ushort
     TableRows = 0x23,
     TableDeleteRow = 0x24,
     TableUpdateRow = 0x25,
+    TimedAttackAction = 0x26,
     ShowObject = 0x27,
     ServerList = 0x28,
     TableClear = 0x29,
     PlaceObject = 0x2a,
+    MoveObject = 0x2b,
+    SetObjectPosition = 0x2c,
+    ServiceChat = 0x2f,
+    TimedAction = 0x30,
     VerifyPicture = 0x31,
     Handshake = 0x32,
 }
@@ -90,6 +103,12 @@ public enum DialogueAction
     Sail = 4,
     Deposit = 5,
     Withdraw = 6,
+    SkillTutor = 7,
+    Quests = 8,
+    Pet = 9,
+    Mail = 10,
+    Collect = 11,
+    Guild = 200,
 }
 
 public static class ViewId
@@ -99,6 +118,7 @@ public static class ViewId
     public const int BagItems = 3;
     public const int Equipped = 4;
     public const int Hand = 5;
+    public const int Ship = 11;
     public const int TradeMine = 12;
     public const int TradeTheirs = 13;
     public const int ShopEquip = 15;
@@ -125,6 +145,8 @@ public static class ProtocolConstants
     public const int CharacterSlots = 2;
     public const int CharacterSlotSize = 92;
     public const int RunAction = 14;
+    public const int WalkAction = 12;
+    public const float WalkSpeed = 1.6f;
     public const string AttackActionCode = "103";
     public const int AttackActionFallback = 6;
 }
