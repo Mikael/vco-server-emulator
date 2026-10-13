@@ -43,15 +43,18 @@ public static class LoginPackets
     {
         byte[] body = new byte[0x43 + 40 + ProtocolConstants.CharacterSlotSize];
         body[0] = (byte)ServerMsg.CharacterList;
+        BinaryPrimitives.WriteInt32LittleEndian(body.AsSpan(0x02, 4), ProtocolConstants.FreeGamePoints);
+        BinaryPrimitives.WriteUInt32LittleEndian(body.AsSpan(0x06, 4), ProtocolConstants.FreePlayDeadline);
         for (int i = 0; i < Math.Min(characters.Count, ProtocolConstants.CharacterSlots); i++)
         {
             CharacterRecord character = characters[i];
             int slot = ProtocolConstants.CharacterSlotSize * i;
             byte[] name = PacketWriter.Latin1(character.Name);
             Array.Copy(name, 0, body, slot + 0x0f, Math.Min(name.Length, 31));
+            WornLook worn = WornLook.Of(character);
             uint[] look =
             [
-                (uint)character.Role, (uint)character.Face, (uint)character.Body, 0, 0, 0, 0, 0,
+                (uint)character.Role, (uint)character.Face, (uint)worn.Body, (uint)worn.TexColor, (uint)worn.Hat, (uint)worn.CapColor, 0, 0,
                 (uint)character.HairColor, (uint)character.Hair,
             ];
             for (int k = 0; k < look.Length; k++)

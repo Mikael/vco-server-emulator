@@ -50,24 +50,35 @@ public sealed class CreateCharacterHandler : IMessageHandler
         int city = choices[5] < creation.Cities.Count ? creation.Cities[choices[5]] : creation.Cities[0];
 
         List<CharacterRecord> characters = session.Context.Accounts.Characters(session.Account);
-        if (characters.Count < ProtocolConstants.CharacterSlots)
+        LoginResult refusal = characters.Count >= ProtocolConstants.CharacterSlots ? LoginResult.CharacterDataError
+            : !ValidName(name) ? LoginResult.IllegalName
+            : session.Context.Accounts.FindCharacter(name) != null || session.Context.World.FindPlayer(name) != null ? LoginResult.NameInUse
+            : LoginResult.None;
+        if (refusal != LoginResult.None)
         {
-            characters.Add(new CharacterRecord
-            {
-                Name = name,
-                Role = role.Id,
-                Face = face.Id,
-                Body = body.Id,
-                Hair = choices[3],
-                HairColor = choices[4],
-                City = city,
-                Skills = skills,
-            });
-            session.Context.Accounts.Save();
-            Log.Info(session.Tag, $"Created character '{name}' (role {role.Id}, face {face.Id}, city {city})");
+            Log.Info(session.Tag, $"Refused to create character '{name}': {refusal}");
+            session.Send(LoginPackets.Result((byte)refusal), $"(create refused: {refusal})");
+            return;
         }
+        characters.Add(new CharacterRecord
+        {
+            Name = name,
+            Role = role.Id,
+            Face = face.Id,
+            Body = body.Id,
+            Hair = choices[3],
+            HairColor = choices[4],
+            City = city,
+            Skills = skills,
+        });
+        session.Context.Accounts.Save();
+        Log.Info(session.Tag, $"Created character '{name}' (role {role.Id}, face {face.Id}, city {city})");
         session.Send(LoginPackets.CharacterList(characters), "(character list after create)");
     }
+
+    public static bool ValidName(string name)
+        => name.Length is >= 1 and <= ProtocolConstants.CharacterNameLength
+            && name.All(letter => letter == '_' || char.IsAsciiLetterOrDigit(letter));
 
     private static CreationChoice Pick(List<CreationChoice> table, int index) => index < table.Count ? table[index] : table[0];
 }
@@ -81,6 +92,15 @@ public sealed class DeleteCharacterHandler : IMessageHandler
         if (session.Account.Length == 0 || session.InWorld) return;
         string name = reader.Seek(2).ReadFixedString(32);
         List<CharacterRecord> characters = session.Context.Accounts.Characters(session.Account);
+        LoginResult refusal = !characters.Any(character => character.Name == name) ? LoginResult.CharacterDataError
+            : session.Context.World.FindPlayer(name) != null ? LoginResult.DeleteProtected
+            : LoginResult.None;
+        if (refusal != LoginResult.None)
+        {
+            Log.Info(session.Tag, $"Refused to delete character '{name}': {refusal}");
+            session.Send(LoginPackets.Result((byte)refusal), $"(delete refused: {refusal})");
+            return;
+        }
         characters.RemoveAll(character => character.Name == name);
         session.Context.Accounts.Save();
         Log.Info(session.Tag, $"Deleted character '{name}'");

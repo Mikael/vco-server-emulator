@@ -194,6 +194,7 @@ public sealed class GameRules
     public NobilityRules Nobility { get; set; } = new();
     public EconomyRules Economy { get; set; } = new();
     public GuildRules Guild { get; set; } = new();
+    public Dictionary<int, string> CityNames { get; set; } = [];
 
     public static GameRules Load(EmulatorSettings settings)
     {

@@ -166,5 +166,9 @@
     "Supporters": 4,
     "RequireSupporters": true,
     "MemberLimit": 20
+  },
+  "CityNames": {
+    "1024001": "IDName00000306",
+    "1024002": "IDName00000306"
   }
 }

@@ -182,7 +182,7 @@ public sealed partial class ClientSession
     }
 
     private int Carried(QuestDefinition quest)
-        => Math.Min(quest.Count, Items.Values.Where(item => item.Name == quest.Item).Sum(item => item.Amount));
+        => Math.Min(quest.Count, Owned(quest.Item));
 
     private void ReportProgress(int row, int amount)
     {
@@ -194,14 +194,7 @@ public sealed partial class ClientSession
     {
         if (quest.Kind == QuestKind.Bring)
         {
-            int owed = quest.Count;
-            foreach (int slot in Items.Where(pair => pair.Value.Name == quest.Item).Select(pair => pair.Key).ToList())
-            {
-                int taken = Math.Min(owed, Items[slot].Amount);
-                TakeFromBag(slot, taken, "(task item handed in)");
-                owed -= taken;
-                if (owed <= 0) break;
-            }
+            TakeOwned(quest.Item, quest.Count, "(task item handed in)");
         }
         Character.Quests.Remove(progress);
         Character.CompletedQuests.Add(new QuestProgress { Id = quest.Id, Count = quest.Count, Date = Today() });

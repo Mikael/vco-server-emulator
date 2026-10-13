@@ -24,6 +24,9 @@ public static class ItemCatalog
             ? Convert.ToInt32(value)
             : fallback;
 
+    public static string Text(string itemName, string property)
+        => Find(itemName) is { } properties && properties.TryGetValue(property, out object? value) && value is string text ? text : "";
+
     public static PropertyBag Extend(PropertyBag bag, string itemName)
     {
         if (Find(itemName) is not { } properties) return bag;

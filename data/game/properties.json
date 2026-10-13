@@ -838,5 +838,9 @@
   {
     "Name": "AddMaxLoad",
     "Type": "U32"
+  },
+  {
+    "Name": "CityName",
+    "Type": "String"
   }
 ]

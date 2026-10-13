@@ -183,6 +183,31 @@ public sealed partial class ClientSession
         _yard.Clear();
     }
 
+    public bool AskShipyard(int view, int index)
+    {
+        if (!_yard.TryGetValue(view, out List<string>? shelf)) return false;
+        if (index < 1 || index > shelf.Count) return true;
+        EnsureShipState();
+        string name = shelf[index - 1];
+        int price = 0;
+        int most = 0;
+        if (view == SeaPackets.YardAmmunitionView && Sea.Data.FindAmmunition(name) is { } ammunition)
+        {
+            price = ammunition.Price * Math.Max(1, ammunition.Lot);
+            most = 99;
+        }
+        else if (view == SeaPackets.YardEquipmentView && Sea.Data.FindCannon(name) is { } cannon
+            && cannon.Grade <= Math.Max(1, UniqueSkillLevel("US_CANNON")) && cannon.Grade <= Math.Max(1, ShipTier))
+        {
+            price = cannon.Price;
+            most = 2 * FleetCannonsPerSide - (cannon.Name == Character.CannonName ? Character.CannonsLeft + Character.CannonsRight : 0);
+        }
+        if (price > 0) most = Math.Min(most, Money / price);
+        if (price <= 0 || most < 1) return ShipyardBuy(view, index, 1);
+        Send(UiPackets.Custom($"BuyInfo {view} {index} {price} {most}"), "(buy offer)");
+        return true;
+    }
+
     public bool ShipyardBuy(int view, int index, int quantity)
     {
         if (!_yard.TryGetValue(view, out List<string>? shelf)) return false;

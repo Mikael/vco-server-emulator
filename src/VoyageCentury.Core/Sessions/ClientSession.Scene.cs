@@ -99,6 +99,7 @@ public sealed partial class ClientSession
             ["Orient"] = 0f,
         };
         if (character.Title.Length > 0) Properties["Title"] = character.Title;
+        RefreshAppearance();
 
         ComputeStats();
         Hp = MaxHp;
@@ -151,7 +152,7 @@ public sealed partial class ClientSession
         }
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, at.X, at.Y, at.Z), "(place player)");
         Send(ScenePackets.ShowObject(ProtocolConstants.SelfObjectId), "(show player)");
-        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather, CityName), "(time, weather, wind)");
 
         Mover = new Mover(at.X, at.Z, AtSea ? ShipSpeed : WorldSettings.RunSpeed, 0, AtSea ? ShipTurnRate : 0);
         Height = at.Y;
@@ -350,6 +351,16 @@ public sealed partial class ClientSession
         int turn = Mover.TurnRate;
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({what})");
         ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({Name} {what})");
+    }
+
+    public void RefreshAppearance()
+    {
+        foreach ((string name, int value) in WornLook.Of(Character).Properties())
+        {
+            if (Properties.Int(name, -1) == value) continue;
+            if (InWorld && !AtSea) SetProperty(name, value, visibleToOthers: true);
+            else Properties[name] = value;
+        }
     }
 
     public void SetProperty(string name, object value, bool visibleToOthers = false)

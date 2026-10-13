@@ -53,7 +53,9 @@ public sealed partial class ClientSession
                 OpenShop(npc.Shop);
                 Send(ChatPackets.NpcDialogue(target,
                 [
-                    (DialogueEntry.Text, 0, "Click an item to buy it. Press Sell, then click one of yours."),
+                    (DialogueEntry.Text, 0, npc.Shop.ContainsKey(ViewId.TradeGoods)
+                        ? "Click my goods to buy them for your cabin. Click the goods in your cabin to sell them."
+                        : "Click an item to buy it. Press Sell, then click one of yours."),
                     (DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"),
                 ]), "(npc dialogue)");
                 break;

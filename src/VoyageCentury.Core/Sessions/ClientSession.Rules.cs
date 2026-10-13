@@ -68,7 +68,8 @@ public sealed partial class ClientSession
 
     public int ShipLoadMax => FleetLoadMax + 20 * UniqueSkillLevel("US_HALIEUTICS2");
 
-    public int ShipLoad => Character.Items == null ? 0 : Items.Values.Where(InHold).Sum(Weight);
+    public int ShipLoad => Character.Items == null ? 0
+        : Items.Values.Where(InHold).Sum(Weight) + (Bags.TryGetValue(ViewId.Cargo, out Dictionary<int, ItemStack>? cargo) ? cargo.Values.Sum(Weight) : 0);
 
     public void SetSp(int sp)
     {
@@ -97,10 +98,12 @@ public sealed partial class ClientSession
         RefreshLoad();
     }
 
+    public string CityName => Rule.CityNames.GetValueOrDefault(Scene, "");
+
     public void SendSceneState(GameTime time)
     {
         if (!InWorld) return;
-        Send(ScenePackets.SceneState(time, WorldSettings.Weather), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName), "(time, weather, wind)");
     }
 
     public void TickSecond(long tick)
@@ -191,7 +194,7 @@ public sealed partial class ClientSession
     {
         if (Character.Items == null || Character.Bags == null) return;
         float carried = Items.Values.Where(item => !InHold(item)).Sum(Weight)
-            + Bags.Values.SelectMany(slots => slots.Values).Sum(Weight);
+            + Bags.Where(pair => pair.Key != ViewId.Cargo).SelectMany(pair => pair.Value.Values).Sum(Weight);
         float most = Rule.Character.BaseLoad + Rule.Character.LoadPerPracticeStuntLevel * StuntLevels(LoadStunts) + WornSum("AddMaxLoad");
         if (Convert.ToSingle(Properties.GetValueOrDefault("Load", -1f)) != carried) SetProperty("Load", carried);
         if (Convert.ToSingle(Properties.GetValueOrDefault("LoadMax", -1f)) != most) SetProperty("LoadMax", most);

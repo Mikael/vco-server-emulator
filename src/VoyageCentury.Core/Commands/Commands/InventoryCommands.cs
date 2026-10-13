@@ -38,17 +38,16 @@ public sealed class SelectCommand : ITextCommand
             return view == ViewId.BagItems && session.UseItem(index);
         }
         if (how != LeftClick) return false;
-        if (session.ShipyardBuy(view, index, 1)) return true;
+        if (session.AskShipyard(view, index)) return true;
         if (view == Protocol.Packets.SeaPackets.AmmunitionView)
         {
             session.SelectAmmunition(index);
             return true;
         }
 
-        if (session.ShopOpen && session.BuyOne(view, index)) return true;
+        if (session.AskToBuy(view, index)) return true;
         if (view == ViewId.BagItems && session.Items.TryGetValue(index, out ItemStack? item))
         {
-            if (session.ShopOpen) return session.SellFromBag(index, 1);
             session.SetHand(session.Hand == null ? item.Clone() : null);
             return true;
         }
@@ -69,15 +68,13 @@ public sealed class SellCommand : ITextCommand
             session.SellToStall(values[1], values[2], values[3]);
             return true;
         }
-        if (values[1] == ViewId.BagItems) session.SellFromBag(values[2], values[3]);
+        session.SellToShop(values[0], values[1], values[2], values[3]);
         return true;
     }
 }
 
 public sealed class BuyCommand : ITextCommand
 {
-    private const int MostAtOnce = 99;
-
     public IEnumerable<string> Names => ["Buy"];
 
     public bool Execute(ClientSession session, string[] words)
@@ -89,10 +86,7 @@ public sealed class BuyCommand : ITextCommand
             return true;
         }
         if (session.ShipyardBuy(values[0], values[1], values[2])) return true;
-        for (int i = 0; i < Math.Min(values[2], MostAtOnce); i++)
-        {
-            if (!session.BuyOne(values[0], values[1])) break;
-        }
+        session.BuyFromShop(values[0], values[1], values[2]);
         return true;
     }
 }

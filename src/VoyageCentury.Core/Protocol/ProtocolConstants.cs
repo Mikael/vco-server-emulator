@@ -64,6 +64,20 @@ public enum ServerMsg : ushort
     Handshake = 0x32,
 }
 
+public enum LoginResult : byte
+{
+    None = 0,
+    WrongAccount = 1,
+    NameInUse = 3,
+    AccountInUse = 8,
+    IllegalName = 9,
+    WrongVersion = 10,
+    DeleteProtected = 13,
+    Kicked = 14,
+    CharacterDataError = 18,
+    ServerOverload = 25,
+}
+
 public enum ObjectKind : byte
 {
     Self = 1,
@@ -122,6 +136,7 @@ public static class ViewId
     public const int BagItems = 3;
     public const int Equipped = 4;
     public const int Hand = 5;
+    public const int Cargo = 8;
     public const int Ship = 11;
     public const int TradeMine = 12;
     public const int TradeTheirs = 13;
@@ -138,6 +153,7 @@ public static class ViewId
     public const int BagSlots = 18;
     public const int EquippedSlots = 8;
     public const int ShopSlots = 18;
+    public const int CargoSlots = 6;
 }
 
 public static class ProtocolConstants
@@ -149,6 +165,9 @@ public static class ProtocolConstants
     public const uint HandshakeEcho = 0x22222222;
     public const int CharacterSlots = 2;
     public const int CharacterSlotSize = 92;
+    public const int CharacterNameLength = 16;
+    public const int FreeGamePoints = -1;
+    public const uint FreePlayDeadline = 2145830400;
     public const int RunAction = 14;
     public const int WalkAction = 12;
     public const float WalkSpeed = 1.6f;

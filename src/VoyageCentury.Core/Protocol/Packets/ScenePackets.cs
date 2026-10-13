@@ -11,8 +11,9 @@ public static class ScenePackets
 
     public static byte[] LeaveScene() => new PacketWriter(ServerMsg.LeaveScene).ToArray();
 
-    public static byte[] SceneState(Data.GameTime time, int weather, float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f)
-        => PropertyTable.WriteValues(new PacketWriter(ServerMsg.SceneState), new PropertyBag
+    public static byte[] SceneState(Data.GameTime time, int weather, string cityName = "", float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f)
+    {
+        var state = new PropertyBag
         {
             ["Hour"] = time.Hour,
             ["WeatherType"] = weather,
@@ -22,7 +23,10 @@ public static class ScenePackets
             ["Year"] = time.Year,
             ["Month"] = time.Month,
             ["Day"] = time.Day,
-        }).ToArray();
+        };
+        if (cityName.Length > 0 && PropertyTable.Has("CityName")) state["CityName"] = cityName;
+        return PropertyTable.WriteValues(new PacketWriter(ServerMsg.SceneState), state).ToArray();
+    }
 
     public static byte[] CreateObject(int objectId, ObjectKind kind, int model, int serial = 0)
         => new PacketWriter(ServerMsg.CreateObject)
