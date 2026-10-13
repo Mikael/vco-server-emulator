@@ -2,6 +2,7 @@
   {
     "Name": "IDName00003637",
     "Category": "SKILL_ALCHEMY",
+    "SkillLevel": 1,
     "Photo": 190183,
     "Amount": 1,
     "Seconds": 3,
@@ -12,6 +13,7 @@
   {
     "Name": "IDName00003639",
     "Category": "SKILL_ALCHEMY",
+    "SkillLevel": 32,
     "Photo": 190184,
     "Amount": 1,
     "Seconds": 4,
@@ -23,6 +25,7 @@
   {
     "Name": "IDName00003643",
     "Category": "SKILL_ALCHEMY",
+    "SkillLevel": 4,
     "Photo": 190185,
     "Amount": 1,
     "Seconds": 3,
@@ -34,6 +37,7 @@
   {
     "Name": "IDName00003898",
     "Category": "SKILL_FOUNDRY",
+    "SkillLevel": 1,
     "Photo": 190150,
     "Amount": 1,
     "Seconds": 5,
@@ -44,6 +48,7 @@
   {
     "Name": "IDName00000346",
     "Category": "SKILL_FOUNDRY",
+    "SkillLevel": 1,
     "Photo": 110101,
     "Amount": 1,
     "Seconds": 6,
@@ -55,6 +60,7 @@
   {
     "Name": "IDName00003835",
     "Category": "SKILL_SEWING",
+    "SkillLevel": 1,
     "Photo": 190212,
     "Amount": 1,
     "Seconds": 3,
@@ -65,6 +71,7 @@
   {
     "Name": "IDName00003858",
     "Category": "SKILL_SEWING",
+    "SkillLevel": 1,
     "Photo": 190215,
     "Amount": 1,
     "Seconds": 5,
@@ -76,6 +83,7 @@
   {
     "Name": "IDName00003918",
     "Category": "SKILL_SHIPBUILDING",
+    "SkillLevel": 1,
     "Photo": 190160,
     "Amount": 1,
     "Seconds": 6,

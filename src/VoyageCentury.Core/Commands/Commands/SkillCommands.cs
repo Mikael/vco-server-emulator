@@ -16,9 +16,9 @@ public sealed class UseUniqueSkillCommand : ITextCommand
 
     public bool Execute(ClientSession session, string[] words)
     {
-        if (words.Length == 4)
+        if (words.Length == 4 && int.TryParse(words[1], out int stunt) && int.TryParse(words[2], out int view) && int.TryParse(words[3], out int index))
         {
-            session.SystemMessage("Special skills cannot be used on items on this server yet.");
+            session.UseUniqueSkill(stunt, view, index);
             return true;
         }
         if (words.Length != 2 || !int.TryParse(words[1], out int row)) return false;

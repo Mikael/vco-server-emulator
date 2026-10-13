@@ -89,7 +89,15 @@ public sealed class GuildChatCommand : ITextCommand
             "c8" => ChatChannel.Department,
             _ => ChatChannel.DepartmentNotice,
         };
-        GuildDirectory.Chat(session, channel, string.Join(' ', words.Skip(1)));
+        string text = string.Join(' ', words.Skip(1));
+        string interval = channel switch
+        {
+            ChatChannel.Guild => "guild",
+            ChatChannel.GuildNotice => "guildnotice",
+            ChatChannel.Department => "department",
+            _ => "departmentnotice",
+        };
+        if (session.ChatAllowed(interval, ref text)) GuildDirectory.Chat(session, channel, text);
         return true;
     }
 }

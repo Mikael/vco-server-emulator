@@ -25,6 +25,8 @@ public sealed class GoodsDefinition
     public int Photo { get; set; }
     public int Price { get; set; }
     public int Heal { get; set; }
+    public int Sp { get; set; }
+    public bool Instant { get; set; }
 }
 
 public sealed class ItemData
@@ -52,6 +54,7 @@ public sealed class NpcDefinition
     public string Greeting { get; set; } = "Good day.";
     public List<DialogueOption> Options { get; set; } = [];
     public Dictionary<int, List<string>>? Shop { get; set; }
+    public int StuntCap { get; set; } = 10;
 }
 
 public sealed class MonsterDefinition
@@ -60,9 +63,14 @@ public sealed class MonsterDefinition
     public int Scene { get; set; }
     public int Model { get; set; }
     public string Name { get; set; } = "";
+    public int Level { get; set; }
     public int Hp { get; set; }
-    public int HitMin { get; set; }
-    public int HitMax { get; set; }
+    public int Attack { get; set; } = 3;
+    public int Defence { get; set; }
+    public int Hit { get; set; }
+    public int Dodge { get; set; }
+    public bool Aggressive { get; set; }
+    public bool Flees { get; set; }
     public int Gold { get; set; }
     public float X { get; set; }
     public float Y { get; set; }
@@ -85,6 +93,7 @@ public sealed class GameData
     public BotData Bots { get; private init; } = new();
     public SceneFiles Scenes { get; private init; } = null!;
     public ActionTable Actions { get; private init; } = null!;
+    public GameRules Rules { get; private init; } = new();
 
     public static GameData Load(EmulatorSettings settings)
     {
@@ -99,6 +108,7 @@ public sealed class GameData
             Bots = Read<BotData>(folder, "bots.json"),
             Scenes = new SceneFiles(settings.ResourcePath),
             Actions = ActionTable.Load(settings.ResourcePath),
+            Rules = GameRules.Load(settings),
         };
     }
 
@@ -107,6 +117,10 @@ public sealed class GameData
     public int PriceOf(string name) => Items.Goods.TryGetValue(name, out GoodsDefinition? goods) ? goods.Price : 10;
 
     public int HealOf(string name) => Items.Goods.TryGetValue(name, out GoodsDefinition? goods) ? goods.Heal : 0;
+
+    public int SpOf(string name) => Items.Goods.TryGetValue(name, out GoodsDefinition? goods) ? goods.Sp : 0;
+
+    public bool InstantOf(string name) => Items.Goods.TryGetValue(name, out GoodsDefinition? goods) && goods.Instant;
 
     private static T Read<T>(string folder, string file) where T : new()
     {

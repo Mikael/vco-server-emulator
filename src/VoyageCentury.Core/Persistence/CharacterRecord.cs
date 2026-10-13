@@ -5,8 +5,9 @@ public sealed class ItemStack
     public string Name { get; set; } = "";
     public int Photo { get; set; }
     public int Amount { get; set; } = 1;
+    public int Cost { get; set; }
 
-    public ItemStack Clone() => new() { Name = Name, Photo = Photo, Amount = Amount };
+    public ItemStack Clone() => new() { Name = Name, Photo = Photo, Amount = Amount, Cost = Cost };
 }
 
 public sealed class ShortcutEntry
@@ -30,13 +31,17 @@ public sealed partial class CharacterRecord
     public int Hair { get; set; }
     public int HairColor { get; set; }
     public int City { get; set; }
-    public int Level { get; set; } = 1;
-    public int Experience { get; set; }
     public int ShortcutPage { get; set; }
     public List<string> Titles { get; set; } = [];
     public int Sailors { get; set; } = 10;
     public int Money { get; set; } = -1;
     public int Bank { get; set; }
+    public int Reputation { get; set; }
+    public int Amity { get; set; }
+    public int Rank { get; set; }
+    public int WarehouseLoad { get; set; }
+    public int LastPort { get; set; }
+    public int RulesVersion { get; set; }
     public int Scene { get; set; }
     public float[]? Position { get; set; }
     public string Title { get; set; } = "";

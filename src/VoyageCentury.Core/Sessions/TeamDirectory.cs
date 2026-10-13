@@ -23,7 +23,7 @@ public sealed class Team
 
 public static class TeamDirectory
 {
-    public const int MaxMembers = 4;
+    public const int MaxMembers = 5;
     public const int InviteSeconds = 60;
     public const int OceanModes = 2;
     public const string RequestKind = "Team";

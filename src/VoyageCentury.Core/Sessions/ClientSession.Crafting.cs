@@ -104,6 +104,7 @@ public sealed partial class ClientSession
         }
         CraftStore(CraftProduct(recipe));
         Send(ChatPackets.Script(0, $"MakingItemOK {recipe.Name}"), "(crafting done)");
+        GainSkillExperience(recipe.Category, Rule.Skills.WorkExperienceAt(Math.Max(1, recipe.SkillLevel)));
         if (_recipeShown) SendRecipeNeeds(recipe);
         Save();
         Log.Info(Tag, $"{Name} makes {recipe.Amount} x {recipe.Name}");
@@ -111,6 +112,11 @@ public sealed partial class ClientSession
 
     private bool CraftPossible(RecipeDefinition recipe)
     {
+        if (recipe.Category.Length > 0 && SkillLevel(recipe.Category) < recipe.SkillLevel)
+        {
+            SystemMessage($"Composition requires Skill Level {recipe.SkillLevel}. Have not learned the required Skill.");
+            return false;
+        }
         RecipeIngredient? missing = recipe.Ingredients.FirstOrDefault(ingredient => CraftCarried(ingredient.Name) < ingredient.Amount);
         if (missing != null)
         {

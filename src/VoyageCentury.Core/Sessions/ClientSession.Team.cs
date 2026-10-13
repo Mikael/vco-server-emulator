@@ -26,7 +26,7 @@ public sealed partial class ClientSession
 
     public int Portrait => Properties.Int("Photo");
 
-    public string ChatTitle => Character.Title.Length > 0 ? Character.Title : $"Lv{Character.Level}";
+    public string ChatTitle => Character.Title.Length > 0 ? Character.Title : $"Lv{TotalSkillLevel}";
 
     public void EnterWorldSocial()
     {

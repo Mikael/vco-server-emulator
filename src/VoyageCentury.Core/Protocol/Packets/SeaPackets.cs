@@ -37,8 +37,13 @@ public static class SeaPackets
 
     public static byte[] Broadside(int shipId, int targetId, int side, int shellType, int balls, float targetX, float targetZ,
         float scatter, float ballSpeed, int seed)
-        => ChatPackets.Script(shipId, string.Create(CultureInfo.InvariantCulture,
-            $"3Dfd {side} {shellType} {balls} {targetX:F2} 0.00 {targetZ:F2} {MathF.Max(1f, scatter):F2} {MathF.Max(1f, ballSpeed):F2} {seed}"), targetId);
+    {
+        float centre = MathF.Max(1f, MathF.Truncate(scatter)) / 4f;
+        return ChatPackets.Script(shipId, string.Create(CultureInfo.InvariantCulture,
+            $"3Dfd {side} {shellType} {balls} {targetX + centre:F2} 0.00 {targetZ + centre:F2} {MathF.Max(1f, scatter):F2} {MathF.Max(1f, ballSpeed):F2} {seed}"), targetId);
+    }
+
+    public static float HitChance(int hits, int balls) => balls <= 0 ? 0f : Math.Clamp((hits + 0.5f) / balls, 0f, 1f);
 
     public static byte[] Volley(int victimId, int shellType, int balls, float hitFraction, float fromX, float fromZ,
         string? text = null, uint colour = 0xff0000)
@@ -46,7 +51,7 @@ public static class SeaPackets
         string script = "3DA\n";
         if (!string.IsNullOrEmpty(text)) script += $"info {text}\ncolo {colour & 0xffffff:x6}\n";
         script += string.Create(CultureInfo.InvariantCulture,
-            $"weff cannon\ntype {Math.Clamp(shellType, 1, 7)}\nammonum {balls}\nchance {Math.Clamp(hitFraction, 0f, 1f):F2}\nx {fromX:F2}\ny 0.00\nz {fromZ:F2}\n");
+            $"weff cannon\ntype {Math.Clamp(shellType, 1, 7)}\nammonum {balls}\nchance {Math.Clamp(hitFraction, 0f, 1f):F3}\nx {fromX:F2}\ny 0.00\nz {fromZ:F2}\n");
         return ChatPackets.Script(victimId, script);
     }
 
@@ -64,5 +69,5 @@ public static class SeaPackets
 
     public static byte[] ShowShipDye() => ChatPackets.Script(0, "ShowShipDye");
 
-    public static string OneWord(string text) => text.Replace(' ', '_');
+    public static string OneWord(string text) => UiPackets.Token(text);
 }

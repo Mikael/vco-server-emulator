@@ -7,7 +7,7 @@
     "X": 8,
     "Y": 23.16,
     "Z": 16,
-    "Greeting": "Every skill starts with a limit of level 31. Come to me to learn new skills and to open the second phase.",
+    "Greeting": "Every skill starts with a limit of level 31. Come to me to learn new skills, to open the second phase and to learn special skills up to level 3.",
     "Options": [
       {
         "Action": "SkillTutor",
@@ -17,7 +17,8 @@
         "Action": "Bye",
         "Text": "Goodbye"
       }
-    ]
+    ],
+    "StuntCap": 3
   },
   {
     "Id": 101,
@@ -47,8 +48,12 @@
     "X": 32,
     "Y": 24.24,
     "Z": -38,
-    "Greeting": "Parcels and letters for every port pass through this warehouse.",
+    "Greeting": "Your goods are safe in this warehouse, and parcels and letters for every port pass through it.",
     "Options": [
+      {
+        "Action": "Warehouse",
+        "Text": "Open my warehouse"
+      },
       {
         "Action": "Mail",
         "Text": "Send a parcel"
@@ -114,15 +119,10 @@
         "IDName00003846"
       ],
       "15": [
-        "IDName00000342",
         "IDName00000347",
         "IDName00000394",
-        "IDName00000438",
-        "IDName00003542",
-        "IDName00000351",
-        "IDName00000398",
-        "IDName00000445",
-        "IDName00003546"
+        "IDName00000441",
+        "IDName00003542"
       ]
     }
   },
@@ -176,7 +176,7 @@
     "X": 45,
     "Y": 23.16,
     "Z": -75,
-    "Greeting": "Clothes for sailors, soldiers and merchants.",
+    "Greeting": "Clothes and hats for sailors, soldiers and merchants.",
     "Options": [
       {
         "Action": "Trade",
@@ -194,12 +194,20 @@
         "IDName00003835"
       ],
       "15": [
-        "IDName00000643",
-        "IDName00000644",
         "IDName00000651",
         "IDName00000652",
-        "IDName00000669",
-        "IDName00000670"
+        "IDName00000659",
+        "IDName00000660",
+        "IDName00000657",
+        "IDName00000658",
+        "IDName00000761",
+        "IDName00000764",
+        "IDName00000500",
+        "IDName00000530",
+        "IDName00000501",
+        "IDName00000531",
+        "IDName00000502",
+        "IDName00000532"
       ]
     }
   },
@@ -243,8 +251,12 @@
     "X": 46,
     "Y": 25.11,
     "Z": -20,
-    "Greeting": "Greece welcomes honest captains.",
+    "Greeting": "Greece welcomes honest captains. Reputation, amity and a fee will earn you a title.",
     "Options": [
+      {
+        "Action": "Nobility",
+        "Text": "Apply for a noble title"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"

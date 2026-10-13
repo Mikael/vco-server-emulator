@@ -1,98 +1,977 @@
 {
   "Rules": {
     "FleetMax": 4,
-    "MaxLevel": 4,
-    "UpgradeCost": 500,
-    "UpgradePricePercent": 20,
-    "HullPercentPerLevel": 15,
-    "SailPercentPerLevel": 15,
-    "LoadPercentPerLevel": 10,
-    "CannonsPerLevel": 1,
     "Port": "Athens",
-    "UpgradeMaterials": [
-      { "Section": "ConsResWood", "Key": 1, "Item": "IDName00003846", "Count": 5 },
-      { "Section": "ConsResMetal", "Key": 1, "Item": "IDName00003823", "Count": 3 }
+    "RebuildTiers": [
+      1
+    ],
+    "AttributeLevelsPerTier": 10,
+    "ManeuverSail": 20,
+    "WeaponSail": 10,
+    "WeaponHull": 10,
+    "StructureHull": 40,
+    "StructureLoad": 5,
+    "PlainSailCloth": 2900000,
+    "Timber": [
+      "IDName00003846",
+      "IDName00003847",
+      "IDName00003848",
+      "IDName00003849",
+      "IDName00003850",
+      "IDName00003851",
+      "IDName00003852",
+      "IDName00003853",
+      "IDName00003854",
+      "IDName00003855"
+    ],
+    "Metal": [
+      "IDName00003823",
+      "IDName00003824",
+      "IDName00003825",
+      "IDName00003826",
+      "IDName00003827",
+      "IDName00003828",
+      "IDName00003830",
+      "IDName00003507",
+      "IDName00003831",
+      "IDName00003833"
     ],
     "WearChance": 0.25,
     "WearAlertPercent": 20,
     "RepairPricePerPoint": 2
   },
+  "Classes": [
+    {
+      "Kind": 0,
+      "Tier": 0,
+      "Cannons": 4,
+      "Hull": 400,
+      "Sail": 300,
+      "Sailors": 30,
+      "Load": 300,
+      "Triangular": 60,
+      "Square": 0,
+      "Turning": 5,
+      "Voyage": 0,
+      "SecondSkill": 0
+    },
+    {
+      "Kind": 0,
+      "Tier": 1,
+      "Cannons": 18,
+      "Hull": 1660,
+      "Sail": 650,
+      "Sailors": 40,
+      "Load": 330,
+      "Triangular": 66,
+      "Square": 7,
+      "Turning": 6,
+      "Voyage": 1,
+      "SecondSkill": 0
+    },
+    {
+      "Kind": 0,
+      "Tier": 2,
+      "Cannons": 32,
+      "Hull": 3060,
+      "Sail": 1020,
+      "Sailors": 55,
+      "Load": 360,
+      "Triangular": 72,
+      "Square": 8,
+      "Turning": 6,
+      "Voyage": 11,
+      "SecondSkill": 5
+    },
+    {
+      "Kind": 0,
+      "Tier": 3,
+      "Cannons": 46,
+      "Hull": 4500,
+      "Sail": 1500,
+      "Sailors": 70,
+      "Load": 400,
+      "Triangular": 78,
+      "Square": 8,
+      "Turning": 6,
+      "Voyage": 21,
+      "SecondSkill": 10
+    },
+    {
+      "Kind": 0,
+      "Tier": 4,
+      "Cannons": 60,
+      "Hull": 6100,
+      "Sail": 2200,
+      "Sailors": 95,
+      "Load": 440,
+      "Triangular": 84,
+      "Square": 9,
+      "Turning": 7,
+      "Voyage": 31,
+      "SecondSkill": 15
+    },
+    {
+      "Kind": 0,
+      "Tier": 5,
+      "Cannons": 74,
+      "Hull": 7660,
+      "Sail": 2870,
+      "Sailors": 115,
+      "Load": 510,
+      "Triangular": 90,
+      "Square": 10,
+      "Turning": 7,
+      "Voyage": 41,
+      "SecondSkill": 20
+    },
+    {
+      "Kind": 0,
+      "Tier": 6,
+      "Cannons": 90,
+      "Hull": 9530,
+      "Sail": 4100,
+      "Sailors": 145,
+      "Load": 620,
+      "Triangular": 96,
+      "Square": 10,
+      "Turning": 7,
+      "Voyage": 51,
+      "SecondSkill": 25
+    },
+    {
+      "Kind": 0,
+      "Tier": 7,
+      "Cannons": 102,
+      "Hull": 11930,
+      "Sail": 6300,
+      "Sailors": 170,
+      "Load": 800,
+      "Triangular": 102,
+      "Square": 11,
+      "Turning": 8,
+      "Voyage": 61,
+      "SecondSkill": 30
+    },
+    {
+      "Kind": 0,
+      "Tier": 8,
+      "Cannons": 114,
+      "Hull": 14700,
+      "Sail": 9200,
+      "Sailors": 200,
+      "Load": 1000,
+      "Triangular": 108,
+      "Square": 11,
+      "Turning": 8,
+      "Voyage": 71,
+      "SecondSkill": 35
+    },
+    {
+      "Kind": 0,
+      "Tier": 9,
+      "Cannons": 130,
+      "Hull": 18000,
+      "Sail": 13300,
+      "Sailors": 240,
+      "Load": 1130,
+      "Triangular": 114,
+      "Square": 12,
+      "Turning": 8,
+      "Voyage": 81,
+      "SecondSkill": 40
+    },
+    {
+      "Kind": 0,
+      "Tier": 10,
+      "Cannons": 144,
+      "Hull": 22200,
+      "Sail": 18500,
+      "Sailors": 330,
+      "Load": 1380,
+      "Triangular": 120,
+      "Square": 13,
+      "Turning": 10,
+      "Voyage": 91,
+      "SecondSkill": 45
+    },
+    {
+      "Kind": 1,
+      "Tier": 1,
+      "Cannons": 4,
+      "Hull": 820,
+      "Sail": 450,
+      "Sailors": 30,
+      "Load": 500,
+      "Triangular": 66,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 1,
+      "SecondSkill": 0
+    },
+    {
+      "Kind": 1,
+      "Tier": 2,
+      "Cannons": 6,
+      "Hull": 1320,
+      "Sail": 700,
+      "Sailors": 35,
+      "Load": 740,
+      "Triangular": 72,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 11,
+      "SecondSkill": 5
+    },
+    {
+      "Kind": 1,
+      "Tier": 3,
+      "Cannons": 8,
+      "Hull": 1880,
+      "Sail": 1100,
+      "Sailors": 45,
+      "Load": 940,
+      "Triangular": 78,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 21,
+      "SecondSkill": 10
+    },
+    {
+      "Kind": 1,
+      "Tier": 4,
+      "Cannons": 10,
+      "Hull": 2670,
+      "Sail": 1480,
+      "Sailors": 60,
+      "Load": 1140,
+      "Triangular": 84,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 31,
+      "SecondSkill": 15
+    },
+    {
+      "Kind": 1,
+      "Tier": 5,
+      "Cannons": 12,
+      "Hull": 3400,
+      "Sail": 1930,
+      "Sailors": 70,
+      "Load": 1300,
+      "Triangular": 90,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 41,
+      "SecondSkill": 20
+    },
+    {
+      "Kind": 1,
+      "Tier": 6,
+      "Cannons": 14,
+      "Hull": 4620,
+      "Sail": 2760,
+      "Sailors": 90,
+      "Load": 1450,
+      "Triangular": 96,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 51,
+      "SecondSkill": 25
+    },
+    {
+      "Kind": 1,
+      "Tier": 7,
+      "Cannons": 16,
+      "Hull": 6620,
+      "Sail": 4300,
+      "Sailors": 120,
+      "Load": 1600,
+      "Triangular": 102,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 61,
+      "SecondSkill": 30
+    },
+    {
+      "Kind": 1,
+      "Tier": 8,
+      "Cannons": 18,
+      "Hull": 9000,
+      "Sail": 6100,
+      "Sailors": 150,
+      "Load": 1700,
+      "Triangular": 108,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 71,
+      "SecondSkill": 35
+    },
+    {
+      "Kind": 1,
+      "Tier": 9,
+      "Cannons": 20,
+      "Hull": 12600,
+      "Sail": 8800,
+      "Sailors": 190,
+      "Load": 1800,
+      "Triangular": 114,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 81,
+      "SecondSkill": 40
+    },
+    {
+      "Kind": 1,
+      "Tier": 10,
+      "Cannons": 24,
+      "Hull": 17100,
+      "Sail": 12400,
+      "Sailors": 205,
+      "Load": 1950,
+      "Triangular": 120,
+      "Square": 0,
+      "Turning": 6,
+      "Voyage": 91,
+      "SecondSkill": 45
+    },
+    {
+      "Kind": 2,
+      "Tier": 1,
+      "Cannons": 18,
+      "Hull": 410,
+      "Sail": 710,
+      "Sailors": 50,
+      "Load": 315,
+      "Triangular": 71,
+      "Square": 15,
+      "Turning": 7,
+      "Voyage": 1,
+      "SecondSkill": 0
+    },
+    {
+      "Kind": 2,
+      "Tier": 2,
+      "Cannons": 20,
+      "Hull": 570,
+      "Sail": 1120,
+      "Sailors": 70,
+      "Load": 335,
+      "Triangular": 77,
+      "Square": 16,
+      "Turning": 8,
+      "Voyage": 11,
+      "SecondSkill": 5
+    },
+    {
+      "Kind": 2,
+      "Tier": 3,
+      "Cannons": 22,
+      "Hull": 770,
+      "Sail": 1630,
+      "Sailors": 90,
+      "Load": 360,
+      "Triangular": 83,
+      "Square": 17,
+      "Turning": 9,
+      "Voyage": 21,
+      "SecondSkill": 10
+    },
+    {
+      "Kind": 2,
+      "Tier": 4,
+      "Cannons": 24,
+      "Hull": 1100,
+      "Sail": 2430,
+      "Sailors": 120,
+      "Load": 385,
+      "Triangular": 89,
+      "Square": 19,
+      "Turning": 10,
+      "Voyage": 31,
+      "SecondSkill": 15
+    },
+    {
+      "Kind": 2,
+      "Tier": 5,
+      "Cannons": 26,
+      "Hull": 1400,
+      "Sail": 3280,
+      "Sailors": 150,
+      "Load": 450,
+      "Triangular": 95,
+      "Square": 20,
+      "Turning": 11,
+      "Voyage": 41,
+      "SecondSkill": 20
+    },
+    {
+      "Kind": 2,
+      "Tier": 6,
+      "Cannons": 28,
+      "Hull": 1960,
+      "Sail": 4550,
+      "Sailors": 190,
+      "Load": 550,
+      "Triangular": 101,
+      "Square": 21,
+      "Turning": 12,
+      "Voyage": 51,
+      "SecondSkill": 25
+    },
+    {
+      "Kind": 2,
+      "Tier": 7,
+      "Cannons": 34,
+      "Hull": 2960,
+      "Sail": 7000,
+      "Sailors": 240,
+      "Load": 720,
+      "Triangular": 107,
+      "Square": 22,
+      "Turning": 13,
+      "Voyage": 61,
+      "SecondSkill": 30
+    },
+    {
+      "Kind": 2,
+      "Tier": 8,
+      "Cannons": 38,
+      "Hull": 4270,
+      "Sail": 11200,
+      "Sailors": 300,
+      "Load": 900,
+      "Triangular": 113,
+      "Square": 23,
+      "Turning": 14,
+      "Voyage": 71,
+      "SecondSkill": 35
+    },
+    {
+      "Kind": 2,
+      "Tier": 9,
+      "Cannons": 44,
+      "Hull": 6080,
+      "Sail": 14690,
+      "Sailors": 390,
+      "Load": 1120,
+      "Triangular": 119,
+      "Square": 0,
+      "Turning": 15,
+      "Voyage": 81,
+      "SecondSkill": 40
+    },
+    {
+      "Kind": 2,
+      "Tier": 10,
+      "Cannons": 58,
+      "Hull": 8500,
+      "Sail": 20630,
+      "Sailors": 490,
+      "Load": 1220,
+      "Triangular": 125,
+      "Square": 0,
+      "Turning": 17,
+      "Voyage": 91,
+      "SecondSkill": 45
+    }
+  ],
+  "Rebuilds": [
+    {
+      "Tier": 1,
+      "Silver": 500,
+      "Count": 2,
+      "Timber": [
+        1
+      ],
+      "Metal": [
+        1
+      ],
+      "AttributeLevel": 1,
+      "Cities": [
+        "Athens",
+        "Beirut",
+        "Alexandria",
+        "Istanbul"
+      ]
+    },
+    {
+      "Tier": 2,
+      "Silver": 10000,
+      "Count": 10,
+      "Timber": [
+        1,
+        2
+      ],
+      "Metal": [
+        1,
+        2
+      ],
+      "AttributeLevel": 10,
+      "Cities": [
+        "Genoa"
+      ]
+    },
+    {
+      "Tier": 3,
+      "Silver": 45000,
+      "Count": 25,
+      "Timber": [
+        1,
+        2,
+        3
+      ],
+      "Metal": [
+        1,
+        2,
+        3
+      ],
+      "AttributeLevel": 20,
+      "Cities": [
+        "Algiers"
+      ]
+    },
+    {
+      "Tier": 4,
+      "Silver": 150000,
+      "Count": 40,
+      "Timber": [
+        2,
+        3,
+        4
+      ],
+      "Metal": [
+        2,
+        3,
+        4
+      ],
+      "AttributeLevel": 30,
+      "Cities": [
+        "Algiers"
+      ]
+    },
+    {
+      "Tier": 5,
+      "Silver": 350000,
+      "Count": 60,
+      "Timber": [
+        3,
+        4,
+        5
+      ],
+      "Metal": [
+        3,
+        4,
+        5
+      ],
+      "AttributeLevel": 40,
+      "Cities": [
+        "Seville"
+      ]
+    },
+    {
+      "Tier": 6,
+      "Silver": 720000,
+      "Count": 80,
+      "Timber": [
+        4,
+        5,
+        6
+      ],
+      "Metal": [
+        4,
+        5,
+        6
+      ],
+      "AttributeLevel": 50,
+      "Cities": [
+        "Seville"
+      ]
+    },
+    {
+      "Tier": 7,
+      "Silver": 1250000,
+      "Count": 110,
+      "Timber": [
+        5,
+        6,
+        7
+      ],
+      "Metal": [
+        5,
+        6,
+        7
+      ],
+      "AttributeLevel": 60,
+      "Cities": [
+        "Hamburg"
+      ]
+    },
+    {
+      "Tier": 8,
+      "Silver": 2000000,
+      "Count": 150,
+      "Timber": [
+        6,
+        7,
+        8
+      ],
+      "Metal": [
+        6,
+        7,
+        8
+      ],
+      "AttributeLevel": 70,
+      "Cities": [
+        "Hamburg"
+      ]
+    },
+    {
+      "Tier": 9,
+      "Silver": 3000000,
+      "Count": 170,
+      "Timber": [
+        7,
+        8,
+        9
+      ],
+      "Metal": [
+        7,
+        8,
+        9
+      ],
+      "AttributeLevel": 80,
+      "Cities": [
+        "Muscat",
+        "Seoul"
+      ]
+    },
+    {
+      "Tier": 10,
+      "Silver": 45000000,
+      "Count": 200,
+      "Timber": [
+        8,
+        9,
+        10
+      ],
+      "Metal": [
+        8,
+        9,
+        10
+      ],
+      "AttributeLevel": 90,
+      "Cities": [
+        "Beijing",
+        "Seoul"
+      ]
+    }
+  ],
   "Ships": [
     {
-      "Model": 2011001, "Name": "IDName00004746", "Label": "Light Adventure Ship", "Photo": 200101, "Kind": 2,
-      "Price": 800, "Level": 1, "Hull": 100, "Sail": 100, "Sailors": 30, "Cannons": 2, "CannonsMax": 2,
-      "Load": 100, "Speed": 1.0, "Turn": 10,
-      "MastFront": 2211101, "MastMiddle": 2211401, "MastBack": 2211101, "Dyeable": false
+      "Model": 2011001,
+      "Name": "IDName00004695",
+      "Label": "Light Double Mast Lateen Sail Ship",
+      "Photo": 200101,
+      "Kind": 0,
+      "Tier": 0,
+      "Price": 800,
+      "Sold": true,
+      "MastFront": 2211101,
+      "MastMiddle": 2211401,
+      "MastBack": 2211101,
+      "Dyeable": false
     },
     {
-      "Model": 2011017, "Name": "IDName00004736", "Label": "Light Freighter", "Photo": 200117, "Kind": 1,
-      "Price": 3000, "Level": 2, "Hull": 140, "Sail": 120, "Sailors": 40, "Cannons": 2, "CannonsMax": 3,
-      "Load": 220, "Speed": 0.95, "Turn": 9,
-      "MastFront": 2211117, "MastMiddle": 2211417, "MastBack": 2211117, "Dyeable": true
+      "Model": 2011006,
+      "Name": "IDName00004715",
+      "Label": "Light Armed Ship",
+      "Photo": 200106,
+      "Kind": 0,
+      "Tier": 1,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211106,
+      "MastMiddle": 2211406,
+      "MastBack": 2211706,
+      "Dyeable": true
     },
     {
-      "Model": 2011006, "Name": "IDName00004715", "Label": "Light Armed Ship", "Photo": 200106, "Kind": 0,
-      "Price": 5000, "Level": 3, "Hull": 180, "Sail": 130, "Sailors": 50, "Cannons": 3, "CannonsMax": 3,
-      "Load": 140, "Speed": 1.05, "Turn": 11,
-      "MastFront": 2211106, "MastMiddle": 2211406, "MastBack": 2211706, "Dyeable": true
+      "Model": 2011002,
+      "Name": "IDName00004716",
+      "Label": "Armed Patrol Ship",
+      "Photo": 200102,
+      "Kind": 0,
+      "Tier": 2,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211102,
+      "MastMiddle": 2211402,
+      "MastBack": 2211702,
+      "Dyeable": true
     },
     {
-      "Model": 2011019, "Name": "IDName00004737", "Label": "Light Merchant Ship", "Photo": 200119, "Kind": 1,
-      "Price": 8000, "Level": 4, "Hull": 220, "Sail": 160, "Sailors": 60, "Cannons": 2, "CannonsMax": 5,
-      "Load": 320, "Speed": 0.9, "Turn": 8,
-      "MastFront": 2211119, "MastMiddle": 2211419, "MastBack": 2211719, "Dyeable": true
+      "Model": 2011014,
+      "Name": "IDName00004717",
+      "Label": "Light Frigate Ship",
+      "Photo": 200114,
+      "Kind": 0,
+      "Tier": 3,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211114,
+      "MastMiddle": 2211414,
+      "MastBack": 2211714,
+      "Dyeable": true
     },
     {
-      "Model": 2011002, "Name": "IDName00004716", "Label": "Armed Patrol Ship", "Photo": 200102, "Kind": 0,
-      "Price": 9000, "Level": 5, "Hull": 240, "Sail": 150, "Sailors": 70, "Cannons": 3, "CannonsMax": 5,
-      "Load": 180, "Speed": 1.0, "Turn": 10,
-      "MastFront": 2211102, "MastMiddle": 2211402, "MastBack": 2211702, "Dyeable": true
+      "Model": 2011013,
+      "Name": "IDName00004719",
+      "Label": "Medium Armed Battleship",
+      "Photo": 200113,
+      "Kind": 0,
+      "Tier": 5,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211113,
+      "MastMiddle": 2211413,
+      "MastBack": 2211713,
+      "Dyeable": true
     },
     {
-      "Model": 2011008, "Name": "IDName00004747", "Label": "Heavy Adventure Ship", "Photo": 200108, "Kind": 2,
-      "Price": 14000, "Level": 6, "Hull": 300, "Sail": 220, "Sailors": 80, "Cannons": 4, "CannonsMax": 7,
-      "Load": 260, "Speed": 1.2, "Turn": 12,
-      "MastFront": 2211208, "MastMiddle": 2211408, "MastBack": 2211708, "Dyeable": true
+      "Model": 2011017,
+      "Name": "IDName00004736",
+      "Label": "Light Freighter",
+      "Photo": 200117,
+      "Kind": 1,
+      "Tier": 1,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211117,
+      "MastMiddle": 2211417,
+      "MastBack": 2211117,
+      "Dyeable": true
     },
     {
-      "Model": 2011014, "Name": "IDName00004717", "Label": "Light Frigate", "Photo": 200114, "Kind": 0,
-      "Price": 20000, "Level": 8, "Hull": 380, "Sail": 200, "Sailors": 110, "Cannons": 6, "CannonsMax": 10,
-      "Load": 240, "Speed": 1.1, "Turn": 10,
-      "MastFront": 2211114, "MastMiddle": 2211414, "MastBack": 2211714, "Dyeable": true
+      "Model": 2011019,
+      "Name": "IDName00004737",
+      "Label": "Light Merchant Ship",
+      "Photo": 200119,
+      "Kind": 1,
+      "Tier": 2,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211119,
+      "MastMiddle": 2211419,
+      "MastBack": 2211719,
+      "Dyeable": true
     },
     {
-      "Model": 2011013, "Name": "IDName00004719", "Label": "Medium Armed Battleship", "Photo": 200113, "Kind": 0,
-      "Price": 45000, "Level": 12, "Hull": 600, "Sail": 260, "Sailors": 180, "Cannons": 10, "CannonsMax": 18,
-      "Load": 300, "Speed": 1.0, "Turn": 8,
-      "MastFront": 2211113, "MastMiddle": 2211413, "MastBack": 2211713, "Dyeable": true
+      "Model": 2011008,
+      "Name": "IDName00004725",
+      "Label": "Light Raiding Ship",
+      "Photo": 200108,
+      "Kind": 2,
+      "Tier": 1,
+      "Price": 0,
+      "Sold": false,
+      "MastFront": 2211208,
+      "MastMiddle": 2211408,
+      "MastBack": 2211708,
+      "Dyeable": true
     }
   ],
   "Dyes": [
-    { "Name": "1", "Value": 1, "Sail": false, "Label": "Hull colour 1", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
-    { "Name": "2", "Value": 2, "Sail": false, "Label": "Hull colour 2", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
-    { "Name": "3", "Value": 3, "Sail": false, "Label": "Hull colour 3", "Price": 300, "Item": "IDName00000918", "ItemCount": 1 },
-    { "Name": "2900001", "Value": 2900001, "Sail": true, "Label": "Blue strip sail", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
-    { "Name": "2900002", "Value": 2900002, "Sail": true, "Label": "Yellow sail with red grid", "Price": 200, "Item": "IDName00000921", "ItemCount": 1 },
-    { "Name": "2900003", "Value": 2900003, "Sail": true, "Label": "Blue strip sail with red cross", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
-    { "Name": "2900004", "Value": 2900004, "Sail": true, "Label": "Tri-coloured sail", "Price": 200, "Item": "IDName00000919", "ItemCount": 1 },
-    { "Name": "2900005", "Value": 2900005, "Sail": true, "Label": "Dual-coloured sail with blue strip", "Price": 200, "Item": "IDName00000916", "ItemCount": 1 },
-    { "Name": "2900006", "Value": 2900006, "Sail": true, "Label": "Dual-colour on red sail", "Price": 300, "Item": "IDName00000919", "ItemCount": 1 },
-    { "Name": "2900007", "Value": 2900007, "Sail": true, "Label": "Tri-colour on red sail", "Price": 300, "Item": "IDName00000919", "ItemCount": 1 },
-    { "Name": "2900008", "Value": 2900008, "Sail": true, "Label": "Faithful cross", "Price": 500, "Item": "IDName00000920", "ItemCount": 2 },
-    { "Name": "2900009", "Value": 2900009, "Sail": true, "Label": "Royal crown", "Price": 500, "Item": "IDName00000921", "ItemCount": 2 },
-    { "Name": "2900010", "Value": 2900010, "Sail": true, "Label": "Mighty dragon", "Price": 500, "Item": "IDName00000917", "ItemCount": 2 },
-    { "Name": "2920001", "Value": 2920001, "Sail": true, "Label": "Bleached sail", "Price": 150, "Item": "IDName00000920", "ItemCount": 1 },
-    { "Name": "2920003", "Value": 2920003, "Sail": true, "Label": "Black sail", "Price": 150, "Item": "IDName00000914", "ItemCount": 1 }
+    {
+      "Name": "1",
+      "Value": 1,
+      "Sail": false,
+      "Label": "Hull colour 1",
+      "Price": 300,
+      "Item": "IDName00000918",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2",
+      "Value": 2,
+      "Sail": false,
+      "Label": "Hull colour 2",
+      "Price": 300,
+      "Item": "IDName00000918",
+      "ItemCount": 1
+    },
+    {
+      "Name": "3",
+      "Value": 3,
+      "Sail": false,
+      "Label": "Hull colour 3",
+      "Price": 300,
+      "Item": "IDName00000918",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900001",
+      "Value": 2900001,
+      "Sail": true,
+      "Label": "Blue strip sail",
+      "Price": 200,
+      "Item": "IDName00000916",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900002",
+      "Value": 2900002,
+      "Sail": true,
+      "Label": "Yellow sail with red grid",
+      "Price": 200,
+      "Item": "IDName00000921",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900003",
+      "Value": 2900003,
+      "Sail": true,
+      "Label": "Blue strip sail with red cross",
+      "Price": 200,
+      "Item": "IDName00000916",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900004",
+      "Value": 2900004,
+      "Sail": true,
+      "Label": "Tri-coloured sail",
+      "Price": 200,
+      "Item": "IDName00000919",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900005",
+      "Value": 2900005,
+      "Sail": true,
+      "Label": "Dual-coloured sail with blue strip",
+      "Price": 200,
+      "Item": "IDName00000916",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900006",
+      "Value": 2900006,
+      "Sail": true,
+      "Label": "Dual-colour on red sail",
+      "Price": 300,
+      "Item": "IDName00000919",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900007",
+      "Value": 2900007,
+      "Sail": true,
+      "Label": "Tri-colour on red sail",
+      "Price": 300,
+      "Item": "IDName00000919",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2900008",
+      "Value": 2900008,
+      "Sail": true,
+      "Label": "Faithful cross",
+      "Price": 500,
+      "Item": "IDName00000920",
+      "ItemCount": 2
+    },
+    {
+      "Name": "2900009",
+      "Value": 2900009,
+      "Sail": true,
+      "Label": "Royal crown",
+      "Price": 500,
+      "Item": "IDName00000921",
+      "ItemCount": 2
+    },
+    {
+      "Name": "2900010",
+      "Value": 2900010,
+      "Sail": true,
+      "Label": "Mighty dragon",
+      "Price": 500,
+      "Item": "IDName00000917",
+      "ItemCount": 2
+    },
+    {
+      "Name": "2920001",
+      "Value": 2920001,
+      "Sail": true,
+      "Label": "Bleached sail",
+      "Price": 150,
+      "Item": "IDName00000920",
+      "ItemCount": 1
+    },
+    {
+      "Name": "2920003",
+      "Value": 2920003,
+      "Sail": true,
+      "Label": "Black sail",
+      "Price": 150,
+      "Item": "IDName00000914",
+      "ItemCount": 1
+    }
   ],
   "Supplies": [
-    { "Item": "IDName00000918", "Label": "Paint", "Photo": 190840, "Price": 120 },
-    { "Item": "IDName00000914", "Label": "Black dye", "Photo": 190834, "Price": 80 },
-    { "Item": "IDName00000916", "Label": "Blue dye", "Photo": 190838, "Price": 80 },
-    { "Item": "IDName00000917", "Label": "Green dye", "Photo": 190839, "Price": 80 },
-    { "Item": "IDName00000919", "Label": "Red dye", "Photo": 190835, "Price": 80 },
-    { "Item": "IDName00000920", "Label": "White dye", "Photo": 190837, "Price": 80 },
-    { "Item": "IDName00000921", "Label": "Yellow dye", "Photo": 190836, "Price": 80 },
-    { "Item": "IDName00003846", "Label": "Ship timber", "Photo": 190182, "Price": 60 },
-    { "Item": "IDName00003823", "Label": "Ship fittings (metal)", "Photo": 190150, "Price": 90 }
+    {
+      "Item": "IDName00000918",
+      "Label": "Paint",
+      "Photo": 190840,
+      "Price": 120
+    },
+    {
+      "Item": "IDName00000914",
+      "Label": "Black dye",
+      "Photo": 190834,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00000916",
+      "Label": "Blue dye",
+      "Photo": 190838,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00000917",
+      "Label": "Green dye",
+      "Photo": 190839,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00000919",
+      "Label": "Red dye",
+      "Photo": 190835,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00000920",
+      "Label": "White dye",
+      "Photo": 190837,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00000921",
+      "Label": "Yellow dye",
+      "Photo": 190836,
+      "Price": 80
+    },
+    {
+      "Item": "IDName00003846",
+      "Label": "Ship timber",
+      "Photo": 190182,
+      "Price": 60
+    },
+    {
+      "Item": "IDName00003823",
+      "Label": "Ship fittings (metal)",
+      "Photo": 190150,
+      "Price": 90
+    }
   ]
 }

@@ -94,8 +94,10 @@ public sealed class GuildStore
 
 public static class GuildDirectory
 {
-    public const int CreationFee = 500;
-    public const int MembersPerLevel = 50;
+    public static int CreationFee { get; private set; } = 100000;
+
+    public static int MembersPerLevel { get; private set; } = 20;
+
     public const int ApplicantLimit = 30;
     public const int DepartmentLimit = 5;
     public const int NameLength = 16;
@@ -105,6 +107,30 @@ public static class GuildDirectory
 
     private static List<Guild>? _guilds;
     private static string _path = "";
+
+    public static void Configure(ServerContext context)
+    {
+        CreationFee = context.Data.Rules.Guild.CreationFee;
+        MembersPerLevel = Math.Max(1, context.Data.Rules.Guild.MemberLimit);
+    }
+
+    public static string FoundingObstacle(ClientSession session)
+    {
+        Data.GuildRules rules = session.Context.Data.Rules.Guild;
+        Configure(session.Context);
+        if (session.Character.Skills.All(skill => skill.Level < rules.FounderSkillLevel)
+            && session.Character.LearnedSkills.Values.All(level => level < rules.FounderSkillLevel))
+            return $"To found a guild one of your skills must reach Level {rules.FounderSkillLevel}.";
+        if (session.Money < rules.CreationFee)
+            return $"Founding a guild costs {rules.CreationFee} silver coins. You carry only {session.Money}.";
+        if (!rules.RequireSupporters || rules.Supporters <= 0) return "";
+        List<ClientSession> supporters = session.Team == null
+            ? []
+            : session.Team.Members.Where(member => member != session && Of(session.Context, member.Name) == null).ToList();
+        if (session.Team == null || session.Team.Leader != session || supporters.Count < rules.Supporters)
+            return $"Form a team with {rules.Supporters} supporters who belong to no guild, and come to me as its leader.";
+        return "";
+    }
 
     public static bool Same(string left, string right) => left.Equals(right, StringComparison.OrdinalIgnoreCase);
 
@@ -117,6 +143,7 @@ public static class GuildDirectory
     public static void Enter(ClientSession session)
     {
         ServerContext context = session.Context;
+        Configure(context);
         Guild? guild = Of(context, session.Name);
         GuildMember? self = guild?.Member(session.Name);
         session.ApplyGuild(guild, self);
@@ -156,9 +183,10 @@ public static class GuildDirectory
             session.GuildSay(npc, $"You already belong to the guild {guild.Name}.");
             return;
         }
-        if (session.Money < CreationFee)
+        string obstacle = FoundingObstacle(session);
+        if (obstacle.Length > 0)
         {
-            session.GuildSay(npc, $"Founding a guild costs {CreationFee} gold. You carry only {session.Money}.");
+            session.GuildSay(npc, obstacle);
             return;
         }
         session.GuildFounding = true;
@@ -189,9 +217,10 @@ public static class GuildDirectory
             session.SystemMessage($"A guild named {name} already exists.");
             return;
         }
-        if (session.Money < CreationFee)
+        string obstacle = FoundingObstacle(session);
+        if (obstacle.Length > 0)
         {
-            session.SystemMessage($"Founding a guild costs {CreationFee} gold.");
+            session.SystemMessage(obstacle);
             return;
         }
 
@@ -214,7 +243,7 @@ public static class GuildDirectory
         session.Save();
         SendAll(session, guild);
         PublishRelations(context, guild);
-        session.SystemMessage($"You founded the guild {guild.Name} for {CreationFee} gold.");
+        session.SystemMessage($"You founded the guild {guild.Name} for {CreationFee} silver coins.");
         Log.Info(session.Tag, $"{session.Name} founds the guild {guild.Name}");
     }
 

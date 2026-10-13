@@ -22,6 +22,9 @@ public sealed class QuestDefinition
     public int Count { get; set; } = 1;
     public int Gold { get; set; }
     public int Experience { get; set; }
+    public string Skill { get; set; } = "";
+    public int Reputation { get; set; }
+    public int Amity { get; set; }
     public string Offer { get; set; } = "Will you help me?";
     public string Done { get; set; } = "Thank you.";
 

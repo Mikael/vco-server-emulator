@@ -30,6 +30,9 @@ public sealed class PetRecord
 public sealed partial class CharacterRecord
 {
     public Dictionary<string, int> LearnedSkills { get; set; } = [];
+    public Dictionary<string, int> SkillExperience { get; set; } = [];
+    public Dictionary<int, ItemStack> Warehouse { get; set; } = [];
+    public int GamePoints { get; set; }
     public SortedSet<string> AdvancedSkills { get; set; } = [];
     public List<UniqueSkillEntry> UniqueSkills { get; set; } = [];
     public List<QuestProgress> Quests { get; set; } = [];

@@ -108,6 +108,10 @@ public enum DialogueAction
     Pet = 9,
     Mail = 10,
     Collect = 11,
+    Warehouse = 12,
+    WarehouseExpand = 13,
+    Nobility = 14,
+    NobilityApply = 15,
     Guild = 200,
 }
 
@@ -128,9 +132,10 @@ public static class ViewId
     public const int TradeGoods = 21;
     public const int ShopMaterial = 23;
     public const int Provision = 24;
-    public const int Bank = 30;
+    public const int Warehouse = 26;
+    public const int KeepingBox = 30;
 
-    public const int BagSlots = 30;
+    public const int BagSlots = 18;
     public const int EquippedSlots = 8;
     public const int ShopSlots = 18;
 }

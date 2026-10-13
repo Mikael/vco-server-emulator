@@ -14,7 +14,7 @@ public sealed partial class ClientSession
     [
         "Name", "Model", "ActionSet", "CollideRadius", "Face", "BodyType", "Hair", "HairColor",
         "TexColor", "Hat", "CapColor", "LeftHand", "RightHand", "HP", "MaxHP", "Level", "Title", "RatioHP", "RatioSP",
-        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag",
+        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit",
     ];
 
     private static readonly string[] PrivateShipProperties = ["Money", "Load", "LoadMax", "VisualRange"];
@@ -33,13 +33,16 @@ public sealed partial class ClientSession
         if (character.Skills.Count == 0)
         {
             for (int i = 0; i < Context.Data.Creation.Skills.Count; i++)
-                character.Skills.Add(new SkillEntry { Id = i, Level = 1 });
+            {
+                if (Context.Data.Rules.Skills.InitialSkills.Contains(Context.Data.Creation.Skills[i]))
+                    character.Skills.Add(new SkillEntry { Id = i, Level = 1 });
+            }
         }
         EnsureInventory();
-        foreach (string crafting in new[] { "SKILL_ALCHEMY", "SKILL_FOUNDRY", "SKILL_SEWING", "SKILL_SHIPBUILDING" })
-            character.LearnedSkills.TryAdd(crafting, 1);
+        MigrateSkills();
 
         Hp = MaxHp = 100;
+        Sp = MaxSp = 100;
         Properties = new PropertyBag
         {
             ["Name"] = character.Name,
@@ -67,13 +70,13 @@ public sealed partial class ClientSession
             ["MaxHP"] = MaxHp,
             ["SP"] = 100,
             ["MaxSP"] = 100,
-            ["Level"] = character.Level,
+            ["Level"] = 1,
             ["Dead"] = 0,
             ["AT"] = 15,
             ["DF"] = 8,
             ["HitRatio"] = 80,
             ["DodgeRatio"] = 10,
-            ["Rank"] = 0,
+            ["Rank"] = character.Rank,
             ["CountryName"] = "Greece",
             ["TeamNum"] = 0,
             ["EnableExchange"] = 1,
@@ -84,11 +87,11 @@ public sealed partial class ClientSession
             ["RatioHP"] = 100,
             ["RatioSP"] = 100,
             ["NumSailor"] = character.Sailors,
-            ["NumSailorBad"] = 0,
+            ["NumSailorBad"] = character.SailorsWounded,
             ["SupplySum"] = 100,
             ["SupplyDay"] = 10,
             ["SupplyCost"] = 1,
-            ["Credit"] = 0,
+            ["Credit"] = character.Reputation,
             ["Notoriety"] = 0,
             ["PosX"] = WorldSettings.StartX,
             ["PosY"] = WorldSettings.StartY,
@@ -97,9 +100,14 @@ public sealed partial class ClientSession
         };
         if (character.Title.Length > 0) Properties["Title"] = character.Title;
 
-        ApplyLevel();
+        ComputeStats();
         Hp = MaxHp;
+        Sp = MaxSp;
         Properties["HP"] = Hp;
+        Properties["SP"] = Sp;
+        Properties["RatioSP"] = 100;
+        if (PropertyTable.Has("FightSkill")) Properties["FightSkill"] = FightingSkill();
+        if (PropertyTable.Has("BankMoney")) Properties["BankMoney"] = character.Bank;
 
         Send(LoginPackets.PropertyTableDefinition(), "(property table)");
         Send(LoginPackets.OwnProperties(Properties), "(own properties)");
@@ -114,6 +122,7 @@ public sealed partial class ClientSession
         EnterScene(scene, position);
         EnterWorldSocial();
         EnterWorldGuild();
+        AnnounceOverflow();
         Log.Info(Tag, $"{Name} entered the world in scene {scene}{(persistent ? "" : " (not saved)")}");
     }
 
@@ -123,6 +132,7 @@ public sealed partial class ClientSession
         _shop.Clear();
         CloseShipyard();
         CloseFleetViews();
+        ResetSceneState();
         if (InWorld) LeaveScene();
 
         Scene = scene;
@@ -141,9 +151,9 @@ public sealed partial class ClientSession
         }
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, at.X, at.Y, at.Z), "(place player)");
         Send(ScenePackets.ShowObject(ProtocolConstants.SelfObjectId), "(show player)");
-        Send(ScenePackets.SceneState(WorldSettings.Hour, WorldSettings.Weather), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather), "(time, weather, wind)");
 
-        Mover = new Mover(at.X, at.Z, AtSea ? ShipSpeed : WorldSettings.RunSpeed);
+        Mover = new Mover(at.X, at.Z, AtSea ? ShipSpeed : WorldSettings.RunSpeed, 0, AtSea ? ShipTurnRate : 0);
         Height = at.Y;
 
         foreach (NpcDefinition npc in Context.Data.Npcs.Values.Where(npc => npc.Scene == scene))
@@ -177,9 +187,16 @@ public sealed partial class ClientSession
         GuildDirectory.Refresh(this);
         ShowPet();
         SendSeaObjects();
+        RefreshLoad();
+        RefreshSupplies();
     }
 
-    public float ShipSpeed => MathF.Max(0.5f, WorldSettings.ShipSpeed * FleetSpeedFactor * Sail);
+    public float ShipSpeed => CombatRules.ShipSpeed(Sea.Data.Rules, WorldSettings.ShipSpeed, ActiveShipType.Triangular + ActiveShipType.Square,
+        EffectiveSail, ShipSail, FleetSailMax, Character.Sailors, FleetSailorsMax, ShipLoad, ShipLoadMax, SeaStanceSpeedFactor);
+
+    public int ShipTurnRate => CombatRules.TurnRate(Sea.Data.Rules, ActiveShipType.Turning, ShipHull, ShipHullMax);
+
+    public int SceneType => !AtSea ? 0 : Scene / 1000 == 1000 ? 2 : 1;
 
     public void LeaveScene()
     {
@@ -197,6 +214,12 @@ public sealed partial class ClientSession
 
     public void SailOff()
     {
+        if (SceneLocked()) return;
+        if (!AtSea)
+        {
+            if (!ReadyToSail()) return;
+            Character.LastPort = Scene;
+        }
         if (SailByLink()) return;
         int target = Scene / 1000 * 1000 + (AtSea ? 1 : 3);
         ForceLand = false;
@@ -226,34 +249,43 @@ public sealed partial class ClientSession
             other.Send(ScenePackets.ObjectProperties(ObjectId, PublicBag()), $"(player {Name} props)");
         }
         other.Send(ScenePackets.PlaceObject(ObjectId, x, Height, z, Mover.DestinationX, Mover.DestinationZ, Mover.Speed,
-            AtSea ? 0 : ProtocolConstants.RunAction, Mover.Heading, Mover.Heading), $"(player {Name} position)");
+            AtSea ? 0 : ProtocolConstants.RunAction, Mover.HeadingNow(), Mover.Heading, Mover.TurnRate), $"(player {Name} position)");
         other.Send(ScenePackets.ShowObject(ObjectId), $"(player {Name} visible)");
     }
 
     public void MoveTo(float x, float z)
     {
         if (Mover == null) return;
-        float speed = AtSea ? ShipSpeed : Walking ? ProtocolConstants.WalkSpeed : WorldSettings.RunSpeed;
-        int action = AtSea ? 0 : Walking ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction;
-        Mover.Speed = speed;
-        int previous = Mover.Heading;
+        bool walking = Walking || Overloaded;
+        float speed = AtSea ? ShipSpeed : walking ? ProtocolConstants.WalkSpeed : WorldSettings.RunSpeed;
+        int action = AtSea ? 0 : walking ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction;
+        int course = Mover.Heading;
+        int previous = Mover.HeadingNow();
         (float fromX, float fromZ) = Mover.MoveTo(x, z);
+        if (OnCourseChanged(course, Mover.Heading)) speed = ShipSpeed;
+        Mover.Speed = speed;
+        Mover.TurnRate = AtSea ? ShipTurnRate : 0;
         Log.Debug(Tag, $"MOVE ({fromX:F1}, {fromZ:F1}) -> ({x:F1}, {z:F1})");
         int heading = Mover.Heading;
-        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading), "(move)");
-        ToOthers(ScenePackets.PlaceObject(ObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading), $"({Name} moves)");
+        int turn = Mover.TurnRate;
+        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading, turn), "(move)");
+        ToOthers(ScenePackets.PlaceObject(ObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading, turn), $"({Name} moves)");
     }
 
     public void TeleportTo(float x, float z)
     {
         if (Mover == null) return;
-        int heading = Mover.Heading;
-        Mover = new Mover(x, z, Mover.Speed);
+        int heading = Mover.HeadingNow();
+        Mover = new Mover(x, z, Mover.Speed, heading, Mover.TurnRate);
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, orient: heading), "(teleport)");
         ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: heading), $"({Name} teleports)");
     }
 
     public bool Walking { get; private set; }
+
+    public bool Overloaded
+        => Convert.ToSingle(Properties.GetValueOrDefault("Load", 0f)) * 100f
+            > Convert.ToSingle(Properties.GetValueOrDefault("LoadMax", 100f)) * Context.Data.Rules.Character.RunLoadPercent;
 
     public void SetWalking(bool walking)
     {
@@ -269,8 +301,8 @@ public sealed partial class ClientSession
         float dx = x - nowX;
         float dz = z - nowZ;
         if (dx * dx + dz * dz > 60f * 60f) (x, z) = (nowX, nowZ);
-        int heading = Mover.Heading;
-        Mover = new Mover(x, z, Mover.Speed);
+        int heading = Mover.HeadingNow();
+        Mover = new Mover(x, z, Mover.Speed, heading, Mover.TurnRate);
         ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: heading), $"({Name} stops)");
     }
 
@@ -279,24 +311,45 @@ public sealed partial class ClientSession
         if (Mover == null) return;
         (float x, float z) = Mover.Now();
         Mover.MoveTo(x, z);
-        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, orient: Mover.Heading), note);
-        ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: Mover.Heading), note);
+        int facing = Mover.HeadingNow();
+        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, orient: facing), note);
+        ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: facing), note);
         Send(ScenePackets.PlayAction(ProtocolConstants.SelfObjectId, action, attack), note);
         ToOthers(ScenePackets.PlayAction(ObjectId, action, attack), note);
     }
 
+    public const float SailLowest = 0.3f;
+    public const float SailStep = 0.0875f;
+    public const int SailLevels = 8;
+
+    public static float SailFraction(float requested)
+    {
+        int level = (int)MathF.Round((Math.Clamp(requested, SailLowest, 1f) - SailLowest) / SailStep);
+        return MathF.Min(1f, SailLowest + Math.Clamp(level, 0, SailLevels) * SailStep);
+    }
+
     public void SetSail(float fraction)
     {
-        Sail = Math.Clamp(fraction, 0f, 1f);
+        Sail = SailFraction(fraction);
+        if (!AtSea || Mover == null) return;
+        SetProperty("ShipSpeedAdj", EffectiveSail);
+        ReissueShipMove("sail change");
+    }
+
+    public void ReissueShipMove(string what)
+    {
         if (!AtSea || Mover == null) return;
         float destinationX = Mover.DestinationX;
         float destinationZ = Mover.DestinationZ;
-        Mover.Speed = ShipSpeed;
-        SetProperty("ShipSpeedAdj", Sail);
+        float speed = ShipSpeed;
+        int previous = Mover.HeadingNow();
         (float x, float z) = Mover.MoveTo(destinationX, destinationZ);
+        Mover.Speed = speed;
+        Mover.TurnRate = ShipTurnRate;
         int heading = Mover.Heading;
-        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, destinationX, destinationZ, ShipSpeed, 0, heading, heading), "(sail change)");
-        ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, destinationX, destinationZ, ShipSpeed, 0, heading, heading), $"({Name} sail change)");
+        int turn = Mover.TurnRate;
+        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({what})");
+        ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({Name} {what})");
     }
 
     public void SetProperty(string name, object value, bool visibleToOthers = false)
@@ -320,9 +373,9 @@ public sealed partial class ClientSession
             ["MaxHP"] = monster.Hp,
             ["RatioHP"] = 100 * Context.World.Monster(monster).Hp / Math.Max(1, monster.Hp),
             ["RatioSP"] = 100,
-            ["Level"] = 1,
+            ["Level"] = monster.Level,
         }), note);
-        Send(ScenePackets.PlaceObject(monster.Id, monster.X, monster.Y, monster.Z), note);
+        Send(ScenePackets.PlaceObject(monster.Id, Context.World.Monster(monster).X, monster.Y, Context.World.Monster(monster).Z), note);
         Send(ScenePackets.ShowObject(monster.Id), note);
     }
 
@@ -365,13 +418,13 @@ public sealed partial class ClientSession
             ["AutoDrive"] = Properties.Int("AutoDrive", 0),
             ["RatioSailHP"] = 100,
             ["RatioShipHP"] = 100,
-            ["RatioSailorHP"] = 100,
+            ["RatioSailorHP"] = SailorRatio,
             ["RatioHP"] = 100,
-            ["ShipSpeedAdj"] = Sail,
+            ["ShipSpeedAdj"] = EffectiveSail,
             ["S/Name"] = $"{Name}'s ship",
             ["SailState"] = 0,
             ["Bumping"] = 0,
-            ["MarineStrategy"] = 0,
+            ["MarineStrategy"] = SeaStance,
             ["S/ModelCannonL"] = 0,
             ["S/ModelCannonR"] = 0,
             ["S/NumCannonL"] = 0,

@@ -1,197 +1,842 @@
 [
-  {"Name": "Name", "Type": "String"},
-  {"Name": "NameShow", "Type": "String"},
-  {"Name": "ConsName", "Type": "String"},
-  {"Name": "Money", "Type": "U32"},
-  {"Name": "Flag", "Type": "U32"},
-  {"Name": "TotalIntegral", "Type": "U32"},
-  {"Name": "Load", "Type": "Float"},
-  {"Name": "LoadMax", "Type": "Float"},
-  {"Name": "VisualRange", "Type": "Float"},
-  {"Name": "WindOrient", "Type": "Float"},
-  {"Name": "SelectState", "Type": "U8"},
-  {"Name": "StallBuyMax", "Type": "U8"},
-  {"Name": "StallSellMax", "Type": "U8"},
-  {"Name": "TeamOceanMode", "Type": "U8"},
-  {"Name": "Model", "Type": "U32"},
-  {"Name": "ActionSet", "Type": "U32"},
-  {"Name": "CollideRadius", "Type": "Float"},
-  {"Name": "IsRun", "Type": "U32"},
-  {"Name": "GameMaster", "Type": "U32"},
-  {"Name": "WeaponEffect", "Type": "U32"},
-  {"Name": "Face", "Type": "U32"},
-  {"Name": "BodyType", "Type": "U32"},
-  {"Name": "Hair", "Type": "U32"},
-  {"Name": "HairColor", "Type": "U32"},
-  {"Name": "TexColor", "Type": "U32"},
-  {"Name": "Hat", "Type": "U32"},
-  {"Name": "CapColor", "Type": "U32"},
-  {"Name": "LeftHand", "Type": "U32"},
-  {"Name": "RightHand", "Type": "U32"},
-  {"Name": "ArmToxicLevel", "Type": "U32"},
-  {"Name": "HP", "Type": "U32"},
-  {"Name": "MaxHP", "Type": "U32"},
-  {"Name": "SP", "Type": "U32"},
-  {"Name": "MaxSP", "Type": "U32"},
-  {"Name": "Level", "Type": "U32"},
-  {"Name": "Dead", "Type": "U8"},
-  {"Name": "PosX", "Type": "Float"},
-  {"Name": "PosY", "Type": "Float"},
-  {"Name": "PosZ", "Type": "Float"},
-  {"Name": "Orient", "Type": "Float"},
-  {"Name": "Country", "Type": "U32"},
-  {"Name": "Title", "Type": "String"},
-  {"Name": "Notoriety", "Type": "U32"},
-  {"Name": "Credit", "Type": "U32"},
-  {"Name": "LandModel", "Type": "U32"},
-  {"Name": "ShipModel", "Type": "U32"},
-  {"Name": "BankMoney", "Type": "U32"},
-  {"Name": "AT", "Type": "U32"},
-  {"Name": "DF", "Type": "U32"},
-  {"Name": "HitRatio", "Type": "U32"},
-  {"Name": "DodgeRatio", "Type": "U32"},
-  {"Name": "CountryName", "Type": "String"},
-  {"Name": "Rank", "Type": "U32"},
-  {"Name": "S/ModelCannonL", "Type": "U32"},
-  {"Name": "S/ModelCannonR", "Type": "U32"},
-  {"Name": "S/NumCannonL", "Type": "U32"},
-  {"Name": "S/NumCannonR", "Type": "U32"},
-  {"Name": "S/SailTex", "Type": "U32"},
-  {"Name": "S/Flag", "Type": "U32"},
-  {"Name": "S/ArmArmor", "Type": "U32"},
-  {"Name": "AutoDrive", "Type": "U32"},
-  {"Name": "RatioSailHP", "Type": "U32"},
-  {"Name": "S/RandSeed", "Type": "U32"},
-  {"Name": "MarineStrategy", "Type": "U32"},
-  {"Name": "S/FishNet", "Type": "U32"},
-  {"Name": "S/ShipDamage", "Type": "U32"},
-  {"Name": "SailState", "Type": "U32"},
-  {"Name": "Bumping", "Type": "U32"},
-  {"Name": "S/Level", "Type": "U32"},
-  {"Name": "S/MastFront", "Type": "U32"},
-  {"Name": "S/MastMiddle", "Type": "U32"},
-  {"Name": "S/MastBack", "Type": "U32"},
-  {"Name": "HaveConsTask", "Type": "U32"},
-  {"Name": "SDamageReduce", "Type": "U32"},
-  {"Name": "SDamageAdd", "Type": "U32"},
-  {"Name": "FireAnchor", "Type": "U32"},
-  {"Name": "RotSpeedAdd", "Type": "U32"},
-  {"Name": "S/Name", "Type": "String"},
-  {"Name": "Index", "Type": "U32"},
-  {"Name": "Kind", "Type": "U32"},
-  {"Name": "ItemType", "Type": "U32"},
-  {"Name": "Amount", "Type": "U32"},
-  {"Name": "Photo", "Type": "U32"},
-  {"Name": "Count", "Type": "U32"},
-  {"Name": "Cost", "Type": "U32"},
-  {"Name": "Quality", "Type": "U32"},
-  {"Name": "Type", "Type": "U32"},
-  {"Name": "Hour", "Type": "U8"},
-  {"Name": "WeatherType", "Type": "U8"},
-  {"Name": "WindLevel", "Type": "Float"},
-  {"Name": "StreamOrient", "Type": "Float"},
-  {"Name": "RatioShipHP", "Type": "U8"},
-  {"Name": "RatioSailorHP", "Type": "U8"},
-  {"Name": "RatioHP", "Type": "U8"},
-  {"Name": "ShipSpeedAdj", "Type": "Float"},
-  {"Name": "S/HP", "Type": "U32"},
-  {"Name": "S/MaxHP", "Type": "U32"},
-  {"Name": "S/SailHP", "Type": "U32"},
-  {"Name": "S/MaxSailHP", "Type": "U32"},
-  {"Name": "NumSailor", "Type": "U32"},
-  {"Name": "NumSailorMax", "Type": "U32"},
-  {"Name": "NumSailorBad", "Type": "U32"},
-  {"Name": "CabinCannonMax", "Type": "U32"},
-  {"Name": "S/BumpPower", "Type": "U32"},
-  {"Name": "S/SailDrive", "Type": "U32"},
-  {"Name": "S/Sail1Drive", "Type": "U32"},
-  {"Name": "S/OarDrive", "Type": "U32"},
-  {"Name": "S/LoadMax", "Type": "U32"},
-  {"Name": "S/Load", "Type": "U32"},
-  {"Name": "S/RotSpeed", "Type": "U32"},
-  {"Name": "LevelMove", "Type": "U32"},
-  {"Name": "LevelFight", "Type": "U32"},
-  {"Name": "LevelLoad", "Type": "U32"},
-  {"Name": "ExpMove", "Type": "U32"},
-  {"Name": "ExpFight", "Type": "U32"},
-  {"Name": "ExpLoad", "Type": "U32"},
-  {"Name": "ExpMaxMove", "Type": "U32"},
-  {"Name": "ExpMaxFight", "Type": "U32"},
-  {"Name": "ExpMaxLoad", "Type": "U32"},
-  {"Name": "SupplySum", "Type": "U32"},
-  {"Name": "SupplyDay", "Type": "U32"},
-  {"Name": "SupplyCost", "Type": "U32"},
-  {"Name": "Year", "Type": "U32"},
-  {"Name": "Month", "Type": "U32"},
-  {"Name": "Day", "Type": "U32"},
-  {"Name": "ShowPrice", "Type": "U32"},
-  {"Name": "Weight", "Type": "U32"},
-  {"Name": "ItemSrcVID", "Type": "U32"},
-  {"Name": "TeamNum", "Type": "U32"},
-  {"Name": "ShortcutPage", "Type": "U32"},
-  {"Name": "RatioSP", "Type": "U8"},
-  {"Name": "FightSkill", "Type": "String"},
-  {"Name": "PetTypeDesc", "Type": "String"},
-  {"Name": "StallInfo", "Type": "String"},
-  {"Name": "SeeRw_ListNum", "Type": "U32"},
-  {"Name": "SeeMemoryNum", "Type": "U32"},
-  {"Name": "NoviceTask", "Type": "U32"},
-  {"Name": "NowExp", "Type": "U32"},
-  {"Name": "UpgradeExp", "Type": "U32"},
-  {"Name": "gorge", "Type": "U32"},
-  {"Name": "health", "Type": "U32"},
-  {"Name": "appetency", "Type": "U32"},
-  {"Name": "fealty", "Type": "U32"},
-  {"Name": "PetCurLoad", "Type": "U32"},
-  {"Name": "life", "Type": "U32"},
-  {"Name": "ExistTime", "Type": "U32"},
-  {"Name": "PetLevel", "Type": "U32"},
-  {"Name": "AmountStall", "Type": "U32"},
-  {"Name": "RepairPrice", "Type": "U32"},
-  {"Name": "PaperType", "Type": "U32"},
-  {"Name": "MaxLen", "Type": "U32"},
-  {"Name": "IsReady", "Type": "U8"},
-  {"Name": "IsOk", "Type": "U8"},
-  {"Name": "EnableExchange", "Type": "U8"},
-  {"Name": "EnableTeam", "Type": "U8"},
-  {"Name": "GoodsType", "Type": "String"},
-  {"Name": "NeedSkill", "Type": "String"},
-  {"Name": "ShipType", "Type": "String"},
-  {"Name": "PortCity", "Type": "String"},
-  {"Name": "FireAngle", "Type": "Float"},
-  {"Name": "Flight", "Type": "Float"},
-  {"Name": "AmmoIndexL", "Type": "U32"},
-  {"Name": "AmmoIndexR", "Type": "U32"},
-  {"Name": "DFG", "Type": "U32"},
-  {"Name": "DFGMax", "Type": "U32"},
-  {"Name": "CoolingKind", "Type": "U32"},
-  {"Name": "ShipArmType", "Type": "U32"},
-  {"Name": "ShotTime", "Type": "U32"},
-  {"Name": "AddAT", "Type": "U32"},
-  {"Name": "AddDF", "Type": "U32"},
-  {"Name": "AddHitRatio", "Type": "U32"},
-  {"Name": "AddDodgeRatio", "Type": "U32"},
-  {"Name": "AddMaxHP", "Type": "U32"},
-  {"Name": "AddMaxSP", "Type": "U32"},
-  {"Name": "NeedSkillLevel", "Type": "U32"},
-  {"Name": "UseCount", "Type": "U32"},
-  {"Name": "LeftTime", "Type": "U32"},
-  {"Name": "DamageShip", "Type": "U32"},
-  {"Name": "DamageSailor", "Type": "U32"},
-  {"Name": "DamageSail", "Type": "U32"},
-  {"Name": "NeedShipLevel", "Type": "U32"},
-  {"Name": "Pierage", "Type": "U32"},
-  {"Name": "ConsFlag", "Type": "U32"},
-  {"Name": "ConsDuty", "Type": "U32"},
-  {"Name": "S/Photo", "Type": "U32"},
-  {"Name": "S/Color", "Type": "U32"},
-  {"Name": "ShipKind", "Type": "U32"},
-  {"Name": "ShipRebuildCost", "Type": "U32"},
-  {"Name": "ConsDept", "Type": "String"},
-  {"Name": "ShipRebuildRes", "Type": "String"},
-  {"Name": "DFGAlert", "Type": "U8"},
-  {"Name": "X", "Type": "Float"},
-  {"Name": "Y", "Type": "Float"},
-  {"Name": "Z", "Type": "Float"},
-  {"Name": "ModelID", "Type": "U32"}
+  {
+    "Name": "Name",
+    "Type": "String"
+  },
+  {
+    "Name": "NameShow",
+    "Type": "String"
+  },
+  {
+    "Name": "ConsName",
+    "Type": "String"
+  },
+  {
+    "Name": "Money",
+    "Type": "U32"
+  },
+  {
+    "Name": "Flag",
+    "Type": "U32"
+  },
+  {
+    "Name": "TotalIntegral",
+    "Type": "U32"
+  },
+  {
+    "Name": "Load",
+    "Type": "Float"
+  },
+  {
+    "Name": "LoadMax",
+    "Type": "Float"
+  },
+  {
+    "Name": "VisualRange",
+    "Type": "Float"
+  },
+  {
+    "Name": "WindOrient",
+    "Type": "Float"
+  },
+  {
+    "Name": "SelectState",
+    "Type": "U8"
+  },
+  {
+    "Name": "StallBuyMax",
+    "Type": "U8"
+  },
+  {
+    "Name": "StallSellMax",
+    "Type": "U8"
+  },
+  {
+    "Name": "TeamOceanMode",
+    "Type": "U8"
+  },
+  {
+    "Name": "Model",
+    "Type": "U32"
+  },
+  {
+    "Name": "ActionSet",
+    "Type": "U32"
+  },
+  {
+    "Name": "CollideRadius",
+    "Type": "Float"
+  },
+  {
+    "Name": "IsRun",
+    "Type": "U32"
+  },
+  {
+    "Name": "GameMaster",
+    "Type": "U32"
+  },
+  {
+    "Name": "WeaponEffect",
+    "Type": "U32"
+  },
+  {
+    "Name": "Face",
+    "Type": "U32"
+  },
+  {
+    "Name": "BodyType",
+    "Type": "U32"
+  },
+  {
+    "Name": "Hair",
+    "Type": "U32"
+  },
+  {
+    "Name": "HairColor",
+    "Type": "U32"
+  },
+  {
+    "Name": "TexColor",
+    "Type": "U32"
+  },
+  {
+    "Name": "Hat",
+    "Type": "U32"
+  },
+  {
+    "Name": "CapColor",
+    "Type": "U32"
+  },
+  {
+    "Name": "LeftHand",
+    "Type": "U32"
+  },
+  {
+    "Name": "RightHand",
+    "Type": "U32"
+  },
+  {
+    "Name": "ArmToxicLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "HP",
+    "Type": "U32"
+  },
+  {
+    "Name": "MaxHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "SP",
+    "Type": "U32"
+  },
+  {
+    "Name": "MaxSP",
+    "Type": "U32"
+  },
+  {
+    "Name": "Level",
+    "Type": "U32"
+  },
+  {
+    "Name": "Dead",
+    "Type": "U8"
+  },
+  {
+    "Name": "PosX",
+    "Type": "Float"
+  },
+  {
+    "Name": "PosY",
+    "Type": "Float"
+  },
+  {
+    "Name": "PosZ",
+    "Type": "Float"
+  },
+  {
+    "Name": "Orient",
+    "Type": "Float"
+  },
+  {
+    "Name": "Country",
+    "Type": "U32"
+  },
+  {
+    "Name": "Title",
+    "Type": "String"
+  },
+  {
+    "Name": "Notoriety",
+    "Type": "U32"
+  },
+  {
+    "Name": "Credit",
+    "Type": "U32"
+  },
+  {
+    "Name": "LandModel",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShipModel",
+    "Type": "U32"
+  },
+  {
+    "Name": "BankMoney",
+    "Type": "U32"
+  },
+  {
+    "Name": "AT",
+    "Type": "U32"
+  },
+  {
+    "Name": "DF",
+    "Type": "U32"
+  },
+  {
+    "Name": "HitRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "DodgeRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "CountryName",
+    "Type": "String"
+  },
+  {
+    "Name": "Rank",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/ModelCannonL",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/ModelCannonR",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/NumCannonL",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/NumCannonR",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/SailTex",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Flag",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/ArmArmor",
+    "Type": "U32"
+  },
+  {
+    "Name": "AutoDrive",
+    "Type": "U32"
+  },
+  {
+    "Name": "RatioSailHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/RandSeed",
+    "Type": "U32"
+  },
+  {
+    "Name": "MarineStrategy",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/FishNet",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/ShipDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "SailState",
+    "Type": "U32"
+  },
+  {
+    "Name": "Bumping",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Level",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/MastFront",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/MastMiddle",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/MastBack",
+    "Type": "U32"
+  },
+  {
+    "Name": "HaveConsTask",
+    "Type": "U32"
+  },
+  {
+    "Name": "SDamageReduce",
+    "Type": "U32"
+  },
+  {
+    "Name": "SDamageAdd",
+    "Type": "U32"
+  },
+  {
+    "Name": "FireAnchor",
+    "Type": "U32"
+  },
+  {
+    "Name": "RotSpeedAdd",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Name",
+    "Type": "String"
+  },
+  {
+    "Name": "Index",
+    "Type": "U32"
+  },
+  {
+    "Name": "Kind",
+    "Type": "U32"
+  },
+  {
+    "Name": "ItemType",
+    "Type": "U32"
+  },
+  {
+    "Name": "Amount",
+    "Type": "U32"
+  },
+  {
+    "Name": "Photo",
+    "Type": "U32"
+  },
+  {
+    "Name": "Count",
+    "Type": "U32"
+  },
+  {
+    "Name": "Cost",
+    "Type": "U32"
+  },
+  {
+    "Name": "Quality",
+    "Type": "U32"
+  },
+  {
+    "Name": "Type",
+    "Type": "U32"
+  },
+  {
+    "Name": "Hour",
+    "Type": "U8"
+  },
+  {
+    "Name": "WeatherType",
+    "Type": "U8"
+  },
+  {
+    "Name": "WindLevel",
+    "Type": "Float"
+  },
+  {
+    "Name": "StreamOrient",
+    "Type": "Float"
+  },
+  {
+    "Name": "RatioShipHP",
+    "Type": "U8"
+  },
+  {
+    "Name": "RatioSailorHP",
+    "Type": "U8"
+  },
+  {
+    "Name": "RatioHP",
+    "Type": "U8"
+  },
+  {
+    "Name": "ShipSpeedAdj",
+    "Type": "Float"
+  },
+  {
+    "Name": "S/HP",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/MaxHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/SailHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/MaxSailHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "NumSailor",
+    "Type": "U32"
+  },
+  {
+    "Name": "NumSailorMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "NumSailorBad",
+    "Type": "U32"
+  },
+  {
+    "Name": "CabinCannonMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/BumpPower",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/SailDrive",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Sail1Drive",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/OarDrive",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/LoadMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Load",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/RotSpeed",
+    "Type": "U32"
+  },
+  {
+    "Name": "LevelMove",
+    "Type": "U32"
+  },
+  {
+    "Name": "LevelFight",
+    "Type": "U32"
+  },
+  {
+    "Name": "LevelLoad",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpMove",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpFight",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpLoad",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpMaxMove",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpMaxFight",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExpMaxLoad",
+    "Type": "U32"
+  },
+  {
+    "Name": "SupplySum",
+    "Type": "U32"
+  },
+  {
+    "Name": "SupplyDay",
+    "Type": "U32"
+  },
+  {
+    "Name": "SupplyCost",
+    "Type": "U32"
+  },
+  {
+    "Name": "Year",
+    "Type": "U32"
+  },
+  {
+    "Name": "Month",
+    "Type": "U32"
+  },
+  {
+    "Name": "Day",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShowPrice",
+    "Type": "U32"
+  },
+  {
+    "Name": "Weight",
+    "Type": "U32"
+  },
+  {
+    "Name": "ItemSrcVID",
+    "Type": "U32"
+  },
+  {
+    "Name": "TeamNum",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShortcutPage",
+    "Type": "U32"
+  },
+  {
+    "Name": "RatioSP",
+    "Type": "U8"
+  },
+  {
+    "Name": "FightSkill",
+    "Type": "String"
+  },
+  {
+    "Name": "PetTypeDesc",
+    "Type": "String"
+  },
+  {
+    "Name": "StallInfo",
+    "Type": "String"
+  },
+  {
+    "Name": "SeeRw_ListNum",
+    "Type": "U32"
+  },
+  {
+    "Name": "SeeMemoryNum",
+    "Type": "U32"
+  },
+  {
+    "Name": "NoviceTask",
+    "Type": "U32"
+  },
+  {
+    "Name": "NowExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "UpgradeExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "gorge",
+    "Type": "U32"
+  },
+  {
+    "Name": "health",
+    "Type": "U32"
+  },
+  {
+    "Name": "appetency",
+    "Type": "U32"
+  },
+  {
+    "Name": "fealty",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetCurLoad",
+    "Type": "U32"
+  },
+  {
+    "Name": "life",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExistTime",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "AmountStall",
+    "Type": "U32"
+  },
+  {
+    "Name": "RepairPrice",
+    "Type": "U32"
+  },
+  {
+    "Name": "PaperType",
+    "Type": "U32"
+  },
+  {
+    "Name": "MaxLen",
+    "Type": "U32"
+  },
+  {
+    "Name": "IsReady",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsOk",
+    "Type": "U8"
+  },
+  {
+    "Name": "EnableExchange",
+    "Type": "U8"
+  },
+  {
+    "Name": "EnableTeam",
+    "Type": "U8"
+  },
+  {
+    "Name": "GoodsType",
+    "Type": "String"
+  },
+  {
+    "Name": "NeedSkill",
+    "Type": "String"
+  },
+  {
+    "Name": "ShipType",
+    "Type": "String"
+  },
+  {
+    "Name": "PortCity",
+    "Type": "String"
+  },
+  {
+    "Name": "FireAngle",
+    "Type": "Float"
+  },
+  {
+    "Name": "Flight",
+    "Type": "Float"
+  },
+  {
+    "Name": "AmmoIndexL",
+    "Type": "U32"
+  },
+  {
+    "Name": "AmmoIndexR",
+    "Type": "U32"
+  },
+  {
+    "Name": "DFG",
+    "Type": "U32"
+  },
+  {
+    "Name": "DFGMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "CoolingKind",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShipArmType",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShotTime",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddAT",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddHitRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDodgeRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddMaxHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddMaxSP",
+    "Type": "U32"
+  },
+  {
+    "Name": "NeedSkillLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "UseCount",
+    "Type": "U32"
+  },
+  {
+    "Name": "LeftTime",
+    "Type": "U32"
+  },
+  {
+    "Name": "DamageShip",
+    "Type": "Float"
+  },
+  {
+    "Name": "DamageSailor",
+    "Type": "Float"
+  },
+  {
+    "Name": "DamageSail",
+    "Type": "Float"
+  },
+  {
+    "Name": "NeedShipLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "Pierage",
+    "Type": "U32"
+  },
+  {
+    "Name": "ConsFlag",
+    "Type": "U32"
+  },
+  {
+    "Name": "ConsDuty",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Photo",
+    "Type": "U32"
+  },
+  {
+    "Name": "S/Color",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShipKind",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShipRebuildCost",
+    "Type": "U32"
+  },
+  {
+    "Name": "ConsDept",
+    "Type": "String"
+  },
+  {
+    "Name": "ShipRebuildRes",
+    "Type": "String"
+  },
+  {
+    "Name": "DFGAlert",
+    "Type": "U8"
+  },
+  {
+    "Name": "X",
+    "Type": "Float"
+  },
+  {
+    "Name": "Y",
+    "Type": "Float"
+  },
+  {
+    "Name": "Z",
+    "Type": "Float"
+  },
+  {
+    "Name": "ModelID",
+    "Type": "U32"
+  },
+  {
+    "Name": "HealCondition",
+    "Type": "U8"
+  },
+  {
+    "Name": "FreshCondition",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsUSSword3",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsUSFalchion3",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsUSFalchion4",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsUSAxe3",
+    "Type": "U8"
+  },
+  {
+    "Name": "IsUSShot4",
+    "Type": "U8"
+  },
+  {
+    "Name": "OnUSSword1",
+    "Type": "U8"
+  },
+  {
+    "Name": "OnUSFalchion1",
+    "Type": "U8"
+  },
+  {
+    "Name": "OnUSAxe1",
+    "Type": "U8"
+  },
+  {
+    "Name": "OnUSShot1",
+    "Type": "U8"
+  },
+  {
+    "Name": "BoxLoad",
+    "Type": "Float"
+  },
+  {
+    "Name": "BoxMaxLoad",
+    "Type": "Float"
+  },
+  {
+    "Name": "CostIn",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddMaxLoad",
+    "Type": "U32"
+  }
 ]

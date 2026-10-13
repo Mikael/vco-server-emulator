@@ -37,7 +37,9 @@ public sealed class TeamChatCommand : ITextCommand
 
     public bool Execute(ClientSession session, string[] words)
     {
-        if (words.Length > 1) TeamDirectory.Chat(session, string.Join(' ', words.Skip(1)));
+        if (words.Length < 2) return true;
+        string text = string.Join(' ', words.Skip(1));
+        if (session.ChatAllowed("team", ref text)) TeamDirectory.Chat(session, text);
         return true;
     }
 }

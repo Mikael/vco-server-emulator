@@ -100,8 +100,8 @@ public sealed class GetPlayerInfoCommand : ITextCommand
     {
         ClientSession? other = words.Length > 1 ? session.Context.World.FindPlayer(words[1]) : session;
         if (other == null) session.SystemMessage($"{words[1]} is not online.");
-        else if (other == session) session.SystemMessage($"{session.Name}: level {session.Character.Level}, {session.Money} gold, {session.Character.Experience}/{session.ExperienceForNextLevel} experience");
-        else session.SystemMessage($"{other.Name}: level {other.Character.Level}, in scene {other.Scene}");
+        else if (other == session) session.SystemMessage($"{session.Name}: total skill level {session.TotalSkillLevel}, {session.Money} silver, reputation {session.Character.Reputation}, rank {session.Character.Rank}");
+        else session.SystemMessage($"{other.Name}: total skill level {other.TotalSkillLevel}, in scene {other.Scene}");
         return true;
     }
 }
@@ -241,6 +241,11 @@ public sealed class TakeUpCommand : ITextCommand
     {
         if (words.Length != 4 || !int.TryParse(words[1], out int view) || !int.TryParse(words[2], out int index)
             || !int.TryParse(words[3], out int count)) return false;
+        if (view == Protocol.ViewId.Warehouse)
+        {
+            session.WarehouseTake(index, count);
+            return true;
+        }
         if (view != Protocol.ViewId.BagItems || !session.Items.TryGetValue(index, out Persistence.ItemStack? item)) return true;
         Persistence.ItemStack taken = item.Clone();
         taken.Amount = Math.Clamp(count, 1, item.Amount);
@@ -262,6 +267,7 @@ public sealed class WorldActionCommands : ITextCommand
                 session.SystemMessage("You search the area but find nothing.");
                 return true;
             case "GoHome":
+                if (session.SceneLocked()) return true;
                 session.ForceLand = false;
                 session.Travel(session.Context.Settings.World.StartScene);
                 return true;
@@ -336,8 +342,11 @@ public sealed class SlashCommands
                 (float x, float z) = session.Mover!.Now();
                 session.SystemMessage($"scene {session.Scene} at {x:F1}, {z:F1}");
                 break;
-            case "/exp" when words.Length == 2 && int.TryParse(words[1], out int experience) && experience > 0:
-                session.GainExperience(Math.Min(experience, 100000));
+            case "/exp" when words.Length == 3 && int.TryParse(words[2], out int experience) && experience > 0:
+                session.GainSkillExperience(words[1], experience);
+                break;
+            case "/rep" when words.Length == 2 && int.TryParse(words[1], out int reputation) && reputation > 0:
+                session.GainReputation(reputation);
                 break;
             case "/prop" when words.Length >= 3:
                 object? value = Protocol.PropertyTable.Parse(words[1], string.Join(' ', words.Skip(2)));
@@ -358,8 +367,13 @@ public sealed class SlashCommands
                 session.SetMoney(amount);
                 session.Save();
                 break;
+            case "/points" when words.Length == 2 && int.TryParse(words[1], out int points) && points >= 0:
+                session.Character.GamePoints = points;
+                session.Save();
+                session.SystemMessage($"Remaining Point: {points}");
+                break;
             default:
-                session.SystemMessage("commands: /go <scene id>, /ship <scene id>, /sail, /land, /where, /who, /talk <npc id>, /opt <n>, /tp <x> <z>, /cmd <command>, /as <player> <command>, /bring <player>, /script <text>, /prop <name> <value>, /heal, /exp <amount>, /money <amount>");
+                session.SystemMessage("commands: /go <scene id>, /ship <scene id>, /sail, /land, /where, /who, /talk <npc id>, /opt <n>, /tp <x> <z>, /cmd <command>, /as <player> <command>, /bring <player>, /script <text>, /prop <name> <value>, /heal, /exp <amount>, /money <amount>, /points <amount>");
                 break;
         }
     }

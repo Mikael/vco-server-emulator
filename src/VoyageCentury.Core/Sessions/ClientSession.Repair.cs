@@ -64,6 +64,9 @@ public sealed partial class ClientSession
             int max = DurabilityMax(item.Name);
             int before = Durability(item.Name);
             if (max <= 0 || before <= 0) continue;
+            int kind = ItemCatalog.Number(item.Name, "Kind");
+            int care = kind == 3 ? UniqueSkillLevel("US_SEWING2") : kind is >= 5 and <= 8 ? UniqueSkillLevel("US_FOUNDRY2") : 0;
+            if (Random.Shared.Next(100) < 5 * care) continue;
             Character.Wear ??= new Dictionary<string, int>();
             Character.Wear[item.Name] = max - before + 1;
             RefreshDurability(ViewId.Equipped, slot);
@@ -151,6 +154,11 @@ public sealed partial class ClientSession
             || !slots.TryGetValue(index, out ItemStack? item) || DurabilityMax(item.Name) <= 0)
         {
             SystemMessage("That item cannot be repaired.");
+            return null;
+        }
+        if (ItemCatalog.Number(item.Name, "Unrepairable") != 0)
+        {
+            SystemMessage("This article is unrepairable.");
             return null;
         }
         if (Character.Wear == null || Durability(item.Name) >= DurabilityMax(item.Name))

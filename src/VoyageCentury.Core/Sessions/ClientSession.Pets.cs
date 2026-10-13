@@ -116,7 +116,9 @@ public sealed partial class ClientSession
                 }
                 Send(ScenePackets.PlaceObject(PetObjectId, monster.X + 1f, monster.Y, monster.Z), "(pet attacks)");
                 Send(ScenePackets.PlayAction(PetObjectId, Context.Data.Actions.Attack, attack: true), "(pet attacks)");
-                StrikeWithSkill(monster, 4 + 3 * pet.Level, swing: false);
+                MonsterState state = Context.World.Monster(monster);
+                Context.World.Provoke(monster, this);
+                Wound(monster, state, CombatRules.Damage(Rule.Combat, 4 + 3 * pet.Level, MonsterDefence(monster, state)), 0xff8000);
                 break;
             case "Pet_Follow":
                 (float x, float z) = Mover.Now();

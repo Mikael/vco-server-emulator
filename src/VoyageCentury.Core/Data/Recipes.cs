@@ -18,6 +18,7 @@ public sealed class RecipeDefinition
     public int Photo { get; set; }
     public int Amount { get; set; } = 1;
     public int Seconds { get; set; } = 3;
+    public int SkillLevel { get; set; } = 1;
     public List<RecipeIngredient> Ingredients { get; set; } = [];
 }
 

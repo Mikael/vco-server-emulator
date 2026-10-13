@@ -44,6 +44,13 @@ public static class FleetTables
     ];
 }
 
+public enum ShipAttribute
+{
+    Move,
+    Fight,
+    Load,
+}
+
 public sealed partial class ClientSession
 {
     private const int DockSlots = 8;
@@ -53,6 +60,7 @@ public sealed partial class ClientSession
 
     private readonly List<ShipDefinition> _market = [];
     private readonly List<int> _dock = [];
+    private readonly List<ShipDefinition> _rebuildOffers = [];
     private bool _dockOpen;
     private bool _rebuildOpen;
     private int _dyeScene;
@@ -72,17 +80,81 @@ public sealed partial class ClientSession
 
     public int ActiveShipModel => ActiveShipType.Model;
 
-    public int FleetHullMax => Scaled(ActiveShipType.Hull, Yard.Rules.HullPercentPerLevel, ActiveShip.Level);
+    public int ShipTier => ActiveShipType.Tier;
 
-    public int FleetSailMax => Scaled(ActiveShipType.Sail, Yard.Rules.SailPercentPerLevel, ActiveShip.Level);
+    public int FleetHullMax => ActiveShipType.Hull + Yard.Rules.WeaponHull * (ActiveShip.LevelFight - 1) + Yard.Rules.StructureHull * (ActiveShip.LevelLoad - 1);
 
-    public int FleetLoadMax => Scaled(ActiveShipType.Load, Yard.Rules.LoadPercentPerLevel, ActiveShip.Level);
+    public int FleetSailMax => ActiveShipType.Sail + Yard.Rules.ManeuverSail * (ActiveShip.LevelMove - 1) + Yard.Rules.WeaponSail * (ActiveShip.LevelFight - 1);
+
+    public int FleetLoadMax => ActiveShipType.Load + Yard.Rules.StructureLoad * (ActiveShip.LevelLoad - 1);
 
     public int FleetSailorsMax => Math.Max(1, ActiveShipType.Sailors);
 
-    public int FleetCannonsPerSide => CannonPorts(ActiveShipType, ActiveShip.Level);
+    public int FleetCannonsPerSide => ActiveShipType.CannonsPerSide;
 
-    public float FleetSpeedFactor => Math.Clamp(ActiveShipType.Speed, 0.2f, 3f);
+    public int ShipAttributeCap => Yard.Rules.AttributeLevelsPerTier * Math.Max(1, ShipTier) + 1;
+
+    public void GainShipExperience(ShipAttribute attribute, long amount)
+    {
+        if (amount <= 0 || Character.Fleet == null) return;
+        OwnedShip owned = ActiveShip;
+        int level = attribute switch
+        {
+            ShipAttribute.Move => owned.LevelMove,
+            ShipAttribute.Fight => owned.LevelFight,
+            _ => owned.LevelLoad,
+        };
+        int cap = ShipAttributeCap;
+        if (level >= cap) return;
+        long experience = amount + attribute switch
+        {
+            ShipAttribute.Move => owned.ExpMove,
+            ShipAttribute.Fight => owned.ExpFight,
+            _ => owned.ExpLoad,
+        };
+        bool raised = false;
+        while (level < cap && experience >= Rule.Skills.ExperienceToNext(level))
+        {
+            experience -= Rule.Skills.ExperienceToNext(level);
+            level++;
+            raised = true;
+        }
+        if (level >= cap) experience = 0;
+        int kept = (int)Math.Min(int.MaxValue, experience);
+        switch (attribute)
+        {
+            case ShipAttribute.Move:
+                (owned.LevelMove, owned.ExpMove) = (level, kept);
+                break;
+            case ShipAttribute.Fight:
+                (owned.LevelFight, owned.ExpFight) = (level, kept);
+                break;
+            default:
+                (owned.LevelLoad, owned.ExpLoad) = (level, kept);
+                break;
+        }
+        if (!raised)
+        {
+            string name = attribute switch
+            {
+                ShipAttribute.Move => "ExpMove",
+                ShipAttribute.Fight => "ExpFight",
+                _ => "ExpLoad",
+            };
+            if (PropertyTable.Has(name)) Send(ViewPackets.UpdateItem(ViewId.Ship, 1, new PropertyBag { [name] = kept }), "(ship experience)");
+            return;
+        }
+        string label = attribute switch
+        {
+            ShipAttribute.Move => "Maneuverability",
+            ShipAttribute.Fight => "Weapon",
+            _ => "Structure",
+        };
+        SystemMessage($"Your ship's {label} reached level {level}.", SystemMessageKind.Upgrade);
+        SendFleetShip();
+        Save();
+        Log.Info(Tag, $"{Name}: ship {label} level {level}");
+    }
 
     public void EnsureFleet()
     {
@@ -103,7 +175,7 @@ public sealed partial class ClientSession
         {
             ["Model"] = type.Model,
             ["ShipModel"] = type.Model,
-            ["S/Level"] = owned.Level,
+            ["S/Level"] = type.Tier,
             ["S/Color"] = owned.Color,
             ["S/MastFront"] = type.MastFront,
             ["S/MastMiddle"] = type.MastMiddle,
@@ -130,41 +202,41 @@ public sealed partial class ClientSession
             ["S/Photo"] = type.Photo,
             ["ShipType"] = type.Name,
             ["ShipKind"] = type.Kind,
-            ["Level"] = owned.Level,
-            ["S/Level"] = owned.Level,
+            ["Level"] = type.Tier,
+            ["S/Level"] = type.Tier,
             ["S/Color"] = owned.Color,
             ["S/SailTex"] = Character.SailCloth,
             ["S/Flag"] = 0,
             ["S/MastFront"] = type.MastFront,
             ["S/MastMiddle"] = type.MastMiddle,
             ["S/MastBack"] = type.MastBack,
-            ["RatioSailHP"] = 100,
+            ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, sailMax),
             ["S/HP"] = ShipHull,
             ["S/MaxHP"] = ShipHullMax,
-            ["S/SailHP"] = sailMax,
+            ["S/SailHP"] = ShipSail,
             ["S/MaxSailHP"] = sailMax,
             ["S/NumCannonL"] = Character.CannonsLeft,
             ["S/NumCannonR"] = Character.CannonsRight,
             ["CabinCannonMax"] = 2 * FleetCannonsPerSide,
             ["NumSailor"] = Character.Sailors,
             ["NumSailorMax"] = FleetSailorsMax,
-            ["NumSailorBad"] = 0,
-            ["S/BumpPower"] = 10 + 2 * owned.Level,
-            ["S/SailDrive"] = (int)(10 * FleetSpeedFactor),
-            ["S/Sail1Drive"] = (int)(10 * FleetSpeedFactor),
-            ["S/OarDrive"] = 5,
-            ["S/Load"] = 0,
-            ["S/LoadMax"] = FleetLoadMax,
-            ["S/RotSpeed"] = type.Turn,
-            ["LevelMove"] = 1,
-            ["LevelFight"] = 1,
-            ["LevelLoad"] = 1,
-            ["ExpMove"] = 0,
-            ["ExpFight"] = 0,
-            ["ExpLoad"] = 0,
-            ["ExpMaxMove"] = 100,
-            ["ExpMaxFight"] = 100,
-            ["ExpMaxLoad"] = 100,
+            ["NumSailorBad"] = Character.SailorsWounded,
+            ["S/BumpPower"] = 0,
+            ["S/SailDrive"] = type.Square,
+            ["S/Sail1Drive"] = type.Triangular,
+            ["S/OarDrive"] = 0,
+            ["S/Load"] = ShipLoad,
+            ["S/LoadMax"] = ShipLoadMax,
+            ["S/RotSpeed"] = type.Turning,
+            ["LevelMove"] = owned.LevelMove,
+            ["LevelFight"] = owned.LevelFight,
+            ["LevelLoad"] = owned.LevelLoad,
+            ["ExpMove"] = owned.ExpMove,
+            ["ExpFight"] = owned.ExpFight,
+            ["ExpLoad"] = owned.ExpLoad,
+            ["ExpMaxMove"] = Rule.Skills.ExperienceToNext(owned.LevelMove),
+            ["ExpMaxFight"] = Rule.Skills.ExperienceToNext(owned.LevelFight),
+            ["ExpMaxLoad"] = Rule.Skills.ExperienceToNext(owned.LevelLoad),
         });
     }
 
@@ -184,7 +256,7 @@ public sealed partial class ClientSession
         ShipDefinition type = ActiveShipType;
         var entries = new List<(DialogueEntry, int, string)>
         {
-            (DialogueEntry.Text, 0, $"Your flagship is the {ShipName}, a {type.Label} of grade {owned.Level}: hull {ShipHull}/{FleetHullMax}, "
+            (DialogueEntry.Text, 0, $"Your flagship is the {ShipName}, a {type.Label} of level {type.Tier}: hull {ShipHull}/{FleetHullMax}, "
                 + $"{FleetCannonsPerSide} gun ports a side, room for {FleetSailorsMax} sailors. You own {Character.Fleet!.Count} of {Yard.Rules.FleetMax} ships."),
             (DialogueEntry.Option, FleetOption.Market, "Show me the ships for sale"),
             (DialogueEntry.Option, FleetOption.Dock, "Visit the dock"),
@@ -257,7 +329,7 @@ public sealed partial class ClientSession
         var shelf = new List<string>();
         _yard[SeaPackets.YardShipView] = shelf;
         Send(ViewPackets.Create(SeaPackets.YardShipView, ViewId.ShopSlots), "(shipyard ships)");
-        foreach (ShipDefinition type in Yard.Ships.Take(ViewId.ShopSlots))
+        foreach (ShipDefinition type in Yard.Ships.Where(ship => ship.Sold).Take(ViewId.ShopSlots))
         {
             _market.Add(type);
             shelf.Add(type.Name);
@@ -271,13 +343,13 @@ public sealed partial class ClientSession
                 ["ItemType"] = SeaPackets.ItemTypeShip,
                 ["Cost"] = type.Price,
                 ["ShowPrice"] = type.Price,
-                ["Level"] = type.Level,
+                ["Level"] = type.Tier,
                 ["ShipType"] = type.Name,
                 ["ShipKind"] = type.Kind,
                 ["S/MaxHP"] = type.Hull,
                 ["S/MaxSailHP"] = type.Sail,
                 ["NumSailorMax"] = type.Sailors,
-                ["CabinCannonMax"] = 2 * CannonPorts(type, 0),
+                ["CabinCannonMax"] = 2 * type.CannonsPerSide,
                 ["S/LoadMax"] = type.Load,
             })), "(shipyard ship)");
         }
@@ -298,9 +370,9 @@ public sealed partial class ClientSession
             SystemMessage($"The dock has no room: you already own {fleet.Count} ships.");
             return;
         }
-        if (Character.Level < type.Level)
+        if (!MayCommand(type, out string refusal))
         {
-            SystemMessage($"You must reach level {type.Level} to command a {type.Label}.");
+            SystemMessage(refusal);
             return;
         }
         name = name.Replace('\u0003', ' ').Trim();
@@ -360,7 +432,7 @@ public sealed partial class ClientSession
                 ["Pierage"] = 0,
                 ["ShipType"] = type.Name,
                 ["PortCity"] = owned.Port.Length > 0 ? owned.Port : Yard.Rules.Port,
-                ["Level"] = owned.Level,
+                ["Level"] = type.Tier,
             })), "(docked ship)");
         }
     }
@@ -403,31 +475,39 @@ public sealed partial class ClientSession
     {
         EnsureFleet();
         CloseRebuild();
-        OwnedShip owned = ActiveShip;
         ShipDefinition type = ActiveShipType;
-        if (owned.Level >= Yard.Rules.MaxLevel)
+        int next = type.Tier + 1;
+        RebuildStep? step = Yard.FindRebuild(next);
+        if (step == null || Yard.Ships.All(ship => ship.Tier != next))
         {
             FleetSay(npcId, $"The {ShipName} has been rebuilt as far as her frames allow.");
             return;
         }
+        if (!Yard.Rules.RebuildTiers.Contains(next))
+        {
+            string where = step.Cities.Count > 0 ? string.Join(", ", step.Cities) : "another port";
+            FleetSay(npcId, $"This yard cannot rebuild a ship to level {next}. Sail to {where}.");
+            return;
+        }
         _rebuildOpen = true;
-        int cost = RebuildCost(type, owned.Level);
-        string materials = string.Join(' ', Yard.Rules.UpgradeMaterials
-            .Where(material => material.Section.Length > 0 && material.Count > 0)
-            .Select(material => $"{material.Section},{material.Key},{material.Count * (owned.Level + 1)}"));
+        string materials = string.Join(' ', step.Timber.Select(level => $"ConsResWood,{level},{step.Count}")
+            .Concat(step.Metal.Select(level => $"ConsResMetal,{level},{step.Count}")));
         Send(ViewPackets.Create(SeaPackets.RebuildView, RebuildSlots), "(rebuild view)");
         for (int kind = 0; kind < RebuildKinds; kind++)
         {
-            Send(ViewPackets.AddItem(SeaPackets.RebuildView, kind + 1, SeaPackets.Known(new PropertyBag
+            ShipDefinition? target = Yard.Find(kind, next);
+            if (target == null) continue;
+            _rebuildOffers.Add(target);
+            Send(ViewPackets.AddItem(SeaPackets.RebuildView, _rebuildOffers.Count, SeaPackets.Known(new PropertyBag
             {
-                ["Index"] = kind + 1,
-                ["Name"] = type.Name,
-                ["Photo"] = type.Photo,
+                ["Index"] = _rebuildOffers.Count,
+                ["Name"] = target.Name,
+                ["Photo"] = target.Photo,
                 ["Amount"] = 1,
                 ["ShipKind"] = kind,
-                ["ShipType"] = type.Name,
-                ["Level"] = owned.Level + 1,
-                ["ShipRebuildCost"] = cost,
+                ["ShipType"] = target.Name,
+                ["Level"] = next,
+                ["ShipRebuildCost"] = step.Silver,
                 ["ShipRebuildRes"] = materials,
             })), "(rebuild choice)");
         }
@@ -436,6 +516,7 @@ public sealed partial class ClientSession
 
     public void CloseRebuild()
     {
+        _rebuildOffers.Clear();
         if (!_rebuildOpen) return;
         _rebuildOpen = false;
         Send(ViewPackets.Delete(SeaPackets.RebuildView), "(close rebuild)");
@@ -443,64 +524,89 @@ public sealed partial class ClientSession
 
     public void QueryRebuildShip(int index)
     {
-        if (!_rebuildOpen || index < 1 || index > RebuildKinds) return;
-        OwnedShip owned = ActiveShip;
+        if (!_rebuildOpen || index < 1 || index > _rebuildOffers.Count) return;
         ShipDefinition type = ActiveShipType;
-        FleetRules rules = Yard.Rules;
-        int next = owned.Level + 1;
-        int hull = Scaled(type.Hull, rules.HullPercentPerLevel, next) - Scaled(type.Hull, rules.HullPercentPerLevel, owned.Level);
-        int sail = Scaled(type.Sail, rules.SailPercentPerLevel, next) - Scaled(type.Sail, rules.SailPercentPerLevel, owned.Level);
-        int load = Scaled(type.Load, rules.LoadPercentPerLevel, next) - Scaled(type.Load, rules.LoadPercentPerLevel, owned.Level);
-        int cannons = 2 * (CannonPorts(type, next) - CannonPorts(type, owned.Level));
-        Send(ChatPackets.Script(0, $"RebuildShipEffect Hull {hull} Sail {sail} Cannon {cannons} Load {load}"), "(rebuild effect)");
+        ShipDefinition target = _rebuildOffers[index - 1];
+        Send(ChatPackets.Script(0, $"RebuildShipEffect Hull {target.Hull - type.Hull} Sail {target.Sail - type.Sail} "
+            + $"Cannon {target.Cannons - type.Cannons} Load {target.Load - type.Load}"), "(rebuild effect)");
     }
 
     public void RebuildShip(int index)
     {
-        if (!_rebuildOpen || index < 1 || index > RebuildKinds)
+        if (!_rebuildOpen || index < 1 || index > _rebuildOffers.Count)
         {
             SystemMessage("Ask a shipwright to look at your ship first.");
             return;
         }
         OwnedShip owned = ActiveShip;
-        ShipDefinition type = ActiveShipType;
+        ShipDefinition target = _rebuildOffers[index - 1];
         FleetRules rules = Yard.Rules;
+        RebuildStep? step = Yard.FindRebuild(target.Tier);
         if (AtSea)
         {
             RebuildResult(false, "The ship can only be rebuilt in port.");
             return;
         }
-        if (owned.Level >= rules.MaxLevel)
+        if (step == null || target.Tier != ActiveShipType.Tier + 1 || !rules.RebuildTiers.Contains(target.Tier))
         {
-            RebuildResult(true, "This ship cannot be rebuilt any further.");
+            RebuildResult(true, "This ship cannot be rebuilt any further here.");
             return;
         }
-        int cost = RebuildCost(type, owned.Level);
-        if (Money < cost)
+        if (!MayCommand(target, out string refusal))
         {
-            RebuildResult(false, $"Not enough money: the rebuild costs {cost} gold.");
+            RebuildResult(false, refusal);
             return;
         }
-        List<UpgradeMaterial> materials = rules.UpgradeMaterials.Where(material => material.Item.Length > 0 && material.Count > 0).ToList();
-        foreach (UpgradeMaterial material in materials)
+        int attribute = Math.Max(owned.LevelMove, Math.Max(owned.LevelFight, owned.LevelLoad));
+        if (attribute < step.AttributeLevel)
         {
-            int needed = material.Count * (owned.Level + 1);
-            if (BagCount(material.Item) >= needed) continue;
-            string label = Yard.FindSupply(material.Item)?.Label ?? material.Item;
-            RebuildResult(false, $"You need {needed} x {label} for the rebuild.");
+            RebuildResult(false, $"One of the ship's Maneuverability, Weapon or Structure levels must reach {step.AttributeLevel} first.");
+            return;
+        }
+        if (Money < step.Silver)
+        {
+            RebuildResult(false, $"Not enough money: the rebuild costs {step.Silver} silver coins.");
+            return;
+        }
+        List<string> materials = step.Timber.Select(level => MaterialKey(rules.Timber, level))
+            .Concat(step.Metal.Select(level => MaterialKey(rules.Metal, level)))
+            .Where(key => key.Length > 0).ToList();
+        foreach (string material in materials)
+        {
+            if (BagCount(material) >= step.Count) continue;
+            string label = Yard.FindSupply(material)?.Label ?? material;
+            RebuildResult(false, $"You need {step.Count} x {label} for the rebuild.");
             return;
         }
 
-        foreach (UpgradeMaterial material in materials) TakeItems(material.Item, material.Count * (owned.Level + 1), "(rebuild material)");
-        SetMoney(Money - cost);
-        owned.Level++;
+        foreach (string material in materials) TakeItems(material, step.Count, "(rebuild material)");
+        SetMoney(Money - step.Silver);
+        owned.Model = target.Model;
+        Character.SailCloth = rules.PlainSailCloth;
+        owned.SailCloth = rules.PlainSailCloth;
+        Properties["S/SailTex"] = rules.PlainSailCloth;
+        Character.CannonsLeft = Math.Min(Math.Max(0, Character.CannonsLeft), FleetCannonsPerSide);
+        Character.CannonsRight = Math.Min(Math.Max(0, Character.CannonsRight), FleetCannonsPerSide);
         SetShipHull(FleetHullMax);
+        SetShipSail(FleetSailMax);
         SendFleetShip();
         Save();
-        Log.Info(Tag, $"{Name} rebuilds {ShipName} to grade {owned.Level} for {cost}");
-        RebuildResult(true, $"The {ShipName} was rebuilt to grade {owned.Level}.");
-        SystemMessage($"The {ShipName} was rebuilt to grade {owned.Level}: hull {FleetHullMax}, {FleetCannonsPerSide} gun ports a side.");
+        Log.Info(Tag, $"{Name} rebuilds {ShipName} into a {target.Label} for {step.Silver}");
+        RebuildResult(true, $"The {ShipName} was rebuilt into a {target.Label}.");
+        SystemMessage($"The {ShipName} is now a {target.Label}: hull {FleetHullMax}, sail {FleetSailMax}, {target.Cannons} gun ports, load {FleetLoadMax}.");
     }
+
+    public bool MayCommand(ShipDefinition type, out string refusal)
+    {
+        refusal = "";
+        if (SkillLevel("SKILL_NAVIGATE") < type.Voyage)
+            refusal = $"You need Voyage Level {type.Voyage} to steer a {type.Label}.";
+        else if (SkillLevel(type.SecondSkillKey) < type.SecondSkill)
+            refusal = $"You need {(type.Kind == 1 ? "Eloquence" : "Sea Battle")} Level {type.SecondSkill} to command a {type.Label}.";
+        return refusal.Length == 0;
+    }
+
+    private static string MaterialKey(List<string> keys, int level) => level >= 1 && level <= keys.Count ? keys[level - 1] : "";
 
     public void OpenDye(int npcId)
     {
@@ -593,6 +699,7 @@ public sealed partial class ClientSession
         OwnedShip old = fleet[Character.ActiveShip];
         old.Name = Character.ShipName;
         old.Hull = Character.ShipHull;
+        old.Sail = Character.ShipSail;
         old.SailCloth = Character.SailCloth;
         old.CannonsLeft = Math.Max(0, Character.CannonsLeft);
         old.CannonsRight = Math.Max(0, Character.CannonsRight);
@@ -603,15 +710,18 @@ public sealed partial class ClientSession
         int ports = FleetCannonsPerSide;
         Character.ShipName = now.Name;
         Character.ShipHull = now.Hull < 0 ? FleetHullMax : Math.Min(now.Hull, FleetHullMax);
+        Character.ShipSail = now.Sail < 0 ? FleetSailMax : Math.Min(now.Sail, FleetSailMax);
         Character.SailCloth = now.SailCloth;
         Character.CannonsLeft = Math.Clamp(now.CannonsLeft, 0, ports);
         Character.CannonsRight = Math.Clamp(now.CannonsRight, 0, ports);
         if (now.CannonName.Length > 0) Character.CannonName = now.CannonName;
         Properties["S/SailTex"] = Character.SailCloth;
-        if (Character.Sailors > FleetSailorsMax)
+        if (Character.Sailors + Character.SailorsWounded > FleetSailorsMax)
         {
-            Character.Sailors = FleetSailorsMax;
+            Character.SailorsWounded = Math.Min(Character.SailorsWounded, FleetSailorsMax);
+            Character.Sailors = FleetSailorsMax - Character.SailorsWounded;
             SetProperty("NumSailor", Character.Sailors);
+            SetProperty("NumSailorBad", Character.SailorsWounded);
         }
         SetShipCannons(Character.CannonsLeft, Character.CannonsRight);
         SendFleetShip();
@@ -707,20 +817,10 @@ public sealed partial class ClientSession
             Photo = 200100 + model % 100,
             Hull = rules.HullMax,
             Sailors = rules.SailorsMax,
-            Cannons = rules.CannonsPerSide,
-            CannonsMax = rules.CannonsPerSide,
+            Cannons = 2 * rules.CannonsPerSide,
             Dyeable = false,
         };
     }
 
     private string OwnedName(OwnedShip owned) => owned.Name.Length > 0 ? owned.Name : $"{Name}'s ship";
-
-    private int RebuildCost(ShipDefinition type, int level)
-        => (Yard.Rules.UpgradeCost + (int)((long)type.Price * Yard.Rules.UpgradePricePercent / 100)) * (level + 1);
-
-    private int CannonPorts(ShipDefinition type, int level)
-        => Math.Max(0, Math.Min(Math.Max(type.Cannons, type.CannonsMax), type.Cannons + level * Yard.Rules.CannonsPerLevel));
-
-    private static int Scaled(int value, int percentPerLevel, int level)
-        => (int)((long)value * (100 + percentPerLevel * Math.Max(0, level)) / 100);
 }

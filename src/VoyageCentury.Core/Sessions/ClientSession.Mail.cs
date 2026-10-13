@@ -35,7 +35,7 @@ public static class LetterPaper
     public const string Name = "IDName00004391";
     public const int Kind = 0x17;
     public const int PaperType = 0;
-    public const int MaxLength = 250;
+    public const int MaxLength = 70;
 }
 
 public static class MailDirectory
@@ -50,6 +50,8 @@ public sealed partial class ClientSession
     public const int ParcelSlots = 3;
     public const int MostLetters = 30;
     public const int MostParcels = 12;
+    public const int MostRecipients = 10;
+    public const int ParcelMessageLength = 40;
 
     private const int ParcelToBag = 1;
     private const int ParcelToDepot = 2;
@@ -113,36 +115,55 @@ public sealed partial class ClientSession
             SystemMessage("You need letter paper to write a letter.");
             return;
         }
-        CharacterRecord? target = MailDirectory.Find(Context, recipient);
-        if (target == null)
+        string[] names = recipient.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+        if (names.Length == 0 || names.Length > MostRecipients)
         {
-            SystemMessage($"Nobody called {recipient} is known here.");
+            SystemMessage($"A letter can go to at most {MostRecipients} names, separated by semicolons without spaces.");
             return;
         }
-        if (target.Blacklist.Contains(Name))
+        var targets = new List<CharacterRecord>();
+        foreach (string name in names)
         {
-            SystemMessage($"{target.Name} does not accept your letters.");
-            return;
+            CharacterRecord? target = MailDirectory.Find(Context, name);
+            if (target == null)
+            {
+                SystemMessage($"Nobody called {name} is known here.");
+                return;
+            }
+            if (target.Blacklist.Contains(Name))
+            {
+                SystemMessage($"{target.Name} does not accept your letters.");
+                return;
+            }
+            if (target.Letters.Count >= MostLetters)
+            {
+                SystemMessage($"The message book of {target.Name} is full.");
+                return;
+            }
+            targets.Add(target);
         }
-        if (target.Letters.Count >= MostLetters)
+        if (content.Length > LetterPaper.MaxLength)
         {
-            SystemMessage($"The message book of {target.Name} is full.");
-            return;
+            content = content[..LetterPaper.MaxLength];
+            SystemMessage($"Input no more than {LetterPaper.MaxLength} characters: your letter was shortened.");
         }
-        if (content.Length > LetterPaper.MaxLength) content = content[..LetterPaper.MaxLength];
-        target.Letters.Add(new LetterEntry
+        foreach (CharacterRecord target in targets)
         {
-            Id = target.NextLetterId++,
-            Sender = Name,
-            PaperType = LetterPaper.PaperType,
-            Date = MailDate(),
-            Content = content,
-        });
+            target.Letters.Add(new LetterEntry
+            {
+                Id = target.NextLetterId++,
+                Sender = Name,
+                PaperType = LetterPaper.PaperType,
+                Date = MailDate(),
+                Content = content,
+            });
+        }
         MailTake(ViewId.BagItems, index, 1, "(letter paper used)");
         Context.Accounts.Save();
-        SystemMessage($"Your letter to {target.Name} has been sent.");
-        Context.World.FindPlayer(target.Name)?.AnnounceLetters();
-        Log.Info(Tag, $"{Name} writes to {target.Name} ({content.Length} characters)");
+        SystemMessage($"Your letter to {string.Join(", ", targets.Select(target => target.Name))} has been sent.");
+        foreach (CharacterRecord target in targets) Context.World.FindPlayer(target.Name)?.AnnounceLetters();
+        Log.Info(Tag, $"{Name} writes to {string.Join(", ", targets.Select(target => target.Name))} ({content.Length} characters)");
     }
 
     public void KeepLetter(int id)
@@ -182,7 +203,7 @@ public sealed partial class ClientSession
             SystemMessage($"{target.Name} has too many parcels waiting.");
             return;
         }
-        if (message.Length > LetterPaper.MaxLength) message = message[..LetterPaper.MaxLength];
+        if (message.Length > ParcelMessageLength) message = message[..ParcelMessageLength];
         var sent = new ItemStack { Name = item.Name, Photo = item.Photo, Amount = amount };
         if (Hand != null && Hand.Name == item.Name) SetHand(null);
         MailTake(view, index, amount, "(item mailed)");
@@ -214,8 +235,16 @@ public sealed partial class ClientSession
                 }
                 Log.Info(Tag, $"{Name} takes {parcel.Item.Amount} x {parcel.Item.Name} sent by {parcel.Sender}");
                 break;
-            case ParcelToDepot or ParcelToCabin:
-                SystemMessage("Parcels can only be taken into your bag here.");
+            case ParcelToDepot:
+                if (!WarehouseStore(parcel.Item.Clone()))
+                {
+                    SystemMessage("Your warehouse is full.");
+                    return;
+                }
+                Log.Info(Tag, $"{Name} sends {parcel.Item.Amount} x {parcel.Item.Name} from {parcel.Sender} to the warehouse");
+                break;
+            case ParcelToCabin:
+                SystemMessage("Parcels can only be taken into your bag or your warehouse here.");
                 return;
             default:
                 Log.Info(Tag, $"{Name} destroys the parcel sent by {parcel.Sender}");

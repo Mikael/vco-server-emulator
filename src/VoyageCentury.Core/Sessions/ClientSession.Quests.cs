@@ -114,11 +114,27 @@ public sealed partial class ClientSession
     public void OnMonsterKilled(int monsterId)
     {
         PetGainExperience(10);
+        Context.Data.Monsters.TryGetValue(monsterId, out MonsterDefinition? killed);
+        CountKill(monsterId, killed?.Name ?? "");
+    }
+
+    public void OnSeaNpcSunk(string name) => CountKill(0, name);
+
+    private bool QuestHunts(QuestDefinition quest, int monsterId, string name)
+    {
+        if (monsterId != 0 && quest.Target == monsterId) return true;
+        if (name.Length == 0) return false;
+        string wanted = Context.Data.Monsters.TryGetValue(quest.Target, out MonsterDefinition? target) ? target.Name : quest.TargetName;
+        return wanted.Equals(name, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private void CountKill(int monsterId, string name)
+    {
         var recorded = RecordedQuests().ToList();
         for (int row = 0; row < recorded.Count; row++)
         {
             (QuestDefinition quest, QuestProgress progress) = recorded[row];
-            if (quest.Kind != QuestKind.Kill || quest.Target != monsterId || progress.Count >= quest.Count) continue;
+            if (quest.Kind != QuestKind.Kill || progress.Count >= quest.Count || !QuestHunts(quest, monsterId, name)) continue;
             progress.Count++;
             ReportProgress(row, progress.Count);
             if (progress.Count >= quest.Count)
@@ -195,8 +211,14 @@ public sealed partial class ClientSession
         SystemMessage($"Task completed: {quest.Name}. You receive {quest.Gold} silver coins.", SystemMessageKind.Upgrade);
         SetMoney(Money + quest.Gold);
         Log.Info(Tag, $"{Name} completes quest {quest.Id} ({quest.Name})");
-        if (quest.Experience > 0) GainExperience(quest.Experience);
-        else Save();
+        if (quest.Experience > 0 && quest.Skill.Length > 0) GainSkillExperience(quest.Skill, quest.Experience);
+        if (quest.Reputation > 0) GainReputation(quest.Reputation);
+        if (quest.Amity > 0)
+        {
+            Character.Amity += quest.Amity;
+            SystemMessage($"Your amity with {Properties.Text("CountryName", "this country")} rises by {quest.Amity}.");
+        }
+        Save();
     }
 
     private static string Today()

@@ -16,6 +16,7 @@ public static class ShipyardOption
     public const int Sails = 125;
     public const int SailOff = 126;
     public const int Leave = 127;
+    public const int HealSailors = 128;
     public const int Menu = 139;
     public const int FirstSail = 140;
     public const int Last = 179;
@@ -30,7 +31,21 @@ public sealed partial class ClientSession
 
     public bool ShipyardOpen => _yard.Count > 0;
 
-    public int ShipRepairCost => Math.Max(0, ShipHullMax - ShipHull) * Sea.Data.Rules.RepairPricePerPoint;
+    public bool ShipServiceFree => ShipTier <= Sea.Data.Rules.FreeServiceTier;
+
+    public int ShipDamage => Math.Max(0, ShipHullMax - ShipHull) + Math.Max(0, FleetSailMax - ShipSail);
+
+    public int ShipRepairCost => ShipServiceFree ? 0 : ShipDamage * Sea.Data.Rules.RepairPricePerPoint;
+
+    public int SailorCost => ShipServiceFree ? 0 : Sea.Data.Rules.SailorPrice;
+
+    public bool ReadyToSail()
+    {
+        EnsureShipState();
+        if (ShipHull > Sea.Data.Rules.SunkDurability) return true;
+        SystemMessage("Your ship is a wreck. You have to have it repaired at the shipyard before you can sail off.", SystemMessageKind.Prompt);
+        return false;
+    }
 
     public bool OpenShipyardMenu(int npcId)
     {
@@ -39,11 +54,12 @@ public sealed partial class ClientSession
         ShipRules rules = Sea.Data.Rules;
         var entries = new List<(DialogueEntry, int, string)>
         {
-            (DialogueEntry.Text, 0, $"Welcome to the shipyard. The {ShipName}: hull {ShipHull}/{ShipHullMax}, {Character.Sailors}/{FleetSailorsMax} sailors, "
-                + $"{Character.CannonsLeft + Character.CannonsRight} cannons."),
+            (DialogueEntry.Text, 0, $"Welcome to the shipyard. The {ShipName}: hull {ShipHull}/{ShipHullMax}, sail {ShipSail}/{FleetSailMax}, "
+                + $"{Character.Sailors}/{FleetSailorsMax} sailors ({Character.SailorsWounded} wounded), {Character.CannonsLeft + Character.CannonsRight} cannons."),
             (DialogueEntry.Option, ShipyardOption.Buy, "Buy cannons and ammunition"),
-            (DialogueEntry.Option, ShipyardOption.Repair, ShipRepairCost > 0 ? $"Repair the hull ({ShipRepairCost} gold)" : "Repair the hull"),
-            (DialogueEntry.Option, ShipyardOption.HireSailors, $"Hire sailors ({rules.SailorPrice} gold each)"),
+            (DialogueEntry.Option, ShipyardOption.Repair, ShipRepairCost > 0 ? $"Repair hull and sail ({ShipRepairCost} silver)" : "Repair hull and sail"),
+            (DialogueEntry.Option, ShipyardOption.HireSailors, SailorCost > 0 ? $"Hire sailors ({SailorCost} silver each)" : "Hire sailors"),
+            (DialogueEntry.Option, ShipyardOption.HealSailors, "Tend the wounded sailors"),
             (DialogueEntry.Option, ShipyardOption.DismissSailors, "Dismiss sailors"),
             (DialogueEntry.Option, ShipyardOption.Rename, $"Rename the ship ({rules.RenamePrice} gold)"),
             (DialogueEntry.Option, ShipyardOption.Sails, "Change the sails"),
@@ -73,6 +89,10 @@ public sealed partial class ClientSession
                 break;
             case ShipyardOption.DismissSailors:
                 AskDismissSailors();
+                break;
+            case ShipyardOption.HealSailors:
+                HealShipSailors();
+                OpenShipyardMenu(npcId);
                 break;
             case ShipyardOption.Rename:
                 AskRenameShip();
@@ -110,7 +130,7 @@ public sealed partial class ClientSession
         var cannons = new List<string>();
         _yard[SeaPackets.YardEquipmentView] = cannons;
         Send(ViewPackets.Create(SeaPackets.YardEquipmentView, ViewId.ShopSlots), "(shipyard equipment)");
-        foreach (CannonDefinition cannon in data.Cannons.Take(ViewId.ShopSlots))
+        foreach (CannonDefinition cannon in data.Cannons.Where(entry => entry.Sold).Take(ViewId.ShopSlots))
         {
             cannons.Add(cannon.Name);
             var item = new PropertyBag
@@ -118,10 +138,12 @@ public sealed partial class ClientSession
                 ["Name"] = cannon.Name,
                 ["Index"] = cannons.Count,
                 ["Amount"] = 1,
-                ["Photo"] = CannonPhoto,
+                ["Photo"] = cannon.Photo,
                 ["Kind"] = 0,
                 ["ItemType"] = SeaPackets.ItemTypeShipEquipment,
                 ["ShipArmType"] = SeaPackets.CannonArmType,
+                ["AT"] = cannon.Attack,
+                ["Level"] = cannon.Grade,
                 ["ShotTime"] = (int)(cannon.ReloadSeconds * 1000),
                 ["FireAngle"] = cannon.FireAngle,
                 ["Flight"] = cannon.Range,
@@ -135,7 +157,7 @@ public sealed partial class ClientSession
         var shells = new List<string>();
         _yard[SeaPackets.YardAmmunitionView] = shells;
         Send(ViewPackets.Create(SeaPackets.YardAmmunitionView, ViewId.ShopSlots), "(shipyard ammunition)");
-        foreach (AmmunitionDefinition ammunition in data.Ammunition.Take(ViewId.ShopSlots))
+        foreach (AmmunitionDefinition ammunition in data.Ammunition.Where(entry => entry.Sold).Take(ViewId.ShopSlots))
         {
             shells.Add(ammunition.Name);
             int lot = Math.Max(1, ammunition.Lot);
@@ -144,7 +166,7 @@ public sealed partial class ClientSession
                 ["Name"] = ammunition.Name,
                 ["Index"] = shells.Count,
                 ["Amount"] = lot,
-                ["Photo"] = AmmunitionPhoto,
+                ["Photo"] = ammunition.Photo,
                 ["Kind"] = 0,
                 ["ItemType"] = SeaPackets.ItemTypeAmmunition,
             };
@@ -183,6 +205,22 @@ public sealed partial class ClientSession
 
         if (view == SeaPackets.YardEquipmentView && Sea.Data.FindCannon(name) is { } cannon)
         {
+            if (cannon.Grade > Math.Max(1, UniqueSkillLevel("US_CANNON")))
+            {
+                SystemMessage($"That cannon needs Cannon Fight Level {cannon.Grade}.");
+                return true;
+            }
+            if (cannon.Grade > Math.Max(1, ShipTier))
+            {
+                SystemMessage($"That cannon can only be installed on a ship of level {cannon.Grade}.");
+                return true;
+            }
+            if (cannon.Name != Character.CannonName && Character.CannonsLeft + Character.CannonsRight > 0)
+            {
+                Character.CannonsLeft = 0;
+                Character.CannonsRight = 0;
+                SystemMessage("Your old cannons were taken off to make room for the new type.");
+            }
             int most = FleetCannonsPerSide;
             int mounted = 0;
             for (int i = 0; i < quantity; i++)
@@ -213,7 +251,7 @@ public sealed partial class ClientSession
     {
         EnsureShipState();
         int cost = ShipRepairCost;
-        if (cost <= 0)
+        if (ShipDamage <= 0)
         {
             SystemMessage("Your ship does not need any repairs.");
             return;
@@ -225,7 +263,7 @@ public sealed partial class ClientSession
     {
         EnsureShipState();
         int cost = ShipRepairCost;
-        if (cost <= 0)
+        if (ShipDamage <= 0)
         {
             SystemMessage("Your ship does not need any repairs.");
             return;
@@ -237,19 +275,20 @@ public sealed partial class ClientSession
         }
         if (!PayShipyard(cost)) return;
         SetShipHull(ShipHullMax);
-        SystemMessage($"Your ship has been repaired for {cost} gold.");
+        SetShipSail(FleetSailMax);
+        SystemMessage(cost > 0 ? $"Your ship has been repaired for {cost} silver coins." : "Your ship has been repaired free of charge.");
         Save();
         Log.Info(Tag, $"{Name} repairs the ship for {cost}");
     }
 
     public void AskHireSailors()
     {
-        if (Character.Sailors >= FleetSailorsMax)
+        if (Character.Sailors + Character.SailorsWounded >= FleetSailorsMax)
         {
             SystemMessage("Your ship cannot carry more sailors.");
             return;
         }
-        Send(SeaPackets.SailorPrice(Sea.Data.Rules.SailorPrice), "(sailor price)");
+        Send(SeaPackets.SailorPrice(SailorCost), "(sailor price)");
     }
 
     public void AskDismissSailors()
@@ -264,16 +303,30 @@ public sealed partial class ClientSession
 
     public void HireShipSailors(int count)
     {
-        ShipRules rules = Sea.Data.Rules;
-        count = Math.Min(count, FleetSailorsMax - Character.Sailors);
+        count = Math.Min(count, FleetSailorsMax - Character.Sailors - Character.SailorsWounded);
         if (count <= 0)
         {
             SystemMessage("Your ship cannot carry more sailors.");
             return;
         }
-        if (!PayShipyard(count * rules.SailorPrice)) return;
+        if (!PayShipyard(count * SailorCost)) return;
         Character.Sailors += count;
         ShipSailorsChanged($"hires {count} sailor(s)");
+    }
+
+    public void HealShipSailors()
+    {
+        int wounded = Character.SailorsWounded;
+        if (wounded <= 0)
+        {
+            SystemMessage("None of your sailors is wounded.");
+            return;
+        }
+        if (!PayShipyard(wounded * SailorCost / 2)) return;
+        SetSailors(Character.Sailors + wounded, 0);
+        SystemMessage($"{wounded} wounded sailor(s) are fit for duty again.");
+        Save();
+        Log.Info(Tag, $"{Name} has {wounded} sailor(s) healed");
     }
 
     public void DismissShipSailors(int count)
@@ -369,8 +422,7 @@ public sealed partial class ClientSession
 
     private void ShipSailorsChanged(string what)
     {
-        Send(ViewPackets.UpdateItem(ViewId.Ship, 1, new PropertyBag { ["NumSailor"] = Character.Sailors }), "(sailors)");
-        SetProperty("NumSailor", Character.Sailors);
+        SetSailors(Character.Sailors, Character.SailorsWounded);
         SystemMessage($"You now have {Character.Sailors} sailors.");
         Save();
         Log.Info(Tag, $"{Name} {what}");

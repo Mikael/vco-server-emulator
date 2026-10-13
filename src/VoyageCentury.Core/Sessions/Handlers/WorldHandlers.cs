@@ -131,7 +131,7 @@ public sealed class TextCommandHandler : IMessageHandler
             if (!_commands.Execute(session, words))
                 Log.Missing(session.Tag, $"command '{(text.Length > 60 ? text[..60] : text)}'", reader.Data);
         }
-        else
+        else if (session.ChatAllowed("say", ref text))
         {
             Log.Info(session.Tag, $"{session.Name} says: {text}");
             session.Send(ChatPackets.Chat(ProtocolConstants.SelfObjectId, text), "(chat echo)");

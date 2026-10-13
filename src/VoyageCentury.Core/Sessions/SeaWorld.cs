@@ -12,11 +12,17 @@ public sealed class SeaNpcState
     {
         Definition = definition;
         Hull = definition.Hull;
+        Sail = definition.Sail;
+        Sailors = definition.Sailors;
     }
 
     public SeaNpcDefinition Definition { get; }
 
     public int Hull { get; set; }
+
+    public int Sail { get; set; }
+
+    public int Sailors { get; set; }
 
     public bool Dead { get; set; }
 
@@ -29,6 +35,10 @@ public sealed class SeaNpcState
     public long NextShotAt { get; set; }
 
     public int RatioHull => Math.Clamp(100 * Hull / Math.Max(1, Definition.Hull), 0, 100);
+
+    public int RatioSail => Math.Clamp(100 * Sail / Math.Max(1, Definition.Sail), 0, 100);
+
+    public int RatioSailors => Math.Clamp(100 * Sailors / Math.Max(1, Definition.Sailors), 0, 100);
 }
 
 public sealed class SeaWorld
@@ -56,6 +66,8 @@ public sealed class SeaWorld
 
     public SeaNpcState? Find(int objectId, int scene)
         => _ships.TryGetValue(objectId, out SeaNpcState? ship) && ship.Definition.Scene == scene ? ship : null;
+
+    public CannonDefinition CannonOf(SeaNpcDefinition definition) => Data.FindCannon(definition.Cannon) ?? Data.DefaultCannon;
 
     public bool IsSeaNpc(int objectId) => _ships.ContainsKey(objectId);
 
@@ -145,6 +157,8 @@ public sealed class SeaWorld
         Later(Math.Max(Data.Rules.SinkSeconds + 2, definition.RespawnSeconds), () =>
         {
             ship.Hull = definition.Hull;
+            ship.Sail = definition.Sail;
+            ship.Sailors = definition.Sailors;
             ship.Dead = false;
             ship.Gone = false;
             ship.Target = null;
@@ -166,7 +180,7 @@ public sealed class SeaWorld
                 continue;
             }
             if (now < ship.NextShotAt) continue;
-            ship.NextShotAt = now + (long)(Math.Max(1f, ship.Definition.ReloadSeconds) * 1000);
+            ship.NextShotAt = now + (long)(Math.Max(1f, CannonOf(ship.Definition).ReloadSeconds) * 1000);
             target.TakeSeaVolley(ship);
         }
     }

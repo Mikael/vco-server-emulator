@@ -1,0 +1,170 @@
+{
+  "Skills": {
+    "ExperienceFactor": 50,
+    "PhaseOneCap": 31,
+    "PhaseTwoCap": 100,
+    "PromotedSkillLimit": 8,
+    "FreePromotions": 7,
+    "PromotionFee": 0,
+    "PaidPromotionFee": 5000000,
+    "BornPromoted": "SKILL_NAVIGATE",
+    "TotalLevelCap": 1700,
+    "StuntPointsAtLearning": 1,
+    "LevelsPerStuntPoint": 4,
+    "StuntLevelStep": 6,
+    "StuntLevelOffset": 5,
+    "StuntLevelMax": 10,
+    "UltimateStuntLevelMax": 1,
+    "UltimateStuntSkillLevel": 40,
+    "LateStuntSkillLevel": 60,
+    "StuntPrice": 300,
+    "TitlePrice": 500,
+    "DemotePoints": 500,
+    "ForgetStuntPoints": 300,
+    "BareHandedSharePercent": 80,
+    "CombatExperiencePerDamage": 10,
+    "VoyageExperience": 500,
+    "VoyageExperienceSeconds": 10,
+    "SeaBattleExperiencePerDamage": 5,
+    "EloquenceExperiencePerProfit": 10,
+    "MedicineExperiencePerPoint": 5,
+    "ManeuverExperience": 5,
+    "StructureSharePercent": 80,
+    "PartyExperiencePercent": 10,
+    "WorkExperience": [
+      792,
+      1781,
+      2854,
+      3929,
+      5004,
+      6052,
+      7017,
+      7921,
+      8789,
+      9618
+    ],
+    "InitialSkills": [
+      "SKILL_NAVIGATE",
+      "SKILL_SEABATTLE",
+      "SKILL_SPEECHCRAFT",
+      "SKILL_HAND"
+    ],
+    "GrantedStunts": {
+      "SKILL_MINING": "US_MINING2",
+      "SKILL_LUMBER": "US_LUMBER2",
+      "SKILL_PLANTING": "US_PLANTING2"
+    },
+    "GrantedTools": {
+      "SKILL_MINING": "IDName00003397",
+      "SKILL_LUMBER": "IDName00003400",
+      "SKILL_PLANTING": "IDName00003403"
+    }
+  },
+  "Character": {
+    "BaseHp": 100,
+    "HpPerBareHandedLevel": 10,
+    "BaseSp": 100,
+    "SpPerMedicineLevel": 10,
+    "SpPerSpiritStuntLevel": 5,
+    "BaseLoad": 100.0,
+    "LoadPerPracticeStuntLevel": 5,
+    "RunLoadPercent": 90,
+    "RegenerationSeconds": 6,
+    "HpRegenerationPermille": 50,
+    "SpRegenerationPermille": 50,
+    "PotionPerSecond": 5,
+    "PotionPerHealingLevel": 1,
+    "DeathReputationLossPercent": 1
+  },
+  "Combat": {
+    "BaseAttack": 1,
+    "BaseHitRatio": 80,
+    "HitFloorPercent": 33,
+    "DamageSpreadPercent": 10,
+    "DefencePercent": {
+      "SKILL_FALCHION": 20,
+      "SKILL_AXE": -20,
+      "SKILL_SHOT": -70
+    },
+    "HitBonus": {
+      "SKILL_SWORD": 10,
+      "SKILL_SHOT": -10
+    },
+    "AttackMilliseconds": {
+      "SKILL_HAND": 700,
+      "SKILL_SWORD": 700,
+      "SKILL_FALCHION": 700,
+      "SKILL_AXE": 1000,
+      "SKILL_SHOT": 1500
+    },
+    "DefencePromotionPercentPerLevel": 1,
+    "DebuffPercentPerLevel": 2,
+    "BuffPercentPerLevel": 2,
+    "PassiveChancePercentPerLevel": 3,
+    "CriticalDamagePercent": 200,
+    "SecondHitPercent": 50,
+    "BlockDamagePercent": 50,
+    "CounterDamagePercent": 50,
+    "RageOfGodPercent": 300,
+    "SnipingBonusPercentPerLevel": 10,
+    "SwordDanceHits": 5,
+    "StuntSeconds": 20,
+    "HolyGunSeconds": 30,
+    "DefensiveStanceDefencePerLevel": 2,
+    "MonsterAttackMilliseconds": 2000,
+    "MonsterReach": 14.0,
+    "AggroRadius": 10.0,
+    "FleeHpPercent": 25,
+    "FleeDistance": 25.0,
+    "FleeSpeed": 5.0,
+    "MonsterHitBase": 85,
+    "MonsterDodgeBase": 5,
+    "MonsterRatingPerTier": 9
+  },
+  "Clock": {
+    "HourSeconds": 60,
+    "StartYear": 1500,
+    "Epoch": "2026-01-01"
+  },
+  "Nobility": {
+    "ReputationFactor": 50,
+    "AmityStep": 8,
+    "AmityBase": 4,
+    "FeeFactor": 200,
+    "RequireAmity": true,
+    "Titles": [
+      "Warrior",
+      "Hero",
+      "Knight",
+      "Chevalier",
+      "Baronet",
+      "Baron",
+      "Viscount",
+      "Count",
+      "Marquis",
+      "Duke",
+      "Arch-Duke",
+      "Royal Highness"
+    ]
+  },
+  "Economy": {
+    "SilverCap": 2100000000,
+    "WarehouseSlots": 18,
+    "WarehouseLoad": 500,
+    "WarehouseLoadPrice": 500,
+    "WarehouseLoadLot": 10,
+    "TradeDiscountPercent": 10,
+    "TradeBonusPercent": 10,
+    "TradeTaxPercent": 1,
+    "TradePriceCapFactor": 20,
+    "SellBackPercent": 50,
+    "PirateReputationPerLevel": 10
+  },
+  "Guild": {
+    "FounderSkillLevel": 11,
+    "CreationFee": 100000,
+    "Supporters": 4,
+    "RequireSupporters": true,
+    "MemberLimit": 20
+  }
+}

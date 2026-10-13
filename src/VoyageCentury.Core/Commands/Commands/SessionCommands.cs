@@ -46,16 +46,17 @@ public sealed class ChatChannelCommand : ITextCommand
     public bool Execute(ClientSession session, string[] words)
     {
         if (words.Length < 2) return true;
+        string text = string.Join(' ', words.Skip(words[0] == "c5" ? 2 : 1));
         switch (words[0])
         {
             case "c5":
-                if (words.Length > 2) session.Whisper(words[1], string.Join(' ', words.Skip(2)));
+                if (words.Length > 2 && session.ChatAllowed("whisper", ref text)) session.Whisper(words[1], text);
                 return true;
             case "c2":
-                session.Broadcast(ChatChannel.City, string.Join(' ', words.Skip(1)));
+                if (session.ChatAllowed("city", ref text)) session.Broadcast(ChatChannel.City, text);
                 return true;
             default:
-                session.Broadcast(ChatChannel.Public, string.Join(' ', words.Skip(1)));
+                if (session.ChatAllowed("world", ref text)) session.Broadcast(ChatChannel.Public, text);
                 return true;
         }
     }

@@ -80,8 +80,11 @@ public sealed partial class ClientSession
         }
         else
         {
-            entries.Add((DialogueEntry.Text, 0, $"Founding a guild costs {GuildDirectory.CreationFee} gold. You can also apply to an existing guild."));
-            entries.Add((DialogueEntry.Option, GuildCreateOption, $"Found a guild ({GuildDirectory.CreationFee} gold)"));
+            Data.GuildRules rules = Rule.Guild;
+            entries.Add((DialogueEntry.Text, 0, $"Founding a guild needs a skill of Level {rules.FounderSkillLevel}, {rules.CreationFee} silver coins"
+                + (rules.RequireSupporters ? $" and a team of {rules.Supporters} supporters who belong to no guild" : "")
+                + ". You can also apply to an existing guild."));
+            entries.Add((DialogueEntry.Option, GuildCreateOption, $"Found a guild ({rules.CreationFee} silver)"));
             entries.Add((DialogueEntry.Option, GuildJoinOption, "Join a guild"));
         }
         entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));

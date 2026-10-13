@@ -7,8 +7,6 @@ namespace VoyageCentury.Core.Sessions;
 
 public sealed partial class ClientSession
 {
-    private const int CannonPhoto = 160101;
-    private const int AmmunitionPhoto = 190104;
     private const int SeaNoticeGap = 2500;
 
     private readonly long[] _seaReadyAt = new long[2];
@@ -25,6 +23,11 @@ public sealed partial class ClientSession
 
     public int ShipHull => Character.ShipHull < 0 ? ShipHullMax : Math.Min(Character.ShipHull, ShipHullMax);
 
+    public int ShipSail => Character.ShipSail < 0 ? FleetSailMax : Math.Min(Character.ShipSail, FleetSailMax);
+
+    public AmmunitionDefinition ShipAmmunition(int side)
+        => Sea.Data.FindAmmunition(side == 0 ? Character.AmmunitionLeft : Character.AmmunitionRight) ?? Sea.Data.DefaultAmmunition;
+
     public string ShipName => Character.ShipName.Length > 0 ? Character.ShipName : $"{Name}'s ship";
 
     public CannonDefinition ShipCannon => Sea.Data.FindCannon(Character.CannonName) ?? Sea.Data.DefaultCannon;
@@ -40,6 +43,9 @@ public sealed partial class ClientSession
         if (!HasAmmunition(Character.AmmunitionLeft)) Character.AmmunitionLeft = FirstAmmunition();
         if (!HasAmmunition(Character.AmmunitionRight)) Character.AmmunitionRight = FirstAmmunition();
         if (Character.ShipHull < 0) Character.ShipHull = FleetHullMax;
+        if (Character.ShipSail < 0) Character.ShipSail = FleetSailMax;
+        Character.SailorsWounded = Math.Clamp(Character.SailorsWounded, 0, FleetSailorsMax);
+        Character.Sailors = Math.Clamp(Character.Sailors, 0, FleetSailorsMax - Character.SailorsWounded);
     }
 
     public void ApplySeaShip(PropertyBag ship)
@@ -55,6 +61,10 @@ public sealed partial class ClientSession
             ["S/NumCannonL"] = Character.CannonsLeft,
             ["S/NumCannonR"] = Character.CannonsRight,
             ["RatioShipHP"] = 100 * ShipHull / Math.Max(1, ShipHullMax),
+            ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax),
+            ["RatioSailorHP"] = SailorRatio,
+            ["NumSailor"] = Character.Sailors,
+            ["NumSailorBad"] = Character.SailorsWounded,
             ["AmmoIndexL"] = AmmunitionIndex(Character.AmmunitionLeft),
             ["AmmoIndexR"] = AmmunitionIndex(Character.AmmunitionRight),
         };
@@ -101,11 +111,11 @@ public sealed partial class ClientSession
             ["Level"] = definition.Level,
             ["Dead"] = ship.Dead ? 1 : 0,
             ["RatioShipHP"] = ship.RatioHull,
-            ["RatioSailHP"] = 100,
-            ["RatioSailorHP"] = 100,
+            ["RatioSailHP"] = ship.RatioSail,
+            ["RatioSailorHP"] = ship.RatioSailors,
             ["RatioHP"] = ship.RatioHull,
-            ["S/ModelCannonL"] = definition.CannonModel,
-            ["S/ModelCannonR"] = definition.CannonModel,
+            ["S/ModelCannonL"] = Sea.CannonOf(definition).Model,
+            ["S/ModelCannonR"] = Sea.CannonOf(definition).Model,
             ["S/NumCannonL"] = definition.Cannons,
             ["S/NumCannonR"] = definition.Cannons,
             ["S/SailTex"] = definition.SailCloth,
@@ -130,6 +140,7 @@ public sealed partial class ClientSession
         if (!AtSea || Mover == null) return false;
         SeaNpcState? ship = Sea.Find(objectId, Scene);
         if (ship == null) return false;
+        SeaTarget = objectId;
         if (!ship.Dead && !ship.Gone && !SeaSunk) FireBroadside(ship);
         return true;
     }
@@ -183,44 +194,92 @@ public sealed partial class ClientSession
         })), "(ship hull)");
     }
 
+    public int SailorRatio => 100 * Character.Sailors / Math.Max(1, Character.Sailors + Character.SailorsWounded);
+
+    public void SetShipSail(int sail)
+    {
+        Character.ShipSail = Math.Clamp(sail, 0, FleetSailMax);
+        var ratio = SeaPackets.Known(new PropertyBag { ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax) });
+        if (AtSea)
+        {
+            Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, ratio), "(sail)");
+            ToOthers(ScenePackets.ObjectProperties(ObjectId, ratio), $"({Name} sail)");
+            ReissueShipMove("sail damage");
+        }
+        Send(ViewPackets.UpdateItem(ViewId.Ship, 1, SeaPackets.Known(new PropertyBag
+        {
+            ["S/SailHP"] = ShipSail,
+            ["S/MaxSailHP"] = FleetSailMax,
+            ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax),
+        })), "(ship sail)");
+    }
+
+    public void SetSailors(int healthy, int wounded)
+    {
+        wounded = Math.Clamp(wounded, 0, FleetSailorsMax);
+        healthy = Math.Clamp(healthy, 0, FleetSailorsMax - wounded);
+        Character.Sailors = healthy;
+        Character.SailorsWounded = wounded;
+        Send(ViewPackets.UpdateItem(ViewId.Ship, 1, SeaPackets.Known(new PropertyBag
+        {
+            ["NumSailor"] = healthy,
+            ["NumSailorBad"] = wounded,
+        })), "(sailors)");
+        SetProperty("NumSailor", healthy);
+        SetProperty("NumSailorBad", wounded);
+        if (!AtSea) return;
+        var ratio = SeaPackets.Known(new PropertyBag { ["RatioSailorHP"] = SailorRatio });
+        if (ratio.Count == 0) return;
+        Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, ratio), "(sailor ratio)");
+        ToOthers(ScenePackets.ObjectProperties(ObjectId, ratio), $"({Name} sailor ratio)");
+        ReissueShipMove("crew change");
+    }
+
     public void TakeSeaVolley(SeaNpcState ship)
     {
         if (Mover == null || !AtSea || SeaSunk || ship.Dead) return;
         SeaNpcDefinition definition = ship.Definition;
+        CannonDefinition cannon = Sea.CannonOf(definition);
+        AmmunitionDefinition ammunition = Sea.Data.FindAmmunition(definition.Ammunition) ?? Sea.Data.DefaultAmmunition;
+        ShipRules rules = Sea.Data.Rules;
         (float x, float z) = Mover.Now();
         float distance = SeaDistance(definition.X, definition.Z, x, z);
-        if (distance > definition.Range * 1.2f) return;
+        if (distance > cannon.Range * 1.2f) return;
 
+        MarkAttacked();
         int side = BroadsideSide(definition.Heading, x - definition.X, z - definition.Z);
         int balls = Math.Max(1, definition.Cannons);
-        int hits = 0;
-        int damage = 0;
-        for (int i = 0; i < balls; i++)
+        int hits = CombatRules.SeaHits(balls, definition.HitPercent);
+        VolleyDamage damage = CombatRules.Volley(hits, cannon.Attack, ammunition, 0, 0);
+        int hullPercent = SeaStance switch
         {
-            if (Random.Shared.NextSingle() > definition.Accuracy) continue;
-            hits++;
-            damage += Random.Shared.Next(definition.DamageMin, Math.Max(definition.DamageMin, definition.DamageMax) + 1);
-        }
+            SeaStanceGuard => rules.GuardHullTakenPercent,
+            SeaStancePursuit => rules.PursuitHullTakenPercent,
+            _ => 100,
+        };
+        int hull = damage.Hull <= 0 ? 0 : Math.Max(1, damage.Hull * hullPercent / 100);
 
-        float scatter = Sea.Data.Rules.BroadsideScatter;
+        float scatter = rules.BroadsideScatter;
         int seed = Random.Shared.Next(1, 30000);
-        const float ballSpeed = 60f;
-        Send(SeaPackets.Broadside(definition.Id, ProtocolConstants.SelfObjectId, side, definition.ShellType, balls, x, z, scatter, ballSpeed, seed),
+        Send(SeaPackets.Broadside(definition.Id, ProtocolConstants.SelfObjectId, side, ammunition.ShellType, balls, x, z, scatter, cannon.BallSpeed, seed),
             $"({definition.Name} fires)");
-        ToOthers(SeaPackets.Broadside(definition.Id, ObjectId, side, definition.ShellType, balls, x, z, scatter, ballSpeed, seed),
+        ToOthers(SeaPackets.Broadside(definition.Id, ObjectId, side, ammunition.ShellType, balls, x, z, scatter, cannon.BallSpeed, seed),
             $"({definition.Name} fires at {Name})");
 
-        Sea.Later(Math.Min(4.0, distance / ballSpeed), () =>
+        Sea.Later(Math.Min(4.0, distance / Math.Max(1f, cannon.BallSpeed)), () =>
         {
             if (!InWorld || !AtSea || SeaSunk || Scene != definition.Scene) return;
-            string text = damage > 0 ? $"-{damage}" : "Miss";
-            float fraction = (float)hits / balls;
-            Send(SeaPackets.Volley(ProtocolConstants.SelfObjectId, definition.ShellType, balls, fraction, definition.X, definition.Z, text), "(volley lands)");
-            ToOthers(SeaPackets.Volley(ObjectId, definition.ShellType, balls, fraction, definition.X, definition.Z, text), $"(volley lands on {Name})");
-            if (damage <= 0) return;
-            if (ShipHull - damage > 0)
+            string text = hits > 0 ? $"-{hull}" : "Miss";
+            float fraction = SeaPackets.HitChance(hits, balls);
+            Send(SeaPackets.Volley(ProtocolConstants.SelfObjectId, ammunition.ShellType, balls, fraction, definition.X, definition.Z, text), "(volley lands)");
+            ToOthers(SeaPackets.Volley(ObjectId, ammunition.ShellType, balls, fraction, definition.X, definition.Z, text), $"(volley lands on {Name})");
+            if (hits <= 0) return;
+            if (damage.Sail > 0 && ShipSail > 0) SetShipSail(ShipSail - damage.Sail);
+            int struck = Math.Min(damage.Sailors, Character.Sailors);
+            if (struck > 0) SetSailors(Character.Sailors - struck, Character.SailorsWounded + struck);
+            if (ShipHull - hull > 0 && Character.Sailors > 0)
             {
-                SetShipHull(ShipHull - damage);
+                if (hull > 0) SetShipHull(ShipHull - hull);
                 return;
             }
             LoseShip(definition.Name);
@@ -231,11 +290,14 @@ public sealed partial class ClientSession
     {
         EnsureShipState();
         SeaNpcDefinition definition = ship.Definition;
+        ShipRules rules = Sea.Data.Rules;
         (float x, float z) = Mover!.Now();
         float distance = SeaDistance(x, z, definition.X, definition.Z);
-        int side = BroadsideSide(Mover.Heading, definition.X - x, definition.Z - z);
+        double relative = RelativeBearing(Mover.HeadingNow(), definition.X - x, definition.Z - z);
+        int side = relative >= 0 ? 1 : 0;
         long now = SeaWorld.Now;
         if (now < _seaReadyAt[side]) return;
+        if (FiringEndsFullSpeed()) return;
 
         CannonDefinition cannon = ShipCannon;
         int cannons = side == 0 ? Character.CannonsLeft : Character.CannonsRight;
@@ -251,26 +313,28 @@ public sealed partial class ClientSession
             SeaNotice("You are out of cannonballs.");
             return;
         }
-        if (distance > cannon.Range * 1.1f)
+        if (distance >= cannon.Range)
         {
             SeaNotice("The target is out of range.");
+            return;
+        }
+        double offBeam = Math.Abs(side == 0 ? relative + 900.0 : relative - 900.0);
+        if (offBeam > cannon.FireAngle * 5.0 + FireArcSlackTenths)
+        {
+            SeaNotice($"The target is outside the firing arc of your {(side == 0 ? "port" : "starboard")} battery.");
             return;
         }
 
         AmmunitionDefinition ammunition = Sea.Data.FindAmmunition(ammunitionName) ?? Sea.Data.DefaultAmmunition;
         int balls = Math.Min(cannons, stock);
-        int hits = 0;
-        int damage = 0;
-        for (int i = 0; i < balls; i++)
-        {
-            if (Random.Shared.NextSingle() > cannon.Accuracy) continue;
-            hits++;
-            damage += Random.Shared.Next(ammunition.DamageMin, Math.Max(ammunition.DamageMin, ammunition.DamageMax) + 1);
-        }
+        int chance = CombatRules.SeaHitPercent(rules, UniqueSkillLevel("US_CANNON"), SeaStance == SeaStancePursuit ? rules.PursuitHitPenalty : 0);
+        int hits = CombatRules.SeaHits(balls, chance);
+        VolleyDamage damage = CombatRules.Volley(hits, cannon.Attack, ammunition, definition.ArmourHull, definition.ArmourSail,
+            SeaStance == SeaStanceGuard ? rules.GuardDamagePercent : 100);
 
         int reload = (int)(Math.Max(0.5f, cannon.ReloadSeconds) * 1000);
         _seaReadyAt[side] = now + reload;
-        Character.Ammunition[ammunitionName] = stock - balls;
+        Character.Ammunition![ammunitionName] = stock - balls;
         RefreshAmmunition(ammunitionName);
         if (stock - balls <= 0)
         {
@@ -279,7 +343,7 @@ public sealed partial class ClientSession
             SendAmmunitionChoice();
         }
 
-        float scatter = Sea.Data.Rules.BroadsideScatter;
+        float scatter = rules.BroadsideScatter;
         int seed = Random.Shared.Next(1, 30000);
         Send(SeaPackets.Broadside(ProtocolConstants.SelfObjectId, definition.Id, side, ammunition.ShellType, balls,
             definition.X, definition.Z, scatter, cannon.BallSpeed, seed), "(broadside)");
@@ -287,30 +351,36 @@ public sealed partial class ClientSession
             definition.X, definition.Z, scatter, cannon.BallSpeed, seed), $"({Name} fires a broadside)");
         Send(SeaPackets.CannonReload(side, reload), "(reload)");
         Sea.Provoke(ship, this);
-        Log.Debug(Tag, $"{Name} fires {balls} x {ammunitionName} at {definition.Name}: {hits} hit(s), {damage} damage");
+        Log.Debug(Tag, $"{Name} fires {balls} x {ammunitionName} at {definition.Name}: {hits} hit(s), hull {damage.Hull}, sail {damage.Sail}, sailors {damage.Sailors}");
 
         Sea.Later(Math.Min(4.0, distance / Math.Max(1f, cannon.BallSpeed)), () => LandBroadside(ship, ammunition.ShellType, balls, hits, damage, x, z));
     }
 
-    private void LandBroadside(SeaNpcState ship, int shellType, int balls, int hits, int damage, float fromX, float fromZ)
+    private void LandBroadside(SeaNpcState ship, int shellType, int balls, int hits, VolleyDamage damage, float fromX, float fromZ)
     {
         if (ship.Dead) return;
         SeaNpcDefinition definition = ship.Definition;
-        byte[] volley = SeaPackets.Volley(definition.Id, shellType, balls, (float)hits / balls, fromX, fromZ,
-            damage > 0 ? $"-{damage}" : "Miss", 0xffff00);
+        byte[] volley = SeaPackets.Volley(definition.Id, shellType, balls, SeaPackets.HitChance(hits, balls), fromX, fromZ,
+            hits > 0 ? $"-{damage.Hull}" : "Miss", 0xffff00);
         List<ClientSession> watchers = Sea.Sailors(definition.Scene).ToList();
         foreach (ClientSession session in watchers) session.Send(volley, "(broadside lands)");
-        if (damage <= 0) return;
+        if (hits <= 0) return;
 
-        ship.Hull -= damage;
-        if (ship.Hull > 0)
+        int counted = Math.Min(damage.Hull, Math.Max(0, ship.Hull)) + Math.Min(damage.Sail, Math.Max(0, ship.Sail));
+        if (InWorld) GainSkillExperience("SKILL_SEABATTLE", (long)counted * Rule.Skills.SeaBattleExperiencePerDamage);
+        ship.Hull -= damage.Hull;
+        ship.Sail = Math.Max(0, ship.Sail - damage.Sail);
+        ship.Sailors = Math.Max(0, ship.Sailors - damage.Sailors);
+        if (ship.Hull > 0 && ship.Sailors > 0)
         {
-            byte[] hull = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(new PropertyBag
+            byte[] state = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(new PropertyBag
             {
                 ["RatioShipHP"] = ship.RatioHull,
                 ["RatioHP"] = ship.RatioHull,
+                ["RatioSailHP"] = ship.RatioSail,
+                ["RatioSailorHP"] = ship.RatioSailors,
             }));
-            foreach (ClientSession session in watchers) session.Send(hull, $"({definition.Name} hull)");
+            foreach (ClientSession session in watchers) session.Send(state, $"({definition.Name} damage)");
             return;
         }
 
@@ -318,17 +388,24 @@ public sealed partial class ClientSession
         if (!InWorld) return;
         Character.ShipsSunk++;
         SetMoney(Money + definition.Gold);
-        SystemMessage($"You sank the {definition.Name} and salvaged {definition.Gold} gold.");
-        GainExperience(definition.Experience);
+        SystemMessage($"You sank the {definition.Name} and salvaged {definition.Gold} silver coins.");
+        GainReputation(definition.Reputation > 0 ? definition.Reputation : Rule.Economy.PirateReputationPerLevel * definition.Level);
+        OnSeaNpcSunk(definition.Name);
         Save();
         Log.Info(Tag, $"{Name} sank {definition.Name}");
     }
 
     private void LoseShip(string sunkBy)
     {
+        ShipRules rules = Sea.Data.Rules;
         SeaSunk = true;
         Sea.Forget(this);
-        Character.ShipHull = ShipHullMax;
+        Character.ShipHull = Math.Clamp(rules.SunkDurability, 0, ShipHullMax);
+        if (rules.LoseCannonsOnSinking)
+        {
+            Character.CannonsLeft = 0;
+            Character.CannonsRight = 0;
+        }
         Save();
         var sinking = SeaPackets.Known(new PropertyBag { ["Dead"] = 1, ["RatioShipHP"] = 0 });
         Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, sinking), "(own ship sinks)");
@@ -341,12 +418,17 @@ public sealed partial class ClientSession
         {
             if (!InWorld || !SeaSunk || Scene != sunkIn) return;
             SeaSunk = false;
-            int port = Sea.Data.Rules.PortScene;
+            int port = Character.LastPort != 0 ? Character.LastPort : rules.PortScene;
             if (!Context.Data.Scenes.Exists(port)) port = WorldSettings.StartScene;
             ForceLand = false;
             Travel(port);
-            SetShipHull(ShipHullMax);
-            SystemMessage("You were pulled from the water and brought back to port. Your ship has been repaired.");
+            SetShipHull(Character.ShipHull);
+            SetShipCannons(Character.CannonsLeft, Character.CannonsRight);
+            LoseReputation(rules.SinkReputationLossPercent);
+            SystemMessage(rules.LoseCannonsOnSinking
+                ? "You were brought back to the last port you visited. Your ship was saved but her durability dropped to 1 and her mounted cannons were lost. Have her repaired before you sail off."
+                : "You were brought back to the last port you visited. Your ship was saved but her durability dropped to 1. Have her repaired before you sail off.");
+            Save();
         });
     }
 
@@ -389,7 +471,7 @@ public sealed partial class ClientSession
                 ["Name"] = name,
                 ["Index"] = index,
                 ["Amount"] = amount,
-                ["Photo"] = AmmunitionPhoto,
+                ["Photo"] = Sea.Data.FindAmmunition(name)?.Photo ?? Sea.Data.DefaultAmmunition.Photo,
                 ["Kind"] = 0,
                 ["ItemType"] = SeaPackets.ItemTypeAmmunition,
             };
@@ -420,9 +502,10 @@ public sealed partial class ClientSession
             ["Name"] = cannon.Name,
             ["Index"] = slot,
             ["Amount"] = count,
-            ["Photo"] = CannonPhoto,
+            ["Photo"] = cannon.Photo,
             ["Kind"] = 0,
             ["ItemType"] = SeaPackets.ItemTypeShipEquipment,
+            ["AT"] = cannon.Attack,
             ["DFG"] = 100,
             ["DFGMax"] = 100,
             ["CoolingKind"] = 0,
@@ -455,12 +538,16 @@ public sealed partial class ClientSession
     private static float SeaDistance(float fromX, float fromZ, float toX, float toZ)
         => MathF.Sqrt((toX - fromX) * (toX - fromX) + (toZ - fromZ) * (toZ - fromZ));
 
-    private static int BroadsideSide(int headingTenths, float dx, float dz)
+    private const double FireArcSlackTenths = 10.0;
+
+    private static int BroadsideSide(int headingTenths, float dx, float dz) => RelativeBearing(headingTenths, dx, dz) >= 0 ? 1 : 0;
+
+    private static double RelativeBearing(int headingTenths, float dx, float dz)
     {
         double bearing = Math.Atan2(dx, dz) * 1800.0 / Math.PI;
         double relative = (bearing - headingTenths) % 3600.0;
         if (relative > 1800.0) relative -= 3600.0;
         if (relative <= -1800.0) relative += 3600.0;
-        return relative >= 0 ? 1 : 0;
+        return relative;
     }
 }

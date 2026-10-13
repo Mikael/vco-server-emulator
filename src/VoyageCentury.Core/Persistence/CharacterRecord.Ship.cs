@@ -4,6 +4,8 @@ public sealed partial class CharacterRecord
 {
     public string ShipName { get; set; } = "";
     public int ShipHull { get; set; } = -1;
+    public int ShipSail { get; set; } = -1;
+    public int SailorsWounded { get; set; }
     public int SailCloth { get; set; } = 2900000;
     public int CannonsLeft { get; set; } = -1;
     public int CannonsRight { get; set; } = -1;

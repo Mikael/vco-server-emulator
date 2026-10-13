@@ -11,17 +11,17 @@ public static class ScenePackets
 
     public static byte[] LeaveScene() => new PacketWriter(ServerMsg.LeaveScene).ToArray();
 
-    public static byte[] SceneState(int hour, int weather, float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f)
+    public static byte[] SceneState(Data.GameTime time, int weather, float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f)
         => PropertyTable.WriteValues(new PacketWriter(ServerMsg.SceneState), new PropertyBag
         {
-            ["Hour"] = hour,
+            ["Hour"] = time.Hour,
             ["WeatherType"] = weather,
             ["WindLevel"] = windLevel,
             ["WindOrient"] = windOrient,
             ["StreamOrient"] = streamOrient,
-            ["Year"] = 1500 + (DateTime.Now.Year - 2000),
-            ["Month"] = DateTime.Now.Month,
-            ["Day"] = DateTime.Now.Day,
+            ["Year"] = time.Year,
+            ["Month"] = time.Month,
+            ["Day"] = time.Day,
         }).ToArray();
 
     public static byte[] CreateObject(int objectId, ObjectKind kind, int model, int serial = 0)
@@ -59,19 +59,19 @@ public static class ScenePackets
             .WriteUInt16((ushort)heading)
             .ToArray();
 
-    public static byte[] MoveObject(int objectId, float destX, float destZ, float speed, int heading, int action = 0)
+    public static byte[] MoveObject(int objectId, float destX, float destZ, float speed, int heading, int action = 0, int turn = 0)
         => new PacketWriter(ServerMsg.MoveObject)
             .WriteByte(1)
             .WriteUInt32((uint)objectId)
             .WriteSingle(destX).WriteSingle(destZ)
             .WriteUInt16((ushort)Math.Clamp((int)(speed * 100), 0, 65535))
             .WriteUInt16((ushort)heading)
-            .WriteInt16(0)
+            .WriteInt16((short)Math.Clamp(turn, 0, short.MaxValue))
             .WriteUInt16((ushort)action)
             .ToArray();
 
     public static byte[] PlaceObject(int objectId, float x, float y, float z, float? destX = null, float? destZ = null,
-        float speed = 0f, int action = 0, int orient = 0, int? destOrient = null)
+        float speed = 0f, int action = 0, int orient = 0, int? destOrient = null, int turn = 0)
         => new PacketWriter(ServerMsg.PlaceObject)
             .WriteUInt32((uint)objectId)
             .WriteSingle(x).WriteSingle(y).WriteSingle(z)
@@ -79,7 +79,7 @@ public static class ScenePackets
             .WriteSingle(destX ?? x).WriteSingle(destZ ?? z)
             .WriteUInt16((ushort)Math.Clamp((int)(speed * 100), 0, 65535))
             .WriteUInt16((ushort)(destOrient ?? orient))
-            .WriteInt16(0)
+            .WriteInt16((short)Math.Clamp(turn, 0, short.MaxValue))
             .WriteUInt16((ushort)action)
             .ToArray();
 }
