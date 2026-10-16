@@ -1398,5 +1398,45 @@
   {
     "Name": "SeaProtect",
     "Type": "U32"
+  },
+  {
+    "Name": "LockSwitch",
+    "Type": "U8"
+  },
+  {
+    "Name": "ReBuildInfo",
+    "Type": "String"
+  },
+  {
+    "Name": "ReBuildSign",
+    "Type": "U32"
+  },
+  {
+    "Name": "ReBuildPSkill",
+    "Type": "String"
+  },
+  {
+    "Name": "RankPropBit",
+    "Type": "U32"
+  },
+  {
+    "Name": "RankSaveBit",
+    "Type": "U32"
+  },
+  {
+    "Name": "RankArmType",
+    "Type": "U32"
+  },
+  {
+    "Name": "Camp",
+    "Type": "U32"
+  },
+  {
+    "Name": "MaxFloor",
+    "Type": "U32"
+  },
+  {
+    "Name": "SeaMaxFloor",
+    "Type": "U32"
   }
 ]

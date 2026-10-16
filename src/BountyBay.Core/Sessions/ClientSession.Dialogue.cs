@@ -13,6 +13,7 @@ public sealed partial class ClientSession
     {
         if (TalkArmUpgrade(npc)) return;
         if (npc.Shop?.ContainsKey(ViewId.Shipyard) == true && OpenShipyardMenu(npc.Id)) return;
+        if (BattleTalk(npc)) return;
         TalkingTo = npc.Id;
         if (TalkWithClientMenu(npc)) return;
         var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, npc.Greeting) };
@@ -25,10 +26,12 @@ public sealed partial class ClientSession
     public void ChooseOption(int target, DialogueAction action)
     {
         action = ClientMenuAction(action);
+        if (HandleBattleOption(target, (int)action)) return;
         if (HandleGuildHallOption(target, (int)action)) return;
         if (HandleAideOption(target, (int)action)) return;
         if (HandleArmUpgradeOption(target, (int)action)) return;
         if (HandleAuctionOption(target, (int)action)) return;
+        if (HandleArmRebuildOption(target, (int)action)) return;
         if (HandleBboItemOption(target, (int)action)) return;
         if (HandleShipModelOption(target, (int)action) || HandleWhistleOption(target, (int)action)) return;
         if (HandleTotemOption(target, (int)action)) return;

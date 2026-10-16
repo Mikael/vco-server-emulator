@@ -57,10 +57,10 @@ public sealed partial class ClientSession
 
     private int WornSum(string property)
     {
-        if (Character.Bags == null || !Character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return TotemBonus(property);
+        if (Character.Bags == null || !Character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return TotemBonus(property) + RankArmWornSum(property);
         return worn.Values
             .Where(item => DurabilityMax(item.Name) <= 0 || Durability(item.Name) > 0)
-            .Sum(item => ItemCatalog.Number(item.Name, property) + ArmUpgradeBonus(item, property)) + TotemBonus(property);
+            .Sum(item => ItemCatalog.Number(item.Name, property) + ArmUpgradeBonus(item, property) + ArmRebuildBonus(item, property)) + TotemBonus(property) + RankArmWornSum(property);
     }
 
     private void ComputeStats()
@@ -182,6 +182,11 @@ public sealed partial class ClientSession
             return;
         }
 
+        if (BattleKnockedOut())
+        {
+            state.Target = null;
+            return;
+        }
         state.Target = null;
         LoseReputation(Rule.Character.DeathReputationLossPercent);
         SetHp(MaxHp);
@@ -214,6 +219,7 @@ public sealed partial class ClientSession
     private bool Wound(MonsterDefinition monster, MonsterState state, int dealt, uint colour)
     {
         if (state.Dead) return false;
+        BattleDamageDealt(monster, Math.Min(dealt, Math.Max(0, state.Hp)));
         GainFightExperience(Math.Min(dealt, Math.Max(0, state.Hp)) * (monster.Level + 1));
         state.Hp -= dealt;
         List<ClientSession> everyone = [this, .. Others()];
@@ -249,6 +255,7 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} killed {monster.Name}");
         Context.World.ScheduleRespawn(monster);
         OnMonsterKilled(monster.Id);
+        BattleMonsterKilled(monster);
         DropLoot(monster);
         return false;
     }

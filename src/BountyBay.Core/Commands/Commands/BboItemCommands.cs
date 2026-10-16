@@ -14,6 +14,7 @@ public sealed class BboSelectCommand : ITextCommand
     {
         if (words.Length < 4 || !int.TryParse(words[1], out int view) || !int.TryParse(words[2], out int how)
             || !int.TryParse(words[3], out int index)) return false;
+        if (session.ArmRebuildSelect(view, how, index)) return true;
         string? extra = words.Length > 4 ? string.Join(' ', words.Skip(4)) : null;
         switch (view)
         {

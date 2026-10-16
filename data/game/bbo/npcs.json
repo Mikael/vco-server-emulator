@@ -14971,6 +14971,14 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 660,
+        "Text": "Recast equipment"
+      },
+      {
+        "Action": 661,
+        "Text": "Record recast attributes"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -57959,6 +57967,14 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 660,
+        "Text": "Recast equipment"
+      },
+      {
+        "Action": 661,
+        "Text": "Record recast attributes"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -59168,6 +59184,14 @@
     "Z": -83.5,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 660,
+        "Text": "Recast equipment"
+      },
+      {
+        "Action": 661,
+        "Text": "Record recast attributes"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"

@@ -57,6 +57,7 @@ public sealed partial class ClientSession
         AddFireFlagItemProperties(bag, item);
         ItemCatalog.Extend(bag, item.Name);
         ArmUpgradeProperties(bag, item);
+        ArmRebuildItemProperties(bag, item);
         AddGuildArmProperties(GuildBuildData.Shared.Medals, bag, item.Name);
         return bag;
     }
@@ -290,6 +291,7 @@ public sealed partial class ClientSession
     public bool UseItem(int index)
     {
         if (!Items.TryGetValue(index, out ItemStack? item)) return false;
+        if (UseArmRebuildItem(item)) return true;
         if (UseGuildBuildItem(index, item)) return true;
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);

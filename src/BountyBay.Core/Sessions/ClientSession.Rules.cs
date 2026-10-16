@@ -106,6 +106,7 @@ public sealed partial class ClientSession
     {
         if (!InWorld) return;
         Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName, SceneName), "(time, weather, wind)");
+        if (CurrentBattle is { } room) Send(BattlePackets.SceneKind(room.Definition.SceneKind), "(battle scene kind)");
     }
 
     public void TickSecond(long tick)

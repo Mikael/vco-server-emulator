@@ -187,6 +187,7 @@ public sealed partial class ClientSession
 
     public void UseOnBoxItem(int view, int index, int targetView, int targetIndex)
     {
+        if (ArmRebuildBoxItem(view, index, targetView, targetIndex)) return;
         if (TotemUseOnBox(view, index, targetView, targetIndex)) return;
         if (targetView == ArmRankView && ArmRankPut(view, index)) return;
         if (targetView == SoulView && SoulBoxPut(view, index)) return;

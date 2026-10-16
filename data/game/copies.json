@@ -1,0 +1,45 @@
+{
+  // Instances ("copies"). Group/Copy = the ids of `csGroupToCopy <group> <copy> <role> [comment]`: CLIENT RESOURCE\ini\CopysList.ini
+  // (LandGroup0-3 = ids 0-3, SeaGroup0-3 = ids 4-7) and ConscribeTeam.ini [CopylistN] Name/GroupID/CopyID (Key).
+  // Level/Points: CLIENT CopyInfos.ini "Recommended for players with at least N Land Battle Points".
+  // Scene: GUESS from the key (CJxxxxxx -> scene 1xxxxxx, menXXXXXX0 -> 1XXXXXX) or the scene name in window\map; see "Source".
+  // Tower: CLIENT CopyInfos.ini [mentower] (Golden Tower, Seville outskirts) and scene 1001047 SevilleGoldenTower; NpcKeys GUESS.
+  // CopyDailyEntries 0 = no limit (GUESS: the daily limits are server data).
+  "CopyDailyEntries": 0,
+  "CopyMinPlayers": 1,
+  "CopyMaxPlayers": 5,
+  "CopyQueueSlots": 3,
+  "Copies": [
+    { "Group": 0, "Copy": 0, "Name": "Mallorca Instance", "Key": "oldcopy0001", "Scene": 1508018, "Level": 1, "Points": 80000, "Source": "GUESS MallorcaCaves" },
+    { "Group": 0, "Copy": 1, "Name": "Crete Maze Instance", "Key": "oldcopy0002", "Scene": 1505005, "Level": 1, "Points": 80000, "Source": "FirstFloorofCreteMaze" },
+    { "Group": 0, "Copy": 2, "Name": "Madagascar Instance", "Key": "oldcopy0004", "Scene": 1503018, "Level": 2, "Points": 200000, "Source": "MadagascarCave" },
+    { "Group": 0, "Copy": 3, "Name": "Taj Mahal Instance", "Key": "oldcopy0005", "Scene": 1048020, "Level": 2, "Points": 180000, "Source": "InsideTajMahal" },
+    { "Group": 1, "Copy": 0, "Name": "Imperial Tomb Instance", "Key": "oldcopy0006", "Scene": 1058020, "Level": 3, "Points": 240000, "Source": "ImperialMausoleumLevel1" },
+    { "Group": 1, "Copy": 1, "Name": "Hurricane Island Mine Cave", "Key": "CJ601020", "Scene": 1601020, "Level": 3, "Points": 230000, "Source": "key" },
+    { "Group": 1, "Copy": 2, "Name": "Deep Forest", "Key": "CJ602102", "Scene": 1602102, "Level": 4, "Points": 250000, "Source": "key + DeepForest" },
+    { "Group": 1, "Copy": 3, "Name": "Polar Tundra (Ordinary)", "Key": "CJ602311", "Scene": 1602303, "Level": 3, "Points": 280000, "Source": "GUESS (1602311 has no scene file)" },
+    { "Group": 1, "Copy": 4, "Name": "Desolate Valley (Ordinary)", "Key": "CJ001019", "Scene": 1001019, "Level": 4, "Points": 350000, "Source": "key" },
+    { "Group": 1, "Copy": 5, "Name": "Parlo Valley", "Key": "CJ001029", "Scene": 1001029, "Level": 3, "Points": 0, "Source": "key" },
+    { "Group": 2, "Copy": 0, "Name": "Hurricane Island Cave (VIP)", "Key": "door605001", "Scene": 1601025, "Level": 4, "Points": 0, "Source": "GUESS SecretCaveofHurricaneIsland" },
+    { "Group": 2, "Copy": 1, "Name": "Polar Tundra (Elite)", "Key": "CJ602312", "Scene": 1602320, "Level": 4, "Points": 310000, "Source": "GUESS" },
+    { "Group": 2, "Copy": 2, "Name": "Desolate Valley (Elite)", "Key": "CJ001022", "Scene": 1001022, "Level": 5, "Points": 380000, "Source": "key" },
+    { "Group": 2, "Copy": 3, "Name": "Poseidon Temple", "Key": "men5060100", "Scene": 1001026, "Level": 5, "Points": 360000, "Source": "PoseidonTempleLv1" },
+    { "Group": 3, "Copy": 0, "Name": "Portobello City", "Key": "men0010330", "Scene": 1001033, "Level": 6, "Points": 450000, "Source": "key" },
+    { "Group": 3, "Copy": 1, "Name": "Battle-Torn Forest", "Key": "CJ001043", "Scene": 1001043, "Level": 5, "Points": 0, "Source": "key" },
+    { "Group": 3, "Copy": 2, "Name": "Yizhou Pathway Instance", "Key": "CJ001056", "Scene": 1001056, "Level": 5, "Points": 0, "Source": "key (ConscribeTeam.ini)" },
+    { "Group": 4, "Copy": 0, "Name": "Crete Pirates Instance", "Key": "door607001a", "Sea": true, "Scene": 1001030, "Level": 1, "Points": 50000, "Source": "CretanPiratesInstance" },
+    { "Group": 4, "Copy": 1, "Name": "Gibraltar", "Key": "men0010310", "Sea": true, "Scene": 1001031, "Level": 1, "Points": 80000, "Source": "key" },
+    { "Group": 4, "Copy": 2, "Name": "Maltese Skirmish", "Key": "maertaqianshao", "Sea": true, "Scene": 1001035, "Level": 1, "Points": 0, "Source": "GUESS" },
+    { "Group": 5, "Copy": 0, "Name": "North Sea Pirates Instance", "Key": "door608001a", "Sea": true, "Scene": 1001038, "Level": 2, "Points": 0, "Source": "NorthSeaSkagerrakStraits" },
+    { "Group": 5, "Copy": 1, "Name": "Maltese Defensive War (Ordinary)", "Key": "maertabaoweizhan1", "Sea": true, "Scene": 1001050, "Level": 3, "Points": 0, "Source": "GUESS" },
+    { "Group": 6, "Copy": 0, "Name": "Maltese Defensive War (Elite)", "Key": "maertabaoweizhan2", "Sea": true, "Scene": 1001051, "Level": 4, "Points": 0, "Source": "GUESS" },
+    { "Group": 6, "Copy": 1, "Name": "English Channel", "Key": "men001025", "Sea": true, "Scene": 1001025, "Level": 5, "Points": 400000, "Source": "key" },
+    { "Group": 7, "Copy": 0, "Name": "Portobello Bay", "Key": "CJ009001", "Sea": true, "Scene": 1009001, "Level": 5, "Points": 0, "Source": "key" },
+    { "Group": 7, "Copy": 1, "Name": "Yizhou Bay Instance", "Key": "men001053", "Sea": true, "Scene": 1001053, "Level": 5, "Points": 0, "Source": "key" },
+    { "Group": 7, "Copy": 2, "Name": "JiaWu Bay Instance", "Key": "men001064", "Sea": true, "Scene": 1001064, "Level": 5, "Points": 0, "Source": "key" }
+  ],
+  "Towers": [
+    { "Name": "Golden Tower", "Sea": false, "Scene": 1001047, "DailyEntries": 0, "NpcKeys": ["tttmanager", "IDName00004989"],
+      "Floors": [{ "Floor": 1, "Boss": "Golden Tower th Floor BOSS Kaz", "Prize": [] }] }
+  ]
+}

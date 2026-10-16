@@ -1,0 +1,103 @@
+{
+  // Battlefields of the dlgRaidBattle window. Type/level = the two numbers of `csAskForEntryBattle <type> <level>`
+  // (UILogic 0x1b37f0: combo act 0,1 -> type 1,2; act 2,3 -> 4,5; act 4 -> 7; act 5 -> 9; level = tier+1, Bloody Arena tier+7).
+  // Names, tiers, point ranges, rewards: CLIENT RESOURCE\ini\BattleInfo.ini; sort prizes: CLIENT PrizeInBattleReport.ini.
+  // Scenes: CLIENT ini\scenes + window\map names. Spawns: priests/forts of data\game\bbo\npcs.json.
+  // GUESS (no client data): SceneKind except 26/41, Mode, Minutes, MinPlayers, MaxPerCamp, DayMax/WeekMax, points per
+  // kill/flag/resource, ResourcePoints, StartRating. Set MinPlayers to 1 to test a battlefield alone.
+  "EnforceRequirements": true,
+  "ConfirmSeconds": 15,
+  "ReturnSeconds": 60,
+  "Battles": [
+    {
+      "Type": 1, "Act": 0, "ActFlag": 0, "Name": "Petro Fortress", "Scene": 1001040, "SceneKind": 26, "Report": "HonorLand",
+      "Mode": "Score", "Minutes": 30, "MinPlayers": 2, "MaxPerCamp": 30, "DayMax": 5, "MinDamage": 10000,
+      "KillPoints": 1, "FlagPoints": 5, "ResourcePoints": 1, "ReliveSeconds": 10,
+      "Spawns": [[-59.0, 6.13, 207.0], [54.0, 4.61, -163.0]],
+      "ResourceKeys": ["catch_box"],
+      "Levels": [
+        { "Name": "Petro Fortress (Land Battle points 350k - 1000k)", "MinLand": 350000, "MaxLand": 1000000,
+          "Win": [{ "Item": "honor_badge", "Amount": 90 }, { "Honor": "Petro Fortress", "Amount": 40 }],
+          "Lose": [{ "Item": "honor_badge", "Amount": 15 }, { "Honor": "Petro Fortress", "Amount": 5 }] },
+        { "Name": "Petro Fortress (Land Battle points above 1000k)", "MinLand": 1000000,
+          "Win": [{ "Item": "honor_badge", "Amount": 180 }, { "Honor": "Petro Fortress", "Amount": 40 }],
+          "Lose": [{ "Item": "honor_badge", "Amount": 30 }, { "Honor": "Petro Fortress", "Amount": 5 }] }
+      ],
+      "SortPrizes": [
+        { "Score": "Resources", "Item": "honor_badge", "Amounts": [10] },
+        { "Score": "Flags", "Item": "honor_badge", "Amounts": [10, 5, 3] },
+        { "Score": "Kills", "Item": "honor_badge", "Amounts": [15, 12, 9, 6, 3] }
+      ]
+    },
+    {
+      "Type": 2, "Act": 1, "ActFlag": 1, "Name": "Labrinton Coast", "Scene": 1001042, "SceneKind": 31, "Sea": true, "Report": "HonorSea",
+      "Mode": "Score", "Minutes": 30, "MinPlayers": 2, "MaxPerCamp": 30, "DayMax": 5, "MinDamage": 30000,
+      "KillPoints": 1, "ResourcePoints": 1, "ReliveSeconds": 10,
+      "Spawns": [[674.0, 0.0, 1331.0], [-745.0, 0.0, -1938.0]],
+      "Levels": [
+        { "Name": "Labrinton Coast (Sea Battle points 350k - 1200k)", "MinSea": 350000, "MaxSea": 1200000,
+          "Win": [{ "Item": "lepanto_badge", "Amount": 90 }, { "Honor": "Labrinton Coast", "Amount": 40 }],
+          "Lose": [{ "Item": "lepanto_badge", "Amount": 15 }, { "Honor": "Labrinton Coast", "Amount": 5 }] },
+        { "Name": "Labrinton Coast (Sea Battle points above 1200k)", "MinSea": 1200000,
+          "Win": [{ "Item": "lepanto_badge", "Amount": 180 }, { "Honor": "Labrinton Coast", "Amount": 40 }],
+          "Lose": [{ "Item": "lepanto_badge", "Amount": 30 }, { "Honor": "Labrinton Coast", "Amount": 5 }] }
+      ],
+      "SortPrizes": [
+        { "Score": "Resources", "Item": "lepanto_badge", "Amounts": [10] },
+        { "Score": "Kills", "Item": "lepanto_badge", "Amounts": [15, 12, 9, 6, 3] }
+      ]
+    },
+    {
+      "Type": 4, "Act": 2, "ActFlag": 3, "Name": "Solo Arena", "Scene": 1001046, "SceneKind": 48, "Report": "None",
+      "Mode": "Duel", "Minutes": 5, "MinPlayers": 2, "MaxPerCamp": 1, "DayMax": 10, "WeekMax": 50, "MinSkillTotal": 800,
+      "StartRating": 1500, "NoTeam": true,
+      "Levels": [
+        { "Name": "Solo Arena (Lv 160 to 190)", "MinLand": 1000000, "Win": [], "Lose": [] }
+      ]
+    },
+    {
+      "Type": 5, "Act": 3, "ActFlag": 4, "Name": "St. Deus Battlefield", "Scene": 1001048, "SceneKind": 33, "Report": "TeamWar",
+      "Mode": "Resources", "Minutes": 30, "MinPlayers": 2, "MaxPerCamp": 15, "DayMax": 3, "WeekMax": 15, "TeamEntry": true,
+      "ResourceTarget": 5000, "ResourcePoints": 100, "FlagPoints": 50, "MinDamage": 20000, "ReliveSeconds": 10,
+      "Spawns": [[-170.64, 14.12, 119.08], [43.04, 7.65, -213.47]],
+      "FlagKeys": ["WF00202", "WF00203"],
+      "ResourceKeys": ["catch_box1", "catch_box2", "catch_box3"],
+      "Levels": [
+        { "Name": "Low-level Team Battlefield (points < 120,000)", "MinLand": 50000, "MaxLand": 120000, "MinSea": 50000, "MaxSea": 120000,
+          "Win": [{ "Item": "NewBattle_badge", "Amount": 79 }, { "Honor": "St. Deus", "Amount": 60 }, { "Honor": "Battlefield", "Amount": 3 }, { "Item": "DJ010087", "Amount": 6 }],
+          "Lose": [{ "Item": "NewBattle_badge", "Amount": 16 }, { "Honor": "St. Deus", "Amount": 10 }, { "Honor": "Battlefield", "Amount": 1 }, { "Item": "DJ010087", "Amount": 3 }] },
+        { "Name": "High-level Team Battlefield (points >= 120,000)", "MinLand": 120000, "MinSea": 120000,
+          "Win": [{ "Item": "NewBattle_badge", "Amount": 199 }, { "Honor": "St. Deus", "Amount": 120 }, { "Honor": "Battlefield", "Amount": 6 }, { "Item": "DJ010087", "Amount": 10 }],
+          "Lose": [{ "Item": "NewBattle_badge", "Amount": 30 }, { "Honor": "St. Deus", "Amount": 19 }, { "Honor": "Battlefield", "Amount": 2 }, { "Item": "DJ010087", "Amount": 4 }] }
+      ],
+      "SortPrizes": [
+        { "Score": "Resources", "Item": "NewBattle_badge", "Amounts": [15, 11, 8, 6, 3] },
+        { "Score": "Damage", "Item": "NewBattle_badge", "Amounts": [10, 6, 3] },
+        { "Score": "Flags", "Item": "NewBattle_badge", "Amounts": [10, 6, 3] },
+        { "Score": "Kills", "Item": "NewBattle_badge", "Amounts": [15, 11, 8, 6, 5, 4, 3, 2, 1] }
+      ]
+    },
+    {
+      "Type": 7, "Act": 4, "ActFlag": 6, "Name": "Palenque Battle", "Scene": 1001070, "SceneKind": 41, "Report": "PaleWar",
+      "Mode": "General", "Minutes": 20, "MinPlayers": 2, "MaxPerCamp": 15, "DayMax": 3, "WeekMax": 15, "NoTeam": true,
+      "MinDamage": 20000, "KillPoints": 1,
+      "Generals": ["General Don John", "General Suleiman"],
+      "Spawns": [[-153.44, -23.63, -114.59], [85.2, -21.11, 279.15]],
+      "Levels": [
+        { "Name": "Palenque Battle (Battle Points above 500,000)", "MinLand": 500000,
+          "Win": [{ "Item": "palenk_badge", "Amount": 124 }, { "Honor": "Palenque", "Amount": 169 }, { "Honor": "Battlefield", "Amount": 3 }, { "Item": "DJ010499", "Amount": 23 }],
+          "Lose": [{ "Item": "palenk_badge", "Amount": 30 }, { "Honor": "Palenque", "Amount": 40 }, { "Honor": "Battlefield", "Amount": 1 }, { "Item": "DJ010499", "Amount": 10 }] }
+      ]
+    },
+    {
+      "Type": 9, "Act": 5, "ActFlag": 8, "Name": "Bloody Arena", "Scene": 1602401, "SceneKind": 49, "Report": "None", "LevelBase": 7,
+      "Mode": "Survivors", "Minutes": 10, "MinPlayers": 2, "MaxPerCamp": 3, "MaxTeam": 3, "DayMax": 5, "WeekMax": 20, "MinSkillTotal": 600,
+      "Levels": [
+        { "Name": "Low-level Bloody Arena (Land Battle Points 600,000 - 1,200,000)", "MinLand": 600000, "MaxLand": 1200000,
+          "Win": [{ "Item": "CWCL0391", "Amount": 2 }], "Lose": [{ "Item": "CWCL0391", "Amount": 1 }] },
+        { "Name": "High-Level Bloody Arena (Land Battle Points 1.2 million - 3 million)", "MinLand": 1200000, "MaxLand": 3000000,
+          "Win": [{ "Item": "CWCL0391", "Amount": 4 }], "Lose": [{ "Item": "CWCL0391", "Amount": 2 }] }
+      ]
+    }
+  ]
+}

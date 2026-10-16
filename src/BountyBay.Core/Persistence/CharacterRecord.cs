@@ -7,8 +7,10 @@ public sealed class ItemStack
     public int Amount { get; set; } = 1;
     public int Cost { get; set; }
     public ArmUpgradeState? Upgrade { get; set; }
+    public ArmRebuildState? Rebuild { get; set; }
+    public RankArmState? Rank { get; set; }
 
-    public ItemStack Clone() => new() { Name = Name, Photo = Photo, Amount = Amount, Cost = Cost, Upgrade = Upgrade?.Clone() };
+    public ItemStack Clone() => new() { Name = Name, Photo = Photo, Amount = Amount, Cost = Cost, Upgrade = Upgrade?.Clone(), Rebuild = Rebuild?.Clone(), Rank = Rank?.Clone() };
 }
 
 public sealed class ShortcutEntry

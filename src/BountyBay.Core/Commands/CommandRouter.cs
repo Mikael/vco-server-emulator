@@ -140,7 +140,13 @@ public sealed class CommandRouter
             .Add(new FleetCommandCommands())
             .Add(new RobberyCommands())
             .Add(new ContrabandCommands())
-            .Add(new ShipModelCommands());
+            .Add(new ShipModelCommands())
+            .Add(new ArmRebuildCommands())
+            .Add(new RankArmCommands())
+            .Add(new BattleCommands())
+            .Add(new CopyCommands())
+            .Add(new TowerCommands())
+            .Add(new MatchRecordCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

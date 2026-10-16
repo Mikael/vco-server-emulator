@@ -113,6 +113,7 @@ public sealed partial class ClientSession
             (float x, float z) = Mover!.Now();
             Character.Position = [MathF.Round(x, 2), MathF.Round(Height, 2), MathF.Round(z, 2)];
             Character.Scene = Scene;
+            BattleLeaveWorld();
             Save();
             Log.Info(Tag, $"{Name} left the world");
             Mover = null;

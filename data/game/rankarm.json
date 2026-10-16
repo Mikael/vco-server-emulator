@@ -1,0 +1,5008 @@
+{
+ "Source": "CLIENT RESOURCE/ini\\DarkEquipUpdate.ini [LvlLimit] 'tier-prop = weight maxLevel base max', [PropStuff] 'level-tier-prop = value upgradeCost splitEssences'; items CLIENT namelist JWTZ0<quality><slot>; costs marked GUESS",
+ "StoneItem": "CWCL0302",
+ "StonesPerTemper": 10,
+ "LuckTempers": 10,
+ "LuckStopTier": 3,
+ "SaveBitSilver": 100000,
+ "Note": "GUESS: attribute slots unlocked = quality (Baron 1 .. Marquis 4); one save slot at start; save slot unlock costs SaveBitSilver",
+ "InitialSaveBit": 1,
+ "ExchangeItem": "CWCL0304",
+ "ExchangeAmount": 10,
+ "Items": [
+  {
+   "Key": "JWTZ011",
+   "Name": "Baron's Hat",
+   "Quality": 1,
+   "Slot": 1
+  },
+  {
+   "Key": "JWTZ012",
+   "Name": "Baron's Medal",
+   "Quality": 1,
+   "Slot": 2
+  },
+  {
+   "Key": "JWTZ013",
+   "Name": "Baron's Belt",
+   "Quality": 1,
+   "Slot": 3
+  },
+  {
+   "Key": "JWTZ014",
+   "Name": "Baron's Staff",
+   "Quality": 1,
+   "Slot": 4
+  },
+  {
+   "Key": "JWTZ015",
+   "Name": "Baron's Attire",
+   "Quality": 1,
+   "Slot": 5
+  },
+  {
+   "Key": "JWTZ016",
+   "Name": "Baron's Proof",
+   "Quality": 1,
+   "Slot": 6
+  },
+  {
+   "Key": "JWTZ017",
+   "Name": "Baron's Conferment",
+   "Quality": 1,
+   "Slot": 7
+  },
+  {
+   "Key": "JWTZ021",
+   "Name": "Viscount's Hat",
+   "Quality": 2,
+   "Slot": 1
+  },
+  {
+   "Key": "JWTZ022",
+   "Name": "Viscount's Medal",
+   "Quality": 2,
+   "Slot": 2
+  },
+  {
+   "Key": "JWTZ023",
+   "Name": "Viscount's Belt",
+   "Quality": 2,
+   "Slot": 3
+  },
+  {
+   "Key": "JWTZ024",
+   "Name": "Viscount's Staff",
+   "Quality": 2,
+   "Slot": 4
+  },
+  {
+   "Key": "JWTZ025",
+   "Name": "Viscount's Attire",
+   "Quality": 2,
+   "Slot": 5
+  },
+  {
+   "Key": "JWTZ026",
+   "Name": "Viscount's Proof",
+   "Quality": 2,
+   "Slot": 6
+  },
+  {
+   "Key": "JWTZ027",
+   "Name": "Viscount's Conferment",
+   "Quality": 2,
+   "Slot": 7
+  },
+  {
+   "Key": "JWTZ031",
+   "Name": "Earl's Hat",
+   "Quality": 3,
+   "Slot": 1
+  },
+  {
+   "Key": "JWTZ032",
+   "Name": "Earl's Medal",
+   "Quality": 3,
+   "Slot": 2
+  },
+  {
+   "Key": "JWTZ033",
+   "Name": "Count's Belt",
+   "Quality": 3,
+   "Slot": 3
+  },
+  {
+   "Key": "JWTZ034",
+   "Name": "Count's Staff",
+   "Quality": 3,
+   "Slot": 4
+  },
+  {
+   "Key": "JWTZ035",
+   "Name": "Count's Attire",
+   "Quality": 3,
+   "Slot": 5
+  },
+  {
+   "Key": "JWTZ036",
+   "Name": "Count's Proof",
+   "Quality": 3,
+   "Slot": 6
+  },
+  {
+   "Key": "JWTZ037",
+   "Name": "Count's Conferment",
+   "Quality": 3,
+   "Slot": 7
+  },
+  {
+   "Key": "JWTZ041",
+   "Name": "",
+   "Quality": 4,
+   "Slot": 1
+  },
+  {
+   "Key": "JWTZ042",
+   "Name": "",
+   "Quality": 4,
+   "Slot": 2
+  },
+  {
+   "Key": "JWTZ043",
+   "Name": "",
+   "Quality": 4,
+   "Slot": 3
+  },
+  {
+   "Key": "JWTZ044",
+   "Name": "",
+   "Quality": 4,
+   "Slot": 4
+  },
+  {
+   "Key": "JWTZ045",
+   "Name": "Marquis' Attire",
+   "Quality": 4,
+   "Slot": 5
+  },
+  {
+   "Key": "JWTZ046",
+   "Name": "Marquis' Proof",
+   "Quality": 4,
+   "Slot": 6
+  },
+  {
+   "Key": "JWTZ047",
+   "Name": "Marquis' Conferment",
+   "Quality": 4,
+   "Slot": 7
+  }
+ ],
+ "Limits": [
+  {
+   "Key": "1-AddAT",
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 13,
+   "Max": 33
+  },
+  {
+   "Key": "2-AddAT",
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 18,
+   "Max": 63
+  },
+  {
+   "Key": "3-AddAT",
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 20,
+   "Max": 100
+  },
+  {
+   "Key": "1-AddDF",
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 10,
+   "Max": 40
+  },
+  {
+   "Key": "2-AddDF",
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 20,
+   "Max": 80
+  },
+  {
+   "Key": "3-AddDF",
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 30,
+   "Max": 150
+  },
+  {
+   "Key": "1-AddMaxHP",
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 500,
+   "Max": 1000
+  },
+  {
+   "Key": "2-AddMaxHP",
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 700,
+   "Max": 1900
+  },
+  {
+   "Key": "3-AddMaxHP",
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 1000,
+   "Max": 3000
+  },
+  {
+   "Key": "1-AddMaxSP",
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 60,
+   "Max": 180
+  },
+  {
+   "Key": "2-AddMaxSP",
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 80,
+   "Max": 305
+  },
+  {
+   "Key": "3-AddMaxSP",
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 110,
+   "Max": 550
+  },
+  {
+   "Key": "1-AddHitRatio",
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Weight": 868,
+   "MaxLevel": 10,
+   "Base": 1,
+   "Max": 15
+  },
+  {
+   "Key": "2-AddHitRatio",
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 2,
+   "Max": 38
+  },
+  {
+   "Key": "3-AddHitRatio",
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Weight": 20,
+   "MaxLevel": 20,
+   "Base": 2,
+   "Max": 52
+  },
+  {
+   "Key": "1-AddDodgeRatio",
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Weight": 868,
+   "MaxLevel": 10,
+   "Base": 1,
+   "Max": 15
+  },
+  {
+   "Key": "2-AddDodgeRatio",
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 2,
+   "Max": 38
+  },
+  {
+   "Key": "3-AddDodgeRatio",
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Weight": 20,
+   "MaxLevel": 20,
+   "Base": 2,
+   "Max": 52
+  },
+  {
+   "Key": "1-SkillHap",
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 20,
+   "Max": 60
+  },
+  {
+   "Key": "2-SkillHap",
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 28,
+   "Max": 103
+  },
+  {
+   "Key": "3-SkillHap",
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 40,
+   "Max": 200
+  },
+  {
+   "Key": "1-Ward",
+   "Tier": 1,
+   "Prop": "Ward",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 20,
+   "Max": 60
+  },
+  {
+   "Key": "2-Ward",
+   "Tier": 2,
+   "Prop": "Ward",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 28,
+   "Max": 103
+  },
+  {
+   "Key": "3-Ward",
+   "Tier": 3,
+   "Prop": "Ward",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 40,
+   "Max": 200
+  },
+  {
+   "Key": "3-AddDamageScope",
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Weight": 25,
+   "MaxLevel": 6,
+   "Base": 2,
+   "Max": 8
+  },
+  {
+   "Key": "4-AddDamageScope",
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Weight": 5,
+   "MaxLevel": 12,
+   "Base": 4,
+   "Max": 16
+  },
+  {
+   "Key": "3-AddDamageScope0",
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Weight": 25,
+   "MaxLevel": 6,
+   "Base": 2,
+   "Max": 8
+  },
+  {
+   "Key": "4-AddDamageScope0",
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Weight": 5,
+   "MaxLevel": 12,
+   "Base": 4,
+   "Max": 16
+  },
+  {
+   "Key": "3-DoubleDamage",
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Weight": 25,
+   "MaxLevel": 6,
+   "Base": 2,
+   "Max": 8
+  },
+  {
+   "Key": "4-DoubleDamage",
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Weight": 5,
+   "MaxLevel": 12,
+   "Base": 4,
+   "Max": 16
+  },
+  {
+   "Key": "3-DoubleDamage0",
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Weight": 25,
+   "MaxLevel": 6,
+   "Base": 2,
+   "Max": 8
+  },
+  {
+   "Key": "4-DoubleDamage0",
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Weight": 5,
+   "MaxLevel": 12,
+   "Base": 4,
+   "Max": 16
+  },
+  {
+   "Key": "1-Response",
+   "Tier": 1,
+   "Prop": "Response",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 5,
+   "Max": 15
+  },
+  {
+   "Key": "2-Response",
+   "Tier": 2,
+   "Prop": "Response",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 7,
+   "Max": 34
+  },
+  {
+   "Key": "3-Response",
+   "Tier": 3,
+   "Prop": "Response",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 10,
+   "Max": 70
+  },
+  {
+   "Key": "1-Backbone",
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Weight": 848,
+   "MaxLevel": 10,
+   "Base": 5,
+   "Max": 15
+  },
+  {
+   "Key": "2-Backbone",
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Weight": 100,
+   "MaxLevel": 15,
+   "Base": 7,
+   "Max": 34
+  },
+  {
+   "Key": "3-Backbone",
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Weight": 40,
+   "MaxLevel": 20,
+   "Base": 10,
+   "Max": 70
+  }
+ ],
+ "Stuff": [
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 13,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 15,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 17,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 19,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 21,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 23,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 25,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 27,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 29,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 31,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddAT",
+   "Value": 33,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 18,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 21,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 24,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 27,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 30,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 33,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 36,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 39,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 42,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 45,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 48,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 51,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 54,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 57,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 60,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddAT",
+   "Value": 63,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 20,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 24,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 28,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 32,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 36,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 40,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 44,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 48,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 52,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 56,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 60,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 64,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 68,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 72,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 76,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 80,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 84,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 88,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 92,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 96,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddAT",
+   "Value": 100,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 10,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 13,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 16,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 19,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 22,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 25,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 28,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 31,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 34,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 37,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddDF",
+   "Value": 40,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 20,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 24,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 28,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 32,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 36,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 40,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 44,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 48,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 52,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 56,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 60,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 64,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 68,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 72,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 76,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddDF",
+   "Value": 80,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 30,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 36,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 42,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 48,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 54,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 60,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 66,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 72,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 78,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 84,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 90,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 96,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 102,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 108,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 114,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 120,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 126,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 132,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 138,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 144,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddDF",
+   "Value": 150,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 500,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 550,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 600,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 650,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 700,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 750,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 800,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 850,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 900,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 950,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddMaxHP",
+   "Value": 1000,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 700,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 780,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 860,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 940,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1020,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1100,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1180,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1260,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1340,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1420,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1500,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1580,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1660,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1740,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1820,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddMaxHP",
+   "Value": 1900,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1000,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1100,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1200,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1300,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1400,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1500,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1600,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1700,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1800,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 1900,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2000,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2100,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2200,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2300,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2400,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2500,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2600,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2700,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2800,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 2900,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddMaxHP",
+   "Value": 3000,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 60,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 72,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 84,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 96,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 108,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 120,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 132,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 144,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 156,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 168,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddMaxSP",
+   "Value": 180,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 80,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 95,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 110,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 125,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 140,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 155,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 170,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 185,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 200,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 215,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 230,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 245,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 260,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 275,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 290,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddMaxSP",
+   "Value": 305,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 110,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 132,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 154,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 176,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 198,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 220,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 242,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 264,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 286,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 308,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 330,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 352,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 374,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 396,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 418,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 440,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 462,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 484,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 506,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 528,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddMaxSP",
+   "Value": 550,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 5,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 6,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 7,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 8,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 9,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 10,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 11,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 12,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 13,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 14,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddHitRatio",
+   "Value": 15,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 8,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 10,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 12,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 14,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 16,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 18,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 20,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 22,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 24,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 26,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 28,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 30,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 32,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 34,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 36,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddHitRatio",
+   "Value": 38,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 12,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 14,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 16,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 18,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 20,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 22,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 24,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 26,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 28,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 30,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 32,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 34,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 36,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 38,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 40,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 42,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 44,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 46,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 48,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 50,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddHitRatio",
+   "Value": 52,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 5,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 6,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 7,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 8,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 9,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 10,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 11,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 12,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 13,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 14,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "AddDodgeRatio",
+   "Value": 15,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 8,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 10,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 12,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 14,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 16,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 18,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 20,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 22,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 24,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 26,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 28,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 30,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 32,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 34,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 36,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "AddDodgeRatio",
+   "Value": 38,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 12,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 14,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 16,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 18,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 20,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 22,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 24,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 26,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 28,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 30,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 32,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 34,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 36,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 38,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 40,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 42,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 44,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 46,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 48,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 50,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "AddDodgeRatio",
+   "Value": 52,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 20,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 24,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 28,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 32,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 36,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 40,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 44,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 48,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 52,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 56,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "SkillHap",
+   "Value": 60,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 28,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 33,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 38,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 43,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 48,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 53,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 58,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 63,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 68,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 73,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 78,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 83,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 88,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 93,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 98,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "SkillHap",
+   "Value": 103,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 40,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 48,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 56,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 64,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 72,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 80,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 88,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 96,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 104,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 112,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 120,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 128,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 136,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 144,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 152,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 160,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 168,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 176,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 184,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 192,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "SkillHap",
+   "Value": 200,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 20,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 24,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 28,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 32,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 36,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 40,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 44,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 48,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 52,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 56,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "Ward",
+   "Value": 60,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 28,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 33,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 38,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 43,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 48,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 53,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 58,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 63,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 68,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 73,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 78,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 83,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 88,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 93,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 98,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "Ward",
+   "Value": 103,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 40,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 48,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 56,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 64,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 72,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 80,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 88,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 96,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 104,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 112,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 120,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 128,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 136,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 144,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 152,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 160,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 168,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 176,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 184,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 192,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "Ward",
+   "Value": 200,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 2,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 3,
+   "Cost": 1640,
+   "Split": 2140
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 4,
+   "Cost": 2026,
+   "Split": 4166
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 5,
+   "Cost": 2460,
+   "Split": 6626
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 6,
+   "Cost": 2943,
+   "Split": 9569
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 7,
+   "Cost": 3425,
+   "Split": 12994
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddDamageScope",
+   "Value": 8,
+   "Cost": 3956,
+   "Split": 16950
+  },
+  {
+   "Level": 0,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 4,
+   "Cost": 0,
+   "Split": 1500
+  },
+  {
+   "Level": 1,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 5,
+   "Cost": 1930,
+   "Split": 3430
+  },
+  {
+   "Level": 2,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 6,
+   "Cost": 2171,
+   "Split": 5601
+  },
+  {
+   "Level": 3,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 7,
+   "Cost": 2460,
+   "Split": 8601
+  },
+  {
+   "Level": 4,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 8,
+   "Cost": 2798,
+   "Split": 10859
+  },
+  {
+   "Level": 5,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 9,
+   "Cost": 3184,
+   "Split": 14043
+  },
+  {
+   "Level": 6,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 10,
+   "Cost": 3618,
+   "Split": 17661
+  },
+  {
+   "Level": 7,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 11,
+   "Cost": 4100,
+   "Split": 21761
+  },
+  {
+   "Level": 8,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 12,
+   "Cost": 4631,
+   "Split": 26392
+  },
+  {
+   "Level": 9,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 13,
+   "Cost": 5210,
+   "Split": 31602
+  },
+  {
+   "Level": 10,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 14,
+   "Cost": 5837,
+   "Split": 37439
+  },
+  {
+   "Level": 11,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 15,
+   "Cost": 6512,
+   "Split": 43951
+  },
+  {
+   "Level": 12,
+   "Tier": 4,
+   "Prop": "AddDamageScope",
+   "Value": 16,
+   "Cost": 7236,
+   "Split": 51187
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 2,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 3,
+   "Cost": 1640,
+   "Split": 2140
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 4,
+   "Cost": 2026,
+   "Split": 4166
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 5,
+   "Cost": 2460,
+   "Split": 6626
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 6,
+   "Cost": 2943,
+   "Split": 9569
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 7,
+   "Cost": 3425,
+   "Split": 12994
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "AddDamageScope0",
+   "Value": 8,
+   "Cost": 3956,
+   "Split": 16950
+  },
+  {
+   "Level": 0,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 4,
+   "Cost": 0,
+   "Split": 1500
+  },
+  {
+   "Level": 1,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 5,
+   "Cost": 1930,
+   "Split": 3430
+  },
+  {
+   "Level": 2,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 6,
+   "Cost": 2171,
+   "Split": 5601
+  },
+  {
+   "Level": 3,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 7,
+   "Cost": 2460,
+   "Split": 8601
+  },
+  {
+   "Level": 4,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 8,
+   "Cost": 2798,
+   "Split": 10859
+  },
+  {
+   "Level": 5,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 9,
+   "Cost": 3184,
+   "Split": 14043
+  },
+  {
+   "Level": 6,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 10,
+   "Cost": 3618,
+   "Split": 17661
+  },
+  {
+   "Level": 7,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 11,
+   "Cost": 4100,
+   "Split": 21761
+  },
+  {
+   "Level": 8,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 12,
+   "Cost": 4631,
+   "Split": 26392
+  },
+  {
+   "Level": 9,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 13,
+   "Cost": 5210,
+   "Split": 31602
+  },
+  {
+   "Level": 10,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 14,
+   "Cost": 5837,
+   "Split": 37439
+  },
+  {
+   "Level": 11,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 15,
+   "Cost": 6512,
+   "Split": 43951
+  },
+  {
+   "Level": 12,
+   "Tier": 4,
+   "Prop": "AddDamageScope0",
+   "Value": 16,
+   "Cost": 7236,
+   "Split": 51187
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 2,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 3,
+   "Cost": 1640,
+   "Split": 2140
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 4,
+   "Cost": 2026,
+   "Split": 4166
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 5,
+   "Cost": 2460,
+   "Split": 6626
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 6,
+   "Cost": 2943,
+   "Split": 9569
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 7,
+   "Cost": 3425,
+   "Split": 12994
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "DoubleDamage",
+   "Value": 8,
+   "Cost": 3956,
+   "Split": 16950
+  },
+  {
+   "Level": 0,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 4,
+   "Cost": 0,
+   "Split": 1500
+  },
+  {
+   "Level": 1,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 5,
+   "Cost": 1930,
+   "Split": 3430
+  },
+  {
+   "Level": 2,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 6,
+   "Cost": 2171,
+   "Split": 5601
+  },
+  {
+   "Level": 3,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 7,
+   "Cost": 2460,
+   "Split": 8601
+  },
+  {
+   "Level": 4,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 8,
+   "Cost": 2798,
+   "Split": 10859
+  },
+  {
+   "Level": 5,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 9,
+   "Cost": 3184,
+   "Split": 14043
+  },
+  {
+   "Level": 6,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 10,
+   "Cost": 3618,
+   "Split": 17661
+  },
+  {
+   "Level": 7,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 11,
+   "Cost": 4100,
+   "Split": 21761
+  },
+  {
+   "Level": 8,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 12,
+   "Cost": 4631,
+   "Split": 26392
+  },
+  {
+   "Level": 9,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 13,
+   "Cost": 5210,
+   "Split": 31602
+  },
+  {
+   "Level": 10,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 14,
+   "Cost": 5837,
+   "Split": 37439
+  },
+  {
+   "Level": 11,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 15,
+   "Cost": 6512,
+   "Split": 43951
+  },
+  {
+   "Level": 12,
+   "Tier": 4,
+   "Prop": "DoubleDamage",
+   "Value": 16,
+   "Cost": 7236,
+   "Split": 51187
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 2,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 3,
+   "Cost": 1640,
+   "Split": 2140
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 4,
+   "Cost": 2026,
+   "Split": 4166
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 5,
+   "Cost": 2460,
+   "Split": 6626
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 6,
+   "Cost": 2943,
+   "Split": 9569
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 7,
+   "Cost": 3425,
+   "Split": 12994
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "DoubleDamage0",
+   "Value": 8,
+   "Cost": 3956,
+   "Split": 16950
+  },
+  {
+   "Level": 0,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 4,
+   "Cost": 0,
+   "Split": 1500
+  },
+  {
+   "Level": 1,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 5,
+   "Cost": 1930,
+   "Split": 3430
+  },
+  {
+   "Level": 2,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 6,
+   "Cost": 2171,
+   "Split": 5601
+  },
+  {
+   "Level": 3,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 7,
+   "Cost": 2460,
+   "Split": 8601
+  },
+  {
+   "Level": 4,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 8,
+   "Cost": 2798,
+   "Split": 10859
+  },
+  {
+   "Level": 5,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 9,
+   "Cost": 3184,
+   "Split": 14043
+  },
+  {
+   "Level": 6,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 10,
+   "Cost": 3618,
+   "Split": 17661
+  },
+  {
+   "Level": 7,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 11,
+   "Cost": 4100,
+   "Split": 21761
+  },
+  {
+   "Level": 8,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 12,
+   "Cost": 4631,
+   "Split": 26392
+  },
+  {
+   "Level": 9,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 13,
+   "Cost": 5210,
+   "Split": 31602
+  },
+  {
+   "Level": 10,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 14,
+   "Cost": 5837,
+   "Split": 37439
+  },
+  {
+   "Level": 11,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 15,
+   "Cost": 6512,
+   "Split": 43951
+  },
+  {
+   "Level": 12,
+   "Tier": 4,
+   "Prop": "DoubleDamage0",
+   "Value": 16,
+   "Cost": 7236,
+   "Split": 51187
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 5,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 6,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 7,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 8,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 9,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 10,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 11,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 12,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 13,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 14,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "Response",
+   "Value": 15,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 7,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 9,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 11,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 13,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 15,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 17,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 19,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 21,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 23,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 25,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 27,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 29,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 31,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 33,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 35,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "Response",
+   "Value": 37,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 10,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 13,
+   "Cost": 337,
+   "Split": 837
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 16,
+   "Cost": 386,
+   "Split": 1223
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 19,
+   "Cost": 434,
+   "Split": 1657
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 22,
+   "Cost": 482,
+   "Split": 2139
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 25,
+   "Cost": 579,
+   "Split": 2718
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 28,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 31,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 34,
+   "Cost": 868,
+   "Split": 5034
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 37,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 40,
+   "Cost": 1061,
+   "Split": 7060
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 43,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 46,
+   "Cost": 1254,
+   "Split": 9472
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 49,
+   "Cost": 1399,
+   "Split": 10871
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 52,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 55,
+   "Cost": 1688,
+   "Split": 14103
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 58,
+   "Cost": 1833,
+   "Split": 15936
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 61,
+   "Cost": 1978,
+   "Split": 17914
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 64,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 67,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "Response",
+   "Value": 70,
+   "Cost": 2412,
+   "Split": 24716
+  },
+  {
+   "Level": 0,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 5,
+   "Cost": 0,
+   "Split": 20
+  },
+  {
+   "Level": 1,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 6,
+   "Cost": 289,
+   "Split": 309
+  },
+  {
+   "Level": 2,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 7,
+   "Cost": 338,
+   "Split": 647
+  },
+  {
+   "Level": 3,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 8,
+   "Cost": 386,
+   "Split": 1033
+  },
+  {
+   "Level": 4,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 9,
+   "Cost": 434,
+   "Split": 1467
+  },
+  {
+   "Level": 5,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 10,
+   "Cost": 482,
+   "Split": 1950
+  },
+  {
+   "Level": 6,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 11,
+   "Cost": 531,
+   "Split": 2480
+  },
+  {
+   "Level": 7,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 12,
+   "Cost": 579,
+   "Split": 3059
+  },
+  {
+   "Level": 8,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 13,
+   "Cost": 627,
+   "Split": 3686
+  },
+  {
+   "Level": 9,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 14,
+   "Cost": 675,
+   "Split": 4362
+  },
+  {
+   "Level": 10,
+   "Tier": 1,
+   "Prop": "Backbone",
+   "Value": 15,
+   "Cost": 724,
+   "Split": 5085
+  },
+  {
+   "Level": 0,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 7,
+   "Cost": 0,
+   "Split": 100
+  },
+  {
+   "Level": 1,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 9,
+   "Cost": 338,
+   "Split": 438
+  },
+  {
+   "Level": 2,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 11,
+   "Cost": 386,
+   "Split": 824
+  },
+  {
+   "Level": 3,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 13,
+   "Cost": 434,
+   "Split": 1258
+  },
+  {
+   "Level": 4,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 15,
+   "Cost": 482,
+   "Split": 1740
+  },
+  {
+   "Level": 5,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 17,
+   "Cost": 579,
+   "Split": 2319
+  },
+  {
+   "Level": 6,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 19,
+   "Cost": 675,
+   "Split": 2994
+  },
+  {
+   "Level": 7,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 21,
+   "Cost": 772,
+   "Split": 3766
+  },
+  {
+   "Level": 8,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 23,
+   "Cost": 868,
+   "Split": 4635
+  },
+  {
+   "Level": 9,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 25,
+   "Cost": 965,
+   "Split": 5599
+  },
+  {
+   "Level": 10,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 27,
+   "Cost": 1061,
+   "Split": 6661
+  },
+  {
+   "Level": 11,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 29,
+   "Cost": 1158,
+   "Split": 7818
+  },
+  {
+   "Level": 12,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 31,
+   "Cost": 1254,
+   "Split": 9073
+  },
+  {
+   "Level": 13,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 33,
+   "Cost": 1351,
+   "Split": 10423
+  },
+  {
+   "Level": 14,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 35,
+   "Cost": 1447,
+   "Split": 11871
+  },
+  {
+   "Level": 15,
+   "Tier": 2,
+   "Prop": "Backbone",
+   "Value": 37,
+   "Cost": 1544,
+   "Split": 13414
+  },
+  {
+   "Level": 0,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 10,
+   "Cost": 0,
+   "Split": 500
+  },
+  {
+   "Level": 1,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 13,
+   "Cost": 338,
+   "Split": 838
+  },
+  {
+   "Level": 2,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 16,
+   "Cost": 386,
+   "Split": 1224
+  },
+  {
+   "Level": 3,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 19,
+   "Cost": 434,
+   "Split": 1658
+  },
+  {
+   "Level": 4,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 22,
+   "Cost": 482,
+   "Split": 2140
+  },
+  {
+   "Level": 5,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 25,
+   "Cost": 579,
+   "Split": 2719
+  },
+  {
+   "Level": 6,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 28,
+   "Cost": 675,
+   "Split": 3394
+  },
+  {
+   "Level": 7,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 31,
+   "Cost": 772,
+   "Split": 4166
+  },
+  {
+   "Level": 8,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 34,
+   "Cost": 868,
+   "Split": 5035
+  },
+  {
+   "Level": 9,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 37,
+   "Cost": 965,
+   "Split": 5999
+  },
+  {
+   "Level": 10,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 40,
+   "Cost": 1061,
+   "Split": 7061
+  },
+  {
+   "Level": 11,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 43,
+   "Cost": 1158,
+   "Split": 8218
+  },
+  {
+   "Level": 12,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 46,
+   "Cost": 1254,
+   "Split": 9473
+  },
+  {
+   "Level": 13,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 49,
+   "Cost": 1399,
+   "Split": 10872
+  },
+  {
+   "Level": 14,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 52,
+   "Cost": 1544,
+   "Split": 12415
+  },
+  {
+   "Level": 15,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 55,
+   "Cost": 1688,
+   "Split": 14104
+  },
+  {
+   "Level": 16,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 58,
+   "Cost": 1833,
+   "Split": 15937
+  },
+  {
+   "Level": 17,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 61,
+   "Cost": 1978,
+   "Split": 17915
+  },
+  {
+   "Level": 18,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 64,
+   "Cost": 2123,
+   "Split": 20037
+  },
+  {
+   "Level": 19,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 67,
+   "Cost": 2267,
+   "Split": 22304
+  },
+  {
+   "Level": 20,
+   "Tier": 3,
+   "Prop": "Backbone",
+   "Value": 70,
+   "Cost": 2412,
+   "Split": 24716
+  }
+ ]
+}
