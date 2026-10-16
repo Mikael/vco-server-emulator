@@ -1,0 +1,17 @@
+{
+  "Note": "dlgFindBooth radio buttons CheckClass0..9 send FilterByName 1..10 (UILogic 0x35d0c5). Labels are the client texts UITEXT260..268, 272. The item-type mapping is a GUESS (itemprops ItemType/GoodsType); a class without a mapping matches every article.",
+  "PageSize": 7,
+  "WholeServer": false,
+  "Classes": [
+    { "Class": 1, "Label": "Material", "ItemTypes": [11], "GoodsTypes": ["Material"] },
+    { "Class": 2, "Label": "Refine", "GoodsTypes": ["Belief", "Dye"] },
+    { "Class": 3, "Label": "Equipment", "ItemTypes": [10, 13] },
+    { "Class": 4, "Label": "Evaluation" },
+    { "Class": 5, "Label": "Drawing", "GoodsTypes": ["Book"] },
+    { "Class": 6, "Label": "Consumption", "ItemTypes": [16], "GoodsTypes": ["Medicine", "Provision", "Repair Kit", "Medic Kit", "Ammunition"] },
+    { "Class": 7, "Label": "Skill", "GoodsTypes": ["Logbook"] },
+    { "Class": 8, "Label": "Pet" },
+    { "Class": 9, "Label": "Other", "Rest": true },
+    { "Class": 10, "Label": "Total", "All": true }
+  ]
+}

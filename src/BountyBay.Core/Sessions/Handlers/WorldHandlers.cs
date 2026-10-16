@@ -47,8 +47,7 @@ public sealed class InteractHandler : IMessageHandler
         else if (data.Npcs.TryGetValue(target, out NpcDefinition? npc) && npc.Scene == session.Scene)
         {
             Log.Info(session.Tag, $"{session.Name} talks to {npc.Name}");
-            session.OnNpcTalked(npc.Id);
-            session.Talk(npc);
+            if (!session.OnNpcTalked(npc.Id)) session.Talk(npc);
         }
         else if (session.ClickPet(target))
         {

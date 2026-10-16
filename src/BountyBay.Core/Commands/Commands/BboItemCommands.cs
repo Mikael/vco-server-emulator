@@ -33,6 +33,13 @@ public sealed class BboSelectCommand : ITextCommand
                 return true;
             case ClientSession.SoulView when session.SoulBoxSelect(index):
                 return true;
+            case ClientSession.TotemOperationView or ClientSession.TotemBoxView when session.TotemSelect(view, how, index):
+                return true;
+            case ClientSession.ArmRankView:
+                session.ArmRankTake();
+                return true;
+            case ClientSession.AideListView or ClientSession.AideDeployView when session.AideSelect(view, how, index):
+                return true;
             case ClientSession.CompoundView:
                 session.CompoundSlot(index);
                 return true;
@@ -145,6 +152,9 @@ public sealed class BagServiceCommands : ITextCommand
                 return true;
             case "UseToBoxItem" when Arguments.Numbers(words, 4, out int[] box):
                 session.UseOnBoxItem(box[0], box[1], box[2], box[3]);
+                return true;
+            case "csExpandCapacity" when words.Length >= 3 && words[1] == "52" && int.TryParse(words[2], out int aideSlot):
+                session.AideExpandCapacity(aideSlot);
                 return true;
             case "csExpandCapacity":
                 session.ExpandBag(words.Length > 1 && int.TryParse(words[1], out int view) ? view : 0, 0);

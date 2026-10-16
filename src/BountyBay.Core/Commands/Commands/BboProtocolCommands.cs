@@ -81,7 +81,7 @@ public sealed class BboUnsupportedCommands : ITextCommand
         "csCloseNewUpdate", "csCloseRankArmView", "csCloseWakeArmView", "csBonTotemBoxClose", "csArmRebuildClose", "csAideRebuildClose",
         "csFuseClose", "csCancleCFightSoulList", "csCancleChangeFightSoul", "csCancleStartMap", "csCancelTotemReset", "csCancelTrainResult",
         "exclose", "transclose", "csPVPTipInfo", "csNoticeShipInfo", "csFreshReadyTime", "csAskCurDetail", "BYE", "SetVisitedSea",
-        "csAskQueueST", "csAskConWarEntryTimes", "csOpenGlobalView", "csAskBlog", "QueryArms", "ShowCopyInfo", "csCheckPhoneVerify", "AskToBattle_No",
+        "csAskQueueST", "csAskConWarEntryTimes", "csOpenGlobalView", "csAskBlog", "ShowCopyInfo", "csCheckPhoneVerify", "AskToBattle_No",
     ];
 
     private static readonly string[] Words =

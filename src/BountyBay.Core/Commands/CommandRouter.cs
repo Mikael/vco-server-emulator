@@ -53,6 +53,7 @@ public sealed class CommandRouter
     public static CommandRouter CreateDefault()
         => new CommandRouter()
             .Add(new BboUnsupportedCommands())
+            .Add(new ArmUpgradeCommands())
             .Add(new SystemCommands())
             .Add(new BboSelectCommand())
             .Add(new BboSellCommand())
@@ -119,7 +120,14 @@ public sealed class CommandRouter
             .Add(new AuctionCommands())
             .Add(new FireFlagCommands())
             .Add(new BeliefFuseCommands())
-            .Add(new SoulCommands());
+            .Add(new SoulCommands())
+            .Add(new TotemCommands())
+            .Add(new RoleBankCommands())
+            .Add(new ParcelCostCommands())
+            .Add(new BoothSearchCommands())
+            .Add(new ViewArmCommands())
+            .Add(new LeaveWordCommands())
+            .Add(new AideCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

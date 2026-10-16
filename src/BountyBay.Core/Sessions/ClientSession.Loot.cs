@@ -23,7 +23,7 @@ public sealed partial class ClientSession
     public void DropLoot(MonsterDefinition monster)
     {
         List<ItemStack> drops = RollLoot(monster);
-        drops.AddRange(QuestDrops(monster));
+        drops.AddRange(QuestTargetDrops(monster));
         if (drops.Count == 0) return;
         foreach (ItemStack drop in drops)
         {

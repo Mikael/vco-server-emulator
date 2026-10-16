@@ -22,14 +22,15 @@ public sealed partial class ClientSession
 
     private bool QuestReadyToHandIn(QuestDefinition quest)
     {
-        if (quest.Id != NewHeroQuest || Character.WorkType > 0) return true;
+        if ((quest.Id != NewHeroQuest && !quest.RequiresWork) || Character.WorkType > 0) return true;
         SystemMessage("Hold CTRL+S to open the profession interface and choose a profession first.", SystemMessageKind.Prompt);
+        Send(UiPackets.Custom("FlashWorkButton"), "(flash profession button)");
         return false;
     }
 
     private void GrantQuestExtras(QuestDefinition quest)
     {
-        if (quest.Id != NewHeroQuest) return;
+        if (quest.Id != NewHeroQuest || quest.RewardItems.Count > 0) return;
         int work = Character.WorkType;
         if (work <= 0 || work >= CareerWeapons.Length) return;
         (string weapon, string skill) = CareerWeapons[work];

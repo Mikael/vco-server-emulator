@@ -1,0 +1,1050 @@
+{
+ "Source": "client RoleBank.ini: the articles the role (carrying) bank accepts",
+ "Indexes": 6,
+ "EntriesPerIndex": 90,
+ "NameLength": 3,
+ "Items": [
+  {
+   "Item": "CWCL0357",
+   "Label": "Amazonite",
+   "Photo": 199174
+  },
+  {
+   "Item": "CWCL0358",
+   "Label": "Chiba rhodochrosite",
+   "Photo": 199175
+  },
+  {
+   "Item": "CWCL0359",
+   "Label": "Diagonal glazed steel ingot",
+   "Photo": 199176
+  },
+  {
+   "Item": "CWCL0360",
+   "Label": "Flannel",
+   "Photo": 199177
+  },
+  {
+   "Item": "CWCL0361",
+   "Label": "Star Wisp Weapons Fragment",
+   "Photo": 199178
+  },
+  {
+   "Item": "CWCL0362",
+   "Label": "Moon Scale Weapons Fragment",
+   "Photo": 199179
+  },
+  {
+   "Item": "CWCL0363",
+   "Label": "Sun Jade Weapons Fragment",
+   "Photo": 199180
+  },
+  {
+   "Item": "CWCL0364",
+   "Label": "Star Wisp Armour Fragment",
+   "Photo": 199181
+  },
+  {
+   "Item": "CWCL0365",
+   "Label": "Moon Scale Armour Piece",
+   "Photo": 199182
+  },
+  {
+   "Item": "CWCL0366",
+   "Label": "Sun Jade Armour Fragment",
+   "Photo": 199183
+  },
+  {
+   "Item": "CWCL0367",
+   "Label": "Star Wisp Pearl",
+   "Photo": 199184
+  },
+  {
+   "Item": "CWCL0368",
+   "Label": "Moon Scale Pearl",
+   "Photo": 199185
+  },
+  {
+   "Item": "CWCL0369",
+   "Label": "Sun Jade Pearl",
+   "Photo": 199186
+  },
+  {
+   "Item": "CWCL0370",
+   "Label": "Spirit Snake Totem",
+   "Photo": 199187
+  },
+  {
+   "Item": "CWCL0371",
+   "Label": "=God Eagle Totem",
+   "Photo": 199188
+  },
+  {
+   "Item": "CWCL0372",
+   "Label": "Sacred Lion Totem",
+   "Photo": 199189
+  },
+  {
+   "Item": "CWCL0373",
+   "Label": "Bai Xiu Crystal",
+   "Photo": 199190
+  },
+  {
+   "Item": "CWCL0374",
+   "Label": "Sacred radiantly Weapons",
+   "Photo": 199191
+  },
+  {
+   "Item": "CWCL0375",
+   "Label": "Sacred radiantly Armor",
+   "Photo": 199192
+  },
+  {
+   "Item": "CWCL0376",
+   "Label": "Amazonite fragments",
+   "Photo": 199193
+  },
+  {
+   "Item": "CWCL0377",
+   "Label": "Tricolour Pearl",
+   "Photo": 199194
+  },
+  {
+   "Item": "CWCL0378",
+   "Label": "Staghorn Coral",
+   "Photo": 199195
+  },
+  {
+   "Item": "CWCL0379",
+   "Label": "Star Tooth wood",
+   "Photo": 199195
+  },
+  {
+   "Item": "DJ009272",
+   "Label": "Special Tough Iron Steel (Divinity)",
+   "Photo": 199130
+  },
+  {
+   "Item": "DJ009273",
+   "Label": "Special Tough Iron Steel Plate(Divinity)",
+   "Photo": 199131
+  },
+  {
+   "Item": "DJ009274",
+   "Label": "Special Tough Handle(Divinity)",
+   "Photo": 199133
+  },
+  {
+   "Item": "DJ009275",
+   "Label": "Special Tough Iron Steel Line (Divinity)",
+   "Photo": 199132
+  },
+  {
+   "Item": "DJ009276",
+   "Label": "Blazing flame Essence (Divinity)",
+   "Photo": 199136
+  },
+  {
+   "Item": "DJ009277",
+   "Label": "Huge Rock Essence (Divinity)",
+   "Photo": 199135
+  },
+  {
+   "Item": "DJ009278",
+   "Label": "Witch's Eye Essence (Divinity)",
+   "Photo": 199139
+  },
+  {
+   "Item": "DJ009279",
+   "Label": "Shadow-escaping Essence (Divinity)",
+   "Photo": 199141
+  },
+  {
+   "Item": "DJ009280",
+   "Label": "Energy-collecting Essence (Divinity)",
+   "Photo": 199137
+  },
+  {
+   "Item": "DJ009281",
+   "Label": "Blood Essence (Divinity)",
+   "Photo": 199138
+  },
+  {
+   "Item": "DJ009282",
+   "Label": "Tough Blood Essence  (Divinity)",
+   "Photo": 199140
+  },
+  {
+   "Item": "DJ009283",
+   "Label": "Amethyst Essence (Divinity)",
+   "Photo": 199142
+  },
+  {
+   "Item": "DJ009284",
+   "Label": "Crystal Shield Essence (Divinity)",
+   "Photo": 199134
+  },
+  {
+   "Item": "DJ009285",
+   "Label": "Amethyst Stone (Divinity)",
+   "Photo": 199146
+  },
+  {
+   "Item": "DJ009286",
+   "Label": "Crystal Shield Stone(Divinity)",
+   "Photo": 199143
+  },
+  {
+   "Item": "DJ009287",
+   "Label": "Tough Blood Stone (Divinity)",
+   "Photo": 199145
+  },
+  {
+   "Item": "DJ009288",
+   "Label": "Blood Stone (Divinity)",
+   "Photo": 199144
+  },
+  {
+   "Item": "DJ009289",
+   "Label": "God's Blood Crystals",
+   "Photo": 199202
+  },
+  {
+   "Item": "DJ009290",
+   "Label": "Conquest Notes",
+   "Photo": 192102
+  },
+  {
+   "Item": "DJ009291",
+   "Label": "Ancient Exploration Loot",
+   "Photo": 220301
+  },
+  {
+   "Item": "DJ009292",
+   "Label": "Suyo Guard Adventure Times",
+   "Photo": 220301
+  },
+  {
+   "Item": "DJ009293",
+   "Label": "Conqueror Expedition Times",
+   "Photo": 220301
+  },
+  {
+   "Item": "TSNameID001",
+   "Label": "Inca Headdress",
+   "Photo": 199147
+  },
+  {
+   "Item": "TSNameID002",
+   "Label": "Camel Hair Knotting",
+   "Photo": 199148
+  },
+  {
+   "Item": "TSNameID003",
+   "Label": "Cocoa Chips",
+   "Photo": 199149
+  },
+  {
+   "Item": "TSNameID004",
+   "Label": "Chiza Beer",
+   "Photo": 199150
+  },
+  {
+   "Item": "TSNameID005",
+   "Label": "Pebbles",
+   "Photo": 199151
+  },
+  {
+   "Item": "TSNameID006",
+   "Label": "Inca Amulet",
+   "Photo": 199152
+  },
+  {
+   "Item": "TSNameID007",
+   "Label": "Temple Brick",
+   "Photo": 199153
+  },
+  {
+   "Item": "TSNameID008",
+   "Label": "slave contract",
+   "Photo": 199154
+  },
+  {
+   "Item": "TSNameID009",
+   "Label": "Indigenous Javelin",
+   "Photo": 199155
+  },
+  {
+   "Item": "TSNameID010",
+   "Label": "Grand Mill",
+   "Photo": 199156
+  },
+  {
+   "Item": "TSNameID011",
+   "Label": "Rare plant specimens",
+   "Photo": 199157
+  },
+  {
+   "Item": "TSNameID012",
+   "Label": "Ancient Solar Calendar",
+   "Photo": 199158
+  },
+  {
+   "Item": "TSNameID013",
+   "Label": "Indo-Canadian text pallet",
+   "Photo": 199159
+  },
+  {
+   "Item": "TSNameID014",
+   "Label": "Rock of God",
+   "Photo": 199160
+  },
+  {
+   "Item": "TSNameID015",
+   "Label": "Sun Totem",
+   "Photo": 199161
+  },
+  {
+   "Item": "TSNameID016",
+   "Label": "Bronze agricultural Tools",
+   "Photo": 199162
+  },
+  {
+   "Item": "TSNameID017",
+   "Label": "House plan",
+   "Photo": 199163
+  },
+  {
+   "Item": "TSNameID018",
+   "Label": "Textile Crafts",
+   "Photo": 199164
+  },
+  {
+   "Item": "TSNameID019",
+   "Label": "Dyeing flow chart",
+   "Photo": 199165
+  },
+  {
+   "Item": "TSNameID020",
+   "Label": "\"T\" shaped scalpel",
+   "Photo": 199166
+  },
+  {
+   "Item": "TSNameID021",
+   "Label": "Inca pottery",
+   "Photo": 199167
+  },
+  {
+   "Item": "TSNameID022",
+   "Label": "Golden Mask",
+   "Photo": 199168
+  },
+  {
+   "Item": "TSNameID023",
+   "Label": "Inca musical instrument",
+   "Photo": 199169
+  },
+  {
+   "Item": "TSNameID024",
+   "Label": "Golden Lake",
+   "Photo": 199170
+  },
+  {
+   "Item": "TSNameID025",
+   "Label": "Red Fire Gold Mine",
+   "Photo": 199171
+  },
+  {
+   "Item": "TSCtaskcard001",
+   "Label": "Suyu: Study of Bronze Agricultural Tools",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard002",
+   "Label": "Suyu: Building Technology Research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard003",
+   "Label": "Suyu: Textile Techniques Research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard004",
+   "Label": "Suyu: Research on dyeing process",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard005",
+   "Label": "Suyu: craniotomy research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard006",
+   "Label": "Suyu: Research on pottery making process",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard007",
+   "Label": "Suyu: Gold and Silver Decorative Research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard008",
+   "Label": "Suyu: Studies in Inca Music",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard009",
+   "Label": "Suyo: Golden Lakes Survey",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard010",
+   "Label": "Suyo: Minerals and Metals Survey",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard011",
+   "Label": "Conquest: A study of bronze agricultural tools",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard012",
+   "Label": "Conquest: building technology research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard013",
+   "Label": "Conquest: textile skills research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard014",
+   "Label": "Conquest: research on dyeing processes",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard015",
+   "Label": "Conquest: a study in open-heart surgery",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard016",
+   "Label": "Conquest: Study of the pottery process",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard017",
+   "Label": "Conquest: Gold and Silver Decorative Research",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard018",
+   "Label": "Inca Music Studies",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard019",
+   "Label": "Conquest: Golden Lakes Survey",
+   "Photo": 142021
+  },
+  {
+   "Item": "TSCtaskcard020",
+   "Label": "Conquest: Minerals and Metals Survey",
+   "Photo": 142021
+  },
+  {
+   "Item": "AddTotemExp",
+   "Label": "Scarred Shadow Essence",
+   "Photo": 250091
+  },
+  {
+   "Item": "AptitudeItem01",
+   "Label": "Low-grade Spirituality Pill",
+   "Photo": 250092
+  },
+  {
+   "Item": "AptitudeItem02",
+   "Label": "Intermediate Spirituality Pill",
+   "Photo": 250093
+  },
+  {
+   "Item": "AptitudeItem03",
+   "Label": "Advanced Spirituality Pill",
+   "Photo": 250094
+  },
+  {
+   "Item": "resertTotemItem",
+   "Label": "Imprint Remodel Stone",
+   "Photo": 250096
+  },
+  {
+   "Item": "potentialItem",
+   "Label": "Imprint Potential Pill",
+   "Photo": 250095
+  },
+  {
+   "Item": "CWCL0410",
+   "Label": "Fossilized Footprints",
+   "Photo": 250123
+  },
+  {
+   "Item": "CWCL0411",
+   "Label": "Imprint Inherit Rune",
+   "Photo": 250122
+  },
+  {
+   "Item": "totemSkillBook0011",
+   "Label": "Primary Skill Book -Trace of Accuracy",
+   "Photo": 260019
+  },
+  {
+   "Item": "totemSkillBook0012",
+   "Label": "Primary Skill Book -Trace of Dodge",
+   "Photo": 260014
+  },
+  {
+   "Item": "totemSkillBook0013",
+   "Label": "Primary Skill Book -Trace of Agility",
+   "Photo": 260020
+  },
+  {
+   "Item": "totemSkillBook0014",
+   "Label": "Primary Skill Book -Trace of Physique",
+   "Photo": 260018
+  },
+  {
+   "Item": "totemSkillBook0015",
+   "Label": "Primary Skill Book -Trace of Reaction",
+   "Photo": 260015
+  },
+  {
+   "Item": "totemSkillBook0016",
+   "Label": "Primary Skill Book -Trace of Willpower",
+   "Photo": 260016
+  },
+  {
+   "Item": "totemSkillBook0017",
+   "Label": "Primary Skill Book -Trace of Technique",
+   "Photo": 260017
+  },
+  {
+   "Item": "totemSkillBook0018",
+   "Label": "Primary Skill Book -Trace of Parry",
+   "Photo": 260013
+  },
+  {
+   "Item": "totemSkillBook0019",
+   "Label": "Primary Skill Book -Trace of HP",
+   "Photo": 260011
+  },
+  {
+   "Item": "totemSkillBook0020",
+   "Label": "Primary Skill Book -Trace of SP",
+   "Photo": 260012
+  },
+  {
+   "Item": "totemSkillBook0027",
+   "Label": "Primary Skill Book-Tearing",
+   "Photo": 260022
+  },
+  {
+   "Item": "totemSkillBook0028",
+   "Label": "Primary Skill Book-Soul Eater",
+   "Photo": 260079
+  },
+  {
+   "Item": "totemSkillBook0029",
+   "Label": "Primary Skill Book-Phantom",
+   "Photo": 260023
+  },
+  {
+   "Item": "totemSkillBook0030",
+   "Label": "Primary Skill Book-Skipping",
+   "Photo": 260024
+  },
+  {
+   "Item": "totemSkillBook0031",
+   "Label": "Primary Skill Book-Skillfulness",
+   "Photo": 260025
+  },
+  {
+   "Item": "totemSkillBook0032",
+   "Label": "Primary Skill Book-Brute Force",
+   "Photo": 260026
+  },
+  {
+   "Item": "totemSkillBook0047",
+   "Label": "Primary Skill Book -Trace of Light",
+   "Photo": 260047
+  },
+  {
+   "Item": "totemSkillBook0048",
+   "Label": "Primary Skill Book -Trace of Shadow",
+   "Photo": 260048
+  },
+  {
+   "Item": "totemSkillBook0049",
+   "Label": "Primary Skill Book -Trace of Wound",
+   "Photo": 260049
+  },
+  {
+   "Item": "totemSkillBook0050",
+   "Label": "Primary Skill Book -Trace of Lonesome",
+   "Photo": 260050
+  },
+  {
+   "Item": "totemSkillBook0051",
+   "Label": "Primary Skill Book -Trace of Wild Falchion",
+   "Photo": 260101
+  },
+  {
+   "Item": "totemSkillBook0052",
+   "Label": "Primary Skill Book -Trace of Wild Sword",
+   "Photo": 260100
+  },
+  {
+   "Item": "totemSkillBook0053",
+   "Label": "Primary Skill Book -Trace of Wild Axe",
+   "Photo": 260102
+  },
+  {
+   "Item": "totemSkillBook0054",
+   "Label": "Primary Skill Book -Trace of Wild Gun",
+   "Photo": 260104
+  },
+  {
+   "Item": "totemSkillBook0055",
+   "Label": "Primary Skill Book -Trace of Wild Bow",
+   "Photo": 260105
+  },
+  {
+   "Item": "totemSkillBook0056",
+   "Label": "Primary Skill Book -Trace of Angry Falchion",
+   "Photo": 260087
+  },
+  {
+   "Item": "totemSkillBook0057",
+   "Label": "Primary Skill Book -Trace of Angry Sword",
+   "Photo": 260089
+  },
+  {
+   "Item": "totemSkillBook0058",
+   "Label": "Primary Skill Book -Trace of Angry Axe",
+   "Photo": 260086
+  },
+  {
+   "Item": "totemSkillBook0059",
+   "Label": "Primary Skill Book -Trace of Angry Gun",
+   "Photo": 260088
+  },
+  {
+   "Item": "totemSkillBook0060",
+   "Label": "Primary Skill Book -Trace of Angry Bow",
+   "Photo": 260090
+  },
+  {
+   "Item": "totemSkillBook0069",
+   "Label": "Primary Skill Book -Dragon Turtle Bloodline",
+   "Photo": 260074
+  },
+  {
+   "Item": "totemSkillBook0070",
+   "Label": "Primary Skill Book -Mammoth Bloodline",
+   "Photo": 260067
+  },
+  {
+   "Item": "totemSkillBook0071",
+   "Label": "Primary Skill Book -Tiger Bloodline",
+   "Photo": 260069
+  },
+  {
+   "Item": "totemSkillBook0072",
+   "Label": "Primary Skill Book -Eagle Bloodline",
+   "Photo": 260070
+  },
+  {
+   "Item": "totemSkillBook0073",
+   "Label": "Primary Skill Book -Monkey Protection",
+   "Photo": 260078
+  },
+  {
+   "Item": "totemSkillBook0074",
+   "Label": "Primary Skill Book -Monkey Counterattack",
+   "Photo": 260079
+  },
+  {
+   "Item": "totemSkillBook0075",
+   "Label": "Primary Skill Book -Tiger's Claw",
+   "Photo": 260068
+  },
+  {
+   "Item": "totemSkillBook0076",
+   "Label": "Primary Skill Book -Eagle's Beak",
+   "Photo": 260076
+  },
+  {
+   "Item": "totemSkillBook0082",
+   "Label": "Primary Skill Book -Trace of the Falchion Defense",
+   "Photo": 260092
+  },
+  {
+   "Item": "totemSkillBook0083",
+   "Label": "Primary Skill Book -Trace of the Sword Defense",
+   "Photo": 260096
+  },
+  {
+   "Item": "totemSkillBook0084",
+   "Label": "Primary Skill Book -Trace of the Gun Defense",
+   "Photo": 260097
+  },
+  {
+   "Item": "totemSkillBook0085",
+   "Label": "Primary Skill Book -Trace of the Axe Defense",
+   "Photo": 260095
+  },
+  {
+   "Item": "totemSkillBook0086",
+   "Label": "Primary Skill Book -Trace of the Bow Defense",
+   "Photo": 260085
+  },
+  {
+   "Item": "totemSkillBook0001",
+   "Label": "Advanced Skill Book -Trace of Accuracy",
+   "Photo": 260009
+  },
+  {
+   "Item": "totemSkillBook0002",
+   "Label": "Advanced Skill Book -Trace of Dodge",
+   "Photo": 260004
+  },
+  {
+   "Item": "totemSkillBook0003",
+   "Label": "Advanced Skill Book -Trace of Agility",
+   "Photo": 260010
+  },
+  {
+   "Item": "totemSkillBook0004",
+   "Label": "Advanced Skill Book -Trace of Physique",
+   "Photo": 260008
+  },
+  {
+   "Item": "totemSkillBook0005",
+   "Label": "Advanced Skill Book -Trace of Reaction",
+   "Photo": 260005
+  },
+  {
+   "Item": "totemSkillBook0006",
+   "Label": "Advanced Skill Book -Trace of Willpower",
+   "Photo": 260006
+  },
+  {
+   "Item": "totemSkillBook0007",
+   "Label": "Advanced Skill Book -Trace of Technique",
+   "Photo": 260007
+  },
+  {
+   "Item": "totemSkillBook0008",
+   "Label": "Advanced Skill Book -Trace of Parry",
+   "Photo": 260003
+  },
+  {
+   "Item": "totemSkillBook0009",
+   "Label": "Advanced Skill Book -Trace of HP",
+   "Photo": 260001
+  },
+  {
+   "Item": "totemSkillBook0010",
+   "Label": "Advanced Skill Book -Trace of SP",
+   "Photo": 260002
+  },
+  {
+   "Item": "totemSkillBook0021",
+   "Label": "Advanced Skill Book-Tearing",
+   "Photo": 260027
+  },
+  {
+   "Item": "totemSkillBook0022",
+   "Label": "Advanced Skill Book-Soul Eater",
+   "Photo": 260066
+  },
+  {
+   "Item": "totemSkillBook0023",
+   "Label": "Advanced Skill Book-Phantom",
+   "Photo": 260029
+  },
+  {
+   "Item": "totemSkillBook0024",
+   "Label": "Advanced Skill Book-Skipping",
+   "Photo": 260031
+  },
+  {
+   "Item": "totemSkillBook0025",
+   "Label": "Advanced Skill Book-Skillfulness",
+   "Photo": 260028
+  },
+  {
+   "Item": "totemSkillBook0026",
+   "Label": "Advanced Skill Book-Brute Force",
+   "Photo": 260106
+  },
+  {
+   "Item": "totemSkillBook0033",
+   "Label": "Advanced Skill Book-Trace of Light",
+   "Photo": 2600471
+  },
+  {
+   "Item": "totemSkillBook0034",
+   "Label": "Advanced Skill Book-Trace of Shadow",
+   "Photo": 2600481
+  },
+  {
+   "Item": "totemSkillBook0035",
+   "Label": "Advanced Skill Book-Trace of Wound",
+   "Photo": 2600491
+  },
+  {
+   "Item": "totemSkillBook0036",
+   "Label": "Advanced Skill Book-Trace of Lonesome",
+   "Photo": 2600501
+  },
+  {
+   "Item": "totemSkillBook0037",
+   "Label": "Advanced Skill Book -Trace of Wild Falchion",
+   "Photo": 2601011
+  },
+  {
+   "Item": "totemSkillBook0038",
+   "Label": "Advanced Skill Book -Trace of Wild Sword",
+   "Photo": 2601001
+  },
+  {
+   "Item": "totemSkillBook0039",
+   "Label": "Advanced Skill Book -Trace of Wild Axe",
+   "Photo": 2601021
+  },
+  {
+   "Item": "totemSkillBook0040",
+   "Label": "Advanced Skill Book -Trace of Wild Gun",
+   "Photo": 2601041
+  },
+  {
+   "Item": "totemSkillBook0041",
+   "Label": "Advanced Skill Book -Trace of Wild Bow",
+   "Photo": 2601051
+  },
+  {
+   "Item": "totemSkillBook0042",
+   "Label": "Advanced Skill Book -Trace of Angry Falchion",
+   "Photo": 2600871
+  },
+  {
+   "Item": "totemSkillBook0043",
+   "Label": "Advanced Skill Book -Trace of Angry Sword",
+   "Photo": 2600891
+  },
+  {
+   "Item": "totemSkillBook0044",
+   "Label": "Advanced Skill Book -Trace of Angry Axe",
+   "Photo": 2600861
+  },
+  {
+   "Item": "totemSkillBook0045",
+   "Label": "Advanced Skill Book -Trace of Angry Gun",
+   "Photo": 2600881
+  },
+  {
+   "Item": "totemSkillBook0046",
+   "Label": "Advanced Skill Book -Trace of Angry Bow",
+   "Photo": 2600901
+  },
+  {
+   "Item": "totemSkillBook0061",
+   "Label": "Advanced Skill Book -Dragon Turtle Bloodline",
+   "Photo": 260061
+  },
+  {
+   "Item": "totemSkillBook0062",
+   "Label": "Advanced Skill Book -Mammoth Bloodline",
+   "Photo": 260054
+  },
+  {
+   "Item": "totemSkillBook0063",
+   "Label": "Advanced Skill Book -Tiger Bloodline",
+   "Photo": 260056
+  },
+  {
+   "Item": "totemSkillBook0064",
+   "Label": "Advanced Skill Book -Eagle Bloodline",
+   "Photo": 260057
+  },
+  {
+   "Item": "totemSkillBook0065",
+   "Label": "Advanced Skill Book -Monkey Protection",
+   "Photo": 260065
+  },
+  {
+   "Item": "totemSkillBook0066",
+   "Label": "Advanced Skill Book -Monkey Counterattack",
+   "Photo": 260066
+  },
+  {
+   "Item": "totemSkillBook0067",
+   "Label": "Advanced Skill Book -Tiger's Claw",
+   "Photo": 260055
+  },
+  {
+   "Item": "totemSkillBook0068",
+   "Label": "Advanced Skill Book -Eagle's Beak",
+   "Photo": 260063
+  },
+  {
+   "Item": "totemSkillBook0077",
+   "Label": "Advanced Skill Book -Trace of the Falchion Defense",
+   "Photo": 2600921
+  },
+  {
+   "Item": "totemSkillBook0078",
+   "Label": "Advanced Skill Book -Trace of the Sword Defense",
+   "Photo": 2600961
+  },
+  {
+   "Item": "totemSkillBook0079",
+   "Label": "Advanced Skill Book -Trace of the Gun Defense",
+   "Photo": 2600971
+  },
+  {
+   "Item": "totemSkillBook0080",
+   "Label": "Advanced Skill Book -Trace of the Axe Defense",
+   "Photo": 2600951
+  },
+  {
+   "Item": "totemSkillBook0081",
+   "Label": "Advanced Skill Book -Trace of the Bow Defense",
+   "Photo": 2600851
+  },
+  {
+   "Item": "totemSkillBook0087",
+   "Label": "Primary Skill Book -Wolf Soul",
+   "Photo": 260107
+  },
+  {
+   "Item": "totemSkillBook0088",
+   "Label": "Advanced Skill Book -Wolf Soul",
+   "Photo": 260108
+  },
+  {
+   "Item": "DJ009200",
+   "Label": "Iron and Steel (Epic)",
+   "Photo": 192868
+  },
+  {
+   "Item": "DJ009201",
+   "Label": "Iron and Steel Piece (Epic)",
+   "Photo": 192869
+  },
+  {
+   "Item": "DJ009202",
+   "Label": "Iron and Steel Handle (Epic)",
+   "Photo": 192870
+  },
+  {
+   "Item": "DJ009203",
+   "Label": "Iron and Steel Thread (Epic)",
+   "Photo": 192871
+  },
+  {
+   "Item": "DJ009204",
+   "Label": "Flames Essence (Epic)",
+   "Photo": 192872
+  },
+  {
+   "Item": "DJ009205",
+   "Label": "Great Rock Essence (Epic)",
+   "Photo": 192873
+  },
+  {
+   "Item": "DJ009206",
+   "Label": "Witch's Eye Essence (Epic)",
+   "Photo": 192874
+  },
+  {
+   "Item": "DJ009207",
+   "Label": "Shadowy Essence (Epic)",
+   "Photo": 192875
+  },
+  {
+   "Item": "DJ009208",
+   "Label": "Meditative Essence (Epic)",
+   "Photo": 192876
+  },
+  {
+   "Item": "DJ009209",
+   "Label": "Bloodthirsty Essence (Epic)",
+   "Photo": 192877
+  },
+  {
+   "Item": "DJ009210",
+   "Label": "Blood Tenacity Essence (Epic)",
+   "Photo": 192878
+  },
+  {
+   "Item": "DJ009211",
+   "Label": "Purple Crystal Essence (Epic)",
+   "Photo": 192879
+  },
+  {
+   "Item": "DJ009212",
+   "Label": "Crystal Shield Essence (Epic)",
+   "Photo": 192880
+  },
+  {
+   "Item": "DJ009213",
+   "Label": "Purple Crystal Rock (Epic)",
+   "Photo": 192881
+  },
+  {
+   "Item": "DJ009214",
+   "Label": "Crystal Shield Rock (Epic)",
+   "Photo": 192882
+  },
+  {
+   "Item": "DJ009215",
+   "Label": "Blood Tenacity Rock (Epic)",
+   "Photo": 192883
+  },
+  {
+   "Item": "DJ009216",
+   "Label": "Bloodthirsty Rock (Epic)",
+   "Photo": 192884
+  },
+  {
+   "Item": "CWCL0304",
+   "Label": "Power Aquamarine",
+   "Photo": 6007273
+  },
+  {
+   "Item": "CWCL0308",
+   "Label": "Power Aquamarine Fragment",
+   "Photo": 6007288
+  },
+  {
+   "Item": "CWCL0300",
+   "Label": "Viscount's Crest",
+   "Photo": 6007269
+  },
+  {
+   "Item": "CWCL0306",
+   "Label": "Count's Crest",
+   "Photo": 6007289
+  },
+  {
+   "Item": "CWCL0307",
+   "Label": "Marquis' Crest",
+   "Photo": 6007290
+  }
+ ],
+ "Table": 111,
+ "Help": "Only articles from the Item (3) and Props (2) bag tabs; the same article stacks; stored weight does not count."
+}

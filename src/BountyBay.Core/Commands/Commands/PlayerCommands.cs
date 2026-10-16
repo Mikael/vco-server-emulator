@@ -288,8 +288,7 @@ public sealed class SlashCommands
         {
             case "/talk" when words.Length == 2 && int.TryParse(words[1], out int npcId)
                 && session.Context.Data.Npcs.TryGetValue(npcId, out Data.NpcDefinition? npc):
-                session.OnNpcTalked(npc.Id);
-                session.Talk(npc);
+                if (!session.OnNpcTalked(npc.Id)) session.Talk(npc);
                 break;
             case "/opt" when words.Length >= 2 && int.TryParse(words[1], out int option):
                 session.ChooseOption(words.Length > 2 && int.TryParse(words[2], out int optionTarget) ? optionTarget : session.TalkingTo,

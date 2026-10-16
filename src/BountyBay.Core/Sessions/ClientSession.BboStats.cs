@@ -208,7 +208,7 @@ public sealed partial class ClientSession
         int work = Character.WorkType > 0 && Character.WorkType < WorkNames.Length ? Character.WorkType : 0;
         yield return ("WorkType", work);
         yield return ("WorkLevel", work == 0 ? 0 : Math.Max(1, Character.WorkLevel));
-        yield return ("WorkExp", 0);
+        yield return ("WorkExp", (int)Math.Min(int.MaxValue, Character.WorkExperience));
         yield return ("WorkExpMax", 1);
         yield return ("WorkName", WorkNames[work]);
         foreach (string pool in WorkPools) yield return (pool, WorkPointsLeft(pool));

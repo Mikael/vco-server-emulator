@@ -73532,5 +73532,50 @@
       "Greeting": "CLIENT npc_menu\\gnnpc0054.ini 12=NpcTxt00000243",
       "Shop": "GUESS copy of emulator Athens Blacksmith shop (client has no shop lists)"
     }
+  },
+  {
+    "Id": 2009340,
+    "Scene": 1011002,
+    "Model": 3201047,
+    "Name": "Imprint Growth Commissioner",
+    "X": -20,
+    "Y": 3.04,
+    "Z": -40,
+    "NameKey": "TotemManageNpc",
+    "Greeting": "I can appraise, advance, dismantle, teach and remodel Imprints.",
+    "Options": [
+      {
+        "Action": 340,
+        "Text": "Imprint Appraise"
+      },
+      {
+        "Action": 341,
+        "Text": "Imprint Advance"
+      },
+      {
+        "Action": 342,
+        "Text": "Imprint Dismantle"
+      },
+      {
+        "Action": 343,
+        "Text": "Imprint Skill"
+      },
+      {
+        "Action": 344,
+        "Text": "Imprint Remodel"
+      },
+      {
+        "Action": 345,
+        "Text": "Exchange Fossilized Footprints for an Imprint"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "Role": "Imprint Growth Commissioner",
+    "Source": {
+      "Position": "GUESS from TotemManageNpc help text (Lisbon Port -20,-40)"
+    }
   }
 ]

@@ -115,6 +115,7 @@ public sealed partial class ClientSession
         foreach (string state in _stateUntil.Where(pair => pair.Value <= now).Select(pair => pair.Key).ToList()) EndState(state);
         if (SeaStance != 0 && now >= _seaStanceUntil) ClearSeaStance();
         PulsePotions();
+        TickTotems(tick);
         if (AtSea && !SeaSunk)
         {
             ConsumeSupplies();

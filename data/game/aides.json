@@ -1,0 +1,1193 @@
+{
+  "Comment": "Aides (Generals). Names, skills, TrainRange and TrainRegion come from the client (FGConscribe.ini, SubalternSkill.ini); values marked Guess are not in the client.",
+  "FirstNames": [
+    "David",
+    "Helen",
+    "Maude",
+    "Canwest",
+    "Casey",
+    "Egart",
+    "Gary",
+    "Olaf",
+    "Kermo",
+    "Gura",
+    "Izawa",
+    "Wudeer",
+    "Tucci",
+    "Khalsa",
+    "Drizzt",
+    "Kieran",
+    "Tariq",
+    "Sion",
+    "Ramos",
+    "Warwick",
+    "Neisers",
+    "Brits",
+    "Allis",
+    "Jax",
+    "Robert",
+    "Feder",
+    "Moffat",
+    "Planck",
+    "Sinjeed",
+    "Kejas",
+    "Trond",
+    "Jordan",
+    "Batu",
+    "Ling",
+    "Lasde",
+    "Ruiz",
+    "Yorick",
+    "Tuscany",
+    "Tyrone",
+    "NoTile",
+    "Geleef",
+    "Azeroth",
+    "Fiona",
+    "Huckabee",
+    "Bristol",
+    "Levin",
+    "Jess",
+    "Graf",
+    "Saxony",
+    "Michal",
+    "Buffalo",
+    "Alec",
+    "Anatol",
+    "Stepan",
+    "Yakov",
+    "Medway",
+    "Molus",
+    "Pushkin",
+    "Vishny",
+    "Roe",
+    "Dietmar",
+    "Frank",
+    "Fehn",
+    "Felect",
+    "Crull",
+    "Ruiz",
+    "Maxi",
+    "You Liwu",
+    "Julian",
+    "Nikola",
+    "Nicholas",
+    "Marcos",
+    "Moritz",
+    "This",
+    "Elijah",
+    "Philip",
+    "Noah",
+    "Boris",
+    "Johnwin",
+    "John",
+    "Anton",
+    "Boris",
+    "Valentin",
+    "Valery",
+    "Vasily",
+    "Victor",
+    "Vladimir",
+    "Gennady",
+    "Evgeny",
+    "Yegor",
+    "Efim",
+    "Ivan",
+    "Igor",
+    "Ilya",
+    "Lev",
+    "Leonid",
+    "Maxi",
+    "Matvei",
+    "Mikhail",
+    "Nikita"
+  ],
+  "SecondNames": [
+    "Copperfield",
+    "DeLaie",
+    "Caesar",
+    "Vien",
+    "Quentin",
+    "Sanders",
+    "Zoowon",
+    "Delong",
+    "Vegas",
+    "Courier",
+    "Yasang",
+    "Jager",
+    "Sauron",
+    "Dresser",
+    "Kahn",
+    "Barbosa",
+    "Jeff",
+    "Garcia",
+    "Motu",
+    "Kajaci",
+    "Robin",
+    "Nestor",
+    "Harley",
+    "Barton",
+    "Bibb",
+    "Kyle",
+    "Celtics",
+    "Soma",
+    "Brand",
+    "Kalmar",
+    "LakeBenton",
+    "Clooney",
+    "James",
+    "Youghal",
+    "Turp",
+    "Lincoln",
+    "Bosang",
+    "Bird",
+    "Desa",
+    "Bosa",
+    "Escherichia",
+    "Santos",
+    "Sandler",
+    "Khiva",
+    "Sandler",
+    "Lyme",
+    "Verus",
+    "Macon",
+    "Statham",
+    "Adam",
+    "Leiao Ha",
+    "Lucas",
+    "Lucca",
+    "Lu Molin",
+    "Kiefer",
+    "Lauda",
+    "Janick",
+    "Baptist",
+    "Poway",
+    "Alexandria",
+    "Lecht",
+    "Ayers",
+    "Michael",
+    "James",
+    "Fleischer",
+    "Alterac",
+    "Rochelle",
+    "Miller",
+    "FuSheer",
+    "Schneider",
+    "Schumacher",
+    "Baker",
+    "Shuze",
+    "Afellay",
+    "Kahn",
+    "Osnabruck",
+    "Gordon",
+    "Becker",
+    "labor",
+    "BlackLancaster",
+    "Michelle",
+    "Judith",
+    "Andre",
+    "Peter",
+    "Hoffman",
+    "Wolf",
+    "Huth",
+    "Bier",
+    "Frings",
+    "Bayer",
+    "Swabia",
+    "Frank",
+    "Niulun Bei",
+    "Nikolaou",
+    "Sebastian",
+    "Barak",
+    "Chris",
+    "Barbara",
+    "LevinClemens",
+    "Martin"
+  ],
+  "SkillPools": {
+    "1": [
+      "FGSkill001",
+      "FGSkill002",
+      "FGSkill003",
+      "FGSkill004",
+      "FGSkill005",
+      "FGSkill006",
+      "FGSkill007",
+      "FGSkill008",
+      "FGSkill009",
+      "FGSkill010",
+      "FGSkill011",
+      "FGSkill012",
+      "FGSkill013",
+      "FGSkill014",
+      "FGSkill015",
+      "FGSkill016",
+      "FGSkill017",
+      "FGSkill018",
+      "FGSkill019",
+      "FGSkill020",
+      "FGSkill021",
+      "FGSkill022",
+      "FGSkill023",
+      "FGSkill024",
+      "FGSkill025",
+      "FGSkill026",
+      "FGSkill027",
+      "FGSkill028",
+      "FGSkill029",
+      "FGSkill030",
+      "FGSkill031",
+      "FGSkill032",
+      "FGSkill033",
+      "FGSkill034",
+      "FGSkill035",
+      "FGSkill036",
+      "FGSkill037",
+      "FGSkill038",
+      "FGSkill039",
+      "FGSkill040",
+      "FGSkill041",
+      "FGSkill042",
+      "FGSkill043",
+      "FGSkill044"
+    ],
+    "2": [
+      "FGSkill045",
+      "FGSkill046",
+      "FGSkill047",
+      "FGSkill048",
+      "FGSkill049",
+      "FGSkill050",
+      "FGSkill051",
+      "FGSkill052",
+      "FGSkill053",
+      "FGSkill054",
+      "FGSkill055",
+      "FGSkill056",
+      "FGSkill057",
+      "FGSkill058",
+      "FGSkill059",
+      "FGSkill060",
+      "FGSkill061",
+      "FGSkill062",
+      "FGSkill063",
+      "FGSkill064",
+      "FGSkill065",
+      "FGSkill066",
+      "FGSkill089",
+      "FGSkill090",
+      "FGSkill091",
+      "FGSkill092"
+    ],
+    "3": [
+      "FGSkill067",
+      "FGSkill068",
+      "FGSkill069",
+      "FGSkill070",
+      "FGSkill071",
+      "FGSkill072",
+      "AIDUS_JDJS",
+      "AIDUS_JT",
+      "AIDUS_ZZ",
+      "AIDUS_QS",
+      "AIDUS_JFXZ",
+      "AIDUS_QLYF",
+      "AIDUS_DCYH",
+      "AIDUS_YWLZ",
+      "AIDUS_CJ",
+      "AIDUS_PF",
+      "AIDUS_PL",
+      "AIDUS_BMZJ",
+      "FGSkill073",
+      "FGSkill074",
+      "FGSkill075",
+      "FGSkill076",
+      "FGSkill077",
+      "FGSkill083",
+      "FGSkill084",
+      "FGSkill085",
+      "FGSkill086",
+      "FGSkill087",
+      "FGSkill088",
+      "FGSkill078",
+      "FGSkill079",
+      "FGSkill080",
+      "FGSkill081",
+      "FGSkill082"
+    ]
+  },
+  "SkillNames": {
+    "FGSkill001": "Attack's Blessing",
+    "FGSkill002": "Accuracy's Blessing",
+    "FGSkill003": "Damage Bonus's Blessing",
+    "FGSkill004": "Critical Strike's Blessing",
+    "FGSkill005": "Blessed Technik",
+    "FGSkill006": "Blessed Cannon Hitting",
+    "FGSkill007": "Blessed Cannon Attack",
+    "FGSkill008": "Blessed Passive",
+    "FGSkill009": "Weakened Defense",
+    "FGSkill010": "Weakened Dodge",
+    "FGSkill011": "Weakened Damage Reduction",
+    "FGSkill012": "Weakened Anti-Critical",
+    "FGSkill013": "Weakened Parry",
+    "FGSkill014": "Weakened Cannon Dodge",
+    "FGSkill015": "Weakened Protective",
+    "FGSkill016": "Enhanced Attack",
+    "FGSkill017": "Enhanced Defense",
+    "FGSkill018": "Enhanced verfeinert",
+    "FGSkill019": "Enhanced Dodge",
+    "FGSkill020": "Enhanced Damage Bonus",
+    "FGSkill021": "Enhanced Damage Reduction",
+    "FGSkill022": "Enhanced Cannon Attack Strike",
+    "FGSkill023": "Enhanced Anti-Critical",
+    "FGSkill024": "Enhanced Parry",
+    "FGSkill025": "Enhanced Technik",
+    "FGSkill026": "Enhanced Cannon Hitting",
+    "FGSkill027": "Enhanced Cannon Dodge",
+    "FGSkill028": "Enhanced Cannon Attack",
+    "FGSkill029": "Enhanced Protective",
+    "FGSkill030": "Attack Rise",
+    "FGSkill031": "verfeinert Rise",
+    "FGSkill032": "Damage Bonus Rise",
+    "FGSkill033": "Critical Strike Rise",
+    "FGSkill034": "Technik Rise",
+    "FGSkill035": "Cannon Hitting Rise",
+    "FGSkill036": "Cannon Attack Rise",
+    "FGSkill037": "Passive Rise",
+    "FGSkill038": "Defense Drop",
+    "FGSkill039": "Dodge Drop",
+    "FGSkill040": "Damage Reduction Drop",
+    "FGSkill041": "Anti-Critical Drop",
+    "FGSkill042": "Parry Drop",
+    "FGSkill043": "Cannon Dodge Drop",
+    "FGSkill044": "Protective Drop",
+    "FGSkill045": "Brutal Strike",
+    "FGSkill046": "Firmness Spirit",
+    "FGSkill047": "Savage Blow",
+    "FGSkill048": "Undead Palisades",
+    "FGSkill049": "Strong Body",
+    "FGSkill050": "Cannon's Blessing",
+    "FGSkill051": "Rating's Blessing",
+    "FGSkill052": "Random Passive",
+    "FGSkill053": "Brutal Enhance",
+    "FGSkill054": "Firmness Enhance",
+    "FGSkill055": "Blow Enhance",
+    "FGSkill056": "Palisades Enhance",
+    "FGSkill057": "Strong Enhance",
+    "FGSkill058": "Cannon Enhance",
+    "FGSkill059": "Cannon Damage Enhance",
+    "FGSkill060": "Brutal Rise",
+    "FGSkill061": "Firmness Rise",
+    "FGSkill062": "Blow Rise",
+    "FGSkill063": "Palisades Rise",
+    "FGSkill064": "Strong Rise",
+    "FGSkill065": "Cannon Rise",
+    "FGSkill066": "Cannon Damage Rise",
+    "FGSkill067": "Fierce Assault",
+    "FGSkill068": "Last-ditch Defense",
+    "FGSkill069": "Muscular Skill",
+    "FGSkill070": "Cannon Burst",
+    "FGSkill071": "Cannon Attack Burst",
+    "FGSkill072": "Passive Burst",
+    "AIDUS_JDJS": "Firm Guard",
+    "AIDUS_JT": "Knock Back",
+    "AIDUS_ZZ": "Swamp",
+    "AIDUS_QS": "dispel",
+    "AIDUS_JFXZ": "Hurricane Attack",
+    "AIDUS_QLYF": "Dash",
+    "AIDUS_DCYH": "Unilateral Misfiring",
+    "AIDUS_YWLZ": "Smoke-shroud",
+    "AIDUS_CJ": "Armor Penetration",
+    "AIDUS_PF": "Sail Penetration",
+    "AIDUS_PL": "Demining",
+    "AIDUS_BMZJ": "Suicidal Impact",
+    "FGSkill073": "Fierce Assault Enhance",
+    "FGSkill074": "Last-ditch Defense Enhance",
+    "FGSkill075": "Muscular Skill Enhance",
+    "FGSkill076": "Cannon Explosion",
+    "FGSkill077": "Cannon Attack Explosion",
+    "FGSkill083": "Ultimate Cooldown",
+    "FGSkill084": "Charity Guard",
+    "FGSkill085": "Enhance Poison",
+    "FGSkill086": "Mine Enhance",
+    "FGSkill087": "Smoke Enhance",
+    "FGSkill088": "Condensation Enhance",
+    "FGSkill078": "Fierce Assault Explosion",
+    "FGSkill079": "Last-ditch Defense Explosion",
+    "FGSkill080": "Muscular Skill Storm",
+    "FGSkill081": "Cannon Storm",
+    "FGSkill082": "Cannon Attack Storm",
+    "FGSkill089": "Hit Cannon Skill",
+    "FGSkill090": "Dodge Cannon Skill",
+    "FGSkill091": "Cannon Attack Hitting",
+    "FGSkill092": "Cannon Attack Dodge"
+  },
+  "Photos": [
+    4005180,
+    4005181,
+    4005182,
+    4005183,
+    4005184,
+    4005185,
+    4005186,
+    4005187,
+    4005188,
+    4005189,
+    4005190,
+    4005191,
+    4005192,
+    4005193,
+    4005194,
+    4005195,
+    4005196,
+    4005197,
+    4005198,
+    4005199,
+    4005200,
+    4005201,
+    4005202
+  ],
+  "TrainRange": [
+    [
+      80,
+      90,
+      0.28,
+      0.28
+    ],
+    [
+      88,
+      99,
+      0.31,
+      0.31
+    ],
+    [
+      96,
+      108,
+      0.34,
+      0.34
+    ],
+    [
+      104,
+      117,
+      0.37,
+      0.37
+    ],
+    [
+      112,
+      126,
+      0.4,
+      0.4
+    ],
+    [
+      120,
+      135,
+      0.43,
+      0.43
+    ],
+    [
+      128,
+      144,
+      0.46,
+      0.46
+    ],
+    [
+      136,
+      153,
+      0.49,
+      0.49
+    ],
+    [
+      144,
+      162,
+      0.52,
+      0.52
+    ],
+    [
+      152,
+      171,
+      0.55,
+      0.55
+    ],
+    [
+      160,
+      180,
+      0.58,
+      0.58
+    ],
+    [
+      168,
+      189,
+      0.61,
+      0.61
+    ],
+    [
+      176,
+      198,
+      0.64,
+      0.64
+    ],
+    [
+      184,
+      207,
+      0.67,
+      0.67
+    ],
+    [
+      192,
+      216,
+      0.7,
+      0.7
+    ],
+    [
+      200,
+      225,
+      0.73,
+      0.73
+    ],
+    [
+      208,
+      234,
+      0.76,
+      0.76
+    ],
+    [
+      216,
+      243,
+      0.79,
+      0.79
+    ],
+    [
+      224,
+      252,
+      0.82,
+      0.82
+    ],
+    [
+      232,
+      261,
+      0.85,
+      0.85
+    ],
+    [
+      240,
+      270,
+      0.88,
+      0.88
+    ],
+    [
+      248,
+      279,
+      0.91,
+      0.91
+    ],
+    [
+      256,
+      288,
+      0.94,
+      0.94
+    ],
+    [
+      264,
+      297,
+      0.97,
+      0.97
+    ],
+    [
+      272,
+      306,
+      1,
+      1
+    ],
+    [
+      280,
+      315,
+      1.03,
+      1.03
+    ],
+    [
+      288,
+      324,
+      1.06,
+      1.06
+    ],
+    [
+      296,
+      333,
+      1.09,
+      1.09
+    ],
+    [
+      304,
+      342,
+      1.12,
+      1.12
+    ],
+    [
+      312,
+      351,
+      1.15,
+      1.15
+    ],
+    [
+      320,
+      360,
+      1.18,
+      1.18
+    ],
+    [
+      328,
+      369,
+      1.21,
+      1.21
+    ],
+    [
+      336,
+      378,
+      1.24,
+      1.24
+    ],
+    [
+      344,
+      387,
+      1.27,
+      1.27
+    ],
+    [
+      352,
+      396,
+      1.3,
+      1.3
+    ],
+    [
+      360,
+      405,
+      1.33,
+      1.33
+    ],
+    [
+      368,
+      414,
+      1.36,
+      1.36
+    ],
+    [
+      376,
+      423,
+      1.39,
+      1.39
+    ],
+    [
+      384,
+      432,
+      1.42,
+      1.42
+    ],
+    [
+      392,
+      441,
+      1.45,
+      1.45
+    ],
+    [
+      400,
+      450,
+      1.48,
+      1.48
+    ],
+    [
+      408,
+      459,
+      1.51,
+      1.51
+    ],
+    [
+      416,
+      468,
+      1.54,
+      1.54
+    ],
+    [
+      424,
+      477,
+      1.57,
+      1.57
+    ],
+    [
+      432,
+      486,
+      1.6,
+      1.6
+    ],
+    [
+      440,
+      495,
+      1.63,
+      1.63
+    ],
+    [
+      448,
+      504,
+      1.66,
+      1.66
+    ],
+    [
+      456,
+      513,
+      1.69,
+      1.69
+    ],
+    [
+      464,
+      522,
+      1.72,
+      1.72
+    ],
+    [
+      472,
+      531,
+      1.75,
+      1.75
+    ],
+    [
+      480,
+      540,
+      1.78,
+      1.78
+    ],
+    [
+      488,
+      549,
+      1.81,
+      1.81
+    ],
+    [
+      496,
+      558,
+      1.84,
+      1.84
+    ],
+    [
+      504,
+      567,
+      1.87,
+      1.87
+    ],
+    [
+      512,
+      576,
+      1.9,
+      1.9
+    ],
+    [
+      520,
+      585,
+      1.93,
+      1.93
+    ],
+    [
+      528,
+      594,
+      1.96,
+      1.96
+    ],
+    [
+      536,
+      603,
+      1.99,
+      1.99
+    ],
+    [
+      544,
+      612,
+      2.02,
+      2.02
+    ],
+    [
+      552,
+      621,
+      2.05,
+      2.05
+    ],
+    [
+      560,
+      630,
+      2.08,
+      2.08
+    ],
+    [
+      568,
+      639,
+      2.11,
+      2.11
+    ],
+    [
+      576,
+      648,
+      2.14,
+      2.14
+    ],
+    [
+      584,
+      657,
+      2.17,
+      2.17
+    ],
+    [
+      592,
+      666,
+      2.2,
+      2.2
+    ],
+    [
+      600,
+      675,
+      2.23,
+      2.23
+    ],
+    [
+      608,
+      684,
+      2.26,
+      2.26
+    ],
+    [
+      616,
+      693,
+      2.29,
+      2.29
+    ],
+    [
+      624,
+      702,
+      2.32,
+      2.32
+    ],
+    [
+      632,
+      711,
+      2.35,
+      2.35
+    ],
+    [
+      640,
+      720,
+      2.38,
+      2.38
+    ],
+    [
+      648,
+      729,
+      2.41,
+      2.41
+    ],
+    [
+      656,
+      738,
+      2.44,
+      2.44
+    ],
+    [
+      664,
+      747,
+      2.47,
+      2.47
+    ],
+    [
+      672,
+      756,
+      2.5,
+      2.5
+    ],
+    [
+      680,
+      765,
+      2.53,
+      2.53
+    ],
+    [
+      688,
+      774,
+      2.56,
+      2.56
+    ],
+    [
+      696,
+      783,
+      2.59,
+      2.59
+    ],
+    [
+      704,
+      792,
+      2.62,
+      2.62
+    ],
+    [
+      712,
+      801,
+      2.65,
+      2.65
+    ],
+    [
+      715,
+      810,
+      2.68,
+      2.68
+    ],
+    [
+      720,
+      819,
+      2.71,
+      2.71
+    ],
+    [
+      725,
+      828,
+      2.74,
+      2.74
+    ],
+    [
+      730,
+      837,
+      2.77,
+      2.77
+    ],
+    [
+      735,
+      846,
+      2.8,
+      2.8
+    ],
+    [
+      740,
+      855,
+      2.8,
+      2.8
+    ],
+    [
+      745,
+      864,
+      2.8,
+      2.8
+    ],
+    [
+      750,
+      873,
+      2.8,
+      2.8
+    ],
+    [
+      755,
+      882,
+      2.8,
+      2.8
+    ],
+    [
+      760,
+      891,
+      2.8,
+      2.8
+    ],
+    [
+      765,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      770,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      775,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      780,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      785,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      790,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      795,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      800,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      800,
+      900,
+      2.8,
+      2.8
+    ],
+    [
+      800,
+      900,
+      2.8,
+      2.8
+    ]
+  ],
+  "TrainRegion": [
+    {
+      "UpToLevel": 10,
+      "Types": 7
+    },
+    {
+      "UpToLevel": 20,
+      "Types": 7
+    },
+    {
+      "UpToLevel": 40,
+      "Types": 7
+    },
+    {
+      "UpToLevel": 60,
+      "Types": 15
+    },
+    {
+      "UpToLevel": 80,
+      "Types": 31
+    },
+    {
+      "UpToLevel": 100,
+      "Types": 63
+    }
+  ],
+  "TrainCosts": [
+    {
+      "Silver": 3000000
+    },
+    {
+      "Item": "DJ010123",
+      "Amount": 8
+    },
+    {
+      "Item": "DJ010123",
+      "Amount": 15
+    },
+    {
+      "Item": "DJ010123",
+      "Amount": 30
+    },
+    {
+      "Item": "DJ010123",
+      "Amount": 75
+    },
+    {
+      "Item": "DJ010123",
+      "Amount": 250
+    }
+  ],
+  "TrainDeltaPercent": [
+    [
+      -5,
+      6
+    ],
+    [
+      -4,
+      8
+    ],
+    [
+      -3,
+      10
+    ],
+    [
+      -2,
+      12
+    ],
+    [
+      -1,
+      14
+    ],
+    [
+      0,
+      16
+    ]
+  ],
+  "TrainExp": [
+    10,
+    20,
+    40,
+    80,
+    160,
+    320
+  ],
+  "ExpPerLevel": 100,
+  "MaxLevel": 100,
+  "EquipLevels": [
+    1,
+    30,
+    50,
+    70,
+    90
+  ],
+  "StartRestSlots": 3,
+  "MaxRestSlots": 10,
+  "UnlockCosts": [
+    0,
+    0,
+    0,
+    500000,
+    1000000,
+    2000000,
+    3000000,
+    5000000,
+    8000000,
+    10000000
+  ],
+  "Candidates": 10,
+  "QualityWeights": [
+    70,
+    25,
+    5
+  ],
+  "RecruitPrices": [
+    100000,
+    500000,
+    2000000
+  ],
+  "StartStatPercent": [
+    20,
+    30,
+    40
+  ],
+  "RefreshCost": 0,
+  "TransferLossPercent": 10,
+  "SkillCooldownSeconds": 90,
+  "Equipment": {},
+  "Guesses": [
+    "TrainDeltaPercent",
+    "TrainExp",
+    "ExpPerLevel",
+    "StartRestSlots",
+    "UnlockCosts",
+    "Candidates",
+    "QualityWeights",
+    "RecruitPrices",
+    "StartStatPercent",
+    "RefreshCost",
+    "Equipment"
+  ]
+}

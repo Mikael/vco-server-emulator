@@ -57,10 +57,10 @@ public sealed partial class ClientSession
 
     private int WornSum(string property)
     {
-        if (Character.Bags == null || !Character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return 0;
+        if (Character.Bags == null || !Character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return TotemBonus(property);
         return worn.Values
             .Where(item => DurabilityMax(item.Name) <= 0 || Durability(item.Name) > 0)
-            .Sum(item => ItemCatalog.Number(item.Name, property));
+            .Sum(item => ItemCatalog.Number(item.Name, property) + ArmUpgradeBonus(item, property)) + TotemBonus(property);
     }
 
     private void ComputeStats()
@@ -142,6 +142,7 @@ public sealed partial class ClientSession
             colour = 0xff8000;
         }
         if (!Wound(monster, state, dealt, colour)) return;
+        TotemCharge(true);
 
         string second = fight switch
         {
@@ -167,6 +168,7 @@ public sealed partial class ClientSession
             return;
         }
         int taken = CombatRules.Damage(rules, monster.Attack, Properties.Int("DF"));
+        TotemCharge(false);
         taken = BboIncomingDamage(taken);
         if (FightingSkill() == "SKILL_AXE" && CombatRules.Chance(rules.PassiveChancePercentPerLevel * UniqueSkillLevel("US_AXE2")))
             taken = Math.Max(1, taken * rules.BlockDamagePercent / 100);

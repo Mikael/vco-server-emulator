@@ -29,7 +29,7 @@ public sealed class NoviceCommands : ITextCommand
     {
         session.SystemMessage(words[0] == "NoviceToNext"
             ? "The beginner tutorial is not available on this server."
-            : "There are no rewards to collect.");
+            : "No bounties are posted at the moment.");
         return true;
     }
 }

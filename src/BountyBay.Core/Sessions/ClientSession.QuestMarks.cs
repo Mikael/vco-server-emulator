@@ -36,7 +36,7 @@ public sealed partial class ClientSession
         }
         foreach (QuestDefinition quest in QuestBook.Quests)
         {
-            if (quest.Giver == npcId && QuestOpen(quest.Id) && QuestUnlocked(quest)) return (QuestMark.Available, quest.Id);
+            if (quest.Giver == npcId && !quest.AutoAccept && QuestOpen(quest) && QuestUnlocked(quest)) return (QuestMark.Available, quest.Id);
         }
         return active.Count > 0 ? (QuestMark.InProgress, active[0].Quest.Id) : (QuestMark.None, 0);
     }
@@ -52,20 +52,25 @@ public sealed partial class ClientSession
 
     public bool QuestUnlocked(QuestDefinition quest)
     {
-        QuestMarkInfo? info = QuestMarkBook.Find(quest.Id);
-        if (info == null) return true;
-        if (info.MinLevel > 0 && TotalSkillLevel < info.MinLevel) return false;
-        return info.Prerequisite <= 0
-            || QuestBook.Find(info.Prerequisite) == null
-            || Character.CompletedQuests.Any(progress => progress.Id == info.Prerequisite);
+        int minLevel = Math.Max(quest.MinLevel, QuestMarkBook.Find(quest.Id)?.MinLevel ?? 0);
+        if (minLevel > 0 && TotalSkillLevel < minLevel) return false;
+        if (quest.ExcludedBy.Concat(quest.Alternatives).Any(QuestTaken)) return false;
+        List<int> required = quest.Requires.Where(id => QuestBook.Find(id) != null).ToList();
+        return required.Count == 0 || required.Any(id => Character.CompletedQuests.Any(progress => progress.Id == id));
     }
 
-    private bool QuestObjectivesDone(QuestDefinition quest, QuestProgress progress) => quest.Kind switch
+    private bool QuestTaken(int id)
+        => Character.Quests.Any(progress => progress.Id == id) || Character.CompletedQuests.Any(progress => progress.Id == id);
+
+    private bool QuestObjectivesDone(QuestDefinition quest, QuestProgress progress)
     {
-        QuestKind.Kill => progress.Count >= quest.Count,
-        QuestKind.Bring => Carried(quest) >= quest.Count,
-        _ => true,
-    };
+        IReadOnlyList<QuestTarget> targets = quest.Objectives;
+        for (int i = 0; i < targets.Count; i++)
+        {
+            if (TargetAmount(quest, progress, i, targets[i]) < targets[i].Count) return false;
+        }
+        return true;
+    }
 }
 
 public sealed class QuestMarkInfo

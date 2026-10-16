@@ -56,6 +56,7 @@ public sealed partial class ClientSession
         AddBboItemId(bag, item);
         AddFireFlagItemProperties(bag, item);
         ItemCatalog.Extend(bag, item.Name);
+        ArmUpgradeProperties(bag, item);
         return bag;
     }
 

@@ -81,7 +81,7 @@ public sealed partial class ClientSession
     public void AcceptOfferedQuest(int id)
     {
         QuestDefinition? quest = QuestBook.Find(id);
-        if (quest == null || (!_offeredQuests.Remove(id) && TalkingTo != quest.Giver))
+        if (quest == null || (!_offeredQuests.Remove(id) && TalkingTo != quest.Giver && !MayAcceptFromLog(quest)))
         {
             SystemMessage("That task is not offered to you.");
             return;

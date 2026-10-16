@@ -1142,5 +1142,177 @@
   {
     "Name": "StartMap",
     "Type": "U32"
+  },
+  {
+    "Name": "GUid",
+    "Type": "String"
+  },
+  {
+    "Name": "XQGUid",
+    "Type": "String"
+  },
+  {
+    "Name": "TotemSkill",
+    "Type": "String"
+  },
+  {
+    "Name": "Exp",
+    "Type": "U32"
+  },
+  {
+    "Name": "GrowRate",
+    "Type": "U32"
+  },
+  {
+    "Name": "TotemType",
+    "Type": "U32"
+  },
+  {
+    "Name": "Sex",
+    "Type": "U32"
+  },
+  {
+    "Name": "FuseFlag",
+    "Type": "U32"
+  },
+  {
+    "Name": "LevelPoint",
+    "Type": "U32"
+  },
+  {
+    "Name": "ChargePower",
+    "Type": "U32"
+  },
+  {
+    "Name": "MhDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "XyDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "MmDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "LgDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "LhDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "MhDamage_",
+    "Type": "U32"
+  },
+  {
+    "Name": "XyDamage_",
+    "Type": "U32"
+  },
+  {
+    "Name": "MmDamage_",
+    "Type": "U32"
+  },
+  {
+    "Name": "LgDamage_",
+    "Type": "U32"
+  },
+  {
+    "Name": "LhDamage_",
+    "Type": "U32"
+  },
+  {
+    "Name": "EvolProp",
+    "Type": "U32"
+  },
+  {
+    "Name": "StarProp",
+    "Type": "String"
+  },
+  {
+    "Name": "MemoryInfo",
+    "Type": "String"
+  },
+  {
+    "Name": "ArmType",
+    "Type": "U8"
+  },
+  {
+    "Name": "DarkQuality",
+    "Type": "U32"
+  },
+  {
+    "Name": "ExchangeDesc",
+    "Type": "String"
+  },
+  {
+    "Name": "AddAT_f",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDF_f",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddHitRatio_f",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDodgeRatio_f",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddMaxHP_f",
+    "Type": "U32"
+  },
+  {
+    "Name": "RandomHole",
+    "Type": "U32"
+  },
+  {
+    "Name": "AideSkill",
+    "Type": "String"
+  },
+  {
+    "Name": "AAddAT",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddATMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddDFMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddHurtSailor",
+    "Type": "Float"
+  },
+  {
+    "Name": "AAddHSailorMax",
+    "Type": "Float"
+  },
+  {
+    "Name": "AAddDDSailor",
+    "Type": "Float"
+  },
+  {
+    "Name": "AAddDSailorMax",
+    "Type": "Float"
+  },
+  {
+    "Name": "BoxTag",
+    "Type": "U32"
+  },
+  {
+    "Name": "SnArmType",
+    "Type": "U32"
   }
 ]

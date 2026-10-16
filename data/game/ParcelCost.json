@@ -1,0 +1,7 @@
+{
+  "Note": "GUESS: no client data or research source gives the parcel postage. The client multiplies the SendCost value by the amount and clamps the result to 1..100000 (UILogic 0x337145-0x33717d); the server charges the same figure.",
+  "CostPerArticle": 50,
+  "CostPerWeight": 10,
+  "Minimum": 1,
+  "Maximum": 100000
+}

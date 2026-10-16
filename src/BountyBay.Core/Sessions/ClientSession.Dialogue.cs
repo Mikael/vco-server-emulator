@@ -11,6 +11,7 @@ public sealed partial class ClientSession
 
     public void Talk(NpcDefinition npc)
     {
+        if (TalkArmUpgrade(npc)) return;
         if (npc.Shop?.ContainsKey(ViewId.Shipyard) == true && OpenShipyardMenu(npc.Id)) return;
         TalkingTo = npc.Id;
         if (TalkWithClientMenu(npc)) return;
@@ -24,8 +25,11 @@ public sealed partial class ClientSession
     public void ChooseOption(int target, DialogueAction action)
     {
         action = ClientMenuAction(action);
+        if (HandleAideOption(target, (int)action)) return;
+        if (HandleArmUpgradeOption(target, (int)action)) return;
         if (HandleAuctionOption(target, (int)action)) return;
         if (HandleBboItemOption(target, (int)action)) return;
+        if (HandleTotemOption(target, (int)action)) return;
         if (HandleSoulOption(target, (int)action)) return;
         if (HandleFlagFuseOption(target, (int)action)) return;
         if (HandleBboSocialOption(target, (int)action)) return;
