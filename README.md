@@ -13,9 +13,9 @@ Start the server:
 
     start-server.bat
 
-Start the client (the two arguments are required):
+Start the client:
+    
+    StartClient.bat
 
-    cd <client>\voyage
-    Core.exe $Snail$ 0
 
 Settings are in `config\emulator.json`. Set `ClientPath` to the client's `voyage` folder.
