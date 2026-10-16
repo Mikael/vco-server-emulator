@@ -1,0 +1,548 @@
+{
+ "Source": "CLIENT: ArmHole.ini (soul ids/names, 12 land + 20 sea star charts and their skill names), window\numtostring.ini CharmComposeHelp (fusion/advancement costs), CharmRebuildHelp (attribute pools), *-CharmProp (attribute colour thresholds), ArmMoneyLimit; CharmUpdate.ini (materials). Keys ending in Guess are not in the client.",
+ "MaxLevel": 50,
+ "ChartItem": "CWCL0273",
+ "EssenceItem": "CWCL0274",
+ "ShardItem": "CWCL0271",
+ "SpoilsItem": "CWCL0272",
+ "ChartFeeGuess": 100000,
+ "ChartGradeWeightsGuess": [
+  60,
+  25,
+  12,
+  3
+ ],
+ "ExpPerEssenceGuess": 10,
+ "ExpBaseGuess": 20,
+ "ExpPerLevelGuess": 10,
+ "UpgradeFeePerLevelGuess": 1000,
+ "MoneyRow": 1,
+ "FuseShards": 8,
+ "FuseSpoils": 20,
+ "FuseFee": 5000000,
+ "AdvanceShards": [
+  16,
+  32,
+  48
+ ],
+ "AdvanceSpoils": [
+  40,
+  80,
+  100
+ ],
+ "AdvanceFee": [
+  25000000,
+  50000000,
+  100000000
+ ],
+ "RebuildSpoilsGuess": [
+  2,
+  4,
+  6,
+  8
+ ],
+ "RebuildFeeGuess": [
+  10000,
+  20000,
+  40000,
+  80000
+ ],
+ "DownEssencePercentGuess": 50,
+ "DownShardsGuess": [
+  4,
+  8,
+  16,
+  24
+ ],
+ "AttributesPerSoulGuess": 2,
+ "RollPercentGuess": [
+  80,
+  120
+ ],
+ "FloatAttributes": [
+  "SoulHurtSailor",
+  "SoulDDSailor"
+ ],
+ "LandAttributes": [
+  [
+   "DamageScope",
+   "MaxSP",
+   "HitRatio",
+   "Backbone_"
+  ],
+  [
+   "DamageScope",
+   "DF",
+   "DodgeRatio",
+   "Ward_"
+  ],
+  [
+   "DamageSco0_",
+   "MaxHP",
+   "HitRatio",
+   "Response_"
+  ],
+  [
+   "DamageSco0_",
+   "AT",
+   "DodgeRatio",
+   "SkillHap_"
+  ],
+  [
+   "DoubleDamage",
+   "MaxSP",
+   "Acute_",
+   "SkillHap_"
+  ],
+  [
+   "DoubleDamage",
+   "DF",
+   "Physique_",
+   "Response_"
+  ],
+  [
+   "DoubleDamage0",
+   "MaxHP",
+   "Acute_",
+   "Ward_"
+  ],
+  [
+   "DoubleDamage0",
+   "AT",
+   "Physique_",
+   "Backbone_"
+  ]
+ ],
+ "SeaAttributes": [
+  [
+   "SoulCannonDB",
+   "SoulNcDDBump",
+   "SoulNcIncShip",
+   "SoulCannonHR"
+  ],
+  [
+   "SoulCannonDB",
+   "SoulTorpedoDF",
+   "SoulNcDDShip",
+   "SoulCannonDR"
+  ],
+  [
+   "SoulCannKeyDF",
+   "SoulNcBumpPower",
+   "SoulNcIncShip",
+   "SoulCannonHR"
+  ],
+  [
+   "SoulCannKeyDF",
+   "SoulTorpedoAT",
+   "SoulNcDDShip",
+   "SoulCannonDR"
+  ],
+  [
+   "SoulHurtSailor",
+   "SoulNcDDBump",
+   "SoulSeaDBInc",
+   "SoulCannonHR"
+  ],
+  [
+   "SoulHurtSailor",
+   "SoulTorpedoDF",
+   "SoulSeaKeyDFInc",
+   "SoulCannonDR"
+  ],
+  [
+   "SoulDDSailor",
+   "SoulNcBumpPower",
+   "SoulSeaDBInc",
+   "SoulCannonHR"
+  ],
+  [
+   "SoulDDSailor",
+   "SoulTorpedoAT",
+   "SoulSeaKeyDFInc",
+   "SoulCannonDR"
+  ]
+ ],
+ "Tiers": {
+  "MaxHP": [
+   500,
+   1000,
+   1700
+  ],
+  "MaxSP": [
+   150,
+   300,
+   500
+  ],
+  "AT": [
+   50,
+   100,
+   200
+  ],
+  "DF": [
+   65,
+   125,
+   220
+  ],
+  "HitRatio": [
+   20,
+   40,
+   75
+  ],
+  "DodgeRatio": [
+   15,
+   33,
+   60
+  ],
+  "DamageScope": [
+   5,
+   9,
+   15
+  ],
+  "DamageSco0_": [
+   5,
+   9,
+   15
+  ],
+  "DoubleDamage": [
+   5,
+   9,
+   15
+  ],
+  "DoubleDamage0": [
+   5,
+   9,
+   15
+  ],
+  "Ward_": [
+   15,
+   33,
+   58
+  ],
+  "SkillHap_": [
+   19,
+   38,
+   68
+  ],
+  "Physique_": [
+   9,
+   18,
+   30
+  ],
+  "Response_": [
+   13,
+   35,
+   62
+  ],
+  "Backbone_": [
+   20,
+   40,
+   70
+  ],
+  "Acute_": [
+   13,
+   25,
+   42
+  ],
+  "SoulCannonHR": [
+   7,
+   12,
+   15
+  ],
+  "SoulCannonDR": [
+   7,
+   12,
+   15
+  ],
+  "SoulCannonDB": [
+   7,
+   12,
+   15
+  ],
+  "SoulCannKeyDF": [
+   7,
+   12,
+   15
+  ],
+  "SoulHurtSailor": [
+   13,
+   23,
+   29
+  ],
+  "SoulDDSailor": [
+   13,
+   23,
+   29
+  ],
+  "SoulNcIncShip": [
+   7,
+   12,
+   15
+  ],
+  "SoulNcDDShip": [
+   7,
+   12,
+   15
+  ],
+  "SoulSeaDBInc": [
+   8,
+   13,
+   19
+  ],
+  "SoulSeaKeyDFInc": [
+   8,
+   13,
+   19
+  ],
+  "SoulTorpedoAT": [
+   8,
+   13,
+   19
+  ],
+  "SoulTorpedoDF": [
+   8,
+   13,
+   19
+  ],
+  "SoulNcBumpPower": [
+   7,
+   12,
+   15
+  ],
+  "SoulNcDDBump": [
+   7,
+   12,
+   15
+  ]
+ },
+ "LandCharts": [
+  [
+   "Rust Giver",
+   "Leecher",
+   "Enhanced reagents"
+  ],
+  [
+   "Retaliation",
+   "Revitalize",
+   "Overexcite"
+  ],
+  [
+   "Launch Slash",
+   "Recoil",
+   "Steadfast"
+  ],
+  [
+   "Cursed Blade",
+   "Void Judgment",
+   "Commitment"
+  ],
+  [
+   "Bullseye",
+   "Rapid Chill",
+   "Pledge of Resistance"
+  ],
+  [
+   "Perfect Precision",
+   "Retributive Justice",
+   "Standstill"
+  ],
+  [
+   "Solid Foundation",
+   "Karma Calls",
+   "Blade Mastery"
+  ],
+  [
+   "Leverage",
+   "Forestall",
+   "Rage Douser"
+  ],
+  [
+   "Bleed Out",
+   "Lifechanger",
+   "Stored Power"
+  ],
+  [
+   "Energy Sap",
+   "Reckless Curse",
+   "Battle Soul Armor"
+  ],
+  [
+   "Bloodbath",
+   "Frozen Guard",
+   "Roundabout Scheme"
+  ],
+  [
+   "Callous Strike",
+   "Dark Enactment",
+   "Cosmic Guard"
+  ]
+ ],
+ "SeaCharts": [
+  [
+   "Torpedo",
+   "Hurricane",
+   "Cannon Control"
+  ],
+  [
+   "Sticky Mine",
+   "Pacific Chaos",
+   "Crashing Waves"
+  ],
+  [
+   "Barrel Chill",
+   "Tempest",
+   "Repair Guru"
+  ],
+  [
+   "Clash Shot",
+   "Doubtful Mist",
+   "Repair Turf"
+  ],
+  [
+   "Precise Shot",
+   "Reborn",
+   "Cannon Research"
+  ],
+  [
+   "Flaming Shot",
+   "Crew Summon",
+   "Reckless Charge"
+  ],
+  [
+   "Battlefield Exploit",
+   "Warring Art",
+   "Mine Incapacitation"
+  ],
+  [
+   "Trigger Command",
+   "Combat Guru",
+   "Cannon Buff"
+  ],
+  [
+   "Plague Bomb",
+   "Rudder Boost",
+   "Squall Discord"
+  ],
+  [
+   "Bullet Shower",
+   "Sailor's Armor",
+   "Aquatic Veil"
+  ],
+  [
+   "God's Remains",
+   "Sacrificial Offering",
+   "Divine Enlightment"
+  ],
+  [
+   "Odds Shot",
+   "God's Closet",
+   "Barrel Decay"
+  ],
+  [
+   "Fleet Eruption",
+   "Recycle",
+   "Recharge"
+  ],
+  [
+   "Chains Down",
+   "Minimum Risk",
+   "Backtrack"
+  ],
+  [
+   "Torrental Oath",
+   "For I",
+   "Plethora Swarm"
+  ],
+  [
+   "Daredevil",
+   "Aftermath Impact",
+   "Luckster's Charm"
+  ],
+  [
+   "Obsedian Powder",
+   "Wonder Armor",
+   "All Prepared"
+  ],
+  [
+   "Ammo Plus",
+   "Sailor Recruit",
+   "Withdraw"
+  ],
+  [
+   "Huge Ammo",
+   "First Armor",
+   "Aquatic Curse"
+  ],
+  [
+   "Fatal Fire",
+   "Heaven's Edge",
+   "Siren's Curse"
+  ]
+ ],
+ "Names": {
+  "FS001": "Wind Source",
+  "FS002": "Fire Source",
+  "FS003": "Earth Source",
+  "FS004": "Water Source",
+  "FS005": "Gold Source",
+  "FS006": "Wood Source",
+  "FS007": "Light Source",
+  "FS008": "Darkness Source",
+  "FS009": "Soul of Gales",
+  "FS010": "Soul of Flames",
+  "FS011": "Soul of Sacred Soil",
+  "FS012": "Soul of Floods",
+  "FS013": "Keen Soul",
+  "FS014": "Soul of Great Wood",
+  "FS015": "Soul of Light",
+  "FS016": "Soul of Darkness",
+  "FS017": "Soul of Skies",
+  "FS018": "Soul of the Lotus",
+  "FS019": "Soul of the Plains",
+  "FS020": "Soul of the Seas",
+  "FS021": "Soul of Gold",
+  "FS022": "Soul of Life",
+  "FS023": "Soul of Dawn",
+  "FS024": "Soul of the Night",
+  "FS025": "Serenity",
+  "FS026": "Purgatory",
+  "FS027": "Shattered",
+  "FS028": "Cleansed",
+  "FS029": "Brilliance",
+  "FS030": "Continuous",
+  "FS031": "Daybreak",
+  "FS032": "Day",
+  "SS001": "Wind Origin",
+  "SS002": "Fire Origin",
+  "SS003": "Earth Origin",
+  "SS004": "Water Origin",
+  "SS005": "Gold Origin",
+  "SS006": "Wood Origin",
+  "SS007": "Light Origin",
+  "SS008": "Darkness Origin",
+  "SS009": "Breezy Melody",
+  "SS010": "Fuming Melody",
+  "SS011": "Dusty Melody",
+  "SS012": "Floody Melody",
+  "SS013": "Keen Melody",
+  "SS014": "Forest Melody",
+  "SS015": "Dawn Melody",
+  "SS016": "Dusk Melody",
+  "SS017": "Azure Aria",
+  "SS018": "Crimson Aria",
+  "SS019": "Meteor Aria",
+  "SS020": "Deep Sea Aria",
+  "SS021": "Gold Broth Aria",
+  "SS022": "Life Aria",
+  "SS023": "Dawn Aria",
+  "SS024": "Endless Aria",
+  "SS025": "Welkin",
+  "SS026": "Abyss",
+  "SS027": "Fissure",
+  "SS028": "Luminous",
+  "SS029": "Willpower",
+  "SS030": "Eternity",
+  "SS031": "Light",
+  "SS032": "Darkness"
+ }
+}

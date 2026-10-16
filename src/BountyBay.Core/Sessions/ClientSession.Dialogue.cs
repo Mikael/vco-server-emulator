@@ -26,6 +26,7 @@ public sealed partial class ClientSession
         action = ClientMenuAction(action);
         if (HandleAuctionOption(target, (int)action)) return;
         if (HandleBboItemOption(target, (int)action)) return;
+        if (HandleSoulOption(target, (int)action)) return;
         if (HandleFlagFuseOption(target, (int)action)) return;
         if (HandleBboSocialOption(target, (int)action)) return;
         if ((int)action == 390 && BboChooseShipOption(target, (int)action)) return;

@@ -31,6 +31,8 @@ public sealed class BboSelectCommand : ITextCommand
             case ClientSession.BeliefFuseView:
                 session.BeliefFuseSlot(index);
                 return true;
+            case ClientSession.SoulView when session.SoulBoxSelect(index):
+                return true;
             case ClientSession.CompoundView:
                 session.CompoundSlot(index);
                 return true;

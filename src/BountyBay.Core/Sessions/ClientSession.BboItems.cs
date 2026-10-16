@@ -187,6 +187,7 @@ public sealed partial class ClientSession
 
     public void UseOnBoxItem(int view, int index, int targetView, int targetIndex)
     {
+        if (targetView == SoulView && SoulBoxPut(view, index)) return;
         if (targetView == CompoundView && _compoundOpen)
         {
             CompoundPut(view, index);
