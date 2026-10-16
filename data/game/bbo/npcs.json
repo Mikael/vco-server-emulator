@@ -74193,5 +74193,174 @@
     "Source": {
       "Position": "GUESS from TotemManageNpc help text (Lisbon Port -20,-40)"
     }
+  },
+  {
+    "Id": 2009341,
+    "Scene": 1024001,
+    "Model": 3101001,
+    "Name": "Tavern Boss",
+    "X": 45.2,
+    "Y": 24.3,
+    "Z": -85.01,
+    "Greeting": "Welcome to the tavern of Athens. Would you like some drink?",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Cancel",
+        "ClientKey": "-45099"
+      }
+    ],
+    "NameKey": "IDName00004882",
+    "Role": "Tavern Boss",
+    "SceneName": "Athens City",
+    "Source": {
+      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
+      "Y": "GUESS height of nearby Athens City NPCs",
+      "Model": "GUESS"
+    },
+    "ChatSet": "gnnpc009",
+    "ClientMenu": [
+      {
+        "Key": "-20",
+        "Number": 20,
+        "Text": "Chat",
+        "Action": ""
+      },
+      {
+        "Key": "-24",
+        "Number": 24,
+        "Text": "Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40008",
+        "Number": 40008,
+        "Text": "Healing",
+        "Action": ""
+      },
+      {
+        "Key": "-40006",
+        "Number": 40006,
+        "Text": "Recruit all sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-40005",
+        "Number": 40005,
+        "Text": "Recruit Necessary Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40007",
+        "Number": 40007,
+        "Text": "Recruit a fixed number of sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40009",
+        "Number": 40009,
+        "Text": "Dismiss a specific number of sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-45905",
+        "Number": 45905,
+        "Text": "Work",
+        "Action": ""
+      },
+      {
+        "Key": "-45906",
+        "Number": 45906,
+        "Text": "Employment",
+        "Action": ""
+      },
+      {
+        "Key": "-45907",
+        "Number": 45907,
+        "Text": "Hunting",
+        "Action": ""
+      },
+      {
+        "Key": "-45099",
+        "Number": 45099,
+        "Text": "Cancel",
+        "Action": "Bye"
+      }
+    ]
+  },
+  {
+    "Id": 2009342,
+    "Scene": 1024001,
+    "Model": 3201022,
+    "Name": "Wendora",
+    "X": 49.2,
+    "Y": 24.3,
+    "Z": -85.01,
+    "Greeting": "Hello, captain.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Cancel",
+        "ClientKey": "-45099"
+      }
+    ],
+    "NameKey": "IDName00005388",
+    "Role": "",
+    "SceneName": "Athens City",
+    "Source": {
+      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
+      "Y": "GUESS height of nearby Athens City NPCs",
+      "Model": "GUESS"
+    }
+  },
+  {
+    "Id": 2009343,
+    "Scene": 1024001,
+    "Model": 3201022,
+    "Name": "Pamafes",
+    "X": 44.2,
+    "Y": 24.3,
+    "Z": -82.01,
+    "Greeting": "Hello, captain.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Cancel",
+        "ClientKey": "-45099"
+      }
+    ],
+    "NameKey": "IDName00005389",
+    "Role": "",
+    "SceneName": "Athens City",
+    "Source": {
+      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
+      "Y": "GUESS height of nearby Athens City NPCs",
+      "Model": "GUESS"
+    }
+  },
+  {
+    "Id": 2009344,
+    "Scene": 1024001,
+    "Model": 3201022,
+    "Name": "Helen",
+    "X": 50.2,
+    "Y": 24.3,
+    "Z": -82.01,
+    "Greeting": "Hello, captain.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Cancel",
+        "ClientKey": "-45099"
+      }
+    ],
+    "NameKey": "IDName00005390",
+    "Role": "",
+    "SceneName": "Athens City",
+    "Source": {
+      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
+      "Y": "GUESS height of nearby Athens City NPCs",
+      "Model": "GUESS"
+    }
   }
 ]

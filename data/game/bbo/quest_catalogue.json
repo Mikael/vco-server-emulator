@@ -167,7 +167,7 @@
   "objective item/monster not in client name list": 252,
   "report-to NPC missing in emulator npcs.json (named in the text: no client key)": 180,
   "unsupported objective: discovery": 179,
-  "report-to NPC missing in emulator npcs.json": 58,
+  "report-to NPC missing in emulator npcs.json": 55,
   "unsupported objective: instance": 51,
   "objective partly unsupported: instance": 29,
   "no objective text": 8,
@@ -9874,16 +9874,20 @@
    "Targets": [],
    "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "NPC02474",
+    "Id": 2000464,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00004882",
     "Scene": 1024004,
     "Name": "Tavern Boss",
-    "Id": 0,
+    "Id": 2009341,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 1002,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 3300,
@@ -9897,8 +9901,14 @@
    },
    "MapMarks": [],
    "TalkLines": 8,
-   "Emitted": false,
-   "DropReason": "report-to NPC missing in emulator npcs.json"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    1002
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 1004,
@@ -9929,16 +9939,20 @@
    ],
    "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00004882",
+    "Id": 2009341,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005388",
     "Scene": 1024004,
     "Name": "Wendora",
-    "Id": 0,
+    "Id": 2009342,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 1003,
    "Reward": {
     "Gold": 10000,
     "ProfessionExp": 6600,
@@ -9964,8 +9978,14 @@
    },
    "MapMarks": [],
    "TalkLines": 7,
-   "Emitted": false,
-   "DropReason": "report-to NPC missing in emulator npcs.json"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    1003
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 1005,
@@ -9996,8 +10016,8 @@
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
-    "Key": "NPC02474",
-    "Id": 2000464,
+    "Key": "IDName00005388",
+    "Id": 2009342,
     "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
@@ -10008,7 +10028,7 @@
     "Id": 2000464,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 1002,
+   "Prerequisite": 1004,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 4400,
@@ -10026,7 +10046,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    1002
+    1004
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
@@ -92286,16 +92306,20 @@
    "Targets": [],
    "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005229",
+    "Id": 112,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005388",
     "Scene": 1024004,
     "Name": "Wendora",
-    "Id": 0,
+    "Id": 2009342,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 1957,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 45000,
@@ -92309,8 +92333,14 @@
    },
    "MapMarks": [],
    "TalkLines": 5,
-   "Emitted": false,
-   "DropReason": "report-to NPC missing in emulator npcs.json"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    1957
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 1947,
@@ -92553,8 +92583,8 @@
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
-    "Key": "IDName00005229",
-    "Id": 112,
+    "Key": "IDName00005388",
+    "Id": 2009342,
     "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
@@ -92565,7 +92595,7 @@
     "Id": 110,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 1957,
+   "Prerequisite": 1946,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 85000,
@@ -92586,7 +92616,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    1957
+    1946
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
