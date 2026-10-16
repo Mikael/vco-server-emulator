@@ -146,7 +146,8 @@ public sealed class CommandRouter
             .Add(new BattleCommands())
             .Add(new CopyCommands())
             .Add(new TowerCommands())
-            .Add(new MatchRecordCommands());
+            .Add(new MatchRecordCommands())
+            .Add(new LeisureCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

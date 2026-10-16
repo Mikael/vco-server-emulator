@@ -1438,5 +1438,17 @@
   {
     "Name": "SeaMaxFloor",
     "Type": "U32"
+  },
+  {
+    "Name": "special1",
+    "Type": "U32"
+  },
+  {
+    "Name": "PopularityUp",
+    "Type": "U32"
+  },
+  {
+    "Name": "PopularityDown",
+    "Type": "U32"
   }
 ]

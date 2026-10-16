@@ -117,6 +117,7 @@ public sealed partial class ClientSession
 
         ApplyBboSocialProperties();
         ApplyBboCharacterProperties();
+        ApplyLeisureProperties();
         Send(LoginPackets.PropertyTableDefinition(), "(property table)");
         ApplyTotemProperties();
         Send(LoginPackets.OwnProperties(Properties), "(own properties)");
@@ -138,6 +139,7 @@ public sealed partial class ClientSession
         EnterWorldAides();
         EnterWorldTotems();
         BboStartRewards();
+        EnterWorldLeisure();
         BattleEnterWorld();
         AnnounceOverflow();
         CollectConsignment();
@@ -392,6 +394,7 @@ public sealed partial class ClientSession
             if (InWorld && !AtSea) SetProperty(name, value, visibleToOthers: true);
             else Properties[name] = value;
         }
+        ApplyLeisureLook();
     }
 
     public void SetProperty(string name, object value, bool visibleToOthers = false)

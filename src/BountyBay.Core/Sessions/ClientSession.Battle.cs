@@ -277,7 +277,7 @@ public sealed partial class ClientSession
             fighter.ReliveAt = 0;
         }
         if (Hp <= 0) SetHp(MaxHp);
-        if (PropertyTable.Has("Camp")) SetProperty("Camp", 0, visibleToOthers: true);
+        if (PropertyTable.Has("Camp")) SetProperty("Camp", Character.PopularityCamp, visibleToOthers: true);
         SetProperty("TeamNum", Team?.Id ?? 0, visibleToOthers: true);
         BattleTravelBack(note);
         TeamDirectory.Refresh(this);

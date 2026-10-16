@@ -1,0 +1,7409 @@
+{
+ "MilitaryRank": {
+  "RankHonor": [
+   1000,
+   4000,
+   9000,
+   16000,
+   25000,
+   36000,
+   49000,
+   64000,
+   81000,
+   100000,
+   121000,
+   144000,
+   169000,
+   196000,
+   225000,
+   256000,
+   289000,
+   324000
+  ],
+  "TrainingPointsPerRank": 10,
+  "Attributes": [
+   {
+    "Key": "AT",
+    "Label": "Attack",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 3
+     },
+     {
+      "Value": "1",
+      "Rank": 3
+     },
+     {
+      "Value": "2",
+      "Rank": 3
+     },
+     {
+      "Value": "3",
+      "Rank": 4
+     },
+     {
+      "Value": "5",
+      "Rank": 4
+     },
+     {
+      "Value": "7",
+      "Rank": 4
+     },
+     {
+      "Value": "9",
+      "Rank": 5
+     },
+     {
+      "Value": "12",
+      "Rank": 5
+     },
+     {
+      "Value": "15",
+      "Rank": 5
+     },
+     {
+      "Value": "18",
+      "Rank": 6
+     },
+     {
+      "Value": "21",
+      "Rank": 6
+     },
+     {
+      "Value": "24",
+      "Rank": 6
+     },
+     {
+      "Value": "27",
+      "Rank": 6
+     },
+     {
+      "Value": "30",
+      "Rank": 6
+     },
+     {
+      "Value": "33",
+      "Rank": 6
+     },
+     {
+      "Value": "36",
+      "Rank": 7
+     },
+     {
+      "Value": "39",
+      "Rank": 7
+     },
+     {
+      "Value": "42",
+      "Rank": 7
+     },
+     {
+      "Value": "45",
+      "Rank": 7
+     },
+     {
+      "Value": "48",
+      "Rank": 7
+     },
+     {
+      "Value": "51",
+      "Rank": 7
+     },
+     {
+      "Value": "54",
+      "Rank": 8
+     },
+     {
+      "Value": "58",
+      "Rank": 8
+     },
+     {
+      "Value": "62",
+      "Rank": 8
+     },
+     {
+      "Value": "66",
+      "Rank": 8
+     },
+     {
+      "Value": "70",
+      "Rank": 8
+     },
+     {
+      "Value": "74",
+      "Rank": 8
+     },
+     {
+      "Value": "78",
+      "Rank": 9
+     },
+     {
+      "Value": "83",
+      "Rank": 9
+     },
+     {
+      "Value": "88",
+      "Rank": 9
+     },
+     {
+      "Value": "93",
+      "Rank": 9
+     },
+     {
+      "Value": "98",
+      "Rank": 9
+     },
+     {
+      "Value": "103",
+      "Rank": 9
+     },
+     {
+      "Value": "108",
+      "Rank": 9
+     },
+     {
+      "Value": "113",
+      "Rank": 9
+     },
+     {
+      "Value": "118",
+      "Rank": 9
+     },
+     {
+      "Value": "123",
+      "Rank": 9
+     },
+     {
+      "Value": "128",
+      "Rank": 10
+     },
+     {
+      "Value": "136",
+      "Rank": 10
+     },
+     {
+      "Value": "144",
+      "Rank": 10
+     },
+     {
+      "Value": "152",
+      "Rank": 10
+     },
+     {
+      "Value": "160",
+      "Rank": 10
+     },
+     {
+      "Value": "168",
+      "Rank": 10
+     },
+     {
+      "Value": "176",
+      "Rank": 10
+     },
+     {
+      "Value": "184",
+      "Rank": 10
+     },
+     {
+      "Value": "192",
+      "Rank": 10
+     },
+     {
+      "Value": "200",
+      "Rank": 11
+     },
+     {
+      "Value": "210",
+      "Rank": 11
+     },
+     {
+      "Value": "220",
+      "Rank": 11
+     },
+     {
+      "Value": "230",
+      "Rank": 12
+     },
+     {
+      "Value": "242",
+      "Rank": 12
+     },
+     {
+      "Value": "254",
+      "Rank": 12
+     },
+     {
+      "Value": "266",
+      "Rank": 13
+     },
+     {
+      "Value": "281",
+      "Rank": 13
+     },
+     {
+      "Value": "296",
+      "Rank": 13
+     },
+     {
+      "Value": "311",
+      "Rank": 14
+     },
+     {
+      "Value": "329",
+      "Rank": 14
+     },
+     {
+      "Value": "347",
+      "Rank": 14
+     },
+     {
+      "Value": "365",
+      "Rank": 15
+     },
+     {
+      "Value": "383",
+      "Rank": 15
+     },
+     {
+      "Value": "401",
+      "Rank": 15
+     },
+     {
+      "Value": "419",
+      "Rank": 16
+     },
+     {
+      "Value": "437",
+      "Rank": 16
+     },
+     {
+      "Value": "455",
+      "Rank": 16
+     },
+     {
+      "Value": "473",
+      "Rank": 17
+     },
+     {
+      "Value": "493",
+      "Rank": 17
+     },
+     {
+      "Value": "513",
+      "Rank": 17
+     },
+     {
+      "Value": "533",
+      "Rank": 18
+     },
+     {
+      "Value": "553",
+      "Rank": 18
+     },
+     {
+      "Value": "573",
+      "Rank": 18
+     },
+     {
+      "Value": "593",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "DF",
+    "Label": "Defense",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 2
+     },
+     {
+      "Value": "2",
+      "Rank": 2
+     },
+     {
+      "Value": "4",
+      "Rank": 2
+     },
+     {
+      "Value": "6",
+      "Rank": 2
+     },
+     {
+      "Value": "8",
+      "Rank": 2
+     },
+     {
+      "Value": "10",
+      "Rank": 2
+     },
+     {
+      "Value": "12",
+      "Rank": 3
+     },
+     {
+      "Value": "14",
+      "Rank": 3
+     },
+     {
+      "Value": "16",
+      "Rank": 3
+     },
+     {
+      "Value": "18",
+      "Rank": 3
+     },
+     {
+      "Value": "20",
+      "Rank": 3
+     },
+     {
+      "Value": "22",
+      "Rank": 3
+     },
+     {
+      "Value": "24",
+      "Rank": 4
+     },
+     {
+      "Value": "26",
+      "Rank": 4
+     },
+     {
+      "Value": "28",
+      "Rank": 4
+     },
+     {
+      "Value": "30",
+      "Rank": 4
+     },
+     {
+      "Value": "32",
+      "Rank": 4
+     },
+     {
+      "Value": "34",
+      "Rank": 4
+     },
+     {
+      "Value": "36",
+      "Rank": 5
+     },
+     {
+      "Value": "38",
+      "Rank": 5
+     },
+     {
+      "Value": "40",
+      "Rank": 5
+     },
+     {
+      "Value": "42",
+      "Rank": 5
+     },
+     {
+      "Value": "44",
+      "Rank": 5
+     },
+     {
+      "Value": "46",
+      "Rank": 5
+     },
+     {
+      "Value": "48",
+      "Rank": 6
+     },
+     {
+      "Value": "50",
+      "Rank": 6
+     },
+     {
+      "Value": "52",
+      "Rank": 6
+     },
+     {
+      "Value": "54",
+      "Rank": 6
+     },
+     {
+      "Value": "56",
+      "Rank": 6
+     },
+     {
+      "Value": "58",
+      "Rank": 6
+     },
+     {
+      "Value": "60",
+      "Rank": 7
+     },
+     {
+      "Value": "66",
+      "Rank": 7
+     },
+     {
+      "Value": "72",
+      "Rank": 7
+     },
+     {
+      "Value": "78",
+      "Rank": 7
+     },
+     {
+      "Value": "84",
+      "Rank": 7
+     },
+     {
+      "Value": "90",
+      "Rank": 7
+     },
+     {
+      "Value": "96",
+      "Rank": 7
+     },
+     {
+      "Value": "102",
+      "Rank": 7
+     },
+     {
+      "Value": "108",
+      "Rank": 7
+     },
+     {
+      "Value": "114",
+      "Rank": 7
+     },
+     {
+      "Value": "120",
+      "Rank": 8
+     },
+     {
+      "Value": "126",
+      "Rank": 8
+     },
+     {
+      "Value": "132",
+      "Rank": 8
+     },
+     {
+      "Value": "138",
+      "Rank": 8
+     },
+     {
+      "Value": "144",
+      "Rank": 8
+     },
+     {
+      "Value": "150",
+      "Rank": 8
+     },
+     {
+      "Value": "156",
+      "Rank": 8
+     },
+     {
+      "Value": "162",
+      "Rank": 8
+     },
+     {
+      "Value": "168",
+      "Rank": 8
+     },
+     {
+      "Value": "174",
+      "Rank": 8
+     },
+     {
+      "Value": "180",
+      "Rank": 9
+     },
+     {
+      "Value": "192",
+      "Rank": 9
+     },
+     {
+      "Value": "204",
+      "Rank": 9
+     },
+     {
+      "Value": "216",
+      "Rank": 9
+     },
+     {
+      "Value": "228",
+      "Rank": 9
+     },
+     {
+      "Value": "240",
+      "Rank": 9
+     },
+     {
+      "Value": "252",
+      "Rank": 9
+     },
+     {
+      "Value": "264",
+      "Rank": 9
+     },
+     {
+      "Value": "276",
+      "Rank": 9
+     },
+     {
+      "Value": "288",
+      "Rank": 9
+     },
+     {
+      "Value": "300",
+      "Rank": 10
+     },
+     {
+      "Value": "320",
+      "Rank": 10
+     },
+     {
+      "Value": "340",
+      "Rank": 10
+     },
+     {
+      "Value": "360",
+      "Rank": 10
+     },
+     {
+      "Value": "380",
+      "Rank": 10
+     },
+     {
+      "Value": "400",
+      "Rank": 10
+     },
+     {
+      "Value": "420",
+      "Rank": 10
+     },
+     {
+      "Value": "440",
+      "Rank": 10
+     },
+     {
+      "Value": "460",
+      "Rank": 10
+     },
+     {
+      "Value": "480",
+      "Rank": 10
+     },
+     {
+      "Value": "500",
+      "Rank": 11
+     },
+     {
+      "Value": "525",
+      "Rank": 11
+     },
+     {
+      "Value": "550",
+      "Rank": 11
+     },
+     {
+      "Value": "575",
+      "Rank": 12
+     },
+     {
+      "Value": "605",
+      "Rank": 12
+     },
+     {
+      "Value": "635",
+      "Rank": 12
+     },
+     {
+      "Value": "665",
+      "Rank": 13
+     },
+     {
+      "Value": "701",
+      "Rank": 13
+     },
+     {
+      "Value": "737",
+      "Rank": 13
+     },
+     {
+      "Value": "773",
+      "Rank": 14
+     },
+     {
+      "Value": "813",
+      "Rank": 14
+     },
+     {
+      "Value": "853",
+      "Rank": 14
+     },
+     {
+      "Value": "893",
+      "Rank": 15
+     },
+     {
+      "Value": "933",
+      "Rank": 15
+     },
+     {
+      "Value": "973",
+      "Rank": 15
+     },
+     {
+      "Value": "1013",
+      "Rank": 16
+     },
+     {
+      "Value": "1053",
+      "Rank": 16
+     },
+     {
+      "Value": "1093",
+      "Rank": 16
+     },
+     {
+      "Value": "1133",
+      "Rank": 17
+     },
+     {
+      "Value": "1178",
+      "Rank": 17
+     },
+     {
+      "Value": "1223",
+      "Rank": 17
+     },
+     {
+      "Value": "1268",
+      "Rank": 18
+     },
+     {
+      "Value": "1313",
+      "Rank": 18
+     },
+     {
+      "Value": "1358",
+      "Rank": 18
+     },
+     {
+      "Value": "1403",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "DoubleDamage",
+    "Label": "Critical Strike",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 5
+     },
+     {
+      "Value": "1",
+      "Rank": 5
+     },
+     {
+      "Value": "2",
+      "Rank": 6
+     },
+     {
+      "Value": "3",
+      "Rank": 6
+     },
+     {
+      "Value": "4",
+      "Rank": 7
+     },
+     {
+      "Value": "5",
+      "Rank": 7
+     },
+     {
+      "Value": "6",
+      "Rank": 8
+     },
+     {
+      "Value": "7",
+      "Rank": 8
+     },
+     {
+      "Value": "8",
+      "Rank": 9
+     },
+     {
+      "Value": "9",
+      "Rank": 9
+     },
+     {
+      "Value": "10",
+      "Rank": 9
+     },
+     {
+      "Value": "11",
+      "Rank": 9
+     },
+     {
+      "Value": "12",
+      "Rank": 10
+     },
+     {
+      "Value": "13",
+      "Rank": 10
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 11
+     },
+     {
+      "Value": "17",
+      "Rank": 11
+     },
+     {
+      "Value": "18",
+      "Rank": 11
+     },
+     {
+      "Value": "19",
+      "Rank": 12
+     },
+     {
+      "Value": "20",
+      "Rank": 12
+     },
+     {
+      "Value": "21",
+      "Rank": 12
+     },
+     {
+      "Value": "22",
+      "Rank": 13
+     },
+     {
+      "Value": "23",
+      "Rank": 13
+     },
+     {
+      "Value": "24",
+      "Rank": 13
+     },
+     {
+      "Value": "25",
+      "Rank": 13
+     },
+     {
+      "Value": "26",
+      "Rank": 14
+     },
+     {
+      "Value": "27",
+      "Rank": 14
+     },
+     {
+      "Value": "28",
+      "Rank": 14
+     },
+     {
+      "Value": "29",
+      "Rank": 14
+     },
+     {
+      "Value": "30",
+      "Rank": 14
+     },
+     {
+      "Value": "31",
+      "Rank": 15
+     },
+     {
+      "Value": "32",
+      "Rank": 15
+     },
+     {
+      "Value": "33",
+      "Rank": 15
+     },
+     {
+      "Value": "34",
+      "Rank": 15
+     },
+     {
+      "Value": "35",
+      "Rank": 16
+     },
+     {
+      "Value": "36",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "38",
+      "Rank": 16
+     },
+     {
+      "Value": "39",
+      "Rank": 17
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "41",
+      "Rank": 17
+     },
+     {
+      "Value": "42",
+      "Rank": 17
+     },
+     {
+      "Value": "43",
+      "Rank": 17
+     },
+     {
+      "Value": "44",
+      "Rank": 18
+     },
+     {
+      "Value": "45",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 18
+     },
+     {
+      "Value": "47",
+      "Rank": 18
+     },
+     {
+      "Value": "48",
+      "Rank": 18
+     },
+     {
+      "Value": "49",
+      "Rank": 18
+     },
+     {
+      "Value": "50",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "DoubleDamage0_",
+    "Label": "Critical Strike Resist Rate",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 4
+     },
+     {
+      "Value": "1",
+      "Rank": 5
+     },
+     {
+      "Value": "2",
+      "Rank": 6
+     },
+     {
+      "Value": "3",
+      "Rank": 6
+     },
+     {
+      "Value": "4",
+      "Rank": 7
+     },
+     {
+      "Value": "5",
+      "Rank": 7
+     },
+     {
+      "Value": "6",
+      "Rank": 8
+     },
+     {
+      "Value": "7",
+      "Rank": 8
+     },
+     {
+      "Value": "8",
+      "Rank": 9
+     },
+     {
+      "Value": "9",
+      "Rank": 9
+     },
+     {
+      "Value": "10",
+      "Rank": 9
+     },
+     {
+      "Value": "11",
+      "Rank": 9
+     },
+     {
+      "Value": "12",
+      "Rank": 10
+     },
+     {
+      "Value": "13",
+      "Rank": 10
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 11
+     },
+     {
+      "Value": "17",
+      "Rank": 11
+     },
+     {
+      "Value": "18",
+      "Rank": 11
+     },
+     {
+      "Value": "19",
+      "Rank": 12
+     },
+     {
+      "Value": "20",
+      "Rank": 12
+     },
+     {
+      "Value": "21",
+      "Rank": 12
+     },
+     {
+      "Value": "22",
+      "Rank": 13
+     },
+     {
+      "Value": "23",
+      "Rank": 13
+     },
+     {
+      "Value": "24",
+      "Rank": 13
+     },
+     {
+      "Value": "25",
+      "Rank": 13
+     },
+     {
+      "Value": "26",
+      "Rank": 14
+     },
+     {
+      "Value": "27",
+      "Rank": 14
+     },
+     {
+      "Value": "28",
+      "Rank": 14
+     },
+     {
+      "Value": "29",
+      "Rank": 14
+     },
+     {
+      "Value": "30",
+      "Rank": 14
+     },
+     {
+      "Value": "31",
+      "Rank": 15
+     },
+     {
+      "Value": "32",
+      "Rank": 15
+     },
+     {
+      "Value": "33",
+      "Rank": 15
+     },
+     {
+      "Value": "34",
+      "Rank": 15
+     },
+     {
+      "Value": "35",
+      "Rank": 16
+     },
+     {
+      "Value": "36",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "38",
+      "Rank": 16
+     },
+     {
+      "Value": "39",
+      "Rank": 17
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "41",
+      "Rank": 17
+     },
+     {
+      "Value": "42",
+      "Rank": 17
+     },
+     {
+      "Value": "43",
+      "Rank": 17
+     },
+     {
+      "Value": "44",
+      "Rank": 18
+     },
+     {
+      "Value": "45",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 18
+     },
+     {
+      "Value": "47",
+      "Rank": 18
+     },
+     {
+      "Value": "48",
+      "Rank": 18
+     },
+     {
+      "Value": "49",
+      "Rank": 18
+     },
+     {
+      "Value": "50",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "AddDamageScope",
+    "Label": "Damage Bonus",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 7
+     },
+     {
+      "Value": "1",
+      "Rank": 7
+     },
+     {
+      "Value": "2",
+      "Rank": 8
+     },
+     {
+      "Value": "3",
+      "Rank": 8
+     },
+     {
+      "Value": "4",
+      "Rank": 8
+     },
+     {
+      "Value": "5",
+      "Rank": 9
+     },
+     {
+      "Value": "6",
+      "Rank": 9
+     },
+     {
+      "Value": "7",
+      "Rank": 9
+     },
+     {
+      "Value": "8",
+      "Rank": 9
+     },
+     {
+      "Value": "9",
+      "Rank": 9
+     },
+     {
+      "Value": "10",
+      "Rank": 10
+     },
+     {
+      "Value": "11",
+      "Rank": 10
+     },
+     {
+      "Value": "12",
+      "Rank": 10
+     },
+     {
+      "Value": "13",
+      "Rank": 10
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 11
+     },
+     {
+      "Value": "17",
+      "Rank": 11
+     },
+     {
+      "Value": "18",
+      "Rank": 11
+     },
+     {
+      "Value": "19",
+      "Rank": 12
+     },
+     {
+      "Value": "20",
+      "Rank": 12
+     },
+     {
+      "Value": "21",
+      "Rank": 12
+     },
+     {
+      "Value": "22",
+      "Rank": 13
+     },
+     {
+      "Value": "23",
+      "Rank": 13
+     },
+     {
+      "Value": "24",
+      "Rank": 13
+     },
+     {
+      "Value": "25",
+      "Rank": 13
+     },
+     {
+      "Value": "26",
+      "Rank": 14
+     },
+     {
+      "Value": "27",
+      "Rank": 14
+     },
+     {
+      "Value": "28",
+      "Rank": 14
+     },
+     {
+      "Value": "29",
+      "Rank": 14
+     },
+     {
+      "Value": "30",
+      "Rank": 14
+     },
+     {
+      "Value": "31",
+      "Rank": 15
+     },
+     {
+      "Value": "32",
+      "Rank": 15
+     },
+     {
+      "Value": "33",
+      "Rank": 15
+     },
+     {
+      "Value": "34",
+      "Rank": 15
+     },
+     {
+      "Value": "35",
+      "Rank": 16
+     },
+     {
+      "Value": "36",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "38",
+      "Rank": 16
+     },
+     {
+      "Value": "39",
+      "Rank": 17
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "41",
+      "Rank": 17
+     },
+     {
+      "Value": "42",
+      "Rank": 17
+     },
+     {
+      "Value": "43",
+      "Rank": 17
+     },
+     {
+      "Value": "44",
+      "Rank": 18
+     },
+     {
+      "Value": "45",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 18
+     },
+     {
+      "Value": "47",
+      "Rank": 18
+     },
+     {
+      "Value": "48",
+      "Rank": 18
+     },
+     {
+      "Value": "49",
+      "Rank": 18
+     },
+     {
+      "Value": "50",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "AddDamageScope0_",
+    "Label": "Damage Reduction",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 6
+     },
+     {
+      "Value": "1",
+      "Rank": 7
+     },
+     {
+      "Value": "2",
+      "Rank": 8
+     },
+     {
+      "Value": "3",
+      "Rank": 8
+     },
+     {
+      "Value": "4",
+      "Rank": 8
+     },
+     {
+      "Value": "5",
+      "Rank": 9
+     },
+     {
+      "Value": "6",
+      "Rank": 9
+     },
+     {
+      "Value": "7",
+      "Rank": 9
+     },
+     {
+      "Value": "8",
+      "Rank": 9
+     },
+     {
+      "Value": "9",
+      "Rank": 9
+     },
+     {
+      "Value": "10",
+      "Rank": 10
+     },
+     {
+      "Value": "11",
+      "Rank": 10
+     },
+     {
+      "Value": "12",
+      "Rank": 10
+     },
+     {
+      "Value": "13",
+      "Rank": 10
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 11
+     },
+     {
+      "Value": "17",
+      "Rank": 11
+     },
+     {
+      "Value": "18",
+      "Rank": 11
+     },
+     {
+      "Value": "19",
+      "Rank": 12
+     },
+     {
+      "Value": "20",
+      "Rank": 12
+     },
+     {
+      "Value": "21",
+      "Rank": 12
+     },
+     {
+      "Value": "22",
+      "Rank": 13
+     },
+     {
+      "Value": "23",
+      "Rank": 13
+     },
+     {
+      "Value": "24",
+      "Rank": 13
+     },
+     {
+      "Value": "25",
+      "Rank": 13
+     },
+     {
+      "Value": "26",
+      "Rank": 14
+     },
+     {
+      "Value": "27",
+      "Rank": 14
+     },
+     {
+      "Value": "28",
+      "Rank": 14
+     },
+     {
+      "Value": "29",
+      "Rank": 14
+     },
+     {
+      "Value": "30",
+      "Rank": 14
+     },
+     {
+      "Value": "31",
+      "Rank": 15
+     },
+     {
+      "Value": "32",
+      "Rank": 15
+     },
+     {
+      "Value": "33",
+      "Rank": 15
+     },
+     {
+      "Value": "34",
+      "Rank": 15
+     },
+     {
+      "Value": "35",
+      "Rank": 16
+     },
+     {
+      "Value": "36",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "38",
+      "Rank": 16
+     },
+     {
+      "Value": "39",
+      "Rank": 17
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "41",
+      "Rank": 17
+     },
+     {
+      "Value": "42",
+      "Rank": 17
+     },
+     {
+      "Value": "43",
+      "Rank": 17
+     },
+     {
+      "Value": "44",
+      "Rank": 18
+     },
+     {
+      "Value": "45",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 18
+     },
+     {
+      "Value": "47",
+      "Rank": 18
+     },
+     {
+      "Value": "48",
+      "Rank": 18
+     },
+     {
+      "Value": "49",
+      "Rank": 18
+     },
+     {
+      "Value": "50",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "MaxHP",
+    "Label": "Maximum Health",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 1
+     },
+     {
+      "Value": "100",
+      "Rank": 1
+     },
+     {
+      "Value": "200",
+      "Rank": 2
+     },
+     {
+      "Value": "300",
+      "Rank": 2
+     },
+     {
+      "Value": "400",
+      "Rank": 2
+     },
+     {
+      "Value": "500",
+      "Rank": 3
+     },
+     {
+      "Value": "600",
+      "Rank": 3
+     },
+     {
+      "Value": "700",
+      "Rank": 3
+     },
+     {
+      "Value": "800",
+      "Rank": 3
+     },
+     {
+      "Value": "900",
+      "Rank": 3
+     },
+     {
+      "Value": "1000",
+      "Rank": 4
+     },
+     {
+      "Value": "1100",
+      "Rank": 4
+     },
+     {
+      "Value": "1200",
+      "Rank": 4
+     },
+     {
+      "Value": "1300",
+      "Rank": 4
+     },
+     {
+      "Value": "1400",
+      "Rank": 4
+     },
+     {
+      "Value": "1500",
+      "Rank": 5
+     },
+     {
+      "Value": "1600",
+      "Rank": 5
+     },
+     {
+      "Value": "1700",
+      "Rank": 5
+     },
+     {
+      "Value": "1800",
+      "Rank": 5
+     },
+     {
+      "Value": "1900",
+      "Rank": 5
+     },
+     {
+      "Value": "2000",
+      "Rank": 6
+     },
+     {
+      "Value": "2100",
+      "Rank": 6
+     },
+     {
+      "Value": "2200",
+      "Rank": 6
+     },
+     {
+      "Value": "2300",
+      "Rank": 6
+     },
+     {
+      "Value": "2400",
+      "Rank": 6
+     },
+     {
+      "Value": "2500",
+      "Rank": 6
+     },
+     {
+      "Value": "2600",
+      "Rank": 6
+     },
+     {
+      "Value": "2700",
+      "Rank": 6
+     },
+     {
+      "Value": "2800",
+      "Rank": 6
+     },
+     {
+      "Value": "2900",
+      "Rank": 6
+     },
+     {
+      "Value": "3000",
+      "Rank": 7
+     },
+     {
+      "Value": "3100",
+      "Rank": 7
+     },
+     {
+      "Value": "3200",
+      "Rank": 7
+     },
+     {
+      "Value": "3300",
+      "Rank": 7
+     },
+     {
+      "Value": "3400",
+      "Rank": 7
+     },
+     {
+      "Value": "3500",
+      "Rank": 7
+     },
+     {
+      "Value": "3600",
+      "Rank": 7
+     },
+     {
+      "Value": "3700",
+      "Rank": 7
+     },
+     {
+      "Value": "3800",
+      "Rank": 7
+     },
+     {
+      "Value": "3900",
+      "Rank": 7
+     },
+     {
+      "Value": "4000",
+      "Rank": 8
+     },
+     {
+      "Value": "4100",
+      "Rank": 8
+     },
+     {
+      "Value": "4200",
+      "Rank": 8
+     },
+     {
+      "Value": "4300",
+      "Rank": 8
+     },
+     {
+      "Value": "4400",
+      "Rank": 8
+     },
+     {
+      "Value": "4500",
+      "Rank": 8
+     },
+     {
+      "Value": "4600",
+      "Rank": 8
+     },
+     {
+      "Value": "4700",
+      "Rank": 8
+     },
+     {
+      "Value": "4800",
+      "Rank": 8
+     },
+     {
+      "Value": "4900",
+      "Rank": 8
+     },
+     {
+      "Value": "5000",
+      "Rank": 9
+     },
+     {
+      "Value": "5200",
+      "Rank": 9
+     },
+     {
+      "Value": "5400",
+      "Rank": 9
+     },
+     {
+      "Value": "5600",
+      "Rank": 9
+     },
+     {
+      "Value": "5800",
+      "Rank": 9
+     },
+     {
+      "Value": "6000",
+      "Rank": 9
+     },
+     {
+      "Value": "6200",
+      "Rank": 9
+     },
+     {
+      "Value": "6400",
+      "Rank": 9
+     },
+     {
+      "Value": "6600",
+      "Rank": 9
+     },
+     {
+      "Value": "6800",
+      "Rank": 9
+     },
+     {
+      "Value": "7000",
+      "Rank": 10
+     },
+     {
+      "Value": "7300",
+      "Rank": 10
+     },
+     {
+      "Value": "7600",
+      "Rank": 10
+     },
+     {
+      "Value": "7900",
+      "Rank": 10
+     },
+     {
+      "Value": "8200",
+      "Rank": 10
+     },
+     {
+      "Value": "8500",
+      "Rank": 10
+     },
+     {
+      "Value": "8800",
+      "Rank": 10
+     },
+     {
+      "Value": "9100",
+      "Rank": 10
+     },
+     {
+      "Value": "9400",
+      "Rank": 10
+     },
+     {
+      "Value": "9700",
+      "Rank": 10
+     },
+     {
+      "Value": "10000",
+      "Rank": 11
+     },
+     {
+      "Value": "10500",
+      "Rank": 11
+     },
+     {
+      "Value": "11000",
+      "Rank": 11
+     },
+     {
+      "Value": "11500",
+      "Rank": 11
+     },
+     {
+      "Value": "12000",
+      "Rank": 11
+     },
+     {
+      "Value": "12500",
+      "Rank": 11
+     },
+     {
+      "Value": "13000",
+      "Rank": 12
+     },
+     {
+      "Value": "13500",
+      "Rank": 12
+     },
+     {
+      "Value": "14000",
+      "Rank": 12
+     },
+     {
+      "Value": "14500",
+      "Rank": 12
+     },
+     {
+      "Value": "15000",
+      "Rank": 12
+     },
+     {
+      "Value": "15500",
+      "Rank": 12
+     },
+     {
+      "Value": "16000",
+      "Rank": 13
+     },
+     {
+      "Value": "16500",
+      "Rank": 13
+     },
+     {
+      "Value": "17000",
+      "Rank": 13
+     },
+     {
+      "Value": "17500",
+      "Rank": 13
+     },
+     {
+      "Value": "18000",
+      "Rank": 13
+     },
+     {
+      "Value": "18500",
+      "Rank": 13
+     },
+     {
+      "Value": "19000",
+      "Rank": 13
+     },
+     {
+      "Value": "19500",
+      "Rank": 13
+     },
+     {
+      "Value": "20000",
+      "Rank": 14
+     },
+     {
+      "Value": "20600",
+      "Rank": 14
+     },
+     {
+      "Value": "21200",
+      "Rank": 14
+     },
+     {
+      "Value": "21800",
+      "Rank": 14
+     },
+     {
+      "Value": "22400",
+      "Rank": 14
+     },
+     {
+      "Value": "23000",
+      "Rank": 14
+     },
+     {
+      "Value": "23600",
+      "Rank": 14
+     },
+     {
+      "Value": "24200",
+      "Rank": 14
+     },
+     {
+      "Value": "24800",
+      "Rank": 15
+     },
+     {
+      "Value": "25400",
+      "Rank": 15
+     },
+     {
+      "Value": "26000",
+      "Rank": 15
+     },
+     {
+      "Value": "26600",
+      "Rank": 15
+     },
+     {
+      "Value": "27200",
+      "Rank": 15
+     },
+     {
+      "Value": "27800",
+      "Rank": 15
+     },
+     {
+      "Value": "28400",
+      "Rank": 15
+     },
+     {
+      "Value": "29000",
+      "Rank": 15
+     },
+     {
+      "Value": "29600",
+      "Rank": 16
+     },
+     {
+      "Value": "30200",
+      "Rank": 16
+     },
+     {
+      "Value": "30800",
+      "Rank": 16
+     },
+     {
+      "Value": "31400",
+      "Rank": 16
+     },
+     {
+      "Value": "32000",
+      "Rank": 16
+     },
+     {
+      "Value": "32600",
+      "Rank": 16
+     },
+     {
+      "Value": "33200",
+      "Rank": 16
+     },
+     {
+      "Value": "33800",
+      "Rank": 16
+     },
+     {
+      "Value": "34400",
+      "Rank": 17
+     },
+     {
+      "Value": "35100",
+      "Rank": 17
+     },
+     {
+      "Value": "35800",
+      "Rank": 17
+     },
+     {
+      "Value": "36500",
+      "Rank": 17
+     },
+     {
+      "Value": "37200",
+      "Rank": 17
+     },
+     {
+      "Value": "37900",
+      "Rank": 17
+     },
+     {
+      "Value": "38600",
+      "Rank": 17
+     },
+     {
+      "Value": "39300",
+      "Rank": 17
+     },
+     {
+      "Value": "40000",
+      "Rank": 18
+     },
+     {
+      "Value": "40700",
+      "Rank": 18
+     },
+     {
+      "Value": "41400",
+      "Rank": 18
+     },
+     {
+      "Value": "42100",
+      "Rank": 18
+     },
+     {
+      "Value": "42800",
+      "Rank": 18
+     },
+     {
+      "Value": "43500",
+      "Rank": 18
+     },
+     {
+      "Value": "44200",
+      "Rank": 18
+     },
+     {
+      "Value": "44900",
+      "Rank": 18
+     },
+     {
+      "Value": "45600",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "CannonHR",
+    "Label": "Cannon Hit Rate",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 1
+     },
+     {
+      "Value": "1",
+      "Rank": 2
+     },
+     {
+      "Value": "2",
+      "Rank": 3
+     },
+     {
+      "Value": "3",
+      "Rank": 4
+     },
+     {
+      "Value": "4",
+      "Rank": 5
+     },
+     {
+      "Value": "5",
+      "Rank": 5
+     },
+     {
+      "Value": "6",
+      "Rank": 6
+     },
+     {
+      "Value": "7",
+      "Rank": 6
+     },
+     {
+      "Value": "8",
+      "Rank": 7
+     },
+     {
+      "Value": "9",
+      "Rank": 7
+     },
+     {
+      "Value": "10",
+      "Rank": 7
+     },
+     {
+      "Value": "11",
+      "Rank": 8
+     },
+     {
+      "Value": "12",
+      "Rank": 8
+     },
+     {
+      "Value": "13",
+      "Rank": 8
+     },
+     {
+      "Value": "14",
+      "Rank": 8
+     },
+     {
+      "Value": "15",
+      "Rank": 8
+     },
+     {
+      "Value": "16",
+      "Rank": 9
+     },
+     {
+      "Value": "17",
+      "Rank": 9
+     },
+     {
+      "Value": "18",
+      "Rank": 9
+     },
+     {
+      "Value": "19",
+      "Rank": 9
+     },
+     {
+      "Value": "20",
+      "Rank": 9
+     },
+     {
+      "Value": "21",
+      "Rank": 9
+     },
+     {
+      "Value": "22",
+      "Rank": 10
+     },
+     {
+      "Value": "23",
+      "Rank": 10
+     },
+     {
+      "Value": "24",
+      "Rank": 10
+     },
+     {
+      "Value": "25",
+      "Rank": 10
+     },
+     {
+      "Value": "26",
+      "Rank": 10
+     },
+     {
+      "Value": "27",
+      "Rank": 10
+     },
+     {
+      "Value": "28",
+      "Rank": 10
+     },
+     {
+      "Value": "29",
+      "Rank": 10
+     },
+     {
+      "Value": "30",
+      "Rank": 11
+     },
+     {
+      "Value": "31",
+      "Rank": 11
+     },
+     {
+      "Value": "32",
+      "Rank": 11
+     },
+     {
+      "Value": "33",
+      "Rank": 11
+     },
+     {
+      "Value": "34",
+      "Rank": 11
+     },
+     {
+      "Value": "35",
+      "Rank": 12
+     },
+     {
+      "Value": "36",
+      "Rank": 12
+     },
+     {
+      "Value": "37",
+      "Rank": 12
+     },
+     {
+      "Value": "38",
+      "Rank": 12
+     },
+     {
+      "Value": "39",
+      "Rank": 12
+     },
+     {
+      "Value": "40",
+      "Rank": 12
+     },
+     {
+      "Value": "41",
+      "Rank": 13
+     },
+     {
+      "Value": "42",
+      "Rank": 13
+     },
+     {
+      "Value": "43",
+      "Rank": 13
+     },
+     {
+      "Value": "44",
+      "Rank": 13
+     },
+     {
+      "Value": "45",
+      "Rank": 13
+     },
+     {
+      "Value": "46",
+      "Rank": 13
+     },
+     {
+      "Value": "47",
+      "Rank": 13
+     },
+     {
+      "Value": "48",
+      "Rank": 14
+     },
+     {
+      "Value": "49",
+      "Rank": 14
+     },
+     {
+      "Value": "50",
+      "Rank": 14
+     },
+     {
+      "Value": "51",
+      "Rank": 14
+     },
+     {
+      "Value": "52",
+      "Rank": 14
+     },
+     {
+      "Value": "53",
+      "Rank": 14
+     },
+     {
+      "Value": "54",
+      "Rank": 14
+     },
+     {
+      "Value": "55",
+      "Rank": 14
+     },
+     {
+      "Value": "56",
+      "Rank": 15
+     },
+     {
+      "Value": "57",
+      "Rank": 15
+     },
+     {
+      "Value": "58",
+      "Rank": 15
+     },
+     {
+      "Value": "59",
+      "Rank": 15
+     },
+     {
+      "Value": "60",
+      "Rank": 15
+     },
+     {
+      "Value": "61",
+      "Rank": 15
+     },
+     {
+      "Value": "62",
+      "Rank": 15
+     },
+     {
+      "Value": "63",
+      "Rank": 16
+     },
+     {
+      "Value": "64",
+      "Rank": 16
+     },
+     {
+      "Value": "65",
+      "Rank": 16
+     },
+     {
+      "Value": "66",
+      "Rank": 16
+     },
+     {
+      "Value": "67",
+      "Rank": 16
+     },
+     {
+      "Value": "68",
+      "Rank": 16
+     },
+     {
+      "Value": "69",
+      "Rank": 16
+     },
+     {
+      "Value": "70",
+      "Rank": 17
+     },
+     {
+      "Value": "71",
+      "Rank": 17
+     },
+     {
+      "Value": "72",
+      "Rank": 17
+     },
+     {
+      "Value": "73",
+      "Rank": 17
+     },
+     {
+      "Value": "74",
+      "Rank": 17
+     },
+     {
+      "Value": "75",
+      "Rank": 17
+     },
+     {
+      "Value": "76",
+      "Rank": 17
+     },
+     {
+      "Value": "77",
+      "Rank": 17
+     },
+     {
+      "Value": "78",
+      "Rank": 18
+     },
+     {
+      "Value": "79",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "81",
+      "Rank": 18
+     },
+     {
+      "Value": "82",
+      "Rank": 18
+     },
+     {
+      "Value": "83",
+      "Rank": 18
+     },
+     {
+      "Value": "84",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "86",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "CannonDR",
+    "Label": "Cannon Dodge Rate",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 1
+     },
+     {
+      "Value": "1",
+      "Rank": 2
+     },
+     {
+      "Value": "2",
+      "Rank": 3
+     },
+     {
+      "Value": "3",
+      "Rank": 4
+     },
+     {
+      "Value": "4",
+      "Rank": 5
+     },
+     {
+      "Value": "5",
+      "Rank": 5
+     },
+     {
+      "Value": "6",
+      "Rank": 6
+     },
+     {
+      "Value": "7",
+      "Rank": 6
+     },
+     {
+      "Value": "8",
+      "Rank": 7
+     },
+     {
+      "Value": "9",
+      "Rank": 7
+     },
+     {
+      "Value": "10",
+      "Rank": 7
+     },
+     {
+      "Value": "11",
+      "Rank": 8
+     },
+     {
+      "Value": "12",
+      "Rank": 8
+     },
+     {
+      "Value": "13",
+      "Rank": 8
+     },
+     {
+      "Value": "14",
+      "Rank": 8
+     },
+     {
+      "Value": "15",
+      "Rank": 8
+     },
+     {
+      "Value": "16",
+      "Rank": 9
+     },
+     {
+      "Value": "17",
+      "Rank": 9
+     },
+     {
+      "Value": "18",
+      "Rank": 9
+     },
+     {
+      "Value": "19",
+      "Rank": 9
+     },
+     {
+      "Value": "20",
+      "Rank": 9
+     },
+     {
+      "Value": "21",
+      "Rank": 9
+     },
+     {
+      "Value": "22",
+      "Rank": 10
+     },
+     {
+      "Value": "23",
+      "Rank": 10
+     },
+     {
+      "Value": "24",
+      "Rank": 10
+     },
+     {
+      "Value": "25",
+      "Rank": 10
+     },
+     {
+      "Value": "26",
+      "Rank": 10
+     },
+     {
+      "Value": "27",
+      "Rank": 10
+     },
+     {
+      "Value": "28",
+      "Rank": 10
+     },
+     {
+      "Value": "29",
+      "Rank": 10
+     },
+     {
+      "Value": "30",
+      "Rank": 11
+     },
+     {
+      "Value": "31",
+      "Rank": 11
+     },
+     {
+      "Value": "32",
+      "Rank": 11
+     },
+     {
+      "Value": "33",
+      "Rank": 11
+     },
+     {
+      "Value": "34",
+      "Rank": 11
+     },
+     {
+      "Value": "35",
+      "Rank": 12
+     },
+     {
+      "Value": "36",
+      "Rank": 12
+     },
+     {
+      "Value": "37",
+      "Rank": 12
+     },
+     {
+      "Value": "38",
+      "Rank": 12
+     },
+     {
+      "Value": "39",
+      "Rank": 12
+     },
+     {
+      "Value": "40",
+      "Rank": 12
+     },
+     {
+      "Value": "41",
+      "Rank": 13
+     },
+     {
+      "Value": "42",
+      "Rank": 13
+     },
+     {
+      "Value": "43",
+      "Rank": 13
+     },
+     {
+      "Value": "44",
+      "Rank": 13
+     },
+     {
+      "Value": "45",
+      "Rank": 13
+     },
+     {
+      "Value": "46",
+      "Rank": 13
+     },
+     {
+      "Value": "47",
+      "Rank": 13
+     },
+     {
+      "Value": "48",
+      "Rank": 14
+     },
+     {
+      "Value": "49",
+      "Rank": 14
+     },
+     {
+      "Value": "50",
+      "Rank": 14
+     },
+     {
+      "Value": "51",
+      "Rank": 14
+     },
+     {
+      "Value": "52",
+      "Rank": 14
+     },
+     {
+      "Value": "53",
+      "Rank": 14
+     },
+     {
+      "Value": "54",
+      "Rank": 14
+     },
+     {
+      "Value": "55",
+      "Rank": 14
+     },
+     {
+      "Value": "56",
+      "Rank": 15
+     },
+     {
+      "Value": "57",
+      "Rank": 15
+     },
+     {
+      "Value": "58",
+      "Rank": 15
+     },
+     {
+      "Value": "59",
+      "Rank": 15
+     },
+     {
+      "Value": "60",
+      "Rank": 15
+     },
+     {
+      "Value": "61",
+      "Rank": 15
+     },
+     {
+      "Value": "62",
+      "Rank": 15
+     },
+     {
+      "Value": "63",
+      "Rank": 16
+     },
+     {
+      "Value": "64",
+      "Rank": 16
+     },
+     {
+      "Value": "65",
+      "Rank": 16
+     },
+     {
+      "Value": "66",
+      "Rank": 16
+     },
+     {
+      "Value": "67",
+      "Rank": 16
+     },
+     {
+      "Value": "68",
+      "Rank": 16
+     },
+     {
+      "Value": "69",
+      "Rank": 16
+     },
+     {
+      "Value": "70",
+      "Rank": 17
+     },
+     {
+      "Value": "71",
+      "Rank": 17
+     },
+     {
+      "Value": "72",
+      "Rank": 17
+     },
+     {
+      "Value": "73",
+      "Rank": 17
+     },
+     {
+      "Value": "74",
+      "Rank": 17
+     },
+     {
+      "Value": "75",
+      "Rank": 17
+     },
+     {
+      "Value": "76",
+      "Rank": 17
+     },
+     {
+      "Value": "77",
+      "Rank": 17
+     },
+     {
+      "Value": "78",
+      "Rank": 18
+     },
+     {
+      "Value": "79",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "81",
+      "Rank": 18
+     },
+     {
+      "Value": "82",
+      "Rank": 18
+     },
+     {
+      "Value": "83",
+      "Rank": 18
+     },
+     {
+      "Value": "84",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "86",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "CannonDB",
+    "Label": "Cannon Attack Rating",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 3
+     },
+     {
+      "Value": "1",
+      "Rank": 4
+     },
+     {
+      "Value": "2",
+      "Rank": 5
+     },
+     {
+      "Value": "3",
+      "Rank": 6
+     },
+     {
+      "Value": "4",
+      "Rank": 6
+     },
+     {
+      "Value": "5",
+      "Rank": 7
+     },
+     {
+      "Value": "6",
+      "Rank": 7
+     },
+     {
+      "Value": "7",
+      "Rank": 8
+     },
+     {
+      "Value": "8",
+      "Rank": 8
+     },
+     {
+      "Value": "9",
+      "Rank": 8
+     },
+     {
+      "Value": "10",
+      "Rank": 9
+     },
+     {
+      "Value": "11",
+      "Rank": 9
+     },
+     {
+      "Value": "12",
+      "Rank": 9
+     },
+     {
+      "Value": "13",
+      "Rank": 9
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 10
+     },
+     {
+      "Value": "17",
+      "Rank": 10
+     },
+     {
+      "Value": "18",
+      "Rank": 10
+     },
+     {
+      "Value": "19",
+      "Rank": 10
+     },
+     {
+      "Value": "20",
+      "Rank": 11
+     },
+     {
+      "Value": "21",
+      "Rank": 11
+     },
+     {
+      "Value": "22",
+      "Rank": 11
+     },
+     {
+      "Value": "23",
+      "Rank": 11
+     },
+     {
+      "Value": "24",
+      "Rank": 11
+     },
+     {
+      "Value": "25",
+      "Rank": 12
+     },
+     {
+      "Value": "26",
+      "Rank": 12
+     },
+     {
+      "Value": "27",
+      "Rank": 12
+     },
+     {
+      "Value": "28",
+      "Rank": 12
+     },
+     {
+      "Value": "29",
+      "Rank": 12
+     },
+     {
+      "Value": "30",
+      "Rank": 12
+     },
+     {
+      "Value": "31",
+      "Rank": 13
+     },
+     {
+      "Value": "32",
+      "Rank": 13
+     },
+     {
+      "Value": "33",
+      "Rank": 13
+     },
+     {
+      "Value": "34",
+      "Rank": 13
+     },
+     {
+      "Value": "35",
+      "Rank": 13
+     },
+     {
+      "Value": "36",
+      "Rank": 13
+     },
+     {
+      "Value": "37",
+      "Rank": 13
+     },
+     {
+      "Value": "38",
+      "Rank": 14
+     },
+     {
+      "Value": "39",
+      "Rank": 14
+     },
+     {
+      "Value": "40",
+      "Rank": 14
+     },
+     {
+      "Value": "41",
+      "Rank": 14
+     },
+     {
+      "Value": "42",
+      "Rank": 14
+     },
+     {
+      "Value": "43",
+      "Rank": 14
+     },
+     {
+      "Value": "44",
+      "Rank": 14
+     },
+     {
+      "Value": "45",
+      "Rank": 14
+     },
+     {
+      "Value": "46",
+      "Rank": 15
+     },
+     {
+      "Value": "47",
+      "Rank": 15
+     },
+     {
+      "Value": "48",
+      "Rank": 15
+     },
+     {
+      "Value": "49",
+      "Rank": 15
+     },
+     {
+      "Value": "50",
+      "Rank": 15
+     },
+     {
+      "Value": "51",
+      "Rank": 16
+     },
+     {
+      "Value": "52",
+      "Rank": 16
+     },
+     {
+      "Value": "53",
+      "Rank": 16
+     },
+     {
+      "Value": "54",
+      "Rank": 16
+     },
+     {
+      "Value": "55",
+      "Rank": 16
+     },
+     {
+      "Value": "56",
+      "Rank": 17
+     },
+     {
+      "Value": "57",
+      "Rank": 17
+     },
+     {
+      "Value": "58",
+      "Rank": 17
+     },
+     {
+      "Value": "59",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "61",
+      "Rank": 17
+     },
+     {
+      "Value": "62",
+      "Rank": 17
+     },
+     {
+      "Value": "63",
+      "Rank": 18
+     },
+     {
+      "Value": "64",
+      "Rank": 18
+     },
+     {
+      "Value": "65",
+      "Rank": 18
+     },
+     {
+      "Value": "66",
+      "Rank": 18
+     },
+     {
+      "Value": "67",
+      "Rank": 18
+     },
+     {
+      "Value": "68",
+      "Rank": 18
+     },
+     {
+      "Value": "69",
+      "Rank": 18
+     },
+     {
+      "Value": "70",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "CannonKeyDF",
+    "Label": "Cannon Defense Rating",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 3
+     },
+     {
+      "Value": "1",
+      "Rank": 4
+     },
+     {
+      "Value": "2",
+      "Rank": 5
+     },
+     {
+      "Value": "3",
+      "Rank": 6
+     },
+     {
+      "Value": "4",
+      "Rank": 6
+     },
+     {
+      "Value": "5",
+      "Rank": 7
+     },
+     {
+      "Value": "6",
+      "Rank": 7
+     },
+     {
+      "Value": "7",
+      "Rank": 8
+     },
+     {
+      "Value": "8",
+      "Rank": 8
+     },
+     {
+      "Value": "9",
+      "Rank": 8
+     },
+     {
+      "Value": "10",
+      "Rank": 9
+     },
+     {
+      "Value": "11",
+      "Rank": 9
+     },
+     {
+      "Value": "12",
+      "Rank": 9
+     },
+     {
+      "Value": "13",
+      "Rank": 9
+     },
+     {
+      "Value": "14",
+      "Rank": 10
+     },
+     {
+      "Value": "15",
+      "Rank": 10
+     },
+     {
+      "Value": "16",
+      "Rank": 10
+     },
+     {
+      "Value": "17",
+      "Rank": 10
+     },
+     {
+      "Value": "18",
+      "Rank": 10
+     },
+     {
+      "Value": "19",
+      "Rank": 10
+     },
+     {
+      "Value": "20",
+      "Rank": 11
+     },
+     {
+      "Value": "21",
+      "Rank": 11
+     },
+     {
+      "Value": "22",
+      "Rank": 11
+     },
+     {
+      "Value": "23",
+      "Rank": 11
+     },
+     {
+      "Value": "24",
+      "Rank": 11
+     },
+     {
+      "Value": "25",
+      "Rank": 12
+     },
+     {
+      "Value": "26",
+      "Rank": 12
+     },
+     {
+      "Value": "27",
+      "Rank": 12
+     },
+     {
+      "Value": "28",
+      "Rank": 12
+     },
+     {
+      "Value": "29",
+      "Rank": 12
+     },
+     {
+      "Value": "30",
+      "Rank": 12
+     },
+     {
+      "Value": "31",
+      "Rank": 13
+     },
+     {
+      "Value": "32",
+      "Rank": 13
+     },
+     {
+      "Value": "33",
+      "Rank": 13
+     },
+     {
+      "Value": "34",
+      "Rank": 13
+     },
+     {
+      "Value": "35",
+      "Rank": 13
+     },
+     {
+      "Value": "36",
+      "Rank": 13
+     },
+     {
+      "Value": "37",
+      "Rank": 13
+     },
+     {
+      "Value": "38",
+      "Rank": 14
+     },
+     {
+      "Value": "39",
+      "Rank": 14
+     },
+     {
+      "Value": "40",
+      "Rank": 14
+     },
+     {
+      "Value": "41",
+      "Rank": 14
+     },
+     {
+      "Value": "42",
+      "Rank": 14
+     },
+     {
+      "Value": "43",
+      "Rank": 14
+     },
+     {
+      "Value": "44",
+      "Rank": 14
+     },
+     {
+      "Value": "45",
+      "Rank": 14
+     },
+     {
+      "Value": "46",
+      "Rank": 15
+     },
+     {
+      "Value": "47",
+      "Rank": 15
+     },
+     {
+      "Value": "48",
+      "Rank": 15
+     },
+     {
+      "Value": "49",
+      "Rank": 15
+     },
+     {
+      "Value": "50",
+      "Rank": 15
+     },
+     {
+      "Value": "51",
+      "Rank": 16
+     },
+     {
+      "Value": "52",
+      "Rank": 16
+     },
+     {
+      "Value": "53",
+      "Rank": 16
+     },
+     {
+      "Value": "54",
+      "Rank": 16
+     },
+     {
+      "Value": "55",
+      "Rank": 16
+     },
+     {
+      "Value": "56",
+      "Rank": 17
+     },
+     {
+      "Value": "57",
+      "Rank": 17
+     },
+     {
+      "Value": "58",
+      "Rank": 17
+     },
+     {
+      "Value": "59",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "61",
+      "Rank": 17
+     },
+     {
+      "Value": "62",
+      "Rank": 17
+     },
+     {
+      "Value": "63",
+      "Rank": 18
+     },
+     {
+      "Value": "64",
+      "Rank": 18
+     },
+     {
+      "Value": "65",
+      "Rank": 18
+     },
+     {
+      "Value": "66",
+      "Rank": 18
+     },
+     {
+      "Value": "67",
+      "Rank": 18
+     },
+     {
+      "Value": "68",
+      "Rank": 18
+     },
+     {
+      "Value": "69",
+      "Rank": 18
+     },
+     {
+      "Value": "70",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "HurtSailor",
+    "Label": "Sailor Damage",
+    "Levels": [
+     {
+      "Value": "0.00",
+      "Rank": 4
+     },
+     {
+      "Value": "0.10",
+      "Rank": 5
+     },
+     {
+      "Value": "0.20",
+      "Rank": 6
+     },
+     {
+      "Value": "0.30",
+      "Rank": 7
+     },
+     {
+      "Value": "0.40",
+      "Rank": 8
+     },
+     {
+      "Value": "0.50",
+      "Rank": 9
+     },
+     {
+      "Value": "0.60",
+      "Rank": 9
+     },
+     {
+      "Value": "0.70",
+      "Rank": 10
+     },
+     {
+      "Value": "0.80",
+      "Rank": 10
+     },
+     {
+      "Value": "0.90",
+      "Rank": 10
+     },
+     {
+      "Value": "1.00",
+      "Rank": 11
+     },
+     {
+      "Value": "1.05",
+      "Rank": 11
+     },
+     {
+      "Value": "1.10",
+      "Rank": 12
+     },
+     {
+      "Value": "1.15",
+      "Rank": 13
+     },
+     {
+      "Value": "1.20",
+      "Rank": 13
+     },
+     {
+      "Value": "1.25",
+      "Rank": 14
+     },
+     {
+      "Value": "1.30",
+      "Rank": 14
+     },
+     {
+      "Value": "1.35",
+      "Rank": 14
+     },
+     {
+      "Value": "1.40",
+      "Rank": 15
+     },
+     {
+      "Value": "1.45",
+      "Rank": 15
+     },
+     {
+      "Value": "1.50",
+      "Rank": 16
+     },
+     {
+      "Value": "1.55",
+      "Rank": 16
+     },
+     {
+      "Value": "1.60",
+      "Rank": 17
+     },
+     {
+      "Value": "1.65",
+      "Rank": 17
+     },
+     {
+      "Value": "1.70",
+      "Rank": 18
+     },
+     {
+      "Value": "1.75",
+      "Rank": 18
+     },
+     {
+      "Value": "1.80",
+      "Rank": 18
+     },
+     {
+      "Value": "1.85",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "SailorProtect",
+    "Label": "Sailor Defense",
+    "Levels": [
+     {
+      "Value": "0.00",
+      "Rank": 4
+     },
+     {
+      "Value": "0.10",
+      "Rank": 5
+     },
+     {
+      "Value": "0.20",
+      "Rank": 6
+     },
+     {
+      "Value": "0.30",
+      "Rank": 7
+     },
+     {
+      "Value": "0.40",
+      "Rank": 8
+     },
+     {
+      "Value": "0.50",
+      "Rank": 9
+     },
+     {
+      "Value": "0.60",
+      "Rank": 9
+     },
+     {
+      "Value": "0.70",
+      "Rank": 10
+     },
+     {
+      "Value": "0.80",
+      "Rank": 10
+     },
+     {
+      "Value": "0.90",
+      "Rank": 10
+     },
+     {
+      "Value": "1.00",
+      "Rank": 11
+     },
+     {
+      "Value": "1.05",
+      "Rank": 11
+     },
+     {
+      "Value": "1.10",
+      "Rank": 12
+     },
+     {
+      "Value": "1.15",
+      "Rank": 13
+     },
+     {
+      "Value": "1.20",
+      "Rank": 13
+     },
+     {
+      "Value": "1.25",
+      "Rank": 14
+     },
+     {
+      "Value": "1.30",
+      "Rank": 14
+     },
+     {
+      "Value": "1.35",
+      "Rank": 14
+     },
+     {
+      "Value": "1.40",
+      "Rank": 15
+     },
+     {
+      "Value": "1.45",
+      "Rank": 15
+     },
+     {
+      "Value": "1.50",
+      "Rank": 16
+     },
+     {
+      "Value": "1.55",
+      "Rank": 16
+     },
+     {
+      "Value": "1.60",
+      "Rank": 17
+     },
+     {
+      "Value": "1.65",
+      "Rank": 17
+     },
+     {
+      "Value": "1.70",
+      "Rank": 18
+     },
+     {
+      "Value": "1.75",
+      "Rank": 18
+     },
+     {
+      "Value": "1.80",
+      "Rank": 18
+     },
+     {
+      "Value": "1.85",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "ShipRotate",
+    "Label": "Ship Turning Speed",
+    "Levels": [
+     {
+      "Value": "0.00",
+      "Rank": 2
+     },
+     {
+      "Value": "1.00",
+      "Rank": 3
+     },
+     {
+      "Value": "2.00",
+      "Rank": 4
+     },
+     {
+      "Value": "3.00",
+      "Rank": 5
+     },
+     {
+      "Value": "4.00",
+      "Rank": 5
+     },
+     {
+      "Value": "5.00",
+      "Rank": 6
+     },
+     {
+      "Value": "6.00",
+      "Rank": 6
+     },
+     {
+      "Value": "7.00",
+      "Rank": 6
+     },
+     {
+      "Value": "8.00",
+      "Rank": 7
+     },
+     {
+      "Value": "9.00",
+      "Rank": 7
+     },
+     {
+      "Value": "10.00",
+      "Rank": 7
+     },
+     {
+      "Value": "11.00",
+      "Rank": 7
+     },
+     {
+      "Value": "12.00",
+      "Rank": 8
+     },
+     {
+      "Value": "13.00",
+      "Rank": 8
+     },
+     {
+      "Value": "14.00",
+      "Rank": 8
+     },
+     {
+      "Value": "15.00",
+      "Rank": 8
+     },
+     {
+      "Value": "16.00",
+      "Rank": 8
+     },
+     {
+      "Value": "17.00",
+      "Rank": 9
+     },
+     {
+      "Value": "18.00",
+      "Rank": 9
+     },
+     {
+      "Value": "19.00",
+      "Rank": 9
+     },
+     {
+      "Value": "20.00",
+      "Rank": 9
+     },
+     {
+      "Value": "21.00",
+      "Rank": 9
+     },
+     {
+      "Value": "22.00",
+      "Rank": 9
+     },
+     {
+      "Value": "23.00",
+      "Rank": 10
+     },
+     {
+      "Value": "24.00",
+      "Rank": 10
+     },
+     {
+      "Value": "25.00",
+      "Rank": 10
+     },
+     {
+      "Value": "26.00",
+      "Rank": 10
+     },
+     {
+      "Value": "27.00",
+      "Rank": 10
+     },
+     {
+      "Value": "28.00",
+      "Rank": 10
+     },
+     {
+      "Value": "29.00",
+      "Rank": 10
+     },
+     {
+      "Value": "30.00",
+      "Rank": 11
+     },
+     {
+      "Value": "31.00",
+      "Rank": 11
+     },
+     {
+      "Value": "32.00",
+      "Rank": 11
+     },
+     {
+      "Value": "33.00",
+      "Rank": 11
+     },
+     {
+      "Value": "34.00",
+      "Rank": 11
+     },
+     {
+      "Value": "35.00",
+      "Rank": 11
+     },
+     {
+      "Value": "36.00",
+      "Rank": 11
+     }
+    ]
+   },
+   {
+    "Key": "Acute",
+    "Label": "Acute",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "5",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "7",
+      "Rank": 14
+     },
+     {
+      "Value": "8",
+      "Rank": 14
+     },
+     {
+      "Value": "9",
+      "Rank": 14
+     },
+     {
+      "Value": "10",
+      "Rank": 15
+     },
+     {
+      "Value": "12",
+      "Rank": 15
+     },
+     {
+      "Value": "14",
+      "Rank": 15
+     },
+     {
+      "Value": "16",
+      "Rank": 16
+     },
+     {
+      "Value": "18",
+      "Rank": 16
+     },
+     {
+      "Value": "20",
+      "Rank": 16
+     },
+     {
+      "Value": "22",
+      "Rank": 17
+     },
+     {
+      "Value": "25",
+      "Rank": 17
+     },
+     {
+      "Value": "28",
+      "Rank": 17
+     },
+     {
+      "Value": "31",
+      "Rank": 17
+     },
+     {
+      "Value": "34",
+      "Rank": 18
+     },
+     {
+      "Value": "37",
+      "Rank": 18
+     },
+     {
+      "Value": "40",
+      "Rank": 18
+     },
+     {
+      "Value": "43",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "Physique",
+    "Label": "Physique",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "5",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "7",
+      "Rank": 14
+     },
+     {
+      "Value": "8",
+      "Rank": 14
+     },
+     {
+      "Value": "9",
+      "Rank": 14
+     },
+     {
+      "Value": "10",
+      "Rank": 15
+     },
+     {
+      "Value": "12",
+      "Rank": 15
+     },
+     {
+      "Value": "14",
+      "Rank": 15
+     },
+     {
+      "Value": "16",
+      "Rank": 16
+     },
+     {
+      "Value": "18",
+      "Rank": 16
+     },
+     {
+      "Value": "20",
+      "Rank": 16
+     },
+     {
+      "Value": "22",
+      "Rank": 17
+     },
+     {
+      "Value": "25",
+      "Rank": 17
+     },
+     {
+      "Value": "28",
+      "Rank": 17
+     },
+     {
+      "Value": "31",
+      "Rank": 17
+     },
+     {
+      "Value": "34",
+      "Rank": 18
+     },
+     {
+      "Value": "37",
+      "Rank": 18
+     },
+     {
+      "Value": "40",
+      "Rank": 18
+     },
+     {
+      "Value": "43",
+      "Rank": 18
+     },
+     {
+      "Value": "46",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "SkillHap",
+    "Label": "SkillHap",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "8",
+      "Rank": 13
+     },
+     {
+      "Value": "10",
+      "Rank": 14
+     },
+     {
+      "Value": "12",
+      "Rank": 14
+     },
+     {
+      "Value": "14",
+      "Rank": 14
+     },
+     {
+      "Value": "16",
+      "Rank": 15
+     },
+     {
+      "Value": "19",
+      "Rank": 15
+     },
+     {
+      "Value": "22",
+      "Rank": 15
+     },
+     {
+      "Value": "25",
+      "Rank": 15
+     },
+     {
+      "Value": "28",
+      "Rank": 16
+     },
+     {
+      "Value": "31",
+      "Rank": 16
+     },
+     {
+      "Value": "34",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "45",
+      "Rank": 17
+     },
+     {
+      "Value": "50",
+      "Rank": 17
+     },
+     {
+      "Value": "55",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "65",
+      "Rank": 17
+     },
+     {
+      "Value": "70",
+      "Rank": 18
+     },
+     {
+      "Value": "75",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "90",
+      "Rank": 18
+     },
+     {
+      "Value": "95",
+      "Rank": 18
+     },
+     {
+      "Value": "100",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "Ward",
+    "Label": "Ward",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "8",
+      "Rank": 13
+     },
+     {
+      "Value": "10",
+      "Rank": 14
+     },
+     {
+      "Value": "12",
+      "Rank": 14
+     },
+     {
+      "Value": "14",
+      "Rank": 14
+     },
+     {
+      "Value": "16",
+      "Rank": 15
+     },
+     {
+      "Value": "19",
+      "Rank": 15
+     },
+     {
+      "Value": "22",
+      "Rank": 15
+     },
+     {
+      "Value": "25",
+      "Rank": 15
+     },
+     {
+      "Value": "28",
+      "Rank": 16
+     },
+     {
+      "Value": "31",
+      "Rank": 16
+     },
+     {
+      "Value": "34",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "45",
+      "Rank": 17
+     },
+     {
+      "Value": "50",
+      "Rank": 17
+     },
+     {
+      "Value": "55",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "65",
+      "Rank": 17
+     },
+     {
+      "Value": "70",
+      "Rank": 18
+     },
+     {
+      "Value": "75",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "90",
+      "Rank": 18
+     },
+     {
+      "Value": "95",
+      "Rank": 18
+     },
+     {
+      "Value": "100",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "Response",
+    "Label": "Response",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "8",
+      "Rank": 13
+     },
+     {
+      "Value": "10",
+      "Rank": 14
+     },
+     {
+      "Value": "12",
+      "Rank": 14
+     },
+     {
+      "Value": "14",
+      "Rank": 14
+     },
+     {
+      "Value": "16",
+      "Rank": 15
+     },
+     {
+      "Value": "19",
+      "Rank": 15
+     },
+     {
+      "Value": "22",
+      "Rank": 15
+     },
+     {
+      "Value": "25",
+      "Rank": 15
+     },
+     {
+      "Value": "28",
+      "Rank": 16
+     },
+     {
+      "Value": "31",
+      "Rank": 16
+     },
+     {
+      "Value": "34",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "45",
+      "Rank": 17
+     },
+     {
+      "Value": "50",
+      "Rank": 17
+     },
+     {
+      "Value": "55",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "65",
+      "Rank": 17
+     },
+     {
+      "Value": "70",
+      "Rank": 18
+     },
+     {
+      "Value": "75",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "90",
+      "Rank": 18
+     },
+     {
+      "Value": "95",
+      "Rank": 18
+     },
+     {
+      "Value": "100",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "Backbone",
+    "Label": "Backbone",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 11
+     },
+     {
+      "Value": "2",
+      "Rank": 12
+     },
+     {
+      "Value": "3",
+      "Rank": 12
+     },
+     {
+      "Value": "4",
+      "Rank": 13
+     },
+     {
+      "Value": "6",
+      "Rank": 13
+     },
+     {
+      "Value": "8",
+      "Rank": 13
+     },
+     {
+      "Value": "10",
+      "Rank": 14
+     },
+     {
+      "Value": "12",
+      "Rank": 14
+     },
+     {
+      "Value": "14",
+      "Rank": 14
+     },
+     {
+      "Value": "16",
+      "Rank": 15
+     },
+     {
+      "Value": "19",
+      "Rank": 15
+     },
+     {
+      "Value": "22",
+      "Rank": 15
+     },
+     {
+      "Value": "25",
+      "Rank": 15
+     },
+     {
+      "Value": "28",
+      "Rank": 16
+     },
+     {
+      "Value": "31",
+      "Rank": 16
+     },
+     {
+      "Value": "34",
+      "Rank": 16
+     },
+     {
+      "Value": "37",
+      "Rank": 16
+     },
+     {
+      "Value": "40",
+      "Rank": 17
+     },
+     {
+      "Value": "45",
+      "Rank": 17
+     },
+     {
+      "Value": "50",
+      "Rank": 17
+     },
+     {
+      "Value": "55",
+      "Rank": 17
+     },
+     {
+      "Value": "60",
+      "Rank": 17
+     },
+     {
+      "Value": "65",
+      "Rank": 17
+     },
+     {
+      "Value": "70",
+      "Rank": 18
+     },
+     {
+      "Value": "75",
+      "Rank": 18
+     },
+     {
+      "Value": "80",
+      "Rank": 18
+     },
+     {
+      "Value": "85",
+      "Rank": 18
+     },
+     {
+      "Value": "90",
+      "Rank": 18
+     },
+     {
+      "Value": "95",
+      "Rank": 18
+     },
+     {
+      "Value": "100",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "NcIncShip",
+    "Label": "NcIncShip",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 12
+     },
+     {
+      "Value": "2",
+      "Rank": 13
+     },
+     {
+      "Value": "3",
+      "Rank": 13
+     },
+     {
+      "Value": "4",
+      "Rank": 14
+     },
+     {
+      "Value": "5",
+      "Rank": 14
+     },
+     {
+      "Value": "6",
+      "Rank": 15
+     },
+     {
+      "Value": "7",
+      "Rank": 15
+     },
+     {
+      "Value": "8",
+      "Rank": 15
+     },
+     {
+      "Value": "9",
+      "Rank": 16
+     },
+     {
+      "Value": "10",
+      "Rank": 16
+     },
+     {
+      "Value": "11",
+      "Rank": 16
+     },
+     {
+      "Value": "12",
+      "Rank": 17
+     },
+     {
+      "Value": "13",
+      "Rank": 17
+     },
+     {
+      "Value": "14",
+      "Rank": 17
+     },
+     {
+      "Value": "15",
+      "Rank": 17
+     },
+     {
+      "Value": "16",
+      "Rank": 18
+     },
+     {
+      "Value": "17",
+      "Rank": 18
+     },
+     {
+      "Value": "18",
+      "Rank": 18
+     },
+     {
+      "Value": "19",
+      "Rank": 18
+     },
+     {
+      "Value": "20",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "NcDDShip",
+    "Label": "NcDDShip",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 12
+     },
+     {
+      "Value": "2",
+      "Rank": 13
+     },
+     {
+      "Value": "3",
+      "Rank": 13
+     },
+     {
+      "Value": "4",
+      "Rank": 14
+     },
+     {
+      "Value": "5",
+      "Rank": 14
+     },
+     {
+      "Value": "6",
+      "Rank": 15
+     },
+     {
+      "Value": "7",
+      "Rank": 15
+     },
+     {
+      "Value": "8",
+      "Rank": 15
+     },
+     {
+      "Value": "9",
+      "Rank": 16
+     },
+     {
+      "Value": "10",
+      "Rank": 16
+     },
+     {
+      "Value": "11",
+      "Rank": 16
+     },
+     {
+      "Value": "12",
+      "Rank": 17
+     },
+     {
+      "Value": "13",
+      "Rank": 17
+     },
+     {
+      "Value": "14",
+      "Rank": 17
+     },
+     {
+      "Value": "15",
+      "Rank": 17
+     },
+     {
+      "Value": "16",
+      "Rank": 18
+     },
+     {
+      "Value": "17",
+      "Rank": 18
+     },
+     {
+      "Value": "18",
+      "Rank": 18
+     },
+     {
+      "Value": "19",
+      "Rank": 18
+     },
+     {
+      "Value": "20",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "SeaDBInc",
+    "Label": "SeaDBInc",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 12
+     },
+     {
+      "Value": "2",
+      "Rank": 13
+     },
+     {
+      "Value": "3",
+      "Rank": 13
+     },
+     {
+      "Value": "4",
+      "Rank": 14
+     },
+     {
+      "Value": "5",
+      "Rank": 14
+     },
+     {
+      "Value": "6",
+      "Rank": 15
+     },
+     {
+      "Value": "7",
+      "Rank": 15
+     },
+     {
+      "Value": "8",
+      "Rank": 15
+     },
+     {
+      "Value": "9",
+      "Rank": 16
+     },
+     {
+      "Value": "10",
+      "Rank": 16
+     },
+     {
+      "Value": "11",
+      "Rank": 16
+     },
+     {
+      "Value": "12",
+      "Rank": 17
+     },
+     {
+      "Value": "13",
+      "Rank": 17
+     },
+     {
+      "Value": "14",
+      "Rank": 17
+     },
+     {
+      "Value": "15",
+      "Rank": 17
+     },
+     {
+      "Value": "16",
+      "Rank": 18
+     },
+     {
+      "Value": "17",
+      "Rank": 18
+     },
+     {
+      "Value": "18",
+      "Rank": 18
+     },
+     {
+      "Value": "19",
+      "Rank": 18
+     },
+     {
+      "Value": "20",
+      "Rank": 19
+     }
+    ]
+   },
+   {
+    "Key": "SeaKeyDFInc",
+    "Label": "SeaKeyDFInc",
+    "Levels": [
+     {
+      "Value": "0",
+      "Rank": 11
+     },
+     {
+      "Value": "1",
+      "Rank": 12
+     },
+     {
+      "Value": "2",
+      "Rank": 13
+     },
+     {
+      "Value": "3",
+      "Rank": 13
+     },
+     {
+      "Value": "4",
+      "Rank": 14
+     },
+     {
+      "Value": "5",
+      "Rank": 14
+     },
+     {
+      "Value": "6",
+      "Rank": 15
+     },
+     {
+      "Value": "7",
+      "Rank": 15
+     },
+     {
+      "Value": "8",
+      "Rank": 15
+     },
+     {
+      "Value": "9",
+      "Rank": 16
+     },
+     {
+      "Value": "10",
+      "Rank": 16
+     },
+     {
+      "Value": "11",
+      "Rank": 16
+     },
+     {
+      "Value": "12",
+      "Rank": 17
+     },
+     {
+      "Value": "13",
+      "Rank": 17
+     },
+     {
+      "Value": "14",
+      "Rank": 17
+     },
+     {
+      "Value": "15",
+      "Rank": 17
+     },
+     {
+      "Value": "16",
+      "Rank": 18
+     },
+     {
+      "Value": "17",
+      "Rank": 18
+     },
+     {
+      "Value": "18",
+      "Rank": 18
+     },
+     {
+      "Value": "19",
+      "Rank": 18
+     },
+     {
+      "Value": "20",
+      "Rank": 19
+     }
+    ]
+   }
+  ],
+  "Awards": [
+   {
+    "Rank": 1,
+    "Text": "Military rank 1 reward",
+    "Money": 20000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 2,
+    "Text": "Military rank 2 reward",
+    "Money": 40000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 3,
+    "Text": "Military rank 3 reward",
+    "Money": 60000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 4,
+    "Text": "Military rank 4 reward",
+    "Money": 80000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 5,
+    "Text": "Military rank 5 reward",
+    "Money": 100000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 6,
+    "Text": "Military rank 6 reward",
+    "Money": 120000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 7,
+    "Text": "Military rank 7 reward",
+    "Money": 140000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 8,
+    "Text": "Military rank 8 reward",
+    "Money": 160000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 9,
+    "Text": "Military rank 9 reward",
+    "Money": 180000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 10,
+    "Text": "Military rank 10 reward",
+    "Money": 200000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 11,
+    "Text": "Military rank 11 reward",
+    "Money": 220000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 12,
+    "Text": "Military rank 12 reward",
+    "Money": 240000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 13,
+    "Text": "Military rank 13 reward",
+    "Money": 260000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 14,
+    "Text": "Military rank 14 reward",
+    "Money": 280000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 15,
+    "Text": "Military rank 15 reward",
+    "Money": 300000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 16,
+    "Text": "Military rank 16 reward",
+    "Money": 320000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 17,
+    "Text": "Military rank 17 reward",
+    "Money": 340000,
+    "Item": "",
+    "Amount": 1
+   },
+   {
+    "Rank": 18,
+    "Text": "Military rank 18 reward",
+    "Money": 360000,
+    "Item": "",
+    "Amount": 1
+   }
+  ]
+ },
+ "Exploit": {
+  "Money": 50000000,
+  "Badge": "honor_badge",
+  "Badges": 5,
+  "MatchProperty": "Kind",
+  "MatchValue": 1,
+  "Medals": [
+   {
+    "Key": "medal001",
+    "Level": 1,
+    "Next": "medal002",
+    "SuccessPercent": 100,
+    "FailDrop": 0
+   },
+   {
+    "Key": "medal002",
+    "Level": 2,
+    "Next": "medal003",
+    "SuccessPercent": 35,
+    "FailDrop": 1
+   },
+   {
+    "Key": "medal003",
+    "Level": 3,
+    "Next": "medal004",
+    "SuccessPercent": 30,
+    "FailDrop": 2
+   },
+   {
+    "Key": "medal004",
+    "Level": 4,
+    "Next": "medal005",
+    "SuccessPercent": 25,
+    "FailDrop": 2
+   },
+   {
+    "Key": "medal005",
+    "Level": 5,
+    "Next": "medal006",
+    "SuccessPercent": 20,
+    "FailDrop": 2
+   },
+   {
+    "Key": "medal006",
+    "Level": 6,
+    "Next": "medal007",
+    "SuccessPercent": 15,
+    "FailDrop": 3
+   },
+   {
+    "Key": "medal007",
+    "Level": 7,
+    "Next": "medal008",
+    "SuccessPercent": 12,
+    "FailDrop": 3
+   },
+   {
+    "Key": "medal008",
+    "Level": 8,
+    "Next": "medal009",
+    "SuccessPercent": 10,
+    "FailDrop": 2
+   },
+   {
+    "Key": "medal009",
+    "Level": 9,
+    "Next": "medal010",
+    "SuccessPercent": 8,
+    "FailDrop": 1
+   },
+   {
+    "Key": "medal010",
+    "Level": 10,
+    "Next": "",
+    "SuccessPercent": 0,
+    "FailDrop": 0
+   },
+   {
+    "Key": "medal011",
+    "Level": 11,
+    "Next": "",
+    "SuccessPercent": 0,
+    "FailDrop": 0
+   },
+   {
+    "Key": "medal0051",
+    "Level": 5,
+    "Next": "",
+    "SuccessPercent": 0,
+    "FailDrop": 0
+   },
+   {
+    "Key": "medal0061",
+    "Level": 6,
+    "Next": "",
+    "SuccessPercent": 0,
+    "FailDrop": 0
+   },
+   {
+    "Key": "medal0071",
+    "Level": 7,
+    "Next": "",
+    "SuccessPercent": 0,
+    "FailDrop": 0
+   }
+  ]
+ },
+ "Camp": {
+  "UpTiers": [
+   0,
+   50000,
+   150000,
+   300000,
+   500000
+  ],
+  "DownTiers": [
+   0,
+   10000,
+   50000
+  ],
+  "PriceTiers": 4,
+  "CouponMoney": 0,
+  "Goods": [
+   {
+    "Key": "DJ009272",
+    "Camp": 1,
+    "Name": "Special Tough Iron Steel (Divinity)",
+    "Photo": 199130,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     78,
+     74,
+     65
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009272"
+   },
+   {
+    "Key": "DJ009273",
+    "Camp": 1,
+    "Name": "Special Tough Iron Steel Plate(Divinity)",
+    "Photo": 199131,
+    "Limit": [
+     0,
+     15,
+     15,
+     15
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     58,
+     55,
+     50
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009273"
+   },
+   {
+    "Key": "DJ009276",
+    "Camp": 1,
+    "Name": "Blazing flame Essence (Divinity)",
+    "Photo": 199136,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     78,
+     74,
+     65
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009276"
+   },
+   {
+    "Key": "DJ009278",
+    "Camp": 1,
+    "Name": "Witch's Eye Essence (Divinity)",
+    "Photo": 199141,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     78,
+     74,
+     65
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009278"
+   },
+   {
+    "Key": "DJ009280",
+    "Camp": 1,
+    "Name": "Energy-collecting Essence (Divinity)",
+    "Photo": 199137,
+    "Limit": [
+     0,
+     8,
+     8,
+     8
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     48,
+     45,
+     40
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009280"
+   },
+   {
+    "Key": "DJ009281",
+    "Camp": 1,
+    "Name": "Blood Essence (Divinity)",
+    "Photo": 199138,
+    "Limit": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     245,
+     235,
+     220
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009281"
+   },
+   {
+    "Key": "DJ009283",
+    "Camp": 1,
+    "Name": "Amethyst Essence (Divinity)",
+    "Photo": 199142,
+    "Limit": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     245,
+     235,
+     220
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009283"
+   },
+   {
+    "Key": "DJ009274",
+    "Camp": 2,
+    "Name": "Special Tough Handle(Divinity)",
+    "Photo": 199133,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     78,
+     74,
+     65
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009274"
+   },
+   {
+    "Key": "DJ009275",
+    "Camp": 2,
+    "Name": "Special Tough Iron Steel Line (Divinity)",
+    "Photo": 199132,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     58,
+     55,
+     50
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009275"
+   },
+   {
+    "Key": "DJ009277",
+    "Camp": 2,
+    "Name": "Huge Rock Essence (Divinity)",
+    "Photo": 199135,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     58,
+     55,
+     50
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009277"
+   },
+   {
+    "Key": "DJ009279",
+    "Camp": 2,
+    "Name": "Shadow-escaping Essence (Divinity)",
+    "Photo": 199139,
+    "Limit": [
+     0,
+     6,
+     6,
+     6
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     78,
+     74,
+     65
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009279"
+   },
+   {
+    "Key": "DJ009282",
+    "Camp": 2,
+    "Name": "Tough Blood Essence  (Divinity)",
+    "Photo": 199140,
+    "Limit": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     245,
+     235,
+     220
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009282"
+   },
+   {
+    "Key": "DJ009284",
+    "Camp": 2,
+    "Name": "Crystal Shield Essence (Divinity)",
+    "Photo": 199134,
+    "Limit": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     245,
+     235,
+     220
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009284"
+   },
+   {
+    "Key": "DJ009289",
+    "Camp": 2,
+    "Name": "God's Blood Crystals",
+    "Photo": 199202,
+    "Limit": [
+     0,
+     10,
+     10,
+     10
+    ],
+    "PriceType": 1,
+    "Price": [
+     0,
+     48,
+     45,
+     40
+    ],
+    "PopularityCost": [
+     0,
+     500,
+     300,
+     100
+    ],
+    "Item": "DJ009289"
+   }
+  ],
+  "Monsters": {
+   "NewLDNpc01": {
+    "1": 5
+   },
+   "NewLDNpc09": {
+    "1": 5
+   },
+   "NewLDNpc02": {
+    "1": 5
+   },
+   "NewLDNpc03": {
+    "1": 5
+   },
+   "NewLDNpc04": {
+    "1": 5
+   },
+   "NewLDNpc12": {
+    "1": 5
+   },
+   "FightNpc06273": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06274": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06275": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06276": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06277": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06279": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06280": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06282": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06283": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06287": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06288": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06294": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06295": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06296": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06297": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06298": {
+    "1": 20,
+    "2": 20
+   },
+   "FightNpc06281": {
+    "1": 150,
+    "2": 150
+   },
+   "FightNpc06293": {
+    "1": 150,
+    "2": 150
+   },
+   "FightNpc06299": {
+    "1": 150,
+    "2": 150
+   },
+   "FightNpc06300": {
+    "1": 150,
+    "2": 150
+   },
+   "FightNpc06301": {
+    "1": 150,
+    "2": 150
+   },
+   "FightNpc06278": {
+    "1": 250,
+    "2": 250
+   },
+   "FightNpc06285": {
+    "1": 250,
+    "2": 250
+   },
+   "FightNpc06286": {
+    "1": 250,
+    "2": 250
+   },
+   "FightNpc06305": {
+    "1": 250,
+    "2": 250
+   },
+   "NewLDNpc15": {
+    "1": 150,
+    "2": 150
+   },
+   "NewLDNpc16": {
+    "1": 150,
+    "2": 150
+   },
+   "NewLDNpc05": {
+    "2": 5
+   },
+   "NewLDNpc13": {
+    "2": 5
+   },
+   "NewLDNpc06": {
+    "2": 5
+   },
+   "NewLDNpc07": {
+    "2": 5
+   },
+   "NewLDNpc08": {
+    "2": 5
+   },
+   "NewLDNpc14": {
+    "2": 5
+   }
+  },
+  "Submissions": [
+   {
+    "Camp": 1,
+    "Item": "CWCL0380",
+    "Popularity": 50
+   },
+   {
+    "Camp": 2,
+    "Item": "CWCL0381",
+    "Popularity": 50
+   }
+  ],
+  "Tasks": {
+   "4633": 1000,
+   "4634": 1000,
+   "4635": 1000,
+   "4630": 1000,
+   "4631": 1000,
+   "4632": 1000
+  }
+ },
+ "ModelChange": {
+  "ArmType": 10,
+  "Money": 0,
+  "Item": "",
+  "Models": [
+   {
+    "Index": 1,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403340,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403341,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 2,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403267,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403268,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 3,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403269,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403270,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 4,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403271,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403272,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 5,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403273,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403274,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 6,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403275,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403276,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 7,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403277,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403278,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 8,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403279,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403280,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 9,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325040,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325041,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 10,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403287,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403288,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 11,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403281,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403282,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 12,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325064,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325065,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 13,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325066,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325067,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 14,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325068,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325069,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 15,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005038,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005039,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 16,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005046,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005047,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 17,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005044,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005045,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 18,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005040,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005041,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 19,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005167,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005168,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 20,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005171,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005172,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 21,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3404555,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3404556,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 22,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403289,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403339,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 23,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403342,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403343,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 24,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325042,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325043,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 25,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325044,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325045,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 26,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325060,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325061,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 27,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4002524,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4002525,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 28,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403342,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403343,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 29,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4002526,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4002527,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 30,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4002528,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4002529,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 31,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403290,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403291,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 32,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403292,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403293,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 33,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403294,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403295,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 34,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403296,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403297,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 35,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403063,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403064,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 36,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403065,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403066,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 37,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403067,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403068,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 38,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403069,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403070,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 39,
+    "Type": 3,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403007,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403008,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 40,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3401019,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403077,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 41,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403083,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403078,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 42,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403283,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403079,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 43,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403285,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403080,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 44,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403300,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403081,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 45,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403083,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403132,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 46,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3401019,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403114,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 47,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3404100,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3404101,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 48,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3401019,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3401020,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 49,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403283,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403284,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 50,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403285,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403286,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 51,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403300,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403078,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 52,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403083,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403096,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 53,
+    "Type": 4,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005169,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005170,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 54,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403300,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403301,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 55,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403302,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403303,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 56,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403304,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403305,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 57,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403306,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403307,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 58,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403308,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403309,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 59,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403314,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403315,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 60,
+    "Type": 5,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403316,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403317,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 61,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005253,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005254,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 62,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325032,
+     "Hat": 3325022,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325037,
+     "Hat": 3325027,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 63,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325031,
+     "Hat": 3325021,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325036,
+     "Hat": 3325026,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 64,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3325034,
+     "Hat": 3325024,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3325039,
+     "Hat": 3325029,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 65,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403195,
+     "Hat": 4003099,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403202,
+     "Hat": 4003106,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 66,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403223,
+     "Hat": 4003127,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403230,
+     "Hat": 4003134,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 67,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403251,
+     "Hat": 4003155,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403258,
+     "Hat": 4003162,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 68,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403237,
+     "Hat": 4003141,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403244,
+     "Hat": 4003148,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 69,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3402087,
+     "Hat": 4000912,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3402052,
+     "Hat": 4000915,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 70,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403163,
+     "Hat": 4002383,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403164,
+     "Hat": 4002384,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 71,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403157,
+     "Hat": 4002377,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403158,
+     "Hat": 4002378,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 72,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403165,
+     "Hat": 4002385,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403166,
+     "Hat": 40023861,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 73,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403159,
+     "Hat": 4002379,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403160,
+     "Hat": 4002382,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 74,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403161,
+     "Hat": 4002381,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403162,
+     "Hat": 4002382,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 75,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3404102,
+     "Hat": 4004104,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3404103,
+     "Hat": 4004105,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 76,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4002505,
+     "Hat": 4002509,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4002507,
+     "Hat": 4002510,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 77,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3403332,
+     "Hat": 3403326,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3403333,
+     "Hat": 3403327,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 78,
+    "Type": 6,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3402081,
+     "Hat": 4000907,
+     "TexColor": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3402082,
+     "Hat": 4000910,
+     "TexColor": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 79,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3404559,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3404560,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 80,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 3404563,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 3404564,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 81,
+    "Type": 1,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005340,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005341,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 82,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005175,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005176,
+     "Hat": 0,
+     "Hair": 0
+    }
+   },
+   {
+    "Index": 83,
+    "Type": 2,
+    "Male": {
+     "ArmType": 10,
+     "BodyType": 4005342,
+     "Hat": 0,
+     "Hair": 0
+    },
+    "Female": {
+     "ArmType": 10,
+     "BodyType": 4005343,
+     "Hat": 0,
+     "Hair": 0
+    }
+   }
+  ]
+ },
+ "Quiz": {
+  "PerDay": 20,
+  "Seconds": 15,
+  "RewardMoney": 500,
+  "LuckyBonusPercent": [
+   0,
+   50,
+   100
+  ],
+  "Questions": [
+   {
+    "Question": "Which city is the capital of the Ottoman Empire?",
+    "Answers": [
+     "Athens",
+     "Istanbul",
+     "Venice",
+     "Cairo"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "What do sailors need on a long voyage so the ship keeps its speed?",
+    "Answers": [
+     "Provisions",
+     "Cannon balls",
+     "Silk",
+     "Timber"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which skill lets you buy trade goods more cheaply?",
+    "Answers": [
+     "Sea Battle",
+     "Eloquence",
+     "Medicine",
+     "Voyage"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Where can you heal your wounded sailors?",
+    "Answers": [
+     "Tavern",
+     "Bank",
+     "Church",
+     "Shipyard"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which scholar authenticates discovery logs in Athens?",
+    "Answers": [
+     "Pascal",
+     "Artes",
+     "Dysseus",
+     "Levassor"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which ocean lies between Europe and the Americas?",
+    "Answers": [
+     "Indian Ocean",
+     "Pacific Ocean",
+     "Atlantic Ocean",
+     "Arctic Ocean"
+    ],
+    "Right": 3
+   },
+   {
+    "Question": "Which city stands at the mouth of the Nile?",
+    "Answers": [
+     "Alexandria",
+     "Tunis",
+     "Basra",
+     "Aden"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "What does chain shot damage most?",
+    "Answers": [
+     "Hull",
+     "Sails",
+     "Sailors",
+     "Cargo"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "How many basic skills does every new captain know?",
+    "Answers": [
+     "Two",
+     "Four",
+     "Six",
+     "Eight"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which strait connects the Mediterranean with the Atlantic?",
+    "Answers": [
+     "Bosporus",
+     "Gibraltar",
+     "Hormuz",
+     "Malacca"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which goods is Venice famous for?",
+    "Answers": [
+     "Glassware",
+     "Tea",
+     "Spices",
+     "Furs"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "What happens when a ship has no provisions left?",
+    "Answers": [
+     "It sinks",
+     "It sails at minimum speed",
+     "It returns to port",
+     "Nothing"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which city is famous for its tulips?",
+    "Answers": [
+     "London",
+     "Amsterdam",
+     "Lisbon",
+     "Seville"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Where is the Cape of Good Hope?",
+    "Answers": [
+     "Southern Africa",
+     "South America",
+     "India",
+     "Arabia"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which weapon raises your defence when equipped?",
+    "Answers": [
+     "Axe",
+     "Falchion",
+     "Gun",
+     "Sword"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "What is the common currency of the game?",
+    "Answers": [
+     "Gold dinars",
+     "Silver coins",
+     "Ducats",
+     "Pearls"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which skill rises while sailing on the high seas?",
+    "Answers": [
+     "Voyage",
+     "Medicine",
+     "Fishing",
+     "Logging"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which sea lies north of Germany?",
+    "Answers": [
+     "Black Sea",
+     "Red Sea",
+     "Baltic Sea",
+     "Caspian Sea"
+    ],
+    "Right": 3
+   },
+   {
+    "Question": "Which city was the seat of the Pope?",
+    "Answers": [
+     "Rome",
+     "Naples",
+     "Genoa",
+     "Marseille"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which command searches glittering spots at sea?",
+    "Answers": [
+     "Discovery",
+     "Fishing",
+     "Salvage",
+     "Diving"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which city is the capital of Portugal?",
+    "Answers": [
+     "Porto",
+     "Lisbon",
+     "Madrid",
+     "Seville"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which stunt raises the load a character can carry?",
+    "Answers": [
+     "Muscle Promotion",
+     "Alert",
+     "Pursuit",
+     "Full Speed"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which sea separates Arabia from Africa?",
+    "Answers": [
+     "Red Sea",
+     "Dead Sea",
+     "Aegean Sea",
+     "Adriatic Sea"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which item is needed to write a letter?",
+    "Answers": [
+     "Letter pad",
+     "Ink stone",
+     "Quill",
+     "Seal"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "How many quiz questions can you answer per day?",
+    "Answers": [
+     "10",
+     "15",
+     "20",
+     "30"
+    ],
+    "Right": 3
+   },
+   {
+    "Question": "Who first reached India by sea around Africa?",
+    "Answers": [
+     "Columbus",
+     "Vasco da Gama",
+     "Magellan",
+     "Drake"
+    ],
+    "Right": 2
+   },
+   {
+    "Question": "Which city lies on the Bosporus?",
+    "Answers": [
+     "Istanbul",
+     "Athens",
+     "Smyrna",
+     "Varna"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Where do the Caribbean pirates gather?",
+    "Answers": [
+     "Tortuga",
+     "Havana",
+     "Jamaica",
+     "Panama"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "Which goods come from Ceylon?",
+    "Answers": [
+     "Tea and gems",
+     "Wool",
+     "Wine",
+     "Iron"
+    ],
+    "Right": 1
+   },
+   {
+    "Question": "What does the stunt Pursuit do?",
+    "Answers": [
+     "Raises ship speed",
+     "Repairs the hull",
+     "Heals sailors",
+     "Hides the ship"
+    ],
+    "Right": 1
+   }
+  ]
+ },
+ "BoatRace": {
+  "BetSeconds": 180,
+  "RaceSeconds": 60,
+  "BetMoney": 1000000,
+  "MaxBetsPerRace": 10,
+  "PayoutFactor": 7,
+  "MaxOnlineMinutes": 180,
+  "Boats": [
+   "Red Dragon",
+   "Golden Dragon",
+   "Blue Dragon",
+   "Black Dragon",
+   "White Dragon",
+   "Green Dragon",
+   "Purple Dragon",
+   "Jade Dragon"
+  ]
+ },
+ "MiniGame": {
+  "TowerWinMoney": 5000,
+  "TowerWinsPerDay": 5,
+  "LinkMoneyPerPoint": 0
+ },
+ "TreasureCard": {
+  "Cards": 24,
+  "GoldFrom": 19,
+  "FreePerDay": 1,
+  "TurnsPerDay": 6,
+  "TurnMoney": 10000,
+  "GoldTurnMoney": 50000,
+  "Silver": [
+   {
+    "Item": "IDName00003637",
+    "Count": 5,
+    "Weight": 30
+   },
+   {
+    "Item": "IDName00003639",
+    "Count": 2,
+    "Weight": 20
+   },
+   {
+    "Item": "NEW_004",
+    "Count": 3,
+    "Weight": 15
+   },
+   {
+    "Item": "NEW_005",
+    "Count": 3,
+    "Weight": 15
+   },
+   {
+    "Item": "NEW_006",
+    "Count": 3,
+    "Weight": 15
+   },
+   {
+    "Item": "honor_badge",
+    "Count": 1,
+    "Weight": 5
+   }
+  ],
+  "Gold": [
+   {
+    "Item": "IDName00003641",
+    "Count": 2,
+    "Weight": 30
+   },
+   {
+    "Item": "NEW_007",
+    "Count": 2,
+    "Weight": 25
+   },
+   {
+    "Item": "NEW_008",
+    "Count": 2,
+    "Weight": 25
+   },
+   {
+    "Item": "honor_badge",
+    "Count": 3,
+    "Weight": 15
+   },
+   {
+    "Item": "DJ009272",
+    "Count": 1,
+    "Weight": 5
+   }
+  ]
+ },
+ "Guess": {
+  "Teams": 32,
+  "FootballRound": 1,
+  "RoundPicks": [
+   16,
+   8,
+   4,
+   2,
+   1
+  ],
+  "OlympicOpen": true
+ }
+}

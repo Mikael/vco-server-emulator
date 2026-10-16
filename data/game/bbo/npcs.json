@@ -4855,6 +4855,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 542,
+        "Text": "Camp props exchange"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -4883,6 +4887,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 543,
+        "Text": "Hand in camp medals"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -4910,6 +4918,10 @@
     "Z": -168.47,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 544,
+        "Text": "Join the Suyo Guards"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -4995,6 +5007,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 543,
+        "Text": "Hand in camp medals"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -5023,6 +5039,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 545,
+        "Text": "Join the Conquerors"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -5050,6 +5070,10 @@
     "Z": -193.63,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 542,
+        "Text": "Camp props exchange"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -15549,6 +15573,10 @@
     "Z": -24.2,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 550,
+        "Text": "Military rank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -40638,6 +40666,10 @@
     "Z": -29.39,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 541,
+        "Text": "Medal production"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"

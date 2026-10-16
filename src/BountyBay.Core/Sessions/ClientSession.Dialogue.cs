@@ -38,6 +38,7 @@ public sealed partial class ClientSession
         if (HandleSoulOption(target, (int)action)) return;
         if (HandleFlagFuseOption(target, (int)action)) return;
         if (HandleBboSocialOption(target, (int)action)) return;
+        if (HandleLeisureOption(target, (int)action)) return;
         if ((int)action == 390 && BboChooseShipOption(target, (int)action)) return;
         if (HandleProgressOption(target, (int)action)) return;
         if (ChooseShipyardOption(target, (int)action)) return;
