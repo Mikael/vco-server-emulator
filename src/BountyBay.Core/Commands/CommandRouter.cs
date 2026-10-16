@@ -115,7 +115,8 @@ public sealed class CommandRouter
             .Add(new BboRewardCommands())
             .Add(new GoToObjCommand())
             .Add(new ParcelCostCommand())
-            .Add(new FindBoothCommand());
+            .Add(new FindBoothCommand())
+            .Add(new AuctionCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

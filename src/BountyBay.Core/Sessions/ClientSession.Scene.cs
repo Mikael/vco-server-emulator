@@ -135,6 +135,7 @@ public sealed partial class ClientSession
         BboStartRewards();
         AnnounceOverflow();
         CollectConsignment();
+        AuctionLoginNotice();
         Log.Info(Tag, $"{Name} entered the world in scene {scene}{(persistent ? "" : " (not saved)")}");
     }
 

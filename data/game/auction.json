@@ -1,0 +1,30 @@
+{
+  "Auction": {
+    "DurationMinutes": 60,
+    "GapMinutes": 5,
+    "RefundLosingBids": false,
+    "ForfeitIfOffline": true,
+    "AnnounceWinner": true,
+    "HistoryRows": 20,
+    "Lots": [
+      { "Item": "IDName_XZB000015", "Amount": 1, "ReservePrice": 2800000 },
+      { "Item": "IDName00000749", "Amount": 1, "ReservePrice": 2700000 },
+      { "Item": "IDName_XZB000059", "Amount": 1, "ReservePrice": 2550000 },
+      { "Item": "IDName00000760", "Amount": 1, "ReservePrice": 2700000 },
+      { "Item": "IDName_XZB000043", "Amount": 1, "ReservePrice": 2300000 },
+      { "Item": "IDName00000750", "Amount": 1, "ReservePrice": 2700000 },
+      { "Item": "IDName_XZB000030", "Amount": 1, "ReservePrice": 2800000 },
+      { "Item": "IDName00000759", "Amount": 1, "ReservePrice": 2700000 }
+    ]
+  },
+  "Pawn": {
+    "PayItem": "GLMoney",
+    "SilverPerCoin": 1000,
+    "MinPercent": 30,
+    "MaxPercent": 60,
+    "MaxCancels": 5,
+    "CancelWindowMinutes": 10,
+    "BanMinutes": 10,
+    "Refuse": [ "GLMoney", "GLMedal01", "GLMedal02" ]
+  }
+}

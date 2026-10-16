@@ -26,6 +26,8 @@ public sealed class BboSelectCommand : ITextCommand
                 return true;
             case ClientSession.ShopBuyBackView when session.AskBuyBack(index):
                 return true;
+            case ClientSession.ImpawnView when session.ImpawnSlotClick(index):
+                return true;
             case ClientSession.CompoundView:
                 session.CompoundSlot(index);
                 return true;

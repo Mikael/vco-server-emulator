@@ -24,6 +24,7 @@ public sealed partial class ClientSession
     public void ChooseOption(int target, DialogueAction action)
     {
         action = ClientMenuAction(action);
+        if (HandleAuctionOption(target, (int)action)) return;
         if (HandleBboItemOption(target, (int)action)) return;
         if (HandleBboSocialOption(target, (int)action)) return;
         if ((int)action == 390 && BboChooseShipOption(target, (int)action)) return;

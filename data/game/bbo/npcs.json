@@ -442,6 +442,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -1372,6 +1380,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -5544,6 +5560,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -7161,6 +7185,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -8369,6 +8401,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -10036,6 +10076,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -11156,6 +11204,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -12283,6 +12339,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -13530,6 +13594,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -15609,6 +15681,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -17314,6 +17394,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -19221,6 +19309,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -20211,6 +20307,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -22230,6 +22334,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -24211,6 +24323,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -25114,6 +25234,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -27075,6 +27203,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -27895,6 +28031,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -29347,6 +29491,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -30653,6 +30805,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -31415,6 +31575,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -33127,6 +33295,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -34195,6 +34371,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -35176,6 +35360,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -36270,6 +36462,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -37453,6 +37653,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -38381,6 +38589,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -39280,6 +39496,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -40437,6 +40661,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -41393,6 +41625,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -42291,6 +42531,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -43347,6 +43595,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -44595,6 +44851,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -45523,6 +45787,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -46535,6 +46807,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -47745,6 +48025,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -48791,6 +49079,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -50017,6 +50313,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -51249,6 +51553,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -52350,6 +52662,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -53595,6 +53915,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -54978,6 +55306,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -56231,6 +56567,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -56436,6 +56780,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -57134,6 +57486,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -58320,6 +58680,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -62801,6 +63169,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -63460,6 +63836,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -64177,6 +64561,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -64866,6 +65258,14 @@
         "Text": "Collect my mail"
       },
       {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -65553,6 +65953,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",
@@ -66447,6 +66855,14 @@
       {
         "Action": "Collect",
         "Text": "Collect my mail"
+      },
+      {
+        "Action": 421,
+        "Text": "Collect auction prizes"
+      },
+      {
+        "Action": 420,
+        "Text": "Pawn articles"
       },
       {
         "Action": "Bye",

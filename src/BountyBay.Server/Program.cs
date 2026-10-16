@@ -81,6 +81,7 @@ try
     List<Task> running = servers.Select(server => server.RunAsync(stopping.Token)).ToList();
     if (settings.Bots.Enabled) bots.SetCount(settings.Bots.Count, stopping.Token);
     context.World.StartTicking(stopping.Token);
+    AuctionHouse.Start(context, stopping.Token);
     console.Start();
     await Task.WhenAll(running);
 }
