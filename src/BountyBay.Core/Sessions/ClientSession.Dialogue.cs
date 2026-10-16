@@ -44,6 +44,7 @@ public sealed partial class ClientSession
         if (ChooseShipyardOption(target, (int)action)) return;
         if (HandleFleetOption(target, (int)action)) return;
         if (HandleGuildOption(target, (int)action)) return;
+        if (HandleGuildWarOption(target, (int)action)) return;
         Context.Data.Npcs.TryGetValue(target, out NpcDefinition? npc);
         switch (action)
         {

@@ -14,7 +14,7 @@ public sealed partial class ClientSession
     [
         "Name", "Model", "ActionSet", "CollideRadius", "Face", "BodyType", "Hair", "HairColor",
         "TexColor", "Hat", "CapColor", "LeftHand", "RightHand", "HP", "MaxHP", "Level", "Title", "RatioHP", "RatioSP",
-        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit",
+        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit", "UnionName",
     ];
 
     private static readonly string[] PrivateShipProperties = ["Money", "Load", "LoadMax", "VisualRange"];
@@ -116,6 +116,7 @@ public sealed partial class ClientSession
         PrepareHudProperties();
 
         ApplyBboSocialProperties();
+        ApplyColonyProperties();
         ApplyBboCharacterProperties();
         ApplyLeisureProperties();
         Send(LoginPackets.PropertyTableDefinition(), "(property table)");
@@ -126,6 +127,7 @@ public sealed partial class ClientSession
 
         bool legacyScene = character.Scene / 1000 == 1001;
         int scene = character.Scene != 0 && !legacyScene && Context.Data.Scenes.Exists(character.Scene) ? character.Scene : WorldSettings.StartScene;
+        scene = GuildWarLoginScene(scene);
         Vector3? position = character.Position is { Length: 3 } saved && scene == character.Scene
             ? new Vector3(saved[0], saved[1], saved[2])
             : null;

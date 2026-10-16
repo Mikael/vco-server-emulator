@@ -38,7 +38,7 @@ public sealed class CommandRouter
         "StatueSetMessage", "TakeUp", "TeamInvite", "TeamObj", "TransferConsProffer", "Unlay", "UseTo",
         "UseToBoxItem", "UseUniqueSkill", "WarCitySetting",
         "ChangePetName", "NoviceToNext", "PetCmd", "PetSkill", "ShowRewardInfo", "RecvSM", "RepairShip", "RenameShip", "ChangeShip", "NextAmmo",
-        "OceanRob", "ConsQuit", "ConsDismiss", "CloseConsApply", "ProcessConsApply", "ChangeConsWarState", "BeforeConsBid",
+        "OceanRob", "ConsBid", "ChooseCityStyle", "SetDLMap", "CityInfo_Q", "JoinUnion", "ShowPrevUnionCons", "csImpeachVote", "ConsQuit", "ConsDismiss", "CloseConsApply", "ProcessConsApply", "ChangeConsWarState", "BeforeConsBid",
     ];
 
     private readonly Dictionary<string, ITextCommand> _commands = [];
@@ -53,7 +53,6 @@ public sealed class CommandRouter
     public static CommandRouter CreateDefault()
         => new CommandRouter()
             .Add(new BboUnsupportedCommands())
-            .Add(new ArmUpgradeCommands())
             .Add(new SystemCommands())
             .Add(new BboSelectCommand())
             .Add(new BboSellCommand())
@@ -121,6 +120,7 @@ public sealed class CommandRouter
             .Add(new FireFlagCommands())
             .Add(new BeliefFuseCommands())
             .Add(new SoulCommands())
+            .Add(new ArmUpgradeCommands())
             .Add(new TotemCommands())
             .Add(new RoleBankCommands())
             .Add(new ParcelCostCommands())
@@ -147,7 +147,10 @@ public sealed class CommandRouter
             .Add(new CopyCommands())
             .Add(new TowerCommands())
             .Add(new MatchRecordCommands())
-            .Add(new LeisureCommands());
+            .Add(new LeisureCommands())
+            .Add(new GuildWarCommands())
+            .Add(new ColonyCommands())
+            .Add(new ImpeachCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

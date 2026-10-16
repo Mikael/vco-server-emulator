@@ -1,0 +1,281 @@
+{
+  "_source": "Routes/buttons/limits/requirements: CLIENT RESOURCE\\ini\\window\\suspend\\data\\Suspend.ini [<Route>DevRoute-<Control>] + UILogic getButtonPointer tables. Costs, levels, points, indexes, union HQs: GUESS.",
+  "FoundCost": 100000,
+  "FounderDuty": 4,
+  "DevelopDuty": 3,
+  "NameLength": 16,
+  "Styles": [
+    "Pastoral Village",
+    "Industrial Town",
+    "Pirate Hideout"
+  ],
+  "LevelContribution": [
+    0,
+    1000,
+    5000,
+    20000,
+    50000
+  ],
+  "LevelUnionContribution": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "PointsPerLevel": 5,
+  "CityType": 2,
+  "IndexPerLevel": 100,
+  "IndexMax": 1000,
+  "BasePopulation": 1000,
+  "PopulationPerLevel": 500,
+  "BaseFood": 1000,
+  "FoodPerGatheringLevel": 100,
+  "UnionTarget": 20000,
+  "UnionPageSize": 3,
+  "Unions": [
+    {
+      "Code": "ldl",
+      "Name": "The Nederland's Merchant's Alliance",
+      "Headquarters": "Amsterdam"
+    },
+    {
+      "Code": "bld",
+      "Name": "The English Channel Merchant's Alliance",
+      "Headquarters": "London"
+    },
+    {
+      "Code": "xdzh",
+      "Name": "The Western Mediterranean Merchant's Alliance",
+      "Headquarters": "Genoa"
+    },
+    {
+      "Code": "ybly",
+      "Name": "The Iberian Merchant's Alliance",
+      "Headquarters": "Lisbon"
+    },
+    {
+      "Code": "ysl",
+      "Name": "The Islandi Merchant's Alliance",
+      "Headquarters": "Istanbul"
+    }
+  ],
+  "Routes": [
+    {
+      "Type": 0,
+      "Name": "Industry",
+      "Buttons": [
+        {
+          "Name": "Invention Drawing",
+          "Max": 4,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "High-level Development",
+          "Max": 1,
+          "RequiresIndex": 0,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Gun Development",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Poleax Development",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Long Sword Development",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Falchion Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Helmet Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Chest Badge Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Necklace Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Ring Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Fashion Design",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Pet Selling",
+          "Max": 1,
+          "RequiresIndex": 1,
+          "RequiresLevel": 1
+        }
+      ]
+    },
+    {
+      "Type": 1,
+      "Name": "Trade",
+      "Buttons": [
+        {
+          "Name": "Open of Trade",
+          "Max": 1,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Professional Supply of Goods",
+          "Max": 5,
+          "RequiresIndex": 0,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Reduced Tax",
+          "Max": 2,
+          "RequiresIndex": 1,
+          "RequiresLevel": 3
+        },
+        {
+          "Name": "Inflatable Profits",
+          "Max": 2,
+          "RequiresIndex": 0,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Commercial Financing",
+          "Max": 2,
+          "RequiresIndex": 3,
+          "RequiresLevel": 2
+        }
+      ]
+    },
+    {
+      "Type": 2,
+      "Name": "Gathering",
+      "Buttons": [
+        {
+          "Name": "Ore Market",
+          "Max": 5,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Timber Market",
+          "Max": 5,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Dredging Market",
+          "Max": 5,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Crops Market",
+          "Max": 5,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        }
+      ]
+    },
+    {
+      "Type": 3,
+      "Name": "Military",
+      "Buttons": [
+        {
+          "Name": "Cannon Development",
+          "Max": 1,
+          "RequiresIndex": 6,
+          "RequiresLevel": 4
+        },
+        {
+          "Name": "Cannon Ball Expert",
+          "Max": 4,
+          "RequiresIndex": 0,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Flagship Development",
+          "Max": 1,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Gunboat Development",
+          "Max": 1,
+          "RequiresIndex": 2,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Merchant Ship Development",
+          "Max": 1,
+          "RequiresIndex": 2,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Yacht Development",
+          "Max": 1,
+          "RequiresIndex": 2,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Military Development",
+          "Max": 4,
+          "RequiresIndex": -1,
+          "RequiresLevel": 0
+        },
+        {
+          "Name": "Ram Development",
+          "Max": 1,
+          "RequiresIndex": 6,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Grappling Development",
+          "Max": 1,
+          "RequiresIndex": 6,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Expendables Development",
+          "Max": 1,
+          "RequiresIndex": 6,
+          "RequiresLevel": 1
+        },
+        {
+          "Name": "Armor Development",
+          "Max": 1,
+          "RequiresIndex": 6,
+          "RequiresLevel": 1
+        }
+      ]
+    }
+  ]
+}

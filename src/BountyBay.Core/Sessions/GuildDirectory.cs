@@ -402,6 +402,8 @@ public static class GuildDirectory
         guilds.Remove(guild);
         foreach (Guild other in guilds) other.Relations.Remove(guild.Name);
         Save();
+        GuildWarDirectory.GuildDisbanded(context, guild.Name);
+        ColonyDirectory.GuildDisbanded(context, guild.Name);
         foreach (ClientSession member in members)
         {
             Part(member);

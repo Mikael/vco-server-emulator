@@ -181,6 +181,7 @@ public sealed class World
         }
         TickClock();
         TickMonsters();
+        GuildWarDirectory.Tick(_context);
         if (_tick % Math.Max(1, _context.Data.Rules.Character.RegenerationSeconds) != 0) return;
         foreach ((int id, MonsterState state) in _monsters)
         {

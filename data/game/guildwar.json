@@ -1,0 +1,66 @@
+{
+  "_source": "Siege cities: CLIENT ini\\window\\AttackCity.ini (main Emplacement). Bid unit/limits: CLIENT dlgAttackCity texts (10000 .. 20 billion). Weekly siege: WEB ac=157&aid=92 (level-5 guild leader bids guild funds; MinGuildLevel lowered to 1 because emulator guilds never level). Schedule, rewards, entries, scene, GM: GUESS.",
+  "War": {
+    "SiegeCities": [
+      "Athens",
+      "Madeira",
+      "Cape Town",
+      "Malacca",
+      "Nagasaki",
+      "Barcelona",
+      "London",
+      "Oslo",
+      "Aden",
+      "Zhigu",
+      "Seoul Port"
+    ],
+    "Schedule": {
+      "Open": true,
+      "Week": 6,
+      "Hour": 20,
+      "Minute": 0,
+      "Prepare": 30,
+      "Recon": 10,
+      "Battle": 60
+    },
+    "BidUnit": 10000,
+    "MinBidUnits": 1,
+    "MaxBidUnits": 2000000,
+    "MinRaiseUnits": 1,
+    "MinGuildLevel": 1,
+    "BidderDuty": 4,
+    "OfficerDuty": 2,
+    "RequireBattleState": true,
+    "MaxRegistrations": 50,
+    "WeeklyEntries": 1,
+    "WarScene": 1900023,
+    "SceneKind": 28,
+    "BulletinKind": 42,
+    "WinnerRewardPercent": 10,
+    "LoserCompensationPercent": 0,
+    "KillMerit": 10,
+    "StatueMessageLength": 280,
+    "GmOpenToAll": true,
+    "Gms": [],
+    "BarMax": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "ImpeachSeconds": 30,
+    "ImpeachSceneKinds": [
+      26,
+      31,
+      33,
+      41,
+      48,
+      49
+    ]
+  }
+}

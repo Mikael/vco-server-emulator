@@ -182,6 +182,7 @@ public sealed partial class ClientSession
             return;
         }
 
+        GuildWarDirectory.KnockedOut(this, null);
         if (BattleKnockedOut())
         {
             state.Target = null;

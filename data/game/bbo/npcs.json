@@ -521,6 +521,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -902,6 +906,10 @@
     "Z": 120.69,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2043,6 +2051,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -5703,6 +5715,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -6293,6 +6309,10 @@
     "Z": -198.32,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -7334,6 +7354,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -8562,6 +8586,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -9053,6 +9081,10 @@
     "Z": -134.46,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -10251,6 +10283,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -10638,6 +10674,10 @@
     "Z": -48.09,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -11389,6 +11429,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -11945,6 +11989,10 @@
     "Z": 40.31,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -12524,6 +12572,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -13047,6 +13099,10 @@
     "Z": -16.39,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -13785,6 +13841,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -14598,6 +14658,10 @@
     "Z": 54.34,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -16240,6 +16304,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -17621,6 +17689,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -19331,6 +19403,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -19920,6 +19996,10 @@
     "Z": -27.43,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -20781,6 +20861,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -21525,6 +21609,10 @@
     "Z": -60.52,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -22442,6 +22530,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -23313,6 +23405,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -24097,6 +24193,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -25358,6 +25458,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -27281,6 +27385,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -27795,6 +27903,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -28171,6 +28283,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -29798,6 +29914,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -30121,6 +30241,10 @@
     "Z": -71.44,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -31120,6 +31244,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -31898,6 +32026,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -33634,6 +33766,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -34718,6 +34854,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -35715,6 +35855,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -36827,6 +36971,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -37594,6 +37742,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -38817,6 +38969,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -39891,6 +40047,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -41068,6 +41228,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -42040,6 +42204,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -42956,6 +43124,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -43867,6 +44039,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -45290,6 +45466,10 @@
         "Text": "Masters and apprentices"
       },
       {
+        "Action": 700,
+        "Text": "Siege war"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -46234,6 +46414,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -47262,6 +47446,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -48486,6 +48674,10 @@
       {
         "Action": 425,
         "Text": "Masters and apprentices"
+      },
+      {
+        "Action": 700,
+        "Text": "Siege war"
       },
       {
         "Action": "Bye",
@@ -51158,6 +51350,10 @@
     "Greeting": "Good day.",
     "Options": [
       {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -53548,6 +53744,10 @@
     "Z": 77.58,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -56150,6 +56350,10 @@
     "Z": -264.49,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -62839,6 +63043,10 @@
     "Z": -8.6,
     "Greeting": "Good day.",
     "Options": [
+      {
+        "Action": 710,
+        "Text": "Colonial Port affairs"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
