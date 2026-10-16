@@ -28,6 +28,9 @@ public sealed class BboSelectCommand : ITextCommand
                 return true;
             case ClientSession.ImpawnView when session.ImpawnSlotClick(index):
                 return true;
+            case ClientSession.BeliefFuseView:
+                session.BeliefFuseSlot(index);
+                return true;
             case ClientSession.CompoundView:
                 session.CompoundSlot(index);
                 return true;

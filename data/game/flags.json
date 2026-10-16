@@ -1,0 +1,26 @@
+{
+  "_source": "Props: CLIENT RESOURCE\\ini\\ArmMaterial.ini [FlagLandProp0..6] / [FlagSeaProp0..6] (Prop, Name, Type 1 = float, Base0..3, Step0..3); index 7..13 = sea props (client adds 7 for FlagType 2). Levels: Props/MaxIndex derived from the client value formula (GUESS); Honor, Silver and Materials are GUESS (not in the client).",
+  "StartingHonor": 0,
+  "Props": [
+    { "Index": 0, "Prop": "AddDF", "Name": "Added Defense", "Float": false, "Base": [50, 130, 220, 330], "Step": [14, 16, 20, 0] },
+    { "Index": 1, "Prop": "AddDodgeRatio", "Name": "Dodge Rating", "Float": false, "Base": [20, 60, 110, 170], "Step": [6, 8, 10, 0] },
+    { "Index": 2, "Prop": "DoubleDamage0", "Name": "Critical Strike Resist", "Float": false, "Base": [4, 10, 21, 32], "Step": [1, 2, 2, 0] },
+    { "Index": 3, "Prop": "AddDamageScope0", "Name": "Damage Reduction", "Float": false, "Base": [4, 10, 21, 32], "Step": [1, 2, 2, 0] },
+    { "Index": 4, "Prop": "Ward", "Name": "Parry", "Float": false, "Base": [20, 45, 75, 110], "Step": [4, 5, 6, 0] },
+    { "Index": 5, "Prop": "Physique", "Name": "Physique", "Float": false, "Base": [50, 85, 140, 215], "Step": [6, 10, 14, 0] },
+    { "Index": 6, "Prop": "Backbone", "Name": "Willpower", "Float": false, "Base": [20, 45, 75, 110], "Step": [4, 5, 6, 0] },
+    { "Index": 7, "Prop": "AddCannonDR", "Name": "Ship Dodge Rate", "Float": false, "Base": [5, 17, 30, 46], "Step": [2, 2, 3, 0] },
+    { "Index": 8, "Prop": "AddCannKeyDF", "Name": "Cannon Defense Rating", "Float": false, "Base": [5, 11, 22, 37], "Step": [1, 2, 3, 0] },
+    { "Index": 9, "Prop": "AddSeaKeyDFInc", "Name": "Hull Operation", "Float": false, "Base": [8, 14, 20, 26], "Step": [1, 1, 1, 0] },
+    { "Index": 10, "Prop": "AddNcDDBump", "Name": "Ramming Defense", "Float": false, "Base": [10, 23, 42, 62], "Step": [2, 3, 4, 0] },
+    { "Index": 11, "Prop": "AddNcDDShip", "Name": "Artillery Defense", "Float": false, "Base": [5, 16, 28, 45], "Step": [2, 2, 3, 0] },
+    { "Index": 12, "Prop": "AddTorpedoDF", "Name": "Mine Defense", "Float": false, "Base": [1, 7, 13, 19], "Step": [1, 1, 1, 0] },
+    { "Index": 13, "Prop": "AddDDSailor", "Name": "Sailor Defense", "Float": true, "Base": [20, 34, 60, 95], "Step": [2, 4, 6, 0] }
+  ],
+  "Levels": [
+    { "Level": 1, "Props": 1, "MaxIndex": 5, "ForgeHonor": 50, "ForgeSilver": 0, "ForgeMaterials": [], "RemakeHonor": 100, "RemakeSilver": 0, "RemakeMaterials": [] },
+    { "Level": 2, "Props": 2, "MaxIndex": 10, "ForgeHonor": 100, "ForgeSilver": 0, "ForgeMaterials": [], "RemakeHonor": 200, "RemakeSilver": 0, "RemakeMaterials": [] },
+    { "Level": 3, "Props": 3, "MaxIndex": 15, "ForgeHonor": 200, "ForgeSilver": 0, "ForgeMaterials": [], "RemakeHonor": 400, "RemakeSilver": 0, "RemakeMaterials": [] },
+    { "Level": 4, "Props": 3, "MaxIndex": 0, "ForgeHonor": 0, "ForgeSilver": 0, "ForgeMaterials": [], "RemakeHonor": 800, "RemakeSilver": 0, "RemakeMaterials": [] }
+  ]
+}

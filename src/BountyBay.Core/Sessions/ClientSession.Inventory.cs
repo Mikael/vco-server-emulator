@@ -54,6 +54,7 @@ public sealed partial class ClientSession
             bag["ShowPrice"] = cost.Value;
         }
         AddBboItemId(bag, item);
+        AddFireFlagItemProperties(bag, item);
         ItemCatalog.Extend(bag, item.Name);
         return bag;
     }

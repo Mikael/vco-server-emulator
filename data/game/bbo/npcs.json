@@ -442,11 +442,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -1382,11 +1382,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -5560,11 +5560,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -7185,11 +7185,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -8403,11 +8403,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -10076,11 +10076,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -11206,11 +11206,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -12341,11 +12341,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -13596,11 +13596,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -15681,11 +15681,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -17396,11 +17396,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -19309,11 +19309,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -20309,11 +20309,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -20691,6 +20691,10 @@
       {
         "Action": 360,
         "Text": "Combine articles"
+      },
+      {
+        "Action": 400,
+        "Text": "Faith fusion"
       },
       {
         "Action": "Bye",
@@ -22334,11 +22338,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -24323,11 +24327,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -25236,11 +25240,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -27203,11 +27207,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -28033,11 +28037,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -29491,11 +29495,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -30805,11 +30809,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -31577,11 +31581,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -33295,11 +33299,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -34371,11 +34375,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -35362,11 +35366,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -36464,11 +36468,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -37653,11 +37657,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -38589,11 +38593,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -39498,11 +39502,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -40661,11 +40665,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -41625,11 +41629,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -42533,11 +42537,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -43597,11 +43601,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -44851,11 +44855,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -45789,11 +45793,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -46809,11 +46813,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -48025,11 +48029,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -49081,11 +49085,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -50315,11 +50319,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -51553,11 +51557,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -52664,11 +52668,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -53917,11 +53921,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -55306,11 +55310,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -56567,11 +56571,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -56782,11 +56786,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -57488,11 +57492,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -58682,11 +58686,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -63169,11 +63173,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -63838,11 +63842,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -64561,11 +64565,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -65258,11 +65262,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -65955,11 +65959,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {
@@ -66857,11 +66861,11 @@
         "Text": "Collect my mail"
       },
       {
-        "Action": 421,
+        "Action": 681,
         "Text": "Collect auction prizes"
       },
       {
-        "Action": 420,
+        "Action": 680,
         "Text": "Pawn articles"
       },
       {

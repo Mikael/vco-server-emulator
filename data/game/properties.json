@@ -1074,5 +1074,69 @@
   {
     "Name": "StallPlayerPosZ",
     "Type": "U32"
+  },
+  {
+    "Name": "FlagType",
+    "Type": "U32"
+  },
+  {
+    "Name": "FlagIndex",
+    "Type": "U32"
+  },
+  {
+    "Name": "FlagFinal",
+    "Type": "U32"
+  },
+  {
+    "Name": "FlagProp",
+    "Type": "String"
+  },
+  {
+    "Name": "FlagHonorExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "NeedWorkLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "FuseInfo",
+    "Type": "String"
+  },
+  {
+    "Name": "DoubleDamage0",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDamageScope0",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddCannonDR",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddCannKeyDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddSeaKeyDFInc",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddNcDDBump",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddNcDDShip",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddTorpedoDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDDSailor",
+    "Type": "Float"
   }
 ]

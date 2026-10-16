@@ -9,11 +9,11 @@ namespace BountyBay.Core.Sessions;
 
 public static class AuctionOption
 {
-    public const int First = 420;
-    public const int Pawn = 420;
-    public const int Prizes = 421;
-    public const int Leave = 429;
-    public const int Last = 439;
+    public const int First = 680;
+    public const int Pawn = 680;
+    public const int Prizes = 681;
+    public const int Leave = 689;
+    public const int Last = 699;
 }
 
 public sealed partial class ClientSession

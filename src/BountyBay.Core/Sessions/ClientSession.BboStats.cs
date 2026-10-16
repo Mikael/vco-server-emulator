@@ -25,6 +25,7 @@ public sealed partial class ClientSession
     public void ApplyBboCharacterProperties()
     {
         PutBboProperty("ShowNouse", Character.ShowNouse);
+        ApplyFlagHonorProperty();
         foreach ((string name, object value) in WorkProperties()) PutBboProperty(name, value);
         foreach (string name in HonorProperties.Where(name => !Properties.ContainsKey(name))) PutBboProperty(name, 0);
     }
