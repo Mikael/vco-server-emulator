@@ -48,7 +48,7 @@ public sealed partial class ClientSession
         PetRecord? pet = Character.Pet;
         if (pet is not { Out: true } || Mover == null || AtSea) return;
         (float x, float z) = Mover.Now();
-        Send(ScenePackets.CreateObject(PetObjectId, ObjectKind.Npc, PetModel), "(pet)");
+        Send(ScenePackets.CreateObject(PetObjectId, ObjectKind.Npc, WhistlePetModel), "(pet)");
         Send(ScenePackets.ObjectProperties(PetObjectId, PetProperties(pet)), "(pet properties)");
         Send(ScenePackets.PlaceObject(PetObjectId, x + 1.5f, Height, z + 1.5f), "(place pet)");
         Send(ScenePackets.ShowObject(PetObjectId), "(show pet)");
@@ -161,7 +161,7 @@ public sealed partial class ClientSession
         var values = new PropertyBag
         {
             ["Name"] = pet.Name,
-            ["Model"] = PetModel,
+            ["Model"] = WhistlePetModel,
             ["ActionSet"] = 0,
             ["CollideRadius"] = 0.5f,
             ["HP"] = health,

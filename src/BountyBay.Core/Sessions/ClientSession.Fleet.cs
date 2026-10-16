@@ -245,6 +245,7 @@ public sealed partial class ClientSession
         PropertyBag details = BboShipDetails(FleetShipDetails());
         details.Remove("Index");
         details.Remove("Amount");
+        ShipModelDetails(details);
         Send(ViewPackets.UpdateItem(ViewId.Ship, 1, details), "(ship details)");
         RefreshShipWindowProperties();
     }

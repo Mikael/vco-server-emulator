@@ -40,10 +40,13 @@ public sealed class BboSelectCommand : ITextCommand
                 return true;
             case ClientSession.AideListView or ClientSession.AideDeployView when session.AideSelect(view, how, index):
                 return true;
+            case ClientSession.GuildArmComposeView or ClientSession.GuildArmMedalView when session.GuildArmSelect(view, index):
+                return true;
             case ClientSession.CompoundView:
                 session.CompoundSlot(index);
                 return true;
         }
+        if (session.WhistleSelect(view, how, index) || session.ShipModelSelect(view, how, index)) return true;
         string[] classic = [words[0], words[1], words[2], words[3]];
         if (session.OnTradeSelect(view, how, index) || session.OnStallSelect(view, how, index)
             || session.OnWarehouseSelect(view, how, index)) return true;

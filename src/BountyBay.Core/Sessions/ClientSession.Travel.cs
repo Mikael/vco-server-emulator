@@ -69,6 +69,7 @@ public sealed partial class ClientSession
         _linkSerial++;
         if (Mover == null || (AtSea && SeaSunk)) return;
         BboCheckCoastExit(x, z);
+        AutoSailOnMove();
         (float fromX, float fromZ) = Mover.Now();
         SceneLink? link = Links.WalkInto(Scene, fromX, fromZ, x, z);
         if (link != null) WatchArrival(link);

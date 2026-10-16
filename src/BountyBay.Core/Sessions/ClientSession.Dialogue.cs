@@ -25,10 +25,12 @@ public sealed partial class ClientSession
     public void ChooseOption(int target, DialogueAction action)
     {
         action = ClientMenuAction(action);
+        if (HandleGuildHallOption(target, (int)action)) return;
         if (HandleAideOption(target, (int)action)) return;
         if (HandleArmUpgradeOption(target, (int)action)) return;
         if (HandleAuctionOption(target, (int)action)) return;
         if (HandleBboItemOption(target, (int)action)) return;
+        if (HandleShipModelOption(target, (int)action) || HandleWhistleOption(target, (int)action)) return;
         if (HandleTotemOption(target, (int)action)) return;
         if (HandleSoulOption(target, (int)action)) return;
         if (HandleFlagFuseOption(target, (int)action)) return;

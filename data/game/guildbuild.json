@@ -1,0 +1,54 @@
+{
+  "Activity": {
+    "Levels": [16000, 43000, 82000, 132000, 201000, 281000],
+    "DailyLogin": 20,
+    "CopyEntry": 50,
+    "CopyStage": 100,
+    "MatchWin": 500,
+    "MatchPlayed": 100
+  },
+  "Construction": {
+    "MaxLevel": 5,
+    "DegreePerLevel": 100,
+    "ExpPerDegree": 10,
+    "Medals": [
+      { "Item": "DJ007870", "Degree": 0, "Amount": 1, "Contribution": 10 },
+      { "Item": "DJ007871", "Degree": 1, "Amount": 1, "Contribution": 10 },
+      { "Item": "DJ007872", "Degree": 2, "Amount": 1, "Contribution": 10 },
+      { "Item": "DJ007873", "Degree": 3, "Amount": 1, "Contribution": 10 },
+      { "Item": "DJ007874", "Degree": 0, "Amount": 25, "Contribution": 25 },
+      { "Item": "DJ007875", "Degree": 1, "Amount": 25, "Contribution": 25 },
+      { "Item": "DJ007876", "Degree": 2, "Amount": 25, "Contribution": 25 },
+      { "Item": "DJ007877", "Degree": 3, "Amount": 25, "Contribution": 25 }
+    ],
+    "LogPageSize": 20,
+    "LogLimit": 200
+  },
+  "Medals": {
+    "Fragment": "DJ010398",
+    "FragmentsPerMedal": 20,
+    "SplitFragments": 5,
+    "Land": ["DJ010400", "DJ010401", "DJ010402", "DJ010403", "DJ010404"],
+    "Sea": ["DJ010405", "DJ010406", "DJ010407", "DJ010408", "DJ010409"],
+    "UpgradeFragments": [20, 40, 60, 80]
+  },
+  "Copy": {
+    "Scene": 1900098,
+    "Minutes": 120,
+    "MinMembers": 1,
+    "BatchLimit": 5,
+    "Stages": 11,
+    "KillsPerStage": 10,
+    "RunsPerSeason": 1
+  },
+  "Match": {
+    "Guilds": 8,
+    "QuarterHour": 116,
+    "SemiHour": 140,
+    "FinalHour": 164,
+    "WagerTypes": [
+      { "Name": "Silver", "Unit": 10000 }
+    ],
+    "MinimumOdds": 1.1
+  }
+}

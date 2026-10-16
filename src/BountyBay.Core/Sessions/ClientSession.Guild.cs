@@ -87,6 +87,7 @@ public sealed partial class ClientSession
             entries.Add((DialogueEntry.Option, GuildCreateOption, $"Found a guild ({rules.CreationFee} silver)"));
             entries.Add((DialogueEntry.Option, GuildJoinOption, "Join a guild"));
         }
+        if (guild != null && self != null) entries.Add((DialogueEntry.Option, GuildHallOption, "Guild hall services"));
         entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
         Send(ChatPackets.NpcDialogue(target, entries), "(guild dialogue)");
     }

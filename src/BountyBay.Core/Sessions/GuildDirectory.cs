@@ -413,6 +413,7 @@ public static class GuildDirectory
             foreach (ClientSession member in Online(context, other)) member.Send(gone, "(guild relation removed)");
         }
         Log.Info(session.Tag, $"{session.Name} disbands the guild {guild.Name}");
+        GuildBuildDirectory.Dissolved(context, guild.Name);
     }
 
     public static void SetTenet(ClientSession session, string tenet)

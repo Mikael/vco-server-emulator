@@ -38,7 +38,7 @@ public sealed class CommandRouter
         "StatueSetMessage", "TakeUp", "TeamInvite", "TeamObj", "TransferConsProffer", "Unlay", "UseTo",
         "UseToBoxItem", "UseUniqueSkill", "WarCitySetting",
         "ChangePetName", "NoviceToNext", "PetCmd", "PetSkill", "ShowRewardInfo", "RecvSM", "RepairShip", "RenameShip", "ChangeShip", "NextAmmo",
-        "ConsQuit", "ConsDismiss", "CloseConsApply", "ProcessConsApply", "ChangeConsWarState", "BeforeConsBid",
+        "OceanRob", "ConsQuit", "ConsDismiss", "CloseConsApply", "ProcessConsApply", "ChangeConsWarState", "BeforeConsBid",
     ];
 
     private readonly Dictionary<string, ITextCommand> _commands = [];
@@ -127,7 +127,20 @@ public sealed class CommandRouter
             .Add(new BoothSearchCommands())
             .Add(new ViewArmCommands())
             .Add(new LeaveWordCommands())
-            .Add(new AideCommands());
+            .Add(new AideCommands())
+            .Add(new GuildCopyCommands())
+            .Add(new GuildMatchCommands())
+            .Add(new GuildArmCommands())
+            .Add(new GuildBuildCommands())
+            .Add(new PetWhistleCommands())
+            .Add(new PetAutoSkillCommands())
+            .Add(new SeaBombCommands())
+            .Add(new TorpedoCommands())
+            .Add(new AutoSailCommands())
+            .Add(new FleetCommandCommands())
+            .Add(new RobberyCommands())
+            .Add(new ContrabandCommands())
+            .Add(new ShipModelCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

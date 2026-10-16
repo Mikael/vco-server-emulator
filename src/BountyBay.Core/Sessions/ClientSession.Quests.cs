@@ -125,6 +125,7 @@ public sealed partial class ClientSession
 
     public void OnMonsterKilled(int monsterId)
     {
+        GuildCopyMonsterKilled();
         PetGainExperience(10);
         Context.Data.Monsters.TryGetValue(monsterId, out MonsterDefinition? killed);
         if (killed != null) GainExploreKill(killed);

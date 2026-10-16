@@ -131,8 +131,10 @@ public sealed partial class ClientSession
         EnterScene(scene, position);
         EnterWorldSocial();
         EnterWorldGuild();
+        EnterWorldGuildBuild();
         EnterWorldBbo();
         EnterWorldBboCharacter();
+        SendRobberyLevels();
         EnterWorldAides();
         EnterWorldTotems();
         BboStartRewards();

@@ -1314,5 +1314,89 @@
   {
     "Name": "SnArmType",
     "Type": "U32"
+  },
+  {
+    "Name": "ConsArmType",
+    "Type": "U8"
+  },
+  {
+    "Name": "ConCopyFlag",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetName",
+    "Type": "String"
+  },
+  {
+    "Name": "QualityPercent",
+    "Type": "Float"
+  },
+  {
+    "Name": "PetWhistleType",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetAT",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetMaxHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetHitRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetDodgeRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "PetMaxLoad",
+    "Type": "Float"
+  },
+  {
+    "Name": "AutoSkillList",
+    "Type": "String"
+  },
+  {
+    "Name": "AutoSkillLock",
+    "Type": "U32"
+  },
+  {
+    "Name": "dictate",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShowShipModel",
+    "Type": "U32"
+  },
+  {
+    "Name": "ModelMixTimes",
+    "Type": "U32"
+  },
+  {
+    "Name": "ModelMixType",
+    "Type": "U32"
+  },
+  {
+    "Name": "ModelMixName",
+    "Type": "String"
+  },
+  {
+    "Name": "RobLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "ContrabandLv",
+    "Type": "U32"
+  },
+  {
+    "Name": "SeaProtect",
+    "Type": "U32"
   }
 ]
