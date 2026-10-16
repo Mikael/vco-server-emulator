@@ -842,5 +842,225 @@
   {
     "Name": "CityName",
     "Type": "String"
+  },
+  {
+    "Name": "ShipRotate",
+    "Type": "Float"
+  },
+  {
+    "Name": "BumpPower",
+    "Type": "U32"
+  },
+  {
+    "Name": "NcDDBump",
+    "Type": "U32"
+  },
+  {
+    "Name": "CannonHR",
+    "Type": "U32"
+  },
+  {
+    "Name": "CannonDR",
+    "Type": "U32"
+  },
+  {
+    "Name": "CannonDB",
+    "Type": "U32"
+  },
+  {
+    "Name": "CannonKeyDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "HurtSailor",
+    "Type": "Float"
+  },
+  {
+    "Name": "SailorProtect",
+    "Type": "Float"
+  },
+  {
+    "Name": "NcIncShip",
+    "Type": "U32"
+  },
+  {
+    "Name": "NcDDShip",
+    "Type": "U32"
+  },
+  {
+    "Name": "SeaDBInc",
+    "Type": "U32"
+  },
+  {
+    "Name": "SeaKeyDFInc",
+    "Type": "U32"
+  },
+  {
+    "Name": "TorpedoAT",
+    "Type": "U32"
+  },
+  {
+    "Name": "TorpedoDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "CabinCannonL",
+    "Type": "U32"
+  },
+  {
+    "Name": "CabinCannonR",
+    "Type": "U32"
+  },
+  {
+    "Name": "RebuildBit",
+    "Type": "U32"
+  },
+  {
+    "Name": "SceneKind",
+    "Type": "U32"
+  },
+  {
+    "Name": "UnionName",
+    "Type": "String"
+  },
+  {
+    "Name": "TeamPickWay",
+    "Type": "U8"
+  },
+  {
+    "Name": "TeamPickLevel",
+    "Type": "U8"
+  },
+  {
+    "Name": "VIP",
+    "Type": "U32"
+  },
+  {
+    "Name": "AttackDistL",
+    "Type": "U32"
+  },
+  {
+    "Name": "AttackDistR",
+    "Type": "U32"
+  },
+  {
+    "Name": "AttackAngleL",
+    "Type": "U32"
+  },
+  {
+    "Name": "AttackAngleR",
+    "Type": "U32"
+  },
+  {
+    "Name": "QualityLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "Binding",
+    "Type": "U8"
+  },
+  {
+    "Name": "PsSearchPage",
+    "Type": "U8"
+  },
+  {
+    "Name": "SkillHap",
+    "Type": "U32"
+  },
+  {
+    "Name": "DoubleDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "DoubleDamage0_",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDamageScope",
+    "Type": "U32"
+  },
+  {
+    "Name": "AddDamageSco0_",
+    "Type": "U32"
+  },
+  {
+    "Name": "Ward",
+    "Type": "U32"
+  },
+  {
+    "Name": "Acute",
+    "Type": "U32"
+  },
+  {
+    "Name": "Physique",
+    "Type": "U32"
+  },
+  {
+    "Name": "Response",
+    "Type": "U32"
+  },
+  {
+    "Name": "Backbone",
+    "Type": "U32"
+  },
+  {
+    "Name": "ShowNouse",
+    "Type": "U32"
+  },
+  {
+    "Name": "ItemID",
+    "Type": "String"
+  },
+  {
+    "Name": "WorkType",
+    "Type": "U32"
+  },
+  {
+    "Name": "WorkLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "WorkExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "WorkExpMax",
+    "Type": "U32"
+  },
+  {
+    "Name": "WorkName",
+    "Type": "String"
+  },
+  {
+    "Name": "SeaPoints",
+    "Type": "U32"
+  },
+  {
+    "Name": "LandPoints",
+    "Type": "U32"
+  },
+  {
+    "Name": "MakePoints",
+    "Type": "U32"
+  },
+  {
+    "Name": "HonorLevel",
+    "Type": "U32"
+  },
+  {
+    "Name": "HonorExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "ChatSet",
+    "Type": "String"
+  },
+  {
+    "Name": "AwardFlag",
+    "Type": "U32"
+  },
+  {
+    "Name": "FirstAttack",
+    "Type": "U32"
   }
 ]

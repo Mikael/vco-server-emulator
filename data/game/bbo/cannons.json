@@ -1,0 +1,2280 @@
+{
+  "CannonEffect": {
+    "2500001": {
+      "particle": "PuTongPao1,paoguang",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "50"
+    },
+    "2510001": {
+      "particle": "PuTongPao1,paoguang",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "50"
+    },
+    "2520001": {
+      "particle": "putongpao1,paoguang",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "50"
+    },
+    "2500002": {
+      "particle": "SuShePao1",
+      "sound": "34",
+      "shake": "3",
+      "velocity": "30"
+    },
+    "2510002": {
+      "particle": "SuShePao2",
+      "sound": "34",
+      "shake": "3",
+      "velocity": "30"
+    },
+    "2520002": {
+      "particle": "SuShePao3",
+      "sound": "34",
+      "shake": "3",
+      "velocity": "30"
+    },
+    "2500005": {
+      "particle": "QuShePao1",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "80"
+    },
+    "2510005": {
+      "particle": "QuShePao2",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "80"
+    },
+    "2520005": {
+      "particle": "QuShePao3",
+      "sound": "34",
+      "shake": "2",
+      "velocity": "80"
+    },
+    "2500003": {
+      "particle": "SanDanPao1",
+      "sound": "34",
+      "shake": "4",
+      "velocity": "100"
+    },
+    "2510003": {
+      "particle": "SanDanPao2",
+      "sound": "34",
+      "shake": "4",
+      "velocity": "100"
+    },
+    "2520003": {
+      "particle": "SanDanPao3",
+      "sound": "34",
+      "shake": "4",
+      "velocity": "100"
+    },
+    "2500004": {
+      "particle": "putonghuopao",
+      "sound": "34",
+      "shake": "3",
+      "velocity": "80"
+    }
+  },
+  "ShellEffect": {
+    "1": {
+      "image1": "",
+      "tech1": "",
+      "image2": "test02",
+      "tech2": "motiveblend",
+      "sound1": "35",
+      "sound2": "35",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "zdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "zdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "2": {
+      "image1": "",
+      "tech1": "tga",
+      "image2": "test02",
+      "tech2": "motiveblend",
+      "sound1": "35",
+      "sound2": "35",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "cjdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "cjdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "3": {
+      "image1": "",
+      "tech1": "tga",
+      "image2": "test02",
+      "tech2": "tga",
+      "sound1": "35",
+      "sound2": "35",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "sdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "sdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "4": {
+      "image1": "",
+      "tech1": "tga",
+      "image2": "test02",
+      "tech2": "motiveblend",
+      "sound1": "35",
+      "sound2": "35",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "sdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "sdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "5": {
+      "image1": "RanShaoDan",
+      "tech1": "motiveblend",
+      "image2": "RanShaohuoqiu",
+      "tech2": "motiveblend",
+      "sound1": "237",
+      "sound2": "237",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "rsdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "rsdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "6": {
+      "image1": "YanWuDan",
+      "tech1": "tga",
+      "image2": "peiZhiMianPian",
+      "tech2": "motiveblend",
+      "sound1": "",
+      "sound2": "",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "ywdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "ywdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "7": {
+      "image1": "YeGuangDan",
+      "tech1": "tga",
+      "image2": "peiZhiMianPian",
+      "tech2": "motiveblend",
+      "sound1": "35",
+      "sound2": "35",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "ygdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "ygdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "8": {
+      "image1": "GouZi",
+      "tech1": "tga",
+      "image2": "peiZhiMianPian",
+      "tech2": "motiveblend",
+      "sound1": "",
+      "sound2": "",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "9": {
+      "image1": "",
+      "tech1": "",
+      "image2": "sx_huolongdan",
+      "tech2": "motiveblend",
+      "sound1": "",
+      "sound2": "",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "zdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "zdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "10": {
+      "image1": "",
+      "tech1": "",
+      "image2": "sx_yanwudan",
+      "tech2": "motiveblend",
+      "sound1": "",
+      "sound2": "",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "zdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "zdbz",
+      "mischited3": "",
+      "shake": "2"
+    },
+    "11": {
+      "image1": "",
+      "tech1": "",
+      "image2": "sx_lengningdan",
+      "tech2": "motiveblend",
+      "sound1": "",
+      "sound2": "",
+      "sound3": "",
+      "sound4": "36",
+      "shiphited1": "zdbz",
+      "shiphited2": "",
+      "shiphited3": "",
+      "mischited1": "",
+      "mischited2": "zdbz",
+      "mischited3": "",
+      "shake": "2"
+    }
+  },
+  "ShellTypes": {
+    "1": "explosive",
+    "2": "armor piercing",
+    "3": "grape",
+    "4": "chain",
+    "5": "incendiary",
+    "6": "smoke",
+    "7": "tracer/flare",
+    "8": "grappling hook"
+  },
+  "Items": [
+    {
+      "Key": "IDName00000333",
+      "Name": "Cannon Balls",
+      "Type": "Ammunition",
+      "Text": [
+        "common cannon"
+      ],
+      "Level": 1,
+      "DamageShip": 1.4,
+      "DamageSailor": 0.03,
+      "DamageSail": 1.4,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "EMU (GUESS)",
+        "DamageSailor": "EMU (GUESS)",
+        "DamageSail": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000334",
+      "Name": "Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "It's of extra harm to the durability of hull."
+      ],
+      "Level": 1,
+      "DamageShip": 2.1,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.7,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "EMU (GUESS)",
+        "DamageSailor": "EMU (GUESS)",
+        "DamageSail": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000335",
+      "Name": "Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "It's of extra harm to sailors."
+      ],
+      "Level": 1,
+      "DamageShip": 0.7,
+      "DamageSailor": 0.06,
+      "DamageSail": 0.7,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "EMU (GUESS)",
+        "DamageSailor": "EMU (GUESS)",
+        "DamageSail": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000336",
+      "Name": "Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "It's of extra harm to the durability of sail."
+      ],
+      "Level": 1,
+      "DamageShip": 0.7,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.1,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "EMU (GUESS)",
+        "DamageSailor": "EMU (GUESS)",
+        "DamageSail": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000337",
+      "Name": "Quality Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 10M, Hull Damage 2.8, Sailor Damage 0.01,Sail Damage 0.4."
+      ],
+      "Level": 2,
+      "DamageShip": 2.8,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.4,
+      "BlastRadius": 10,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/IDName00000337.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/IDName00000337.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/IDName00000337.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/IDName00000337.0"
+      }
+    },
+    {
+      "Key": "IDName00000338",
+      "Name": "Quality Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sailor Damage Ammunition has a hit chance to cause chaos and minor burning effect to enemy sail and helm.Damage Radius 10M, Hull Damage 0.4, Sailor Damage 0.1, Sail Damage 0.4."
+      ],
+      "Level": 2,
+      "DamageShip": 0.4,
+      "DamageSailor": 0.1,
+      "DamageSail": 0.4,
+      "BlastRadius": 10,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/IDName00000338.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/IDName00000338.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/IDName00000338.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/IDName00000338.0"
+      }
+    },
+    {
+      "Key": "IDName00000339",
+      "Name": "Quality Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 10M, Hull Damage 0.4, Sailor Damage 0.01,Sail Damage 2.8."
+      ],
+      "Level": 2,
+      "DamageShip": 0.4,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.8,
+      "BlastRadius": 10,
+      "Sources": {
+        "Level": "EMU (GUESS)",
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/IDName00000339.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/IDName00000339.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/IDName00000339.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/IDName00000339.0"
+      }
+    },
+    {
+      "Key": "IDName00000340",
+      "Name": "Barbette Ball",
+      "Type": "Ammunition",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000579",
+      "Name": "Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 10,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 1,
+      "Level": 1,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000580",
+      "Name": "BOSS Class One Cannons",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000581",
+      "Name": "BOSS Class Two Cannons",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000582",
+      "Name": "BOSS Class Three Cannons",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000583",
+      "Name": "Barbette Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000584",
+      "Name": "Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00000585",
+      "Name": "Light Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 11,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 2,
+      "Level": 2,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000586",
+      "Name": "Heavy Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 13,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 4,
+      "Level": 4,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000587",
+      "Name": "Victory Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 8,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 2000,
+      "NeedShipLevel": 7,
+      "Level": 7,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000588",
+      "Name": "Light Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 11,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 2,
+      "Level": 2,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000589",
+      "Name": "Medium Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 12,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 3,
+      "Level": 3,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000590",
+      "Name": "Thunder Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 14,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 5,
+      "Level": 5,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000591",
+      "Name": "Hurricane Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 13,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 3000,
+      "NeedShipLevel": 8,
+      "Level": 8,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000592",
+      "Name": "Medium Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 12,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 3,
+      "Level": 3,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000593",
+      "Name": "Heavy Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 13,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 4,
+      "Level": 4,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000594",
+      "Name": "Lightning Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 15,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 6,
+      "Level": 6,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000595",
+      "Name": "Annihilator Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 9,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 2000,
+      "NeedShipLevel": 9,
+      "Level": 9,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000596",
+      "Name": "Heavy Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 13,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 4,
+      "Level": 4,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000597",
+      "Name": "Thunder Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 14,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 5,
+      "Level": 5,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000598",
+      "Name": "Victory Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 16,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 7,
+      "Level": 7,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000599",
+      "Name": "Dictator Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 14,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 3000,
+      "NeedShipLevel": 10,
+      "Level": 10,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000600",
+      "Name": "Light Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 8,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 3000,
+      "NeedShipLevel": 2,
+      "Level": 2,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000601",
+      "Name": "Medium Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 6,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 2000,
+      "NeedShipLevel": 3,
+      "Level": 3,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000602",
+      "Name": "Thunder Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 14,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 5,
+      "Level": 5,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000603",
+      "Name": "Lightning Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 15,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 6,
+      "Level": 6,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000604",
+      "Name": "Hurricane Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 17,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 8,
+      "Level": 8,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000605",
+      "Name": "Lightning Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 15,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 6,
+      "Level": 6,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000606",
+      "Name": "Victory Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 16,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 7,
+      "Level": 7,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000607",
+      "Name": "Annihilator Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 18,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 9,
+      "Level": 9,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000608",
+      "Name": "Victory Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 16,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 7,
+      "Level": 7,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000609",
+      "Name": "Hurricane Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 17,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 8,
+      "Level": 8,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000610",
+      "Name": "Dictator Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 19,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 10,
+      "Level": 10,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000611",
+      "Name": "Hurricane Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 17,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 8,
+      "Level": 8,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000612",
+      "Name": "Annihilator Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 18,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 9,
+      "Level": 9,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000613",
+      "Name": "Heavy Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 10,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 3000,
+      "NeedShipLevel": 4,
+      "Level": 4,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000614",
+      "Name": "Annihilator Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 18,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 9,
+      "Level": 9,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000615",
+      "Name": "Dictator Howitzer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 19,
+      "Flight": 195.0,
+      "FireAngle": 60.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 10,
+      "Level": 10,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000616",
+      "Name": "Thunder Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 7,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 2000,
+      "NeedShipLevel": 5,
+      "Level": 5,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000617",
+      "Name": "Dictator Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 19,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 10,
+      "Level": 10,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000618",
+      "Name": "Medium Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 12,
+      "Flight": 150.0,
+      "FireAngle": 160.0,
+      "ShotTime": 5000,
+      "NeedShipLevel": 3,
+      "Level": 3,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00000619",
+      "Name": "Lightning Quick Firer",
+      "Type": "Cannon",
+      "Text": [],
+      "AT": 11,
+      "Flight": 150.0,
+      "FireAngle": 90.0,
+      "ShotTime": 3000,
+      "NeedShipLevel": 6,
+      "Level": 6,
+      "Sources": {
+        "AT": "EMU (GUESS)",
+        "Flight": "EMU (GUESS)",
+        "FireAngle": "EMU (GUESS)",
+        "ShotTime": "EMU (GUESS)",
+        "NeedShipLevel": "EMU (GUESS)",
+        "Level": "EMU (GUESS)"
+      }
+    },
+    {
+      "Key": "IDName00004397",
+      "Name": "Astrology Crystal Ball",
+      "Type": "Ammunition",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004807",
+      "Name": "Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004808",
+      "Name": "Medium Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004809",
+      "Name": "Heavy Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004810",
+      "Name": "Billow Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004811",
+      "Name": "Thunder Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004812",
+      "Name": "Shaken Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004813",
+      "Name": "Yasha Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004814",
+      "Name": "Dragon Knight Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004815",
+      "Name": "Dragon Lord Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004816",
+      "Name": "Neptune Time Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004817",
+      "Name": "Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004818",
+      "Name": "Medium Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004819",
+      "Name": "Heavy Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004820",
+      "Name": "Billow Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004821",
+      "Name": "Thunder Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004822",
+      "Name": "Shaken Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004823",
+      "Name": "Yasha Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004824",
+      "Name": "Dragon Knight Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004825",
+      "Name": "Dragon Lord Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004826",
+      "Name": "Neptune Mechanical Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004827",
+      "Name": "Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004828",
+      "Name": "Medium Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004829",
+      "Name": "Heavy Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004830",
+      "Name": "Billow Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004831",
+      "Name": "Thunder Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004832",
+      "Name": "Shaken Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004833",
+      "Name": "Yasha Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004834",
+      "Name": "Dragon Knight Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004835",
+      "Name": "Dragon Lord Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004836",
+      "Name": "Neptune Sticky Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004837",
+      "Name": "Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004838",
+      "Name": "Medium Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004839",
+      "Name": "Heavy Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004840",
+      "Name": "Billow Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004841",
+      "Name": "Thunder Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004842",
+      "Name": "Shaken Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004843",
+      "Name": "Yasha Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004844",
+      "Name": "Dragon Knight Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004845",
+      "Name": "Dragon Lord Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004846",
+      "Name": "Neptune Half-submerge Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004847",
+      "Name": "Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004848",
+      "Name": "Medium Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004849",
+      "Name": "Heavy Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004850",
+      "Name": "Billow Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004851",
+      "Name": "Thunder Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004852",
+      "Name": "Shaken Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004853",
+      "Name": "Yasha Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004854",
+      "Name": "Dragon Knight Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004855",
+      "Name": "Dragon Lord Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName00004856",
+      "Name": "Neptune Cross Wave Mine",
+      "Type": "Mine",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "BMSYS003",
+      "Name": "Denos' Cannon",
+      "Type": "Cannon",
+      "Text": [
+        "Item from Fight for the Suez Cultural Exploration Mission. Can be handed over to the Suez Canal Industrial Explorer at Alexander Port."
+      ],
+      "Sources": {}
+    },
+    {
+      "Key": "Belief000006",
+      "Name": "Soul Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Description: After it is equipped, it will increase the player's Medical Knowledge level by 1.  It will also help other players on the same team, within a certain distance, to increase their Upper HP by 500 and Health Restoration by 100. It will last for 720 hours."
+      ],
+      "Sources": {}
+    },
+    {
+      "Key": "DY13",
+      "Name": "Iron Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.2, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.2,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY13.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY13.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY13.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY13.0"
+      }
+    },
+    {
+      "Key": "DY14",
+      "Name": "Light Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.32, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.32,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY14.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY14.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY14.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY14.0"
+      }
+    },
+    {
+      "Key": "DY15",
+      "Name": "Medium Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.44, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.44,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY15.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY15.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY15.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY15.0"
+      }
+    },
+    {
+      "Key": "DY16",
+      "Name": "Heavy Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.56, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.56,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY16.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY16.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY16.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY16.0"
+      }
+    },
+    {
+      "Key": "DY17",
+      "Name": "Thunder Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.68, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.68,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY17.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY17.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY17.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY17.0"
+      }
+    },
+    {
+      "Key": "DY18",
+      "Name": "Lightning Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.8, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.8,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY18.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY18.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY18.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY18.0"
+      }
+    },
+    {
+      "Key": "DY19",
+      "Name": "Victory Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 2.92, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 2.92,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY19.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY19.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY19.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY19.0"
+      }
+    },
+    {
+      "Key": "DY20",
+      "Name": "Hurricane Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 3.04, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 3.04,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY20.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY20.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY20.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY20.0"
+      }
+    },
+    {
+      "Key": "DY21",
+      "Name": "Annihilator Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 3.16, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 3.16,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY21.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY21.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY21.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY21.0"
+      }
+    },
+    {
+      "Key": "DY22",
+      "Name": "Dictator Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 3.28, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 3.28,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY22.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY22.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY22.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY22.0"
+      }
+    },
+    {
+      "Key": "DY23",
+      "Name": "Neptune Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 3.4, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 3.4,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY23.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY23.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY23.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY23.0"
+      }
+    },
+    {
+      "Key": "DY24",
+      "Name": "Ares' Armor Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm.Damage Radius 15M, Hull Damage 3.52, Sailor Damage 0.01,Sail Damage 0.25."
+      ],
+      "DamageShip": 3.52,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY24.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY24.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY24.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY24.0"
+      }
+    },
+    {
+      "Key": "DY37",
+      "Name": "Iron Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.2."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.2,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY37.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY37.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY37.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY37.0"
+      }
+    },
+    {
+      "Key": "DY38",
+      "Name": "Light Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.32."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.32,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY38.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY38.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY38.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY38.0"
+      }
+    },
+    {
+      "Key": "DY39",
+      "Name": "Medium Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.44."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.44,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY39.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY39.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY39.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY39.0"
+      }
+    },
+    {
+      "Key": "DY40",
+      "Name": "Heavy Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.56."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.56,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY40.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY40.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY40.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY40.0"
+      }
+    },
+    {
+      "Key": "DY41",
+      "Name": "Thunder Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.68."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.68,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY41.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY41.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY41.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY41.0"
+      }
+    },
+    {
+      "Key": "DY42",
+      "Name": "Lightning Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.8."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.8,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY42.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY42.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY42.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY42.0"
+      }
+    },
+    {
+      "Key": "DY43",
+      "Name": "Victory Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 2.92."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 2.92,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY43.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY43.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY43.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY43.0"
+      }
+    },
+    {
+      "Key": "DY44",
+      "Name": "Hurricane Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 3.04."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.04,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY44.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY44.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY44.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY44.0"
+      }
+    },
+    {
+      "Key": "DY45",
+      "Name": "Annihilator Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 3.16."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.16,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY45.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY45.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY45.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY45.0"
+      }
+    },
+    {
+      "Key": "DY46",
+      "Name": "Dictator Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 3.28."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.28,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY46.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY46.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY46.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY46.0"
+      }
+    },
+    {
+      "Key": "DY47",
+      "Name": "Neptune Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 3.4."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.4,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY47.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY47.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY47.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY47.0"
+      }
+    },
+    {
+      "Key": "DY48",
+      "Name": "Ares' Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm.Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01,Sail Damage 3.52."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.52,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY48.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY48.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY48.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY48.0"
+      }
+    },
+    {
+      "Key": "DY49",
+      "Name": "Heavenly Chain Canister Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Sail Damage Ammunition has a hit chance to cause damage to enemy sail and helm. Damage Radius 15M, Hull Damage 0.5, Sailor Damage 0.01, Sail Damage 3.76."
+      ],
+      "DamageShip": 0.5,
+      "DamageSailor": 0.01,
+      "DamageSail": 3.76,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY49.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY49.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY49.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY49.0"
+      }
+    },
+    {
+      "Key": "DY61",
+      "Name": "Heavenly Armour Piercing Ball",
+      "Type": "Ammunition",
+      "Text": [
+        "Hull Damage Ammunition has a hit chance to cause Minor Leak and Smog effect to enemy sail and helm. Damage Radius 15M, Hull Damage 3.76, Sailor Damage 0.01, Sail Damage 0.25."
+      ],
+      "DamageShip": 3.76,
+      "DamageSailor": 0.01,
+      "DamageSail": 0.25,
+      "BlastRadius": 15,
+      "Sources": {
+        "DamageShip": "CLIENT:Suspend_Goods.ini[only]/DY61.0",
+        "DamageSailor": "CLIENT:Suspend_Goods.ini[only]/DY61.0",
+        "DamageSail": "CLIENT:Suspend_Goods.ini[only]/DY61.0",
+        "BlastRadius": "CLIENT:Suspend_Goods.ini[only]/DY61.0"
+      }
+    },
+    {
+      "Key": "IDName_XZB003001",
+      "Name": "Forging Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003002",
+      "Name": "Light Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003003",
+      "Name": "Medium Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003004",
+      "Name": "Heavy Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003005",
+      "Name": "Thunder Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003006",
+      "Name": "Lightning Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003007",
+      "Name": "Victory Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003008",
+      "Name": "Hurricane Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003009",
+      "Name": "Annihilator Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003010",
+      "Name": "Dictator Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003011",
+      "Name": "Forging Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003012",
+      "Name": "Light Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003013",
+      "Name": "Medium Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003014",
+      "Name": "Heavy Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003015",
+      "Name": "Thunder Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003016",
+      "Name": "Lightning Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003017",
+      "Name": "Victory Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003018",
+      "Name": "Hurricane Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003019",
+      "Name": "Annihilator Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003020",
+      "Name": "Dictator Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003021",
+      "Name": "Forging Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003022",
+      "Name": "Light Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003023",
+      "Name": "Medium Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003024",
+      "Name": "Heavy Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003025",
+      "Name": "Thunder Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003026",
+      "Name": "Lightning Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003027",
+      "Name": "Victory Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003028",
+      "Name": "Hurricane Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003029",
+      "Name": "Annihilator Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003030",
+      "Name": "Dictator Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003031",
+      "Name": "Huge Neptune Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "IDName_XZB003032",
+      "Name": "Huge Ares Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "XZB003036",
+      "Name": "Neptune Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "XZB003037",
+      "Name": "Neptune Buckshot Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "XZB003038",
+      "Name": "Neptune Dartling Cannon",
+      "Type": "Cannon",
+      "Text": [],
+      "Sources": {}
+    },
+    {
+      "Key": "propDJ3264",
+      "Name": "100 Militarian Cannons",
+      "Type": "Cannon",
+      "Text": [
+        "Main quest item from \"Hurricane Island Mystery\", Standard Military Shackles."
+      ],
+      "Sources": {}
+    }
+  ],
+  "_Sources": {
+    "CannonEffect": "CLIENT:ini\\CannonEffect.ini (section = S/ModelCannonL/R value; particle, sound, shake, velocity)",
+    "ShellEffect": "CLIENT:ini\\ShellEffect.ini (section = 3Dfd/3DA shell type)",
+    "ShellTypes": "CLIENT:ShellEffect.ini GBK comments (old client) + SHIP_SEA_FINDINGS.md 3DA type list",
+    "Items": "range/attack/angle/reload are not in the BBO client (tooltip shows server properties AT, Flight, FireAngle, ShotTime); damage factors of the Quality balls are stated in their tooltip text"
+  }
+}

@@ -103,6 +103,10 @@
         "Text": "Buy weapons and tools"
       },
       {
+        "Action": 360,
+        "Text": "Combine articles"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -226,6 +230,10 @@
         "Text": "Buy trade goods"
       },
       {
+        "Action": 380,
+        "Text": "Collect consignment earnings"
+      },
+      {
         "Action": "Bye",
         "Text": "Goodbye"
       }
@@ -254,6 +262,18 @@
       {
         "Action": "Nobility",
         "Text": "Apply for a noble title"
+      },
+      {
+        "Action": 420,
+        "Text": "Beginner's guide"
+      },
+      {
+        "Action": 421,
+        "Text": "Rankings"
+      },
+      {
+        "Action": 425,
+        "Text": "Masters and apprentices"
       },
       {
         "Action": "Bye",

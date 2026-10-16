@@ -1,0 +1,2002 @@
+{
+ "Rules": {
+  "Power": "P = recommended skill level of the area (0..120). Scene P = REGION_POWER of its city/island code (GUESS: ordered by the WEB rebuild-city ladder L1 Athens/Beirut/Alexandria/Istanbul, L2 Genoa, L3-4 Algiers, L5-6 Seville, L7-8 Hamburg, L9 Seoul, L10 Beijing, WEB_RULES.md section 5, and by sailing distance from Athens); +2 per earlier species of the same scene in client key order (max +10); +5 elite, +10 boss.",
+  "Level": "Level = P // 10 (the emulator treats Level as a tier: Hit = 85 + 9*Level, Dodge = 5 + 9*Level as in rules.json Combat.MonsterHitBase/MonsterDodgeBase/MonsterRatingPerTier; Athens monsters are Level 0-1).",
+  "Stats": "normal monster: Hp = 20 + 3P + 0.15P^2, Attack = 3 + 0.6P + 0.004P^2, Defence = P/4, Gold = 8 + 3P + 0.1P^2 (anchored on the hand-made Athens monsters: P 0 crab 20/3/0, P 10 goat 40-50/9/2); critter x0.6 HP/attack; elite (leader, chief, king, lord, captain, champion ...) x2.5 HP, x1.5 attack/defence, x3 gold; boss (named single target, \"Kill 1 <name>\", or a client boss marker) x5 HP, x2 attack/defence, x6 gold.",
+  "Behaviour": "Aggressive when P >= 30 and not a critter or scarecrow; never flees (Athens monsters: passive, no flee).",
+  "Groups": "normal species 4 spawns per scene (quest count >= 20: 6), elite 2, boss 1; spread over the walk mesh by farthest-point sampling at least 30 units from the scene arrival points, members within 10 units of the group centre; client marker position used as group centre when the scene has one.",
+  "Model": "CLIENT when the scene preloads exactly the model the name maps to; otherwise GUESS from the name -> ini\\objects ANIMATION keyword table (MODEL_KEYWORDS).",
+  "Ships": "pirate ladder tier from the name (Peg Leg 1, Iron Hand/Fist 2, Steel Tooth 3, Golden Eye 4, Jackal 5, Falcon 6, Tiger 7, Skeleton 8, Devil 9, Hades 10, Scorpion 11, Terror/Scared 12, Nightmare 13 = WEB pirate title order, WEB_RULES.md section 4) else region tier; Hull/Sail/Sailors = 60% of the ships.json class of that tier (battle class for Armed/War ships, raider class for Raiding ships, merchant class for Smuggling/Cargo/Merchant ships; captains/flagships 150%); cannons per side = class cannons / 4 (min 2); cannon = balanced cannon (model 25x0001) of grade min(tier,10); armour 3*tier/2.5*tier; hit 60+2*tier; gold 150*tier + 50*tier*(tier-1); reputation 10*tier; respawn 60+30*tier s (max 300). All GUESS."
+ },
+ "land scenes without walk mesh": [],
+ "collect": {
+  "kill quests": 459,
+  "targets": 584,
+  "placed by link": 172,
+  "placed by place link": 88,
+  "placed by text": 194,
+  "placed by giver": 38,
+  "unplaced": 91
+ },
+ "marker spawns": 122,
+ "preloaded models used": 50,
+ "placed by quest group": [
+  "Dante",
+  "Cannibal Champion",
+  "Wolfe Lord",
+  "Evil Beast Trainer",
+  "Evil Mage Image",
+  "Clan Leader",
+  "Maya King",
+  "Iron Hand Edward",
+  "Fayard Pirate Ship",
+  "Atlans",
+  "Atlans(Elite)",
+  "Viacrale",
+  "Yimu Chief",
+  "Ice King",
+  "Destructor Pennie",
+  "Frigate",
+  "Black fox spirit",
+  "Mountain Samurai",
+  "Smuggling Ships",
+  "Abdullah",
+  "Goblin Spearman"
+ ],
+ "regional fauna scenes": [
+  {
+   "Scene": 1001040,
+   "Name": "Petro Fortress"
+  },
+  {
+   "Scene": 1001042,
+   "Name": "Labrinton Coast"
+  },
+  {
+   "Scene": 1001999,
+   "Name": "Oslo Suburb"
+  },
+  {
+   "Scene": 1004999,
+   "Name": "Reykjavik Suburb"
+  },
+  {
+   "Scene": 1022999,
+   "Name": "Venice Suburb"
+  },
+  {
+   "Scene": 1033999,
+   "Name": "Tripoli Suburb"
+  },
+  {
+   "Scene": 1034999,
+   "Name": "Algiers Suburb"
+  },
+  {
+   "Scene": 1036999,
+   "Name": "Madeira Suburb"
+  },
+  {
+   "Scene": 1041999,
+   "Name": "Cape Town Suburb"
+  },
+  {
+   "Scene": 1058022,
+   "Name": "Yiglu Cave(Ordinary)"
+  },
+  {
+   "Scene": 1059999,
+   "Name": "Jejudo Suburb"
+  },
+  {
+   "Scene": 1060999,
+   "Name": "Ulleung Suburb"
+  },
+  {
+   "Scene": 1504999,
+   "Name": "Corsica Inland"
+  },
+  {
+   "Scene": 1508002,
+   "Name": "Sicily Beach"
+  },
+  {
+   "Scene": 1509002,
+   "Name": "Faial Beach"
+  },
+  {
+   "Scene": 1509012,
+   "Name": "Santa Maria Island Beach"
+  },
+  {
+   "Scene": 1601020,
+   "Name": "Hurricane Island Beach"
+  },
+  {
+   "Scene": 1601022,
+   "Name": "Cliff valley"
+  },
+  {
+   "Scene": 1601023,
+   "Name": "Ancient grave"
+  },
+  {
+   "Scene": 1601024,
+   "Name": "Giant Ship of Hurricane Island"
+  },
+  {
+   "Scene": 1601025,
+   "Name": "Secret Cave of Hurricane Island"
+  },
+  {
+   "Scene": 1602102,
+   "Name": "Deep Forest"
+  },
+  {
+   "Scene": 1602103,
+   "Name": "Lost World"
+  },
+  {
+   "Scene": 1602320,
+   "Name": "Yiglu Cave(Ordinary)"
+  },
+  {
+   "Scene": 1603002,
+   "Name": "Cruz"
+  },
+  {
+   "Scene": 1704008,
+   "Name": "Honor Battlefield"
+  },
+  {
+   "Scene": 1900098,
+   "Name": "Seville Suburb"
+  },
+  {
+   "Scene": 1900099,
+   "Name": "Seville Suburb"
+  }
+ ],
+ "unplaced species": [
+  "Boss Schmitz",
+  "Corporal Mizra",
+  "Hasan",
+  "North European Pirates",
+  "Rene",
+  "Sergeant Boris",
+  "Spanish armed merchant ships of Ruby Level",
+  "Spanish interceptor",
+  "Staff Sergeant Thomas",
+  "Traitor Schmitz",
+  "chiefmates of Spanish Royal Gold Armed Merchant Ships",
+  "guards of Monarch"
+ ],
+ "sea scenes with generic pirates": [
+  {
+   "Scene": 1001003,
+   "Name": "Oslo Offshore"
+  },
+  {
+   "Scene": 1004003,
+   "Name": "Reykjavik Offshore"
+  },
+  {
+   "Scene": 1008003,
+   "Name": "Amsterdam Offshore"
+  },
+  {
+   "Scene": 1010003,
+   "Name": "Bordeaux Offshore"
+  },
+  {
+   "Scene": 1011003,
+   "Name": "Lisbon Offshore"
+  },
+  {
+   "Scene": 1016003,
+   "Name": "Barcelona Offshore"
+  },
+  {
+   "Scene": 1018003,
+   "Name": "Genoa Offshore"
+  },
+  {
+   "Scene": 1022003,
+   "Name": "Venice Offshore"
+  },
+  {
+   "Scene": 1030003,
+   "Name": "Beirut Offshore"
+  },
+  {
+   "Scene": 1034003,
+   "Name": "Algiers Offshore"
+  },
+  {
+   "Scene": 1036003,
+   "Name": "Madeira Offshore"
+  },
+  {
+   "Scene": 1045003,
+   "Name": "Suez Offshore"
+  },
+  {
+   "Scene": 1048003,
+   "Name": "Bombay Offshore"
+  },
+  {
+   "Scene": 1049003,
+   "Name": "Sri Lanka Offshore"
+  },
+  {
+   "Scene": 1051003,
+   "Name": "Semarang Offshore"
+  },
+  {
+   "Scene": 1053003,
+   "Name": "Quanzhou Offshore"
+  },
+  {
+   "Scene": 1054003,
+   "Name": "Seoul Port"
+  },
+  {
+   "Scene": 1056003,
+   "Name": "Edo Offshore"
+  }
+ ],
+ "land scenes": {
+  "1001014": {
+   "Name": "Possedonia",
+   "Species": [
+    "Ailoty",
+    "Akendy",
+    "Ashina",
+    "Bosela Long-lance Soldiers",
+    "Bosela Patrol Dogs",
+    "Bosela Pikeman",
+    "Evil Indigenous Dart Soldiers",
+    "Evil Indigenous Long-lance Soldiers",
+    "Grim",
+    "Harmuni",
+    "Kluyas",
+    "Manadee",
+    "Yalujay Ax Skeleton",
+    "Yalujay Biochemist",
+    "Yalujay Falchion Skeleton",
+    "Yalujay Soul-control master",
+    "Yalujay Sword Skeleton"
+   ]
+  },
+  "1001015": {
+   "Name": "",
+   "Species": [
+    "Bimini old Lion",
+    "Dying Bimini Lioness",
+    "Dying Bimini Male Lion"
+   ]
+  },
+  "1001016": {
+   "Name": "",
+   "Species": [
+    "Bimini Red-raphe Crocodile",
+    "Bimini Steel-teeth Crocodile",
+    "Eyam patriarch",
+    "Huge Steel-teeth Crocodile"
+   ]
+  },
+  "1001017": {
+   "Name": "",
+   "Species": [
+    "Attendants of Duderam",
+    "Attendants of Yalujay",
+    "Biochemical black spider",
+    "Dead Wood Native Elder",
+    "Dead Wood Native Soldiers",
+    "Death pitcher Teeros",
+    "Duderam",
+    "Evil Indigenous Sharp-lance Soldiers",
+    "Joanru",
+    "Mutant Dapple Poisonous Spider",
+    "Night Gazer",
+    "Requiem for Andrew",
+    "Soul Prayer",
+    "Yalujay",
+    "Yalujay Skeleton Axmen",
+    "Yalujay Skeleton Saberer",
+    "Yalujay Skeleton Swordsman"
+   ]
+  },
+  "1001018": {
+   "Name": "",
+   "Species": [
+    "Attendants of Bosela",
+    "Bad Biochemical spider",
+    "Blood Seasprite",
+    "Bosela",
+    "Bosela Battle Dogs",
+    "Bosela Elite-lance Soldiers",
+    "Bosela Sharp-lance Soldiers",
+    "Cruel Mora",
+    "Elite-lance Soldiers Leader",
+    "Evil Indigenous Dart Soldiers",
+    "Evil Indigenous diplomats",
+    "Frant's Messenger",
+    "Ghost Pioneer",
+    "Ghoul Pioneer",
+    "Sebato",
+    "Sharp-lance Soldiers Leader",
+    "Soul Prayer",
+    "Soul Seasprite",
+    "Tenia ambassador",
+    "Water Seasprite"
+   ]
+  },
+  "1001026": {
+   "Name": "Poseidon Temple Lv 1",
+   "Species": [
+    "Frantz",
+    "Rebels",
+    "minion of the Lord of Shadows"
+   ]
+  },
+  "1001032": {
+   "Name": "",
+   "Species": [
+    "Alf Barton"
+   ]
+  },
+  "1001034": {
+   "Name": "",
+   "Species": [
+    "Alf Barton",
+    "Atlans",
+    "Atlans(Elite)",
+    "Aus Rico",
+    "Clan Leader",
+    "Dante",
+    "Evil Beast Trainer",
+    "Evil Mage Image",
+    "Maya King",
+    "Portobello Bay Reyes",
+    "Ricardo Reyes",
+    "Viacrale"
+   ]
+  },
+  "1001040": {
+   "Name": "Petro Fortress",
+   "Species": [
+    "Brown Bear",
+    "Reindeer",
+    "Wild wolf"
+   ]
+  },
+  "1001042": {
+   "Name": "Labrinton Coast",
+   "Species": [
+    "Brown Bear",
+    "Reindeer",
+    "Wild wolf"
+   ]
+  },
+  "1001047": {
+   "Name": "Seville Golden Tower",
+   "Species": [
+    "Golden Tower th Floor BOSS Kaz"
+   ]
+  },
+  "1001057": {
+   "Name": "Inland Yizhou",
+   "Species": [
+    "Advanced Dutch Cannoneer",
+    "Altered Yaru Bear",
+    "Bear King",
+    "Boardwalk Guard",
+    "Camp Guard",
+    "Colonel Williams",
+    "Dutch Cannoneer",
+    "Dutch Hound",
+    "Dutch Soldier",
+    "Imam Chen Sihua",
+    "Imam Chen Simiao",
+    "Shaman",
+    "Shaman Leader",
+    "Triad Cadre",
+    "Triad Followers",
+    "Triad Guard",
+    "Triad Searcher",
+    "Vice Admiral Guard",
+    "theTrinitarian followers"
+   ]
+  },
+  "1001066": {
+   "Name": "",
+   "Species": [
+    "Catholic Fanatics",
+    "Greedy Dutchmen",
+    "Idle Archers",
+    "Mysterious Samurai",
+    "Ninja Duo",
+    "Plump Bears",
+    "Poor Wanderers",
+    "Rebels",
+    "Tamed Hyena",
+    "Tokisada's Confidante",
+    "Venomous Frogs"
+   ]
+  },
+  "1001067": {
+   "Name": "",
+   "Species": [
+    "\"Darkness\" Ninja",
+    "\"Shadow\" Ninja",
+    "Instructor \"Aloof Rose\"",
+    "Lieutenant Pin",
+    "Wanderer"
+   ]
+  },
+  "1001068": {
+   "Name": "",
+   "Species": [
+    "Coulee Hound"
+   ]
+  },
+  "1001070": {
+   "Name": "Palenque Ruins",
+   "Species": [
+    "General Don John",
+    "General Suleiman"
+   ]
+  },
+  "1001075": {
+   "Name": "Havana",
+   "Species": [
+    "Havana Black Bear",
+    "Havana Crocodile",
+    "Havana Tiger",
+    "Spanish Assault Trooper",
+    "Spanish Musketeer",
+    "Spanish Spy"
+   ]
+  },
+  "1001079": {
+   "Name": "Ancient City Wilderness",
+   "Species": [
+    "Ancient War Elephant",
+    "Fierce Patriarch",
+    "Resident General \"Pasti\"",
+    "Trainer \"Sin Carlo\""
+   ]
+  },
+  "1001080": {
+   "Name": "Golden Ancient City",
+   "Species": [
+    "\"Michael\" of Nitta.",
+    "Admiralty Guard \"Turlock\"",
+    "High Priest",
+    "Moon Tower Guardian \"Hagrid\"",
+    "Patrol Leader \"Jack Rowe\"",
+    "Patrol Lieutenant \"Linaia\"",
+    "Star Tower Guard \"Gorio\""
+   ]
+  },
+  "1001081": {
+   "Name": "Lima Port",
+   "Species": [
+    "Giant Poisonous Spider",
+    "Savage Lion",
+    "Savage Scout",
+    "Spaniel",
+    "Spanish Pioneer",
+    "Swift Cheetah"
+   ]
+  },
+  "1001082": {
+   "Name": "Outskirts of Lima",
+   "Species": [
+    "Ancient War Elephantt",
+    "Barbarian Rider",
+    "Barbarian Spearman",
+    "High Priest",
+    "Patrol Leader \"Jack Rowe\"",
+    "Patrol Lieutenant \"Linaia\"",
+    "Resident General \"Pasti\"",
+    "Spanish soldier",
+    "Trainer \"Sin Carlo\""
+   ]
+  },
+  "1001083": {
+   "Name": "Golden Ancient City",
+   "Species": [
+    "Barbarian Wizard",
+    "Spanish Expeditionary Force",
+    "Spanish Musketeer",
+    "Spanish soldier"
+   ]
+  },
+  "1001999": {
+   "Name": "Oslo Suburb",
+   "Species": [
+    "Brown Bear",
+    "Reindeer",
+    "Wild wolf"
+   ]
+  },
+  "1003999": {
+   "Name": "Hamburg Suburb",
+   "Species": [
+    "Viking",
+    "Viking Lord",
+    "pirates leaders"
+   ]
+  },
+  "1004999": {
+   "Name": "Reykjavik Suburb",
+   "Species": [
+    "Brown Bear",
+    "Reindeer",
+    "Wild wolf"
+   ]
+  },
+  "1007999": {
+   "Name": "London Suburb",
+   "Species": [
+    "Henry Jr.",
+    "Viking",
+    "Viking Lord",
+    "Viking Pirate Axeman"
+   ]
+  },
+  "1011999": {
+   "Name": "Lisbon Suburb",
+   "Species": [
+    "Tomb Raider (Swordsman)",
+    "Wild wolf"
+   ]
+  },
+  "1012999": {
+   "Name": "Seville Suburb",
+   "Species": [
+    "Eyam patriarch",
+    "Ghoul Pioneer",
+    "Guards of the fiftieth floor",
+    "Guards of the tenth floor"
+   ]
+  },
+  "1016999": {
+   "Name": "Barcelona Suburb",
+   "Species": [
+    "Karabash's Hammerhead",
+    "Outlaw"
+   ]
+  },
+  "1018999": {
+   "Name": "Genoa Suburb",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wolf Lord"
+   ]
+  },
+  "1022999": {
+   "Name": "Venice Suburb",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  },
+  "1024002": {
+   "Name": "Athens Port",
+   "Species": [
+    "Turtle"
+   ]
+  },
+  "1024999": {
+   "Name": "Athens Suburb",
+   "Species": [
+    "Bellwether",
+    "Depressed Poet",
+    "Goat",
+    "Halloween Ghost",
+    "Hare",
+    "Hedgehog",
+    "Henry's Golem",
+    "Pheasant",
+    "Red Fox",
+    "Reindeer",
+    "Wild wolf",
+    "Wolf Cub"
+   ]
+  },
+  "1026999": {
+   "Name": "Istanbul Suburb",
+   "Species": [
+    "Toad"
+   ]
+  },
+  "1030999": {
+   "Name": "Beirut Suburb",
+   "Species": [
+    "Bellwether",
+    "Goat",
+    "Greedy Merchant",
+    "Hare",
+    "Hedgehog",
+    "Pheasant",
+    "Red Fox",
+    "Reindeer",
+    "Wolf Cub"
+   ]
+  },
+  "1032021": {
+   "Name": "Pyramid Passage",
+   "Species": [
+    "Animated Bronze Buddha",
+    "Animated Buddhism Guard",
+    "Animated Golden Buddha",
+    "Animated Stone Buddha",
+    "Animated Wood Buddha",
+    "Anubis",
+    "Bewitch Mummy",
+    "Black fox spirit",
+    "Dry Mummy",
+    "Giant Arm Mummy",
+    "Mountain Samurai",
+    "Stinky Mummy"
+   ]
+  },
+  "1032022": {
+   "Name": "Pyramid Top Level",
+   "Species": [
+    "Anubis"
+   ]
+  },
+  "1032999": {
+   "Name": "Alexander Suburb",
+   "Species": [
+    "Drunk Worker",
+    "Hare",
+    "Hedgehog",
+    "Jackal",
+    "Pheasant",
+    "Red Fox",
+    "Tomb Raider (Axeman)",
+    "Tomb Raider (Swordsman)",
+    "Tomb Raiders",
+    "Wild wolf"
+   ]
+  },
+  "1033999": {
+   "Name": "Tripoli Suburb",
+   "Species": [
+    "Jackal",
+    "Lizard",
+    "Poisonous scorpion"
+   ]
+  },
+  "1034999": {
+   "Name": "Algiers Suburb",
+   "Species": [
+    "Jackal",
+    "Lizard",
+    "Poisonous scorpion"
+   ]
+  },
+  "1035999": {
+   "Name": "Stockholm Suburb",
+   "Species": [
+    "Pirate",
+    "Viking"
+   ]
+  },
+  "1036999": {
+   "Name": "Madeira Suburb",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  },
+  "1037999": {
+   "Name": "Las Palmas Suburb",
+   "Species": [
+    "pirates leaders"
+   ]
+  },
+  "1038020": {
+   "Name": "Goree Island Dungeon",
+   "Species": [
+    "Jailer",
+    "Portuguese Slave-monger",
+    "Spanish Slave-monger",
+    "Warden"
+   ]
+  },
+  "1040999": {
+   "Name": "Congo Jungle",
+   "Species": [
+    "Gorilla",
+    "King Kong"
+   ]
+  },
+  "1041999": {
+   "Name": "Cape Town Suburb",
+   "Species": [
+    "Gorilla",
+    "Jackal",
+    "Rhinoceros"
+   ]
+  },
+  "1043999": {
+   "Name": "Mogadishu Suburb",
+   "Species": [
+    "King Sea Serpent"
+   ]
+  },
+  "1047999": {
+   "Name": "Basra Suburb",
+   "Species": [
+    "Cannibal Champion",
+    "Dart Goblin",
+    "Jungle Goblin",
+    "Poison Dart Goblin",
+    "Spearman Goblin",
+    "Zebra"
+   ]
+  },
+  "1048020": {
+   "Name": "Inside Taj Mahal",
+   "Species": [
+    "Abdullah",
+    "Ghost",
+    "Goblin Spearman",
+    "Phantom Lord"
+   ]
+  },
+  "1048999": {
+   "Name": "Bombay Suburb",
+   "Species": [
+    "Dutch Hound",
+    "Dutch Raider",
+    "Edmund",
+    "Phantom Lord",
+    "Rhinoceros"
+   ]
+  },
+  "1050002": {
+   "Name": "Malacca Port",
+   "Species": [
+    "Chen Wen Ting"
+   ]
+  },
+  "1051999": {
+   "Name": "Semarang Suburb",
+   "Species": [
+    "Ryukyu Pirates"
+   ]
+  },
+  "1056020": {
+   "Name": "Shogun's Residence",
+   "Species": [
+    "Mysterious Intruders"
+   ]
+  },
+  "1058020": {
+   "Name": "Imperial Mausoleum Level 1",
+   "Species": [
+    "Golum Knight",
+    "Guardian Beast",
+    "Mausoleum Guard Captain",
+    "Mausoleum Tiger Guard"
+   ]
+  },
+  "1058021": {
+   "Name": "Imperial Mausoleum Level 2",
+   "Species": [
+    "Guardian Beast"
+   ]
+  },
+  "1058022": {
+   "Name": "Yiglu Cave(Ordinary)",
+   "Species": [
+    "Black Bear",
+    "Striped Tiger",
+    "Wild Boar"
+   ]
+  },
+  "1058999": {
+   "Name": "Beijing Suburb",
+   "Species": [
+    "Agile Wolves",
+    "Bandit Chief",
+    "Bandits",
+    "Catholic Missionary",
+    "Fox Fairy",
+    "Giant Bees",
+    "Goat",
+    "Henry",
+    "Mini Nian Beast",
+    "White Eye Tigers",
+    "Wild Boar"
+   ]
+  },
+  "1059999": {
+   "Name": "Jejudo Suburb",
+   "Species": [
+    "Black Bear",
+    "Striped Tiger",
+    "Wild Boar"
+   ]
+  },
+  "1060999": {
+   "Name": "Ulleung Suburb",
+   "Species": [
+    "Black Bear",
+    "Striped Tiger",
+    "Wild Boar"
+   ]
+  },
+  "1064999": {
+   "Name": "Jamestown outskirts",
+   "Species": [
+    "American Rhino",
+    "Cougar King",
+    "Female Cougar",
+    "Indian Braves",
+    "Indian Raves",
+    "Turkey"
+   ]
+  },
+  "1065999": {
+   "Name": "Jamestown outskirts",
+   "Species": [
+    "British Expedition Soldier",
+    "Dutch Expedition Soldier",
+    "Fire Wolf King",
+    "French Expedition Soldier",
+    "General Ronnie",
+    "General Simon",
+    "Silver Wolf Heart",
+    "Silver Wolf King"
+   ]
+  },
+  "1400101": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1400102": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1400103": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1400104": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1400201": {
+   "Name": "men400201",
+   "Species": [
+    "Lion",
+    "Wolf"
+   ]
+  },
+  "1400202": {
+   "Name": "",
+   "Species": [
+    "monitor lizards"
+   ]
+  },
+  "1400204": {
+   "Name": "",
+   "Species": [
+    "Vajra"
+   ]
+  },
+  "1501001": {
+   "Name": "Sardinia",
+   "Species": [
+    "Blueprint Robber"
+   ]
+  },
+  "1502001": {
+   "Name": "Thassos Island",
+   "Species": [
+    "Wolf Lord"
+   ]
+  },
+  "1503001": {
+   "Name": "Madagascar",
+   "Species": [
+    "Caveman Chief",
+    "Caveman chieftain"
+   ]
+  },
+  "1503018": {
+   "Name": "Madagascar Cave",
+   "Species": [
+    "Caveman chieftain"
+   ]
+  },
+  "1504001": {
+   "Name": "Corsica Bandit Camp",
+   "Species": [
+    "Corsican Pirate Vice-Captain"
+   ]
+  },
+  "1504999": {
+   "Name": "Corsica Inland",
+   "Species": [
+    "Jackal",
+    "Lizard",
+    "Poisonous scorpion"
+   ]
+  },
+  "1505001": {
+   "Name": "Crete Bandit Camp",
+   "Species": [
+    "Kreter Pirate Vice-Captain"
+   ]
+  },
+  "1505002": {
+   "Name": "Crete Dock",
+   "Species": [
+    "Pirate"
+   ]
+  },
+  "1505005": {
+   "Name": "First Floor of Crete Maze",
+   "Species": [
+    "Black Spider",
+    "Black Widow",
+    "Dead skin Spider",
+    "Dry Skeleton",
+    "Drybone Skulls",
+    "Giant Tarantula",
+    "Minotaur",
+    "Poisonous Tarantula",
+    "Single Arm Skeleton",
+    "toxic scorpions"
+   ]
+  },
+  "1505006": {
+   "Name": "Second Floor of Crete Maze",
+   "Species": [
+    "Black Spider",
+    "Dead skin Spider",
+    "Giant Tarantula",
+    "Poisonous Tarantula"
+   ]
+  },
+  "1505007": {
+   "Name": "Third Floor of Crete Maze",
+   "Species": [
+    "Minotaur"
+   ]
+  },
+  "1505999": {
+   "Name": "Crete Inland",
+   "Species": [
+    "Crab",
+    "Cretan Wandering Soul",
+    "Crete Giant Tarantula",
+    "Cutthroat Pirate",
+    "Dry Skeleton",
+    "Pirate King",
+    "Pirate Saberer",
+    "Single Arm Skeleton",
+    "head of the Cretan Pirates"
+   ]
+  },
+  "1506001": {
+   "Name": "Cyprus Island",
+   "Species": [
+    "Pirate Captain",
+    "Vicious Wolf"
+   ]
+  },
+  "1507001": {
+   "Name": "Lemnos Isle",
+   "Species": [
+    "Wolf Lord"
+   ]
+  },
+  "1508001": {
+   "Name": "Sicily Island Inland",
+   "Species": [
+    "Killer bee",
+    "Poison Stinger Bees",
+    "Poison stinger",
+    "Queen bee"
+   ]
+  },
+  "1508002": {
+   "Name": "Sicily Beach",
+   "Species": [
+    "Jackal",
+    "Lizard",
+    "Poisonous scorpion"
+   ]
+  },
+  "1508008": {
+   "Name": "Sicily Caves",
+   "Species": [
+    "Bullfrog",
+    "Poisonous Frog",
+    "Toad"
+   ]
+  },
+  "1508011": {
+   "Name": "Mallorca Inland",
+   "Species": [
+    "Black Bat",
+    "Black Bear",
+    "Brown Bear",
+    "Cannibal Warrior",
+    "Fox Bat",
+    "Frenzied Bears",
+    "Fury Bears",
+    "Ghost Bat",
+    "Giant Lizard",
+    "Grizzly Bear",
+    "Iron Hand Edward",
+    "Mallorcan Giant Lizards",
+    "Monitor Lizard King",
+    "Vampire Bat",
+    "Wolfe Lord"
+   ]
+  },
+  "1508012": {
+   "Name": "Mallorca Beach",
+   "Species": [
+    "Black Bear",
+    "Brown Bear",
+    "Grizzly Bear"
+   ]
+  },
+  "1508018": {
+   "Name": "Mallorca Caves",
+   "Species": [
+    "Black Bat",
+    "Black Wing Bats",
+    "Cave Lizard",
+    "Dragon Lizard",
+    "Fox Bat",
+    "Ghost Bat",
+    "Ghost Shape Bats",
+    "Giant Lizard",
+    "Lizard",
+    "Poisonous Lizard"
+   ]
+  },
+  "1509001": {
+   "Name": "Faial Inland",
+   "Species": [
+    "Pirate",
+    "Traitor"
+   ]
+  },
+  "1509002": {
+   "Name": "Faial Beach",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  },
+  "1509011": {
+   "Name": "Santa Maria Island",
+   "Species": [
+    "Armored Sea Serpent",
+    "Giant Lord",
+    "Giant Sea Serpent",
+    "Green Stone Golem",
+    "Herculean Sea Serpent",
+    "Huge Stone Golems",
+    "Siren Empress",
+    "Swift Sea Serpent",
+    "Yellow Stone Golem"
+   ]
+  },
+  "1509012": {
+   "Name": "Santa Maria Island Beach",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  },
+  "1510001": {
+   "Name": "Taiwan Island",
+   "Species": [
+    "Barbarian Champion"
+   ]
+  },
+  "1601002": {
+   "Name": "Hurricane Island Beach",
+   "Species": [
+    "Auchi Officer",
+    "Barbarian Chieftan Patty",
+    "Battled Backbreaker",
+    "Destructor Pennie",
+    "Gifted Xenomancy Henry Jr.",
+    "Ice King",
+    "Taskmaster Rowan",
+    "Wildling Chief Patty",
+    "Yimu Chief"
+   ]
+  },
+  "1601020": {
+   "Name": "Hurricane Island Beach",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1601021": {
+   "Name": "Hurricane island lizard cave",
+   "Species": [
+    "Lizard man Lens"
+   ]
+  },
+  "1601022": {
+   "Name": "Cliff valley",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1601023": {
+   "Name": "Ancient grave",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1601024": {
+   "Name": "Giant Ship of Hurricane Island",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1601025": {
+   "Name": "Secret Cave of Hurricane Island",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1602101": {
+   "Name": "Rain Forest Relic",
+   "Species": [
+    "Mayan Chieftain"
+   ]
+  },
+  "1602102": {
+   "Name": "Deep Forest",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1602103": {
+   "Name": "Lost World",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1602301": {
+   "Name": "",
+   "Species": [
+    "Blade Polar Wolf",
+    "Cool Teeth Snowman",
+    "Fierce Polar Bear",
+    "Fierce Polar Wolf",
+    "Fury Snowman",
+    "Inuit Shaman apprentice",
+    "Inuit evil Shaman",
+    "Polar Bear More",
+    "Polar Wolf Shadow-teeth",
+    "Rock-skinned Polar Bear",
+    "Sharp-pawed Polar Bear",
+    "Snowman Fence",
+    "Thick-skinned Polar Wolf",
+    "Wild Polar Bear",
+    "Wild Polar Wolf"
+   ]
+  },
+  "1602303": {
+   "Name": "Yiglu Cave(Ordinary)",
+   "Species": [
+    "Vircra"
+   ]
+  },
+  "1602320": {
+   "Name": "Yiglu Cave(Ordinary)",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1603002": {
+   "Name": "Cruz",
+   "Species": [
+    "Black Bear",
+    "Iberian Lynx",
+    "Wild wolf"
+   ]
+  },
+  "1603003": {
+   "Name": "Salinas",
+   "Species": [
+    "Maya tribe chief",
+    "Mayan Clan Leader",
+    "violent tiny savage according"
+   ]
+  },
+  "1701002": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1701003": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1702002": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1702003": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1703002": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1703003": {
+   "Name": "",
+   "Species": [
+    "Crab",
+    "Turtle"
+   ]
+  },
+  "1704007": {
+   "Name": "Hero Battlefield",
+   "Species": [
+    "Ancient Tyrannosaurus Rex"
+   ]
+  },
+  "1704008": {
+   "Name": "Honor Battlefield",
+   "Species": [
+    "Brown Bear",
+    "Reindeer",
+    "Wild wolf"
+   ]
+  },
+  "1900098": {
+   "Name": "Seville Suburb",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  },
+  "1900099": {
+   "Name": "Seville Suburb",
+   "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar"
+   ]
+  }
+ },
+ "sea scenes": {
+  "1000001": {
+   "Name": "",
+   "Ships": [
+    "Bay Frigate",
+    "Edward's Pirate Fleet Golden Eye Pirate Ship",
+    "Frigate",
+    "Hasan's Ship",
+    "Iron Hand Edward's Devil Pirate Flagship",
+    "Pirate Baroness Katarina's Flagship",
+    "Puppet Ship Captain",
+    "Slave Ship",
+    "West African Pirate Ship"
+   ]
+  },
+  "1000003": {
+   "Name": "",
+   "Ships": [
+    "Dutch Kohler Bae Recon Ship",
+    "Dutch Leblanc Battleship",
+    "Dutch Rimini Heavy Cruiser",
+    "Dutch Tiste Command Ship"
+   ]
+  },
+  "1001003": {
+   "Name": "Oslo Offshore",
+   "Ships": [
+    "Tiger Armed Ship",
+    "Tiger Raiding Ship"
+   ]
+  },
+  "1001052": {
+   "Name": "",
+   "Ships": [
+    "Destroyer",
+    "Dutch Lebron War Fleet",
+    "Dutch Rimini Heavy Cruiser"
+   ]
+  },
+  "1001053": {
+   "Name": "",
+   "Ships": [
+    "Barrier Ship",
+    "Destroyer",
+    "Dutch Deeste Tactical Command Ship",
+    "Dutch Kohler Pei Reconnaissance Ship",
+    "Ming Provision Ship"
+   ]
+  },
+  "1001064": {
+   "Name": "",
+   "Ships": [
+    "Japanese Frigate",
+    "Japanese United Warship",
+    "Westward Warship"
+   ]
+  },
+  "1001065": {
+   "Name": "",
+   "Ships": [
+    "Biry Warship",
+    "ChiCheng Warship",
+    "Japanese Pirate Ship",
+    "Japanese Pirate Transport Ship",
+    "Japanese Pirate Warship",
+    "Japanese United Warship"
+   ]
+  },
+  "1001071": {
+   "Name": "Suez Canal",
+   "Ships": [
+    "Canal Salvaging Boat",
+    "Canal Smuggling Boat",
+    "Canal Trafficking Boat",
+    "Corsican Pirates Cargo Ship",
+    "Corsican Pirates Raiding Ship",
+    "Cretan Pirates Cargo Ship",
+    "Cretan Pirates Raiding Ship",
+    "Cretan Raiding Ships",
+    "Graverobber Ship",
+    "St. Andrew Pirates Cargo Ship",
+    "St. Andrew Pirates Raiding Ship",
+    "Stage 's Boss"
+   ]
+  },
+  "1003003": {
+   "Name": "Hamburg Offshore",
+   "Ships": [
+    "Carl Emanuel's Zeus",
+    "Golden Eye Armed Ship",
+    "Jackal Armed Ship",
+    "Nordic Pirate Admiral Carl Emanuel's Zeus",
+    "North Sea Golden Eyes Armed Ships",
+    "North Sea Jackal Armed Ships"
+   ]
+  },
+  "1004003": {
+   "Name": "Reykjavik Offshore",
+   "Ships": [
+    "Skeleton Armed Ship",
+    "Skeleton Raiding Ship"
+   ]
+  },
+  "1007003": {
+   "Name": "London Offshore",
+   "Ships": [
+    "Command Ship",
+    "Cruiser",
+    "Medina-Sidonia's Flagship",
+    "Provision Ship",
+    "Spanish Ruby merchant ship",
+    "Zeus"
+   ]
+  },
+  "1008003": {
+   "Name": "Amsterdam Offshore",
+   "Ships": [
+    "Falcon Armed Ship",
+    "Falcon Raiding Ship"
+   ]
+  },
+  "1009001": {
+   "Name": "",
+   "Ships": [
+    "Bay Command Ship",
+    "Bay Destroyer",
+    "Bay Fiery Mothership",
+    "Bay Frigate",
+    "Bay Provision Ship",
+    "Bay Sniper Mothership",
+    "Bay Torpedo Boat",
+    "Jose Reyes' Flagship",
+    "Katarina Reyes' Flagship",
+    "Ricardo Reyes' Flagship"
+   ]
+  },
+  "1010003": {
+   "Name": "Bordeaux Offshore",
+   "Ships": [
+    "Falcon Armed Ship",
+    "Falcon Raiding Ship"
+   ]
+  },
+  "1011003": {
+   "Name": "Lisbon Offshore",
+   "Ships": [
+    "Jackal Armed Ship",
+    "Jackal Raiding Ship"
+   ]
+  },
+  "1012003": {
+   "Name": "Seville Offshore",
+   "Ships": [
+    "Gibraltar Jackal Arm Ships",
+    "Gibraltar Jackal Armed Ship",
+    "Gibraltar Jackal Raiding Ships",
+    "Gibraltar Steel Tooth Armed Ship among steel tooth pirate",
+    "Golden Eye Armed Ship",
+    "Ottoman Turkish Tiger Pirate Ship",
+    "Smuggling Ships",
+    "Steel Tooth Armed Ship"
+   ]
+  },
+  "1016003": {
+   "Name": "Barcelona Offshore",
+   "Ships": [
+    "Steel Tooth Armed Ship",
+    "Steel Tooth Raiding Ship"
+   ]
+  },
+  "1018003": {
+   "Name": "Genoa Offshore",
+   "Ships": [
+    "Steel Tooth Armed Ship",
+    "Steel Tooth Raiding Ship"
+   ]
+  },
+  "1022003": {
+   "Name": "Venice Offshore",
+   "Ships": [
+    "Iron Fist Armed Ship",
+    "Iron Hand Raiding Ship"
+   ]
+  },
+  "1024003": {
+   "Name": "Athens Offshore",
+   "Ships": [
+    "Medina-Sidonia's Flagship"
+   ]
+  },
+  "1026003": {
+   "Name": "Istanbul Offshore",
+   "Ships": [
+    "fleet of the head of Ottoman Turkish Navy",
+    "head of the Ottoman Turkish Navy"
+   ]
+  },
+  "1030003": {
+   "Name": "Beirut Offshore",
+   "Ships": [
+    "Iron Fist Armed Ship",
+    "Iron Hand Raiding Ship"
+   ]
+  },
+  "1032003": {
+   "Name": "Alexander Offshore",
+   "Ships": [
+    "Alexander Demon Ship"
+   ]
+  },
+  "1034003": {
+   "Name": "Algiers Offshore",
+   "Ships": [
+    "Golden Eye Armed Ship",
+    "Golden Eye Raiding Ship"
+   ]
+  },
+  "1035003": {
+   "Name": "Stockholm Offshore",
+   "Ships": [
+    "Devil ships",
+    "Hades ships"
+   ]
+  },
+  "1036003": {
+   "Name": "Madeira Offshore",
+   "Ships": [
+    "Jackal Armed Ship",
+    "Jackal Raiding Ship"
+   ]
+  },
+  "1038003": {
+   "Name": "Dakar Offshore",
+   "Ships": [
+    "North Sea Golden Eyes Armed Ships",
+    "West Africa Pirate Ships"
+   ]
+  },
+  "1041003": {
+   "Name": "Cape Town Offshore",
+   "Ships": [
+    "Cape of Good Hope Scorpion Raiding Ships",
+    "Capte Town Pirate Ships",
+    "Falcon Armed Ship",
+    "Fayard Pirate Ship",
+    "Jackal Armed Ship",
+    "Jackal Raiding Ship"
+   ]
+  },
+  "1042003": {
+   "Name": "Mozambique Offshore",
+   "Ships": [
+    "Madagascar Pirate Flagship",
+    "Mozambique Pirate Ship"
+   ]
+  },
+  "1044003": {
+   "Name": "Aden Offshore",
+   "Ships": [
+    "Aden Pirate Ship",
+    "Golden Eye Armed Ship",
+    "Gulf of Aden Skeleton Smuggling Ships",
+    "Mogadishu Pirate Ship"
+   ]
+  },
+  "1045003": {
+   "Name": "Suez Offshore",
+   "Ships": [
+    "Skeleton Armed Ship",
+    "Skeleton Raiding Ship"
+   ]
+  },
+  "1048003": {
+   "Name": "Bombay Offshore",
+   "Ships": [
+    "Skeleton Armed Ship",
+    "Skeleton Raiding Ship"
+   ]
+  },
+  "1049003": {
+   "Name": "Sri Lanka Offshore",
+   "Ships": [
+    "Skeleton Armed Ship",
+    "Skeleton Raiding Ship"
+   ]
+  },
+  "1050003": {
+   "Name": "Malacca Offshore",
+   "Ships": [
+    "Nanyang Skeleton Armed Ship"
+   ]
+  },
+  "1051003": {
+   "Name": "Semarang Offshore",
+   "Ships": [
+    "Devil Armed Ship",
+    "Devil Raiding Ship"
+   ]
+  },
+  "1053003": {
+   "Name": "Quanzhou Offshore",
+   "Ships": [
+    "Devil Armed Ship",
+    "Devil Raiding Ship"
+   ]
+  },
+  "1054003": {
+   "Name": "Seoul Port",
+   "Ships": [
+    "Devil Armed Ship",
+    "Devil Raiding Ship"
+   ]
+  },
+  "1055003": {
+   "Name": "Nagasaki Offshore",
+   "Ships": [
+    "Japanese Pirate Wolf Fang Ship",
+    "Tokisada's Ambush Battleships"
+   ]
+  },
+  "1056003": {
+   "Name": "Edo Offshore",
+   "Ships": [
+    "Hades Armed Ship",
+    "Hades Raiding Ship"
+   ]
+  },
+  "1057003": {
+   "Name": "Zhigu Offshore",
+   "Ships": [
+    "Biry Warship",
+    "ChiCheng Warship",
+    "Japanese Pirates' Sentinel Battleship",
+    "Songdo Warship",
+    "Tokisada Masuda's Rogue Flagships",
+    "Westward Warship"
+   ]
+  },
+  "1504003": {
+   "Name": "Corsica Offshore",
+   "Ships": [
+    "Corsican Raiding Ship"
+   ]
+  },
+  "1505003": {
+   "Name": "Crete Offshore",
+   "Ships": [
+    "Cretan Peg Leg Armed Ships",
+    "Crete Iron Fist Armed Ships",
+    "Crete Iron Hand Smuggling Ship",
+    "Crete Jackal Armed Ship",
+    "Crete Peg Leg Armed Ships",
+    "Crete Peg Leg Ship Captain",
+    "Creten Golden Eye Ship",
+    "Creten Iron Hand Ship Captain",
+    "Devil Smuggling Ship Captain",
+    "Edward's Devil ship",
+    "Falcon Smuggling Ship Captain",
+    "Hades Smuggling Ship Captain",
+    "Jackal Smuggling Ship Captain",
+    "Skeleton Smuggling Ship Captain",
+    "Tiger Ship Smuggling Captain",
+    "Wandering Soul"
+   ]
+  }
+ },
+ "quest coverage": {
+  "kill quests": 459,
+  "TargetName exact match (current QuestHunts)": 363,
+  "TargetName match with QuestNameKey (proposed QuestHunts)": 402,
+  "all listed targets exist (QuestNameKey)": 413
+ },
+ "kill quests whose TargetName has no monster": [
+  {
+   "Id": 61,
+   "TargetName": "Spanish armed merchant ships of Ruby Level",
+   "Objective": "Attack and sink 15 Spanish armed merchant ships of Ruby Level and Sapphire Level respectively."
+  },
+  {
+   "Id": 62,
+   "TargetName": "chiefmates of Spanish Royal Gold Armed Merchant Ships",
+   "Objective": "Kill 25 chiefmates of Spanish Royal Gold Armed Merchant Ships"
+  },
+  {
+   "Id": 1117,
+   "TargetName": "North Sea Battlefield",
+   "Objective": "Destroy 10 North Sea Jackal Armed Ships and 10 North Sea Golden Eyes Armed Ships and then report back to Andy in Hamburg."
+  },
+  {
+   "Id": 1630,
+   "TargetName": "Sharp Paw Polar Bear 50",
+   "Objective": "Destroy Sharp Paw Polar Bear 50,and return to Wellpus Colonel report."
+  },
+  {
+   "Id": 1673,
+   "TargetName": "bear leader Polar Bear More",
+   "Objective": "Kill the bear leader Polar Bear More,then report to Wellpus Colonel report"
+  },
+  {
+   "Id": 1674,
+   "TargetName": "wolf leader Polar wolf Shadow-teeth",
+   "Objective": "Kill the wolf leader Polar wolf Shadow-teeth,then report to Village head Drarsh."
+  },
+  {
+   "Id": 1707,
+   "TargetName": "Huge Steel-teeth Crocodile 1 Bimini Red-raphe Crocodiles 4",
+   "Objective": "Kill Huge Steel-teeth Crocodile 1 Bimini Red-raphe Crocodiles 4 and Bimini Steel-teeth Crocodiles 4,then report to Captain Gondara report"
+  },
+  {
+   "Id": 1722,
+   "TargetName": "Yalujay Falchion Skeletons 5 Yalujay Sword Skeletons 5 Yalujay Axe Skeletons 5",
+   "Objective": "Kill Yalujay Falchion Skeletons 5 Yalujay Sword Skeletons 5 Yalujay Axe Skeletons 5,then report to Bomule report."
+  },
+  {
+   "Id": 1746,
+   "TargetName": "Tedia ambassador give the help letter",
+   "Objective": "Kill Tedia ambassador give the help letter to Borant general"
+  },
+  {
+   "Id": 1753,
+   "TargetName": "Evil Natives leader Duderam kill Attendants of Duderam 7",
+   "Objective": "Kill Evil Natives leader Duderam kill Attendants of Duderam 7,then report to Botiven general."
+  },
+  {
+   "Id": 1760,
+   "TargetName": "Bosela Battle Dogs 5 Bosela Sharp-lance Soldiers",
+   "Objective": "Kill 5 Bosela Battle Dogs 5 Bosela Sharp-lance Soldiers then report to General Borant report"
+  },
+  {
+   "Id": 1762,
+   "TargetName": "Blood Seasprites 5 Water Seasprites",
+   "Objective": "Go to the Northwest of Poseidon bay, kill 5 Blood Seasprites 5 Water Seasprites and 5 Soul Seasprites then report to General Borant to report."
+  },
+  {
+   "Id": 1764,
+   "TargetName": "Evil Indigenous diplomats 3 Evil Indigenous Dart Soldiers",
+   "Objective": "Kill 3 Evil Indigenous diplomats 3 Evil Indigenous Dart Soldiers then report to Jarode report."
+  },
+  {
+   "Id": 1919,
+   "TargetName": "Trials",
+   "Objective": "Equip with Gucci Robes and defeat the Trials and Tribulations Beast."
+  },
+  {
+   "Id": 1950,
+   "TargetName": "Captain",
+   "Objective": "Equip Grappling Hook and head to Crete Battlefield. Sail to Crete Iron Hand Armed Ships. W,when your ship is near the enemy fleet, use the skill Grappling. Once"
+  },
+  {
+   "Id": 2020,
+   "TargetName": "opponent",
+   "Objective": "At Thassos Island, use the Sorrow of War, and defeat the opponent that appears. Then report back to Kratos"
+  },
+  {
+   "Id": 2024,
+   "TargetName": "Lord",
+   "Objective": "Head to Gibraltar copy and destroy the Lord, the flagship of the pirate Bolukbashi. Then report back to Glaucus"
+  },
+  {
+   "Id": 2231,
+   "TargetName": "ship",
+   "Objective": "Sink a ship at Labrinton Coast"
+  },
+  {
+   "Id": 2235,
+   "TargetName": "Phanton Lord of the Taj Mahal Instance",
+   "Objective": "Eliminate Phanton Lord of the Taj Mahal Instance and the 1c4278215680# Madagascar Chieftan."
+  },
+  {
+   "Id": 2367,
+   "TargetName": "Corporal Mizra",
+   "Objective": "Enter Battled Forest Instance and kill Corporal Mizra."
+  },
+  {
+   "Id": 2368,
+   "TargetName": "Sergeant Boris",
+   "Objective": "Enter Battled Forest Instance and kill Sergeant Boris, then go to Auchi Level 2 and kill Staff Sergeant Primera."
+  },
+  {
+   "Id": 2369,
+   "TargetName": "Staff Sergeant Thomas",
+   "Objective": "Enter Battled Forest and kill Staff Sergeant Thomas and Traitor Schmitz at Auchi Level 2"
+  },
+  {
+   "Id": 2373,
+   "TargetName": "enemy",
+   "Objective": "Eliminate 1 enemy in the Inter-server Siege War."
+  },
+  {
+   "Id": 2610,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 1 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
+  },
+  {
+   "Id": 2611,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 1 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
+  },
+  {
+   "Id": 2612,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 2 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
+  },
+  {
+   "Id": 2613,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 2 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
+  },
+  {
+   "Id": 2614,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 3 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
+  },
+  {
+   "Id": 2615,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 3 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
+  },
+  {
+   "Id": 2616,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 4 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
+  },
+  {
+   "Id": 2617,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 4 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
+  },
+  {
+   "Id": 2618,
+   "TargetName": "after combining Treasure Map",
+   "Objective": "Compound a Level 5 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
+  },
+  {
+   "Id": 2673,
+   "TargetName": "real Escape Boat",
+   "Objective": "Destroy the real Escape Boat"
+  },
+  {
+   "Id": 2739,
+   "TargetName": "Hasan",
+   "Objective": "Enter Malta Instance, kill Hasan and Collect Missing Defense Layouts"
+  },
+  {
+   "Id": 2822,
+   "TargetName": "Jackal Smuggling Ship Captain (Outskirts of Crete)",
+   "Objective": "Kill a Jackal Smuggling Ship Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2823,
+   "TargetName": "Falcon Smuggling Ship Captain (Outskirts of Crete)",
+   "Objective": "Kill a Falcon Smuggling Ship Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2824,
+   "TargetName": "Tiger Ship Smuggling Captain (Outskirts of Crete)",
+   "Objective": "Kill a Tiger Ship Smuggling Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2825,
+   "TargetName": "Skeleton Smuggling Ship Captain (Outskirts of Crete)",
+   "Objective": "Kill a Skeleton Smuggling Ship Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2826,
+   "TargetName": "Devil Smuggling Ship Captain (Outskirts of Crete)",
+   "Objective": "Kill a Devil Smuggling Ship Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2827,
+   "TargetName": "Hades Smuggling Ship Captain (Outskirts of Crete)",
+   "Objective": "Kill a Hades Smuggling Ship Captain (Outskirts of Crete)"
+  },
+  {
+   "Id": 2850,
+   "TargetName": "(Normal) Eyam Patriarch",
+   "Objective": "Kill a (Normal) Eyam Patriarch*1 and Ghoul Pioneer*5 at the King's Tomb. After you're done report back to Seville Port's Valentine's Day Envoy."
+  },
+  {
+   "Id": 3211,
+   "TargetName": "ship",
+   "Objective": "Sink a ship on the way to attack Holland in the open waters around Bombay. Report to Akbar."
+  },
+  {
+   "Id": 3460,
+   "TargetName": "guards of Monarch",
+   "Objective": "Beat the guards of Monarch, and get National Badge and get it to Jacque."
+  },
+  {
+   "Id": 3501,
+   "TargetName": "North European Pirates",
+   "Objective": "Beat the North European Pirates outside of the city, and return the yeast to Beer Festival Officer."
+  },
+  {
+   "Id": 3654,
+   "TargetName": "Archer Instructor \"Aloof Rose",
+   "Objective": "Go to the Higurashi Instance. Kill Archer Instructor \"Aloof Rose\" and report to the Nagasaki Inspector."
+  },
+  {
+   "Id": 3664,
+   "TargetName": "Boss Schmitz",
+   "Objective": "Beat the Boss Schmitz and reply to Santa Claus."
+  },
+  {
+   "Id": 3665,
+   "TargetName": "Rene",
+   "Objective": "Beat Rene and reply to Santa Claus."
+  },
+  {
+   "Id": 3718,
+   "TargetName": "player",
+   "Objective": "Defeat one player in Palenque Battle"
+  },
+  {
+   "Id": 4158,
+   "TargetName": "St",
+   "Objective": "Sink a St. Andrew Raiding Ship (-4997.41, 10002.02) and speak with the Route Officer's Flagship (973.15,1776.61) at the entrance of the Suez Canal."
+  },
+  {
+   "Id": 4167,
+   "TargetName": "Stage 1's Boss (Lloyd Rodney's Ship)",
+   "Objective": "Enter the naumachia and defeat Stage 1's Boss (Lloyd Rodney's Ship). Speak with Hussein afterwards."
+  },
+  {
+   "Id": 4301,
+   "TargetName": "enemy faction players",
+   "Objective": "In the cross-server Havana battlefield, kill 2 enemy faction players. After completing the quest, submit it via the New Colonial Governor at the Hall of Memorie"
+  },
+  {
+   "Id": 4542,
+   "TargetName": "sea Spanish interceptor *1 (waiting",
+   "Objective": "Sank sea Spanish interceptor *1 (waiting for interceptor on the high sea), then talk to Roderick the Explorer."
+  },
+  {
+   "Id": 4632,
+   "TargetName": "player",
+   "Objective": "Kill 1 player from the Suyo Guard camp.Then talk with Conqueror camp Taskmaster."
+  },
+  {
+   "Id": 4635,
+   "TargetName": "player",
+   "Objective": "Kill 1 player from the Conqueror camp and talk with Suyo Guard camp mission manager"
+  },
+  {
+   "Id": 4834,
+   "TargetName": "Henry hidden",
+   "Objective": "Kill Henry hidden in the outskirts of Beijing and talking to Nancy in the city of Las Palmas."
+  },
+  {
+   "Id": 69901,
+   "TargetName": "same level Smuggling Ships",
+   "Objective": "Sink 3 same level Smuggling Ships as your ship,then reply to Ares Warrior Alliance Master."
+  },
+  {
+   "Id": 93208,
+   "TargetName": "dry",
+   "Objective": "Go to the pyramid and defeat dry, giant arm, bewitching and stinky mummy, collect their bandages for authentication. It is safer to fight Mummies together with "
+  }
+ ],
+ "totals": {
+  "land spawns": 1554,
+  "land scenes": 118,
+  "land species": 336,
+  "sea ships": 270,
+  "sea scenes": 42,
+  "sea species": 121
+ }
+}

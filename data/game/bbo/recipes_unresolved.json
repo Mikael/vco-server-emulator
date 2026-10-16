@@ -1,0 +1,571 @@
+{
+  "": [
+    "IDName_XZB001003",
+    "IDName_XZB001004",
+    "IDName_XZB001023",
+    "IDName_XZB001024"
+  ],
+  "arisholysword": [
+    "IDName_XZB000015"
+  ],
+  "axeofminot": [
+    "IDName_XZB000044"
+  ],
+  "axeofposeidon": [
+    "IDName_XZB000045"
+  ],
+  "beeneedle": [
+    "IDName00013186",
+    "IDName00013187",
+    "IDName00013189",
+    "IDName00013190"
+  ],
+  "classycoldiron": [
+    "CJ002193",
+    "IDName_XZB001015",
+    "IDName_XZB001016",
+    "IDName_XZB001035",
+    "IDName_XZB001036",
+    "IDName_XZB001055",
+    "IDName_XZB001056",
+    "IDName_XZB001075",
+    "IDName_XZB001076",
+    "IDName_XZB003008",
+    "IDName_XZB003018",
+    "IDName_XZB003028",
+    "ZB006001",
+    "ZB006011"
+  ],
+  "classyeaglewood": [
+    "CJ002204",
+    "IDName_XZB000008",
+    "IDName_XZB000023",
+    "IDName_XZB000038",
+    "IDName_XZB000053",
+    "IDName_XZB001015",
+    "IDName_XZB001016",
+    "IDName_XZB001035",
+    "IDName_XZB001036",
+    "IDName_XZB001055",
+    "IDName_XZB001056",
+    "IDName_XZB001075",
+    "IDName_XZB001076",
+    "IDName_XZB003008",
+    "IDName_XZB003018",
+    "IDName_XZB003028",
+    "ZB006001"
+  ],
+  "clothlevel1cloth": [
+    "IDName00000677",
+    "IDName00000678",
+    "IDName00000679",
+    "IDName00000680",
+    "IDName00000681",
+    "IDName00000682"
+  ],
+  "clothmodeloflevel1": [
+    "IDName_XZB001001",
+    "IDName_XZB001002",
+    "IDName_XZB001021",
+    "IDName_XZB001022"
+  ],
+  "clothmodeloflevel10": [
+    "IDName_XZB001019",
+    "IDName_XZB001020",
+    "IDName_XZB001039",
+    "IDName_XZB001040"
+  ],
+  "clothmodeloflevel3": [
+    "IDName_XZB001005",
+    "IDName_XZB001006",
+    "IDName_XZB001025",
+    "IDName_XZB001026"
+  ],
+  "clothmodeloflevel4": [
+    "IDName_XZB001007",
+    "IDName_XZB001008",
+    "IDName_XZB001027",
+    "IDName_XZB001028"
+  ],
+  "clothmodeloflevel5": [
+    "IDName_XZB001009",
+    "IDName_XZB001010",
+    "IDName_XZB001029",
+    "IDName_XZB001030"
+  ],
+  "clothmodeloflevel6": [
+    "IDName_XZB001011",
+    "IDName_XZB001012",
+    "IDName_XZB001031",
+    "IDName_XZB001032"
+  ],
+  "clothmodeloflevel7": [
+    "IDName_XZB001013",
+    "IDName_XZB001014",
+    "IDName_XZB001033",
+    "IDName_XZB001034"
+  ],
+  "clothmodeloflevel8": [
+    "IDName_XZB001015",
+    "IDName_XZB001016",
+    "IDName_XZB001035",
+    "IDName_XZB001036"
+  ],
+  "clothmodeloflevel9": [
+    "IDName_XZB001017",
+    "IDName_XZB001018",
+    "IDName_XZB001037",
+    "IDName_XZB001038"
+  ],
+  "clothoflevel11": [
+    "CJ001272"
+  ],
+  "crinumlilylily": [
+    "IDName00003647"
+  ],
+  "divaricatestrophanthus": [
+    "IDName00003643"
+  ],
+  "dogbane": [
+    "IDName00003843"
+  ],
+  "dragonsquamafalchion": [
+    "IDName_XZB000029"
+  ],
+  "excalibur": [
+    "IDName_XZB000013"
+  ],
+  "femaleofficerhat": [
+    "IDName_XZB001093"
+  ],
+  "fmealeexecuterhat": [
+    "IDName_XZB001097"
+  ],
+  "frezel": [
+    "IDName00003665"
+  ],
+  "goldstaffofmonkeyking": [
+    "IDName_XZB000042"
+  ],
+  "hatmodeloflevel1": [
+    "IDName_XZB001041",
+    "IDName_XZB001042",
+    "IDName_XZB001061",
+    "IDName_XZB001062"
+  ],
+  "hatmodeloflevel10": [
+    "IDName_XZB001059",
+    "IDName_XZB001060",
+    "IDName_XZB001079",
+    "IDName_XZB001080"
+  ],
+  "hatmodeloflevel2": [
+    "IDName_XZB001043",
+    "IDName_XZB001044",
+    "IDName_XZB001063",
+    "IDName_XZB001064"
+  ],
+  "hatmodeloflevel3": [
+    "IDName_XZB001045",
+    "IDName_XZB001046",
+    "IDName_XZB001065",
+    "IDName_XZB001066"
+  ],
+  "hatmodeloflevel4": [
+    "IDName_XZB001047",
+    "IDName_XZB001048",
+    "IDName_XZB001067",
+    "IDName_XZB001068"
+  ],
+  "hatmodeloflevel5": [
+    "IDName_XZB001049",
+    "IDName_XZB001050",
+    "IDName_XZB001069",
+    "IDName_XZB001070"
+  ],
+  "hatmodeloflevel6": [
+    "IDName_XZB001051",
+    "IDName_XZB001052",
+    "IDName_XZB001071",
+    "IDName_XZB001072"
+  ],
+  "hatmodeloflevel7": [
+    "IDName_XZB001053",
+    "IDName_XZB001054",
+    "IDName_XZB001073",
+    "IDName_XZB001074"
+  ],
+  "hatmodeloflevel8": [
+    "IDName_XZB001055",
+    "IDName_XZB001056",
+    "IDName_XZB001075",
+    "IDName_XZB001076"
+  ],
+  "hatmodeloflevel9": [
+    "IDName_XZB001057",
+    "IDName_XZB001058",
+    "IDName_XZB001077",
+    "IDName_XZB001078"
+  ],
+  "highclasshide": [
+    "IDName00013189",
+    "IDName00013190"
+  ],
+  "highgradecoldiron": [
+    "CJ002194",
+    "IDName_XZB000008",
+    "IDName_XZB000009",
+    "IDName_XZB000023",
+    "IDName_XZB000024",
+    "IDName_XZB000038",
+    "IDName_XZB000039",
+    "IDName_XZB000053",
+    "IDName_XZB000054",
+    "IDName_XZB001017",
+    "IDName_XZB001018",
+    "IDName_XZB001037",
+    "IDName_XZB001038",
+    "IDName_XZB001057",
+    "IDName_XZB001058",
+    "IDName_XZB001077",
+    "IDName_XZB001078",
+    "IDName_XZB003009",
+    "IDName_XZB003019",
+    "IDName_XZB003029",
+    "ZB006002",
+    "ZB006012"
+  ],
+  "highgradeeaglewood": [
+    "CJ002203",
+    "IDName_XZB000009",
+    "IDName_XZB000024",
+    "IDName_XZB000039",
+    "IDName_XZB000054",
+    "IDName_XZB001017",
+    "IDName_XZB001018",
+    "IDName_XZB001037",
+    "IDName_XZB001038",
+    "IDName_XZB001057",
+    "IDName_XZB001058",
+    "IDName_XZB001077",
+    "IDName_XZB001078",
+    "IDName_XZB003009",
+    "IDName_XZB003019",
+    "IDName_XZB003029",
+    "ZB006002",
+    "ZB006011",
+    "ZB006012"
+  ],
+  "highlevelhide": [
+    "IDName00000705",
+    "IDName00000706",
+    "IDName00000763",
+    "IDName00000766",
+    "IDName00013123",
+    "IDName00013124",
+    "IDName00013186",
+    "IDName00013187"
+  ],
+  "hundredandthirtysharesofclothoflevel6": [
+    "IDName00000763",
+    "IDName00000766"
+  ],
+  "ironorelevel1": [
+    "IDName00003824"
+  ],
+  "lelvel4timeber": [
+    "IDName00003998",
+    "IDName00004018",
+    "IDName00004038"
+  ],
+  "leveltimber": [
+    "IDName00013174",
+    "IDName00013175",
+    "ZB006001",
+    "ZB006003",
+    "ZB006012"
+  ],
+  "lvel9cloth": [
+    "IDName00013177",
+    "IDName00013178"
+  ],
+  "maleexecuterhat": [
+    "IDName_XZB001098"
+  ],
+  "maleofficerhat": [
+    "IDName_XZB001094"
+  ],
+  "marsholyblade": [
+    "IDName_XZB000030"
+  ],
+  "meltingcatalyst": [
+    "CJ001172",
+    "CJ001173"
+  ],
+  "menchainarmour": [
+    "IDName_XZB001090",
+    "IDName_XZB001092"
+  ],
+  "mengaularmour": [
+    "IDName_XZB001090"
+  ],
+  "middlingcoldiron": [
+    "IDName_XZB000007",
+    "IDName_XZB000022",
+    "IDName_XZB000037",
+    "IDName_XZB000052",
+    "IDName_XZB001013",
+    "IDName_XZB001014",
+    "IDName_XZB001033",
+    "IDName_XZB001034",
+    "IDName_XZB001053",
+    "IDName_XZB001054",
+    "IDName_XZB001073",
+    "IDName_XZB001074",
+    "IDName_XZB003007",
+    "IDName_XZB003017",
+    "IDName_XZB003027"
+  ],
+  "middlingeaglewood": [
+    "IDName_XZB000007",
+    "IDName_XZB000022",
+    "IDName_XZB000037",
+    "IDName_XZB000052",
+    "IDName_XZB001013",
+    "IDName_XZB001014",
+    "IDName_XZB001033",
+    "IDName_XZB001034",
+    "IDName_XZB001053",
+    "IDName_XZB001054",
+    "IDName_XZB001073",
+    "IDName_XZB001074",
+    "IDName_XZB003007",
+    "IDName_XZB003017",
+    "IDName_XZB003027"
+  ],
+  "mulanhelemt": [
+    "IDName_XZB001099"
+  ],
+  "mysteriousfruit": [
+    "IDName00003649"
+  ],
+  "onecopper": [
+    "IDName00004004",
+    "IDName00004024",
+    "IDName00004044",
+    "IDName00013029",
+    "IDName00013033",
+    "IDName00013037"
+  ],
+  "ordinarycoldiron": [
+    "CJ002191",
+    "CJ002195"
+  ],
+  "ordinaryeaglewood": [
+    "CJ002201"
+  ],
+  "pigironormetalsoflevelsabove": [
+    "IDName00003994",
+    "IDName00004014",
+    "IDName00004034"
+  ],
+  "purplegoldore": [
+    "IDName00003831"
+  ],
+  "recoveringleaves": [
+    "IDName00003651"
+  ],
+  "redcopperore": [
+    "IDName00003827"
+  ],
+  "refinedarescuirassforman": [
+    "IDName00013181",
+    "IDName_XZB001090"
+  ],
+  "refinedarescuirassforwoman": [
+    "IDName00013180",
+    "IDName_XZB001089"
+  ],
+  "refinedbraveleatherarmourforman": [
+    "IDName00013169",
+    "IDName_XZB001082"
+  ],
+  "refinedbraveleatherarmourforwoman": [
+    "IDName00013168"
+  ],
+  "refinedfemalegaulhelmet": [
+    "IDName_XZB001095"
+  ],
+  "refinedironsword": [
+    "IDName_XZB000011"
+  ],
+  "refinedkingarmourforman": [
+    "IDName00013178",
+    "IDName_XZB001088"
+  ],
+  "refinedkingarmourforwoman": [
+    "IDName00013177",
+    "IDName_XZB001087"
+  ],
+  "refinedknightsword": [
+    "IDName_XZB000015"
+  ],
+  "refinedlargesword": [
+    "IDName_XZB000013"
+  ],
+  "refinedmalegaulhelmet": [
+    "IDName_XZB001096"
+  ],
+  "refinedmalewarriorhat": [
+    "IDName_XZB001092"
+  ],
+  "refinedroyalkightarmourforwoman": [
+    "IDName00013171",
+    "IDName_XZB001083"
+  ],
+  "refinedtemplarknightarmourforman": [
+    "IDName00013172",
+    "IDName00013175",
+    "IDName_XZB001084",
+    "IDName_XZB001086"
+  ],
+  "refinedtemplarknightarmourforwoman": [
+    "IDName00013174",
+    "IDName_XZB001085"
+  ],
+  "rodofpharaoh": [
+    "IDName_XZB000041"
+  ],
+  "sandalwoodlog": [
+    "CJ001373"
+  ],
+  "shelloflevel1": [
+    "IDName00013183",
+    "IDName00013184"
+  ],
+  "shelloflevel2": [
+    "IDName00013183",
+    "IDName00013184"
+  ],
+  "shelloflevel3": [
+    "IDName00013183",
+    "IDName00013184"
+  ],
+  "shelloflevel4": [
+    "IDName00013186",
+    "IDName00013187"
+  ],
+  "shelloflevel5": [
+    "IDName00013123",
+    "IDName00013124",
+    "IDName00013126",
+    "IDName00013127",
+    "IDName00013129",
+    "IDName00013130",
+    "IDName00013186",
+    "IDName00013187"
+  ],
+  "shelloflevel6": [
+    "IDName00013132",
+    "IDName00013133",
+    "IDName00013135",
+    "IDName00013136",
+    "IDName00013138",
+    "IDName00013139",
+    "IDName00013186",
+    "IDName00013187"
+  ],
+  "shelloflevel7": [
+    "IDName00013141",
+    "IDName00013142",
+    "IDName00013144",
+    "IDName00013145",
+    "IDName00013147",
+    "IDName00013148",
+    "IDName00013189",
+    "IDName00013190"
+  ],
+  "shelloflevel8": [
+    "IDName00013150",
+    "IDName00013151",
+    "IDName00013153",
+    "IDName00013154",
+    "IDName00013156",
+    "IDName00013157",
+    "IDName00013189",
+    "IDName00013190"
+  ],
+  "shelloflevel9": [
+    "IDName00013159",
+    "IDName00013160",
+    "IDName00013162",
+    "IDName00013163",
+    "IDName00013165",
+    "IDName00013166",
+    "IDName00013189",
+    "IDName00013190"
+  ],
+  "sisal": [
+    "IDName00003839"
+  ],
+  "snowlotus": [
+    "IDName00003659"
+  ],
+  "superfineclothmodel": [
+    "IDName_XZB001081",
+    "IDName_XZB001082",
+    "IDName_XZB001083",
+    "IDName_XZB001084",
+    "IDName_XZB001085",
+    "IDName_XZB001086",
+    "IDName_XZB001087",
+    "IDName_XZB001088",
+    "IDName_XZB001089",
+    "IDName_XZB001090"
+  ],
+  "superfinehatmodel": [
+    "IDName_XZB001092",
+    "IDName_XZB001093",
+    "IDName_XZB001094",
+    "IDName_XZB001095",
+    "IDName_XZB001096",
+    "IDName_XZB001097",
+    "IDName_XZB001098",
+    "IDName_XZB001099",
+    "IDName_XZB001100"
+  ],
+  "thyme": [
+    "IDName00003639"
+  ],
+  "timurhelemt": [
+    "IDName_XZB001100"
+  ],
+  "tmberoflevel10": [
+    "CJ001372",
+    "CJ001373"
+  ],
+  "tmberoflevel8": [
+    "CJ001372"
+  ],
+  "tmberoflevel9": [
+    "CJ001372",
+    "CJ001373"
+  ],
+  "violetgold": [
+    "IDName00013171",
+    "IDName00013172"
+  ],
+  "warriorleatheruniform": [
+    "IDName_XZB001081"
+  ],
+  "wavingtool": [
+    "CJ001272",
+    "CJ001273"
+  ],
+  "womenchainarmour": [
+    "IDName_XZB001089"
+  ],
+  "womengaularmour": [
+    "IDName_XZB001089"
+  ]
+}

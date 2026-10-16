@@ -1,0 +1,14 @@
+{
+  "_source": "CLIENT:numtostring.ini[ApparatusMergeHelp]",
+  "Lines": [
+    "brief introduction:",
+    "1.Player put their own instruments into the operation interface.",
+    "2.Players can select the instrument which he wants to fuse in the main interface box.",
+    "3.Click the \"fusion\" button, the system will transfer the basic attribute of the instrument which need to be fused to the instrument player provide to fuse by a definite proportion.",
+    "4.If the instrument which need to be fused contains special effect,this effect can be transferred to the instrument player wants to fuse only when the attribute which is transferred reach a certain value.",
+    "5.After the fusion, the system will deduct a certain amount of gold equipment upgrade card  , and provide you the preview of the instrument which is after the fusion.",
+    "6.After the completion of the fusion, players can choose \"Save\" or \"Cancel\"",
+    "7.Click the \"Save\" button, the preview instrument becomes entity instrument, players can put it to the package.",
+    "8.when the instrument which has floating attribute or floating effect is fused again and click the save button, all the floating attribute or floating effect will be cover."
+  ]
+}

@@ -1,7 +1,7 @@
 [
   {
-    "Id": 44,
-    "Name": "Report to the Ares Warrior Alliance",
+    "Id": 62402,
+    "Name": "Fetching Letters Quest",
     "Kind": "Talk",
     "Giver": 120,
     "Target": 110,
@@ -30,7 +30,7 @@
     "Amity": 0
   },
   {
-    "Id": 15,
+    "Id": 62403,
     "Name": "Task of Hides",
     "Kind": "Kill",
     "Giver": 110,
@@ -78,17 +78,17 @@
     "Amity": 0
   },
   {
-    "Id": 13,
-    "Name": "Mining Task II: Pig Iron",
+    "Id": 713,
+    "Name": "Mission of abstracting Pig Irons",
     "Kind": "Bring",
     "Giver": 111,
     "Target": 111,
     "Item": "IDName00003823",
     "TargetName": "IDName00003823",
-    "Count": 20,
+    "Count": 10,
     "Gold": 700,
     "Experience": 2000,
-    "Offer": "Due to the low value of raw materials, ores can only function when semi-manufactured metal is extracted from them and alloyed. Please try to extract 20 pieces of pig irons and give them to me.",
+    "Offer": "Due to the low value of raw materials, ores can only function when semi-manufactured metal is extracted from them and alloyed. Please try to extract 10 pieces of pig iron and give them to me.",
     "Done": "Twenty pieces of Pig Iron, just what the guild needed.",
     "Skill": "SKILL_MINING",
     "Reputation": 0,

@@ -1,0 +1,614 @@
+{
+  "PlayerShipTypes": [
+    {
+      "Name": "IDName00004695",
+      "Label": "Light Double Mast Lateen Sail Ship",
+      "Kind": 0,
+      "KindLabel": "starter",
+      "TierGuess": 0,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004715",
+      "Label": "Light Armed Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 1,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004716",
+      "Label": "Armed Patrol Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 2,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004717",
+      "Label": "Light Frigate Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 3,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004718",
+      "Label": "Light Escort Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 4,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004719",
+      "Label": "Medium Armed Battleship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 5,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004720",
+      "Label": "Heavy Escort Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 6,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004721",
+      "Label": "Destroyer",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 7,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004722",
+      "Label": "Cruiser",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 8,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004723",
+      "Label": "Zheng He Offical Ship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 9,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004724",
+      "Label": "Armoured Battleship",
+      "Kind": 0,
+      "KindLabel": "Battleship",
+      "TierGuess": 10,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004725",
+      "Label": "Light Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 1,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004726",
+      "Label": "Multi Mast Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 2,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004727",
+      "Label": "Fast Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 3,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004728",
+      "Label": "Lateen Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 4,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004729",
+      "Label": "Medium Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 5,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004730",
+      "Label": "Medium Fast Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 6,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004731",
+      "Label": "Armed Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 7,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004732",
+      "Label": "Armed Fast Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 8,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004733",
+      "Label": "Fast armed Raiding Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 9,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004734",
+      "Label": "Colossal Mediterranean Oar Sailboat",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 10,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004735",
+      "Label": "Colossal Korean Turtle Shaped Ship",
+      "Kind": 2,
+      "KindLabel": "Raiding Ship",
+      "TierGuess": 11,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004736",
+      "Label": "Light Freighter",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 1,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004737",
+      "Label": "Light Merchant Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 2,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004738",
+      "Label": "Light Armed Galleon",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 3,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004739",
+      "Label": "Medium Freighter",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 4,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004740",
+      "Label": "Medium Trading Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 5,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004741",
+      "Label": "Medium Armed Merchant Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 6,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004742",
+      "Label": "Heavy Freighter",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 7,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004743",
+      "Label": "Heavy Trading Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 8,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004744",
+      "Label": "Armed Trading Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 9,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004745",
+      "Label": "Zheng He Treasure Ship",
+      "Kind": 1,
+      "KindLabel": "Merchant Ship",
+      "TierGuess": 10,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004746",
+      "Label": "Light Adventure Ship",
+      "Kind": 3,
+      "KindLabel": "Adventure Ship",
+      "TierGuess": 1,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    },
+    {
+      "Name": "IDName00004747",
+      "Label": "Heavy Adventure Ship",
+      "Kind": 3,
+      "KindLabel": "Adventure Ship",
+      "TierGuess": 2,
+      "Sources": {
+        "Name/Label": "CLIENT:namelist.idres",
+        "Kind": "GUESS:name block order",
+        "TierGuess": "GUESS:order inside the block"
+      }
+    }
+  ],
+  "NpcShipNames": {
+    "Realship0081": "Arabian Armed Merchant Ship",
+    "Realship009": "Portuguese Barque",
+    "Realship010": "Ryukyu Pirate Ship",
+    "Realship0100": "Jamestown Devil Pirate Flagship",
+    "Realship011": "Dutch Landing Ship",
+    "Realship016": "Spanish interceptor",
+    "Realship4112": "Rogue Pirate Ship",
+    "Realship7101": "Gunboat",
+    "Realship7102": "Cruiser",
+    "Realship7103": "Warship",
+    "Realship7104": "Destroyer",
+    "Realship7105": "Cruiser",
+    "Realship7106": "Frigate",
+    "Realship7107": "Escort Ship",
+    "Realship7108": "Spy Ship",
+    "Realship7109": "Patrol Ship",
+    "Realship7110": "Command Ship",
+    "Realship7111": "Provision Ship",
+    "Realship7112": "Armed Ships",
+    "Realship7113": "Medina-Sidonia's Flagship",
+    "Realship8101": "Bay Frigate",
+    "Realship8102": "Bay Command Ship",
+    "Realship8104": "Bay Destroyer",
+    "Realship8105": "Bay Fiery Mothership",
+    "Realship8107": "Bay Sniper Mothership",
+    "Realship8109": "Bay Provision Ship",
+    "Realship8110": "Bay Torpedo Boat",
+    "Realship8111": "Ricardo Reyes' Flagship",
+    "Realship8112": "Katarina Reyes' Flagship",
+    "Realship8113": "Jose Reyes' Flagship",
+    "Realship8114": "Reyes Frigate",
+    "Realship8115": "Reyes Destroyer",
+    "Realship9001": "Swift Schooner",
+    "Realship9002": "Oared Assault Ship",
+    "Realship9004": "Large-deflection Warship",
+    "Realship9005": "Armed Sailing Boat",
+    "Realship9006": "Attack Gunboats",
+    "Realship9007": "Dragut's Fleet Battleship",
+    "Realship9008": "Basha's Fleet Battleship",
+    "Realship9011": "Swift Schooner (Siege)",
+    "Realship9012": "Oared Assault Ship (Siege)",
+    "Realship9014": "Big Warship(Siege)",
+    "Realship9015": "Military Equipment Sail (Siege)",
+    "Realship9016": "Attack Gunboats (Siege)",
+    "Realship9017": "Dragut's Fleet Battleship(Siege)",
+    "Realship9018": "Basha's Fleet Battleship(Siege)",
+    "Realship9021": "Valeita's Ship",
+    "Realship9022": "Hasan's Ship",
+    "Realship9023": "Armed Sailing Boat",
+    "Realship9024": "Dragut's Ships",
+    "Realship9025": "Dragut's Capital Ships",
+    "Realship9026": "Basha's Ships",
+    "Realship9027": "Basha's Capital Ships",
+    "Realship9031": "Swift Schooner (Elite)",
+    "Realship9032": "Oared Assault Ship (Elite)",
+    "Realship9034": "Big Warship(Elite)",
+    "Realship9035": "Military Equipment Sail (Elite)",
+    "Realship9036": "Attack Gunboats (Elite)",
+    "Realship9037": "Dragut's Fleet Battleship(Elite)",
+    "Realship9038": "Basha's Fleet Battleship(Elite)",
+    "Realship9041": "Swift Schooner (Elite)(Siege)",
+    "Realship9042": "Oared Assault Ship (Elite)(Siege)",
+    "Realship9044": "Big Warship(Elite)(Siege)",
+    "Realship9045": "Military Equipment Sail (Elite)(Siege)",
+    "Realship9046": "Attack Gunboats (Elite)(Siege)",
+    "Realship9047": "Dragut's Fleet Battleship(Elite)(Siege)",
+    "Realship9048": "Basha's Fleet Battleship(Elite)(Siege)",
+    "Realship9052": "Basha's Capital Ships (Elite)",
+    "Realship9053": "Military Equipment Sail (Elite)",
+    "Realship9054": "Dragut's Ships(Elite)",
+    "Realship9055": "Dragut's Capital Ships(Elite)",
+    "Realship9056": "Basha's Ships(Elite)",
+    "Realship9057": "Basha's Capital Ships(Elite)",
+    "Realship9061": "Automotive Light Boat",
+    "Realship9062": "Galliot",
+    "Realship9063": "Carvel",
+    "Realship9064": "Hasan's Ship",
+    "Realship9067": "Wandering Soul",
+    "Realship9069": "Pirate Treasure Ship",
+    "Realship9070": "Blackbeard's The Adrift",
+    "Realship9071": "St. Deus Phantom Ship",
+    "Realship9073": "Dutch Kohler Pei Reconnaissance Ship",
+    "Realship9074": "Dutch Deeste Tactical Command Ship",
+    "Realship9075": "Dutch Lebron War Fleet",
+    "Realship9076": "Dutch Rimini Heavy Cruiser",
+    "Realship9077": "Light Frigate",
+    "Realship9078": "Light Interceptor",
+    "Realship9079": "Light Assault Ship",
+    "Realship9081": "Lateen Sail Raiding Ship",
+    "Realship9082": "Ming Provision Ship",
+    "Realship9084": "Frigate",
+    "Realship9085": "Ming Transport Ship",
+    "Realship9086": "Reconnaissance Ship",
+    "Realship9088": "Barrier Ship",
+    "Realship9089": "Destroyer",
+    "Realship9095": "Japanese Pirate Ship",
+    "Realship9096": "Japanese Pirate Warship",
+    "Realship9097": "Japanese United Warship",
+    "Realship9098": "Japanese Frigate",
+    "Realship9099": "Japanese Small Flagship",
+    "Realship9100": "Biry Warship",
+    "Realship9101": "ChiCheng Warship",
+    "Realship9102": "Westward Warship",
+    "Realship9103": "Songdo Warship",
+    "Realship9104": "Left Bodyguard",
+    "Realship9105": "Right Bodyguard",
+    "Realship9106": "Japanese Pirate Transport Ship",
+    "Realship9107": "Japanese Pirate Guard Ship",
+    "Realship9108": "Japanese Transport Ship",
+    "Realship9109": "Sentinel Warships",
+    "Realship9110": "Japanese Pirate Wolf Fang Ship",
+    "Realship9111": "Japanese Pirates' Flagship",
+    "Realship9112": "Japanese Pirates' Flagship",
+    "Realship9113": "Japanese Pirates' Flagship",
+    "Realship9114": "Japanese Pirates' Flagship",
+    "Realship9115": "Ambush Battleships",
+    "realship001": "West African Pirate Ship",
+    "realship002": "West African Pirate Ship",
+    "realship003": "Faial Island Pirate ships",
+    "realship004": "Mozambique Pirate Ship",
+    "realship005": "Mogadishu Pirate Ship",
+    "realship006": "Aden Pirate Ship",
+    "realship007": "Cape Town Pirate Ship",
+    "realship008": "Madagascar Pirate Flagship",
+    "realship0100": "Jamestown Devil Pirate Flagship",
+    "realship015": "Alexander Demon Ship",
+    "realship8017": "The Lost",
+    "realship9120": "Lloyd Rodney's Ship (Stage 1)",
+    "realship9121": "Yves Baker's Ship (Stage 2)",
+    "realship9122": "Ferguson Griffin's Ship (Stage 3)",
+    "realship9123": "Newton Warren's Ship (Stage 4)",
+    "realship9124": "Garton Anderson's Ship (Stage 5)",
+    "realship9125": "Woolley Charles' Ship (Stage 6)",
+    "realship9126": "Alcott Dale's Ship (Stage 7)",
+    "realship9127": "Rudolf William's Ship (Stage 8)",
+    "realship9128": "Clark Giles' Ship (Stage 9)",
+    "realship9129": "Eugene Addams' Ship (Stage 10)",
+    "realship9130": "Wilson Green's Ship (Stage 11)",
+    "realship9131": "Colclough Charles' Ship (Stage 12)",
+    "realship9132": "David Lester's Ship (Stage 13)",
+    "realship9133": "Jim Jackson's Ship (Stage 14)",
+    "realship9134": "Hardy George's Ship (Stage 15)",
+    "realship9135": "Evan Lester's Ship (Stage 16)",
+    "realship9136": "Priestley Carter's Ship (Stage 17)",
+    "realship9137": "Austin George's Ship (Stage 18)",
+    "realship9138": "Dick Charles' Ship (Stage 19)",
+    "realship9139": "Sainsbury Gary's Ship (Stage 20)",
+    "realship9140": "Steinbeck Gary's Ship (Stage 21)",
+    "realship9141": "Raam Kirk's Ship (Stage 22)",
+    "realship9142": "Dan Harris' Ship (Stage 23)",
+    "realship9143": "Micah Charles' Ship (Stage 24)",
+    "realship9144": "Guy Jackson's Ship (Stage 25)",
+    "realship9145": "Hozia Garcia's Ship (Stage 26)",
+    "realship9146": "Graham Scott's Ship (Stage 27)",
+    "realship9147": "Newton Gary's Ship (Stage 28)",
+    "realship9148": "Beth Jackson's Ship (Stage 29)",
+    "realship9149": "Martin Leslie's Ship (Stage 30)",
+    "realship9150": "Epstein Hill's Ship (Stage 31)",
+    "realship9151": "Woolf Quaker's Ship (Stage 32)",
+    "realship9152": "Dreiser Charles' Ship (Stage 33)",
+    "realship9153": "Eleanor Leslie's Ship (Stage 34)",
+    "realship9154": "Dorothy Walker's Ship (Stage 35)",
+    "realship9155": "Harrison Walker's Ship (Stage 36)",
+    "realship9156": "Peter Anderson's Ship (Stage 37)",
+    "realship9157": "Kito Edward's Ship (Stage 38)",
+    "realship9158": "Grant Carter's Ship (Stage 39)",
+    "realship9159": "Godwin Charles' Ship (Stage 40)",
+    "realship9160": "Hal Rupert's Ship (Stage 41)",
+    "realship9161": "Dulles Arnold's Ship (Stage 42)",
+    "realship9162": "Jack Hill's Ship (Stage 43)",
+    "realship9163": "Bal Acker's Ship (Stage 44)",
+    "realship9164": "Bayan Acker's Ship (Stage 45)",
+    "realship9165": "Ozturk's Ship (Stage 46)",
+    "realship9166": "Cetinturk's Ship (Stage 47)",
+    "realship9167": "Senturk's Ship (Stage 48)",
+    "realship9168": "Acker's Ship (Stage 49)",
+    "realship9169": "Muhammed Ali's Ship (Stage 50)",
+    "realship9170": "Suez Trials Supply Ship",
+    "realship9171": "Canal Trafficking Boat",
+    "realship9172": "Canal Salvaging Boat",
+    "realship9173": "Canal Smuggling Boat",
+    "realship9174": "St. Andrew Pirates Raiding Ship",
+    "realship9175": "Cretan Pirates Raiding Ship",
+    "realship9176": "Corsican Pirates Raiding Ship",
+    "realship9177": "St. Andrew Pirates Cargo Ship",
+    "realship9178": "Cretan Pirates Cargo Ship",
+    "realship9179": "Corsican Pirates Cargo Ship",
+    "realship9180": "Graverobber Ship",
+    "realship9181": "Medical Boat",
+    "realship9182": "Charles Godwin's Stuntman"
+  },
+  "ShipTypeEnum": {
+    "0": "Battle",
+    "1": "Business",
+    "2": "Opportunity"
+  },
+  "Specialty": {
+    "LevelMove": "Raiding Ship",
+    "LevelFight": "Battleship",
+    "LevelLoad": "Merchant Ship"
+  }
+}

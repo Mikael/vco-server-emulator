@@ -1,0 +1,1535 @@
+{
+ "Note": "The client has no monster spawn tables, levels or stats. Listed: monster models a scene preloads (ini\\scenes Premodel, CLIENT) and monster/boss markers of the auto-path list and minimap (CLIENT).",
+ "Scenes": {
+  "1001052": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Dutch Rimini Heavy Cruiser",
+     "Key": "Realship9076",
+     "X": 97.02,
+     "Z": 2505.22,
+     "Icon": "boss.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -110.0,
+     "Z": 275.0,
+     "Icon": "boss.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -21.0,
+     "Z": 374.0,
+     "Icon": "boss.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -71.0,
+     "Z": 500.0,
+     "Icon": "boss.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -105.0,
+     "Z": 2020.0,
+     "Icon": "boss.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": 68.0,
+     "Z": 1696.0,
+     "Icon": "boss.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": 212.0,
+     "Z": 1689.0,
+     "Icon": "boss.tga",
+     "Source": "map mark8"
+    }
+   ]
+  },
+  "1001053": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Dutch Kohler Pei Reconnaissance Ship",
+     "Key": "Realship9073",
+     "X": 2552.2,
+     "Z": 928.6,
+     "Icon": "boss.tga",
+     "Source": "map mark0"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": -2190.2,
+     "Z": -909.6,
+     "Icon": "boss.tga",
+     "Source": "map mark1"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -1944.2,
+     "Z": -786.6,
+     "Icon": "boss.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": -2430.4,
+     "Z": -1080.7,
+     "Icon": "boss.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Dutch Deeste Tactical Command Ship",
+     "Key": "Realship9074",
+     "X": -322.4,
+     "Z": -2639.0,
+     "Icon": "boss.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": 3088.9,
+     "Z": 1210.9,
+     "Icon": "boss.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": 3235.0,
+     "Z": 1437.0,
+     "Icon": "boss.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": 3108.0,
+     "Z": 1384.0,
+     "Icon": "boss.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Barrier Ship",
+     "Key": "Realship9088",
+     "X": 3309.0,
+     "Z": 1060.0,
+     "Icon": "boss.tga",
+     "Source": "map mark9"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -2190.0,
+     "Z": -909.0,
+     "Icon": "boss.tga",
+     "Source": "map mark10"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -1837.0,
+     "Z": -1876.0,
+     "Icon": "boss.tga",
+     "Source": "map mark11"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -2430.0,
+     "Z": -1080.0,
+     "Icon": "boss.tga",
+     "Source": "map mark13"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -2528.0,
+     "Z": -1469.0,
+     "Icon": "boss.tga",
+     "Source": "map mark14"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -2348.0,
+     "Z": -1529.0,
+     "Icon": "boss.tga",
+     "Source": "map mark15"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -2178.0,
+     "Z": -1434.0,
+     "Icon": "boss.tga",
+     "Source": "map mark16"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -1625.0,
+     "Z": -1718.0,
+     "Icon": "boss.tga",
+     "Source": "map mark17"
+    },
+    {
+     "Name": "Destroyer",
+     "Key": "Realship9089",
+     "X": -1687.0,
+     "Z": -1842.0,
+     "Icon": "boss.tga",
+     "Source": "map mark18"
+    }
+   ]
+  },
+  "1001064": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Japanese United Warship",
+     "Key": "Realship9097",
+     "X": 830.0,
+     "Z": 2185.0,
+     "Icon": "boss.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Japanese United Warship",
+     "Key": "Realship9097",
+     "X": 1070.0,
+     "Z": 1788.0,
+     "Icon": "boss.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Japanese United Warship",
+     "Key": "Realship9097",
+     "X": 1467.0,
+     "Z": 1780.0,
+     "Icon": "boss.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Japanese United Warship",
+     "Key": "Realship9097",
+     "X": 1452.0,
+     "Z": 2230.0,
+     "Icon": "boss.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 3810.0,
+     "Z": 2562.0,
+     "Icon": "boss.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 3789.0,
+     "Z": 2898.0,
+     "Icon": "boss.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 3793.0,
+     "Z": 3192.0,
+     "Icon": "boss.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 3784.0,
+     "Z": 3456.0,
+     "Icon": "boss.tga",
+     "Source": "map mark9"
+    },
+    {
+     "Name": "Westward Warship",
+     "Key": "Realship9102",
+     "X": 5735.0,
+     "Z": 3670.0,
+     "Icon": "boss.tga",
+     "Source": "map mark10"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 7167.0,
+     "Z": 1878.0,
+     "Icon": "boss.tga",
+     "Source": "map mark11"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 7044.0,
+     "Z": 1514.0,
+     "Icon": "boss.tga",
+     "Source": "map mark12"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 7599.0,
+     "Z": 1764.0,
+     "Icon": "boss.tga",
+     "Source": "map mark13"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 7829.0,
+     "Z": 1519.0,
+     "Icon": "boss.tga",
+     "Source": "map mark14"
+    },
+    {
+     "Name": "Japanese Frigate",
+     "Key": "Realship9098",
+     "X": 8114.0,
+     "Z": -1526.0,
+     "Icon": "boss.tga",
+     "Source": "map mark15"
+    }
+   ]
+  },
+  "1001065": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": 51.0,
+     "Z": 530.0,
+     "Icon": "boss.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -249.0,
+     "Z": 612.0,
+     "Icon": "boss.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -574.0,
+     "Z": -523.0,
+     "Icon": "boss.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -796.0,
+     "Z": -421.0,
+     "Icon": "boss.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Japanese Pirate Transport Ship",
+     "Key": "Realship9106",
+     "X": -1007.0,
+     "Z": -1407.0,
+     "Icon": "boss.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Japanese Pirate Transport Ship",
+     "Key": "Realship9106",
+     "X": -1387.0,
+     "Z": -1294.0,
+     "Icon": "boss.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Japanese Pirate Warship",
+     "Key": "Realship9096",
+     "X": -1424.0,
+     "Z": -1779.0,
+     "Icon": "boss.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Biry Warship",
+     "Key": "Realship9100",
+     "X": -2496.0,
+     "Z": -3573.0,
+     "Icon": "boss.tga",
+     "Source": "map mark9"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -4335.0,
+     "Z": -165.0,
+     "Icon": "boss.tga",
+     "Source": "map mark10"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -4344.0,
+     "Z": 54.0,
+     "Icon": "boss.tga",
+     "Source": "map mark11"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -4660.0,
+     "Z": 155.0,
+     "Icon": "boss.tga",
+     "Source": "map mark12"
+    },
+    {
+     "Name": "Japanese Pirate Ship",
+     "Key": "Realship9095",
+     "X": -4652.0,
+     "Z": 79.0,
+     "Icon": "boss.tga",
+     "Source": "map mark13"
+    },
+    {
+     "Name": "Japanese Pirate Warship",
+     "Key": "Realship9096",
+     "X": -4487.0,
+     "Z": -372.0,
+     "Icon": "boss.tga",
+     "Source": "map mark14"
+    },
+    {
+     "Name": "Japanese Pirate Warship",
+     "Key": "Realship9096",
+     "X": -4409.0,
+     "Z": -600.0,
+     "Icon": "boss.tga",
+     "Source": "map mark15"
+    },
+    {
+     "Name": "Japanese Pirate Warship",
+     "Key": "Realship9096",
+     "X": -5591.0,
+     "Z": -1710.0,
+     "Icon": "boss.tga",
+     "Source": "map mark17"
+    },
+    {
+     "Name": "Japanese United Warship",
+     "Key": "Realship9097",
+     "X": -5902.0,
+     "Z": -2340.0,
+     "Icon": "boss.tga",
+     "Source": "map mark18"
+    },
+    {
+     "Name": "ChiCheng Warship",
+     "Key": "Realship9101",
+     "X": -5878.0,
+     "Z": -3467.0,
+     "Icon": "boss.tga",
+     "Source": "map mark19"
+    }
+   ]
+  },
+  "1001070": {
+   "Name": "Palenque Ruins",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "General Don John",
+     "Key": "FightNpc06029",
+     "X": -502.6,
+     "Z": 51.1,
+     "Icon": "redboss.tga",
+     "Source": "map mark0"
+    },
+    {
+     "Name": "General Suleiman",
+     "Key": "FightNpc06030",
+     "X": 486.5,
+     "Z": 17.4,
+     "Icon": "blueboss.tga",
+     "Source": "map mark1"
+    }
+   ]
+  },
+  "1001079": {
+   "Name": "Ancient City Wilderness",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Ancient War Elephant",
+     "Key": "FightNpc06278",
+     "X": -127.0,
+     "Z": 98.0,
+     "Icon": "part9.tga",
+     "Source": "map mark1"
+    },
+    {
+     "Name": "Fierce Patriarch",
+     "Key": "FightNpc06281",
+     "X": -44.0,
+     "Z": -187.0,
+     "Icon": "part9.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Trainer \"Sin Carlo\"",
+     "Key": "FightNpc06285",
+     "X": 225.0,
+     "Z": -89.0,
+     "Icon": "part9.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Resident General \"Pasti\"",
+     "Key": "FightNpc06286",
+     "X": 137.0,
+     "Z": 117.0,
+     "Icon": "part9.tga",
+     "Source": "map mark7"
+    }
+   ]
+  },
+  "1001080": {
+   "Name": "Golden Ancient City",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Patrol Lieutenant \"Linaia\"",
+     "Key": "FightNpc06290",
+     "X": 32.0,
+     "Z": 90.0,
+     "Icon": "part9.tga",
+     "Source": "map mark0"
+    },
+    {
+     "Name": "Patrol Leader \"Jack Rowe\"",
+     "Key": "FightNpc06291",
+     "X": -85.0,
+     "Z": 93.0,
+     "Icon": "part9.tga",
+     "Source": "map mark1"
+    },
+    {
+     "Name": "Admiralty Guard \"Turlock\"",
+     "Key": "FightNpc06293",
+     "X": -112.0,
+     "Z": -60.0,
+     "Icon": "part9.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "\"Michael\" of Nitta.",
+     "Key": "FightNpc06299",
+     "X": 23.0,
+     "Z": -23.0,
+     "Icon": "part9.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Moon Tower Guardian \"Hagrid\"",
+     "Key": "FightNpc06300",
+     "X": 121.0,
+     "Z": 39.0,
+     "Icon": "part9.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Star Tower Guard \"Gorio\"",
+     "Key": "FightNpc06301",
+     "X": -45.0,
+     "Z": -113.0,
+     "Icon": "part9.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "High Priest",
+     "Key": "FightNpc06305",
+     "X": 119.0,
+     "Z": -122.0,
+     "Icon": "part9.tga",
+     "Source": "map mark6"
+    }
+   ]
+  },
+  "1009001": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Ricardo Reyes' Flagship",
+     "Key": "Realship8111",
+     "X": 260.0,
+     "Z": 1379.0,
+     "Icon": "boss.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Katarina Reyes' Flagship",
+     "Key": "Realship8112",
+     "X": -1356.4,
+     "Z": -367.7,
+     "Icon": "boss.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Jose Reyes' Flagship",
+     "Key": "Realship8113",
+     "X": 654.3,
+     "Z": 153.1,
+     "Icon": "boss.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 611.7,
+     "Z": 2115.1,
+     "Icon": "part35.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 1623.2,
+     "Z": 2459.9,
+     "Icon": "part35.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 823.4,
+     "Z": 2783.3,
+     "Icon": "part35.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 885.1,
+     "Z": 2035.4,
+     "Icon": "part35.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 1398.7,
+     "Z": 1702.6,
+     "Icon": "part35.tga",
+     "Source": "map mark9"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 1707.7,
+     "Z": 3499.6,
+     "Icon": "part35.tga",
+     "Source": "map mark10"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 1079.7,
+     "Z": 3335.0,
+     "Icon": "part35.tga",
+     "Source": "map mark11"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": 1686.1,
+     "Z": 2717.2,
+     "Icon": "part35.tga",
+     "Source": "map mark12"
+    },
+    {
+     "Name": "Bay Command Ship",
+     "Key": "Realship8102",
+     "X": 1363.3,
+     "Z": 3447.7,
+     "Icon": "part35.tga",
+     "Source": "map mark13"
+    },
+    {
+     "Name": "Bay Destroyer",
+     "Key": "Realship8104",
+     "X": 1398.7,
+     "Z": 2597.9,
+     "Icon": "part35.tga",
+     "Source": "map mark14"
+    },
+    {
+     "Name": "Bay Command Ship",
+     "Key": "Realship8102",
+     "X": 985.8,
+     "Z": 1768.6,
+     "Icon": "part35.tga",
+     "Source": "map mark15"
+    },
+    {
+     "Name": "Bay Fiery Mothership",
+     "Key": "Realship8105",
+     "X": -632.96,
+     "Z": 1161.72,
+     "Icon": "part35.tga",
+     "Source": "map mark16"
+    },
+    {
+     "Name": "Bay Destroyer",
+     "Key": "Realship8104",
+     "X": -650.5,
+     "Z": 1318.2,
+     "Icon": "part35.tga",
+     "Source": "map mark17"
+    },
+    {
+     "Name": "Bay Sniper Mothership",
+     "Key": "Realship8107",
+     "X": -735.5,
+     "Z": 1492.2,
+     "Icon": "part35.tga",
+     "Source": "map mark18"
+    },
+    {
+     "Name": "Bay Sniper Mothership",
+     "Key": "Realship8107",
+     "X": -599.8,
+     "Z": -825.1,
+     "Icon": "part35.tga",
+     "Source": "map mark19"
+    },
+    {
+     "Name": "Bay Provision Ship",
+     "Key": "Realship8109",
+     "X": -574.5,
+     "Z": -630.2,
+     "Icon": "part35.tga",
+     "Source": "map mark20"
+    },
+    {
+     "Name": "Bay Torpedo Boat",
+     "Key": "Realship8110",
+     "X": -524.5,
+     "Z": -440.1,
+     "Icon": "part35.tga",
+     "Source": "map mark21"
+    },
+    {
+     "Name": "Bay Fiery Mothership",
+     "Key": "Realship8105",
+     "X": -476.1,
+     "Z": -246.9,
+     "Icon": "part35.tga",
+     "Source": "map mark22"
+    },
+    {
+     "Name": "Bay Destroyer",
+     "Key": "Realship8104",
+     "X": 185.3,
+     "Z": -1101.9,
+     "Icon": "part35.tga",
+     "Source": "map mark23"
+    },
+    {
+     "Name": "Bay Provision Ship",
+     "Key": "Realship8109",
+     "X": 95.8,
+     "Z": -913.0,
+     "Icon": "part35.tga",
+     "Source": "map mark24"
+    },
+    {
+     "Name": "Bay Torpedo Boat",
+     "Key": "Realship8110",
+     "X": 162.2,
+     "Z": -749.1,
+     "Icon": "part35.tga",
+     "Source": "map mark25"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": -938.0,
+     "Z": 528.5,
+     "Icon": "part35.tga",
+     "Source": "map mark26"
+    },
+    {
+     "Name": "Bay Destroyer",
+     "Key": "Realship8104",
+     "X": -1159.3,
+     "Z": 629.4,
+     "Icon": "part35.tga",
+     "Source": "map mark27"
+    },
+    {
+     "Name": "Bay Command Ship",
+     "Key": "Realship8102",
+     "X": -1428.5,
+     "Z": 510.2,
+     "Icon": "part35.tga",
+     "Source": "map mark28"
+    },
+    {
+     "Name": "Bay Frigate",
+     "Key": "Realship8101",
+     "X": -1428.5,
+     "Z": 722.7,
+     "Icon": "part35.tga",
+     "Source": "map mark29"
+    }
+   ]
+  },
+  "1011001": {
+   "Name": "Lisbon City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1012001": {
+   "Name": "Seville City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1016001": {
+   "Name": "Barcelona City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1018001": {
+   "Name": "Genoa City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1022001": {
+   "Name": "Venice City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1024001": {
+   "Name": "Athens City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046,
+    3300037,
+    3300038
+   ],
+   "Markers": []
+  },
+  "1024002": {
+   "Name": "Athens Port",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1024999": {
+   "Name": "Athens Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3300058,
+    3300044,
+    3300026,
+    3300049,
+    3320801,
+    3300030,
+    3320205,
+    3323901,
+    3324001,
+    3321201
+   ],
+   "Markers": []
+  },
+  "1026001": {
+   "Name": "Istanbul City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1026999": {
+   "Name": "Istanbul Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3300049,
+    3323701
+   ],
+   "Markers": []
+  },
+  "1030001": {
+   "Name": "Beirut City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300025,
+    3300046
+   ],
+   "Markers": []
+  },
+  "1030999": {
+   "Name": "Beirut Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3324001,
+    3300049,
+    3321201,
+    3300045,
+    3323901,
+    3300030,
+    3320801,
+    3300058,
+    3300026,
+    3320205
+   ],
+   "Markers": []
+  },
+  "1032001": {
+   "Name": "Alexander City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1032002": {
+   "Name": "Alexander Port",
+   "Sea": false,
+   "PreloadedModels": [
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1032999": {
+   "Name": "Alexander Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3321201,
+    3324001,
+    3323901,
+    3320205,
+    3300049,
+    3300028,
+    3300033,
+    3300048,
+    3300047
+   ],
+   "Markers": []
+  },
+  "1033001": {
+   "Name": "Tripoli City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1033999": {
+   "Name": "Tripoli Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3300049
+   ],
+   "Markers": []
+  },
+  "1034001": {
+   "Name": "Algiers City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1034999": {
+   "Name": "Algiers Suburb",
+   "Sea": false,
+   "PreloadedModels": [
+    3300049
+   ],
+   "Markers": []
+  },
+  "1036001": {
+   "Name": "Madeira City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1037001": {
+   "Name": "Las Palmas City",
+   "Sea": false,
+   "PreloadedModels": [
+    3300046
+   ],
+   "Markers": []
+  },
+  "1400101": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1400102": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1400103": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1400104": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1400201": {
+   "Name": "men400201",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Wolf Population",
+     "Key": "BossPos21",
+     "X": -55.6,
+     "Z": -78.2,
+     "Icon": "part9.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Wolf Population",
+     "Key": "BossPos21",
+     "X": -77.91,
+     "Z": -522.27,
+     "Icon": "part9.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Lion population",
+     "Key": "BossPos31",
+     "X": 205.41,
+     "Z": -1216.42,
+     "Icon": "part9.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Lion population",
+     "Key": "BossPos31",
+     "X": 543.86,
+     "Z": -1500.67,
+     "Icon": "part9.tga",
+     "Source": "map mark9"
+    }
+   ]
+  },
+  "1400202": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Population of monitor lizards",
+     "Key": "BossPos41",
+     "X": 28.89,
+     "Z": 49.89,
+     "Icon": "part9.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Population of monitor lizards",
+     "Key": "BossPos41",
+     "X": -201.33,
+     "Z": -41.28,
+     "Icon": "part9.tga",
+     "Source": "map mark3"
+    }
+   ]
+  },
+  "1400204": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Vajra population",
+     "Key": "BossPos51",
+     "X": 526.3,
+     "Z": -1092.84,
+     "Icon": "part9.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Vajra population",
+     "Key": "BossPos51",
+     "X": -285.83,
+     "Z": -1891.7,
+     "Icon": "part9.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Vajra population",
+     "Key": "BossPos51",
+     "X": 70.23,
+     "Z": 603.8,
+     "Icon": "part9.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "GFNpcSummon01Pos",
+     "Key": "GFNpcSummon01Pos",
+     "X": 99.5,
+     "Z": -1762.01,
+     "Icon": "part9.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "GFNpcSummon01Pos",
+     "Key": "GFNpcSummon01Pos",
+     "X": -430.72,
+     "Z": -273.32,
+     "Icon": "part9.tga",
+     "Source": "map mark8"
+    }
+   ]
+  },
+  "1400301": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": 65.02,
+     "Z": -33.78,
+     "Icon": "part9.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": 8.25,
+     "Z": -152.76,
+     "Icon": "part9.tga",
+     "Source": "map mark5"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": -139.74,
+     "Z": -108.22,
+     "Icon": "part9.tga",
+     "Source": "map mark6"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": -60.18,
+     "Z": 27.17,
+     "Icon": "part9.tga",
+     "Source": "map mark7"
+    },
+    {
+     "Name": "Treasure Chest [Blue Diamond]",
+     "Key": "Global_box03",
+     "X": -75.46,
+     "Z": -58.75,
+     "Icon": "part9.tga",
+     "Source": "map mark8"
+    },
+    {
+     "Name": "Treasure Chest [Blue Diamond]",
+     "Key": "Global_box03",
+     "X": -44.05,
+     "Z": -27.48,
+     "Icon": "part9.tga",
+     "Source": "map mark9"
+    },
+    {
+     "Name": "Treasure Chest [Blue Diamond]",
+     "Key": "Global_box03",
+     "X": -75.31,
+     "Z": -28.0,
+     "Icon": "part9.tga",
+     "Source": "map mark10"
+    },
+    {
+     "Name": "Treasure Chest [Blue Diamond]",
+     "Key": "Global_box03",
+     "X": -44.74,
+     "Z": -60.23,
+     "Icon": "part9.tga",
+     "Source": "map mark11"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": 171.26,
+     "Z": -212.47,
+     "Icon": "part9.tga",
+     "Source": "map mark12"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": 109.05,
+     "Z": 115.09,
+     "Icon": "part9.tga",
+     "Source": "map mark13"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": -154.86,
+     "Z": -229.38,
+     "Icon": "part9.tga",
+     "Source": "map mark14"
+    },
+    {
+     "Name": "Treasure Chest [Black Diamond]",
+     "Key": "Global_box02",
+     "X": 21.19,
+     "Z": 148.03,
+     "Icon": "part9.tga",
+     "Source": "map mark15"
+    }
+   ]
+  },
+  "1504004": {
+   "Name": "Corsica Tavern",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Pirate Treasure Chest",
+     "Key": "IDName00004974",
+     "X": -34.9,
+     "Z": -13.8,
+     "Icon": "",
+     "Source": "map2 [17.2]"
+    }
+   ]
+  },
+  "1505004": {
+   "Name": "Bandit Camp Tavern",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Pirate Treasure Chest",
+     "Key": "IDName00004974",
+     "X": -35.0,
+     "Z": -13.9,
+     "Icon": "",
+     "Source": "map2 [26.2]"
+    }
+   ]
+  },
+  "1505999": {
+   "Name": "Crete Inland",
+   "Sea": false,
+   "PreloadedModels": [
+    3322801
+   ],
+   "Markers": []
+  },
+  "1521001": {
+   "Name": "Tortue City",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Pirate Treasure Chest",
+     "Key": "npc52109",
+     "X": -20.2,
+     "Z": -23.3,
+     "Icon": "",
+     "Source": "map2 [20.10]"
+    }
+   ]
+  },
+  "1701001": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1701002": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323002
+   ],
+   "Markers": []
+  },
+  "1701003": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1701004": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1702001": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1702002": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1702003": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1702004": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1703001": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1703002": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1703003": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1703004": {
+   "Name": "",
+   "Sea": false,
+   "PreloadedModels": [
+    3300037,
+    3300038,
+    3322802,
+    3323001
+   ],
+   "Markers": []
+  },
+  "1704006": {
+   "Name": "Elite Battlefield",
+   "Sea": false,
+   "PreloadedModels": [
+    3321201,
+    3324001,
+    3323901,
+    3320205,
+    3300049,
+    3300028,
+    3300033,
+    3300048,
+    3300047
+   ],
+   "Markers": []
+  },
+  "1704007": {
+   "Name": "Hero Battlefield",
+   "Sea": false,
+   "PreloadedModels": [],
+   "Markers": [
+    {
+     "Name": "Ancient Tyrannosaurus Rex",
+     "Key": "IDNAME_FightNpc04005",
+     "X": 366.75,
+     "Z": -630.62,
+     "Icon": "part004.tga",
+     "Source": "map mark1"
+    },
+    {
+     "Name": "Ancient Tyrannosaurus Rex",
+     "Key": "IDNAME_FightNpc04005",
+     "X": 186.28,
+     "Z": -270.18,
+     "Icon": "part004.tga",
+     "Source": "map mark2"
+    },
+    {
+     "Name": "Ancient Tyrannosaurus Rex",
+     "Key": "IDNAME_FightNpc04005",
+     "X": -229.25,
+     "Z": 148.27,
+     "Icon": "part004.tga",
+     "Source": "map mark3"
+    },
+    {
+     "Name": "Ancient Tyrannosaurus Rex",
+     "Key": "IDNAME_FightNpc04005",
+     "X": 198.02,
+     "Z": 334.54,
+     "Icon": "part004.tga",
+     "Source": "map mark4"
+    },
+    {
+     "Name": "Ancient Tyrannosaurus Rex",
+     "Key": "IDNAME_FightNpc04005",
+     "X": -339.06,
+     "Z": -419.77,
+     "Icon": "part004.tga",
+     "Source": "map mark5"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,794 @@
+[
+  {
+    "Key": "Apparatus1",
+    "Title": "Exquisite Octant",
+    "Result": "shiphelp038",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp038",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 1,
+    "Tab": 1,
+    "Photo": 190421,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 1.index/1.Type/1.photo/1.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 1.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp038]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus2",
+    "Title": "Alchemic Stargazer",
+    "Result": "shiphelp039",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp039",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 2,
+    "Tab": 1,
+    "Photo": 130325,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 2.index/2.Type/2.photo/2.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 2.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp039]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus3",
+    "Title": "Scarlet Poison Needle",
+    "Result": "shiphelp047",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp047",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 3,
+    "Tab": 1,
+    "Photo": 1927080,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 3.index/3.Type/3.photo/3.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 3.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp047]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus4",
+    "Title": "Loki's Bracer",
+    "Result": "shiphelp049",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp049",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 4,
+    "Tab": 1,
+    "Photo": 1927082,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 4.index/4.Type/4.photo/4.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 4.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp049]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus5",
+    "Title": "Blurry Telescope",
+    "Result": "shiphelp036",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp036",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 5,
+    "Tab": 1,
+    "Photo": 140817,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 5.index/5.Type/5.photo/5.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 5.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp036]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus6",
+    "Title": "Mortal Craft",
+    "Result": "shiphelp030",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp030",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 6,
+    "Tab": 1,
+    "Photo": 1926029,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 6.index/6.Type/6.photo/6.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 6.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp030]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus7",
+    "Title": "Lion Heart Medal",
+    "Result": "shiphelp048",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp048",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 7,
+    "Tab": 1,
+    "Photo": 1927081,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 7.index/7.Type/7.photo/7.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 7.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp048]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus8",
+    "Title": "Soul Necklace",
+    "Result": "shiphelp046",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp046",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 8,
+    "Tab": 1,
+    "Photo": 1927079,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 8.index/8.Type/8.photo/8.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 8.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp046]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus9",
+    "Title": "Hand Of Odin",
+    "Result": "shiphelp042",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp042",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 9,
+    "Tab": 2,
+    "Photo": 140807,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 9.index/9.Type/9.photo/9.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 9.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp042]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus10",
+    "Title": "Arm Of Odin",
+    "Result": "shiphelp043",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp043",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 10,
+    "Tab": 2,
+    "Photo": 170511,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 10.index/10.Type/10.photo/10.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 10.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp043]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus11",
+    "Title": "Blood Of Odin",
+    "Result": "shiphelp044",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp044",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 11,
+    "Tab": 2,
+    "Photo": 170529,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 11.index/11.Type/11.photo/11.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 11.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp044]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus12",
+    "Title": "Odin's Sacrifice",
+    "Result": "shiphelp045",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp045",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 12,
+    "Tab": 2,
+    "Photo": 190722,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 12.index/12.Type/12.photo/12.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 12.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp045]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus13",
+    "Title": "Kronos Signet",
+    "Result": "shiphelp050",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp050",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 13,
+    "Tab": 2,
+    "Photo": 1927083,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 13.index/13.Type/13.photo/13.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 13.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp050]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus14",
+    "Title": "Dusty Coronograph",
+    "Result": "shiphelp037",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp037",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 14,
+    "Tab": 2,
+    "Photo": 152172,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 14.index/14.Type/14.photo/14.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 14.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp037]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus15",
+    "Title": "Force of God",
+    "Result": "shiphelp076",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp076",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 15,
+    "Tab": 3,
+    "Photo": 6007150,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 15.index/15.Type/15.photo/15.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 15.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp076]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus16",
+    "Title": "Protect of God",
+    "Result": "shiphelp077",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp077",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 16,
+    "Tab": 3,
+    "Photo": 6007151,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 16.index/16.Type/16.photo/16.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 16.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp077]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus17",
+    "Title": "Michael's Muster",
+    "Result": "shiphelp066",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp066",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 17,
+    "Tab": 3,
+    "Photo": 3325180,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 17.index/17.Type/17.photo/17.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 17.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp066]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus18",
+    "Title": "Raphael's Ward",
+    "Result": "shiphelp065",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp065",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 18,
+    "Tab": 3,
+    "Photo": 3325179,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 18.index/18.Type/18.photo/18.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 18.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp065]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus19",
+    "Title": "shiphelp001",
+    "Result": "shiphelp001",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp001",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 19,
+    "Tab": 4,
+    "Photo": 192141,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 19.index/19.Type/19.photo/19.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 19.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp001]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus20",
+    "Title": "Cannon Control Device",
+    "Result": "shiphelp062",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp062",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 20,
+    "Tab": 4,
+    "Photo": 3325162,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 20.index/20.Type/20.photo/20.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 20.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp062]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus21",
+    "Title": "shiphelp002",
+    "Result": "shiphelp002",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp002",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 21,
+    "Tab": 4,
+    "Photo": 192142,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 21.index/21.Type/21.photo/21.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 21.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp002]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  },
+  {
+    "Key": "Apparatus22",
+    "Title": "Cannon Frame Calibrator",
+    "Result": "shiphelp072",
+    "Amount": 1,
+    "Fee": 0,
+    "Ingredients": [
+      {
+        "Name": "shiphelp072",
+        "Amount": 1
+      },
+      {
+        "Name": "propDJ3254",
+        "Amount": 1
+      }
+    ],
+    "Index": 22,
+    "Tab": 4,
+    "Photo": 3325188,
+    "Cost": [
+      {
+        "Name": "propDJ3254",
+        "Label": "Gold Apparatus Upgrade Card",
+        "Amount": 1
+      }
+    ],
+    "Mode": "fuse",
+    "Sources": {
+      "Key/Index/Tab/Photo/Result": "CLIENT:BeliefInfos.ini[Apparatus] 22.index/22.Type/22.photo/22.name; UILogic 0x100dadad sprintf \"Apparatus%d\" with 22.index, 0x100d9f01 \"csAppartusStart %s\"",
+      "Title": "CLIENT:namelist.idres[shiphelp072]",
+      "Mode": "CLIENT:numtostring.ini[ApparatusMergeHelp] (fusion: the selected apparatus type transfers base attributes into the apparatus the player puts in; preview; Save/Cancel)",
+      "Ingredients": "GUESS:one apparatus of the selected type (the donor whose attributes are transferred) and one Gold Apparatus Upgrade Card are consumed; the apparatus the player put into slot 1 is the one that is improved (the emulator Compound() returns Result instead)",
+      "Cost": "CLIENT:help text \"deduct a certain amount of gold equipment upgrade card\"; key propDJ3254 = \"Gold Apparatus Upgrade Card\" (namelist.idres); amount GUESS",
+      "Fee": "GUESS:0 silver (no silver fee stated)"
+    }
+  }
+]

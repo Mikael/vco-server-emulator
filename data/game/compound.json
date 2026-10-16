@@ -1,0 +1,65 @@
+[
+  {
+    "Key": "Apparatus1",
+    "Title": "Combine 3 practice swords and 2 materials into a better sword (100 silver)",
+    "Result": "IDName00000347",
+    "Amount": 1,
+    "Fee": 100,
+    "Ingredients": [
+      { "Name": "IDName00000342", "Amount": 3 },
+      { "Name": "IDName00000916", "Amount": 2 }
+    ]
+  },
+  {
+    "Key": "Apparatus2",
+    "Title": "Combine 3 swords into a level 2 sword (2000 silver)",
+    "Result": "IDName00000351",
+    "Amount": 1,
+    "Fee": 2000,
+    "Ingredients": [
+      { "Name": "IDName00000347", "Amount": 3 }
+    ]
+  },
+  {
+    "Key": "Apparatus3",
+    "Title": "Combine 3 hatchets and 2 materials into a better axe (100 silver)",
+    "Result": "IDName00000441",
+    "Amount": 1,
+    "Fee": 100,
+    "Ingredients": [
+      { "Name": "IDName00000438", "Amount": 3 },
+      { "Name": "IDName00000919", "Amount": 2 }
+    ]
+  },
+  {
+    "Key": "Apparatus4",
+    "Title": "Combine 3 falchions into a level 2 falchion (2000 silver)",
+    "Result": "IDName00000398",
+    "Amount": 1,
+    "Fee": 2000,
+    "Ingredients": [
+      { "Name": "IDName00000394", "Amount": 3 }
+    ]
+  },
+  {
+    "Key": "Apparatus5",
+    "Title": "Combine 3 plain clothes and a sewing material into better clothes (50 silver)",
+    "Result": "IDName00000651",
+    "Amount": 1,
+    "Fee": 50,
+    "Ingredients": [
+      { "Name": "IDName00000643", "Amount": 3 },
+      { "Name": "IDName00003835", "Amount": 1 }
+    ]
+  },
+  {
+    "Key": "Apparatus6",
+    "Title": "Combine 3 guns into a level 2 gun (2000 silver)",
+    "Result": "IDName00003546",
+    "Amount": 1,
+    "Fee": 2000,
+    "Ingredients": [
+      { "Name": "IDName00003542", "Amount": 3 }
+    ]
+  }
+]
