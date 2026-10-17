@@ -91,12 +91,33 @@
       "SKILL_SHOT": -10
     },
     "AttackMilliseconds": {
-      "SKILL_HAND": 700,
-      "SKILL_SWORD": 700,
-      "SKILL_FALCHION": 700,
-      "SKILL_AXE": 1000,
-      "SKILL_SHOT": 1500
+      "SKILL_HAND": 1000,
+      "SKILL_SWORD": 900,
+      "SKILL_FALCHION": 900,
+      "SKILL_AXE": 1300,
+      "SKILL_SHOT": 2000
     },
+    "ImpactMilliseconds": {
+      "SKILL_HAND": 330,
+      "SKILL_SWORD": 300,
+      "SKILL_FALCHION": 300,
+      "SKILL_AXE": 400,
+      "SKILL_SHOT": 1300
+    },
+    "AttackReach": {
+      "SKILL_HAND": 2.5,
+      "SKILL_SWORD": 2.8,
+      "SKILL_FALCHION": 2.6,
+      "SKILL_AXE": 2.8,
+      "SKILL_SHOT": 12.0,
+      "BOW": 15.0
+    },
+    "DefaultAttackReach": 2.5,
+    "ReachSlack": 0.6,
+    "ApproachPercent": 75,
+    "MeleeChaseLimit": 40.0,
+    "MinimumAttackMilliseconds": 400,
+    "CombatStepMilliseconds": 100,
     "DefencePromotionPercentPerLevel": 1,
     "DebuffPercentPerLevel": 2,
     "BuffPercentPerLevel": 2,

@@ -4,3 +4,9 @@ logs/
 data/accounts.json
 data/guilds.json
 .vs/
+data/auctions.json
+data/guildwars.json
+data/colonies.json
+data/guildbuild.json
+data/guildmatches.json
+data/battles.json

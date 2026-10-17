@@ -27,6 +27,7 @@ public sealed class MonsterState
     public long MoveStart { get; set; }
     public long NextRoamAt { get; set; }
     public bool Returning { get; set; }
+    public int Heading { get; set; } = -1;
 
     public bool Moving => Speed > 0f;
 
@@ -264,7 +265,8 @@ public sealed class World
                     if (!sameAim) Walk(definition, state, aimX, aimZ, rules.MonsterChaseSpeed, "(monster chases)");
                     continue;
                 }
-                if (state.Moving) Stop(definition, state);
+                int facing = Facing(state, state.Target);
+                if (state.Moving || TurnAngle(state.Heading, facing) > 150) Stop(definition, state, facing);
                 if (now < state.NextAttackAt) continue;
                 state.NextAttackAt = now + Math.Max(500, rules.MonsterAttackMilliseconds);
                 try
@@ -297,10 +299,11 @@ public sealed class World
         Walk(definition, state, state.HomeX, state.HomeZ, rules.MonsterChaseSpeed, "(monster returns)");
     }
 
-    private void Stop(MonsterDefinition definition, MonsterState state)
+    private void Stop(MonsterDefinition definition, MonsterState state, int facing = 0)
     {
         state.Speed = 0f;
-        byte[] place = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z);
+        state.Heading = facing;
+        byte[] place = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z, orient: facing);
         foreach (ClientSession session in InScene(definition.Scene)) session.Send(place, "(monster stops)");
     }
 
@@ -312,8 +315,27 @@ public sealed class World
         state.DestZ = z;
         state.Speed = speed;
         state.MoveStart = Environment.TickCount64;
+        state.Heading = -1;
         byte[] move = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z, x, z, speed);
         foreach (ClientSession session in InScene(definition.Scene)) session.Send(move, note);
+    }
+
+    private static int Facing(MonsterState state, ClientSession session)
+    {
+        if (session.Mover == null) return Math.Max(0, state.Heading);
+        (float x, float z) = session.Mover.Now();
+        float dx = x - state.X;
+        float dz = z - state.Z;
+        if (dx * dx + dz * dz < 0.0001f) return Math.Max(0, state.Heading);
+        double tenths = Math.Atan2(dx, dz) * 1800.0 / Math.PI;
+        return (int)Math.Round(tenths < 0 ? tenths + 3600.0 : tenths) % 3600;
+    }
+
+    private static int TurnAngle(int from, int to)
+    {
+        if (from < 0) return 1800;
+        int difference = Math.Abs(from - to) % 3600;
+        return difference > 1800 ? 3600 - difference : difference;
     }
 
     private static float FromHome(MonsterState state, ClientSession session)

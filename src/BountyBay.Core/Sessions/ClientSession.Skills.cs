@@ -22,7 +22,6 @@ public sealed record SkillLesson(string Key, int Price, string Requires = "", in
 
 public sealed partial class ClientSession
 {
-    private const float SkillReach = 12f;
     private const string BareHands = "SKILL_HAND";
     private const string Medicine = "SKILL_LEECHCRAFT";
     private const int ShipArmHook = 5;
@@ -471,6 +470,7 @@ public sealed partial class ClientSession
         }
         CombatRuleSet combat = Rule.Combat;
         MonsterState state = Context.World.Monster(monster);
+        PrepareStuntStrike(monster);
         Context.World.Provoke(monster, this);
         if (weakens.Length > 0)
             state.Weakened[weakens] = (combat.DebuffPercentPerLevel * level, Environment.TickCount64 + combat.StuntSeconds * 1000L);
@@ -793,9 +793,10 @@ public sealed partial class ClientSession
     private MonsterDefinition? SkillTarget()
     {
         (float x, float z) = Mover!.Now();
+        float reach = AttackReach() + Rule.Combat.ReachSlack;
         List<MonsterDefinition> near = Context.Data.Monsters.Values
             .Where(monster => monster.Scene == Scene && !Context.World.Monster(monster).Dead)
-            .Where(monster => Distance(monster, x, z) <= SkillReach)
+            .Where(monster => Distance(monster, x, z) <= reach)
             .ToList();
         return near.FirstOrDefault(monster => monster.Id == CombatTarget) ?? near.MinBy(monster => Distance(monster, x, z));
     }

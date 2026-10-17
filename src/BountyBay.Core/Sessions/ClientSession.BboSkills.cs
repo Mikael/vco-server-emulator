@@ -342,6 +342,7 @@ public sealed partial class ClientSession
         }
         CombatRuleSet combat = Rule.Combat;
         MonsterState state = Context.World.Monster(monster);
+        PrepareStuntStrike(monster);
         Context.World.Provoke(monster, this);
         if (weakens.Length > 0)
             state.Weakened[weakens] = (combat.DebuffPercentPerLevel * level, Environment.TickCount64 + combat.StuntSeconds * 1000L);

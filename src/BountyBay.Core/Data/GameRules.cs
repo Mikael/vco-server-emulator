@@ -104,12 +104,35 @@ public sealed class CombatRuleSet
     };
     public Dictionary<string, int> AttackMilliseconds { get; set; } = new()
     {
-        ["SKILL_HAND"] = 700,
-        ["SKILL_SWORD"] = 700,
-        ["SKILL_FALCHION"] = 700,
-        ["SKILL_AXE"] = 1000,
-        ["SKILL_SHOT"] = 1500,
+        ["SKILL_HAND"] = 1000,
+        ["SKILL_SWORD"] = 900,
+        ["SKILL_FALCHION"] = 900,
+        ["SKILL_AXE"] = 1300,
+        ["SKILL_SHOT"] = 2000,
     };
+    public Dictionary<string, int> ImpactMilliseconds { get; set; } = new()
+    {
+        ["SKILL_HAND"] = 330,
+        ["SKILL_SWORD"] = 300,
+        ["SKILL_FALCHION"] = 300,
+        ["SKILL_AXE"] = 400,
+        ["SKILL_SHOT"] = 1300,
+    };
+    public Dictionary<string, float> AttackReach { get; set; } = new()
+    {
+        ["SKILL_HAND"] = 2.5f,
+        ["SKILL_SWORD"] = 2.8f,
+        ["SKILL_FALCHION"] = 2.6f,
+        ["SKILL_AXE"] = 2.8f,
+        ["SKILL_SHOT"] = 12f,
+        ["BOW"] = 15f,
+    };
+    public float DefaultAttackReach { get; set; } = 2.5f;
+    public float ReachSlack { get; set; } = 0.6f;
+    public int ApproachPercent { get; set; } = 75;
+    public float MeleeChaseLimit { get; set; } = 40f;
+    public int MinimumAttackMilliseconds { get; set; } = 400;
+    public int CombatStepMilliseconds { get; set; } = 100;
     public int DefencePromotionPercentPerLevel { get; set; } = 1;
     public int DebuffPercentPerLevel { get; set; } = 2;
     public int BuffPercentPerLevel { get; set; } = 2;

@@ -115,17 +115,34 @@ public sealed partial class ClientSession
 
     public void Attack(MonsterDefinition monster)
     {
-        MonsterState state = Context.World.Monster(monster);
-        if (state.Dead || Mover == null || Hp <= 0) return;
-        long now = Environment.TickCount64;
-        if (now < _nextAttackAt) return;
-        CombatRuleSet rules = Rule.Combat;
+        if (!CanFight(monster)) return;
+        CombatTarget = monster.Id;
+        if (_meleeTarget != monster) _meleeSteered = false;
+        _meleeTarget = monster;
+        MeleeLoop.Watch(this);
+        MeleeStep();
+    }
+
+    private void Swing(MonsterDefinition monster, MonsterState state, long now)
+    {
         string fight = FightingSkill();
-        _nextAttackAt = now + rules.AttackMilliseconds.GetValueOrDefault(fight);
+        _nextAttackAt = now + AttackInterval(fight);
         EndState("IsUSAxe3");
+        FaceTowards(state.X, state.Z);
         PlayAction(BboAttackAction(), "(attack swing)", attack: true);
         WearEquipment();
         Context.World.Provoke(monster, this);
+        _meleePending = monster;
+        _meleeHitAt = now + Math.Max(0, Rule.Combat.ImpactMilliseconds.GetValueOrDefault(fight));
+        if (_meleeHitAt <= now) ResolvePendingStrike(now);
+    }
+
+    private void Strike(MonsterDefinition monster)
+    {
+        MonsterState state = Context.World.Monster(monster);
+        if (state.Dead || Mover == null || Hp <= 0) return;
+        CombatRuleSet rules = Rule.Combat;
+        string fight = FightingSkill();
 
         if (!StateActive("IsUSShot4") && !CombatRules.Hits(rules, Properties.Int("HitRatio"), MonsterDodge(monster, state)))
         {
