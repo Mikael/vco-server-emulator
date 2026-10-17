@@ -3,34 +3,88 @@ using BountyBay.Core.Protocol;
 
 namespace BountyBay.Core.Data;
 
-public readonly record struct WornLook(int Body, int TexColor, int Hat, int CapColor, int LeftHand, int RightHand)
+public readonly record struct WornLook(int Body, int TexColor, int Hat, int CapColor, int LeftHand, int RightHand, int StartEffect = 0, int EvolColor = 0)
 {
     private const int FemaleBodies = 3402;
+    private const int FemaleRole = 3001002;
+
+    public static bool IsFemale(CharacterRecord character) => character.Role == FemaleRole || character.Body / 1000 == FemaleBodies;
 
     public static WornLook Of(CharacterRecord character)
     {
         var look = new WornLook(character.Body, 0, 0, 0, 0, 0);
         if (character.Bags == null || !character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return look;
-        bool female = character.Body / 1000 == FemaleBodies;
+        bool female = IsFemale(character);
+        int suitHat = 0;
+        bool hatWorn = false;
+        int weaponStars = 0, weaponEvol = 0, bodyStars = 0, bodyEvol = 0;
         foreach (ItemStack item in worn.OrderBy(pair => pair.Key).Select(pair => pair.Value))
         {
-            int model = ItemCatalog.Number(item.Name, female ? "WearModelF" : "WearModel");
+            int model = Model(item.Name, female, "WearModel", "WearModelF");
             if (model == 0) continue;
             int color = ItemCatalog.Number(item.Name, "WearColor");
-            look = ItemCatalog.Text(item.Name, "WearProp") switch
+            string part = ItemCatalog.Text(item.Name, "WearProp");
+            switch (part)
             {
-                "BodyType" => look with { Body = model, TexColor = color },
-                "Hat" => look with { Hat = model, CapColor = color },
-                "LeftHand" => look with { LeftHand = model },
-                "RightHand" => look with { RightHand = model },
-                _ => look,
-            };
+                case "BodyType":
+                    look = look with { Body = model, TexColor = color };
+                    suitHat = Model(item.Name, female, "WearHat", "WearHatF");
+                    bodyStars = item.Upgrade?.Stars ?? 0;
+                    bodyEvol = item.Upgrade?.Evol ?? 0;
+                    break;
+                case "Hat":
+                    look = look with { Hat = model, CapColor = color };
+                    hatWorn = true;
+                    break;
+                case "LeftHand" or "RightHand":
+                    look = part == "LeftHand" ? look with { LeftHand = model } : look with { RightHand = model };
+                    weaponStars = Math.Max(weaponStars, item.Upgrade?.Stars ?? 0);
+                    weaponEvol = Math.Max(weaponEvol, item.Upgrade?.Evol ?? 0);
+                    break;
+            }
         }
-        return look;
+        if (!hatWorn && suitHat != 0) look = look with { Hat = suitHat };
+        return look with
+        {
+            StartEffect = WeaponStarEffect(weaponStars) | BodyStarEffect(bodyStars) << 8,
+            EvolColor = (weaponEvol > 0 ? 1 : 0) | (bodyEvol > 0 ? 1 << 16 : 0),
+        };
     }
 
-    public IEnumerable<(string Name, int Value)> Properties() =>
-    [
-        ("BodyType", Body), ("TexColor", TexColor), ("Hat", Hat), ("CapColor", CapColor), ("LeftHand", LeftHand), ("RightHand", RightHand),
-    ];
+    private static int Model(string item, bool female, string male, string other)
+    {
+        int model = female ? ItemCatalog.Number(item, other) : 0;
+        return model != 0 ? model : ItemCatalog.Number(item, male);
+    }
+
+    private static int WeaponStarEffect(int stars) => stars switch
+    {
+        <= 0 => 0,
+        < 10 => 1,
+        < 16 => 2,
+        < 26 => 3,
+        < 36 => 4,
+        < 40 => 5,
+        _ => 6,
+    };
+
+    private static int BodyStarEffect(int stars) => stars switch
+    {
+        < 16 => 0,
+        < 26 => 1,
+        < 36 => 2,
+        < 40 => 3,
+        _ => 4,
+    };
+
+    public IEnumerable<(string Name, int Value)> Properties()
+    {
+        var properties = new List<(string Name, int Value)>
+        {
+            ("BodyType", Body), ("TexColor", TexColor), ("Hat", Hat), ("CapColor", CapColor), ("LeftHand", LeftHand), ("RightHand", RightHand),
+        };
+        if (PropertyTable.Has("StartEffect")) properties.Add(("StartEffect", StartEffect));
+        if (PropertyTable.Has("EvolColor")) properties.Add(("EvolColor", EvolColor));
+        return properties;
+    }
 }

@@ -250,7 +250,7 @@ public sealed partial class ClientSession
     {
         string skill = ItemCatalog.Find(name) is { } properties && properties.TryGetValue("NeedSkill", out object? needed) ? needed as string ?? "" : "";
         int level = ItemCatalog.Number(name, "NeedSkillLevel");
-        if (skill.Length > 0 && SkillLevel(skill) < Math.Max(1, level))
+        if (skill.Length > 0 && WeaponSkillLevel(skill) < Math.Max(1, level))
         {
             SystemMessage($"Skill requirement not met: you need Level {Math.Max(1, level)} in the skill this article asks for.", SystemMessageKind.Prompt);
             return false;
@@ -268,15 +268,30 @@ public sealed partial class ClientSession
             SystemMessage("Your noble title is not high enough to use this article.", SystemMessageKind.Prompt);
             return false;
         }
+        int military = ItemCatalog.Number(name, "NeedMilitaryRank");
+        if (military > MilitaryRankLevel)
+        {
+            SystemMessage("Your military rank is not high enough to use this article.", SystemMessageKind.Prompt);
+            return false;
+        }
         return true;
     }
 
-    private static int GearClass(string name) => ItemCatalog.Number(name, "Kind") switch
+    private int WeaponSkillLevel(string skill)
+        => skill == "SKILL_BOW" ? Math.Max(SkillLevel(skill), SkillLevel("SKILL_SHOT")) : SkillLevel(skill);
+
+    private static int GearClass(string name) => ItemCatalog.Number(name, "ArmType") switch
     {
-        >= 5 and <= 8 => 1,
-        3 => 2,
-        4 => 3,
-        _ => 0,
+        1 or 2 => 1,
+        4 => 2,
+        5 => 3,
+        _ => ItemCatalog.Number(name, "Kind") switch
+        {
+            >= 5 and <= 8 => 1,
+            3 => 2,
+            4 => 3,
+            _ => 0,
+        },
     };
 
     private static int FreeGearSlot(Dictionary<int, ItemStack> worn)

@@ -13,7 +13,6 @@ public sealed partial class ClientSession
     private const int ViewArmRoleSlots = 12;
     private const int ViewArmShipSlots = 10;
     private const int ViewArmShipItem = 10;
-    private const int ViewArmFemaleBodies = 3402;
 
     private static readonly string[] ViewArmLookProperties =
         ["Name", "Level", "LandModel", "BodyType", "TexColor", "Hat", "CapColor", "LeftHand", "RightHand"];
@@ -76,7 +75,7 @@ public sealed partial class ClientSession
             return;
         }
         string part = ItemCatalog.Text(item, "WearProp");
-        bool female = Character.Body / 1000 == ViewArmFemaleBodies;
+        bool female = WornLook.IsFemale(Character);
         int model = ItemCatalog.Number(item, female ? "WearModelF" : "WearModel");
         if (part.Length == 0 || model == 0)
         {

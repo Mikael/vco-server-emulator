@@ -552,6 +552,7 @@ public sealed partial class ClientSession
         if (Character.Bags == null || !Character.Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn)) return BareHands;
         foreach (ItemStack item in worn.Values)
         {
+            if (ItemCatalog.Text(item.Name, "NeedSkill") == "SKILL_BOW") return "SKILL_SHOT";
             switch (ItemCatalog.Number(item.Name, "Kind"))
             {
                 case 5:

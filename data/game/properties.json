@@ -1450,5 +1450,13 @@
   {
     "Name": "PopularityDown",
     "Type": "U32"
+  },
+  {
+    "Name": "StartEffect",
+    "Type": "U32"
+  },
+  {
+    "Name": "EvolColor",
+    "Type": "U32"
   }
 ]
