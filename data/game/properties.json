@@ -1062,5 +1062,17 @@
   {
     "Name": "FirstAttack",
     "Type": "U32"
+  },
+  {
+    "Name": "StallPlayerName",
+    "Type": "String"
+  },
+  {
+    "Name": "StallPlayerPosX",
+    "Type": "U32"
+  },
+  {
+    "Name": "StallPlayerPosZ",
+    "Type": "U32"
   }
 ]

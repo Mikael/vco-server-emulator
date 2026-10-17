@@ -112,7 +112,10 @@ public sealed class CommandRouter
             .Add(new BboCharacterCommands())
             .Add(new BboSeaRouteCommands())
             .Add(new BboTeamProtocolCommands())
-            .Add(new BboRewardCommands());
+            .Add(new BboRewardCommands())
+            .Add(new GoToObjCommand())
+            .Add(new ParcelCostCommand())
+            .Add(new FindBoothCommand());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

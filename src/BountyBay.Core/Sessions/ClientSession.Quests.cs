@@ -117,6 +117,7 @@ public sealed partial class ClientSession
     {
         PetGainExperience(10);
         Context.Data.Monsters.TryGetValue(monsterId, out MonsterDefinition? killed);
+        if (killed != null) GainExploreKill(killed);
         CountKill(monsterId, killed?.Name ?? "");
     }
 

@@ -17,6 +17,36 @@ public sealed class MonsterState
     public ClientSession? Target { get; set; }
     public long NextAttackAt { get; set; }
     public Dictionary<string, (int Percent, long Until)> Weakened { get; } = [];
+    public float HomeX { get; set; }
+    public float HomeZ { get; set; }
+    public float FromX { get; set; }
+    public float FromZ { get; set; }
+    public float DestX { get; set; }
+    public float DestZ { get; set; }
+    public float Speed { get; set; }
+    public long MoveStart { get; set; }
+    public long NextRoamAt { get; set; }
+    public bool Returning { get; set; }
+
+    public bool Moving => Speed > 0f;
+
+    public void Advance(long now)
+    {
+        if (Speed <= 0f) return;
+        float dx = DestX - FromX;
+        float dz = DestZ - FromZ;
+        float total = MathF.Sqrt(dx * dx + dz * dz);
+        float done = Speed * (now - MoveStart) / 1000f;
+        if (total < 0.01f || done >= total)
+        {
+            X = DestX;
+            Z = DestZ;
+            Speed = 0f;
+            return;
+        }
+        X = FromX + dx * done / total;
+        Z = FromZ + dz * done / total;
+    }
 
     public int WeakenedBy(string what)
         => Weakened.TryGetValue(what, out (int Percent, long Until) entry) && entry.Until > Environment.TickCount64 ? entry.Percent : 0;
@@ -70,7 +100,11 @@ public sealed class World
     public MonsterState Monster(MonsterDefinition definition)
     {
         if (!_monsters.TryGetValue(definition.Id, out MonsterState? state))
-            _monsters[definition.Id] = state = new MonsterState { Hp = definition.Hp, X = definition.X, Z = definition.Z };
+            _monsters[definition.Id] = state = new MonsterState
+            {
+                Hp = definition.Hp, X = definition.X, Z = definition.Z, HomeX = definition.X, HomeZ = definition.Z,
+                NextRoamAt = Environment.TickCount64 + Random.Shared.Next(2000, 15000),
+            };
         return state;
     }
 
@@ -89,7 +123,7 @@ public sealed class World
     {
         _ = Task.Run(async () =>
         {
-            await Task.Delay(TimeSpan.FromSeconds(_context.Settings.World.RespawnSeconds));
+            await Task.Delay(TimeSpan.FromSeconds(definition.RespawnSeconds > 0 ? definition.RespawnSeconds : _context.Settings.World.RespawnSeconds));
             lock (Sync)
             {
                 MonsterState state = Monster(definition);
@@ -99,6 +133,9 @@ public sealed class World
                 state.Target = null;
                 state.X = definition.X;
                 state.Z = definition.Z;
+                state.Speed = 0f;
+                state.Returning = false;
+                state.NextRoamAt = Environment.TickCount64 + Random.Shared.Next(2000, 15000);
                 state.Weakened.Clear();
                 foreach (ClientSession session in InScene(definition.Scene))
                     session.SendMonster(definition, "(monster returns)");
@@ -157,7 +194,11 @@ public sealed class World
                 ["RatioHP"] = 100 * state.Hp / Math.Max(1, definition.Hp),
             });
             foreach (ClientSession session in InScene(definition.Scene)) session.Send(update, "(monster recovers)");
-            if (state.Fled && state.Hp >= definition.Hp) Walk(definition, state, definition.X, definition.Z, fled: false);
+            if (state.Fled && state.Hp >= definition.Hp)
+            {
+                state.Fled = false;
+                Walk(definition, state, state.HomeX, state.HomeZ, _context.Data.Rules.Combat.MonsterWalkSpeed, "(monster returns)");
+            }
         }
     }
 
@@ -180,16 +221,26 @@ public sealed class World
             List<ClientSession> players = scene.Where(session => session.Hp > 0).ToList();
             foreach (MonsterDefinition definition in _context.Data.Monsters.Values.Where(monster => monster.Scene == scene.Key))
             {
-                if (!definition.Aggressive && !_monsters.ContainsKey(definition.Id)) continue;
                 MonsterState state = Monster(definition);
                 if (state.Dead) continue;
-                if (state.Target is { } held && (!players.Contains(held) || Apart(state, held) > rules.MonsterReach)) state.Target = null;
-                if (state.Target == null && definition.Aggressive && !state.Fled)
+                state.Advance(now);
+                if (state.Target is { } held && (!players.Contains(held) || FromHome(state, held) > rules.MonsterLeashRadius))
+                {
+                    state.Target = null;
+                    ReturnHome(definition, state, rules);
+                    continue;
+                }
+                if (state.Target == null && definition.Aggressive && !state.Fled && !state.Returning)
                 {
                     state.Target = players.Where(player => Apart(state, player) <= rules.AggroRadius).MinBy(player => Apart(state, player));
                     if (state.Target != null) state.NextAttackAt = now + rules.MonsterAttackMilliseconds / 2;
                 }
-                if (state.Target == null) continue;
+                if (state.Target == null)
+                {
+                    if (state.Returning && !state.Moving) state.Returning = false;
+                    if (!state.Moving && !state.Fled && !state.Returning && now >= state.NextRoamAt) Roam(definition, state, rules, now);
+                    continue;
+                }
                 if (definition.Flees && !state.Fled && 100 * state.Hp < definition.Hp * rules.FleeHpPercent)
                 {
                     (float x, float z) = state.Target.Mover!.Now();
@@ -197,9 +248,22 @@ public sealed class World
                     float dz = state.Z - z;
                     float length = MathF.Max(0.1f, MathF.Sqrt(dx * dx + dz * dz));
                     state.Target = null;
-                    Walk(definition, state, state.X + dx / length * rules.FleeDistance, state.Z + dz / length * rules.FleeDistance, fled: true);
+                    Walk(definition, state, state.X + dx / length * rules.FleeDistance, state.Z + dz / length * rules.FleeDistance, rules.FleeSpeed, "(monster flees)");
+                    state.Fled = true;
                     continue;
                 }
+                float apart = Apart(state, state.Target);
+                if (apart > rules.MonsterAttackRange)
+                {
+                    (float tx, float tz) = state.Target.Mover!.Now();
+                    float step = apart - rules.MonsterAttackRange * 0.8f;
+                    float aimX = state.X + (tx - state.X) * step / apart;
+                    float aimZ = state.Z + (tz - state.Z) * step / apart;
+                    bool sameAim = state.Moving && MathF.Abs(state.DestX - aimX) + MathF.Abs(state.DestZ - aimZ) < rules.MonsterAttackRange;
+                    if (!sameAim) Walk(definition, state, aimX, aimZ, rules.MonsterChaseSpeed, "(monster chases)");
+                    continue;
+                }
+                if (state.Moving) Stop(definition, state);
                 if (now < state.NextAttackAt) continue;
                 state.NextAttackAt = now + Math.Max(500, rules.MonsterAttackMilliseconds);
                 try
@@ -214,13 +278,48 @@ public sealed class World
         }
     }
 
-    private void Walk(MonsterDefinition definition, MonsterState state, float x, float z, bool fled)
+    private void Roam(MonsterDefinition definition, MonsterState state, CombatRuleSet rules, long now)
     {
-        byte[] move = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z, x, z, _context.Data.Rules.Combat.FleeSpeed);
-        foreach (ClientSession session in InScene(definition.Scene)) session.Send(move, fled ? "(monster flees)" : "(monster returns)");
-        state.X = x;
-        state.Z = z;
-        state.Fled = fled;
+        state.NextRoamAt = now + Random.Shared.Next(rules.MonsterRoamMinSeconds * 1000, rules.MonsterRoamMaxSeconds * 1000 + 1);
+        float radius = definition.RoamRadius > 0f ? definition.RoamRadius : rules.MonsterRoamRadius;
+        if (radius <= 0f) return;
+        float angle = (float)(Random.Shared.NextDouble() * Math.PI * 2);
+        float distance = (float)Random.Shared.NextDouble() * radius;
+        Walk(definition, state, state.HomeX + MathF.Cos(angle) * distance, state.HomeZ + MathF.Sin(angle) * distance,
+            rules.MonsterWalkSpeed, "(monster roams)");
+    }
+
+    private void ReturnHome(MonsterDefinition definition, MonsterState state, CombatRuleSet rules)
+    {
+        state.Returning = true;
+        state.Fled = false;
+        Walk(definition, state, state.HomeX, state.HomeZ, rules.MonsterChaseSpeed, "(monster returns)");
+    }
+
+    private void Stop(MonsterDefinition definition, MonsterState state)
+    {
+        state.Speed = 0f;
+        byte[] place = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z);
+        foreach (ClientSession session in InScene(definition.Scene)) session.Send(place, "(monster stops)");
+    }
+
+    private void Walk(MonsterDefinition definition, MonsterState state, float x, float z, float speed, string note)
+    {
+        state.FromX = state.X;
+        state.FromZ = state.Z;
+        state.DestX = x;
+        state.DestZ = z;
+        state.Speed = speed;
+        state.MoveStart = Environment.TickCount64;
+        byte[] move = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z, x, z, speed);
+        foreach (ClientSession session in InScene(definition.Scene)) session.Send(move, note);
+    }
+
+    private static float FromHome(MonsterState state, ClientSession session)
+    {
+        if (session.Mover == null) return float.MaxValue;
+        (float x, float z) = session.Mover.Now();
+        return MathF.Sqrt((state.HomeX - x) * (state.HomeX - x) + (state.HomeZ - z) * (state.HomeZ - z));
     }
 
     private static float Apart(MonsterState state, ClientSession session)

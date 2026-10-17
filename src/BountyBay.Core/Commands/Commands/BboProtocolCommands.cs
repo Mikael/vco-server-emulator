@@ -124,6 +124,10 @@ public sealed class BboUnsupportedCommands : ITextCommand
         "FindSellItem", "FindSellItemNext", "FindSellItemPrev", "KeepValueYN", "LeaveTower", "open", "OpenSubAssembly",
         "QuerySendCost", "RebuildYN", "ReferItem", "ROBBT_ID", "SaveItem", "scQueryMatchPlayerHonor",
         "SelectAssemblyOrProbability", "SetCityName", "SetupTorpedo", "ShowNextUnionCons", "transprop",
+        "csAddItemPropPoint", "csAskForCreteWar", "csAskForEntryTimes", "csAskForEurop", "csHonorWarWinner", "csImpeach",
+        "csImpeachPlayer", "csJoinConsCopy2", "csLoadItemMemory", "csOpenArmConsolidate", "csOpenExpSystem", "csPaleWarWinner",
+        "csRefuseList", "csSaveItemMemory", "csShowHonorWarTable", "csShowPKTable", "csShowPaleWarTable", "csShowTeamWarTable",
+        "csSucMake", "csSucMake1", "csTeamWarWinner",
     ];
 
     private static readonly (string Prefix, string Feature)[] Features =
@@ -188,6 +192,12 @@ public sealed class BboUnsupportedCommands : ITextCommand
         ("Contraband", "Contraband"), ("AppointCaptian", "Fleet command"), ("AutoDriveChange", "Auto sailing"),
         ("SetupTorpedo", "Torpedoes"), ("transprop", "Attribute transfer"), ("exchange", "Item exchange"), ("AskToBattle_Yes", "Battles"),
         ("open", "This window"), ("csTakeOffThing", "Equipment slots"), ("ShowNextUnionCons", "Guild unions"),
+        ("csAddItemPropPoint", "Item attribute points"), ("csAskForCreteWar", "Battles"), ("csAskForEntryTimes", "Battles"),
+        ("csAskForEurop", "Battles"), ("csHonorWarWinner", "Battles"), ("csPaleWarWinner", "Battles"), ("csTeamWarWinner", "Battles"),
+        ("csShowHonorWarTable", "Battles"), ("csShowPaleWarTable", "Battles"), ("csShowTeamWarTable", "Battles"),
+        ("csShowPKTable", "PK rankings"), ("csImpeach", "Guild impeachment"), ("csRefuseList", "Guild wars"),
+        ("csLoadItemMemory", "Item memory"), ("csSaveItemMemory", "Item memory"), ("csOpenArmConsolidate", "Equipment consolidation"),
+        ("csOpenExpSystem", "Experience system"), ("csSucMake", "Crafting"),
     ];
 
     public IEnumerable<string> Names => [.. Quiet, .. Words];
@@ -203,5 +213,53 @@ public sealed class BboUnsupportedCommands : ITextCommand
         if (feature == null) return false;
         session.NotAvailable(feature, string.Join(' ', words));
         return true;
+    }
+}
+
+public sealed class GoToObjCommand : ITextCommand
+{
+    public IEnumerable<string> Names => ["AskGoToObj"];
+
+    public bool Execute(ClientSession session, string[] words)
+    {
+        session.AskGoToObj(words);
+        return true;
+    }
+}
+
+public sealed class ParcelCostCommand : ITextCommand
+{
+    public IEnumerable<string> Names => ["QuerySendCost"];
+
+    public bool Execute(ClientSession session, string[] words)
+    {
+        session.Send(ChatPackets.Script(0, "SendCost 0"), "(parcel postage)");
+        return true;
+    }
+}
+
+public sealed class FindBoothCommand : ITextCommand
+{
+    public IEnumerable<string> Names =>
+        ["FindSellItem", "FindBuyItem", "FindSellItemNext", "FindSellItemPrev", "FindBuyItemNext", "FindBuyItemPrev", "FilterByName"];
+
+    public bool Execute(ClientSession session, string[] words)
+    {
+        int page = words.Length > 1 && int.TryParse(words[^1], out int number) ? number : 1;
+        switch (words[0])
+        {
+            case "FindSellItem" or "FindBuyItem":
+                session.FindBooth(words[0] == "FindBuyItem", string.Join(' ', words.Skip(1)).Replace('\u0003', ' '), 1);
+                return true;
+            case "FindSellItemNext" or "FindBuyItemNext":
+                session.FindBoothPage(page + 1);
+                return true;
+            case "FindSellItemPrev" or "FindBuyItemPrev":
+                session.FindBoothPage(page - 1);
+                return true;
+            default:
+                session.FindBoothPage(1);
+                return true;
+        }
     }
 }

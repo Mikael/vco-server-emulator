@@ -1,3 +1,22 @@
+#!/usr/bin/env python3
+"""Decrypt / encrypt Bounty Bay Online login.ini (and login122231.ini).
+
+The client (Login.dll 0x10036d44..0x10036e0f) opens "<dir>\\login.ini" through the ClientTools ini service with the key
+"SnailDes". ClientTools.dll DDecrypt (0x1007b9e0 DES_DecryptToMem, block routine 0x1007b530, key schedule 0x1007aed0,
+encrypt-file 0x1007b620) is the well known "bit array" DES with standard tables (IP/E/P/S/PC1/PC2 read from ClientTools.dll
+.data 0x100b61a8..0x100b6e88) except that bytes are expanded to bits LSB-first (ByteToBit 0x1007ad90: bit[i]=(b>>i)&1,
+BitToByte 0x1007add0). ECB mode, 8-byte blocks.
+
+Padding (encrypt, 0x1007b737): a final partial block of n (1..7) bytes is zero padded and its last byte set to 8-n.
+If the plaintext length is a multiple of 8 no padding block is added. Decrypt (0x1007bb96): if the last byte L of the
+last block is < 8 and the bytes [8-L .. 6] are all zero, only 8-L bytes are kept; otherwise the full block is kept.
+
+usage:
+  python logini.py decrypt <in> [out]            (prints to stdout when out is omitted)
+  python logini.py encrypt <out> --plain <txt>   (encrypt an existing plaintext file)
+  python logini.py encrypt <out> --ip 127.0.0.1 --port 3000 --name Localhost [--more "name,ip,port" ...]
+  python logini.py roundtrip <in>                (decrypt + re-encrypt, compare bytes)
+"""
 import sys, argparse
 
 KEY = b"SnailDes"
@@ -34,11 +53,11 @@ S = [
 ]
 
 
-def _bits(block):
+def _bits(block):  # ByteToBit, LSB first (ClientTools 0x1007ad90)
     return [(b >> i) & 1 for b in block for i in range(8)]
 
 
-def _bytes(bits):
+def _bytes(bits):  # BitToByte (0x1007add0)
     return bytes(sum(bits[j * 8 + i] << i for i in range(8)) for j in range(8))
 
 
@@ -105,6 +124,7 @@ def encrypt(data, key=KEY):
 
 
 def make_ini(entries):
+    """entries: list of (name, ip, port). Same key layout as the shipped file / the plaintext copy."""
     secs = []
     for i, (name, ip, port) in enumerate(entries):
         secs.append(f"[{i}]\r\nip={ip}\r\nport={port}\r\ntype=0\r\ndesc={name}\r\nhelp={name}\r\n"

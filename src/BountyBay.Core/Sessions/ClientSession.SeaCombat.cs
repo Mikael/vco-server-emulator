@@ -133,7 +133,7 @@ public sealed partial class ClientSession
             ["Bumping"] = 0,
         })), note);
         BboSendNpcFiringArc(ship);
-        Send(ScenePackets.PlaceObject(definition.Id, definition.X, 0f, definition.Z, orient: definition.Heading), note);
+        Send(ScenePackets.PlaceObject(definition.Id, ship.X, 0f, ship.Z, ship.Moving ? ship.DestX : null, ship.Moving ? ship.DestZ : null, ship.Speed, orient: ship.Heading), note);
         Send(ScenePackets.ShowObject(definition.Id), note);
     }
 
@@ -246,11 +246,11 @@ public sealed partial class ClientSession
         AmmunitionDefinition ammunition = Sea.Data.FindAmmunition(definition.Ammunition) ?? Sea.Data.DefaultAmmunition;
         ShipRules rules = Sea.Data.Rules;
         (float x, float z) = Mover.Now();
-        float distance = SeaDistance(definition.X, definition.Z, x, z);
+        float distance = SeaDistance(ship.X, ship.Z, x, z);
         if (distance > cannon.Range * 1.2f) return;
 
         MarkAttacked();
-        int side = BroadsideSide(definition.Heading, x - definition.X, z - definition.Z);
+        int side = BroadsideSide(ship.Heading, x - ship.X, z - ship.Z);
         int balls = Math.Max(1, definition.Cannons);
         int hits = CombatRules.SeaHits(balls, definition.HitPercent);
         VolleyDamage damage = CombatRules.Volley(hits, cannon.Attack, ammunition, 0, 0);
@@ -274,8 +274,8 @@ public sealed partial class ClientSession
             if (!InWorld || !AtSea || SeaSunk || Scene != definition.Scene) return;
             string text = hits > 0 ? $"-{hull}" : "Miss";
             float fraction = SeaPackets.HitChance(hits, balls);
-            Send(SeaPackets.Volley(ProtocolConstants.SelfObjectId, ammunition.ShellType, balls, fraction, definition.X, definition.Z, text), "(volley lands)");
-            ToOthers(SeaPackets.Volley(ObjectId, ammunition.ShellType, balls, fraction, definition.X, definition.Z, text), $"(volley lands on {Name})");
+            Send(SeaPackets.Volley(ProtocolConstants.SelfObjectId, ammunition.ShellType, balls, fraction, ship.X, ship.Z, text), "(volley lands)");
+            ToOthers(SeaPackets.Volley(ObjectId, ammunition.ShellType, balls, fraction, ship.X, ship.Z, text), $"(volley lands on {Name})");
             if (hits <= 0) return;
             if (damage.Sail > 0 && ShipSail > 0) SetShipSail(ShipSail - damage.Sail);
             int struck = Math.Min(damage.Sailors, Character.Sailors);
@@ -295,8 +295,8 @@ public sealed partial class ClientSession
         SeaNpcDefinition definition = ship.Definition;
         ShipRules rules = Sea.Data.Rules;
         (float x, float z) = Mover!.Now();
-        float distance = SeaDistance(x, z, definition.X, definition.Z);
-        double relative = RelativeBearing(Mover.HeadingNow(), definition.X - x, definition.Z - z);
+        float distance = SeaDistance(x, z, ship.X, ship.Z);
+        double relative = RelativeBearing(Mover.HeadingNow(), ship.X - x, ship.Z - z);
         int side = relative >= 0 ? 1 : 0;
         long now = SeaWorld.Now;
         if (now < _seaReadyAt[side]) return;
@@ -349,9 +349,9 @@ public sealed partial class ClientSession
         float scatter = rules.BroadsideScatter;
         int seed = Random.Shared.Next(1, 30000);
         Send(SeaPackets.Broadside(ProtocolConstants.SelfObjectId, definition.Id, side, ammunition.ShellType, balls,
-            definition.X, definition.Z, scatter, cannon.BallSpeed, seed), "(broadside)");
+            ship.X, ship.Z, scatter, cannon.BallSpeed, seed), "(broadside)");
         ToOthers(SeaPackets.Broadside(ObjectId, definition.Id, side, ammunition.ShellType, balls,
-            definition.X, definition.Z, scatter, cannon.BallSpeed, seed), $"({Name} fires a broadside)");
+            ship.X, ship.Z, scatter, cannon.BallSpeed, seed), $"({Name} fires a broadside)");
         Send(SeaPackets.CannonReload(side, reload), "(reload)");
         Sea.Provoke(ship, this);
         Log.Debug(Tag, $"{Name} fires {balls} x {ammunitionName} at {definition.Name}: {hits} hit(s), hull {damage.Hull}, sail {damage.Sail}, sailors {damage.Sailors}");

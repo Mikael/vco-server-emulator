@@ -14,6 +14,58 @@ public sealed class SeaNpcState
         Hull = definition.Hull;
         Sail = definition.Sail;
         Sailors = definition.Sailors;
+        X = definition.X;
+        Z = definition.Z;
+        Heading = definition.Heading;
+        NextPatrolAt = Environment.TickCount64 + Random.Shared.Next(5000, 30000);
+    }
+
+    public float X { get; set; }
+
+    public float Z { get; set; }
+
+    public int Heading { get; set; }
+
+    public float FromX { get; set; }
+
+    public float FromZ { get; set; }
+
+    public float DestX { get; set; }
+
+    public float DestZ { get; set; }
+
+    public float Speed { get; set; }
+
+    public long MoveStart { get; set; }
+
+    public long NextPatrolAt { get; set; }
+
+    public bool Moving => Speed > 0f;
+
+    public void Advance(long now)
+    {
+        if (Speed <= 0f) return;
+        float dx = DestX - FromX;
+        float dz = DestZ - FromZ;
+        float total = MathF.Sqrt(dx * dx + dz * dz);
+        float done = Speed * (now - MoveStart) / 1000f;
+        if (total < 0.01f || done >= total)
+        {
+            X = DestX;
+            Z = DestZ;
+            Speed = 0f;
+            return;
+        }
+        X = FromX + dx * done / total;
+        Z = FromZ + dz * done / total;
+    }
+
+    public void ResetPosition()
+    {
+        X = Definition.X;
+        Z = Definition.Z;
+        Heading = Definition.Heading;
+        Speed = 0f;
     }
 
     public SeaNpcDefinition Definition { get; }
@@ -162,6 +214,7 @@ public sealed class SeaWorld
             ship.Dead = false;
             ship.Gone = false;
             ship.Target = null;
+            ship.ResetPosition();
             foreach (ClientSession session in Sailors(definition.Scene)) session.SendSeaNpc(ship);
             Log.Debug("Sea", $"{definition.Name} returned");
         });
@@ -170,18 +223,74 @@ public sealed class SeaWorld
     private void Tick()
     {
         long now = Now;
+        ShipRules rules = Data.Rules;
+        HashSet<int> occupied = _context.World.Sessions.Where(session => session.InWorld && session.AtSea).Select(session => session.Scene).ToHashSet();
         foreach (SeaNpcState ship in _ships.Values)
         {
-            if (ship.Dead || ship.Target == null) continue;
-            ClientSession target = ship.Target;
-            if (now > ship.AggroUntil || !target.InWorld || !target.AtSea || target.Scene != ship.Definition.Scene || target.SeaSunk)
+            if (ship.Dead || !occupied.Contains(ship.Definition.Scene)) continue;
+            ship.Advance(now);
+            ClientSession? target = ship.Target;
+            if (target != null && (now > ship.AggroUntil || !target.InWorld || !target.AtSea || target.Scene != ship.Definition.Scene || target.SeaSunk))
             {
                 ship.Target = null;
+                target = null;
+                Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship returns to station)");
+            }
+            if (target == null)
+            {
+                if (!ship.Moving && now >= ship.NextPatrolAt) Patrol(ship, rules, now);
+                continue;
+            }
+            (float tx, float tz) = target.Mover!.Now();
+            float dx = tx - ship.X;
+            float dz = tz - ship.Z;
+            float apart = MathF.Sqrt(dx * dx + dz * dz);
+            float range = CannonOf(ship.Definition).Range;
+            float home = MathF.Sqrt((tx - ship.Definition.X) * (tx - ship.Definition.X) + (tz - ship.Definition.Z) * (tz - ship.Definition.Z));
+            if (home > rules.NpcLeashDistance)
+            {
+                ship.Target = null;
+                Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship breaks off)");
+                continue;
+            }
+            if (apart > range * 0.9f)
+            {
+                float stop = apart - range * 0.6f;
+                float aimX = ship.X + dx * stop / apart;
+                float aimZ = ship.Z + dz * stop / apart;
+                bool sameAim = ship.Moving && MathF.Abs(ship.DestX - aimX) + MathF.Abs(ship.DestZ - aimZ) < range * 0.2f;
+                if (!sameAim) Steer(ship, aimX, aimZ, rules.NpcChaseSpeed, "(ship closes in)");
                 continue;
             }
             if (now < ship.NextShotAt) continue;
             ship.NextShotAt = now + (long)(Math.Max(1f, CannonOf(ship.Definition).ReloadSeconds) * 1000);
             target.TakeSeaVolley(ship);
         }
+    }
+
+    private void Patrol(SeaNpcState ship, ShipRules rules, long now)
+    {
+        ship.NextPatrolAt = now + Random.Shared.Next(rules.NpcPatrolMinSeconds * 1000, rules.NpcPatrolMaxSeconds * 1000 + 1);
+        if (rules.NpcPatrolRadius <= 0f) return;
+        float angle = (float)(Random.Shared.NextDouble() * Math.PI * 2);
+        float distance = (float)Random.Shared.NextDouble() * rules.NpcPatrolRadius;
+        Steer(ship, ship.Definition.X + MathF.Cos(angle) * distance, ship.Definition.Z + MathF.Sin(angle) * distance, rules.NpcPatrolSpeed, "(ship patrols)");
+    }
+
+    private void Steer(SeaNpcState ship, float x, float z, float speed, string note)
+    {
+        float dx = x - ship.X;
+        float dz = z - ship.Z;
+        if (dx * dx + dz * dz < 1f) return;
+        int heading = ((int)Math.Round(Math.Atan2(dx, dz) * 1800.0 / Math.PI) % 3600 + 3600) % 3600;
+        ship.FromX = ship.X;
+        ship.FromZ = ship.Z;
+        ship.DestX = x;
+        ship.DestZ = z;
+        ship.Speed = speed;
+        ship.MoveStart = Environment.TickCount64;
+        ship.Heading = heading;
+        byte[] move = ScenePackets.PlaceObject(ship.Definition.Id, ship.X, 0f, ship.Z, x, z, speed, orient: heading);
+        foreach (ClientSession session in Sailors(ship.Definition.Scene)) session.Send(move, note);
     }
 }

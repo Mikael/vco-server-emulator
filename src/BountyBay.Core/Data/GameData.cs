@@ -78,6 +78,9 @@ public sealed class MonsterDefinition
     public bool Aggressive { get; set; }
     public bool Flees { get; set; }
     public int Gold { get; set; }
+    public string Key { get; set; } = "";
+    public int RespawnSeconds { get; set; }
+    public float RoamRadius { get; set; }
     public float X { get; set; }
     public float Y { get; set; }
     public float Z { get; set; }

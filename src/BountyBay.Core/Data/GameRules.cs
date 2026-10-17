@@ -126,6 +126,13 @@ public sealed class CombatRuleSet
     public int DefensiveStanceDefencePerLevel { get; set; } = 2;
     public int MonsterAttackMilliseconds { get; set; } = 2000;
     public float MonsterReach { get; set; } = 14f;
+    public float MonsterAttackRange { get; set; } = 2.5f;
+    public float MonsterChaseSpeed { get; set; } = 4f;
+    public float MonsterWalkSpeed { get; set; } = 1.5f;
+    public float MonsterRoamRadius { get; set; } = 6f;
+    public int MonsterRoamMinSeconds { get; set; } = 8;
+    public int MonsterRoamMaxSeconds { get; set; } = 20;
+    public float MonsterLeashRadius { get; set; } = 30f;
     public float AggroRadius { get; set; } = 10f;
     public int FleeHpPercent { get; set; } = 25;
     public float FleeDistance { get; set; } = 25f;

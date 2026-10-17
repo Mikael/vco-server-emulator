@@ -16,7 +16,8 @@ public sealed class ShipServiceCommands : ITextCommand
         switch (words[0])
         {
             case "BuySailor" or "FireSailor":
-                if (words.Length != 2 || !int.TryParse(words[1], out int count) || count <= 0) return false;
+                if (words.Length != 2 || !int.TryParse(words[1], out int count) || count < 0) return false;
+                if (count == 0) return true;
                 if (words[0] == "BuySailor") session.HireShipSailors(count);
                 else session.DismissShipSailors(count);
                 return true;

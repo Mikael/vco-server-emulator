@@ -51,8 +51,11 @@ public sealed class BboQuestCommands : ITextCommand
             case "csAcceptTeamBTask":
                 session.NotAvailable("Team battle tasks", words[0]);
                 return true;
-            case "SelectExploreArea" or "GetExploreRaward":
-                session.NotAvailable("Exploration", words[0]);
+            case "SelectExploreArea":
+                if (words.Length >= 2 && int.TryParse(words[1], out int area)) session.SelectExploreArea(area);
+                return true;
+            case "GetExploreRaward":
+                session.ClaimExploreReward(words);
                 return true;
             default:
                 return false;
