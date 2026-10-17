@@ -37,7 +37,7 @@ public sealed partial class ClientSession
             OpenBeliefFuse();
             return true;
         }
-        Send(ChatPackets.NpcDialogue(target, [(DialogueEntry.Text, 0, $"Fair winds, {Name}.")]), "(npc dialogue)");
+        CloseNpcDialogue();
         return true;
     }
 

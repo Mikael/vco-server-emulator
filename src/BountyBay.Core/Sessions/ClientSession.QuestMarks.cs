@@ -48,7 +48,11 @@ public sealed partial class ClientSession
     }
 
     public int TaskAcceptedState(int questId)
-        => QuestMarkTables.AcceptedState(QuestMarkBook.Find(questId)?.TaskAcceptedGroup ?? 0);
+    {
+        QuestMarkInfo? info = QuestMarkBook.Find(questId);
+        int group = info == null ? 0 : info.TaskAcceptedGroup > 0 ? info.TaskAcceptedGroup : info.Group;
+        return group is > 0 and <= 9999 ? int.Parse(QuestMarkTables.AcceptedPrefix + group.ToString("D4")) : 1;
+    }
 
     public bool QuestUnlocked(QuestDefinition quest)
     {

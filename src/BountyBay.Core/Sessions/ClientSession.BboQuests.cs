@@ -11,6 +11,7 @@ public sealed partial class ClientSession
     public const int MostTrackedQuests = 5;
 
     private readonly HashSet<int> _offeredQuests = [];
+    private readonly HashSet<int> _finishedAnnounced = [];
 
     public void SendBboQuestState(bool clear = true)
     {
@@ -98,11 +99,14 @@ public sealed partial class ClientSession
             Save();
         }
         SendBboQuestState();
-        Send(BboSocialPackets.NewTaskFlash(quest.Id), $"(quest flash {quest.Id})");
+        Send(UiPackets.Custom($"Flash Task {quest.Id}"), $"(quest flash {quest.Id})");
     }
 
-    public void OnBboQuestObjectivesDone(QuestDefinition quest)
-        => Send(BboSocialPackets.TaskFinished(quest.Id), $"(quest objectives done {quest.Id})");
+    public void AnnounceQuestFinished(QuestDefinition quest)
+    {
+        if (!_finishedAnnounced.Add(quest.Id)) return;
+        Send(BboSocialPackets.TaskFinished(quest.Id), $"(quest end talk {quest.Id})");
+    }
 
     public void OnBboQuestCompleted(QuestDefinition quest)
     {

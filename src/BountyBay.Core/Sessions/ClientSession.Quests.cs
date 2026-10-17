@@ -15,13 +15,18 @@ public sealed partial class ClientSession
     public const int PetWindowOption = 91;
     public const int FirstRewardOption = 560;
     public const int LastRewardOption = 575;
+    public const int QuestAcceptOption = 576;
+    public const int QuestDeclineOption = 577;
     public const int OtherBusinessOption = 578;
     public const int FirstQuestOption = 10000;
 
     private const int ByeOption = 3;
     private const int RecordAmountColumn = 5;
+    private const int LongestDialogueText = 1500;
+    private const DialogueEntry LightText = (DialogueEntry)1;
 
     private (int Quest, int Npc)? _rewardChoice;
+    private (int Quest, int Npc)? _questOffer;
 
     private QuestBook QuestBook => QuestBook.For(Context.Settings);
 
@@ -48,14 +53,57 @@ public sealed partial class ClientSession
             case OtherBusinessOption:
                 if (Context.Data.Npcs.TryGetValue(target, out NpcDefinition? npc)) Talk(npc);
                 return true;
+            case QuestAcceptOption:
+                AcceptOfferedInDialogue(target);
+                return true;
+            case QuestDeclineOption:
+                _questOffer = null;
+                ShowQuests(target);
+                return true;
             case >= FirstRewardOption and <= LastRewardOption:
                 ChooseQuestReward(target, option - FirstRewardOption);
                 return true;
         }
         int index = option - FirstQuestOption;
         if (index < 0 || index >= QuestBook.Quests.Count) return false;
-        AcceptQuest(target, QuestBook.Quests[index]);
+        ShowQuestOffer(target, QuestBook.Quests[index]);
         return true;
+    }
+
+    public void ShowQuestOffer(int npc, QuestDefinition quest)
+    {
+        if (quest.Giver != npc || !QuestOpen(quest) || !QuestUnlocked(quest))
+        {
+            SystemMessage("That task is not available.");
+            ShowQuests(npc);
+            return;
+        }
+        _questOffer = (quest.Id, npc);
+        _clientMenuOptions.Clear();
+        TalkingTo = npc;
+        var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, DialogueText(quest.Offer)) };
+        if (quest.Objective.Length > 0 && quest.Objective != quest.Offer)
+            entries.Add((LightText, 0, DialogueText(quest.Objective)));
+        entries.Add((DialogueEntry.Option, QuestAcceptOption, "Accept"));
+        entries.Add((DialogueEntry.Option, QuestDeclineOption, "Decline"));
+        Send(ChatPackets.NpcDialogue(npc, entries), $"(quest offer {quest.Id})");
+    }
+
+    private void AcceptOfferedInDialogue(int npc)
+    {
+        if (_questOffer is not { } offer || offer.Npc != npc || QuestBook.Find(offer.Quest) is not { } quest)
+        {
+            ShowQuests(npc);
+            return;
+        }
+        _questOffer = null;
+        AcceptQuest(npc, quest);
+    }
+
+    private static string DialogueText(string text)
+    {
+        string clean = text.Replace("\\n", " ").Replace('\n', ' ').Replace('\r', ' ').Trim();
+        return clean.Length > LongestDialogueText ? clean[..LongestDialogueText] : clean;
     }
 
     public void SendProgress()
@@ -102,6 +150,7 @@ public sealed partial class ClientSession
         if (HasOtherBusiness(npc)) entries.Add((DialogueEntry.Option, OtherBusinessOption, "Other business"));
         entries.Add((DialogueEntry.Option, ByeOption, "Goodbye"));
         TalkingTo = npc;
+        _clientMenuOptions.Clear();
         Send(ChatPackets.NpcDialogue(npc, entries), "(quest dialogue)");
     }
 
@@ -114,11 +163,12 @@ public sealed partial class ClientSession
         }
         BeginQuest(quest);
         if (npc == 0) return;
-        Send(ChatPackets.NpcDialogue(npc,
-        [
-            (DialogueEntry.Text, 0, quest.Offer),
-            (DialogueEntry.Option, ByeOption, "Goodbye"),
-        ]), "(quest dialogue)");
+        var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, $"Task accepted: {quest.Name}.") };
+        if (quest.Objective.Length > 0) entries.Add((LightText, 0, DialogueText(quest.Objective)));
+        if (HasOpenQuests(npc)) entries.Add((DialogueEntry.Option, QuestsOption, "Other tasks"));
+        entries.Add((DialogueEntry.Option, ByeOption, "Goodbye"));
+        _clientMenuOptions.Clear();
+        Send(ChatPackets.NpcDialogue(npc, entries), "(quest dialogue)");
     }
 
     public bool MayAcceptFromLog(QuestDefinition quest) => quest.Giver == 0 && QuestOpen(quest) && QuestUnlocked(quest);
@@ -136,12 +186,15 @@ public sealed partial class ClientSession
 
     public bool OnNpcTalked(int npcId)
     {
+        SendNpcPortrait(npcId);
+        _questOffer = null;
         RefreshCarriedProgress();
         foreach (QuestProgress progress in Character.Quests.ToList())
         {
             QuestDefinition? quest = QuestBook.Find(progress.Id);
             if (quest == null || quest.AutoComplete || QuestTurnIn(quest) != npcId) continue;
             if (!QuestObjectivesDone(quest, progress) || !QuestReadyToHandIn(quest)) continue;
+            AnnounceQuestFinished(quest);
             if (NeedsRewardChoice(quest))
             {
                 ShowRewardChoice(npcId, quest);
@@ -183,8 +236,11 @@ public sealed partial class ClientSession
     {
         if (!Context.Data.Npcs.TryGetValue(npcId, out NpcDefinition? npc)) return false;
         if (npc.Options.Any(option => (int)option.Action == QuestsOption)) return false;
-        return QuestBook.Quests.Any(quest => quest.Giver == npcId && !quest.AutoAccept && QuestOpen(quest) && QuestUnlocked(quest));
+        return HasOpenQuests(npcId);
     }
+
+    private bool HasOpenQuests(int npcId)
+        => QuestBook.Quests.Any(quest => quest.Giver == npcId && !quest.AutoAccept && QuestOpen(quest) && QuestUnlocked(quest));
 
     private bool HasOtherBusiness(int npcId)
         => Context.Data.Npcs.TryGetValue(npcId, out NpcDefinition? npc)
@@ -195,7 +251,9 @@ public sealed partial class ClientSession
         if (quest.Daily) Character.CompletedQuests.RemoveAll(progress => progress.Id == quest.Id);
         Character.Quests.Add(new QuestProgress { Id = quest.Id, Date = Today() });
         Character.QuestCounts[quest.Id] = Enumerable.Repeat(0, quest.Objectives.Count).ToList();
+        _finishedAnnounced.Remove(quest.Id);
         Save();
+        Send(BboSocialPackets.NewTaskFlash(quest.Id), $"(quest start talk {quest.Id})");
         SendQuestState();
         OnBboQuestAccepted(quest);
         SystemMessage($"Task accepted: {quest.Name}.", SystemMessageKind.Prompt);
@@ -287,7 +345,6 @@ public sealed partial class ClientSession
             ReportProgress(row, counts[index]);
             if (!QuestObjectivesDone(quest, progress)) continue;
             if (!quest.AutoComplete) SystemMessage($"{quest.Name}: done. Return for your reward.", SystemMessageKind.Prompt);
-            OnBboQuestObjectivesDone(quest);
         }
         if (!changed) return;
         Save();
@@ -359,6 +416,7 @@ public sealed partial class ClientSession
     {
         _rewardChoice = (quest.Id, npc);
         TalkingTo = npc;
+        _clientMenuOptions.Clear();
         var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, $"{quest.Name}: well done. Choose your reward.") };
         int shown = Math.Min(quest.RewardItems.Count, LastRewardOption - FirstRewardOption + 1);
         for (int i = 0; i < shown; i++)
@@ -388,7 +446,10 @@ public sealed partial class ClientSession
 
     private void CompleteQuest(QuestDefinition quest, QuestProgress progress, int choice)
     {
+        AnnounceQuestFinished(quest);
+        _finishedAnnounced.Remove(quest.Id);
         OnBboQuestCompleted(quest);
+        PlayQuestCompleteEffect();
         foreach (QuestTarget target in quest.Objectives)
         {
             if (target.Kind == QuestKind.Bring) QuestTake(target.Key, target.Count);

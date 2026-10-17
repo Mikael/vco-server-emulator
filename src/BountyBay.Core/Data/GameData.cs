@@ -49,6 +49,7 @@ public sealed class NpcDefinition
     public int Id { get; set; }
     public int Scene { get; set; }
     public int Model { get; set; }
+    public int Photo { get; set; }
     public string Name { get; set; } = "";
     public float X { get; set; }
     public float Y { get; set; }
@@ -61,6 +62,8 @@ public sealed class NpcDefinition
     public string ChatSet { get; set; } = "";
     public string Role { get; set; } = "";
     public string SceneName { get; set; } = "";
+
+    public int Portrait => Photo > 0 ? Photo : Model;
 }
 
 public sealed class BotData

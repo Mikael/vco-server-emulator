@@ -88,7 +88,7 @@ public sealed partial class ClientSession
                 ShowNobleExchange(target);
                 return true;
             default:
-                Send(ChatPackets.NpcDialogue(target, [(DialogueEntry.Text, 0, $"Fair winds, {Name}.")]), "(npc dialogue)");
+                CloseNpcDialogue();
                 return true;
         }
     }

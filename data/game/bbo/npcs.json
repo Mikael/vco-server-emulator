@@ -871,7 +871,7 @@
   {
     "Id": 2000017,
     "Scene": 1001001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": -217.85,
     "Y": 17.86,
@@ -892,14 +892,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001001.ini map2 [82.34]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000018,
     "Scene": 1001001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": -216.21,
     "Y": 18.07,
@@ -924,14 +924,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001001.ini map2 [85.37]",
       "Name": "CLIENT NPC00141",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000019,
     "Scene": 1001001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -125.0,
     "Y": 14.21,
@@ -952,14 +952,14 @@
       "Position": "CLIENT ini\\window\\map\\1001001.ini map mark5",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000020,
     "Scene": 1001001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -75.0,
     "Y": 14.31,
@@ -980,7 +980,7 @@
       "Position": "CLIENT ini\\window\\map\\1001001.ini map mark6",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -1321,7 +1321,7 @@
   {
     "Id": 2000027,
     "Scene": 1001002,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Fleet Combat Trainer",
     "X": -8.7,
     "Y": 7.71,
@@ -1342,14 +1342,14 @@
       "Position": "CLIENT ini\\window\\map\\1001002.ini map mark6",
       "Name": "CLIENT jianduinpc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000028,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Ship's Engineer",
     "X": -20.9,
     "Y": 27.84,
@@ -1370,7 +1370,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.18]",
       "Name": "CLIENT shipbuildnpc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -1453,7 +1453,7 @@
   {
     "Id": 2000030,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Suit Compound Master",
     "X": -29.2,
     "Y": 27.84,
@@ -1474,7 +1474,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.13]",
       "Name": "CLIENT gnnpc0078",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -1630,7 +1630,7 @@
   {
     "Id": 2000033,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Pet Merchant",
     "X": -55.0,
     "Y": 28.42,
@@ -1659,14 +1659,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.4]",
       "Name": "CLIENT petnpc01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000034,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Identifiers",
     "X": -10.6,
     "Y": 29.75,
@@ -1687,7 +1687,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.5]",
       "Name": "CLIENT IDName00005385",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -1939,7 +1939,7 @@
   {
     "Id": 2000038,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Merchant's Alliance Messenger",
     "X": 13.1,
     "Y": 29.99,
@@ -1960,14 +1960,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.10]",
       "Name": "CLIENT UnionInsNpc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000039,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Temple Guard Leader",
     "X": -29.1,
     "Y": 27.72,
@@ -1988,7 +1988,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.11]",
       "Name": "CLIENT jiangjun01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -2144,7 +2144,7 @@
   {
     "Id": 2000043,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Officer Herter",
     "X": -21.4,
     "Y": 27.67,
@@ -2165,14 +2165,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001014.ini map2 [10.20]",
       "Name": "CLIENT SD0002",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000044,
     "Scene": 1001014,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Principal of the Merchant Alliance Fleet",
     "X": 15.0,
     "Y": 30.51,
@@ -2193,7 +2193,7 @@
       "Position": "CLIENT ini\\window\\map\\1001014.ini map mark9",
       "Name": "CLIENT tanshangmen",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -2228,7 +2228,7 @@
   {
     "Id": 2000046,
     "Scene": 1001032,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Portobello Industrial Exploration Merchant",
     "X": 18.66,
     "Y": 6.09,
@@ -2249,14 +2249,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001032.ini map2 [95.69]",
       "Name": "CLIENT NFBgyts",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000047,
     "Scene": 1001032,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Instance Teleporter",
     "X": 20.82,
     "Y": 7.65,
@@ -2277,7 +2277,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001032.ini map2 [96.70]",
       "Name": "CLIENT jiheshi009",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
@@ -2312,7 +2312,7 @@
   {
     "Id": 2000049,
     "Scene": 1001032,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "New Faith Exchanger",
     "X": 41.89,
     "Y": 6.26,
@@ -2333,14 +2333,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001032.ini map2 [98.72]",
       "Name": "CLIENT dhnpc1216",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000050,
     "Scene": 1001032,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Suit Compound Master",
     "X": 16.49,
     "Y": 6.25,
@@ -2361,7 +2361,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001032.ini map2 [99.73]",
       "Name": "CLIENT gnnpc0078",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -2534,7 +2534,7 @@
   {
     "Id": 2000055,
     "Scene": 1001042,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": 674.0,
     "Y": -0.0,
@@ -2555,14 +2555,14 @@
       "Position": "CLIENT ini\\window\\map\\1001042.ini map mark5",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000056,
     "Scene": 1001042,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": -1908.0,
     "Y": -0.0,
@@ -2583,14 +2583,14 @@
       "Position": "CLIENT ini\\window\\map\\1001042.ini map mark6",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000057,
     "Scene": 1001042,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": -745.0,
     "Y": -0.0,
@@ -2611,14 +2611,14 @@
       "Position": "CLIENT ini\\window\\map\\1001042.ini map mark7",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000058,
     "Scene": 1001042,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": 1775.0,
     "Y": -0.0,
@@ -2639,14 +2639,14 @@
       "Position": "CLIENT ini\\window\\map\\1001042.ini map mark8",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000059,
     "Scene": 1001048,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Goddess of Healing",
     "X": -170.64,
     "Y": 14.12,
@@ -2667,14 +2667,14 @@
       "Position": "CLIENT ini\\window\\map\\1001048.ini map mark0",
       "Name": "CLIENT fanweihuifu1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000060,
     "Scene": 1001048,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Goddess of Healing",
     "X": 43.04,
     "Y": 7.65,
@@ -2695,7 +2695,7 @@
       "Position": "CLIENT ini\\window\\map\\1001048.ini map mark1",
       "Name": "CLIENT fanweihuifu1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -3008,7 +3008,7 @@
   {
     "Id": 2000070,
     "Scene": 1001049,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": 583.5,
     "Y": -0.0,
@@ -3029,14 +3029,14 @@
       "Position": "CLIENT ini\\window\\map\\1001049.ini map mark2",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000071,
     "Scene": 1001049,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Emergency Repair Booth",
     "X": -726.0,
     "Y": -0.0,
@@ -3057,7 +3057,7 @@
       "Position": "CLIENT ini\\window\\map\\1001049.ini map mark3",
       "Name": "CLIENT RepairRing1",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -3596,7 +3596,7 @@
   {
     "Id": 2000091,
     "Scene": 1001057,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "General Zheng",
     "X": -109.01,
     "Y": 13.76,
@@ -3617,14 +3617,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001057.ini map2 [434.725]",
       "Name": "CLIENT npc05356",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000092,
     "Scene": 1001057,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Yizhou Industrial Exploration Officer",
     "X": -126.05,
     "Y": 13.85,
@@ -3645,14 +3645,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001057.ini map2 [435.724]",
       "Name": "CLIENT YztsCardMan01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000093,
     "Scene": 1001057,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Yizhou Cultural Exploration Officer",
     "X": -126.67,
     "Y": 14.15,
@@ -3673,7 +3673,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001057.ini map2 [436.723]",
       "Name": "CLIENT YztsCardMan02",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -3764,7 +3764,7 @@
   {
     "Id": 2000097,
     "Scene": 1001066,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Dungeon Teleporter",
     "X": -95.28,
     "Y": 2.7,
@@ -3785,7 +3785,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001066.ini map2 [97.20]",
       "Name": "CLIENT jiheshi012",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
@@ -4775,7 +4775,7 @@
   {
     "Id": 2000117,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Equipment Upgrade Great Master",
     "X": 77.77,
     "Y": 1.71,
@@ -4796,7 +4796,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.003]",
       "Name": "CLIENT gnnpc0139",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -4859,7 +4859,7 @@
   {
     "Id": 2000120,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Suyo Guard camp props exchange officer",
     "X": -61.65,
     "Y": 16.8,
@@ -4884,14 +4884,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.004]",
       "Name": "CLIENT shouweijun01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000121,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Suyo Guard reputation changer",
     "X": -56.11,
     "Y": 16.8,
@@ -4916,14 +4916,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.005]",
       "Name": "CLIENT campnpc02_swjzy",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000122,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Suyo Guard camp mission manager",
     "X": -44.62,
     "Y": 16.8,
@@ -4948,14 +4948,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.006]",
       "Name": "CLIENT shouweijun",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000123,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Suyo Guard Culture Exploration Collector",
     "X": -50.36,
     "Y": 16.8,
@@ -4976,14 +4976,14 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.008]",
       "Name": "CLIENT SYtsCardMan02",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000124,
     "Scene": 1001081,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Suyo Guard Industrial Exploration Collector",
     "X": -42.4,
     "Y": 16.8,
@@ -5004,7 +5004,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001081.ini map2 [467.009]",
       "Name": "CLIENT SYtsCardMan01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -5377,7 +5377,7 @@
   {
     "Id": 2000132,
     "Scene": 1001082,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Instance Teleporter",
     "X": -255.44,
     "Y": 16.91,
@@ -5398,7 +5398,7 @@
       "Position": "CLIENT ini\\window\\map2\\1001082.ini map2 [269.003]",
       "Name": "CLIENT jiheshi011",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
@@ -6126,7 +6126,7 @@
   {
     "Id": 2000145,
     "Scene": 1003001,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Hagar(Evaluation Master)",
     "X": 4.34,
     "Y": 4.82,
@@ -6147,7 +6147,7 @@
       "Position": "CLIENT ini\\window\\map2\\1003001.ini map2 [79.18]",
       "Name": "CLIENT IDName00005236",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -6302,7 +6302,7 @@
   {
     "Id": 2000151,
     "Scene": 1003001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 56.2,
     "Y": 10.14,
@@ -6327,7 +6327,7 @@
       "Position": "CLIENT ini\\window\\map2\\1003001.ini map2 [2.40]",
       "Name": "CLIENT NPC00340",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -6389,7 +6389,7 @@
   {
     "Id": 2000153,
     "Scene": 1003001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 22.0,
     "Y": 4.04,
@@ -6410,14 +6410,14 @@
       "Position": "CLIENT ini\\window\\map\\1003001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000154,
     "Scene": 1003001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 23.0,
     "Y": 4.82,
@@ -6438,7 +6438,7 @@
       "Position": "CLIENT ini\\window\\map\\1003001.ini map mark5",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -7556,7 +7556,7 @@
   {
     "Id": 2000175,
     "Scene": 1004001,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Maxime(Evaluation Master)",
     "X": -11.62,
     "Y": 11.25,
@@ -7577,7 +7577,7 @@
       "Position": "CLIENT ini\\window\\map2\\1004001.ini map2 [71.16]",
       "Name": "CLIENT IDName00005254",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -7648,7 +7648,7 @@
   {
     "Id": 2000178,
     "Scene": 1004001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -54.0,
     "Y": 14.32,
@@ -7669,14 +7669,14 @@
       "Position": "CLIENT ini\\window\\map\\1004001.ini map mark4",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000179,
     "Scene": 1004001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -17.0,
     "Y": 15.8,
@@ -7697,7 +7697,7 @@
       "Position": "CLIENT ini\\window\\map\\1004001.ini map mark6",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -8954,7 +8954,7 @@
   {
     "Id": 2000204,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Smith",
     "X": 67.68,
     "Y": 12.04,
@@ -8975,7 +8975,7 @@
       "Position": "CLIENT ini\\window\\map2\\1007001.ini map2 [84.22]",
       "Name": "CLIENT IDName00005268",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -9046,7 +9046,7 @@
   {
     "Id": 2000207,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": 38.13,
     "Y": 12.04,
@@ -9067,14 +9067,14 @@
       "Position": "CLIENT ini\\window\\map2\\1007001.ini map2 [2.39]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000208,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 16.19,
     "Y": 12.04,
@@ -9099,14 +9099,14 @@
       "Position": "CLIENT ini\\window\\map2\\1007001.ini map2 [5.42]",
       "Name": "CLIENT NPC00740",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000209,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -42.0,
     "Y": 9.14,
@@ -9127,14 +9127,14 @@
       "Position": "CLIENT ini\\window\\map\\1007001.ini map mark2",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000210,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -60.0,
     "Y": 9.04,
@@ -9155,14 +9155,14 @@
       "Position": "CLIENT ini\\window\\map\\1007001.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000211,
     "Scene": 1007001,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Church",
     "X": 53.0,
     "Y": 12.89,
@@ -9183,7 +9183,7 @@
       "Position": "CLIENT ini\\window\\map\\1007001.ini map mark8",
       "Name": "CLIENT IDName00006830",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -9496,7 +9496,7 @@
   {
     "Id": 2000217,
     "Scene": 1007002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Practice Field Administrator",
     "X": -2.71,
     "Y": 15.71,
@@ -9517,7 +9517,7 @@
       "Position": "CLIENT ini\\window\\map2\\1007002.ini map2 [96.26]",
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -9580,7 +9580,7 @@
   {
     "Id": 2000220,
     "Scene": 1007002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Industrial Explore Collect Merchant",
     "X": -55.6,
     "Y": 7.77,
@@ -9601,7 +9601,7 @@
       "Position": "CLIENT ini\\window\\map2\\1007002.ini map2 [77.7]",
       "Name": "CLIENT NorthNpc0021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -10667,7 +10667,7 @@
   {
     "Id": 2000240,
     "Scene": 1008001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 64.81,
     "Y": 4.58,
@@ -10692,14 +10692,14 @@
       "Position": "CLIENT ini\\window\\map2\\1008001.ini map2 [31.44]",
       "Name": "CLIENT NPC00828",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000241,
     "Scene": 1008001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "The Nederland's Merchant's Alliance Principal",
     "X": 47.5,
     "Y": 4.58,
@@ -10720,14 +10720,14 @@
       "Position": "CLIENT ini\\window\\map2\\1008001.ini map2 [26.47]",
       "Name": "CLIENT ndlNPC001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000242,
     "Scene": 1008001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -24.0,
     "Y": 4.58,
@@ -10748,14 +10748,14 @@
       "Position": "CLIENT ini\\window\\map\\1008001.ini map mark0",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000243,
     "Scene": 1008001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -24.0,
     "Y": 4.58,
@@ -10776,7 +10776,7 @@
       "Position": "CLIENT ini\\window\\map\\1008001.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -11742,7 +11742,7 @@
   {
     "Id": 2000260,
     "Scene": 1010001,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Governer General",
     "X": 43.84,
     "Y": 13.86,
@@ -11763,7 +11763,7 @@
       "Position": "CLIENT ini\\window\\map2\\1010001.ini map2 [6.31]",
       "Name": "CLIENT IDName00005295",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -11982,7 +11982,7 @@
   {
     "Id": 2000268,
     "Scene": 1010001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 38.16,
     "Y": 13.86,
@@ -12007,14 +12007,14 @@
       "Position": "CLIENT ini\\window\\map2\\1010001.ini map2 [25.50]",
       "Name": "CLIENT NPC01038",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000269,
     "Scene": 1010001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "The English Channel Merchant's Alliance Principal",
     "X": 50.5,
     "Y": 13.71,
@@ -12035,14 +12035,14 @@
       "Position": "CLIENT ini\\window\\map2\\1010001.ini map2 [30.57]",
       "Name": "CLIENT bldNPC001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000270,
     "Scene": 1010001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 27.0,
     "Y": 13.94,
@@ -12063,14 +12063,14 @@
       "Position": "CLIENT ini\\window\\map\\1010001.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000271,
     "Scene": 1010001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 21.0,
     "Y": 13.85,
@@ -12091,7 +12091,7 @@
       "Position": "CLIENT ini\\window\\map\\1010001.ini map mark5",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -13632,7 +13632,7 @@
   {
     "Id": 2000304,
     "Scene": 1011002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Mall Items Exchanger",
     "X": -20.8,
     "Y": 3.04,
@@ -13653,7 +13653,7 @@
       "Position": "CLIENT ini\\window\\map2\\1011002.ini map2 [97.30]",
       "Name": "CLIENT hdnpc6012",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -14995,7 +14995,7 @@
   {
     "Id": 2000332,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Custom Charm Tailor Merchant",
     "X": 70.41,
     "Y": 7.51,
@@ -15016,14 +15016,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [98.5]",
       "Name": "CLIENT show_change_npc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000333,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Material Exchange Staff",
     "X": -44.9,
     "Y": 3.92,
@@ -15044,14 +15044,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [42.48]",
       "Name": "CLIENT dhnpc1002",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000334,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Forger",
     "X": 39.5,
     "Y": 3.92,
@@ -15080,14 +15080,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [71.56]",
       "Name": "CLIENT armrebuild",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000335,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Suit Compound Master",
     "X": 53.83,
     "Y": 4.29,
@@ -15108,14 +15108,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [72.57]",
       "Name": "CLIENT gnnpc0078",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000336,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Suit Material Exchanger",
     "X": 55.4,
     "Y": 4.29,
@@ -15136,7 +15136,7 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [73.58]",
       "Name": "CLIENT dhnpc2012",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -15294,7 +15294,7 @@
   {
     "Id": 2000340,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Point Card Conductor",
     "X": 113.68,
     "Y": 7.51,
@@ -15315,14 +15315,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [23.29]",
       "Name": "CLIENT IDName00013023",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000341,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Collecting field conservator",
     "X": -42.63,
     "Y": 3.92,
@@ -15343,14 +15343,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [24.30]",
       "Name": "CLIENT IDName_gnnpc022",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000342,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Points Exchanger",
     "X": 113.66,
     "Y": 4.15,
@@ -15371,14 +15371,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [34.40]",
       "Name": "CLIENT hdnpc018",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000343,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 15.17,
     "Y": 4.29,
@@ -15399,14 +15399,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [37.43]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000344,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Gold Exchange Staff",
     "X": -37.9,
     "Y": 3.92,
@@ -15427,7 +15427,7 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [43.49]",
       "Name": "CLIENT dhnpc1003",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -15490,7 +15490,7 @@
   {
     "Id": 2000347,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Voucher Exchanger",
     "X": 76.9,
     "Y": 7.51,
@@ -15511,14 +15511,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [46.52]",
       "Name": "CLIENT gznpc001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000348,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Special Offer Voucher Exchanger",
     "X": 143.0,
     "Y": 3.92,
@@ -15539,7 +15539,7 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [47.53]",
       "Name": "CLIENT chuandaoju",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -15602,7 +15602,7 @@
   {
     "Id": 2000351,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Industrial Explore Collect Merchant",
     "X": 96.9,
     "Y": 7.51,
@@ -15623,14 +15623,14 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [76.61]",
       "Name": "CLIENT AtlanNpc0020",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000352,
     "Scene": 1012002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Spanish Military Officer",
     "X": 116.0,
     "Y": 4.15,
@@ -15655,7 +15655,7 @@
       "Position": "CLIENT ini\\window\\map2\\1012002.ini map2 [77.62]",
       "Name": "CLIENT hdnpc065",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -30234,7 +30234,7 @@
   {
     "Id": 2000638,
     "Scene": 1035001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 75.61,
     "Y": 2.56,
@@ -30259,7 +30259,7 @@
       "Position": "CLIENT ini\\window\\map2\\1035001.ini map2 [92.36]",
       "Name": "CLIENT NPC03535",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -30321,7 +30321,7 @@
   {
     "Id": 2000640,
     "Scene": 1035001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 31.0,
     "Y": 0.23,
@@ -30342,14 +30342,14 @@
       "Position": "CLIENT ini\\window\\map\\1035001.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000641,
     "Scene": 1035001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 60.0,
     "Y": 0.23,
@@ -30370,7 +30370,7 @@
       "Position": "CLIENT ini\\window\\map\\1035001.ini map mark8",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -34123,7 +34123,7 @@
   {
     "Id": 2000708,
     "Scene": 1038002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -21.17,
     "Y": 2.39,
@@ -34144,14 +34144,14 @@
       "Position": "CLIENT ini\\window\\map2\\1038002.ini map2 [95.38]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000709,
     "Scene": 1038002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Slave Trader",
     "X": 53.1,
     "Y": 2.84,
@@ -34172,14 +34172,14 @@
       "Position": "CLIENT ini\\window\\map2\\1038002.ini map2 [96.39]",
       "Name": "CLIENT hdnpc063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000710,
     "Scene": 1038002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 6.0,
     "Y": 2.2,
@@ -34200,14 +34200,14 @@
       "Position": "CLIENT ini\\window\\map\\1038002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000711,
     "Scene": 1038002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -37.0,
     "Y": 2.46,
@@ -34228,14 +34228,14 @@
       "Position": "CLIENT ini\\window\\map\\1038002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000712,
     "Scene": 1038020,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Priest Spike",
     "X": 47.98,
     "Y": 22.68,
@@ -34256,7 +34256,7 @@
       "Position": "CLIENT ini\\window\\map2\\1038020.ini map2 [96.14]",
       "Name": "CLIENT IDName00005483",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -35182,7 +35182,7 @@
   {
     "Id": 2000727,
     "Scene": 1039002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 9.04,
     "Y": 3.93,
@@ -35203,14 +35203,14 @@
       "Position": "CLIENT ini\\window\\map2\\1039002.ini map2 [97.39]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000728,
     "Scene": 1039002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -25.0,
     "Y": 3.95,
@@ -35231,14 +35231,14 @@
       "Position": "CLIENT ini\\window\\map\\1039002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000729,
     "Scene": 1039002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 30.0,
     "Y": 5.09,
@@ -35259,7 +35259,7 @@
       "Position": "CLIENT ini\\window\\map\\1039002.ini map mark6",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -36130,7 +36130,7 @@
   {
     "Id": 2000743,
     "Scene": 1040002,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Boatman",
     "X": 8.19,
     "Y": 2.21,
@@ -36151,14 +36151,14 @@
       "Position": "CLIENT ini\\window\\map2\\1040002.ini map2 [89.29]",
       "Name": "CLIENT IDName00005489",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000744,
     "Scene": 1040002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -94.47,
     "Y": 5.93,
@@ -36179,7 +36179,7 @@
       "Position": "CLIENT ini\\window\\map2\\1040002.ini map2 [96.36]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -36214,7 +36214,7 @@
   {
     "Id": 2000746,
     "Scene": 1040002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -118.0,
     "Y": 6.86,
@@ -36235,14 +36235,14 @@
       "Position": "CLIENT ini\\window\\map\\1040002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000747,
     "Scene": 1040002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -81.0,
     "Y": 5.89,
@@ -36263,7 +36263,7 @@
       "Position": "CLIENT ini\\window\\map\\1040002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -37218,7 +37218,7 @@
   {
     "Id": 2000764,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Practice Field Administrator",
     "X": -20.84,
     "Y": 10.85,
@@ -37239,14 +37239,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [92.30]",
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000765,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Point Card Conductor",
     "X": -16.21,
     "Y": 6.23,
@@ -37267,14 +37267,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [96.34]",
       "Name": "CLIENT IDName00013023",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000766,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Collecting field conservator",
     "X": 29.8,
     "Y": 12.4,
@@ -37295,14 +37295,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [97.35]",
       "Name": "CLIENT IDName_gnnpc022",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000767,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": -13.65,
     "Y": 6.18,
@@ -37323,14 +37323,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [98.36]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000768,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Voyage Tutor",
     "X": -30.22,
     "Y": 4.84,
@@ -37351,14 +37351,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [99.37]",
       "Name": "CLIENT IDName_NPC53001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000769,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 15.97,
     "Y": 12.47,
@@ -37379,14 +37379,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [5.42]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000770,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Pet Merchant",
     "X": 7.0,
     "Y": 9.89,
@@ -37415,14 +37415,14 @@
       "Position": "CLIENT ini\\window\\map2\\1041002.ini map2 [93.45]",
       "Name": "CLIENT petnpc01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000771,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 19.0,
     "Y": 9.63,
@@ -37443,14 +37443,14 @@
       "Position": "CLIENT ini\\window\\map\\1041002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000772,
     "Scene": 1041002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 12.0,
     "Y": 9.75,
@@ -37471,7 +37471,7 @@
       "Position": "CLIENT ini\\window\\map\\1041002.ini map mark5",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -38370,7 +38370,7 @@
   {
     "Id": 2000787,
     "Scene": 1042002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -33.13,
     "Y": 18.13,
@@ -38391,14 +38391,14 @@
       "Position": "CLIENT ini\\window\\map2\\1042002.ini map2 [22.39]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000788,
     "Scene": 1042002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -19.0,
     "Y": 19.69,
@@ -38419,14 +38419,14 @@
       "Position": "CLIENT ini\\window\\map\\1042002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000789,
     "Scene": 1042002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -22.0,
     "Y": 19.21,
@@ -38447,7 +38447,7 @@
       "Position": "CLIENT ini\\window\\map\\1042002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -39346,7 +39346,7 @@
   {
     "Id": 2000804,
     "Scene": 1043002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -7.0,
     "Y": 5.03,
@@ -39367,14 +39367,14 @@
       "Position": "CLIENT ini\\window\\map\\1043002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000805,
     "Scene": 1043002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 7.0,
     "Y": 5.06,
@@ -39395,7 +39395,7 @@
       "Position": "CLIENT ini\\window\\map\\1043002.ini map mark6",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -40465,7 +40465,7 @@
   {
     "Id": 2000824,
     "Scene": 1044002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": 3.9,
     "Y": 2.74,
@@ -40486,7 +40486,7 @@
       "Position": "CLIENT ini\\window\\map2\\1044002.ini map2 [21.37]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -40521,7 +40521,7 @@
   {
     "Id": 2000826,
     "Scene": 1044002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -34.0,
     "Y": 2.72,
@@ -40542,14 +40542,14 @@
       "Position": "CLIENT ini\\window\\map\\1044002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000827,
     "Scene": 1044002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -15.0,
     "Y": 2.73,
@@ -40570,7 +40570,7 @@
       "Position": "CLIENT ini\\window\\map\\1044002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -40819,7 +40819,7 @@
   {
     "Id": 2000831,
     "Scene": 1045002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Trials Medal Exchanger",
     "X": -22.15,
     "Y": 2.9,
@@ -40844,7 +40844,7 @@
       "Position": "CLIENT ini\\window\\map2\\1045002.ini map2 [51.5]",
       "Name": "CLIENT hdnpc7098",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -41557,7 +41557,7 @@
   {
     "Id": 2000845,
     "Scene": 1045002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 21.0,
     "Y": 2.69,
@@ -41578,14 +41578,14 @@
       "Position": "CLIENT ini\\window\\map\\1045002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000846,
     "Scene": 1045002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 1.0,
     "Y": 2.81,
@@ -41606,7 +41606,7 @@
       "Position": "CLIENT ini\\window\\map\\1045002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -42477,7 +42477,7 @@
   {
     "Id": 2000860,
     "Scene": 1046002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 8.33,
     "Y": 4.37,
@@ -42498,14 +42498,14 @@
       "Position": "CLIENT ini\\window\\map2\\1046002.ini map2 [76.29]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000861,
     "Scene": 1046002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 21.0,
     "Y": 4.57,
@@ -42526,7 +42526,7 @@
       "Position": "CLIENT ini\\window\\map\\1046002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -43537,7 +43537,7 @@
   {
     "Id": 2000880,
     "Scene": 1047002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 105.0,
     "Y": 3.16,
@@ -43558,14 +43558,14 @@
       "Position": "CLIENT ini\\window\\map\\1047002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000881,
     "Scene": 1047002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 45.0,
     "Y": 3.16,
@@ -43586,7 +43586,7 @@
       "Position": "CLIENT ini\\window\\map\\1047002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -44541,7 +44541,7 @@
   {
     "Id": 2000898,
     "Scene": 1048002,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "General William",
     "X": -37.66,
     "Y": 20.4,
@@ -44562,14 +44562,14 @@
       "Position": "CLIENT ini\\window\\map2\\1048002.ini map2 [69.39]",
       "Name": "CLIENT NPC04824",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000899,
     "Scene": 1048002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -98.57,
     "Y": 16.49,
@@ -44590,7 +44590,7 @@
       "Position": "CLIENT ini\\window\\map2\\1048002.ini map2 [70.40]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -44625,7 +44625,7 @@
   {
     "Id": 2000901,
     "Scene": 1048002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -30.0,
     "Y": 11.43,
@@ -44646,14 +44646,14 @@
       "Position": "CLIENT ini\\window\\map\\1048002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000902,
     "Scene": 1048002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -92.0,
     "Y": 16.49,
@@ -44674,7 +44674,7 @@
       "Position": "CLIENT ini\\window\\map\\1048002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -45713,7 +45713,7 @@
   {
     "Id": 2000922,
     "Scene": 1049002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 86.99,
     "Y": 6.97,
@@ -45734,7 +45734,7 @@
       "Position": "CLIENT ini\\window\\map2\\1049002.ini map2 [71.38]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -45769,7 +45769,7 @@
   {
     "Id": 2000924,
     "Scene": 1049002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -94.0,
     "Y": 6.34,
@@ -45790,14 +45790,14 @@
       "Position": "CLIENT ini\\window\\map\\1049002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000925,
     "Scene": 1049002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 31.0,
     "Y": 6.93,
@@ -45818,7 +45818,7 @@
       "Position": "CLIENT ini\\window\\map\\1049002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -46663,7 +46663,7 @@
   {
     "Id": 2000939,
     "Scene": 1050002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": -16.16,
     "Y": 10.33,
@@ -46684,7 +46684,7 @@
       "Position": "CLIENT ini\\window\\map2\\1050002.ini map2 [67.33]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -46745,7 +46745,7 @@
   {
     "Id": 2000941,
     "Scene": 1050002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 31.48,
     "Y": 8.01,
@@ -46766,7 +46766,7 @@
       "Position": "CLIENT ini\\window\\map2\\1050002.ini map2 [71.37]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -46801,7 +46801,7 @@
   {
     "Id": 2000943,
     "Scene": 1050002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 6.1,
     "Y": 1.91,
@@ -46822,14 +46822,14 @@
       "Position": "CLIENT ini\\window\\map\\1050002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000944,
     "Scene": 1050002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 20.7,
     "Y": 2.1,
@@ -46850,7 +46850,7 @@
       "Position": "CLIENT ini\\window\\map\\1050002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -47861,7 +47861,7 @@
   {
     "Id": 2000963,
     "Scene": 1051002,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": 71.74,
     "Y": 12.62,
@@ -47882,14 +47882,14 @@
       "Position": "CLIENT ini\\window\\map2\\1051002.ini map2 [70.35]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000964,
     "Scene": 1051002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 24.0,
     "Y": 11.92,
@@ -47910,14 +47910,14 @@
       "Position": "CLIENT ini\\window\\map\\1051002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000965,
     "Scene": 1051002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 51.0,
     "Y": 12.14,
@@ -47938,7 +47938,7 @@
       "Position": "CLIENT ini\\window\\map\\1051002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -48977,7 +48977,7 @@
   {
     "Id": 2000985,
     "Scene": 1052002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -37.0,
     "Y": 10.01,
@@ -48998,14 +48998,14 @@
       "Position": "CLIENT ini\\window\\map\\1052002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000986,
     "Scene": 1052002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -38.0,
     "Y": 9.81,
@@ -49026,7 +49026,7 @@
       "Position": "CLIENT ini\\window\\map\\1052002.ini map mark6",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -49158,7 +49158,7 @@
   {
     "Id": 2000989,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": 53.4,
     "Y": 6.49,
@@ -49179,14 +49179,14 @@
       "Position": "CLIENT ini\\window\\map2\\1053002.ini map2 [69.1]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000990,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": 39.76,
     "Y": 6.49,
@@ -49207,7 +49207,7 @@
       "Position": "CLIENT ini\\window\\map2\\1053002.ini map2 [70.2]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -50137,7 +50137,7 @@
   {
     "Id": 2001008,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201016,
     "Name": "Point Card Conductor",
     "X": 40.61,
     "Y": 3.55,
@@ -50158,7 +50158,7 @@
       "Position": "CLIENT ini\\window\\map2\\1053002.ini map2 [13.44]",
       "Name": "CLIENT IDName00013023",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Docker model (emulator Athens Docker)",
       "Greeting": "GUESS default"
     }
   },
@@ -50193,7 +50193,7 @@
   {
     "Id": 2001010,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Petro Fortress Executive Officer",
     "X": 93.07,
     "Y": 4.11,
@@ -50214,7 +50214,7 @@
       "Position": "CLIENT ini\\window\\map2\\1053002.ini map2 [19.52]",
       "Name": "CLIENT hdnpc082",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -50249,7 +50249,7 @@
   {
     "Id": 2001012,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 53.7,
     "Y": 5.1,
@@ -50270,14 +50270,14 @@
       "Position": "CLIENT ini\\window\\map\\1053002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001013,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": 37.1,
     "Y": 6.49,
@@ -50298,14 +50298,14 @@
       "Position": "CLIENT ini\\window\\map\\1053002.ini map mark3",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001014,
     "Scene": 1053002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 52.0,
     "Y": 3.89,
@@ -50326,7 +50326,7 @@
       "Position": "CLIENT ini\\window\\map\\1053002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -50962,7 +50962,7 @@
   {
     "Id": 2001023,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": 289.78,
     "Y": 1.09,
@@ -50983,14 +50983,14 @@
       "Position": "CLIENT ini\\window\\map2\\1054001.ini map2 [19.23]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001024,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": 194.99,
     "Y": 0.77,
@@ -51011,14 +51011,14 @@
       "Position": "CLIENT ini\\window\\map2\\1054001.ini map2 [20.24]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001025,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "General Li",
     "X": 356.4,
     "Y": 0.6,
@@ -51039,7 +51039,7 @@
       "Position": "CLIENT ini\\window\\map2\\1054001.ini map2 [21.25]",
       "Name": "CLIENT IDName00005533",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -51314,7 +51314,7 @@
   {
     "Id": 2001035,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": 178.29,
     "Y": 1.39,
@@ -51335,14 +51335,14 @@
       "Position": "CLIENT ini\\window\\map2\\1054001.ini map2 [51.55]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001036,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": -15.52,
     "Y": 14.26,
@@ -51367,14 +51367,14 @@
       "Position": "CLIENT ini\\window\\map2\\1054001.ini map2 [56.60]",
       "Name": "CLIENT NPC05434",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001037,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 320.0,
     "Y": 0.77,
@@ -51395,14 +51395,14 @@
       "Position": "CLIENT ini\\window\\map\\1054001.ini map mark3",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001038,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 277.0,
     "Y": 1.06,
@@ -51423,14 +51423,14 @@
       "Position": "CLIENT ini\\window\\map\\1054001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001039,
     "Scene": 1054001,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": 290.0,
     "Y": 1.03,
@@ -51451,7 +51451,7 @@
       "Position": "CLIENT ini\\window\\map\\1054001.ini map mark5",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -52046,7 +52046,7 @@
   {
     "Id": 2001046,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": -10.64,
     "Y": 4.8,
@@ -52067,7 +52067,7 @@
       "Position": "CLIENT ini\\window\\map2\\1055002.ini map2 [71.20]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -52108,7 +52108,7 @@
   {
     "Id": 2001048,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": -21.83,
     "Y": 4.72,
@@ -52129,7 +52129,7 @@
       "Position": "CLIENT ini\\window\\map2\\1055002.ini map2 [73.22]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -52378,7 +52378,7 @@
   {
     "Id": 2001055,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Monk",
     "X": 29.91,
     "Y": 5.31,
@@ -52399,7 +52399,7 @@
       "Position": "CLIENT ini\\window\\map2\\1055002.ini map2 [81.30]",
       "Name": "CLIENT IDName00004969",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -52562,7 +52562,7 @@
   {
     "Id": 2001061,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": -8.4,
     "Y": 4.87,
@@ -52583,14 +52583,14 @@
       "Position": "CLIENT ini\\window\\map2\\1055002.ini map2 [91.40]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001062,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 38.0,
     "Y": 5.19,
@@ -52611,14 +52611,14 @@
       "Position": "CLIENT ini\\window\\map\\1055002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001063,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": -22.0,
     "Y": 4.72,
@@ -52639,14 +52639,14 @@
       "Position": "CLIENT ini\\window\\map\\1055002.ini map mark3",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001064,
     "Scene": 1055002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 28.0,
     "Y": 4.96,
@@ -52667,7 +52667,7 @@
       "Position": "CLIENT ini\\window\\map\\1055002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -53165,7 +53165,7 @@
   {
     "Id": 2001070,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": -26.8,
     "Y": 3.81,
@@ -53186,7 +53186,7 @@
       "Position": "CLIENT ini\\window\\map2\\1056002.ini map2 [72.20]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -53227,7 +53227,7 @@
   {
     "Id": 2001072,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": -15.26,
     "Y": 3.81,
@@ -53248,7 +53248,7 @@
       "Position": "CLIENT ini\\window\\map2\\1056002.ini map2 [74.22]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -53525,7 +53525,7 @@
   {
     "Id": 2001080,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Monk",
     "X": -9.34,
     "Y": 3.81,
@@ -53546,7 +53546,7 @@
       "Position": "CLIENT ini\\window\\map2\\1056002.ini map2 [86.34]",
       "Name": "CLIENT IDName00004969",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -53737,7 +53737,7 @@
   {
     "Id": 2001087,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 14.22,
     "Y": 3.81,
@@ -53762,14 +53762,14 @@
       "Position": "CLIENT ini\\window\\map2\\1056002.ini map2 [4.51]",
       "Name": "CLIENT NPC05630",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001088,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 10.0,
     "Y": 3.81,
@@ -53790,14 +53790,14 @@
       "Position": "CLIENT ini\\window\\map\\1056002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001089,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": -15.0,
     "Y": 3.81,
@@ -53818,14 +53818,14 @@
       "Position": "CLIENT ini\\window\\map\\1056002.ini map mark3",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001090,
     "Scene": 1056002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -75.0,
     "Y": 3.81,
@@ -53846,7 +53846,7 @@
       "Position": "CLIENT ini\\window\\map\\1056002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -54121,7 +54121,7 @@
   {
     "Id": 2001096,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": -1.89,
     "Y": 8.05,
@@ -54142,14 +54142,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [57.3]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001097,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": 0.41,
     "Y": 8.05,
@@ -54170,7 +54170,7 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [58.4]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -55069,7 +55069,7 @@
   {
     "Id": 2001116,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Practice Field Administrator",
     "X": 18.25,
     "Y": 11.2,
@@ -55090,14 +55090,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [99.45]",
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001117,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Collecting field conservator",
     "X": 18.61,
     "Y": 11.2,
@@ -55118,14 +55118,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [1.46]",
       "Name": "CLIENT IDName_gnnpc022",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001118,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Municipal minister",
     "X": 24.87,
     "Y": 11.2,
@@ -55146,14 +55146,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [2.47]",
       "Name": "CLIENT IDName_Civicism",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001119,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Voyage Tutor",
     "X": 7.46,
     "Y": 8.75,
@@ -55174,7 +55174,7 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [3.48]",
       "Name": "CLIENT IDName_NPC53001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -55209,7 +55209,7 @@
   {
     "Id": 2001121,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Pet Merchant",
     "X": -5.88,
     "Y": 8.05,
@@ -55238,14 +55238,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [96.55]",
       "Name": "CLIENT petnpc01",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001122,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Material Exchange Staff",
     "X": 16.61,
     "Y": 11.2,
@@ -55266,14 +55266,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [97.56]",
       "Name": "CLIENT dhnpc1002",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001123,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Naval Equipment Enhancement Master",
     "X": -4.0,
     "Y": 8.05,
@@ -55294,14 +55294,14 @@
       "Position": "CLIENT ini\\window\\map2\\1057002.ini map2 [98.57]",
       "Name": "CLIENT gnnpc0129",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001124,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -25.0,
     "Y": 8.05,
@@ -55322,14 +55322,14 @@
       "Position": "CLIENT ini\\window\\map\\1057002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001125,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": 1.0,
     "Y": 8.05,
@@ -55350,14 +55350,14 @@
       "Position": "CLIENT ini\\window\\map\\1057002.ini map mark3",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001126,
     "Scene": 1057002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 9.0,
     "Y": 11.2,
@@ -55378,7 +55378,7 @@
       "Position": "CLIENT ini\\window\\map\\1057002.ini map mark7",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -55889,7 +55889,7 @@
   {
     "Id": 2001140,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Moneylender",
     "X": -12.0,
     "Y": 0.04,
@@ -55910,7 +55910,7 @@
       "Position": "CLIENT ini\\window\\map2\\1058001.ini map2 [56.18]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -55993,7 +55993,7 @@
   {
     "Id": 2001142,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Placeman",
     "X": 26.89,
     "Y": 0.04,
@@ -56014,7 +56014,7 @@
       "Position": "CLIENT ini\\window\\map2\\1058001.ini map2 [58.20]",
       "Name": "CLIENT IDName00004968",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -56343,7 +56343,7 @@
   {
     "Id": 2001153,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 16.16,
     "Y": 5.53,
@@ -56368,14 +56368,14 @@
       "Position": "CLIENT ini\\window\\map2\\1058001.ini map2 [6.67]",
       "Name": "CLIENT NPC05838",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001154,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 23.0,
     "Y": 0.04,
@@ -56396,14 +56396,14 @@
       "Position": "CLIENT ini\\window\\map\\1058001.ini map mark0",
       "Name": "CLIENT IDName00010064",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001155,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201005,
     "Name": "Bank",
     "X": -12.0,
     "Y": 0.04,
@@ -56424,14 +56424,14 @@
       "Position": "CLIENT ini\\window\\map\\1058001.ini map mark1",
       "Name": "CLIENT IDName00010822",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001156,
     "Scene": 1058001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 23.0,
     "Y": 0.04,
@@ -56452,7 +56452,7 @@
       "Position": "CLIENT ini\\window\\map\\1058001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -58035,7 +58035,7 @@
   {
     "Id": 2001185,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Governor John Smith",
     "X": 1.2,
     "Y": 6.4,
@@ -58056,14 +58056,14 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [69.8]",
       "Name": "CLIENT npc06411",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001186,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Captain Blair",
     "X": -64.12,
     "Y": 7.41,
@@ -58084,7 +58084,7 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [70.9]",
       "Name": "CLIENT npc06413",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -58195,7 +58195,7 @@
   {
     "Id": 2001189,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Forger",
     "X": 38.1,
     "Y": 6.4,
@@ -58224,7 +58224,7 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [73.12]",
       "Name": "CLIENT armrebuild",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -58334,7 +58334,7 @@
   {
     "Id": 2001191,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Ship's Engineer",
     "X": -40.5,
     "Y": 2.5,
@@ -58355,7 +58355,7 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [75.14]",
       "Name": "CLIENT shipbuildnpc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -58396,7 +58396,7 @@
   {
     "Id": 2001193,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Hurricane Island Explorer",
     "X": -6.0,
     "Y": 6.4,
@@ -58417,14 +58417,14 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [77.16]",
       "Name": "CLIENT gnnpc0118",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001194,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Suit Conversion Master",
     "X": -6.1,
     "Y": 6.4,
@@ -58445,7 +58445,7 @@
       "Position": "CLIENT ini\\window\\map2\\1064001.ini map2 [78.17]",
       "Name": "CLIENT gnnpc0112",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -58561,7 +58561,7 @@
   {
     "Id": 2001197,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 60.5,
     "Y": 6.4,
@@ -58582,14 +58582,14 @@
       "Position": "CLIENT ini\\window\\map\\1064001.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001198,
     "Scene": 1064001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 81.27,
     "Y": 6.4,
@@ -58610,7 +58610,7 @@
       "Position": "CLIENT ini\\window\\map\\1064001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -59309,7 +59309,7 @@
   {
     "Id": 2001209,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Arms Merchant George Locke",
     "X": -118.38,
     "Y": 4.26,
@@ -59330,7 +59330,7 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [73.12]",
       "Name": "CLIENT npc06516",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -59413,7 +59413,7 @@
   {
     "Id": 2001211,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Forger",
     "X": -150.4,
     "Y": 4.26,
@@ -59442,7 +59442,7 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [75.14]",
       "Name": "CLIENT armrebuild",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -59560,7 +59560,7 @@
   {
     "Id": 2001215,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201063,
     "Name": "Ship's Engineer",
     "X": -63.5,
     "Y": 2.67,
@@ -59581,7 +59581,7 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [79.18]",
       "Name": "CLIENT shipbuildnpc",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
       "Greeting": "GUESS default"
     }
   },
@@ -59622,7 +59622,7 @@
   {
     "Id": 2001217,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Hurricane Island Explorer",
     "X": -103.1,
     "Y": 4.26,
@@ -59643,14 +59643,14 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [81.20]",
       "Name": "CLIENT gnnpc0118",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001218,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201074,
     "Name": "Suit Conversion Master",
     "X": -103.7,
     "Y": 4.26,
@@ -59671,7 +59671,7 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [82.21]",
       "Name": "CLIENT gnnpc0112",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
       "Greeting": "GUESS default"
     }
   },
@@ -59734,7 +59734,7 @@
   {
     "Id": 2001221,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Governor Bob Adams",
     "X": -50.1,
     "Y": 6.14,
@@ -59755,14 +59755,14 @@
       "Position": "CLIENT ini\\window\\map2\\1065001.ini map2 [85.24]",
       "Name": "CLIENT npc06513",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001222,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -50.4,
     "Y": 4.26,
@@ -59783,14 +59783,14 @@
       "Position": "CLIENT ini\\window\\map\\1065001.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001223,
     "Scene": 1065001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -57.7,
     "Y": 4.26,
@@ -59811,14 +59811,14 @@
       "Position": "CLIENT ini\\window\\map\\1065001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001224,
     "Scene": 1065999,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "General Howell",
     "X": -85.57,
     "Y": 7.2,
@@ -59839,7 +59839,7 @@
       "Position": "CLIENT ini\\window\\map2\\1065999.ini map2 [20.20]",
       "Name": "CLIENT npc06512",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -61250,7 +61250,7 @@
   {
     "Id": 2001271,
     "Scene": 1504001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Black Market Dealer",
     "X": -6.63,
     "Y": 8.9,
@@ -61271,7 +61271,7 @@
       "Position": "CLIENT ini\\window\\map2\\1504001.ini map2 [57.75]",
       "Name": "CLIENT IDName00004973",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -62717,7 +62717,7 @@
   {
     "Id": 2001300,
     "Scene": 1521001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Blackmarket merchant",
     "X": -59.24,
     "Y": 22.81,
@@ -62738,7 +62738,7 @@
       "Position": "CLIENT ini\\window\\map2\\1521001.ini map2 [13.3]",
       "Name": "CLIENT npc52103",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -62980,7 +62980,7 @@
   {
     "Id": 2001307,
     "Scene": 1521001,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Pirate Leader Haman",
     "X": 57.7,
     "Y": 26.37,
@@ -63001,7 +63001,7 @@
       "Position": "CLIENT ini\\window\\map2\\1521001.ini map2 [22.12]",
       "Name": "CLIENT npc52124",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -63036,7 +63036,7 @@
   {
     "Id": 2001309,
     "Scene": 1521001,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Colonial Minister",
     "X": 73.5,
     "Y": 30.28,
@@ -63061,7 +63061,7 @@
       "Position": "CLIENT ini\\window\\map2\\1521001.ini map2 [27.17]",
       "Name": "CLIENT NPC52112",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -63124,7 +63124,7 @@
   {
     "Id": 2001312,
     "Scene": 1521001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Prop merchant",
     "X": -112.8,
     "Y": 6.14,
@@ -63145,7 +63145,7 @@
       "Position": "CLIENT ini\\window\\map\\1521001.ini map mark3",
       "Name": "CLIENT changjing0002",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -63180,7 +63180,7 @@
   {
     "Id": 2001314,
     "Scene": 1601002,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Captain Migna",
     "X": 64.78,
     "Y": 8.23,
@@ -63201,7 +63201,7 @@
       "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [174.174]",
       "Name": "CLIENT npc51001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -63236,7 +63236,7 @@
   {
     "Id": 2001316,
     "Scene": 1601002,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Hell Messenger",
     "X": 108.11,
     "Y": 6.44,
@@ -63257,7 +63257,7 @@
       "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [176.176]",
       "Name": "CLIENT hdnpc020",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },
@@ -63348,7 +63348,7 @@
   {
     "Id": 2001320,
     "Scene": 1602301,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Industrial Explore Collect Merchant",
     "X": 249.9,
     "Y": -0.72,
@@ -63369,14 +63369,14 @@
       "Position": "CLIENT ini\\window\\map2\\1602301.ini map2 [11.5]",
       "Name": "CLIENT NorthNpc0021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001321,
     "Scene": 1602301,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Captain Delano",
     "X": 239.2,
     "Y": -0.72,
@@ -63397,14 +63397,14 @@
       "Position": "CLIENT ini\\window\\map2\\1602301.ini map2 [11.6]",
       "Name": "CLIENT NorthNpc0005",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001322,
     "Scene": 1602301,
-    "Model": 3201047,
+    "Model": 3201043,
     "Name": "Captain Kerdymod",
     "X": 47.0,
     "Y": -0.72,
@@ -63425,7 +63425,7 @@
       "Position": "CLIENT ini\\window\\map2\\1602301.ini map2 [11.7]",
       "Name": "CLIENT NorthNpc0016",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Ares Warrior Alliance Master model (emulator Athens Ares Warrior Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -63544,7 +63544,7 @@
   {
     "Id": 2001327,
     "Scene": 1602301,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Healer Pusan",
     "X": 58.4,
     "Y": -0.72,
@@ -63565,14 +63565,14 @@
       "Position": "CLIENT ini\\window\\map2\\1602301.ini map2 [11.12]",
       "Name": "CLIENT yiliao002",
       "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001328,
     "Scene": 1602320,
-    "Model": 3201047,
+    "Model": 3201013,
     "Name": "Healer Pusan",
     "X": 59.1,
     "Y": 22.15,
@@ -63593,7 +63593,7 @@
       "Position": "CLIENT ini\\window\\map\\1602320.ini map mark2",
       "Name": "CLIENT yiliao002",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -64221,7 +64221,7 @@
   {
     "Id": 2001336,
     "Scene": 1603001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 27.0,
     "Y": 4.12,
@@ -64242,14 +64242,14 @@
       "Position": "CLIENT ini\\window\\map\\1603001.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001337,
     "Scene": 1603001,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -2.5,
     "Y": 2.74,
@@ -64270,7 +64270,7 @@
       "Position": "CLIENT ini\\window\\map\\1603001.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -64952,7 +64952,7 @@
   {
     "Id": 2001346,
     "Scene": 1603002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -58.0,
     "Y": 34.91,
@@ -64973,14 +64973,14 @@
       "Position": "CLIENT ini\\window\\map\\1603002.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001347,
     "Scene": 1603002,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 32.1,
     "Y": 34.91,
@@ -65001,7 +65001,7 @@
       "Position": "CLIENT ini\\window\\map\\1603002.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -65542,7 +65542,7 @@
   {
     "Id": 2001354,
     "Scene": 1603003,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -126.26,
     "Y": 8.24,
@@ -65563,7 +65563,7 @@
       "Position": "CLIENT ini\\window\\map2\\1603003.ini map2 [7.7]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -65657,7 +65657,7 @@
   {
     "Id": 2001356,
     "Scene": 1603003,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 1.8,
     "Y": 26.63,
@@ -65678,14 +65678,14 @@
       "Position": "CLIENT ini\\window\\map\\1603003.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001357,
     "Scene": 1603003,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -43.7,
     "Y": 25.15,
@@ -65706,7 +65706,7 @@
       "Position": "CLIENT ini\\window\\map\\1603003.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -66247,7 +66247,7 @@
   {
     "Id": 2001364,
     "Scene": 1603004,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -130.28,
     "Y": 3.75,
@@ -66268,7 +66268,7 @@
       "Position": "CLIENT ini\\window\\map2\\1603004.ini map2 [7.7]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -66362,7 +66362,7 @@
   {
     "Id": 2001366,
     "Scene": 1603004,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 101.2,
     "Y": 5.63,
@@ -66383,14 +66383,14 @@
       "Position": "CLIENT ini\\window\\map\\1603004.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001367,
     "Scene": 1603004,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 150.0,
     "Y": 5.77,
@@ -66411,7 +66411,7 @@
       "Position": "CLIENT ini\\window\\map\\1603004.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -67272,7 +67272,7 @@
   {
     "Id": 2001379,
     "Scene": 1603011,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": -79.5,
     "Y": 6.9,
@@ -67293,14 +67293,14 @@
       "Position": "CLIENT ini\\window\\map\\1603011.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001380,
     "Scene": 1603011,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": -29.1,
     "Y": 6.9,
@@ -67321,7 +67321,7 @@
       "Position": "CLIENT ini\\window\\map\\1603011.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -68067,7 +68067,7 @@
   {
     "Id": 2001390,
     "Scene": 1603012,
-    "Model": 3201047,
+    "Model": 3201014,
     "Name": "Traveling Explorer",
     "X": -63.2,
     "Y": 3.05,
@@ -68088,7 +68088,7 @@
       "Position": "CLIENT ini\\window\\map2\\1603012.ini map2 [10.10]",
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS default"
     }
   },
@@ -68182,7 +68182,7 @@
   {
     "Id": 2001392,
     "Scene": 1603012,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Items Store",
     "X": 30.3,
     "Y": 9.37,
@@ -68203,14 +68203,14 @@
       "Position": "CLIENT ini\\window\\map\\1603012.ini map mark1",
       "Name": "CLIENT IDName00010064",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001393,
     "Scene": 1603012,
-    "Model": 3201047,
+    "Model": 3201022,
     "Name": "Weapon Store",
     "X": 16.0,
     "Y": 9.37,
@@ -68231,7 +68231,7 @@
       "Position": "CLIENT ini\\window\\map\\1603012.ini map mark4",
       "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -74055,7 +74055,7 @@
   {
     "Id": 2001457,
     "Scene": 1900025,
-    "Model": 3201047,
+    "Model": 3201017,
     "Name": "Arena Administrator",
     "X": -0.7,
     "Y": 2.07,
@@ -74076,7 +74076,7 @@
       "Position": "CLIENT ini\\window\\map2\\1900025.ini map2 [31.1]",
       "Name": "CLIENT IDName00004989",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
+      "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
       "Greeting": "GUESS default"
     }
   },

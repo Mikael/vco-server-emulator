@@ -107,7 +107,7 @@ public sealed partial class ClientSession
                 break;
             case ShipyardOption.Leave:
                 CloseShipyard();
-                Send(ChatPackets.NpcDialogue(npcId, [(DialogueEntry.Text, 0, $"Fair winds, {Name}.")]), "(shipyard goodbye)");
+                CloseNpcDialogue();
                 break;
             case ShipyardOption.Menu:
                 OpenShipyardMenu(npcId);

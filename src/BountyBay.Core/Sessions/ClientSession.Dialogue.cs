@@ -11,6 +11,7 @@ public sealed partial class ClientSession
 
     public void Talk(NpcDefinition npc)
     {
+        SendNpcPortrait(npc);
         if (TalkArmUpgrade(npc)) return;
         if (npc.Shop?.ContainsKey(ViewId.Shipyard) == true && OpenShipyardMenu(npc.Id)) return;
         if (BattleTalk(npc)) return;
@@ -86,11 +87,18 @@ public sealed partial class ClientSession
                 SailOff();
                 break;
             default:
-                CloseShop();
-                CloseWarehouse();
-                Send(ChatPackets.NpcDialogue(target, [(DialogueEntry.Text, 0, $"Fair winds, {Name}.")]), "(npc dialogue)");
+                if (action != DialogueAction.Bye) Log.Info(Tag, $"{Name}: dialogue option {(int)action} of object {target} has no handler");
+                CloseNpcDialogue();
                 break;
         }
+    }
+
+    public void CloseNpcDialogue()
+    {
+        CloseShop();
+        CloseWarehouse();
+        _clientMenuOptions.Clear();
+        Send(UiPackets.CloseMenu(), "(close npc dialogue)");
     }
 
     public void ShowNobility(int target)

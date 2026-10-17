@@ -437,6 +437,7 @@ public sealed partial class ClientSession
             ["ConsName"] = "",
             ["ChatSet"] = npc.ChatSet,
             ["Model"] = npc.Model,
+            ["Photo"] = npc.Portrait,
             ["ActionSet"] = 0,
             ["CollideRadius"] = 0.5f,
             ["HP"] = 100,
