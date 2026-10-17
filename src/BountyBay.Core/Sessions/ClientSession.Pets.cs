@@ -97,6 +97,15 @@ public sealed partial class ClientSession
         SystemMessage($"Your pet is now called {pet.Name}.");
     }
 
+    private bool _petFollowing = true;
+
+    // Walk the pet to a spot just behind where the player is heading, at the player's speed.
+    private void PetFollow(float x, float z, float speed)
+    {
+        if (AtSea || !_petFollowing || Character.Pet is not { Out: true }) return;
+        Send(ScenePackets.MoveObject(PetObjectId, x - 1.2f, z - 1.2f, speed, 0, speed <= ProtocolConstants.WalkSpeed ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction), "(pet follows)");
+    }
+
     public void CommandPet(string order)
     {
         PetRecord? pet = Character.Pet;
@@ -114,17 +123,19 @@ public sealed partial class ClientSession
                     SystemMessage("There is no enemy within reach.");
                     return;
                 }
-                Send(ScenePackets.PlaceObject(PetObjectId, monster.X + 1f, monster.Y, monster.Z), "(pet attacks)");
+                _petFollowing = false;
+                Send(ScenePackets.MoveObject(PetObjectId, monster.X + 1f, monster.Z, WorldSettings.RunSpeed, 0, ProtocolConstants.RunAction), "(pet attacks)");
                 Send(ScenePackets.PlayAction(PetObjectId, Context.Data.Actions.Attack, attack: true), "(pet attacks)");
                 MonsterState state = Context.World.Monster(monster);
                 Context.World.Provoke(monster, this);
                 Wound(monster, state, CombatRules.Damage(Rule.Combat, 4 + 3 * pet.Level, MonsterDefence(monster, state)), 0xff8000);
                 break;
             case "Pet_Follow":
-                (float x, float z) = Mover.Now();
-                Send(ScenePackets.PlaceObject(PetObjectId, x + 1.5f, Height, z + 1.5f), "(pet follows)");
+                _petFollowing = true;
+                PetFollow(Mover.DestinationX, Mover.DestinationZ, WorldSettings.RunSpeed);
                 break;
             case "Pet_Stop":
+                _petFollowing = false;
                 SystemMessage($"{pet.Name} stays where it is.");
                 break;
             default:

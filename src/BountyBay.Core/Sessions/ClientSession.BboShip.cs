@@ -211,15 +211,19 @@ public sealed partial class ClientSession
 
     public bool BboOceanRouteFromHere()
     {
+        return !BboOceanScene(Scene) && HomeDock() != null;
+    }
+
+    private BboOceanDock? HomeDock()
+    {
         int coast = Scene / 1000 * 1000 + 3;
-        return !BboOceanScene(Scene) && OceanDocks().Any(entry => entry.Coast == coast);
+        return OceanDocks().FirstOrDefault(entry => entry.Coast == Scene) ?? OceanDocks().FirstOrDefault(entry => entry.Coast == coast);
     }
 
     public bool BboSailToOcean()
     {
         if (SceneLocked()) return true;
-        int coast = Scene / 1000 * 1000 + 3;
-        BboOceanDock? dock = OceanDocks().FirstOrDefault(entry => entry.Coast == coast);
+        BboOceanDock? dock = HomeDock();
         if (BboOceanScene(Scene) || dock == null || !Context.Data.Scenes.Exists(dock.Ocean))
         {
             SystemMessage("No sea route leads to the high seas from here.");
@@ -287,6 +291,18 @@ public sealed partial class ClientSession
             if (!File.Exists(map)) continue;
             string? key = IniFile.Load(map).Header["name"];
             if (key == null) continue;
+            string city = CityOf(names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim());
+            if (city.Length > 0) coasts.TryAdd(city, scene);
+        }
+        // Coast scenes that are not numbered xxx003, such as the Pacific towns (San Francisco 1603011, Seward 1603001...):
+        // any other sea scene whose map is named after the harbour.
+        foreach (string file in Directory.EnumerateFiles(scenes, "*.ini"))
+        {
+            if (!int.TryParse(Path.GetFileNameWithoutExtension(file), out int scene) || BboOceanScene(scene) || scene % 1000 == 3) continue;
+            string map = Path.Combine(windows, "map", scene + ".ini");
+            if (!File.Exists(map)) continue;
+            IniFile header = IniFile.Load(map);
+            if (header.Header["sea"] is not ("true" or "ture") || header.Header["name"] is not { } key) continue;
             string city = CityOf(names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim());
             if (city.Length > 0) coasts.TryAdd(city, scene);
         }

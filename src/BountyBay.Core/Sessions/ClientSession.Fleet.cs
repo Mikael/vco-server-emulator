@@ -505,6 +505,12 @@ public sealed partial class ClientSession
                 ["Index"] = _rebuildOffers.Count,
                 ["Name"] = target.Name,
                 ["Photo"] = target.Photo,
+                ["Model"] = target.Model,
+                ["ShipModel"] = target.Model,
+                ["S/SailTex"] = Character.SailCloth,
+                ["S/Flag"] = 0,
+                ["S/SailHP"] = target.Sail,
+                ["S/MaxSailHP"] = target.Sail,
                 ["Amount"] = 1,
                 ["ShipKind"] = kind,
                 ["ShipType"] = target.Name,
@@ -513,6 +519,7 @@ public sealed partial class ClientSession
                 ["ShipRebuildRes"] = materials,
             })), "(rebuild choice)");
         }
+        CloseNpcDialogue();
         Send(ChatPackets.Script(0, "ShowRebuildShip"), "(rebuild dialog)");
     }
 

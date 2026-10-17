@@ -652,6 +652,8 @@ public sealed partial class ClientSession
             Character.UniqueSkills.Add(new UniqueSkillEntry { Key = stunt, Level = 1 });
         if (Rule.Skills.GrantedTools.TryGetValue(key, out string? tool) && HasRoomFor(tool))
             ReceiveIntoBag(tool, Context.Data.PhotoOf(tool), 1, "(tutor's tool)");
+        SystemMessage($"You learned {AideRules.SkillName(key)}.", SystemMessageKind.Upgrade);
+        Send(UiPackets.Custom($"scUpLevel {TotalSkillLevel}"), "(skill learned)");
         TutorDone($"learns {key}");
     }
 
@@ -681,6 +683,7 @@ public sealed partial class ClientSession
         }
         if (!Pay(PromotionCost())) return;
         Character.AdvancedSkills.Add(key);
+        SystemMessage($"{AideRules.SkillName(key)} is now a phase 2 skill.", SystemMessageKind.Upgrade);
         TutorDone($"promotes {key}");
     }
 
@@ -736,6 +739,7 @@ public sealed partial class ClientSession
         SetMoney(Money - UniqueSkillCost(key));
         if (entry == null) Character.UniqueSkills.Add(new UniqueSkillEntry { Key = key, Level = 1 });
         else entry.Level++;
+        SystemMessage(entry == null ? $"You learned a new special skill of {AideRules.SkillName(definition.Skill)}." : $"Your special skill of {AideRules.SkillName(definition.Skill)} reached level {UniqueSkillLevel(key)}.", SystemMessageKind.Upgrade);
         TutorDone($"raises {key} to {UniqueSkillLevel(key)}");
     }
 

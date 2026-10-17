@@ -308,6 +308,7 @@ public sealed partial class ClientSession
         int turn = Mover.TurnRate;
         Send(ScenePackets.MoveObject(ProtocolConstants.SelfObjectId, x, z, speed, heading, action, turn), "(move)");
         ToOthers(ScenePackets.MoveObject(ObjectId, x, z, speed, heading, action, turn), $"({Name} moves)");
+        PetFollow(x, z, speed);
     }
 
     public void TeleportTo(float x, float z)
