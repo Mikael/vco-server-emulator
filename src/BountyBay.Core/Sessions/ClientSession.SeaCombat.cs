@@ -103,18 +103,16 @@ public sealed partial class ClientSession
         SeaNpcDefinition definition = ship.Definition;
         string note = $"(sea npc {definition.Name})";
         Send(ScenePackets.CreateObject(definition.Id, ObjectKind.SeaNpc, definition.Model), note);
-        Send(ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(new PropertyBag
+        PropertyBag shipProperties = ship.Bars();
+        foreach ((string name, object value) in new PropertyBag
         {
             ["Name"] = definition.Name,
             ["S/Name"] = definition.Name,
             ["Model"] = definition.Model,
             ["ShipModel"] = definition.Model,
             ["Level"] = definition.Level,
+            ["Photo"] = Yard.Find(definition.Model)?.Photo ?? new ShipDefinition().Photo,
             ["Dead"] = ship.Dead ? 1 : 0,
-            ["RatioShipHP"] = ship.RatioHull,
-            ["RatioSailHP"] = ship.RatioSail,
-            ["RatioSailorHP"] = ship.RatioSailors,
-            ["RatioHP"] = ship.RatioHull,
             ["S/ModelCannonL"] = Sea.CannonOf(definition).Model,
             ["S/ModelCannonR"] = Sea.CannonOf(definition).Model,
             ["S/NumCannonL"] = definition.Cannons,
@@ -131,7 +129,9 @@ public sealed partial class ClientSession
             ["SailState"] = 0,
             ["MarineStrategy"] = 0,
             ["Bumping"] = 0,
-        })), note);
+        })
+            shipProperties[name] = value;
+        Send(ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(shipProperties)), note);
         BboSendNpcFiringArc(ship);
         Send(ScenePackets.PlaceObject(definition.Id, ship.X, 0f, ship.Z, ship.Moving ? ship.DestX : null, ship.Moving ? ship.DestZ : null, ship.Speed, orient: ship.Heading), note);
         Send(ScenePackets.ShowObject(definition.Id), note);
@@ -376,13 +376,7 @@ public sealed partial class ClientSession
         ship.Sailors = Math.Max(0, ship.Sailors - damage.Sailors);
         if (ship.Hull > 0 && ship.Sailors > 0)
         {
-            byte[] state = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(new PropertyBag
-            {
-                ["RatioShipHP"] = ship.RatioHull,
-                ["RatioHP"] = ship.RatioHull,
-                ["RatioSailHP"] = ship.RatioSail,
-                ["RatioSailorHP"] = ship.RatioSailors,
-            }));
+            byte[] state = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(ship.Bars()));
             foreach (ClientSession session in watchers) session.Send(state, $"({definition.Name} damage)");
             return;
         }

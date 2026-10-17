@@ -35,6 +35,7 @@ public sealed class InteractHandler : IMessageHandler
         if (target == ProtocolConstants.SelfObjectId) return;
         GameData data = session.Context.Data;
         if (session.MeleeTarget is { } engaged && engaged.Id != target) session.StopMelee();
+        session.ShowTarget(target);
         if (session.OnSeaObjectClicked(target)) return;
         if (session.OnLinkClicked(target)) return;
         if (session.BboOceanDockClicked(target)) return;

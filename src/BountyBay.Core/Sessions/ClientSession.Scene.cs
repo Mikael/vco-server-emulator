@@ -416,6 +416,7 @@ public sealed partial class ClientSession
             ["Name"] = monster.Name,
             ["ConsName"] = "",
             ["Model"] = monster.Model,
+            ["Photo"] = monster.Model,
             ["ActionSet"] = 0,
             ["CollideRadius"] = monster.CollideRadius,
             ["HP"] = Context.World.Monster(monster).Hp,

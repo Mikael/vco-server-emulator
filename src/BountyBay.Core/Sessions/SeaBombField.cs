@@ -82,11 +82,7 @@ public sealed class SeaBombField
         ClientSession? owner = bomb.Owner is { InWorld: true } bomber && bomber.Scene == bomb.Scene ? bomber : null;
         if (ship.Hull > 0)
         {
-            byte[] state = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(new PropertyBag
-            {
-                ["RatioShipHP"] = ship.RatioHull,
-                ["RatioHP"] = ship.RatioHull,
-            }));
+            byte[] state = ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(ship.Bars()));
             foreach (ClientSession session in sea.Sailors(bomb.Scene)) session.Send(state, $"({definition.Name} damage)");
             if (owner != null) sea.Provoke(ship, owner);
             return;

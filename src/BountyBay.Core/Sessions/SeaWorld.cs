@@ -91,6 +91,20 @@ public sealed class SeaNpcState
     public int RatioSail => Math.Clamp(100 * Sail / Math.Max(1, Definition.Sail), 0, 100);
 
     public int RatioSailors => Math.Clamp(100 * Sailors / Math.Max(1, Definition.Sailors), 0, 100);
+
+    public PropertyBag Bars() => new()
+    {
+        ["RatioShipHP"] = RatioHull,
+        ["RatioHP"] = RatioHull,
+        ["RatioSailHP"] = RatioSail,
+        ["RatioSailorHP"] = RatioSailors,
+        ["S/HP"] = Math.Max(0, Hull),
+        ["S/MaxHP"] = Definition.Hull,
+        ["S/SailHP"] = Math.Max(0, Sail),
+        ["S/MaxSailHP"] = Definition.Sail,
+        ["NumSailor"] = Math.Max(0, Sailors),
+        ["NumSailorMax"] = Definition.Sailors,
+    };
 }
 
 public sealed class SeaWorld
