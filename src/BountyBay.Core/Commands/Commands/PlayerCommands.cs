@@ -347,6 +347,12 @@ public sealed class SlashCommands
             case "/exp" when words.Length == 3 && int.TryParse(words[2], out int experience) && experience > 0:
                 session.GainSkillExperience(words[1], experience);
                 break;
+            case "/item" when words.Length >= 2:
+                session.SpawnItem(words[1], words.Length > 2 && int.TryParse(words[2], out int count) ? count : 1);
+                break;
+            case "/honor" when words.Length == 2 && int.TryParse(words[1], out int honor):
+                session.AddMilitaryHonor(honor);
+                break;
             case "/rep" when words.Length == 2 && int.TryParse(words[1], out int reputation) && reputation > 0:
                 session.GainReputation(reputation);
                 break;
