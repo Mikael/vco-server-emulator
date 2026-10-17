@@ -37,6 +37,7 @@ public sealed class LoginHandler : IMessageHandler
         }
         session.Account = account;
         List<CharacterRecord> characters = session.Context.Accounts.Characters(session.Account);
+        if (characters.Count(character => CreateCharacterHandler.RepairBody(character, session.Context.Data.Creation)) > 0) session.Context.Accounts.Save();
         Log.Info(session.Tag, $"Login, account {account}, {characters.Count} character(s)");
         session.Send(LoginPackets.CharacterList(characters), "(login ok, character list)");
     }
@@ -67,7 +68,8 @@ public sealed class CreateCharacterHandler : IMessageHandler
             skills.Add(new SkillEntry { Id = reader.ReadByte(), Level = reader.ReadByte() });
 
         CreationChoice role = Pick(creation.Roles, choices[1]);
-        CreationChoice face = Pick(creation.Faces, choices[2]);
+        CreationChoice face = choices[2] < creation.Faces.Count && creation.Faces[choices[2]].Sex == role.Sex ? creation.Faces[choices[2]]
+            : creation.Faces.FirstOrDefault(candidate => candidate.Sex == role.Sex) ?? creation.Faces[0];
         CreationChoice body = creation.Bodies.FirstOrDefault(candidate => candidate.Sex == role.Sex) ?? creation.Bodies[0];
         int city = choices[5] < creation.Cities.Count ? creation.Cities[choices[5]] : creation.Cities[0];
 
@@ -94,13 +96,24 @@ public sealed class CreateCharacterHandler : IMessageHandler
             Skills = skills,
         });
         session.Context.Accounts.Save();
-        Log.Info(session.Tag, $"Created character '{name}' (role {role.Id}, face {face.Id}, city {city})");
+        Log.Info(session.Tag, $"Created character '{name}' (role {role.Id}, face {face.Id}, body {body.Id}, hair colour {choices[4]}, city {city})");
         session.Send(LoginPackets.CharacterList(characters), "(character list after create)");
     }
 
     public static bool ValidName(string name)
         => name.Length is >= 1 and <= ProtocolConstants.CharacterNameLength
             && name.All(letter => letter == '_' || char.IsAsciiLetterOrDigit(letter));
+
+    public static bool RepairBody(CharacterRecord character, CreationData creation)
+    {
+        CreationChoice? worn = creation.Bodies.FirstOrDefault(candidate => candidate.Id == character.Body);
+        if (worn == null || creation.Roles.Any(role => role.Id == character.Role && role.Sex == worn.Sex)) return false;
+        CreationChoice? owner = creation.Roles.FirstOrDefault(role => role.Id == character.Role);
+        CreationChoice? body = owner == null ? null : creation.Bodies.FirstOrDefault(candidate => candidate.Sex == owner.Sex);
+        if (body == null) return false;
+        character.Body = body.Id;
+        return true;
+    }
 
     private static CreationChoice Pick(List<CreationChoice> table, int index) => index < table.Count ? table[index] : table[0];
 }

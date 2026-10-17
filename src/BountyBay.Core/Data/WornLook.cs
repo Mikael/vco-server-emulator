@@ -5,10 +5,9 @@ namespace BountyBay.Core.Data;
 
 public readonly record struct WornLook(int Body, int TexColor, int Hat, int CapColor, int LeftHand, int RightHand, int StartEffect = 0, int EvolColor = 0)
 {
-    private const int FemaleBodies = 3402;
     private const int FemaleRole = 3001002;
 
-    public static bool IsFemale(CharacterRecord character) => character.Role == FemaleRole || character.Body / 1000 == FemaleBodies;
+    public static bool IsFemale(CharacterRecord character) => character.Role == FemaleRole;
 
     public static WornLook Of(CharacterRecord character)
     {

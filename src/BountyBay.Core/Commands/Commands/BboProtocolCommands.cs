@@ -61,10 +61,10 @@ public sealed class BboRewardCommands : ITextCommand
                 session.BboShowVip();
                 return true;
             case "csGetOnLineArward" when BboArguments.Last(words, out int stage):
-                session.BboClaimOnlineAward(stage);
+                session.ClaimOnlineReward(stage);
                 return true;
             case "csGetReward":
-                session.BboClaimDailyReward();
+                session.ClaimDailyReward();
                 return true;
             default:
                 return false;

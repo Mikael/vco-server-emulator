@@ -8,7 +8,6 @@ namespace BountyBay.Core.Sessions;
 
 public sealed partial class ClientSession
 {
-    private const int ModelChangeFemaleBodies = 3402;
 
     private ModelChangeRules ModelChangeData => LeisureRules.For(Context.Settings).ModelChange;
 
@@ -54,7 +53,7 @@ public sealed partial class ClientSession
 
     public void ApplyLeisureLook()
     {
-        bool female = Character.Body / 1000 == ModelChangeFemaleBodies;
+        bool female = WornLook.IsFemale(Character);
         var look = new Dictionary<string, int>();
         if (Bags.TryGetValue(ViewId.Equipped, out Dictionary<int, ItemStack>? worn))
         {

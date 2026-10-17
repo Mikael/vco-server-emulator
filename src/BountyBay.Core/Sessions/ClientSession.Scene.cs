@@ -14,7 +14,8 @@ public sealed partial class ClientSession
     [
         "Name", "Model", "ActionSet", "CollideRadius", "Face", "BodyType", "Hair", "HairColor",
         "TexColor", "Hat", "CapColor", "LeftHand", "RightHand", "HP", "MaxHP", "Level", "Title", "RatioHP", "RatioSP",
-        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit", "UnionName",
+        "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit", "UnionName", "StartEffect", "EvolColor",
+        "WorkType", "WorkLevel", "WorkName",
     ];
 
     private static readonly string[] PrivateShipProperties = ["Money", "Load", "LoadMax", "VisualRange"];
@@ -140,7 +141,7 @@ public sealed partial class ClientSession
         SendRobberyLevels();
         EnterWorldAides();
         EnterWorldTotems();
-        BboStartRewards();
+        StartOnlineRewards();
         EnterWorldLeisure();
         BattleEnterWorld();
         AnnounceOverflow();
@@ -416,7 +417,7 @@ public sealed partial class ClientSession
             ["ConsName"] = "",
             ["Model"] = monster.Model,
             ["ActionSet"] = 0,
-            ["CollideRadius"] = 0.5f,
+            ["CollideRadius"] = monster.CollideRadius,
             ["HP"] = Context.World.Monster(monster).Hp,
             ["MaxHP"] = monster.Hp,
             ["RatioHP"] = 100 * Context.World.Monster(monster).Hp / Math.Max(1, monster.Hp),

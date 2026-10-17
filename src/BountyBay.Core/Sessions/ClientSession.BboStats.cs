@@ -7,7 +7,9 @@ namespace BountyBay.Core.Sessions;
 
 public sealed partial class ClientSession
 {
-    private static readonly string[] WorkNames = ["", "Royal Officer", "Imperial Guard", "Caribbean Pirate", "Treasure Hunter", "Armed Merchant"];
+    private static readonly string[] WorkNames = ["", "Royal Millitary Officer", "Imperial Guardian", "Carribean Pirate", "Treasure Hunter", "Armed Businessman"];
+
+    private static readonly string[] PublicWorkProperties = ["WorkType", "WorkLevel", "WorkName"];
 
     private static readonly string[] WorkPools = ["SeaPoints", "LandPoints", "MakePoints"];
 
@@ -26,6 +28,7 @@ public sealed partial class ClientSession
     {
         PutBboProperty("ShowNouse", Character.ShowNouse);
         ApplyFlagHonorProperty();
+        SyncWorkLevel();
         foreach ((string name, object value) in WorkProperties()) PutBboProperty(name, value);
         foreach (string name in HonorProperties.Where(name => !Properties.ContainsKey(name))) PutBboProperty(name, 0);
     }
@@ -118,6 +121,7 @@ public sealed partial class ClientSession
         }
         Character.WorkType = work;
         Character.WorkLevel = Math.Max(1, Character.WorkLevel);
+        SyncWorkLevel();
         Character.WorkPointsSpent.Clear();
         Character.UniqueSkills.RemoveAll(entry => entry.Key.StartsWith("WORK_", StringComparison.Ordinal));
         Save();
@@ -181,6 +185,8 @@ public sealed partial class ClientSession
             if (InWorld) SetProperty(name, Math.Max(0, value));
             else Properties[name] = Math.Max(0, value);
         }
+        if (SyncWorkLevel() && InWorld) SendWorkProperties();
+        FoldOnlineRewardTime();
     }
 
     private int BboOutgoingDamage(int dealt, ref uint colour)
@@ -218,8 +224,16 @@ public sealed partial class ClientSession
     {
         foreach ((string name, object value) in WorkProperties())
         {
-            if (PropertyTable.Has(name) && !Equals(Properties.GetValueOrDefault(name), value)) SetProperty(name, value);
+            if (PropertyTable.Has(name) && !Equals(Properties.GetValueOrDefault(name), value)) SetProperty(name, value, PublicWorkProperties.Contains(name));
         }
+    }
+
+    private bool SyncWorkLevel()
+    {
+        int level = Character.WorkType == 0 ? Character.WorkLevel : Math.Max(Math.Max(1, Character.WorkLevel), TotalSkillLevel);
+        if (level == Character.WorkLevel) return false;
+        Character.WorkLevel = level;
+        return true;
     }
 
     private int WorkPointsLeft(string pool)
