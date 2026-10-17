@@ -21,7 +21,7 @@ public sealed partial class ClientSession
     public void SendSceneLinks()
     {
         _linkSerial++;
-        List<SceneLink> doors = Links.InScene(Scene).Where(link => link.HasObject).ToList();
+        List<SceneLink> doors = Links.InScene(Scene).Where(link => link.HasObject && Context.Data.Scenes.Exists(link.TargetScene)).ToList();
         if (doors.Count == 0) return;
         if (!DoorProperties.All(PropertyTable.Has))
         {
