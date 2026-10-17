@@ -63,6 +63,13 @@ public sealed partial class ClientSession
             PickToHand(view, index, int.MaxValue);
             return true;
         }
+        if (HandSource() is { } gear && gear.View != view
+            && (gear.View, view) is (ViewId.BagEquip, ViewId.Equipped) or (ViewId.Equipped, ViewId.BagEquip))
+        {
+            DropHand();
+            MoveGear(gear.View, gear.Index);
+            return true;
+        }
         if (HandSource() is not { } from || from.View != view || from.Index == index)
         {
             DropHand();
