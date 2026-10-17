@@ -153,6 +153,7 @@ public sealed partial class ClientSession
     public void BboSendOceanDocks()
     {
         if (!BboOceanScene(Scene)) return;
+        BboSendOceanGates();
         foreach (BboOceanDock dock in OceanDocks().Where(entry => entry.Ocean == Scene))
         {
             var properties = new PropertyBag
@@ -173,6 +174,7 @@ public sealed partial class ClientSession
     public bool BboOceanDockClicked(int objectId)
     {
         if (!BboOceanScene(Scene) || Mover == null) return false;
+        if (BboOceanGateClicked(objectId)) return true;
         BboOceanDock? dock = OceanDocks().FirstOrDefault(entry => entry.Ocean == Scene && entry.Id == objectId);
         if (dock == null) return false;
         SceneLink link = DockLink(dock);
@@ -229,7 +231,8 @@ public sealed partial class ClientSession
             Character.LastPort = Scene;
         }
         Log.Info(Tag, $"{Name} sails out to the high seas ({dock.Ocean}) off {dock.City}");
-        GoTo(dock.Ocean, dock.X + BboSeaPackets.OceanDockOffset, 0f, dock.Z + BboSeaPackets.OceanDockOffset);
+        (float outX, float outZ) = ScenePaths.Nearest(Context.Settings, dock.Ocean, dock.X + BboSeaPackets.OceanDockOffset, dock.Z + BboSeaPackets.OceanDockOffset);
+        GoTo(dock.Ocean, outX, 0f, outZ);
         return true;
     }
 
@@ -284,7 +287,7 @@ public sealed partial class ClientSession
             if (!File.Exists(map)) continue;
             string? key = IniFile.Load(map).Header["name"];
             if (key == null) continue;
-            string city = CityOf(names.GetValueOrDefault(key, key));
+            string city = CityOf(names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim());
             if (city.Length > 0) coasts.TryAdd(city, scene);
         }
         for (int ocean = BboSeaPackets.FirstOcean; ocean <= BboSeaPackets.LastOcean; ocean++)
@@ -295,8 +298,7 @@ public sealed partial class ClientSession
             {
                 string? key = section["name"];
                 if (key == null || !TryFloat(section["wx"], out float x) || !TryFloat(section["wz"], out float z)) continue;
-                string label = names.GetValueOrDefault(key, key);
-                if (!label.EndsWith("Port", StringComparison.OrdinalIgnoreCase)) continue;
+                string label = names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim();
                 if (!coasts.TryGetValue(CityOf(label), out int coast) || docks.Any(dock => dock.Coast == coast)) continue;
                 docks.Add(new BboOceanDock(BboSeaPackets.FirstOceanDockId + docks.Count, ocean, CityOf(label), label, x, z, coast));
             }
@@ -308,11 +310,11 @@ public sealed partial class ClientSession
 
     private static string CityOf(string label)
     {
-        foreach (string suffix in new[] { "Offshore", "Port" })
+        foreach (string suffix in new[] { "Offshore", "Port", "Dock" })
         {
-            if (label.Length > suffix.Length && label.EndsWith(suffix, StringComparison.OrdinalIgnoreCase)) return label[..^suffix.Length];
+            if (label.Length > suffix.Length && label.EndsWith(suffix, StringComparison.OrdinalIgnoreCase)) return label[..^suffix.Length].Trim();
         }
-        return "";
+        return label.Trim();
     }
 
     private static Dictionary<string, string> IdNames(string path)

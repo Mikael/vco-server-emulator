@@ -26,6 +26,8 @@ public sealed class SeaNpcDefinition
     public float X { get; set; }
     public float Z { get; set; }
     public int Heading { get; set; }
+    public bool Roams { get; set; }
+    public float RoamRadius { get; set; } = 250f;
 }
 
 public sealed class AmmunitionDefinition

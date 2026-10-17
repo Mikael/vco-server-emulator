@@ -248,7 +248,8 @@ public sealed class SeaWorld
             {
                 ship.Target = null;
                 target = null;
-                Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship returns to station)");
+                if (ship.Definition.Roams) ship.NextPatrolAt = now;
+                else Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship returns to station)");
             }
             if (target == null)
             {
@@ -261,10 +262,11 @@ public sealed class SeaWorld
             float apart = MathF.Sqrt(dx * dx + dz * dz);
             float range = CannonOf(ship.Definition).Range;
             float home = MathF.Sqrt((tx - ship.Definition.X) * (tx - ship.Definition.X) + (tz - ship.Definition.Z) * (tz - ship.Definition.Z));
-            if (home > rules.NpcLeashDistance)
+            if (home > (ship.Definition.Roams ? MathF.Max(rules.NpcLeashDistance, ship.Definition.RoamRadius * 1.5f) : rules.NpcLeashDistance))
             {
                 ship.Target = null;
-                Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship breaks off)");
+                if (ship.Definition.Roams) Patrol(ship, rules, now);
+                else Steer(ship, ship.Definition.X, ship.Definition.Z, rules.NpcPatrolSpeed, "(ship breaks off)");
                 continue;
             }
             if (apart > range * 0.9f)
@@ -285,9 +287,15 @@ public sealed class SeaWorld
     private void Patrol(SeaNpcState ship, ShipRules rules, long now)
     {
         ship.NextPatrolAt = now + Random.Shared.Next(rules.NpcPatrolMinSeconds * 1000, rules.NpcPatrolMaxSeconds * 1000 + 1);
-        if (rules.NpcPatrolRadius <= 0f) return;
+        float radius = ship.Definition.Roams ? ship.Definition.RoamRadius : rules.NpcPatrolRadius;
+        if (radius <= 0f) return;
+        if (ship.Definition.Roams && ScenePaths.RandomNear(_context.Settings, ship.Definition.Scene, ship.Definition.X, ship.Definition.Z, radius * 0.3f, radius) is { } waypoint)
+        {
+            Steer(ship, waypoint.X, waypoint.Z, rules.NpcPatrolSpeed, "(ship roams)");
+            return;
+        }
         float angle = (float)(Random.Shared.NextDouble() * Math.PI * 2);
-        float distance = (float)Random.Shared.NextDouble() * rules.NpcPatrolRadius;
+        float distance = ship.Definition.Roams ? radius * (0.4f + 0.6f * (float)Random.Shared.NextDouble()) : (float)Random.Shared.NextDouble() * radius;
         Steer(ship, ship.Definition.X + MathF.Cos(angle) * distance, ship.Definition.Z + MathF.Sin(angle) * distance, rules.NpcPatrolSpeed, "(ship patrols)");
     }
 

@@ -102,7 +102,7 @@ public sealed partial class ClientSession
     {
         SeaNpcDefinition definition = ship.Definition;
         string note = $"(sea npc {definition.Name})";
-        Send(ScenePackets.CreateObject(definition.Id, ObjectKind.SeaNpc, definition.Model), note);
+        Send(ScenePackets.CreateObject(definition.Id, BboOceanScene(definition.Scene) ? ObjectKind.OceanNpc : ObjectKind.SeaNpc, definition.Model), note);
         PropertyBag shipProperties = ship.Bars();
         foreach ((string name, object value) in new PropertyBag
         {
