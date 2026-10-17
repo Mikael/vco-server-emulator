@@ -1921,7 +1921,7 @@
     "WearProp": "Hat",
     "WearModel": 4000193,
     "WearModelF": 4000193,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000501": {
     "Kind": 4,
@@ -1939,7 +1939,7 @@
     "WearProp": "Hat",
     "WearModel": 4000193,
     "WearModelF": 4000193,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000502": {
     "Kind": 4,
@@ -1957,7 +1957,7 @@
     "WearProp": "Hat",
     "WearModel": 4000193,
     "WearModelF": 4000193,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000503": {
     "Kind": 4,
@@ -1975,7 +1975,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000504": {
     "Kind": 4,
@@ -1994,7 +1994,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000505": {
     "Kind": 4,
@@ -2013,7 +2013,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000506": {
     "Kind": 4,
@@ -2031,7 +2031,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000507": {
     "Kind": 4,
@@ -2050,7 +2050,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000508": {
     "Kind": 4,
@@ -2069,7 +2069,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000509": {
     "Kind": 4,
@@ -2086,7 +2086,7 @@
     "WearProp": "Hat",
     "WearModel": 4000194,
     "WearModelF": 4000194,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000510": {
     "Kind": 4,
@@ -2104,7 +2104,7 @@
     "WearProp": "Hat",
     "WearModel": 4000194,
     "WearModelF": 4000194,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000511": {
     "Kind": 4,
@@ -2122,7 +2122,7 @@
     "WearProp": "Hat",
     "WearModel": 4000194,
     "WearModelF": 4000194,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000512": {
     "Kind": 4,
@@ -2140,7 +2140,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000513": {
     "Kind": 4,
@@ -2159,7 +2159,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000514": {
     "Kind": 4,
@@ -2178,7 +2178,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000515": {
     "Kind": 4,
@@ -2196,7 +2196,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000516": {
     "Kind": 4,
@@ -2215,7 +2215,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000517": {
     "Kind": 4,
@@ -2234,7 +2234,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000518": {
     "Kind": 4,
@@ -2251,7 +2251,7 @@
     "WearProp": "Hat",
     "WearModel": 4000192,
     "WearModelF": 4000192,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000519": {
     "Kind": 4,
@@ -2269,7 +2269,7 @@
     "WearProp": "Hat",
     "WearModel": 4000192,
     "WearModelF": 4000192,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000520": {
     "Kind": 4,
@@ -2287,7 +2287,7 @@
     "WearProp": "Hat",
     "WearModel": 4000192,
     "WearModelF": 4000192,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000521": {
     "Kind": 4,
@@ -2305,7 +2305,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000522": {
     "Kind": 4,
@@ -2324,7 +2324,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000523": {
     "Kind": 4,
@@ -2343,7 +2343,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000524": {
     "Kind": 4,
@@ -2361,7 +2361,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000525": {
     "Kind": 4,
@@ -2380,7 +2380,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000526": {
     "Kind": 4,
@@ -2399,7 +2399,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000527": {
     "Kind": 4,
@@ -2416,7 +2416,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000528": {
     "Kind": 4,
@@ -2434,7 +2434,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000529": {
     "Kind": 4,
@@ -2452,7 +2452,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000530": {
     "Kind": 4,
@@ -2469,7 +2469,7 @@
     "WearProp": "Hat",
     "WearModel": 4000195,
     "WearModelF": 4000195,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000531": {
     "Kind": 4,
@@ -2487,7 +2487,7 @@
     "WearProp": "Hat",
     "WearModel": 4000195,
     "WearModelF": 4000195,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000532": {
     "Kind": 4,
@@ -2505,7 +2505,7 @@
     "WearProp": "Hat",
     "WearModel": 4000195,
     "WearModelF": 4000195,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000533": {
     "Kind": 4,
@@ -2523,7 +2523,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000534": {
     "Kind": 4,
@@ -2542,7 +2542,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000535": {
     "Kind": 4,
@@ -2561,7 +2561,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000536": {
     "Kind": 4,
@@ -2579,7 +2579,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000537": {
     "Kind": 4,
@@ -2598,7 +2598,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000538": {
     "Kind": 4,
@@ -2617,7 +2617,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000539": {
     "Kind": 4,
@@ -2634,7 +2634,7 @@
     "WearProp": "Hat",
     "WearModel": 4000196,
     "WearModelF": 4000196,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000540": {
     "Kind": 4,
@@ -2652,7 +2652,7 @@
     "WearProp": "Hat",
     "WearModel": 4000196,
     "WearModelF": 4000196,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000541": {
     "Kind": 4,
@@ -2670,7 +2670,7 @@
     "WearProp": "Hat",
     "WearModel": 4000196,
     "WearModelF": 4000196,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000542": {
     "Kind": 4,
@@ -2688,7 +2688,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000543": {
     "Kind": 4,
@@ -2707,7 +2707,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000544": {
     "Kind": 4,
@@ -2726,7 +2726,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000545": {
     "Kind": 4,
@@ -2744,7 +2744,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000546": {
     "Kind": 4,
@@ -2763,7 +2763,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000547": {
     "Kind": 4,
@@ -2782,7 +2782,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000548": {
     "Kind": 4,
@@ -2799,7 +2799,7 @@
     "WearProp": "Hat",
     "WearModel": 4000206,
     "WearModelF": 4000206,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000549": {
     "Kind": 4,
@@ -2817,7 +2817,7 @@
     "WearProp": "Hat",
     "WearModel": 4000206,
     "WearModelF": 4000206,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000550": {
     "Kind": 4,
@@ -2835,7 +2835,7 @@
     "WearProp": "Hat",
     "WearModel": 4000206,
     "WearModelF": 4000206,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000551": {
     "Kind": 4,
@@ -2853,7 +2853,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000552": {
     "Kind": 4,
@@ -2872,7 +2872,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000553": {
     "Kind": 4,
@@ -2891,7 +2891,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000554": {
     "Kind": 4,
@@ -2909,7 +2909,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000555": {
     "Kind": 4,
@@ -2928,7 +2928,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000556": {
     "Kind": 4,
@@ -2947,7 +2947,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000557": {
     "Kind": 4,
@@ -2964,7 +2964,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000558": {
     "Kind": 4,
@@ -2982,7 +2982,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000559": {
     "Kind": 4,
@@ -3000,7 +3000,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00000560": {
     "Kind": 4,
@@ -24112,84 +24112,84 @@
     "ArmType": 4
   },
   "IDName00013192": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013193": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013195": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013196": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013198": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013199": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013201": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013202": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013204": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013205": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName00013224": {
     "Weight": 1,
@@ -46286,7 +46286,7 @@
     "WearProp": "Hat",
     "WearModel": 4000193,
     "WearModelF": 4000193,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001042": {
     "Kind": 4,
@@ -46303,7 +46303,7 @@
     "WearProp": "Hat",
     "WearModel": 4000195,
     "WearModelF": 4000195,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001043": {
     "Kind": 4,
@@ -46321,7 +46321,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001044": {
     "Kind": 4,
@@ -46339,7 +46339,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001045": {
     "Kind": 4,
@@ -46357,7 +46357,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001046": {
     "Kind": 4,
@@ -46375,7 +46375,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001047": {
     "Kind": 4,
@@ -46392,7 +46392,7 @@
     "WearProp": "Hat",
     "WearModel": 4000194,
     "WearModelF": 4000194,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001048": {
     "Kind": 4,
@@ -46409,7 +46409,7 @@
     "WearProp": "Hat",
     "WearModel": 4000196,
     "WearModelF": 4000196,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001049": {
     "Kind": 4,
@@ -46427,7 +46427,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001050": {
     "Kind": 4,
@@ -46445,7 +46445,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001051": {
     "Kind": 4,
@@ -46463,7 +46463,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001052": {
     "Kind": 4,
@@ -46481,7 +46481,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001053": {
     "Kind": 4,
@@ -46498,7 +46498,7 @@
     "WearProp": "Hat",
     "WearModel": 4000192,
     "WearModelF": 4000192,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001054": {
     "Kind": 4,
@@ -46515,7 +46515,7 @@
     "WearProp": "Hat",
     "WearModel": 4000206,
     "WearModelF": 4000206,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001055": {
     "Kind": 4,
@@ -46533,7 +46533,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001056": {
     "Kind": 4,
@@ -46551,7 +46551,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001057": {
     "Kind": 4,
@@ -46569,7 +46569,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001058": {
     "Kind": 4,
@@ -46587,7 +46587,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001059": {
     "Kind": 4,
@@ -46604,7 +46604,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001060": {
     "Kind": 4,
@@ -46621,7 +46621,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001061": {
     "Kind": 4,
@@ -46639,7 +46639,7 @@
     "WearProp": "Hat",
     "WearModel": 4000193,
     "WearModelF": 4000193,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001062": {
     "Kind": 4,
@@ -46657,7 +46657,7 @@
     "WearProp": "Hat",
     "WearModel": 4000195,
     "WearModelF": 4000195,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001063": {
     "Kind": 4,
@@ -46676,7 +46676,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001064": {
     "Kind": 4,
@@ -46695,7 +46695,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001065": {
     "Kind": 4,
@@ -46714,7 +46714,7 @@
     "WearModel": 4000193,
     "WearModelF": 4000193,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001066": {
     "Kind": 4,
@@ -46733,7 +46733,7 @@
     "WearModel": 4000195,
     "WearModelF": 4000195,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001067": {
     "Kind": 4,
@@ -46751,7 +46751,7 @@
     "WearProp": "Hat",
     "WearModel": 4000194,
     "WearModelF": 4000194,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001068": {
     "Kind": 4,
@@ -46769,7 +46769,7 @@
     "WearProp": "Hat",
     "WearModel": 4000196,
     "WearModelF": 4000196,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001069": {
     "Kind": 4,
@@ -46788,7 +46788,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001070": {
     "Kind": 4,
@@ -46807,7 +46807,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001071": {
     "Kind": 4,
@@ -46826,7 +46826,7 @@
     "WearModel": 4000194,
     "WearModelF": 4000194,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001072": {
     "Kind": 4,
@@ -46845,7 +46845,7 @@
     "WearModel": 4000196,
     "WearModelF": 4000196,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001073": {
     "Kind": 4,
@@ -46863,7 +46863,7 @@
     "WearProp": "Hat",
     "WearModel": 4000192,
     "WearModelF": 4000192,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001074": {
     "Kind": 4,
@@ -46881,7 +46881,7 @@
     "WearProp": "Hat",
     "WearModel": 4000206,
     "WearModelF": 4000206,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001075": {
     "Kind": 4,
@@ -46900,7 +46900,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001076": {
     "Kind": 4,
@@ -46919,7 +46919,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 1,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001077": {
     "Kind": 4,
@@ -46938,7 +46938,7 @@
     "WearModel": 4000192,
     "WearModelF": 4000192,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001078": {
     "Kind": 4,
@@ -46957,7 +46957,7 @@
     "WearModel": 4000206,
     "WearModelF": 4000206,
     "WearColor": 2,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001079": {
     "Kind": 4,
@@ -46975,7 +46975,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001080": {
     "Kind": 4,
@@ -46993,7 +46993,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001081": {
     "Kind": 3,
@@ -47219,7 +47219,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001093": {
     "Kind": 4,
@@ -47237,7 +47237,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001094": {
     "Kind": 4,
@@ -47255,7 +47255,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001095": {
     "Kind": 4,
@@ -47273,7 +47273,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001096": {
     "Kind": 4,
@@ -47291,7 +47291,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001097": {
     "Kind": 4,
@@ -47309,7 +47309,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001098": {
     "Kind": 4,
@@ -47327,7 +47327,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001099": {
     "Kind": 4,
@@ -47345,7 +47345,7 @@
     "WearProp": "Hat",
     "WearModel": 4000207,
     "WearModelF": 4000207,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001100": {
     "Kind": 4,
@@ -47363,7 +47363,7 @@
     "WearProp": "Hat",
     "WearModel": 4000197,
     "WearModelF": 4000197,
-    "ArmType": 4
+    "ArmType": 5
   },
   "IDName_XZB001107": {
     "Kind": 4,
@@ -56663,36 +56663,36 @@
     "ArmType": 4
   },
   "XZB001117": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001118": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001119": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001120": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001165": {
     "Weight": 1,
@@ -57175,20 +57175,20 @@
     "ArmType": 4
   },
   "XZB001332": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001333": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "XZB001334": {
     "Kind": 3,
@@ -58326,76 +58326,76 @@
     "ArmType": 4
   },
   "ZZB001076": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001077": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001078": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001079": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001080": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001081": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001082": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001083": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001084": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001118": {
     "Kind": 3,
@@ -58470,76 +58470,76 @@
     "ArmType": 4
   },
   "ZZB001160": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001161": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001162": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001163": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001164": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001165": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001166": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001167": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001168": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001202": {
     "Kind": 3,
@@ -59118,36 +59118,36 @@
     "ArmType": 4
   },
   "ZZB001580": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001581": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001582": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001583": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001584": {
     "Kind": 3,
@@ -59158,20 +59158,20 @@
     "ArmType": 4
   },
   "ZZB001585": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001586": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001587": {
     "Kind": 3,
@@ -59262,36 +59262,36 @@
     "ArmType": 4
   },
   "ZZB001664": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001665": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001666": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001667": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001668": {
     "Kind": 3,
@@ -59302,20 +59302,20 @@
     "ArmType": 4
   },
   "ZZB001669": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001670": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001671": {
     "Kind": 3,
@@ -59406,76 +59406,76 @@
     "ArmType": 4
   },
   "ZZB001748": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001749": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001750": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001751": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001752": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001753": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001754": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001755": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001756": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001790": {
     "Kind": 3,
@@ -59550,76 +59550,76 @@
     "ArmType": 4
   },
   "ZZB001832": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 6,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001833": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 7,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001834": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 8,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001835": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 9,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001836": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 10,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001837": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 11,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001838": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001839": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 12,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001840": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4
+    "ArmType": 5
   },
   "ZZB001860": {
     "Kind": 3,
@@ -59896,12 +59896,12 @@
     "Photo": 195012
   },
   "ZZB002126": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4,
+    "ArmType": 5,
     "NeedMilitaryRank": 5,
     "Photo": 195066
   },
@@ -59916,12 +59916,12 @@
     "Photo": 195010
   },
   "ZZB002128": {
-    "Kind": 3,
+    "Kind": 4,
     "ItemType": 10,
-    "GoodsType": "Clothes",
+    "GoodsType": "Hat",
     "Weight": 1,
     "Level": 13,
-    "ArmType": 4,
+    "ArmType": 5,
     "NeedMilitaryRank": 7,
     "Photo": 195073
   },
