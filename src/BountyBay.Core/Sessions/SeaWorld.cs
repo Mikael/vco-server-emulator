@@ -304,7 +304,7 @@ public sealed class SeaWorld
         ship.Speed = speed;
         ship.MoveStart = Environment.TickCount64;
         ship.Heading = heading;
-        byte[] move = ScenePackets.PlaceObject(ship.Definition.Id, ship.X, 0f, ship.Z, x, z, speed, orient: heading);
+        byte[] move = ScenePackets.MoveObject(ship.Definition.Id, x, z, speed, heading);
         foreach (ClientSession session in Sailors(ship.Definition.Scene)) session.Send(move, note);
     }
 }

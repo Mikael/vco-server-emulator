@@ -316,7 +316,7 @@ public sealed class World
         state.Speed = speed;
         state.MoveStart = Environment.TickCount64;
         state.Heading = -1;
-        byte[] move = ScenePackets.PlaceObject(definition.Id, state.X, definition.Y, state.Z, x, z, speed);
+        byte[] move = ScenePackets.MoveObject(definition.Id, x, z, speed, 0);
         foreach (ClientSession session in InScene(definition.Scene)) session.Send(move, note);
     }
 

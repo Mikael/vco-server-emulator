@@ -305,8 +305,8 @@ public sealed partial class ClientSession
         Log.Debug(Tag, $"MOVE ({fromX:F1}, {fromZ:F1}) -> ({x:F1}, {z:F1})");
         int heading = Mover.Heading;
         int turn = Mover.TurnRate;
-        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading, turn), "(move)");
-        ToOthers(ScenePackets.PlaceObject(ObjectId, fromX, Height, fromZ, x, z, speed, action, previous, heading, turn), $"({Name} moves)");
+        Send(ScenePackets.MoveObject(ProtocolConstants.SelfObjectId, x, z, speed, heading, action, turn), "(move)");
+        ToOthers(ScenePackets.MoveObject(ObjectId, x, z, speed, heading, action, turn), $"({Name} moves)");
     }
 
     public void TeleportTo(float x, float z)
@@ -385,8 +385,8 @@ public sealed partial class ClientSession
         Mover.TurnRate = ShipTurnRate;
         int heading = Mover.Heading;
         int turn = Mover.TurnRate;
-        Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({what})");
-        ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, destinationX, destinationZ, speed, 0, previous, heading, turn), $"({Name} {what})");
+        Send(ScenePackets.MoveObject(ProtocolConstants.SelfObjectId, destinationX, destinationZ, speed, heading, 0, turn), $"({what})");
+        ToOthers(ScenePackets.MoveObject(ObjectId, destinationX, destinationZ, speed, heading, 0, turn), $"({Name} {what})");
     }
 
     public void RefreshAppearance()
