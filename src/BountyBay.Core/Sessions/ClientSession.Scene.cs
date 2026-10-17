@@ -13,7 +13,7 @@ public sealed partial class ClientSession
     private static readonly string[] PublicProperties =
     [
         "Name", "Model", "ActionSet", "CollideRadius", "Face", "BodyType", "Hair", "HairColor",
-        "TexColor", "Hat", "CapColor", "LeftHand", "RightHand", "HP", "MaxHP", "Level", "Title", "RatioHP", "RatioSP",
+        "Photo", "TexColor", "Hat", "CapColor", "LeftHand", "RightHand", "HP", "MaxHP", "Level", "Title", "RatioHP", "RatioSP",
         "SelectState", "StallInfo", "TeamNum", "ConsName", "ConsFlag", "Notoriety", "Credit", "UnionName", "StartEffect", "EvolColor",
         "WorkType", "WorkLevel", "WorkName",
     ];
@@ -56,6 +56,7 @@ public sealed partial class ClientSession
             ["CollideRadius"] = 0.5f,
             ["IsRun"] = 1,
             ["Face"] = character.Face,
+            ["Photo"] = character.Face,
             ["BodyType"] = character.Body,
             ["Hair"] = character.Hair,
             ["HairColor"] = character.HairColor,

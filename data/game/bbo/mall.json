@@ -723,6 +723,223 @@
       "PriceSource": "GUESS: the client has no mall prices"
     },
     {
+      "Item": "Newwhistle001",
+      "Name": "Shadow Reaper Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle002",
+      "Name": "Hell Wolf Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle003",
+      "Name": "Ice Fairy Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle004",
+      "Name": "Flaming Urus Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle013",
+      "Name": "Reindeer Theis Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle014",
+      "Name": "Dragon Draco Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle015",
+      "Name": "Turkey Bianca Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle016",
+      "Name": "Ikarus Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle017",
+      "Name": "Lizzy Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle018",
+      "Name": "Unicorn Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle019",
+      "Name": "Edward Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle021",
+      "Name": "Princely Snail Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle022",
+      "Name": "Blue Dragon Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle023",
+      "Name": "Armored Warbearios Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle024",
+      "Name": "Captain Owleus Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle025",
+      "Name": "Hareo Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle026",
+      "Name": "Spirit Tiger Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle027",
+      "Name": "Frost Dragon Hatchling Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle028",
+      "Name": "Firebird Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle037",
+      "Name": "Lucky sheep Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle043",
+      "Name": "Pumpkin Mike Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle046",
+      "Name": "Lamassu's Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle047",
+      "Name": "Holy Yellow Stone's Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle048",
+      "Name": "Sprite Dog Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle049",
+      "Name": "WUXU Beast Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle051",
+      "Name": "Piggy Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "Newwhistle052",
+      "Name": "Brave Pig Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "XNewwhistle01",
+      "Name": "Polly Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "XNewwhistle02",
+      "Name": "Ikarus Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "XNewwhistle03",
+      "Name": "Lizzy Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "XNewwhistle04",
+      "Name": "Edward Whistle",
+      "Price": 500,
+      "Source": "USER: premium pet whistles were sold in the Item Mall",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
       "Item": "propDJ3246",
       "Name": "Mall Items Shopping Card",
       "Price": 100,

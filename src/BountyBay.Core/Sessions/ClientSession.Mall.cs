@@ -31,7 +31,7 @@ public sealed partial class ClientSession
                 ["Name"] = entry.Item,
                 ["Index"] = i + 1,
                 ["Amount"] = 1,
-                ["Photo"] = Context.Data.PhotoOf(entry.Item),
+                ["Photo"] = WhistleBook.Whistle(entry.Item)?.Image is > 0 and int image ? image : Context.Data.PhotoOf(entry.Item),
             };
             ItemCatalog.Extend(item, entry.Item);
             item["Cost"] = entry.Price;
@@ -74,8 +74,21 @@ public sealed partial class ClientSession
             SystemMessage($"Not enough points: {quantity} x {goods.Name} costs {cost} points and you have {Character.GamePoints}.");
             return true;
         }
-        var item = new ItemStack { Name = goods.Item, Photo = Context.Data.PhotoOf(goods.Item), Amount = quantity };
-        if (!GiveItem(item, "(mall purchase)"))
+        if (WhistleBook.Whistle(goods.Item) != null)
+        {
+            int given = 0;
+            for (; given < quantity && GiveWhistle(goods.Item, sea: false) != null; given++)
+            {
+            }
+            if (given == 0)
+            {
+                SystemMessage($"You cannot keep more than {WhistleMostOwned} pet whistles.", SystemMessageKind.Prompt);
+                return true;
+            }
+            quantity = given;
+            cost = (long)goods.Price * quantity;
+        }
+        else if (!GiveItem(new ItemStack { Name = goods.Item, Photo = Context.Data.PhotoOf(goods.Item), Amount = quantity }, "(mall purchase)"))
         {
             SystemMessage("Your bag is full.");
             return true;
@@ -84,7 +97,9 @@ public sealed partial class ClientSession
         Save();
         SendMallPoints();
         Send(UiPackets.Custom("scBuyGameGoodsSuccess"), "(mall purchase done)");
-        SystemMessage($"You bought {quantity} x {goods.Name} for {cost} points.");
+        SystemMessage(WhistleBook.Whistle(goods.Item) != null
+            ? $"You bought {quantity} x {goods.Name} for {cost} points. Open the pet list to call your pet."
+            : $"You bought {quantity} x {goods.Name} for {cost} points.");
         Log.Info(Tag, $"{Name} buys {quantity} x {goods.Item} in the item mall for {cost} points");
         return true;
     }
