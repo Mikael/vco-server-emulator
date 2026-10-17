@@ -29,6 +29,7 @@ public sealed class SelectCommand : ITextCommand
     {
         if (!Arguments.Numbers(words, 3, out int[] values)) return false;
         (int view, int how, int index) = (values[0], values[1], values[2]);
+        if (session.MallSelect(view, how, index)) return true;
         if (session.BboShipyardSelect(view, how, index)) return true;
         if (session.OnTradeSelect(view, how, index) || session.OnStallSelect(view, how, index)) return true;
         if (session.OnWarehouseSelect(view, how, index)) return true;
@@ -86,6 +87,7 @@ public sealed class BuyCommand : ITextCommand
             session.BuyFromStall(values[1], values[2]);
             return true;
         }
+        if (session.MallBuy(values[0], values[1], values[2])) return true;
         if (session.BboShipyardBuy(values[0], values[1], values[2])) return true;
         if (session.ShipyardBuy(values[0], values[1], values[2])) return true;
         session.BuyFromShop(values[0], values[1], values[2]);

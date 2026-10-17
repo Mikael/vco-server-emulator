@@ -256,7 +256,7 @@ public sealed class BboToolbarCommands : ITextCommand
         switch (words[0])
         {
             case "store" or "Store":
-                session.NotAvailable("The item mall", string.Join(' ', words));
+                session.OpenMall();
                 return true;
             case "csShowVIPInfo":
                 session.NotAvailable("VIP membership", words[0]);

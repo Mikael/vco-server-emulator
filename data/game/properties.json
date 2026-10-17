@@ -1462,5 +1462,9 @@
   {
     "Name": "SceneSerial",
     "Type": "String"
+  },
+  {
+    "Name": "LeftCardPoints",
+    "Type": "U32"
   }
 ]

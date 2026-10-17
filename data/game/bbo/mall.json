@@ -1,0 +1,740 @@
+{
+  "_Sources": "tools/bbo/extract/mall.py: items whose client text says they come from the Item Mall. Currency is \"point\" (CLIENT RESOURCE/ini/CardTrans.ini [CardName] 0=point, [0-0] formula=1). Prices are GUESS and can be edited here; mall.py keeps edited prices.",
+  "Goods": [
+    {
+      "Item": "DJ006601",
+      "Name": "Pure Steel",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006601: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006602",
+      "Name": "Refined Steel",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006602: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006603",
+      "Name": "Steel plate",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006603: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006604",
+      "Name": "Pure Steel plate",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006604: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006605",
+      "Name": "Handle",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006605: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006606",
+      "Name": "Comfortable Handle",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006606: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006607",
+      "Name": "Steel Thread",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006607: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006608",
+      "Name": "Refined Steel Thread",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006608: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006609",
+      "Name": "Blood Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006609: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006610",
+      "Name": "Flame Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006610: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006611",
+      "Name": "Amethyst Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006611: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006612",
+      "Name": "Holy Spirit Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006612: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006616",
+      "Name": "Sacred Blood Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006616: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006644",
+      "Name": "Shadow-escaping Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006644: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006645",
+      "Name": "Energy-collecting Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006645: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006646",
+      "Name": "Spirit Concentration Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006646: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006647",
+      "Name": "Power Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006647: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006652",
+      "Name": "Rage Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006652: \"The Attack Speed Fluctuation cannot be further refined above 10.(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006653",
+      "Name": "Sea witch ore",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006653: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006654",
+      "Name": "Sea spirit ore",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006654: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006656",
+      "Name": "Holy judgment ore",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006656: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006657",
+      "Name": "Quality Raw Steel Material",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006657: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006658",
+      "Name": "Quality Steel Plate",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006658: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006659",
+      "Name": "Quality Handle",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006659: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006660",
+      "Name": "Quality Steel Thread",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006660: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006661",
+      "Name": "Holy Refined Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006661: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006665",
+      "Name": "Bloodthirsty Magic Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006665: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006666",
+      "Name": "Fire Magic Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006666: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006667",
+      "Name": "Purple Magic Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006667: \"(Can be obtained from Item Mall or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006673",
+      "Name": "Lucky Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006673: \"Next attempt to produce props will have a success rate of 100% (Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006685",
+      "Name": "Attack Power Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006685: \"Can be embedded into equipment with slots, increases Attack by 10 (Can be obtained from Item Mall and Logistics Exchange\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006686",
+      "Name": "Defense Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006686: \"Can be embedded into equipment with slots, increases Defense by 25 (Can be obtained from Item Mall and Logistics Exchang\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006687",
+      "Name": "Accuracy Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006687: \"Can be embedded into equipment with slots, increases Accuracy by 4 (Can be obtained from Item Mall and Logistics Exchang\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006688",
+      "Name": "Dodge Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006688: \"Can be embedded into equipment with slots, increases Dodge Rating by 3 (Can be obtained from Item Mall and Logistics Exc\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006689",
+      "Name": "Health Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006689: \"Can be embedded into equipment with slots, increases Maximum Health by 200 (Can be obtained from Item Mall and Logistics\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006690",
+      "Name": "Energy Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006690: \"Can be embedded into equipment with slots, increases Maximum SP by 100 (Can be obtained from Item Mall and Logistics Exc\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006691",
+      "Name": "Damage Bonus Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006691: \"Can be embedded into equipment with slots, increases Damage Bonus by 1 (Can be obtained from Instances, Item Mall and Lo\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006692",
+      "Name": "Damage Reduction Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006692: \"Can be embedded into equipment with slots, increases Damage Reduction by 1 (Can be obtained from Instances, Item Mall an\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006693",
+      "Name": "Critical Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006693: \"Can be embedded into equipment with slots, increases Critical Strike by 1 (Can be obtained from Instances, Item Mall and\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006694",
+      "Name": "Anti-Critical Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006694: \"Can be embedded into equipment with slots, increases Critical Strike Resist Rate by 1 (Can be obtained from Instances, I\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006695",
+      "Name": "Parry Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006695: \"Can be embedded into equipment with slots, increases Parry by 10 (Can be obtained from Item Mall and Logistics Exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006696",
+      "Name": "Technique Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006696: \"Can be embedded into equipment with slots, increases Technique by 10 (Can be obtained from Item Mall and Logistics Excha\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006697",
+      "Name": "Physique Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006697: \"Can be embedded into equipment with slots, increases Physique by 5 (Can be obtained from Item Mall and Logistics Exchang\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006698",
+      "Name": "Reaction Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006698: \"Can be embedded into equipment with slots, increases Reaction by 5 (Can be obtained from Item Mall and Logistics Exchang\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006699",
+      "Name": "Willpower Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006699: \"Can be embedded into equipment with slots, increases Willpower by 5 (Can be obtained from Item Mall and Logistics Exchan\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006863",
+      "Name": "Compound Stone (Technique)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006863: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006864",
+      "Name": "Compound Stone (Physique)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006864: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006865",
+      "Name": "Compound Stone (Reaction)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006865: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006866",
+      "Name": "Compound Stone (Willpower)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006866: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006867",
+      "Name": "Compound Stone (Parry)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006867: \"(Can be obtained from Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006868",
+      "Name": "Anti-Critical Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006868: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006869",
+      "Name": "Damage Reduction Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006869: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006870",
+      "Name": "Technique Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006870: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006871",
+      "Name": "Physique Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006871: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006872",
+      "Name": "Reaction Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006872: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006873",
+      "Name": "Willpower Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006873: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006874",
+      "Name": "Parry Crystal",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006874: \"(Can be obtained from the Item Mall or through salary exchange)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006925",
+      "Name": "Cannon Hit Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006925: \"Can be embedded into equipment with slots, increases Cannon Hit Accuracy by 1 (Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006926",
+      "Name": "Cannon Dodge Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006926: \"Can be embedded into equipment with slots, increases Cannon Dodge Rate by 1 (Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006929",
+      "Name": "Tough Iron Steel(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006929: \"(Can be obtained from Item Mall, chests or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006930",
+      "Name": "Tough Iron Steel Plate(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006930: \"(Can be obtained from Item Mall, chests or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006931",
+      "Name": "Tough Handle(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006931: \"(Can be obtained from Item Mall, chests or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006932",
+      "Name": "Tough Iron Steel Line(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006932: \"(Can be obtained from Item Mall, chests or Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006933",
+      "Name": "Tough Iron Steel(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006933: \"(Can be obtained from Item Mall, chests or produced by occupied cities)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006934",
+      "Name": "Tough Iron Steel Plate(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006934: \"(Can be obtained from Item Mall, chests or produced by occupied cities)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006935",
+      "Name": "Tough Handle(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006935: \"(Can be obtained from Item Mall, chests or produced by occupied cities)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006936",
+      "Name": "Tough Iron Steel Line(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006936: \"(Can be obtained from Item Mall, chests or produced by occupied cities)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006941",
+      "Name": "Blazing flame Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006941: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006942",
+      "Name": "Blazing flame Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006942: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006944",
+      "Name": "Huge Rock Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006944: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006945",
+      "Name": "Huge Rock Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006945: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006947",
+      "Name": "Witch's Eye Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006947: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006948",
+      "Name": "Witch's Eye Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006948: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006950",
+      "Name": "Shadow-escaping Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006950: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006951",
+      "Name": "Shadow-escaping Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006951: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006953",
+      "Name": "Energy-collecting Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006953: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006954",
+      "Name": "Energy-collecting Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006954: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006956",
+      "Name": "Blood Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006956: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006957",
+      "Name": "Blood Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006957: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006959",
+      "Name": "Tough Blood Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006959: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006960",
+      "Name": "Tough Blood Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006960: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006962",
+      "Name": "Amethyst Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006962: \"(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006963",
+      "Name": "Amethyst Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006963: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006965",
+      "Name": "Crystal Shield Essence(Ordinary)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006965: \"Damage Reduction Fluctuation cannot be further refined beyond 8.(Can be obtained from Item Mall, chests and instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006966",
+      "Name": "Crystal Shield Essence(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006966: \"(Can be obtained from Item Mall and chests)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006970",
+      "Name": "Improved gem process machine",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006970: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006972",
+      "Name": "Blood Stone(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006972: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006973",
+      "Name": "Tough Blood(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006973: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006974",
+      "Name": "Amethyst Stone(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006974: \"(Can be obtained from Item Mall and Instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ006975",
+      "Name": "Crystal Shield Stone(Superior)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ006975: \"(Can be obtained from the Item Mall or instances)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007007",
+      "Name": "Damage Reduction Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007007: \"Can be embedded into equipment with slots, increases Damage Reduction by 1 (Can be obtained from Instances and Item Mall\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007009",
+      "Name": "Damage Bonus Stone",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007009: \"Can be embedded into equipment with slots, increases Damage Bonus by 1 (Can be obtained from the Instances and Item Mall\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007052",
+      "Name": "Treasures from the Heaven",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007052: \"One can be purchased form the Item Mall.\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007818",
+      "Name": "Gem Processor",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007818: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007819",
+      "Name": "Gem process machine(Level 2)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007819: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007828",
+      "Name": "Treasure Key",
+      "Price": 100,
+      "Source": "CLIENT text of DJ002336: \"That key is available at Item Mall.\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007846",
+      "Name": "Cannon Gem Enhancement Tool",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007846: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ007848",
+      "Name": "Permanent Cannon Gem Enhancement Tool (level 3)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ007848: \"(Restricted to Superior, Perfect and Precious grades of Cannon Hit Stones and Cannon Dodge Stones) (Can be obtained from\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ009015",
+      "Name": "Gem Refinement Tool",
+      "Price": 100,
+      "Source": "CLIENT text of DJ009015: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ009033",
+      "Name": "Gem Refinement Tool",
+      "Price": 100,
+      "Source": "CLIENT text of DJ009033: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ009034",
+      "Name": "Permanent Gem Process Machine (Level 1)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ009034: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ009035",
+      "Name": "Permanent Gem Process Machine (Level 2)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ009035: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "DJ009036",
+      "Name": "Permanent Gem Process Machine (Level 3)",
+      "Price": 100,
+      "Source": "CLIENT text of DJ009036: \"(Can be obtained from the Item Mall)\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "propDJ3246",
+      "Name": "Mall Items Shopping Card",
+      "Price": 100,
+      "Source": "CLIENT text of propDJ3246: \"Can be used to exchange for Item Mall products with the Item Mall Exchange at Lisbon Port\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "taskbook",
+      "Name": "Voyager's Times",
+      "Price": 100,
+      "Source": "CLIENT text of taskbook: \"This item can be replaced by buying it from the Item Mall\"",
+      "PriceSource": "GUESS: the client has no mall prices"
+    }
+  ]
+}
