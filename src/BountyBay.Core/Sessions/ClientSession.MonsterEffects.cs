@@ -18,6 +18,8 @@ public sealed partial class ClientSession
     public void ShowMonsterDeath(MonsterDefinition monster, MonsterState state, IEnumerable<ClientSession> watchers)
     {
         List<ClientSession> seen = watchers.ToList();
+        byte[] dead = ScenePackets.ObjectProperties(monster.Id, new PropertyBag { ["Dead"] = 1, ["HP"] = 0, ["RatioHP"] = 0 });
+        foreach (ClientSession session in seen) session.Send(dead, "(monster dead)");
         int die = monster.DieAction >= 0 ? monster.DieAction : Context.Data.Actions.IndexOf("403");
         if (die < 0)
         {

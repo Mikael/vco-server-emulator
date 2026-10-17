@@ -424,6 +424,8 @@ public sealed partial class ClientSession
             ["RatioHP"] = 100 * Context.World.Monster(monster).Hp / Math.Max(1, monster.Hp),
             ["RatioSP"] = 100,
             ["Level"] = monster.Level,
+            ["Dead"] = Context.World.Monster(monster).Dead ? 1 : 0,
+            ["SelectState"] = 1,
         }), note);
         Send(ScenePackets.PlaceObject(monster.Id, Context.World.Monster(monster).X, monster.Y, Context.World.Monster(monster).Z), note);
         Send(ScenePackets.ShowObject(monster.Id), note);
