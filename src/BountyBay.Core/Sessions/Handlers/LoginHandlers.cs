@@ -106,6 +106,11 @@ public sealed class CreateCharacterHandler : IMessageHandler
 
     public static bool RepairBody(CharacterRecord character, CreationData creation)
     {
+        if (creation.ReplacedBodies.TryGetValue(character.Body, out int replacement))
+        {
+            character.Body = replacement;
+            return true;
+        }
         CreationChoice? worn = creation.Bodies.FirstOrDefault(candidate => candidate.Id == character.Body);
         if (worn == null || creation.Roles.Any(role => role.Id == character.Role && role.Sex == worn.Sex)) return false;
         CreationChoice? owner = creation.Roles.FirstOrDefault(role => role.Id == character.Role);

@@ -18,6 +18,7 @@ public sealed class CreationData
     public List<CreationChoice> Bodies { get; set; } = [];
     public List<string> Skills { get; set; } = [];
     public List<int> Cities { get; set; } = [];
+    public Dictionary<int, int> ReplacedBodies { get; set; } = [];
 }
 
 public sealed class GoodsDefinition
