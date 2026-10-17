@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-17 (evening)
+
+- **Clothes and hats show on the character.** Every wearable outfit now has a model: upgraded versions (High-Level, Refined,
+  Superior) wear their base outfit, and items the client has no outfit for wear the tier outfit for their level (marked as a
+  guess in the data). The European and Arabian casual dresses stay the default look on purpose.
+- **Alt label without a profession** shows "Adventurer" and the character's level.
+- **55 high-seas harbours** - San Francisco, San Diego, Seward, Cruz, Salinas, Magellan Supply Station, Mogadishu, Muscat,
+  Basra and Tourane can now be entered.
+- **Pets walk after you** instead of teleporting.
+- **Ship rebuild** preview gets its ship model and no longer shows the NPC's text through the window.
+- **Axe and gun stances** were swapped and are fixed.
+- **Learning skills and stunts** shows an Upgrade message.
 ## 2026-10-17 (later)
 
 ### Combat and targeting

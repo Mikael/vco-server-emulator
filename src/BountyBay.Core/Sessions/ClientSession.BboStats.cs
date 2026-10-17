@@ -9,6 +9,8 @@ public sealed partial class ClientSession
 {
     private static readonly string[] WorkNames = ["", "Royal Millitary Officer", "Imperial Guardian", "Carribean Pirate", "Treasure Hunter", "Armed Businessman"];
 
+    private const string NoWorkName = "Adventurer";
+
     private static readonly string[] PublicWorkProperties = ["WorkType", "WorkLevel", "WorkName"];
 
     private static readonly string[] WorkPools = ["SeaPoints", "LandPoints", "MakePoints"];
@@ -185,7 +187,7 @@ public sealed partial class ClientSession
             if (InWorld) SetProperty(name, Math.Max(0, value));
             else Properties[name] = Math.Max(0, value);
         }
-        if (SyncWorkLevel() && InWorld) SendWorkProperties();
+        if ((SyncWorkLevel() || Character.WorkType == 0) && InWorld) SendWorkProperties();
         FoldOnlineRewardTime();
     }
 
@@ -213,10 +215,12 @@ public sealed partial class ClientSession
     {
         int work = Character.WorkType > 0 && Character.WorkType < WorkNames.Length ? Character.WorkType : 0;
         yield return ("WorkType", work);
-        yield return ("WorkLevel", work == 0 ? 0 : Math.Max(1, Character.WorkLevel));
+        // The overhead label (Alt) shows "WorkName WorkLevel" and nothing at all without a profession; the client has no name for
+        // profession 0, so characters without one show "Adventurer" and their character level.
+        yield return ("WorkLevel", work == 0 ? Math.Max(1, TotalSkillLevel) : Math.Max(1, Character.WorkLevel));
         yield return ("WorkExp", (int)Math.Min(int.MaxValue, Character.WorkExperience));
         yield return ("WorkExpMax", 1);
-        yield return ("WorkName", WorkNames[work]);
+        yield return ("WorkName", work == 0 ? NoWorkName : WorkNames[work]);
         foreach (string pool in WorkPools) yield return (pool, WorkPointsLeft(pool));
     }
 
