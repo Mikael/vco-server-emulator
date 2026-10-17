@@ -47,6 +47,8 @@ public sealed class BboSelectCommand : ITextCommand
                 session.CompoundSlot(index);
                 return true;
         }
+        if (view == ClientSession.BattleBagView && session.BattleBagSelect(how, index)) return true;
+        if (view == ViewId.Equipped && how == 2) return session.MoveGear(view, index) || Quiet(session, words);
         if (session.WhistleSelect(view, how, index) || session.ShipModelSelect(view, how, index)) return true;
         string[] classic = [words[0], words[1], words[2], words[3]];
         if (session.OnTradeSelect(view, how, index) || session.OnStallSelect(view, how, index)

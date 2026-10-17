@@ -150,7 +150,8 @@ public sealed class CommandRouter
             .Add(new LeisureCommands())
             .Add(new GuildWarCommands())
             .Add(new ColonyCommands())
-            .Add(new ImpeachCommands());
+            .Add(new ImpeachCommands())
+            .Add(new BattleBagCommands());
 
     public bool Knows(string name) => ClientCommands.Contains(name);
 

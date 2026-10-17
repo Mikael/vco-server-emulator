@@ -211,6 +211,7 @@ public sealed partial class ClientSession
         KeepTotalSkillCap(key);
         SendSkillState();
         RefreshStats();
+        Send(UiPackets.Custom($"scUpLevel {TotalSkillLevel}"), "(level up)");
         Save();
     }
 

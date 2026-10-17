@@ -217,6 +217,7 @@ public sealed partial class ClientSession
             int seconds = Math.Max(1, room.Definition.ReliveSeconds);
             fighter.ReliveAt = Environment.TickCount64 + seconds * 1000L;
             Send(BattlePackets.StartRelive(ProtocolConstants.SelfObjectId, seconds), "(relive timer)");
+            Send(UiPackets.Custom($"scReliveTimer {seconds}"), "(relive countdown)");
             ToOthers(BattlePackets.StartRelive(ObjectId, seconds), $"({Name} relive timer)");
         }
         Log.Info(Tag, $"{Name} was knocked out in {room.Definition.Name}");
