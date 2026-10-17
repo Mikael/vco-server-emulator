@@ -203,6 +203,7 @@ public sealed partial class ClientSession
             return;
         }
         SetSkillLevel(key, level);
+        PlayLevelUpEffect();
         SystemMessage(level >= cap && cap == rules.PhaseOneCap
             ? $"Your skill reached level {level}. Visit a Skill Tutor to open its second phase."
             : $"Your skill reached level {level}.", SystemMessageKind.Upgrade);

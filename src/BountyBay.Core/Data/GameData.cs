@@ -63,29 +63,6 @@ public sealed class NpcDefinition
     public string SceneName { get; set; } = "";
 }
 
-public sealed class MonsterDefinition
-{
-    public int Id { get; set; }
-    public int Scene { get; set; }
-    public int Model { get; set; }
-    public string Name { get; set; } = "";
-    public int Level { get; set; }
-    public int Hp { get; set; }
-    public int Attack { get; set; } = 3;
-    public int Defence { get; set; }
-    public int Hit { get; set; }
-    public int Dodge { get; set; }
-    public bool Aggressive { get; set; }
-    public bool Flees { get; set; }
-    public int Gold { get; set; }
-    public string Key { get; set; } = "";
-    public int RespawnSeconds { get; set; }
-    public float RoamRadius { get; set; }
-    public float X { get; set; }
-    public float Y { get; set; }
-    public float Z { get; set; }
-}
-
 public sealed class BotData
 {
     public List<string> Names { get; set; } = ["Anna"];

@@ -5,43 +5,40 @@
   "Stats": "normal monster: Hp = 20 + 3P + 0.15P^2, Attack = 3 + 0.6P + 0.004P^2, Defence = P/4, Gold = 8 + 3P + 0.1P^2 (anchored on the hand-made Athens monsters: P 0 crab 20/3/0, P 10 goat 40-50/9/2); critter x0.6 HP/attack; elite (leader, chief, king, lord, captain, champion ...) x2.5 HP, x1.5 attack/defence, x3 gold; boss (named single target, \"Kill 1 <name>\", or a client boss marker) x5 HP, x2 attack/defence, x6 gold.",
   "Behaviour": "Aggressive when P >= 30 and not a critter or scarecrow; never flees (Athens monsters: passive, no flee).",
   "Groups": "normal species 4 spawns per scene (quest count >= 20: 6), elite 2, boss 1; spread over the walk mesh by farthest-point sampling at least 30 units from the scene arrival points, members within 10 units of the group centre; client marker position used as group centre when the scene has one.",
-  "Model": "CLIENT when the scene preloads exactly the model the name maps to; otherwise GUESS from the name -> ini\\objects ANIMATION keyword table (MODEL_KEYWORDS).",
+  "Model": "CLIENT when the scene preloads exactly the model the name maps to, or when the MODELNAME label of an ini\\objects model is the monster name; GUESS when the name ends with such a label; otherwise GUESS from the name -> ini\\objects ANIMATION keyword table (MODEL_KEYWORDS).",
+  "Client fields": "Radius/Height = RADIUS/HEIGHT of ini\\objects\\<Model>.ini; Attacks/DieAction/DeathAction = ActGroup.ini [prior] indices whose ActionSet 0 animation (attack0_n, die0, death0) exists in animation\\<ANIMATION>.ani; DieMilliseconds = die0 frames / .an frame rate. All CLIENT.",
   "Ships": "pirate ladder tier from the name (Peg Leg 1, Iron Hand/Fist 2, Steel Tooth 3, Golden Eye 4, Jackal 5, Falcon 6, Tiger 7, Skeleton 8, Devil 9, Hades 10, Scorpion 11, Terror/Scared 12, Nightmare 13 = WEB pirate title order, WEB_RULES.md section 4) else region tier; Hull/Sail/Sailors = 60% of the ships.json class of that tier (battle class for Armed/War ships, raider class for Raiding ships, merchant class for Smuggling/Cargo/Merchant ships; captains/flagships 150%); cannons per side = class cannons / 4 (min 2); cannon = balanced cannon (model 25x0001) of grade min(tier,10); armour 3*tier/2.5*tier; hit 60+2*tier; gold 150*tier + 50*tier*(tier-1); reputation 10*tier; respawn 60+30*tier s (max 300). All GUESS."
  },
  "land scenes without walk mesh": [],
  "collect": {
-  "kill quests": 459,
-  "targets": 584,
-  "placed by link": 172,
-  "placed by place link": 88,
-  "placed by text": 194,
-  "placed by giver": 38,
-  "unplaced": 91
+  "kill quests": 248,
+  "targets": 352,
+  "placed by link": 40,
+  "placed by place link": 46,
+  "placed by text": 166,
+  "placed by giver": 23,
+  "unplaced": 76
  },
  "marker spawns": 122,
  "preloaded models used": 50,
  "placed by quest group": [
-  "Dante",
-  "Cannibal Champion",
+  "Giant Lizard",
   "Wolfe Lord",
+  "Black fox spirit",
+  "Ryuku Islands Nightmare Raiding Ships",
+  "Mountain Samurai",
+  "Smuggling Ships",
+  "Goblin Spearman",
+  "Dante",
   "Evil Beast Trainer",
+  "Caveman Chief",
   "Evil Mage Image",
   "Clan Leader",
   "Maya King",
-  "Iron Hand Edward",
-  "Fayard Pirate Ship",
   "Atlans",
   "Atlans(Elite)",
   "Viacrale",
-  "Yimu Chief",
-  "Ice King",
-  "Destructor Pennie",
-  "Frigate",
-  "Black fox spirit",
-  "Mountain Samurai",
-  "Smuggling Ships",
-  "Abdullah",
-  "Goblin Spearman"
+  "Cannibal Champion"
  ],
  "regional fauna scenes": [
   {
@@ -61,12 +58,12 @@
    "Name": "Reykjavik Suburb"
   },
   {
-   "Scene": 1022999,
-   "Name": "Venice Suburb"
+   "Scene": 1016999,
+   "Name": "Barcelona Suburb"
   },
   {
-   "Scene": 1033999,
-   "Name": "Tripoli Suburb"
+   "Scene": 1022999,
+   "Name": "Venice Suburb"
   },
   {
    "Scene": 1034999,
@@ -75,6 +72,10 @@
   {
    "Scene": 1036999,
    "Name": "Madeira Suburb"
+  },
+  {
+   "Scene": 1037999,
+   "Name": "Las Palmas Suburb"
   },
   {
    "Scene": 1041999,
@@ -113,6 +114,10 @@
    "Name": "Hurricane Island Beach"
   },
   {
+   "Scene": 1601021,
+   "Name": "Hurricane island lizard cave"
+  },
+  {
    "Scene": 1601022,
    "Name": "Cliff valley"
   },
@@ -127,6 +132,10 @@
   {
    "Scene": 1601025,
    "Name": "Secret Cave of Hurricane Island"
+  },
+  {
+   "Scene": 1602101,
+   "Name": "Rain Forest Relic"
   },
   {
    "Scene": 1602102,
@@ -145,6 +154,10 @@
    "Name": "Cruz"
   },
   {
+   "Scene": 1603003,
+   "Name": "Salinas"
+  },
+  {
    "Scene": 1704008,
    "Name": "Honor Battlefield"
   },
@@ -158,18 +171,17 @@
   }
  ],
  "unplaced species": [
-  "Boss Schmitz",
+  "Command Ship",
   "Corporal Mizra",
-  "Hasan",
-  "North European Pirates",
-  "Rene",
+  "Cutthroat Pirate",
+  "Frigate",
   "Sergeant Boris",
   "Spanish armed merchant ships of Ruby Level",
-  "Spanish interceptor",
+  "Staff Sergeant Primera",
   "Staff Sergeant Thomas",
   "Traitor Schmitz",
-  "chiefmates of Spanish Royal Gold Armed Merchant Ships",
-  "guards of Monarch"
+  "Warden",
+  "chiefmates of Spanish Royal Gold Armed Merchant Ships"
  ],
  "sea scenes with generic pirates": [
   {
@@ -193,10 +205,6 @@
    "Name": "Lisbon Offshore"
   },
   {
-   "Scene": 1016003,
-   "Name": "Barcelona Offshore"
-  },
-  {
    "Scene": 1018003,
    "Name": "Genoa Offshore"
   },
@@ -205,12 +213,28 @@
    "Name": "Venice Offshore"
   },
   {
+   "Scene": 1024003,
+   "Name": "Athens Offshore"
+  },
+  {
+   "Scene": 1026003,
+   "Name": "Istanbul Offshore"
+  },
+  {
    "Scene": 1030003,
    "Name": "Beirut Offshore"
   },
   {
+   "Scene": 1032003,
+   "Name": "Alexander Offshore"
+  },
+  {
    "Scene": 1034003,
    "Name": "Algiers Offshore"
+  },
+  {
+   "Scene": 1035003,
+   "Name": "Stockholm Offshore"
   },
   {
    "Scene": 1036003,
@@ -233,18 +257,1735 @@
    "Name": "Semarang Offshore"
   },
   {
-   "Scene": 1053003,
-   "Name": "Quanzhou Offshore"
-  },
-  {
-   "Scene": 1054003,
-   "Name": "Seoul Port"
-  },
-  {
    "Scene": 1056003,
    "Name": "Edo Offshore"
   }
  ],
+ "added to the previous file": [
+  {
+   "Id": 6001529,
+   "Scene": 1001034,
+   "Name": "Caveman Chief"
+  },
+  {
+   "Id": 6001530,
+   "Scene": 1001075,
+   "Name": "Tiger Teeth"
+  },
+  {
+   "Id": 6001531,
+   "Scene": 1001075,
+   "Name": "Tiger Teeth"
+  },
+  {
+   "Id": 6001532,
+   "Scene": 1001075,
+   "Name": "Tiger Teeth"
+  },
+  {
+   "Id": 6001533,
+   "Scene": 1001075,
+   "Name": "Tiger Teeth"
+  },
+  {
+   "Id": 6001534,
+   "Scene": 1011999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001535,
+   "Scene": 1011999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001536,
+   "Scene": 1011999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001537,
+   "Scene": 1011999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001538,
+   "Scene": 1016999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001539,
+   "Scene": 1016999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001540,
+   "Scene": 1016999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001541,
+   "Scene": 1016999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001542,
+   "Scene": 1016999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001543,
+   "Scene": 1016999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001544,
+   "Scene": 1016999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001545,
+   "Scene": 1016999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001546,
+   "Scene": 1016999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001547,
+   "Scene": 1016999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001548,
+   "Scene": 1016999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001549,
+   "Scene": 1016999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001550,
+   "Scene": 1018999,
+   "Name": "Abdullah"
+  },
+  {
+   "Id": 6001551,
+   "Scene": 1018999,
+   "Name": "Goblin Spearman"
+  },
+  {
+   "Id": 6001552,
+   "Scene": 1024999,
+   "Name": "Fine Wool"
+  },
+  {
+   "Id": 6001553,
+   "Scene": 1024999,
+   "Name": "Fine Wool"
+  },
+  {
+   "Id": 6001554,
+   "Scene": 1024999,
+   "Name": "Fine Wool"
+  },
+  {
+   "Id": 6001555,
+   "Scene": 1024999,
+   "Name": "Fine Wool"
+  },
+  {
+   "Id": 6001556,
+   "Scene": 1024999,
+   "Name": "Crab Pincers"
+  },
+  {
+   "Id": 6001557,
+   "Scene": 1024999,
+   "Name": "Crab Pincers"
+  },
+  {
+   "Id": 6001558,
+   "Scene": 1024999,
+   "Name": "Crab Pincers"
+  },
+  {
+   "Id": 6001559,
+   "Scene": 1024999,
+   "Name": "Crab Pincers"
+  },
+  {
+   "Id": 6001560,
+   "Scene": 1037999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001561,
+   "Scene": 1037999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001562,
+   "Scene": 1037999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001563,
+   "Scene": 1037999,
+   "Name": "Jackal"
+  },
+  {
+   "Id": 6001564,
+   "Scene": 1037999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001565,
+   "Scene": 1037999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001566,
+   "Scene": 1037999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001567,
+   "Scene": 1037999,
+   "Name": "Coyote"
+  },
+  {
+   "Id": 6001568,
+   "Scene": 1037999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001569,
+   "Scene": 1037999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001570,
+   "Scene": 1037999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001571,
+   "Scene": 1037999,
+   "Name": "Wild Boar"
+  },
+  {
+   "Id": 6001572,
+   "Scene": 1064999,
+   "Name": "Rhino Meat"
+  },
+  {
+   "Id": 6001573,
+   "Scene": 1064999,
+   "Name": "Rhino Meat"
+  },
+  {
+   "Id": 6001574,
+   "Scene": 1064999,
+   "Name": "Rhino Meat"
+  },
+  {
+   "Id": 6001575,
+   "Scene": 1064999,
+   "Name": "Rhino Meat"
+  },
+  {
+   "Id": 6001576,
+   "Scene": 1065999,
+   "Name": "Fire Wolf Heart"
+  },
+  {
+   "Id": 6001577,
+   "Scene": 1065999,
+   "Name": "Fire Wolf Heart"
+  },
+  {
+   "Id": 6001578,
+   "Scene": 1065999,
+   "Name": "Fire Wolf Heart"
+  },
+  {
+   "Id": 6001579,
+   "Scene": 1065999,
+   "Name": "Fire Wolf Heart"
+  },
+  {
+   "Id": 6001580,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001581,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001582,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001583,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001584,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001585,
+   "Scene": 1508012,
+   "Name": "Profession level"
+  },
+  {
+   "Id": 6001586,
+   "Scene": 1601021,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001587,
+   "Scene": 1601021,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001588,
+   "Scene": 1601021,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001589,
+   "Scene": 1601021,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001590,
+   "Scene": 1601021,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001591,
+   "Scene": 1601021,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001592,
+   "Scene": 1601021,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001593,
+   "Scene": 1601021,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001594,
+   "Scene": 1601021,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001595,
+   "Scene": 1601021,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001596,
+   "Scene": 1601021,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001597,
+   "Scene": 1601021,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001598,
+   "Scene": 1602101,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001599,
+   "Scene": 1602101,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001600,
+   "Scene": 1602101,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001601,
+   "Scene": 1602101,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001602,
+   "Scene": 1602101,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001603,
+   "Scene": 1602101,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001604,
+   "Scene": 1602101,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001605,
+   "Scene": 1602101,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001606,
+   "Scene": 1602101,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001607,
+   "Scene": 1602101,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001608,
+   "Scene": 1602101,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001609,
+   "Scene": 1602101,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001610,
+   "Scene": 1603003,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001611,
+   "Scene": 1603003,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001612,
+   "Scene": 1603003,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001613,
+   "Scene": 1603003,
+   "Name": "Wild wolf"
+  },
+  {
+   "Id": 6001614,
+   "Scene": 1603003,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001615,
+   "Scene": 1603003,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001616,
+   "Scene": 1603003,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001617,
+   "Scene": 1603003,
+   "Name": "Black Bear"
+  },
+  {
+   "Id": 6001618,
+   "Scene": 1603003,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001619,
+   "Scene": 1603003,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001620,
+   "Scene": 1603003,
+   "Name": "Iberian Lynx"
+  },
+  {
+   "Id": 6001621,
+   "Scene": 1603003,
+   "Name": "Iberian Lynx"
+  }
+ ],
+ "models named by the client": [
+  {
+   "Id": 6001000,
+   "Name": "Black Spider",
+   "From": 3322005,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001001,
+   "Name": "Black Spider",
+   "From": 3322005,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001002,
+   "Name": "Black Spider",
+   "From": 3322005,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001003,
+   "Name": "Black Spider",
+   "From": 3322005,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001025,
+   "Name": "Black Spider",
+   "From": 3322001,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001026,
+   "Name": "Black Spider",
+   "From": 3322001,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001027,
+   "Name": "Black Spider",
+   "From": 3322001,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001028,
+   "Name": "Black Spider",
+   "From": 3322001,
+   "To": 3205163,
+   "Why": "CLIENT ini\\objects\\3205163.ini MODELNAME = Black Spider"
+  },
+  {
+   "Id": 6001440,
+   "Name": "Turtle",
+   "From": 3323002,
+   "To": 3323001,
+   "Why": "model 3323002 has no ini\\objects file or skeleton; GUESS name keyword /turtle|tortoise/ -> ini\\objects ANIMATION landturtle"
+  },
+  {
+   "Id": 6001441,
+   "Name": "Turtle",
+   "From": 3323002,
+   "To": 3323001,
+   "Why": "model 3323002 has no ini\\objects file or skeleton; GUESS name keyword /turtle|tortoise/ -> ini\\objects ANIMATION landturtle"
+  },
+  {
+   "Id": 6001442,
+   "Name": "Turtle",
+   "From": 3323002,
+   "To": 3323001,
+   "Why": "model 3323002 has no ini\\objects file or skeleton; GUESS name keyword /turtle|tortoise/ -> ini\\objects ANIMATION landturtle"
+  },
+  {
+   "Id": 6001443,
+   "Name": "Turtle",
+   "From": 3323002,
+   "To": 3323001,
+   "Why": "model 3323002 has no ini\\objects file or skeleton; GUESS name keyword /turtle|tortoise/ -> ini\\objects ANIMATION landturtle"
+  }
+ ],
+ "models without object ini or skeleton": [],
+ "animations by model": {
+  "3204001": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3204002": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3204004": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3204005": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3204007": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2200,
+   "skeleton": true
+  },
+  "3205048": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205049": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205050": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205051": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205055": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1400,
+   "skeleton": true
+  },
+  "3205057": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 933,
+   "skeleton": true
+  },
+  "3205059": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1400,
+   "skeleton": true
+  },
+  "3205061": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3205063": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3400,
+   "skeleton": true
+  },
+  "3205071": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3400,
+   "skeleton": true
+  },
+  "3205073": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3205074": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3205075": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3205079": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1467,
+   "skeleton": true
+  },
+  "3205080": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1467,
+   "skeleton": true
+  },
+  "3205084": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205085": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2800,
+   "skeleton": true
+  },
+  "3205090": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3400,
+   "skeleton": true
+  },
+  "3205091": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3400,
+   "skeleton": true
+  },
+  "3205095": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1467,
+   "skeleton": true
+  },
+  "3205098": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 667,
+   "skeleton": true
+  },
+  "3205099": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1133,
+   "skeleton": true
+  },
+  "3205100": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1133,
+   "skeleton": true
+  },
+  "3205101": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 867,
+   "skeleton": true
+  },
+  "3205109": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1133,
+   "skeleton": true
+  },
+  "3205111": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1000,
+   "skeleton": true
+  },
+  "3205115": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1467,
+   "skeleton": true
+  },
+  "3205120": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1133,
+   "skeleton": true
+  },
+  "3205121": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 867,
+   "skeleton": true
+  },
+  "3205122": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 667,
+   "skeleton": true
+  },
+  "3205137": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1333,
+   "skeleton": true
+  },
+  "3205138": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  },
+  "3205139": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1533,
+   "skeleton": true
+  },
+  "3205140": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1533,
+   "skeleton": true
+  },
+  "3205143": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205144": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205145": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205146": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2067,
+   "skeleton": true
+  },
+  "3205147": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2067,
+   "skeleton": true
+  },
+  "3205148": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2067,
+   "skeleton": true
+  },
+  "3205149": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205150": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205151": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3205153": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3205154": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3205155": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2000,
+   "skeleton": true
+  },
+  "3205156": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2000,
+   "skeleton": true
+  },
+  "3205157": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2000,
+   "skeleton": true
+  },
+  "3205158": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2000,
+   "skeleton": true
+  },
+  "3205160": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205161": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205162": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3205163": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3205164": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3205166": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3205168": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3400,
+   "skeleton": true
+  },
+  "3300007": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 10467,
+   "skeleton": true
+  },
+  "3300022": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1000,
+   "skeleton": true
+  },
+  "3300026": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 4467,
+   "skeleton": true
+  },
+  "3300027": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1867,
+   "skeleton": true
+  },
+  "3300028": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  },
+  "3300030": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 4467,
+   "skeleton": true
+  },
+  "3300033": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  },
+  "3300034": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  },
+  "3300035": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1133,
+   "skeleton": true
+  },
+  "3300042": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1733,
+   "skeleton": true
+  },
+  "3300044": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3300045": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3300046": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3300047": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3300048": {
+   "attacks": [
+    80,
+    81,
+    97,
+    98,
+    99,
+    100
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3300058": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  },
+  "3320205": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1000,
+   "skeleton": true
+  },
+  "3320801": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 4467,
+   "skeleton": true
+  },
+  "3321201": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1267,
+   "skeleton": true
+  },
+  "3321301": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2067,
+   "skeleton": true
+  },
+  "3321501": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 1600,
+   "skeleton": true
+  },
+  "3322001": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3322004": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3322005": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3322401": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2000,
+   "skeleton": true
+  },
+  "3322801": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3322802": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 3467,
+   "skeleton": true
+  },
+  "3323001": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 0,
+   "skeleton": true
+  },
+  "3323601": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3323701": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 467,
+   "skeleton": true
+  },
+  "3323702": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 467,
+   "skeleton": true
+  },
+  "3323703": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 467,
+   "skeleton": true
+  },
+  "3323801": {
+   "attacks": [
+    80,
+    81
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 867,
+   "skeleton": true
+  },
+  "3323901": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 933,
+   "skeleton": true
+  },
+  "3324001": {
+   "attacks": [
+    80
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 533,
+   "skeleton": true
+  },
+  "3325000": {
+   "attacks": [
+    80,
+    81,
+    97
+   ],
+   "die": 91,
+   "death": 4,
+   "wound": 77,
+   "die_ms": 2467,
+   "skeleton": true
+  }
+ },
  "land scenes": {
   "1001014": {
    "Name": "Possedonia",
@@ -353,6 +2094,7 @@
     "Atlans",
     "Atlans(Elite)",
     "Aus Rico",
+    "Caveman Chief",
     "Clan Leader",
     "Dante",
     "Evil Beast Trainer",
@@ -456,7 +2198,8 @@
     "Havana Tiger",
     "Spanish Assault Trooper",
     "Spanish Musketeer",
-    "Spanish Spy"
+    "Spanish Spy",
+    "Tiger Teeth"
    ]
   },
   "1001079": {
@@ -550,6 +2293,7 @@
   "1011999": {
    "Name": "Lisbon Suburb",
    "Species": [
+    "Jackal",
     "Tomb Raider (Swordsman)",
     "Wild wolf"
    ]
@@ -566,14 +2310,19 @@
   "1016999": {
    "Name": "Barcelona Suburb",
    "Species": [
+    "Coyote",
+    "Jackal",
     "Karabash's Hammerhead",
-    "Outlaw"
+    "Outlaw",
+    "Wild Boar"
    ]
   },
   "1018999": {
    "Name": "Genoa Suburb",
    "Species": [
+    "Abdullah",
     "Coyote",
+    "Goblin Spearman",
     "Jackal",
     "Wolf Lord"
    ]
@@ -589,6 +2338,7 @@
   "1024002": {
    "Name": "Athens Port",
    "Species": [
+    "Crab",
     "Turtle"
    ]
   },
@@ -596,7 +2346,9 @@
    "Name": "Athens Suburb",
    "Species": [
     "Bellwether",
+    "Crab Pincers",
     "Depressed Poet",
+    "Fine Wool",
     "Goat",
     "Halloween Ghost",
     "Hare",
@@ -701,6 +2453,9 @@
   "1037999": {
    "Name": "Las Palmas Suburb",
    "Species": [
+    "Coyote",
+    "Jackal",
+    "Wild Boar",
     "pirates leaders"
    ]
   },
@@ -845,6 +2600,7 @@
     "Female Cougar",
     "Indian Braves",
     "Indian Raves",
+    "Rhino Meat",
     "Turkey"
    ]
   },
@@ -853,6 +2609,7 @@
    "Species": [
     "British Expedition Soldier",
     "Dutch Expedition Soldier",
+    "Fire Wolf Heart",
     "Fire Wolf King",
     "French Expedition Soldier",
     "General Ronnie",
@@ -1066,7 +2823,8 @@
    "Species": [
     "Black Bear",
     "Brown Bear",
-    "Grizzly Bear"
+    "Grizzly Bear",
+    "Profession level"
    ]
   },
   "1508018": {
@@ -1152,7 +2910,10 @@
   "1601021": {
    "Name": "Hurricane island lizard cave",
    "Species": [
-    "Lizard man Lens"
+    "Black Bear",
+    "Iberian Lynx",
+    "Lizard man Lens",
+    "Wild wolf"
    ]
   },
   "1601022": {
@@ -1190,7 +2951,10 @@
   "1602101": {
    "Name": "Rain Forest Relic",
    "Species": [
-    "Mayan Chieftain"
+    "Black Bear",
+    "Iberian Lynx",
+    "Mayan Chieftain",
+    "Wild wolf"
    ]
   },
   "1602102": {
@@ -1254,8 +3018,11 @@
   "1603003": {
    "Name": "Salinas",
    "Species": [
+    "Black Bear",
+    "Iberian Lynx",
     "Maya tribe chief",
     "Mayan Clan Leader",
+    "Wild wolf",
     "violent tiny savage according"
    ]
   },
@@ -1336,24 +3103,7 @@
   "1000001": {
    "Name": "",
    "Ships": [
-    "Bay Frigate",
-    "Edward's Pirate Fleet Golden Eye Pirate Ship",
-    "Frigate",
-    "Hasan's Ship",
-    "Iron Hand Edward's Devil Pirate Flagship",
-    "Pirate Baroness Katarina's Flagship",
-    "Puppet Ship Captain",
-    "Slave Ship",
-    "West African Pirate Ship"
-   ]
-  },
-  "1000003": {
-   "Name": "",
-   "Ships": [
-    "Dutch Kohler Bae Recon Ship",
-    "Dutch Leblanc Battleship",
-    "Dutch Rimini Heavy Cruiser",
-    "Dutch Tiste Command Ship"
+    "Puppet Ship Captain"
    ]
   },
   "1001003": {
@@ -1410,22 +3160,20 @@
     "Corsican Pirates Raiding Ship",
     "Cretan Pirates Cargo Ship",
     "Cretan Pirates Raiding Ship",
-    "Cretan Raiding Ships",
     "Graverobber Ship",
     "St. Andrew Pirates Cargo Ship",
-    "St. Andrew Pirates Raiding Ship",
-    "Stage 's Boss"
+    "St. Andrew Pirates Raiding Ship"
    ]
   },
   "1003003": {
    "Name": "Hamburg Offshore",
    "Ships": [
-    "Carl Emanuel's Zeus",
     "Golden Eye Armed Ship",
     "Jackal Armed Ship",
     "Nordic Pirate Admiral Carl Emanuel's Zeus",
     "North Sea Golden Eyes Armed Ships",
-    "North Sea Jackal Armed Ships"
+    "North Sea Jackal Armed Ships",
+    "North Sea Jackal Raiding Ships"
    ]
   },
   "1004003": {
@@ -1438,11 +3186,6 @@
   "1007003": {
    "Name": "London Offshore",
    "Ships": [
-    "Command Ship",
-    "Cruiser",
-    "Medina-Sidonia's Flagship",
-    "Provision Ship",
-    "Spanish Ruby merchant ship",
     "Zeus"
    ]
   },
@@ -1485,21 +3228,21 @@
   "1012003": {
    "Name": "Seville Offshore",
    "Ships": [
+    "Cape of Good Hope Golden Eye Raiding Ships",
+    "Gibraltar Falcon Raiding Ships",
+    "Gibraltar Golden Eye Raiding Ships",
     "Gibraltar Jackal Arm Ships",
     "Gibraltar Jackal Armed Ship",
     "Gibraltar Jackal Raiding Ships",
     "Gibraltar Steel Tooth Armed Ship among steel tooth pirate",
     "Golden Eye Armed Ship",
-    "Ottoman Turkish Tiger Pirate Ship",
-    "Smuggling Ships",
     "Steel Tooth Armed Ship"
    ]
   },
   "1016003": {
    "Name": "Barcelona Offshore",
    "Ships": [
-    "Steel Tooth Armed Ship",
-    "Steel Tooth Raiding Ship"
+    "Fayard Pirate Ship"
    ]
   },
   "1018003": {
@@ -1519,14 +3262,15 @@
   "1024003": {
    "Name": "Athens Offshore",
    "Ships": [
-    "Medina-Sidonia's Flagship"
+    "Peg Leg Armed Ship",
+    "Peg Leg Raiding Ship"
    ]
   },
   "1026003": {
    "Name": "Istanbul Offshore",
    "Ships": [
-    "fleet of the head of Ottoman Turkish Navy",
-    "head of the Ottoman Turkish Navy"
+    "Iron Fist Armed Ship",
+    "Iron Hand Raiding Ship"
    ]
   },
   "1030003": {
@@ -1539,7 +3283,8 @@
   "1032003": {
    "Name": "Alexander Offshore",
    "Ships": [
-    "Alexander Demon Ship"
+    "Iron Fist Armed Ship",
+    "Iron Hand Raiding Ship"
    ]
   },
   "1034003": {
@@ -1552,8 +3297,8 @@
   "1035003": {
    "Name": "Stockholm Offshore",
    "Ships": [
-    "Devil ships",
-    "Hades ships"
+    "Tiger Armed Ship",
+    "Tiger Raiding Ship"
    ]
   },
   "1036003": {
@@ -1566,17 +3311,14 @@
   "1038003": {
    "Name": "Dakar Offshore",
    "Ships": [
-    "North Sea Golden Eyes Armed Ships",
-    "West Africa Pirate Ships"
+    "North Sea Golden Eyes Armed Ships"
    ]
   },
   "1041003": {
    "Name": "Cape Town Offshore",
    "Ships": [
     "Cape of Good Hope Scorpion Raiding Ships",
-    "Capte Town Pirate Ships",
     "Falcon Armed Ship",
-    "Fayard Pirate Ship",
     "Jackal Armed Ship",
     "Jackal Raiding Ship"
    ]
@@ -1584,17 +3326,18 @@
   "1042003": {
    "Name": "Mozambique Offshore",
    "Ships": [
-    "Madagascar Pirate Flagship",
-    "Mozambique Pirate Ship"
+    "Madagascar Pirate Flagship"
    ]
   },
   "1044003": {
    "Name": "Aden Offshore",
    "Ships": [
-    "Aden Pirate Ship",
+    "Aden Bay Falcon Armed Ships",
+    "Aden Bay Falcon Raiding Ships",
+    "Aden Bay Jackal Armed Ships",
+    "Aden Bay Jackal Raiding Ships",
     "Golden Eye Armed Ship",
-    "Gulf of Aden Skeleton Smuggling Ships",
-    "Mogadishu Pirate Ship"
+    "Gulf of Aden Skeleton Smuggling Ships"
    ]
   },
   "1045003": {
@@ -1621,7 +3364,9 @@
   "1050003": {
    "Name": "Malacca Offshore",
    "Ships": [
-    "Nanyang Skeleton Armed Ship"
+    "Nanyang Falcon Raiding Ships",
+    "Nanyang Skeleton Armed Ship",
+    "Nanyang Tiger Armed Ships"
    ]
   },
   "1051003": {
@@ -1634,21 +3379,23 @@
   "1053003": {
    "Name": "Quanzhou Offshore",
    "Ships": [
-    "Devil Armed Ship",
-    "Devil Raiding Ship"
+    "Ryuku Islands Skeleton Armed Ships",
+    "Ryuku Islands Skeleton Raiding Ships"
    ]
   },
   "1054003": {
    "Name": "Seoul Port",
    "Ships": [
-    "Devil Armed Ship",
-    "Devil Raiding Ship"
+    "Ryuku Islands Devil Smuggling Ships",
+    "Ryuku Islands Skeleton Armed Ships",
+    "Ryuku Islands Skeleton Raiding Ships"
    ]
   },
   "1055003": {
    "Name": "Nagasaki Offshore",
    "Ships": [
-    "Japanese Pirate Wolf Fang Ship",
+    "Ryuku Islands Devil Armed Ships",
+    "Ryuku Islands Devil Raiding Ships",
     "Tokisada's Ambush Battleships"
    ]
   },
@@ -1662,33 +3409,35 @@
   "1057003": {
    "Name": "Zhigu Offshore",
    "Ships": [
-    "Biry Warship",
-    "ChiCheng Warship",
-    "Japanese Pirates' Sentinel Battleship",
-    "Songdo Warship",
-    "Tokisada Masuda's Rogue Flagships",
-    "Westward Warship"
+    "Ryuku Islands Skeleton Raiding Ships",
+    "Ryuku Islands Skeleton Smuggler Ships",
+    "Ryuku Islands Tiger Armed Ships",
+    "Ryuku Islands Tiger Smuggling Ships",
+    "Tokisada Masuda's Rogue Flagships"
    ]
   },
   "1504003": {
    "Name": "Corsica Offshore",
    "Ships": [
-    "Corsican Raiding Ship"
+    "Corsica Steel Tooth Armed Ship",
+    "Corsica iron hand armed ships",
+    "Corsica peg leg raiding ships",
+    "Ryuku Islands Nightmare Raiding Ships",
+    "Smuggling Ships"
    ]
   },
   "1505003": {
    "Name": "Crete Offshore",
    "Ships": [
-    "Cretan Peg Leg Armed Ships",
     "Crete Iron Fist Armed Ships",
-    "Crete Iron Hand Smuggling Ship",
+    "Crete Iron Hand Raiding Ships",
     "Crete Jackal Armed Ship",
     "Crete Peg Leg Armed Ships",
+    "Crete Peg Leg Raiding Ship",
     "Crete Peg Leg Ship Captain",
-    "Creten Golden Eye Ship",
+    "Crete Peg Leg Smuggler Ships",
     "Creten Iron Hand Ship Captain",
     "Devil Smuggling Ship Captain",
-    "Edward's Devil ship",
     "Falcon Smuggling Ship Captain",
     "Hades Smuggling Ship Captain",
     "Jackal Smuggling Ship Captain",
@@ -1699,12 +3448,27 @@
   }
  },
  "quest coverage": {
-  "kill quests": 459,
-  "TargetName exact match (current QuestHunts)": 363,
-  "TargetName match with QuestNameKey (proposed QuestHunts)": 402,
-  "all listed targets exist (QuestNameKey)": 413
+  "kill quests": 248,
+  "TargetName exact match (current QuestHunts)": 221,
+  "TargetName match with QuestNameKey (proposed QuestHunts)": 227,
+  "all listed targets exist (QuestNameKey)": 234
  },
  "kill quests whose TargetName has no monster": [
+  {
+   "Id": 69901,
+   "TargetName": "same level Smuggling Ships",
+   "Objective": "Sink 3 same level Smuggling Ships as your ship,then reply to Ares Warrior Alliance Master."
+  },
+  {
+   "Id": 2231,
+   "TargetName": "ship",
+   "Objective": "Sink a ship at Labrinton Coast"
+  },
+  {
+   "Id": 2373,
+   "TargetName": "enemy",
+   "Objective": "Eliminate 1 enemy in the Inter-server Siege War."
+  },
   {
    "Id": 61,
    "TargetName": "Spanish armed merchant ships of Ruby Level",
@@ -1714,91 +3478,6 @@
    "Id": 62,
    "TargetName": "chiefmates of Spanish Royal Gold Armed Merchant Ships",
    "Objective": "Kill 25 chiefmates of Spanish Royal Gold Armed Merchant Ships"
-  },
-  {
-   "Id": 1117,
-   "TargetName": "North Sea Battlefield",
-   "Objective": "Destroy 10 North Sea Jackal Armed Ships and 10 North Sea Golden Eyes Armed Ships and then report back to Andy in Hamburg."
-  },
-  {
-   "Id": 1630,
-   "TargetName": "Sharp Paw Polar Bear 50",
-   "Objective": "Destroy Sharp Paw Polar Bear 50,and return to Wellpus Colonel report."
-  },
-  {
-   "Id": 1673,
-   "TargetName": "bear leader Polar Bear More",
-   "Objective": "Kill the bear leader Polar Bear More,then report to Wellpus Colonel report"
-  },
-  {
-   "Id": 1674,
-   "TargetName": "wolf leader Polar wolf Shadow-teeth",
-   "Objective": "Kill the wolf leader Polar wolf Shadow-teeth,then report to Village head Drarsh."
-  },
-  {
-   "Id": 1707,
-   "TargetName": "Huge Steel-teeth Crocodile 1 Bimini Red-raphe Crocodiles 4",
-   "Objective": "Kill Huge Steel-teeth Crocodile 1 Bimini Red-raphe Crocodiles 4 and Bimini Steel-teeth Crocodiles 4,then report to Captain Gondara report"
-  },
-  {
-   "Id": 1722,
-   "TargetName": "Yalujay Falchion Skeletons 5 Yalujay Sword Skeletons 5 Yalujay Axe Skeletons 5",
-   "Objective": "Kill Yalujay Falchion Skeletons 5 Yalujay Sword Skeletons 5 Yalujay Axe Skeletons 5,then report to Bomule report."
-  },
-  {
-   "Id": 1746,
-   "TargetName": "Tedia ambassador give the help letter",
-   "Objective": "Kill Tedia ambassador give the help letter to Borant general"
-  },
-  {
-   "Id": 1753,
-   "TargetName": "Evil Natives leader Duderam kill Attendants of Duderam 7",
-   "Objective": "Kill Evil Natives leader Duderam kill Attendants of Duderam 7,then report to Botiven general."
-  },
-  {
-   "Id": 1760,
-   "TargetName": "Bosela Battle Dogs 5 Bosela Sharp-lance Soldiers",
-   "Objective": "Kill 5 Bosela Battle Dogs 5 Bosela Sharp-lance Soldiers then report to General Borant report"
-  },
-  {
-   "Id": 1762,
-   "TargetName": "Blood Seasprites 5 Water Seasprites",
-   "Objective": "Go to the Northwest of Poseidon bay, kill 5 Blood Seasprites 5 Water Seasprites and 5 Soul Seasprites then report to General Borant to report."
-  },
-  {
-   "Id": 1764,
-   "TargetName": "Evil Indigenous diplomats 3 Evil Indigenous Dart Soldiers",
-   "Objective": "Kill 3 Evil Indigenous diplomats 3 Evil Indigenous Dart Soldiers then report to Jarode report."
-  },
-  {
-   "Id": 1919,
-   "TargetName": "Trials",
-   "Objective": "Equip with Gucci Robes and defeat the Trials and Tribulations Beast."
-  },
-  {
-   "Id": 1950,
-   "TargetName": "Captain",
-   "Objective": "Equip Grappling Hook and head to Crete Battlefield. Sail to Crete Iron Hand Armed Ships. W,when your ship is near the enemy fleet, use the skill Grappling. Once"
-  },
-  {
-   "Id": 2020,
-   "TargetName": "opponent",
-   "Objective": "At Thassos Island, use the Sorrow of War, and defeat the opponent that appears. Then report back to Kratos"
-  },
-  {
-   "Id": 2024,
-   "TargetName": "Lord",
-   "Objective": "Head to Gibraltar copy and destroy the Lord, the flagship of the pirate Bolukbashi. Then report back to Glaucus"
-  },
-  {
-   "Id": 2231,
-   "TargetName": "ship",
-   "Objective": "Sink a ship at Labrinton Coast"
-  },
-  {
-   "Id": 2235,
-   "TargetName": "Phanton Lord of the Taj Mahal Instance",
-   "Objective": "Eliminate Phanton Lord of the Taj Mahal Instance and the 1c4278215680# Madagascar Chieftan."
   },
   {
    "Id": 2367,
@@ -1816,64 +3495,14 @@
    "Objective": "Enter Battled Forest and kill Staff Sergeant Thomas and Traitor Schmitz at Auchi Level 2"
   },
   {
-   "Id": 2373,
-   "TargetName": "enemy",
-   "Objective": "Eliminate 1 enemy in the Inter-server Siege War."
+   "Id": 2750,
+   "TargetName": "Command Ship",
+   "Objective": "Enter Portobello Bay, destroy Command Ship, collect Command Ship Blueprints"
   },
   {
-   "Id": 2610,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 1 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
-  },
-  {
-   "Id": 2611,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 1 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
-  },
-  {
-   "Id": 2612,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 2 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
-  },
-  {
-   "Id": 2613,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 2 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
-  },
-  {
-   "Id": 2614,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 3 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
-  },
-  {
-   "Id": 2615,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 3 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
-  },
-  {
-   "Id": 2616,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 4 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
-  },
-  {
-   "Id": 2617,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 4 Open-Sea Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure "
-  },
-  {
-   "Id": 2618,
-   "TargetName": "after combining Treasure Map",
-   "Objective": "Compound a Level 5 Inland Treasure Map at the Treasure Hunter in Barcelona, then go look for Gonzales. (\"As for how to Treasure Hunt after combining Treasure Ma"
-  },
-  {
-   "Id": 2673,
-   "TargetName": "real Escape Boat",
-   "Objective": "Destroy the real Escape Boat"
-  },
-  {
-   "Id": 2739,
-   "TargetName": "Hasan",
-   "Objective": "Enter Malta Instance, kill Hasan and Collect Missing Defense Layouts"
+   "Id": 2751,
+   "TargetName": "Frigate",
+   "Objective": "进入 Portobello Bay, destroy the Frigate, collect Frigate Blueprints"
   },
   {
    "Id": 2822,
@@ -1911,59 +3540,14 @@
    "Objective": "Kill a (Normal) Eyam Patriarch*1 and Ghoul Pioneer*5 at the King's Tomb. After you're done report back to Seville Port's Valentine's Day Envoy."
   },
   {
-   "Id": 3211,
-   "TargetName": "ship",
-   "Objective": "Sink a ship on the way to attack Holland in the open waters around Bombay. Report to Akbar."
-  },
-  {
-   "Id": 3460,
-   "TargetName": "guards of Monarch",
-   "Objective": "Beat the guards of Monarch, and get National Badge and get it to Jacque."
-  },
-  {
-   "Id": 3501,
-   "TargetName": "North European Pirates",
-   "Objective": "Beat the North European Pirates outside of the city, and return the yeast to Beer Festival Officer."
-  },
-  {
-   "Id": 3654,
-   "TargetName": "Archer Instructor \"Aloof Rose",
-   "Objective": "Go to the Higurashi Instance. Kill Archer Instructor \"Aloof Rose\" and report to the Nagasaki Inspector."
-  },
-  {
-   "Id": 3664,
-   "TargetName": "Boss Schmitz",
-   "Objective": "Beat the Boss Schmitz and reply to Santa Claus."
-  },
-  {
-   "Id": 3665,
-   "TargetName": "Rene",
-   "Objective": "Beat Rene and reply to Santa Claus."
-  },
-  {
    "Id": 3718,
    "TargetName": "player",
    "Objective": "Defeat one player in Palenque Battle"
   },
   {
-   "Id": 4158,
-   "TargetName": "St",
-   "Objective": "Sink a St. Andrew Raiding Ship (-4997.41, 10002.02) and speak with the Route Officer's Flagship (973.15,1776.61) at the entrance of the Suez Canal."
-  },
-  {
-   "Id": 4167,
-   "TargetName": "Stage 1's Boss (Lloyd Rodney's Ship)",
-   "Objective": "Enter the naumachia and defeat Stage 1's Boss (Lloyd Rodney's Ship). Speak with Hussein afterwards."
-  },
-  {
    "Id": 4301,
    "TargetName": "enemy faction players",
    "Objective": "In the cross-server Havana battlefield, kill 2 enemy faction players. After completing the quest, submit it via the New Colonial Governor at the Hall of Memorie"
-  },
-  {
-   "Id": 4542,
-   "TargetName": "sea Spanish interceptor *1 (waiting",
-   "Objective": "Sank sea Spanish interceptor *1 (waiting for interceptor on the high sea), then talk to Roderick the Explorer."
   },
   {
    "Id": 4632,
@@ -1974,29 +3558,14 @@
    "Id": 4635,
    "TargetName": "player",
    "Objective": "Kill 1 player from the Conqueror camp and talk with Suyo Guard camp mission manager"
-  },
-  {
-   "Id": 4834,
-   "TargetName": "Henry hidden",
-   "Objective": "Kill Henry hidden in the outskirts of Beijing and talking to Nancy in the city of Las Palmas."
-  },
-  {
-   "Id": 69901,
-   "TargetName": "same level Smuggling Ships",
-   "Objective": "Sink 3 same level Smuggling Ships as your ship,then reply to Ares Warrior Alliance Master."
-  },
-  {
-   "Id": 93208,
-   "TargetName": "dry",
-   "Objective": "Go to the pyramid and defeat dry, giant arm, bewitching and stinky mummy, collect their bandages for authentication. It is safer to fight Mummies together with "
   }
  ],
  "totals": {
-  "land spawns": 1554,
+  "land spawns": 1647,
   "land scenes": 118,
-  "land species": 336,
-  "sea ships": 270,
-  "sea scenes": 42,
-  "sea species": 121
+  "land species": 342,
+  "sea ships": 281,
+  "sea scenes": 41,
+  "sea species": 111
  }
 }

@@ -103,7 +103,7 @@ public sealed partial class ClientSession
         float dx = state.X - x;
         float dz = state.Z - z;
         float apart = MathF.Sqrt(dx * dx + dz * dz);
-        float reach = AttackReach();
+        float reach = AttackReach() + Math.Clamp(monster.Radius, 0f, 6f);
         if (apart > rules.MeleeChaseLimit)
         {
             StopMelee();

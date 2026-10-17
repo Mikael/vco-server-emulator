@@ -176,7 +176,7 @@ public sealed partial class ClientSession
         if (Mover == null || Hp <= 0 || AtSea || Scene != monster.Scene) return;
         CombatRuleSet rules = Rule.Combat;
         MarkAttacked();
-        byte[] swing = ScenePackets.PlayAction(monster.Id, BboMonsterAttackAction(), attack: true);
+        byte[] swing = ScenePackets.PlayAction(monster.Id, MonsterAttackAction(monster), attack: true);
         Send(swing, "(monster swings)");
         ToOthers(swing, "(monster swings)");
         if (!CombatRules.Hits(rules, MonsterHit(monster, state), Properties.Int("DodgeRatio")))
@@ -258,8 +258,7 @@ public sealed partial class ClientSession
 
         state.Dead = true;
         state.Target = null;
-        foreach (ClientSession session in everyone)
-            session.Send(ScenePackets.RemoveObject(monster.Id), "(monster dies)");
+        ShowMonsterDeath(monster, state, everyone);
         if (monster.Gold > 0)
         {
             SetMoney(Money + monster.Gold);
