@@ -131,7 +131,7 @@ public sealed class TextCommandHandler : IMessageHandler
         }
         else if (text.StartsWith('#'))
         {
-            Log.Debug(session.Tag, $"{session.Name} sent a path of {reader.Length - _textOffset} bytes");
+            session.FollowPath(reader, _textOffset);
         }
         else if (_alwaysCommand || _commands.Knows(words[0]))
         {

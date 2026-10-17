@@ -1458,5 +1458,9 @@
   {
     "Name": "EvolColor",
     "Type": "U32"
+  },
+  {
+    "Name": "SceneSerial",
+    "Type": "String"
   }
 ]
