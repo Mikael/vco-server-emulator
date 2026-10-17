@@ -4,7 +4,7 @@ namespace BountyBay.Core.Protocol.Packets;
 
 public static class BattleTables
 {
-    public static readonly TableDefinition CopyLeftTimes = new(47, "CopyLeftTimes", Columns("Key", "Name", "Left"));
+    public static readonly TableDefinition CopyLeftTimes = new(47, "CopyLeftTimes", Columns("Key", "Name", "Left", "Max"));
 
     public static readonly TableDefinition HonorLandReport = new(52, "HonorLandReport", Columns(11));
 
