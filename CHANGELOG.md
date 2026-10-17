@@ -1,5 +1,46 @@
 # Changelog
 
+## 2026-10-17 (later)
+
+### Combat and targeting
+- **Target panel** - clicking a monster, NPC, ship or player opens the client's target frame with portrait, name and HP.
+- **Portraits** - your own portrait shows next to the HP bar; monsters, ships and players have portraits.
+- **TAB targeting and the AFK system** - TAB picks the nearest monster, and the AFK window's auto-attack fights on its
+  own. Dead monsters are skipped.
+- **Damage numbers** are sent; the client shows them when "show damage" (`TopBloody`) is on in the system settings.
+- **Alt** shows profession and level over characters that have a profession.
+
+### Movement
+- Smoother movement for players, monsters and NPC ships: the server sends only destinations, so the client no longer
+  snaps characters back to an estimated position.
+- **Auto-path** works: the map's destination list fills in and the character walks the route.
+
+### Gear
+- Drag and drop between the equipment bag and worn slots equips and takes off gear; right-click takes gear off.
+- 175 hats and helmets were marked as clothes; they now go into the hat slot.
+- Portable battle bag, battle revive countdown, level-up notice.
+
+### Item mall
+- The mall (Ctrl+B, "Item Mall") opens with 136 goods: the 105 items the client's texts say come from the Item Mall,
+  plus 31 premium pet whistles (Shadow Reaper and others), which go straight into the pet list.
+- Paid with game points (`/points <n>` for GMs); remaining points are shown. Prices are guesses and live in
+  `data\game\bbo\mall.json`.
+
+### Instances
+- The instance window lists all 27 instances with entrance, difficulty and chances left; clicking one shows its
+  description, entrance and loot.
+
+### High seas
+- 35 harbours can be entered from the open sea (was 14), including London, Amsterdam, Hamburg, Bordeaux, Oslo,
+  Stockholm, Reykjavik, Dakar, Cape Town, Bombay and Edo.
+- Crossings between the Atlantic/Mediterranean map and the Indian Ocean/Asia/Pacific map at the Cape of Good Hope,
+  the Magellan Strait and Iceland.
+- 67 roaming pirate and merchant ships, two off each harbour, using that city's own ship types. They spawn and patrol
+  only on spots checked in the client to be open water (`data\game\bbo\oceanwater.json`).
+- NPC ships on the high seas are now visible in the client, and send hull, sail and crew values.
+
+### NPCs
+- NPC talk options come from the client's own menus; role NPCs use their city's menus.
 ## 2026-10-17
 
 ### New game systems
