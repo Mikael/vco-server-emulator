@@ -26,6 +26,7 @@ public sealed partial class ClientSession
 
     public void ChooseOption(int target, DialogueAction action)
     {
+        if (ShowClientMenuTalk(target, (int)action)) return;
         action = ClientMenuAction(action);
         if (HandleBattleOption(target, (int)action)) return;
         if (HandleGuildHallOption(target, (int)action)) return;
@@ -98,6 +99,7 @@ public sealed partial class ClientSession
         CloseShop();
         CloseWarehouse();
         _clientMenuOptions.Clear();
+        _clientMenuTalk.Clear();
         Send(UiPackets.CloseMenu(), "(close npc dialogue)");
     }
 

@@ -18073,7 +18073,7 @@
     ],
     "NameKey": "IDName00004948",
     "Role": "Priest",
-    "ChatSet": "gnnpc010",
+    "ChatSet": "npc01810",
     "ClientMenu": [
       {
         "Key": "-12",
@@ -18106,7 +18106,7 @@
       "Name": "CLIENT IDName00004948",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
+      "ChatSet": "CLIENT npc_menu\\npc01810.ini (city 018, role Priest)",
       "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
     }
   },
@@ -19078,7 +19078,7 @@
     "StuntCap": 3,
     "NameKey": "IDName00004944",
     "Role": "Skill Tutor",
-    "ChatSet": "gnnpc003",
+    "ChatSet": "npc02203",
     "ClientMenu": [],
     "SceneName": "Venice City",
     "Source": {
@@ -19086,7 +19086,7 @@
       "Name": "CLIENT IDName00004944",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Skill Tutor)",
-      "ChatSet": "GUESS role Skill Tutor -> generic menu",
+      "ChatSet": "CLIENT npc_menu\\npc02203.ini (city 022, role Skill Tutor)",
       "Greeting": "CLIENT npc_menu\\gnnpc003.ini 101=NpcTxt00000091"
     }
   },
@@ -19135,7 +19135,7 @@
     },
     "NameKey": "IDName00004961",
     "Role": "Blacksmith",
-    "ChatSet": "npc02241",
+    "ChatSet": "npc02205",
     "ClientMenu": [
       {
         "Key": "-16",
@@ -19180,7 +19180,7 @@
       "Name": "CLIENT IDName00004961",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Blacksmith)",
-      "ChatSet": "GUESS role Blacksmith -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc02205.ini (city 022, role Blacksmith)",
       "Greeting": "CLIENT npc_menu\\npc02241.ini 12=NpcTxt00001109",
       "Shop": "GUESS copy of emulator Athens Blacksmith shop (client has no shop lists)"
     }
@@ -22491,7 +22491,7 @@
     "StuntCap": 3,
     "NameKey": "IDName00004944",
     "Role": "Skill Tutor",
-    "ChatSet": "gnnpc003",
+    "ChatSet": "npc02603",
     "ClientMenu": [],
     "SceneName": "Istanbul City",
     "Source": {
@@ -22499,7 +22499,7 @@
       "Name": "CLIENT IDName00004944",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Skill Tutor)",
-      "ChatSet": "GUESS role Skill Tutor -> generic menu",
+      "ChatSet": "CLIENT npc_menu\\npc02603.ini (city 026, role Skill Tutor)",
       "Greeting": "CLIENT npc_menu\\gnnpc003.ini 101=NpcTxt00000091"
     }
   },
@@ -22711,7 +22711,7 @@
     },
     "NameKey": "IDName00004961",
     "Role": "Blacksmith",
-    "ChatSet": "npc02641",
+    "ChatSet": "npc02605",
     "ClientMenu": [
       {
         "Key": "-16",
@@ -22756,7 +22756,7 @@
       "Name": "CLIENT IDName00004961",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Blacksmith)",
-      "ChatSet": "GUESS role Blacksmith -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc02605.ini (city 026, role Blacksmith)",
       "Greeting": "CLIENT npc_menu\\npc02641.ini 12=NpcTxt00001374",
       "Shop": "GUESS copy of emulator Athens Blacksmith shop (client has no shop lists)"
     }
@@ -23867,7 +23867,7 @@
     ],
     "NameKey": "IDName00004882",
     "Role": "Tavern Boss",
-    "ChatSet": "npc02612",
+    "ChatSet": "npc02609",
     "ClientMenu": [
       {
         "Key": "-20",
@@ -23942,7 +23942,7 @@
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1026004.ini)",
-      "ChatSet": "GUESS role Tavern Boss -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc02609.ini (city 026, role Tavern Boss)",
       "Greeting": "CLIENT npc_menu\\npc02612.ini 12=NpcTxt00001297"
     }
   },
@@ -28520,7 +28520,7 @@
     },
     "NameKey": "IDName00004961",
     "Role": "Blacksmith",
-    "ChatSet": "npc03441",
+    "ChatSet": "npc03405",
     "ClientMenu": [
       {
         "Key": "-16",
@@ -28565,7 +28565,7 @@
       "Name": "CLIENT IDName00004961",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Blacksmith)",
-      "ChatSet": "GUESS role Blacksmith -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc03405.ini (city 034, role Blacksmith)",
       "Greeting": "CLIENT npc_menu\\npc03441.ini 12=NpcTxt00002133",
       "Shop": "GUESS copy of emulator Athens Blacksmith shop (client has no shop lists)"
     }
@@ -28783,7 +28783,7 @@
     "StuntCap": 3,
     "NameKey": "IDName00004944",
     "Role": "Skill Tutor",
-    "ChatSet": "gnnpc003",
+    "ChatSet": "npc03403",
     "ClientMenu": [],
     "SceneName": "Algiers City",
     "Source": {
@@ -28791,7 +28791,7 @@
       "Name": "CLIENT IDName00004944",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Skill Tutor)",
-      "ChatSet": "GUESS role Skill Tutor -> generic menu",
+      "ChatSet": "CLIENT npc_menu\\npc03403.ini (city 034, role Skill Tutor)",
       "Greeting": "CLIENT npc_menu\\gnnpc003.ini 101=NpcTxt00000091"
     }
   },
@@ -61774,7 +61774,7 @@
     ],
     "NameKey": "IDName00004950",
     "Role": "Guild Manager",
-    "ChatSet": "npc50508",
+    "ChatSet": "npc50511",
     "ClientMenu": [
       {
         "Key": "-13",
@@ -61795,7 +61795,7 @@
       "Name": "CLIENT IDName00004950",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Guild Manager)",
-      "ChatSet": "GUESS role Guild Manager -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc50511.ini (city 505, role Guild Manager)",
       "Greeting": "CLIENT npc_menu\\npc50508.ini 11=NpcTxt00002904"
     }
   },
@@ -62029,7 +62029,7 @@
     },
     "NameKey": "IDName00004952",
     "Role": "Shipyard Boss",
-    "ChatSet": "npc50507",
+    "ChatSet": "npc50502",
     "ClientMenu": [
       {
         "Key": "-13",
@@ -62092,7 +62092,7 @@
       "Name": "CLIENT IDName00004952",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Shipyard Boss)",
-      "ChatSet": "GUESS role Shipyard Boss -> city menu (file role from its option set, CLIENT)",
+      "ChatSet": "CLIENT npc_menu\\npc50502.ini (city 505, role Shipyard Boss)",
       "Greeting": "CLIENT npc_menu\\npc50507.ini 12=NpcTxt00002903",
       "Shop": "GUESS copy of emulator Athens Shipyard Boss shop (client has no shop lists)"
     }
