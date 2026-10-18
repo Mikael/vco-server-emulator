@@ -145,6 +145,11 @@ public sealed partial class ClientSession
         SeaNpcState? ship = Sea.Find(objectId, Scene);
         if (ship == null) return false;
         SeaTarget = objectId;
+        if (ship.Definition.Friendly)
+        {
+            SeaNotice($"The {ship.Definition.Name} is a friendly ship.");
+            return true;
+        }
         if (!ship.Dead && !ship.Gone && !SeaSunk) FireBroadside(ship);
         return true;
     }
@@ -268,6 +273,7 @@ public sealed partial class ClientSession
             _ => 100,
         };
         int hull = damage.Hull <= 0 ? 0 : Math.Max(1, damage.Hull * hullPercent / 100);
+        if (rules.NpcVolleyMaxHullPercent > 0) hull = Math.Min(hull, Math.Max(1, ShipHullMax * rules.NpcVolleyMaxHullPercent / 100));
 
         float scatter = rules.BroadsideScatter;
         int seed = Random.Shared.Next(1, 30000);
@@ -287,7 +293,7 @@ public sealed partial class ClientSession
             if (damage.Sail > 0 && ShipSail > 0) SetShipSail(ShipSail - damage.Sail);
             int struck = Math.Min(damage.Sailors, Character.Sailors);
             if (struck > 0) SetSailors(Character.Sailors - struck, Character.SailorsWounded + struck);
-            if (ShipHull - hull > 0 && Character.Sailors > 0)
+            if (ShipHull - hull > 0)
             {
                 if (hull > 0) SetShipHull(ShipHull - hull);
                 return;
@@ -397,6 +403,14 @@ public sealed partial class ClientSession
         OnSeaNpcSunk(definition.Name);
         Save();
         Log.Info(Tag, $"{Name} sank {definition.Name}");
+    }
+
+    private void WarnShipCondition()
+    {
+        if (ShipHull * 4 < ShipHullMax)
+            SystemMessage($"Your ship's durability is only {ShipHull}/{ShipHullMax}. Have her repaired at a shipyard before you fight.", SystemMessageKind.System);
+        if (Character.Sailors <= 0)
+            SystemMessage("You have no healthy sailors aboard. Hire sailors at a shipyard.", SystemMessageKind.System);
     }
 
     private void LoseShip(string sunkBy)

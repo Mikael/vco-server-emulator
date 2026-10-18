@@ -9,6 +9,15 @@ public readonly record struct WornLook(int Body, int TexColor, int Hat, int CapC
 
     public static bool IsFemale(CharacterRecord character) => character.Role == FemaleRole;
 
+    private static readonly System.Text.RegularExpressions.Regex FemaleName =
+        new(@"\bfemale\b|\bfor wom[ae]n\b|\bwom[ae]n's\b|\blad(y|ies)('s)?\b|\(F\)|\b\w*woman\b|^(Grand )?(Baroness|Baronetess|Viscountess|Countess|Marchioness|Duchess|Princess) Captain", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+    private static readonly System.Text.RegularExpressions.Regex MaleName =
+        new(@"\bmale\b|\bfor m[ae]n\b|\bm[ae]n's\b|\bgentleman('s)?\b|\(M\)|\bMoneyman\b|^(Grand )?(Baron|Baronet|Viscount|Count|Marquess|Duke|Prince|Knight|Chevalier) Captain", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+    public static bool? ForFemale(string label)
+        => FemaleName.IsMatch(label) ? true : MaleName.IsMatch(label) ? false : null;
+
     public static WornLook Of(CharacterRecord character)
     {
         var look = new WornLook(character.Body, 0, 0, 0, 0, 0);

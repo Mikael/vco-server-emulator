@@ -185,6 +185,7 @@ public sealed class SeaWorld
 
     public void Provoke(SeaNpcState ship, ClientSession attacker)
     {
+        if (ship.Definition.Friendly) return;
         long now = Now;
         if (ship.Target == null || ship.AggroUntil < now) ship.NextShotAt = now + 1500;
         ship.Target = attacker;

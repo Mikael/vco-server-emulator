@@ -66,6 +66,10 @@ public static class BboSocialPackets
 
     public static byte[] ClearRanking() => GuildPackets.Clear(RankingTable);
 
-    public static byte[] RankingRow(int rank, string name, long value, string extra)
-        => GuildPackets.Rows(RankingTable, [[rank.ToString(), "0", name, value.ToString(), extra]]).First();
+    public static byte[] RankingRow(int id, int rank, string name, long value, string? high = null)
+    {
+        value = Math.Max(0, value);
+        string low = (value % int.MaxValue).ToString();
+        return GuildPackets.Rows(RankingTable, [[id.ToString(), rank.ToString(), name, low, high ?? (value / int.MaxValue).ToString()]]).First();
+    }
 }

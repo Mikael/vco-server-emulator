@@ -31,6 +31,14 @@
 - **Command Interface**: learned stunts show under "Activate skill" (land stunts on On Land, sea stunts on At Sea) and
   gestures play when clicked.
 - **Pet portrait** shows in the pet frame.
+- **Character creation**: the second figure (the woman in the beige dress) no longer has a floating head; she now
+  wears the white blouse and laced vest. Characters created with the old dress are fixed when they log in.
+- **Character creation skill list** stays inside its box (four rows and a scroll bar) instead of spilling over the
+  Previous button. Players need the updated client file `RESOURCE\INI\window\control.ini` (`[Other_00000532]`
+  `RectWork=0, 0, 248, 192`; the stock file says 292).
+- **Male and female clothes**: outfits and hats meant for one sex ("Male ...", "Female ...", "(M)", "(F)", "for Woman",
+  Baron/Baroness Captain Dress and so on) can only be worn by that sex, so women no longer wear men's meshes with a
+  floating head. Unisex items work for both.
 
 ### Ships and sea
 - **Sails** no longer have holes on an undamaged ship; holes now follow sail damage.
@@ -38,6 +46,10 @@
 - **Sailor Recruitment window** (slider, Heal, Optimal/Max) opens from the Tavern Boss and the Shipyard. The Tavern Boss
   also recruits the necessary or all sailors, heals and dismisses them.
 - **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
+- **No more instant sinking**: a ship only sinks when her durability reaches 0 (losing all healthy sailors no longer
+  sinks her), and one volley from an NPC ship takes at most a fifth of your durability.
+- **Warning at sea** when you sail out with less than a quarter of your durability or no healthy sailors.
+- **Friendly ships**: merchant and patrol ships sail around the busy seas. They never attack and can't be shot or mined.
 
 ### Towns and NPCs
 - **Killed animals and monsters** stop where they are and play their death animation straight away instead of walking on.
@@ -57,6 +69,8 @@
 - **NPC windows** close when you walk away, and "Goodbye" is always the last line of an NPC menu.
 
 ### Guilds, teams and activities
+- **Rankings** (Integrated Guild Strength, Land Battle Lord, Ocean Overlord, Honored Officer, Solo Arena, Tempering
+  Master) list the top players, and the bottom line shows your own name and score.
 - **Guild construction quests** at the guild hall: take a commercialization or industrialization quest, collect the
   goods and hand them in through the Submit Goods window. A finished quest raises the guild's Economic or Industrial
   degree, your contribution and the guild's vigor.

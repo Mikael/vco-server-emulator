@@ -200,6 +200,7 @@ public sealed partial class ClientSession
         }
         SendSceneLinks();
         BboSendOceanDocks();
+        if (AtSea) WarnShipCondition();
 
         if (!_inventorySent)
         {

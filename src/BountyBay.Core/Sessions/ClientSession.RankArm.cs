@@ -104,6 +104,7 @@ public sealed partial class ClientSession
         for (int round = 0; round < rounds && BagTotal(book.StoneItem) >= book.StonesPerTemper; round++)
         {
             TakeFromBags(book.StoneItem, book.StonesPerTemper);
+            CountTemper();
             if (NobleRoll() is not { } rolled) break;
             if (!lucky || rolled.Tier >= book.LuckStopTier)
             {
@@ -117,6 +118,17 @@ public sealed partial class ClientSession
         SendTemperStuff();
         Save();
         Log.Info(Tag, $"{Name} tempers {item.Name}{(lucky ? " ten times" : "")}: {state.Fresh?.Prop ?? "split"}");
+    }
+
+    private void CountTemper()
+    {
+        int today = Rankings.Today;
+        if (Character.TemperDay != today)
+        {
+            Character.TemperDay = today;
+            Character.TemperToday = 0;
+        }
+        Character.TemperToday++;
     }
 
     public void SaveTempered(int slot)

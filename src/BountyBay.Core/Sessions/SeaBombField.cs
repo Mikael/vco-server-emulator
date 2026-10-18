@@ -57,7 +57,7 @@ public sealed class SeaBombField
                 continue;
             }
             SeaNpcState? victim = sea.InScene(bomb.Scene)
-                .Where(ship => !ship.Dead && !ship.Gone)
+                .Where(ship => !ship.Dead && !ship.Gone && !ship.Definition.Friendly)
                 .FirstOrDefault(ship => (ship.X - bomb.X) * (ship.X - bomb.X) + (ship.Z - bomb.Z) * (ship.Z - bomb.Z) <= TriggerRadius * TriggerRadius);
             if (victim == null) continue;
             _bombs.Remove(bomb);

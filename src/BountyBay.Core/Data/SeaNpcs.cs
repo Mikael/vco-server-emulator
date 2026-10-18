@@ -28,6 +28,7 @@ public sealed class SeaNpcDefinition
     public int Heading { get; set; }
     public bool Roams { get; set; }
     public float RoamRadius { get; set; } = 250f;
+    public bool Friendly { get; set; }
 }
 
 public sealed class AmmunitionDefinition
@@ -112,6 +113,7 @@ public sealed class ShipRules
     public float FullLoadSpeedFactor { get; set; } = 0.5f;
     public float WreckedTurnFactor { get; set; } = 0.5f;
     public int TurnRatePerPoint { get; set; } = 30;
+    public int NpcVolleyMaxHullPercent { get; set; } = 20;
 }
 
 public sealed class SeaData

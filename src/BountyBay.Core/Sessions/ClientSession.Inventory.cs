@@ -255,6 +255,11 @@ public sealed partial class ClientSession
 
     public bool MayWear(string name)
     {
+        if (WornLook.ForFemale(ItemLabel(name)) is bool forFemale && forFemale != WornLook.IsFemale(Character))
+        {
+            SystemMessage(forFemale ? "Only female characters can wear this." : "Only male characters can wear this.", SystemMessageKind.Prompt);
+            return false;
+        }
         string skill = ItemCatalog.Find(name) is { } properties && properties.TryGetValue("NeedSkill", out object? needed) ? needed as string ?? "" : "";
         int level = ItemCatalog.Number(name, "NeedSkillLevel");
         if (skill.Length > 0 && WeaponSkillLevel(skill) < Math.Max(1, level))
