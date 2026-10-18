@@ -62,6 +62,7 @@ public sealed partial class ClientSession
             ["S/NumCannonR"] = Character.CannonsRight,
             ["RatioShipHP"] = 100 * ShipHull / Math.Max(1, ShipHullMax),
             ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax),
+            ["S/SailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax),
             ["RatioSailorHP"] = SailorRatio,
             ["NumSailor"] = Character.Sailors,
             ["NumSailorBad"] = Character.SailorsWounded,
@@ -202,7 +203,9 @@ public sealed partial class ClientSession
     public void SetShipSail(int sail)
     {
         Character.ShipSail = Math.Clamp(sail, 0, FleetSailMax);
-        var ratio = SeaPackets.Known(new PropertyBag { ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax) });
+        int percent = 100 * ShipSail / Math.Max(1, FleetSailMax);
+        // GameProj hands the sea object's S/SailHP to the rigging as a percentage: holes grow with 100 - S/SailHP.
+        var ratio = SeaPackets.Known(new PropertyBag { ["RatioSailHP"] = percent, ["S/SailHP"] = percent });
         if (AtSea)
         {
             Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, ratio), "(sail)");

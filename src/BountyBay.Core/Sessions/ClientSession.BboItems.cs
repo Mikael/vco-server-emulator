@@ -560,7 +560,7 @@ public sealed partial class ClientSession
     private bool GiveItem(ItemStack item, string note)
     {
         if (item.Amount <= 0) return true;
-        if (TradeGoods(item.Name)) return StowInHold(item, note);
+        if (TradeGoods(item.Name) || item.Name == ProvisionItem) return StowInHold(item, note);
         if (Stackable(item.Name)) return MailStore(ViewId.BagItems, item, note);
         Dictionary<int, ItemStack> gear = Bags[ViewId.BagEquip];
         if (Enumerable.Range(1, ViewId.BagSlots).Count(slot => !gear.ContainsKey(slot)) < item.Amount) return false;

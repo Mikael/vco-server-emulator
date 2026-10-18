@@ -2,6 +2,8 @@
 
 ## 2026-10-18
 
+- **Sails** no longer show holes on an undamaged ship; holes now follow how damaged the sails are.
+- **Provisions** go into the ship's hold instead of your bag.
 - **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).
 - **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen.
 - **Exp bar** above the F1-F12 keys fills as your skills gain experience, and hovering it shows "Skill Exp: gained/needed"

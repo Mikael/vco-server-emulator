@@ -378,7 +378,7 @@ public sealed partial class ClientSession
 
     private int RoomFor(string name)
     {
-        if (TradeGoods(name))
+        if (TradeGoods(name) || name == ProvisionItem)
         {
             if (!Cargo.Values.Any(stack => stack.Name == name) && FreeSlot(Cargo, ViewId.CargoSlots) == 0) return 0;
             int weight = ItemCatalog.Number(name, "Weight");
@@ -405,7 +405,7 @@ public sealed partial class ClientSession
             SystemMessage(CannotAfford, SystemMessageKind.Prompt);
             return true;
         }
-        if (TradeGoods(entry.Name))
+        if (TradeGoods(entry.Name) || entry.Name == ProvisionItem)
         {
             AddBought(ViewId.Cargo, ViewId.CargoSlots, entry, count, entry.Cost);
         }
