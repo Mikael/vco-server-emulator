@@ -63,6 +63,8 @@ public sealed partial class ClientSession
         Send(ViewPackets.RemoveItem(LootView, index), "(spoil taken)");
         taker.RefreshLoad();
         taker.Save();
+        taker.Send(UiPackets.Custom("PlaySound SE3004"), "(item obtained sound)");
+        taker.SystemMessage($"You obtained {taker.ItemLabel(item.Name)} x{item.Amount}.");
         if (taker != this) taker.SystemMessage($"{Name} hands you {item.Amount} article(s) from the spoils.");
         Log.Info(Tag, $"{taker.Name} takes {item.Amount} x {item.Name} from the spoils");
         if (_loot.Count == 0) CloseLoot();

@@ -59,6 +59,6 @@ public sealed partial class ClientSession
         if (found.Count == 0) SystemMessage("No stall nearby matches your search.", SystemMessageKind.Prompt);
     }
 
-    private string ItemLabel(string key)
+    public string ItemLabel(string key)
         => Context.Data.Items.Goods.TryGetValue(key, out GoodsDefinition? goods) && goods.Label.Length > 0 ? goods.Label : key;
 }

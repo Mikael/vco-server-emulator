@@ -700,6 +700,10 @@
     "Type": "U32"
   },
   {
+    "Name": "NeedSkillEx",
+    "Type": "String"
+  },
+  {
     "Name": "UseCount",
     "Type": "U32"
   },

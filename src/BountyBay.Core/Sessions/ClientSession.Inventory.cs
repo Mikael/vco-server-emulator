@@ -56,6 +56,11 @@ public sealed partial class ClientSession
         AddBboItemId(bag, item);
         AddFireFlagItemProperties(bag, item);
         ItemCatalog.Extend(bag, item.Name);
+        if (PropertyTable.Has("NeedSkillEx") && ItemCatalog.Find(item.Name) is { } info && info.TryGetValue("NeedAnySkill", out object? any) && any is string skills)
+        {
+            int level = ItemCatalog.Number(item.Name, "NeedAnySkillLevel", 1);
+            bag["NeedSkillEx"] = string.Join(' ', skills.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(skill => $"{skill.Trim()} {level}"));
+        }
         ArmUpgradeProperties(bag, item);
         ArmRebuildItemProperties(bag, item);
         AideArmItemProperties(bag, item);
@@ -243,7 +248,7 @@ public sealed partial class ClientSession
         RefreshAppearance();
         RefreshStats();
         Save();
-        if (sound) Send(UiPackets.Custom("PlaySound SE3003"), "(equip sound)");
+        if (sound) Send(UiPackets.Custom(GearClass(item.Name) is 2 or 3 ? "PlaySound SE3007" : "PlaySound SE3008"), "(equip sound)");
         Log.Info(Tag, $"{Name} {(target == ViewId.Equipped ? "wears" : "takes off")} {item.Name}");
         return true;
     }

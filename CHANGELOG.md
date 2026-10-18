@@ -3,6 +3,9 @@
 ## 2026-10-18
 
 ### Character and equipment
+- **Equip sound** matches the item: clothes and hats use the clothing sound, weapons and other gear the equip sound.
+- **Picking up loot** plays the pick-up sound and says what you obtained.
+- **Items that need one of several skills** (e.g. Laborer Uniform) show the skill requirement in their tooltip and turn red when you don't meet it.
 - **Level on the portrait** shows again (also for characters without a profession).
 - **Exp bar** above the F1-F12 keys fills as your skills gain experience; hover it to see "Skill Exp: gained/needed"
   for the next level. The bar in Stats > Skill moves too.
