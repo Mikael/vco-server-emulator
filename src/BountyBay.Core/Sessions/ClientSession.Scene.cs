@@ -209,6 +209,7 @@ public sealed partial class ClientSession
             SendShortcuts(clear: false);
             SendSocialTables(clear: false);
             SendInventory();
+            TakeOffWrongSexClothes();
             SendDurability();
             SendProgress();
             SendMail();

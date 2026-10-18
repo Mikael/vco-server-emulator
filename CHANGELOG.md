@@ -38,7 +38,8 @@
   `RectWork=0, 0, 248, 192`; the stock file says 292).
 - **Male and female clothes**: outfits and hats meant for one sex ("Male ...", "Female ...", "(M)", "(F)", "for Woman",
   Baron/Baroness Captain Dress and so on) can only be worn by that sex, so women no longer wear men's meshes with a
-  floating head. Unisex items work for both.
+  floating head. Unisex items work for both. Anything of the other sex you already wear goes back to your bag when
+  you log in.
 
 ### Ships and sea
 - **Sails** no longer have holes on an undamaged ship; holes now follow sail damage.
@@ -70,7 +71,8 @@
 
 ### Guilds, teams and activities
 - **Rankings** (Integrated Guild Strength, Land Battle Lord, Ocean Overlord, Honored Officer, Solo Arena, Tempering
-  Master) list the top players, and the bottom line shows your own name and score.
+  Master) list the top ten players (everyone counts, also with a score of 0), and the bottom line shows your own name
+  and score.
 - **Guild construction quests** at the guild hall: take a commercialization or industrialization quest, collect the
   goods and hand them in through the Submit Goods window. A finished quest raises the guild's Economic or Industrial
   degree, your contribution and the guild's vigor.

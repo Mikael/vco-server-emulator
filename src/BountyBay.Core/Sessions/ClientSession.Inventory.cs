@@ -253,6 +253,17 @@ public sealed partial class ClientSession
         return true;
     }
 
+    private void TakeOffWrongSexClothes()
+    {
+        bool female = WornLook.IsFemale(Character);
+        foreach ((int index, ItemStack item) in Bags[ViewId.Equipped].Where(pair => WornLook.ForFemale(ItemLabel(pair.Value.Name)) is bool forFemale && forFemale != female).ToList())
+        {
+            if (FreeSlot(Bags[ViewId.BagEquip], ViewId.BagSlots) == 0) break;
+            MoveGear(ViewId.Equipped, index, sound: false);
+            SystemMessage($"{ItemLabel(item.Name)} is made for {(female ? "men" : "women")} and was put back in your bag.", SystemMessageKind.Prompt);
+        }
+    }
+
     public bool MayWear(string name)
     {
         if (WornLook.ForFemale(ItemLabel(name)) is bool forFemale && forFemale != WornLook.IsFemale(Character))

@@ -86,10 +86,12 @@ public static class Rankings
         {
             Func<CharacterRecord, long> score = Score(context, list);
             entries = Number(Characters(context)
-                .Select(character => (character.Name, Value: score(character), Extra: WinsLosses(character)))
-                .Where(entry => entry.Value > 0)
+                .Select(character => (character.Name, Value: score(character), Extra: WinsLosses(character),
+                    Skills: character.Skills.Sum(skill => (long)skill.Level)))
                 .OrderByDescending(entry => entry.Value)
-                .ThenBy(entry => entry.Name, StringComparer.OrdinalIgnoreCase));
+                .ThenByDescending(entry => entry.Skills)
+                .ThenBy(entry => entry.Name, StringComparer.OrdinalIgnoreCase)
+                .Select(entry => (entry.Name, entry.Value, entry.Extra)));
             self = (session.Name, score(session.Character), WinsLosses(session.Character));
         }
         bool arena = list is RankingList.Battle or RankingList.PkTop;
