@@ -157,6 +157,12 @@ public sealed partial class ClientSession
     {
         Vector3 at = position ?? (scene == WorldSettings.StartScene ? StartPosition : Context.Data.Scenes.SpawnPoint(scene));
         _shop.Clear();
+        if (TalkingTo != 0)
+        {
+            TalkingTo = 0;
+            CloseRebuild();
+            CloseNpcDialogue();
+        }
         CloseShipyard();
         CloseFleetViews();
         CloseLoot();
@@ -171,7 +177,7 @@ public sealed partial class ClientSession
             _ownPropertiesSent = true;
             Send(LoginPackets.OwnProperties(Properties), "(own properties after entering)");
         }
-        AtSea = (Context.Data.Scenes.IsSea(scene) || BboOceanScene(scene)) && !ForceLand;
+        AtSea = (Context.Data.Scenes.IsSea(scene) || BboOceanScene(scene) || BattleRules.CopyInScene(scene) is { Sea: true }) && !ForceLand;
         if (AtSea)
         {
             at = new Vector3(at.X, 0f, at.Z);

@@ -26,6 +26,7 @@ public sealed partial class ClientSession
 
     public void ChooseOption(int target, DialogueAction action)
     {
+        if (HandleMallOption(target, (int)action)) return;
         if (ShowClientMenuTalk(target, (int)action)) return;
         action = ClientMenuAction(action);
         if (HandleBattleOption(target, (int)action)) return;

@@ -36,6 +36,7 @@ public sealed class SelectCommand : ITextCommand
 
         if (how == RightClick)
         {
+            if (view == ViewId.Cargo) return true;
             if (session.MoveGear(view, index)) return true;
             return view == ViewId.BagItems && session.UseItem(index);
         }

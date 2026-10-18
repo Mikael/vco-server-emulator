@@ -485,11 +485,14 @@ public sealed partial class ClientSession
         }
         if (quest.Experience > 0 && quest.Skill.Length > 0) GainQuestSkillExperience(quest.Skill, quest.Experience);
         foreach ((string skill, long amount) in quest.SkillExp) GainQuestSkillExperience(skill, amount);
+        bool gotItems = false;
         foreach (QuestRewardItem item in RewardItemsFor(quest, choice))
         {
             GiveQuestItem(item);
             parts.Add(RewardLabel(item));
+            gotItems = true;
         }
+        if (gotItems) ItemObtained("", 0, "");
         if (quest.Reputation > 0) GainReputation(quest.Reputation);
         if (quest.Amity > 0)
         {

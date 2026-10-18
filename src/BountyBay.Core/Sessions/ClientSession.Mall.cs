@@ -12,14 +12,50 @@ public sealed partial class ClientSession
 
     private List<MallGoods>? _mall;
 
+    private const int MallMenuOption = 47000;
+    private static readonly string[] MallCategories = ["Experience", "Refine", "Sea Battle", "Land Battle", "Items", "Clothes", "Pets"];
+    private int _mallRequest;
+
     public void OpenMall()
     {
-        List<MallGoods> goods = ItemMall.Load(Context.Settings).Goods;
-        if (goods.Count == 0)
+        if (ItemMall.Load(Context.Settings).Goods.Count == 0)
         {
             NotAvailable("The item mall", "store realbuy");
             return;
         }
+        int request = ++_mallRequest;
+        _ = Task.Run(async () =>
+        {
+            await Task.Delay(400);
+            lock (Context.World.Sync)
+            {
+                if (request != _mallRequest || !InWorld) return;
+                ShowMall(0);
+            }
+        });
+    }
+
+    public bool HandleMallOption(int target, int option)
+    {
+        if (option < MallMenuOption || option > MallMenuOption + MallCategories.Length) return false;
+        _mallRequest++;
+        Send(UiPackets.CloseMenu(), "(mall category menu)");
+        ShowMall(option - MallMenuOption);
+        return true;
+    }
+
+    private void PreloadMallMenu()
+    {
+        var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, "Item Mall") };
+        for (int i = 0; i < MallCategories.Length; i++) entries.Add((DialogueEntry.Option, MallMenuOption + i + 1, MallCategories[i]));
+        entries.Add((DialogueEntry.Option, MallMenuOption, "All goods"));
+        Send(ChatPackets.NpcDialogue(ProtocolConstants.SelfObjectId, entries), "(mall category menu)");
+        Send(UiPackets.CloseMenu(), "(mall category menu)");
+    }
+
+    private void ShowMall(int category)
+    {
+        List<MallGoods> goods = ItemMall.Load(Context.Settings).Goods.Where(entry => category == 0 || entry.Category == category).ToList();
         if (_mall != null) Send(ViewPackets.Delete(MallView), "(mall refresh)");
         _mall = goods;
         Send(ViewPackets.Create(MallView, goods.Count), "(item mall)");
@@ -31,7 +67,8 @@ public sealed partial class ClientSession
                 ["Name"] = entry.Item,
                 ["Index"] = i + 1,
                 ["Amount"] = 1,
-                ["Photo"] = WhistleBook.Whistle(entry.Item)?.Image is > 0 and int image ? image : Context.Data.PhotoOf(entry.Item),
+                ["Photo"] = Context.Data.PhotoOf(entry.Item) is > 0 and int photo ? photo
+                    : WhistleBook.Whistle(entry.Item)?.Image is > 0 and int image ? image : 0,
             };
             ItemCatalog.Extend(item, entry.Item);
             item["Cost"] = entry.Price;
@@ -39,7 +76,8 @@ public sealed partial class ClientSession
             Send(ViewPackets.AddItem(MallView, i + 1, item), "(mall goods)");
         }
         SendMallPoints();
-        Log.Info(Tag, $"{Name} opens the item mall ({goods.Count} goods, {Character.GamePoints} points)");
+        PreloadMallMenu();
+        Log.Info(Tag, $"{Name} opens the item mall ({(category == 0 ? "all" : MallCategories[category - 1])}: {goods.Count} goods, {Character.GamePoints} points)");
     }
 
     private void SendMallPoints()
@@ -101,6 +139,7 @@ public sealed partial class ClientSession
         SystemMessage(WhistleBook.Whistle(goods.Item) != null
             ? $"You bought {quantity} x {goods.Name} for {cost} points. Open the pet list to call your pet."
             : $"You bought {quantity} x {goods.Name} for {cost} points.");
+        ItemObtained(goods.Item, quantity, "");
         Log.Info(Tag, $"{Name} buys {quantity} x {goods.Item} in the item mall for {cost} points");
         return true;
     }

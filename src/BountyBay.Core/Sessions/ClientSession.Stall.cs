@@ -310,6 +310,7 @@ public sealed partial class ClientSession
         Save();
         owner.Save();
         owner.SystemMessage($"{Name} bought {amount} of your articles for {cost} gold.");
+        ItemObtained(entry.Name, amount, "bought");
         Log.Info(Tag, $"{Name} buys {amount} x {entry.Name} for {cost} from the stall of {owner.Name}");
     }
 

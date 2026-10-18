@@ -31,6 +31,11 @@
 - **Command Interface**: learned stunts show under "Activate skill" (land stunts on On Land, sea stunts on At Sea) and
   gestures play when clicked.
 - **Pet portrait** shows in the pet frame.
+- **Buying and receiving items** (shops, stalls, the item mall, quest rewards, GM gifts) plays the item sound and says
+  what you got.
+- **Tools and other non-consumables** (pickaxe, hoe ...) are no longer used up when you right-click them.
+- **Item Mall**: the tabs (Experience, Refine, Sea Battle, Land Battle, Items, Clothes, Pets) show only their goods,
+  and pet whistles, Treasures from the Heaven, the Treasure Key, the Shopping Card and Voyager's Times have icons.
 - **Character creation**: the second figure (the woman in the beige dress) no longer has a floating head; she now
   wears the white blouse and laced vest. Characters created with the old dress are fixed when they log in.
 - **Character creation skill list** stays inside its box (four rows and a scroll bar) instead of spilling over the
@@ -57,6 +62,10 @@
   its arc, instead of a single broadside per click.
 - **Sinking** no longer takes your mounted cannons; ships that lost them get their starting cannons back once.
 - **Sailing out to the high seas** puts you right next to your port's harbour instead of far away from it.
+- **Pirate ships are beatable**: hull and cannons now scale with the ship's level (a level 1 pirate has 150 hull and
+  2 cannons, armed ships and flagships more), so a starter ship can win against low-level pirates.
+- **Sea instances** (Crete and North Sea pirate instances) put you on your ship instead of walking on the water.
+- **NPC windows close** when you sail off or change map (the Docker no longer stays open at sea).
 
 ### Towns and NPCs
 - **Stalls** show the stall table with goods in front of the seller, for the seller and everyone around. Type

@@ -8,6 +8,7 @@ public sealed class MallGoods
     public string Item { get; set; } = "";
     public string Name { get; set; } = "";
     public int Price { get; set; } = 100;
+    public int Category { get; set; }
 }
 
 public sealed class MallData

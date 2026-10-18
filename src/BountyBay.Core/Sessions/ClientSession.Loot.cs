@@ -8,6 +8,12 @@ namespace BountyBay.Core.Sessions;
 
 public sealed partial class ClientSession
 {
+    public void ItemObtained(string name, int amount, string verb)
+    {
+        Send(UiPackets.Custom("PlaySound SE3004"), "(item obtained sound)");
+        if (verb.Length > 0) SystemMessage($"You {verb} {ItemLabel(name)} x{amount}.");
+    }
+
     public const int LootView = 25;
 
     private const int LootSlots = 8;
@@ -63,8 +69,7 @@ public sealed partial class ClientSession
         Send(ViewPackets.RemoveItem(LootView, index), "(spoil taken)");
         taker.RefreshLoad();
         taker.Save();
-        taker.Send(UiPackets.Custom("PlaySound SE3004"), "(item obtained sound)");
-        taker.SystemMessage($"You obtained {taker.ItemLabel(item.Name)} x{item.Amount}.");
+        taker.ItemObtained(item.Name, item.Amount, "obtained");
         if (taker != this) taker.SystemMessage($"{Name} hands you {item.Amount} article(s) from the spoils.");
         Log.Info(Tag, $"{taker.Name} takes {item.Amount} x {item.Name} from the spoils");
         if (_loot.Count == 0) CloseLoot();

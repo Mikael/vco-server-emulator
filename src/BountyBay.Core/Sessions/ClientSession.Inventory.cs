@@ -326,6 +326,8 @@ public sealed partial class ClientSession
         return 0;
     }
 
+    private const int ToolItemType = 12;
+
     public bool UseItem(int index)
     {
         if (!Items.TryGetValue(index, out ItemStack? item)) return false;
@@ -333,6 +335,14 @@ public sealed partial class ClientSession
         if (UseGuildBuildItem(index, item)) return true;
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);
+        if (heal <= 0 && refresh <= 0)
+        {
+            string label = ItemLabel(item.Name);
+            SystemMessage(ItemCatalog.Number(item.Name, "ItemType") == ToolItemType
+                ? $"{label} is used automatically when you gather; keep it in your bag."
+                : $"{label} cannot be used this way.", SystemMessageKind.Prompt);
+            return true;
+        }
         if (heal > 0 && Hp >= MaxHp && (refresh <= 0 || Sp >= MaxSp))
         {
             SystemMessage("You are already at full health.");
@@ -449,6 +459,7 @@ public sealed partial class ClientSession
         SetMoney(Money - price);
         RefreshLoad();
         Save();
+        ItemObtained(entry.Name, count, "bought");
         Log.Info(Tag, $"{Name} buys {count} x {entry.Name} for {price}");
         return true;
     }

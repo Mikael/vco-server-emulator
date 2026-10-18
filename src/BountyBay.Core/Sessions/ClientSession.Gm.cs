@@ -20,7 +20,7 @@ public sealed partial class ClientSession
             return;
         }
         Save();
-        SystemMessage($"{key} x{item.Amount} added to your bag.");
+        ItemObtained(key, item.Amount, "received");
         Log.Info(Tag, $"{Name} spawns {key} x{item.Amount}");
     }
 }
