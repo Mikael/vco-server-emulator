@@ -189,8 +189,8 @@ public sealed partial class ClientSession
         taken = BboIncomingDamage(taken);
         if (FightingSkill() == "SKILL_AXE" && CombatRules.Chance(rules.PassiveChancePercentPerLevel * UniqueSkillLevel("US_AXE2")))
             taken = Math.Max(1, taken * rules.BlockDamagePercent / 100);
-        Send(ChatPackets.FloatingText(ProtocolConstants.SelfObjectId, $"-{taken}", 0xff0000, "wound", state.X, monster.Y, state.Z), "(damage number)");
-        ToOthers(ChatPackets.FloatingText(ObjectId, $"-{taken}", 0xff0000, "wound", state.X, monster.Y, state.Z), "(damage number)");
+        Send(ChatPackets.FloatingText(ProtocolConstants.SelfObjectId, $"{taken}", 0xff0000, "wound", state.X, monster.Y, state.Z), "(damage number)");
+        ToOthers(ChatPackets.FloatingText(ObjectId, $"{taken}", 0xff0000, "wound", state.X, monster.Y, state.Z), "(damage number)");
         if (Hp - taken > 0)
         {
             SetHp(Hp - taken);
@@ -242,7 +242,7 @@ public sealed partial class ClientSession
         state.Hp -= dealt;
         List<ClientSession> everyone = [this, .. Others()];
         (float x, float z) = Mover!.Now();
-        byte[] number = ChatPackets.FloatingText(monster.Id, $"-{dealt}", colour, "wound", x, Height, z);
+        byte[] number = ChatPackets.FloatingText(monster.Id, $"{dealt}", colour, "wound", x, Height, z);
         foreach (ClientSession session in everyone) session.Send(number, "(damage number)");
 
         if (state.Hp > 0)

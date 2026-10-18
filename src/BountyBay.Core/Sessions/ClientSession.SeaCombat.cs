@@ -279,7 +279,7 @@ public sealed partial class ClientSession
         Sea.Later(Math.Min(4.0, distance / Math.Max(1f, cannon.BallSpeed)), () =>
         {
             if (!InWorld || !AtSea || SeaSunk || Scene != definition.Scene) return;
-            string text = hits > 0 ? $"-{hull}" : "Miss";
+            string text = hits > 0 ? $"{hull}" : "Miss";
             float fraction = SeaPackets.HitChance(hits, balls);
             Send(SeaPackets.Volley(ProtocolConstants.SelfObjectId, ammunition.ShellType, balls, fraction, ship.X, ship.Z, text), "(volley lands)");
             ToOthers(SeaPackets.Volley(ObjectId, ammunition.ShellType, balls, fraction, ship.X, ship.Z, text), $"(volley lands on {Name})");
@@ -371,7 +371,7 @@ public sealed partial class ClientSession
         if (ship.Dead) return;
         SeaNpcDefinition definition = ship.Definition;
         byte[] volley = SeaPackets.Volley(definition.Id, shellType, balls, SeaPackets.HitChance(hits, balls), fromX, fromZ,
-            hits > 0 ? $"-{damage.Hull}" : "Miss", 0xffff00);
+            hits > 0 ? $"{damage.Hull}" : "Miss", 0xffff00);
         List<ClientSession> watchers = Sea.Sailors(definition.Scene).ToList();
         foreach (ClientSession session in watchers) session.Send(volley, "(broadside lands)");
         if (hits <= 0) return;

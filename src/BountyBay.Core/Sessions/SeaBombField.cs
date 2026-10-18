@@ -75,7 +75,7 @@ public sealed class SeaBombField
     {
         SeaNpcDefinition definition = ship.Definition;
         int damage = Math.Max(1, bomb.Damage - definition.ArmourHull);
-        byte[] blast = SeaBombPackets.Explosion(definition.Id, bomb.X, bomb.Z, $"-{damage}");
+        byte[] blast = SeaBombPackets.Explosion(definition.Id, bomb.X, bomb.Z, $"{damage}");
         foreach (ClientSession session in sea.Sailors(bomb.Scene)) session.Send(blast, $"({bomb.Label} explodes under {definition.Name})");
         ship.Hull -= damage;
         Log.Info("Sea", $"{bomb.OwnerName}'s {bomb.Item} hits {definition.Name} for {damage}");
