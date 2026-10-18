@@ -21,6 +21,7 @@ public sealed partial class ClientSession
     public bool HandleGuildHallOption(int target, int option)
     {
         if (option is < GuildHallOption or > GuildHallLastOption) return false;
+        if (HandleGuildTaskOption(target, option)) return true;
         switch (option)
         {
             case GuildHallCopyOption:
@@ -72,6 +73,7 @@ public sealed partial class ClientSession
             entries.Add((DialogueEntry.Option, GuildHallMedalOption, "Manage an Honor Medal"));
             entries.Add((DialogueEntry.Option, GuildHallBuildOption, "Guild construction"));
             entries.Add((DialogueEntry.Option, GuildHallActivityOption, "Guild activity and welfare"));
+            AddGuildTaskOptions(entries);
         }
         entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
         Send(ChatPackets.NpcDialogue(target, entries), "(guild hall)");
@@ -83,11 +85,8 @@ public sealed partial class ClientSession
         if (Guild is not { } guild) return;
         GuildBuildState state = GuildBuildDirectory.State(Context, guild);
         string today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        if (state.LastActive.TryGetValue(Name, out string? last) && last == today)
-        {
-            SendGuildActivity(guild);
-            return;
-        }
+        // scConActDetail opens the welfare window, so it is only sent when the player asks for it.
+        if (state.LastActive.TryGetValue(Name, out string? last) && last == today) return;
         state.LastActive[Name] = today;
         GuildBuildDirectory.AddActivity(Context, guild, GuildBuildDirectory.Rules(Context).Activity.DailyLogin, $"{Name} logged in");
     }

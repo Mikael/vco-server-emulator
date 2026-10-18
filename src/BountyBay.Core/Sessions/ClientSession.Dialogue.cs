@@ -87,6 +87,10 @@ public sealed partial class ClientSession
             case DialogueAction.Sail:
                 SailOff();
                 break;
+            case DialogueAction.BattleTaskDeus or DialogueAction.BattleTaskPalenque:
+                CloseNpcDialogue();
+                OpenBattleTasks(action == DialogueAction.BattleTaskDeus ? 0 : 1);
+                break;
             case DialogueAction.TavernHireNeeded or DialogueAction.TavernHireAll or DialogueAction.TavernHireSome
                 or DialogueAction.TavernHeal or DialogueAction.TavernDismiss:
                 TavernSailors(action);

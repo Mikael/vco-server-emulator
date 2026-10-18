@@ -44,8 +44,6 @@ public static class GuildBuildDirectory
         if (after > before) Note(context, guild, $"Guild activity reached level {after}.");
         GuildBuildStore.Save();
         Log.Info("GuildBuild", $"{guild.Name} activity +{amount} ({reason}) = {state.Activity}");
-        byte[] packet = GuildBuildPackets.Activity(after, state.Activity);
-        foreach (ClientSession member in Online(context, guild)) member.Send(packet, "(guild activity)");
     }
 
     public static void Note(ServerContext context, Guild guild, string line)

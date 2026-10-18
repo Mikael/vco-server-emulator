@@ -104,6 +104,15 @@ public sealed class TowerDefinition
     public List<TowerFloor> Floors { get; set; } = [];
 }
 
+public sealed class BattleDailyTask
+{
+    public int Battle { get; set; }
+    public string CostItem { get; set; } = "";
+    public bool CostPoints { get; set; }
+    public List<int> Costs { get; set; } = [];
+    public List<int> BonusPercent { get; set; } = [];
+}
+
 public sealed class BattleBook
 {
     private static readonly object Gate = new();
@@ -114,6 +123,9 @@ public sealed class BattleBook
     public int ReturnSeconds { get; set; } = 60;
     public int QueueWaitUnit { get; set; } = 1;
     public List<BattleDefinition> Battles { get; set; } = [];
+
+    // dlgBattleTask / dlgRelicTask: csAcceptTeamBTask 0-3 and 4-7, four tiers each.
+    public List<BattleDailyTask> DailyTasks { get; set; } = [];
     public int CopyDailyEntries { get; set; }
     public int CopyMinPlayers { get; set; } = 1;
     public int CopyMaxPlayers { get; set; } = 5;

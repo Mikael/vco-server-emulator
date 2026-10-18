@@ -136,6 +136,8 @@ public enum DialogueAction
     TavernHireSome = 18,
     TavernHeal = 19,
     TavernDismiss = 20,
+    BattleTaskDeus = 21,
+    BattleTaskPalenque = 22,
     Guild = 200,
 }
 

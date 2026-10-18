@@ -8,6 +8,13 @@
   "EnforceRequirements": true,
   "ConfirmSeconds": 15,
   "ReturnSeconds": 60,
+  // Daily battlefield quests (dlgBattleTask / dlgRelicTask). Prices CLIENT numtostring.ini [BattleTask] and Suspend.ini
+  // BattleTaskSuspend0-3 / RelicTaskSuspend0-3 (St Deus pays Special Offer Vouchers, Palenque pays points).
+  // BonusPercent GUESS: extra share of that day's battlefield reward per tier.
+  "DailyTasks": [
+    { "Battle": 5, "CostItem": "propDJ3206", "Costs": [0, 250, 2500, 25000], "BonusPercent": [50, 100, 200, 400] },
+    { "Battle": 7, "CostPoints": true, "Costs": [0, 250, 2500, 25000], "BonusPercent": [50, 100, 200, 400] }
+  ],
   "Battles": [
     {
       "Type": 1, "Act": 0, "ActFlag": 0, "Name": "Petro Fortress", "Scene": 1001040, "SceneKind": 26, "Report": "HonorLand",

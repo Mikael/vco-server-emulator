@@ -2,6 +2,14 @@
 
 ## 2026-10-18
 
+- **Guild construction quests** at the guild hall: take a commercialization or industrialization quest, collect the
+  goods and hand them in through the Submit Goods window. A finished quest raises the guild's Economic or Industrial
+  degree, your contribution and the guild's vigor.
+- **Daily battlefield quests** at the Practice Field Administrators (St. Deus and Palenque windows): pick a tier, pay
+  it, and your next reward on that battlefield is raised. One a day.
+- **Virtual teammates** from the team window join your team and show in the team frame.
+- **Chat invites** and **cross-server teams** work (cross-server teams are normal teams on one server).
+- The **Society Welfare** window no longer pops up at login or when guild vigor changes.
 - **General equipment rebuild** (Equipment Rebuild System for General pieces FG000001-015) works: activate lines, lock
   lines, three free rebuilds a day, then Modification Stones or Special Offer Vouchers (client cost tables), Save/Cancel.
 - **Star soul batch rebuild** rolls ten results at once and keeps the one you pick.

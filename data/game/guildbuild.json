@@ -22,7 +22,15 @@
       { "Item": "DJ007877", "Degree": 3, "Amount": 25, "Contribution": 25 }
     ],
     "LogPageSize": 20,
-    "LogLimit": 200
+    "LogLimit": 200,
+    "Tasks": {
+      "Count": 20,
+      "Degree": 5,
+      "Contribution": 20,
+      "Activity": 50,
+      "Commerce": ["IDName00003419", "IDName00003428", "IDName00003433"],
+      "Industry": ["IDName00003456", "IDName00003462", "IDName00003492"]
+    }
   },
   "Medals": {
     "Fragment": "DJ010398",

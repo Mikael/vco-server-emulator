@@ -48,8 +48,8 @@ public sealed class BboQuestCommands : ITextCommand
             case "csAskRookieInfo":
                 Log.Debug(session.Tag, $"{session.Name} rookie info request: {string.Join(' ', words)}");
                 return true;
-            case "csAcceptTeamBTask":
-                session.NotAvailable("Team battle tasks", words[0]);
+            case "csAcceptTeamBTask" when words.Length >= 2 && int.TryParse(words[1], out int battleTask):
+                session.AcceptBattleTask(battleTask);
                 return true;
             case "SelectExploreArea":
                 if (words.Length >= 2 && int.TryParse(words[1], out int area)) session.SelectExploreArea(area);
@@ -90,14 +90,19 @@ public sealed class BboTeamCommands : ITextCommand
             case "csPermit":
                 Log.Debug(session.Tag, $"{session.Name} permit answer: {string.Join(' ', words)}");
                 return true;
-            case "VirtualTeam":
-                session.NotAvailable("Team recruiting", words[0]);
+            // VirtualTeam <name> <portrait>: the client picks an AI companion from VirtualTeam.ini; names can contain spaces.
+            case "VirtualTeam" when words.Length >= 3 && int.TryParse(words[^1], out int photo):
+                TeamDirectory.AddVirtual(session, string.Join(' ', words[1..^1]).Replace(UiPackets.Blank, ' '), photo);
                 return true;
-            case "csCreateCrossTeam" or "csCrossTeamInvite":
-                session.NotAvailable("Cross-server teams", words[0]);
+            // One server: a cross-server team is an ordinary team.
+            case "csCreateCrossTeam":
+                session.SystemMessage("Your team is open. Invite players to join it.");
                 return true;
-            case "ChatInvite":
-                session.NotAvailable("Chat rooms", words[0]);
+            case "csCrossTeamInvite" when words.Length >= 2:
+                TeamDirectory.Invite(session, words[1].Replace(UiPackets.Blank, ' '));
+                return true;
+            case "ChatInvite" when words.Length >= 2:
+                session.InviteToChat(string.Join(' ', words[1..]).Replace(UiPackets.Blank, ' '));
                 return true;
             default:
                 return false;

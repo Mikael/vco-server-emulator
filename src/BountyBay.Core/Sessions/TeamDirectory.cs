@@ -18,6 +18,11 @@ public sealed class Team
 
     public int OceanMode { get; set; }
 
+    // AI companions from the client's VirtualTeam.ini (team window "virtual member" button).
+    public List<(string Name, int Photo)> Virtual { get; } = [];
+
+    public int Size => Members.Count + Virtual.Count;
+
     public ClientSession Leader => Members[0];
 }
 
@@ -53,7 +58,7 @@ public static class TeamDirectory
             inviter.SystemMessage("Only the team leader can invite players.");
             return;
         }
-        if (team != null && team.Members.Count >= MaxMembers)
+        if (team != null && team.Size >= MaxMembers)
         {
             inviter.SystemMessage("The team is full.");
             return;
@@ -102,7 +107,7 @@ public static class TeamDirectory
             return;
         }
         Team? team = inviter.Team;
-        if (team != null && (team.Leader != inviter || team.Members.Count >= MaxMembers))
+        if (team != null && (team.Leader != inviter || team.Size >= MaxMembers))
         {
             invitee.SystemMessage(team.Leader != inviter ? "The invitation is no longer valid." : "The team is full.");
             return;
@@ -152,6 +157,14 @@ public static class TeamDirectory
             leader.SystemMessage("Only the team leader can remove members.");
             return;
         }
+        int companion = team.Virtual.FindIndex(entry => entry.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        if (companion >= 0)
+        {
+            team.Virtual.RemoveAt(companion);
+            Remove(team, null, connected: true);
+            Tell(team, $"{name} left the team.");
+            return;
+        }
         ClientSession? member = team.Members.FirstOrDefault(other => other.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         if (member == null)
         {
@@ -161,6 +174,32 @@ public static class TeamDirectory
         Remove(team, member, connected: true);
         member.SystemMessage("You were removed from the team.");
         Tell(team, $"{member.Name} was removed from the team.");
+    }
+
+    public static void AddVirtual(ClientSession leader, string name, int photo)
+    {
+        Team? team = leader.Team;
+        if (team != null && team.Leader != leader)
+        {
+            leader.SystemMessage("Only the team leader can add members.");
+            return;
+        }
+        if (team != null && team.Size >= MaxMembers)
+        {
+            leader.SystemMessage("The team is full.");
+            return;
+        }
+        if (team == null)
+        {
+            team = new Team(Interlocked.Increment(ref _nextId), leader);
+            leader.Team = team;
+            Join(leader, team);
+        }
+        if (team.Virtual.Any(entry => entry.Name == name)) return;
+        team.Virtual.Add((name, photo));
+        Publish(team);
+        Tell(team, $"{name} joined the team.");
+        Log.Info(leader.Tag, $"{leader.Name} adds virtual teammate {name}");
     }
 
     public static void SetOceanMode(ClientSession leader, int mode)
@@ -228,14 +267,18 @@ public static class TeamDirectory
         member.Send(TablePackets.Clear(GameTables.Team), "(clear Team)");
     }
 
-    private static void Remove(Team team, ClientSession member, bool connected)
+    private static void Remove(Team team, ClientSession? member, bool connected)
     {
         ClientSession leader = team.Leader;
-        team.Members.Remove(member);
-        if (connected) Part(member);
-        else member.Team = null;
+        if (member != null)
+        {
+            team.Members.Remove(member);
+            if (connected) Part(member);
+            else member.Team = null;
+        }
+        if (team.Members.Count == 0) team.Virtual.Clear();
 
-        if (team.Members.Count <= 1)
+        if (team.Size <= 1)
         {
             foreach (ClientSession last in team.Members.ToList())
             {
@@ -243,6 +286,7 @@ public static class TeamDirectory
                 last.SystemMessage("The team has been disbanded.");
             }
             team.Members.Clear();
+            team.Virtual.Clear();
             return;
         }
         Publish(team);
@@ -254,6 +298,7 @@ public static class TeamDirectory
         if (GameTables.Team.Columns.Length < 3) return;
         List<object[]> rows = team.Members
             .Select(member => new object[] { member.Name, member.Portrait, $"{member.ObjectId}.0" })
+            .Concat(team.Virtual.Select(entry => new object[] { entry.Name, entry.Photo, "0.0" }))
             .ToList();
         foreach (ClientSession member in team.Members)
         {

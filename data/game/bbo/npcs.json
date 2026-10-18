@@ -9028,8 +9028,16 @@
     "X": -2.71,
     "Y": 15.71,
     "Z": -99.31,
-    "Greeting": "Good day.",
+    "Greeting": "The battlefields are open to all captains. Take a daily quest before you fight for extra rewards.",
     "Options": [
+      {
+        "Action": "BattleTaskDeus",
+        "Text": "St. Deus Battlefield daily quest"
+      },
+      {
+        "Action": "BattleTaskPalenque",
+        "Text": "Palenque Battle daily quest"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -9045,7 +9053,8 @@
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
+      "Greeting": "GUESS default",
+      "Options": "GUESS: the client opens dlgBattleTask/dlgRelicTask only on scOpenTeamBattleTask; given to the Practice Field Administrators"
     }
   },
   {
@@ -21554,8 +21563,16 @@
     "X": 65.9,
     "Y": 5.09,
     "Z": -33.18,
-    "Greeting": "Good day.",
+    "Greeting": "The battlefields are open to all captains. Take a daily quest before you fight for extra rewards.",
     "Options": [
+      {
+        "Action": "BattleTaskDeus",
+        "Text": "St. Deus Battlefield daily quest"
+      },
+      {
+        "Action": "BattleTaskPalenque",
+        "Text": "Palenque Battle daily quest"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -21571,7 +21588,8 @@
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1024002.ini)",
-      "Greeting": "GUESS default"
+      "Greeting": "GUESS default",
+      "Options": "GUESS: the client opens dlgBattleTask/dlgRelicTask only on scOpenTeamBattleTask; given to the Practice Field Administrators"
     }
   },
   {
@@ -36242,8 +36260,16 @@
     "X": -20.84,
     "Y": 10.85,
     "Z": 16.55,
-    "Greeting": "Good day.",
+    "Greeting": "The battlefields are open to all captains. Take a daily quest before you fight for extra rewards.",
     "Options": [
+      {
+        "Action": "BattleTaskDeus",
+        "Text": "St. Deus Battlefield daily quest"
+      },
+      {
+        "Action": "BattleTaskPalenque",
+        "Text": "Palenque Battle daily quest"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -36259,7 +36285,8 @@
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
+      "Greeting": "GUESS default",
+      "Options": "GUESS: the client opens dlgBattleTask/dlgRelicTask only on scOpenTeamBattleTask; given to the Practice Field Administrators"
     }
   },
   {
@@ -53188,8 +53215,16 @@
     "X": 18.25,
     "Y": 11.2,
     "Z": -21.55,
-    "Greeting": "Good day.",
+    "Greeting": "The battlefields are open to all captains. Take a daily quest before you fight for extra rewards.",
     "Options": [
+      {
+        "Action": "BattleTaskDeus",
+        "Text": "St. Deus Battlefield daily quest"
+      },
+      {
+        "Action": "BattleTaskPalenque",
+        "Text": "Palenque Battle daily quest"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -53205,7 +53240,8 @@
       "Name": "CLIENT IDName00005001",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
+      "Greeting": "GUESS default",
+      "Options": "GUESS: the client opens dlgBattleTask/dlgRelicTask only on scOpenTeamBattleTask; given to the Practice Field Administrators"
     }
   },
   {

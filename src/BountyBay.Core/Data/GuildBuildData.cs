@@ -32,8 +32,22 @@ public sealed class GuildConstructionRules
     public List<GuildBuildMedal> Medals { get; set; } = [];
     public int LogPageSize { get; set; } = 20;
     public int LogLimit { get; set; } = 200;
+    public GuildTaskRules Tasks { get; set; } = new();
 
     public int DegreeMax(int level) => DegreePerLevel * Math.Max(1, level);
+}
+
+// Guild construction quests (client NewTask 99990000 commerce / 99980000 industry): collect goods for the guild minister.
+public sealed class GuildTaskRules
+{
+    public int Count { get; set; } = 20;
+    public int Degree { get; set; } = 5;
+    public int Contribution { get; set; } = 20;
+    public int Activity { get; set; } = 50;
+    public List<string> Commerce { get; set; } = [];
+    public List<string> Industry { get; set; } = [];
+
+    public List<string> Goods(int kind) => kind == 0 ? Commerce : Industry;
 }
 
 public sealed class GuildArmRules

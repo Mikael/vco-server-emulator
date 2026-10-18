@@ -64,8 +64,11 @@ public sealed class GuildCommands : ITextCommand
             case "ChangeConsWarState":
                 session.SystemMessage("Guild battles are not available on this server.");
                 return true;
-            case "BeforeConsBid" or "ReferConsTaskItem":
+            case "BeforeConsBid":
                 session.SystemMessage("Guild tasks are not available on this server.");
+                return true;
+            case "ReferConsTaskItem":
+                session.ReferGuildTaskItems(words.Skip(1).Select(word => int.TryParse(word, out int value) ? value : -1).ToList());
                 return true;
             default:
                 return false;

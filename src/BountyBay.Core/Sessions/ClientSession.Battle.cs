@@ -312,7 +312,8 @@ public sealed partial class ClientSession
             Save();
             return;
         }
-        foreach (BattleReward reward in won ? tier.Win : tier.Lose) GiveBattleReward(reward, fighter);
+        List<BattleReward> earnedRewards = won ? tier.Win : tier.Lose;
+        foreach (BattleReward reward in earnedRewards.Concat(BattleTaskBonus(definition, earnedRewards))) GiveBattleReward(reward, fighter);
         List<BattleFighter> entered = room.Fighters.Where(other => other.Entered && !other.Left).ToList();
         foreach (BattleSortPrize prize in definition.SortPrizes)
         {
