@@ -6,10 +6,6 @@ using BountyBay.Core.Protocol.Packets;
 
 namespace BountyBay.Core.Sessions;
 
-// Guild construction quests (client NewTask 99990000 commerce / 99980000 industry). The guild hall hands out a quest
-// to collect goods for the guild minister; they are handed in through dlgDeal, opened by
-// "ShowConsTaskItemByName <views> <names>". Its Send button answers "ReferConsTaskItem" with two numbers (view and
-// slot index) for every item put in the window.
 public sealed partial class ClientSession
 {
     public const int GuildHallTaskCommerceOption = 468;
@@ -149,7 +145,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} completes a guild construction quest for {guild.Name}");
     }
 
-    // The window sends each item as two numbers; accept either order.
     private bool GuildTaskSlot(int first, int second, string item, out int view, out int index)
     {
         foreach ((int v, int i) in new[] { (first, second), (second, first) })

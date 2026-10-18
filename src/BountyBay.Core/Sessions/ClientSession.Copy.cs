@@ -146,8 +146,6 @@ public sealed partial class ClientSession
             .Select(definition => new object[] { definition.Key, definition.Name, $"{InstanceEntriesLeft(definition)}", $"{BattleRules.CopyDailyEntries}" }).ToList();
         Send(TablePackets.Clear(BattleTables.CopyLeftTimes), "(clear CopyLeftTimes)");
         Send(TablePackets.Rows(BattleTables.CopyLeftTimes, rows), "(CopyLeftTimes)");
-        // dlgCopyLeftTimes shows the client's custom table 47, filled row by row with the "ut" keyword:
-        // "ut <table>\b<cell>\b<cell>...", where the message's object id is the row key.
         for (int i = 0; i < rows.Count; i++)
             Send(ChatPackets.Script(CopyRowKey + i, $"ut {BattleTables.CopyLeftTimes.Id}\b" + string.Join("\b", rows[i])), "(instance row)");
     }

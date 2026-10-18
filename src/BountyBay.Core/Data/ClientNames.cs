@@ -2,7 +2,6 @@ using BountyBay.Core.Configuration;
 
 namespace BountyBay.Core.Data;
 
-// Display names from the client's namelist.idres ([SKILL_SWORD] name=Sword-playing, [US_SWORD1] name=Stab, ...).
 public static class ClientNames
 {
     private static readonly object Gate = new();

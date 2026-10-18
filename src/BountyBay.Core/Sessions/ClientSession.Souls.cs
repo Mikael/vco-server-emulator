@@ -334,7 +334,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} luck soul command: {string.Join(' ', words)}");
     }
 
-    // dlgCharmLargeRebuild: ten rebuilds at once (csStartCFightSoulList <slot>), keep one (csSaveCFightSoulList <slot> <row>).
     private const int BatchRebuilds = 10;
     private const int SoulBatchRowKey = 0x7E100000;
 
@@ -370,8 +369,6 @@ public sealed partial class ClientSession
         if (!PaySoulCost(materials, SoulRules.At(Souls.RebuildFeeGuess, quality) * BatchRebuilds)) return;
         _soulSlot = slot;
         _soulBatch = Enumerable.Range(0, BatchRebuilds).Select(_ => RollAttributes(soul.Id)).ToList();
-        // dlgCharmLargeRebuild reads the client's custom table 87: "ut 87\b<row>\b<quality>\b<Name-Value-Tier;...>",
-        // one script per row with the row key as the object id.
         Send(CharacterPackets.ClearCustomTable(SoulPackets.BatchRebuildTable), "(clear star soul batch)");
         for (int row = 0; row < _soulBatch.Count; row++)
             Send(ChatPackets.Script(SoulBatchRowKey + row, $"ut {SoulPackets.BatchRebuildTable}\b{row}\b{quality}\b{string.Join(';', SoulRows(soul, _soulBatch[row]))}"),

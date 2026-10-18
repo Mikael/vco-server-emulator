@@ -102,7 +102,6 @@ public sealed class AideCommands : ITextCommand
         session.UseAideSkill(skill, x, z);
     }
 
-    // csAideArmRebuild <mode> <n> <prop> <prop> ...: the attribute indices after the count are the locked lines.
     private static HashSet<int> Locked(string[] words, int first)
         => words.Skip(first).Select(word => int.TryParse(word, out int prop) ? prop : -1).Where(prop => prop >= 0).ToHashSet();
 

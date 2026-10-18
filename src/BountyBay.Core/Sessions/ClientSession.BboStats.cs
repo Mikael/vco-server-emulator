@@ -215,12 +215,6 @@ public sealed partial class ClientSession
     {
         int work = Character.WorkType > 0 && Character.WorkType < WorkNames.Length ? Character.WorkType : 0;
         yield return ("WorkType", work);
-        // The overhead label (Alt) shows "WorkName WorkLevel" and nothing at all without a profession; the client has no name for
-        // profession 0, so characters without one show "Adventurer" and their character level.
-        yield return ("WorkLevel", work == 0 ? Math.Max(1, TotalSkillLevel) : Math.Max(1, Character.WorkLevel));
-        // The bar above the shortcut keys draws MultWorkExp * 2147483647 + WorkExp against the same pair of maxima, and only when
-        // all four are known. The level beside the portrait is the total skill level, so the bar shows the experience gathered
-        // in the skills against what they need for their next level.
         (long experience, long needed) = LevelProgress();
         yield return ("MultWorkExp", (int)(experience / int.MaxValue));
         yield return ("WorkExp", (int)(experience % int.MaxValue));

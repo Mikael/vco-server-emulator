@@ -3,7 +3,6 @@ using BountyBay.Core.Configuration;
 
 namespace BountyBay.Core.Data;
 
-// Open-water points per ocean scene (data/game/bbo/oceanwater.json), each checked in the client to be sea, not land.
 public static class ScenePaths
 {
     private static readonly object Gate = new();

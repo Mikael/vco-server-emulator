@@ -294,8 +294,6 @@ public sealed partial class ClientSession
             string city = CityOf(names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim());
             if (city.Length > 0) coasts.TryAdd(city, scene);
         }
-        // Coast scenes that are not numbered xxx003, such as the Pacific towns (San Francisco 1603011, Seward 1603001...):
-        // any other sea scene whose map is named after the harbour.
         foreach (string file in Directory.EnumerateFiles(scenes, "*.ini"))
         {
             if (!int.TryParse(Path.GetFileNameWithoutExtension(file), out int scene) || BboOceanScene(scene) || scene % 1000 == 3) continue;

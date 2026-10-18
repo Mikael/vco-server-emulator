@@ -11,8 +11,6 @@ public sealed class AideArmRules
     public int Lines { get; set; } = 3;
 }
 
-// General (aide) equipment rebuilding, read from the client: FGRebuild.ini [FGRefineProp] (attribute names) and
-// [Range0..2] (value brackets per quality), numtostring.ini [FGRebuildNum_1/2] (cost per quality and locked lines).
 public sealed class AideArmBook
 {
     private static readonly object Gate = new();
@@ -46,7 +44,6 @@ public sealed class AideArmBook
 
     public static bool IsGeneralEquipment(string item) => GeneralNumber(item) > 0;
 
-    // FG000001..FG000015: five pieces, 1-5 Primary, 6-10 Intermediate, 11-15 Advanced.
     public static int QualityOf(string item) => GeneralNumber(item) is > 0 and var number ? Math.Min(3, (number - 1) / 5 + 1) : 0;
 
     private static int GeneralNumber(string item)

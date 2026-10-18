@@ -37,7 +37,6 @@ public sealed class GuildConstructionRules
     public int DegreeMax(int level) => DegreePerLevel * Math.Max(1, level);
 }
 
-// Guild construction quests (client NewTask 99990000 commerce / 99980000 industry): collect goods for the guild minister.
 public sealed class GuildTaskRules
 {
     public int Count { get; set; } = 20;

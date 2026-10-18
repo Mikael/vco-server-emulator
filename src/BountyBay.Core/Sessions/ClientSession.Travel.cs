@@ -66,7 +66,6 @@ public sealed partial class ClientSession
 
     private const float NpcLeaveDistance = 10f;
 
-    // Walking away from an NPC closes its windows (talk, shop, warehouse, shipyard), like the original server.
     private void LeaveNpcIfFar(float x, float z)
     {
         if (TalkingTo == 0 || AtSea || !Context.Data.Npcs.TryGetValue(TalkingTo, out NpcDefinition? npc) || npc.Scene != Scene) return;

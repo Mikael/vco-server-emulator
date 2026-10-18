@@ -43,7 +43,6 @@ public sealed partial class ClientSession
         return tempered + NobleSetBonus(property);
     }
 
-    // Suspend_Suit.ini: wearing 4 and 7 pieces of the same rank (Baron .. Marquis) adds the set's buffs.
     private int NobleSetBonus(string property)
     {
         Dictionary<int, int> pieces = Character.RankWorn.Values.Select(item => NobleKey.Match(item.Name))
@@ -408,7 +407,6 @@ public sealed partial class ClientSession
         Send(RankArmPackets.Essence(Character.TemperEssence), "(tempered essences)");
     }
 
-    // Rows of the Nobility Equipment "Attribute" panel (client DarkEquipUpdate.ini [RankPropView] 0..15).
     private static readonly string[] NobleViewProps =
     [
         "AddMaxHP", "AddMaxSP", "AddAT", "AddDF", "AddHitRatio", "AddDodgeRatio", "Acute", "Physique",

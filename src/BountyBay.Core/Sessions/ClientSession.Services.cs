@@ -6,9 +6,6 @@ using BountyBay.Core.Protocol.Packets;
 
 namespace BountyBay.Core.Sessions;
 
-// Town service NPCs whose menus came from the original server scripts: priests (Healing/Donation, client menu
-// gnnpc010 -45072/-45071), battlefield healers and repair booths, and the Identifiers who verify Authenticating
-// Articles ("ask the Evaluation Master to help verify the object and then obtain the corresponding reputation points").
 public sealed partial class ClientSession
 {
     public static class ServiceOption
@@ -24,7 +21,6 @@ public sealed partial class ClientSession
         public const int Last = 619;
     }
 
-    // GUESS (services.json): the client records no donation reward or healing fee; reputation per silver is our choice.
     private ServiceRules Services => ServiceRules.For(Context.Settings);
 
     private bool HandleServiceOption(int target, int option)
@@ -112,7 +108,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} donates {amount}");
     }
 
-    // Battlefield repair booths mend the ship where it lies, free of charge.
     private void FieldRepair(int target)
     {
         EnsureShipState();

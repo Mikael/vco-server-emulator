@@ -124,7 +124,6 @@ public sealed class BattleBook
     public int QueueWaitUnit { get; set; } = 1;
     public List<BattleDefinition> Battles { get; set; } = [];
 
-    // dlgBattleTask / dlgRelicTask: csAcceptTeamBTask 0-3 and 4-7, four tiers each.
     public List<BattleDailyTask> DailyTasks { get; set; } = [];
     public int CopyDailyEntries { get; set; }
     public int CopyMinPlayers { get; set; } = 1;

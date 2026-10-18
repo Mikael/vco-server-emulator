@@ -80,7 +80,6 @@ public sealed class LeaveGroupCommand : ITextCommand
 
     public bool Execute(ClientSession session, string[] words)
     {
-
         session.SystemMessage("There is nothing to leave here.");
         return true;
     }

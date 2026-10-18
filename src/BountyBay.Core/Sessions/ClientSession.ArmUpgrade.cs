@@ -58,7 +58,6 @@ public sealed partial class ClientSession
         }
         if (!OpenArmExchange(npc.Name)) return false;
         TalkingTo = npc.Id;
-        // The client window holds the forging materials; the staff's other exchanges stay in the dialogue beside it.
         if (ExchangesOf(npc.Id) is { } groups) ShowExchangeGroups(npc.Id, groups);
         else Send(UiPackets.CloseMenu(), "(exchange opened)");
         return true;

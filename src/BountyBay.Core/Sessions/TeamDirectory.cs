@@ -18,7 +18,6 @@ public sealed class Team
 
     public int OceanMode { get; set; }
 
-    // AI companions from the client's VirtualTeam.ini (team window "virtual member" button).
     public List<(string Name, int Photo)> Virtual { get; } = [];
 
     public int Size => Members.Count + Virtual.Count;

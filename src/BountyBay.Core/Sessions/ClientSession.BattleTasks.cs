@@ -7,9 +7,6 @@ using BountyBay.Core.Protocol.Packets;
 
 namespace BountyBay.Core.Sessions;
 
-// Daily battlefield quests. "scOpenTeamBattleTask 0" opens dlgBattleTask (St Deus), "1" dlgRelicTask (Palenque); the
-// windows answer csAcceptTeamBTask <id>, 0-3 and 4-7 = the four tiers of each. A quest lasts for the day and adds a
-// share of the battlefield's next reward.
 public sealed partial class ClientSession
 {
     private const int TaskTiers = 4;
@@ -56,7 +53,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} accepts the {name} daily quest, tier {tier}");
     }
 
-    // Called with the rewards of a finished battle; returns the bonus rewards of today's quest, once.
     private List<BattleReward> BattleTaskBonus(BattleDefinition battle, IEnumerable<BattleReward> earned)
     {
         if (!Character.BattleTasks.TryGetValue(battle.Type, out BattleTaskRecord? task) || task.Day != BattleTaskDay || task.Done)

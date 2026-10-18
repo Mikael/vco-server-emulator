@@ -18,7 +18,6 @@ public sealed class ServiceExchangeGroup
     public List<ServiceExchange> Entries { get; set; } = [];
 }
 
-// data\game\services.json: town service NPCs (priests, healers, Identifiers, exchange staff).
 public sealed class ServiceRules
 {
     private static readonly object Gate = new();

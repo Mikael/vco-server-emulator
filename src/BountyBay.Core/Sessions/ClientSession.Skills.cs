@@ -198,7 +198,6 @@ public sealed partial class ClientSession
         Character.SkillExperience[key] = (int)Math.Min(int.MaxValue, experience);
         if (!raised)
         {
-            // The skill window copies the rows when they arrive and ignores cell changes, so the bar only moves on a resend.
             if (SkillRowIndex(key) >= 0)
             {
                 Send(TablePackets.Clear(GameTables.Skill), "(clear Skill)");
@@ -294,7 +293,6 @@ public sealed partial class ClientSession
         if (Properties.Text("FightSkill") != fighting) SetKnownProperty("FightSkill", fighting);
     }
 
-    // Third UniqueSkill column = Command Interface grid: 1 land page "Activate skill", 2 sea page, 0 not shown (passives).
     private int StuntGrid(string key)
     {
         BboStuntData? stunt = BboSkills.Stunt(key);

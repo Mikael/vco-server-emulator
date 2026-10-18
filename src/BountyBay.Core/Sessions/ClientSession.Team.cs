@@ -110,7 +110,6 @@ public sealed partial class ClientSession
         return true;
     }
 
-    // ChatInvite <name>: the client's invite picker in chat mode; the invitation arrives as a private message.
     public void InviteToChat(string name)
     {
         if (Whisper(name, "Let's talk.")) SystemMessage($"You invited {name} to talk. Answer each other in private chat.");

@@ -2,56 +2,58 @@
 
 ## 2026-10-18
 
+### Character and equipment
+- **Exp bar** above the F1-F12 keys fills as your skills gain experience; hover it to see "Skill Exp: gained/needed"
+  for the next level. The bar in Stats > Skill moves too.
 - **Shortcut keys** (F1-F12) keep their skills and items when you change map.
-- **Equip sound** also plays when you drag gear on or off.
-- **Skill Tutor**: choosing Learn skills closes the talk window so the tutor window (with your learned skills lit) is in front.
-- **Sails** no longer show holes on an undamaged ship (the client needs the ship's sail HP and max sail HP); holes now follow sail damage.
-- **Provisions** go into the ship's hold instead of your bag.
+- **Equip sound** plays when you put gear on or take it off, by right-click or by dragging.
 - **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).
-- **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen.
-- **Exp bar** above the F1-F12 keys fills as your skills gain experience, and hovering it shows "Skill Exp: gained/needed"
-  for the next level.
+- **Swords and blades** wear a model that matches their icon, and the High-level/Light/Broad weapon versions have an
+  icon and a model. **Guns** use the pistol stance again.
+- **Nobility Equipment** window lists all 16 attributes (HP, SP, Attack, Defense, Accuracy, Dodging, Agility, Physique,
+  Shocking Strike, Critical Resist, Damage Bonus/Reduction, Technique, Parry, Reaction, Willpower) with the totals of
+  your worn nobility pieces. The rank set bonuses apply at 4 and 7 pieces (Baron .. Marquis) and count toward your
+  stats.
+- **General equipment rebuild** (FG000001-015): activate and lock lines, three free rebuilds a day, then Modification
+  Stones or Special Offer Vouchers, Save/Cancel.
+- **Star soul batch rebuild** rolls ten results at once and keeps the one you pick.
+- **Skill Tutor**: Learn skills closes the talk window, so the tutor window (with your learned skills lit) is in front.
+- **Skill names in messages** use the game's names ("You learned Rapid Fire.", "Shooting reached level 6.").
+- **Command Interface**: learned stunts show under "Activate skill" (land stunts on On Land, sea stunts on At Sea) and
+  gestures play when clicked.
+- **Pet portrait** shows in the pet frame.
+
+### Ships and sea
+- **Sails** no longer have holes on an undamaged ship; holes now follow sail damage.
+- **Provisions** go into the ship's hold, are eaten at sea, and you can't sail off without them.
+- **Sailor Recruitment window** (slider, Heal, Optimal/Max) opens from the Tavern Boss and the Shipyard. The Tavern Boss
+  also recruits the necessary or all sailors, heals and dismisses them.
+- **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
+
+### Towns and NPCs
+- **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen. Players need the updated client file
+  `RESOURCE\ini\scenes\1900026.ini` (a copy of `1018004.ini`) or the tavern shows grey shapes where Valentine's
+  decorations with missing textures used to be.
 - **Priests** heal you for a small fee and take donations (donations raise your reputation). Monks, healers and the
-  battlefield Goddess of Healing / Quick Fix Tower heal for free, and the battlefield Emergency Repair Booths repair
-  your ship.
+  battlefield Goddess of Healing / Quick Fix Tower heal for free; battlefield Emergency Repair Booths repair your ship.
 - **Identifiers** verify Authenticating Articles from your bag for reputation.
 - **Moneylenders** in the Asian ports keep your silver like a bank.
 - **Material Exchange Staff** (Seville, Zhigu) also exchanges Blood Rose and Power Aquamarine fragments, diamonds
   (3 of a grade for 1 of the next) and socket stones (3 for a Superior one), next to the materials window.
-- In NPC menus "Goodbye" is always the last line.
+- 93 duplicate NPCs made from map labels (Weapon Store, Items Store, Bank, Church ...) were removed; the real
+  shopkeepers stand at the same spots.
+- **NPC windows** close when you walk away, and "Goodbye" is always the last line of an NPC menu.
+
+### Guilds, teams and activities
 - **Guild construction quests** at the guild hall: take a commercialization or industrialization quest, collect the
   goods and hand them in through the Submit Goods window. A finished quest raises the guild's Economic or Industrial
   degree, your contribution and the guild's vigor.
-- **Daily battlefield quests** at the Practice Field Administrators (St. Deus and Palenque windows): pick a tier, pay
-  it, and your next reward on that battlefield is raised. One a day.
+- **Daily battlefield quests** at the Practice Field Administrators (St. Deus and Palenque): pick a tier, pay it, and
+  your next reward on that battlefield is raised. One a day.
 - **Virtual teammates** from the team window join your team and show in the team frame.
 - **Chat invites** and **cross-server teams** work (cross-server teams are normal teams on one server).
-- The **Society Welfare** window no longer pops up at login or when guild vigor changes.
-- **General equipment rebuild** (Equipment Rebuild System for General pieces FG000001-015) works: activate lines, lock
-  lines, three free rebuilds a day, then Modification Stones or Special Offer Vouchers (client cost tables), Save/Cancel.
-- **Star soul batch rebuild** rolls ten results at once and keeps the one you pick.
-- **Sailor Recruitment window** (slider, Heal, Optimal/Max) opens from the Tavern Boss and Shipyard.
 - **Switch Team** in the system settings toggles team invitations.
-- 93 duplicate NPCs made from map labels (Weapon Store, Items Store, Bank, Church ...) were removed; the real
-  shopkeepers stand at the same spots.
-- **Nobility Equipment** window lists all 16 attributes (HP, SP, Attack, Defense, Accuracy, Dodging, Agility, Physique,
-  Shocking Strike, Critical Resist, Damage Bonus/Reduction, Technique, Parry, Reaction, Willpower) with the totals of
-  your worn nobility pieces, and the rank set bonuses apply at 4 and 7 pieces (Baron .. Marquis, from the client's set
-  descriptions). The totals count toward your character stats.
-- **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
-- **Skill experience bar** in the Stats > Skill tab moves as you gain experience.
-- **Skill names in messages** use the game's names ("You learned Rapid Fire.", "Shooting reached level 6.") instead of
-  SKILL_/US_ keys.
-- **Command Interface**: learned stunts show in the "Activate skill" grid (land stunts on the On Land page, sea stunts
-  on At Sea) and gestures play when clicked.
-- **Guns** use the pistol stance again; the earlier axe/gun swap was wrong and is undone.
-- **Swords and blades** wear a model that matches their icon, and the High-level/Light/Broad versions of weapons have
-  an icon and a model.
-- **Tavern Boss** recruits sailors (necessary, all, a fixed number), heals and dismisses them.
-- **Provisions** are eaten at sea, and you can't sail off without them.
-- **Equip sound** plays when you right-click to equip.
-- **NPC windows** close when you walk away from the NPC.
-- **Pet portrait** shows in the pet frame.
+- The **Society Welfare** window no longer pops up at login or when guild vigor changes.
 
 ## 2026-10-17 (evening)
 

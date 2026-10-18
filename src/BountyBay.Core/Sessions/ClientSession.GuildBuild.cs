@@ -85,7 +85,6 @@ public sealed partial class ClientSession
         if (Guild is not { } guild) return;
         GuildBuildState state = GuildBuildDirectory.State(Context, guild);
         string today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        // scConActDetail opens the welfare window, so it is only sent when the player asks for it.
         if (state.LastActive.TryGetValue(Name, out string? last) && last == today) return;
         state.LastActive[Name] = today;
         GuildBuildDirectory.AddActivity(Context, guild, GuildBuildDirectory.Rules(Context).Activity.DailyLogin, $"{Name} logged in");

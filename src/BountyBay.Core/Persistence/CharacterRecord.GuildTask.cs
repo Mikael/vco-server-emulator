@@ -10,6 +10,5 @@ public sealed class GuildTaskRecord
 
 public sealed partial class CharacterRecord
 {
-    // The guild construction quest in progress, if any.
     public GuildTaskRecord? GuildTask { get; set; }
 }

@@ -99,7 +99,6 @@ public sealed partial class ClientSession
 
     private bool _petFollowing = true;
 
-    // Walk the pet to a spot just behind where the player is heading, at the player's speed.
     private void PetFollow(float x, float z, float speed)
     {
         if (AtSea || !_petFollowing || Character.Pet is not { Out: true }) return;

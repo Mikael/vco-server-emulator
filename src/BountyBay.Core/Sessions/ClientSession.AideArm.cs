@@ -7,16 +7,6 @@ using BountyBay.Core.Protocol.Packets;
 
 namespace BountyBay.Core.Sessions;
 
-// General (aide) equipment rebuild window dlgFGRebuild. View 54 slot 1 holds the piece. The client only draws a rebuild
-// result as an update of slot 1 (its slot-2 path is never enabled), so the result replaces the shown lines until Save
-// or Cancel.
-//   csAideRebuildView                      open          -> scRefreshFreeCount, scAideRebuildView <mode> <owned material>
-//   Select 54 0 1 (piece on the cursor)    put the piece in
-//   csAideArmRebuild <mode> <n> <props..>  rebuild; the listed attribute indices are locked and kept
-//                                          -> slot 1 shows the result + scRefreshArmProp 1
-//   csSaveArmProp <n> <props..>            keep the result   -> scRefreshArmProp 0
-//   csRecoverArmProp                       drop the result   -> scRefreshArmProp 0
-//   csAideArmActive <prop>                 activate a line (LockProp lists the lines not activated yet)
 public sealed partial class ClientSession
 {
     public const int AideArmView = 54;
@@ -46,7 +36,6 @@ public sealed partial class ClientSession
         }
     }
 
-    // A piece gets its attribute lines the first time the server shows it.
     private static AideArmState EnsureAideArm(ItemStack item)
     {
         if (item.AideArm is { } existing) return existing;

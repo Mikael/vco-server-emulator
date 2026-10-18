@@ -8,7 +8,6 @@ namespace BountyBay.Core.Sessions;
 
 public sealed partial class ClientSession
 {
-
     private ModelChangeRules ModelChangeData => LeisureRules.For(Context.Settings).ModelChange;
 
     public void OpenModelChange() => Send(LeisurePackets.ShowChangeModel(), "(model change window)");

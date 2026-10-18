@@ -316,8 +316,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} repairs the ship for {cost}");
     }
 
-    // BBO's Sailor Recruitment window (dlgSailorConOrDis): slider to the wanted crew, Heal, Optimal and Max buttons.
-    // It answers with BuySailor/FireSailor/csHealSailor. Arguments: price per sailor, sailors the ship carries.
     public void AskHireSailors()
         => Send(UiPackets.Custom($"scNewSailor {SailorCost} {FleetSailorsMax}"), "(sailor recruitment)");
 

@@ -90,11 +90,9 @@ public sealed class BboTeamCommands : ITextCommand
             case "csPermit":
                 Log.Debug(session.Tag, $"{session.Name} permit answer: {string.Join(' ', words)}");
                 return true;
-            // VirtualTeam <name> <portrait>: the client picks an AI companion from VirtualTeam.ini; names can contain spaces.
             case "VirtualTeam" when words.Length >= 3 && int.TryParse(words[^1], out int photo):
                 TeamDirectory.AddVirtual(session, string.Join(' ', words[1..^1]).Replace(UiPackets.Blank, ' '), photo);
                 return true;
-            // One server: a cross-server team is an ordinary team.
             case "csCreateCrossTeam":
                 session.SystemMessage("Your team is open. Invite players to join it.");
                 return true;

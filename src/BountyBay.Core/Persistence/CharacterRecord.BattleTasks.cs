@@ -9,6 +9,5 @@ public sealed class BattleTaskRecord
 
 public sealed partial class CharacterRecord
 {
-    // Battle type -> today's daily battlefield quest.
     public Dictionary<int, BattleTaskRecord> BattleTasks { get; set; } = [];
 }

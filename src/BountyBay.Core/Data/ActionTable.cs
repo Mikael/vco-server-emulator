@@ -27,8 +27,6 @@ public sealed class ActionTable
 
     public int IndexOf(string code) => _codes.IndexOf(code);
 
-    // Gesture names from Action.ini (wave_1, salute, pray_1) are the set-0 animation names of actgroup.ini without the
-    // set number: wave_1 -> wave0_1 (216), salute -> salute0 (220).
     public int Gesture(string name)
     {
         int index = IndexOf(name);

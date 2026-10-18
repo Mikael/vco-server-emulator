@@ -6,9 +6,6 @@ using BountyBay.Core.Protocol.Packets;
 
 namespace BountyBay.Core.Sessions;
 
-// Item exchanges at exchange NPCs (services.json "Exchanges", keyed by the NPC's NameKey), e.g. the Seville Material
-// Exchange Staff: "Exchange 50 Blood Rose Fragments and some silver coins ... for a Blood Rose Stone", "3 Gems of the
-// similar grade can be exchanged for a higher grade Gem". Groups -> pages of six exchanges -> one exchange per click.
 public sealed partial class ClientSession
 {
     public static class ExchangeOption

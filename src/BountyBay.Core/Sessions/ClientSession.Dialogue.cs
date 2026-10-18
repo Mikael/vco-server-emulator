@@ -103,7 +103,6 @@ public sealed partial class ClientSession
         }
     }
 
-    // Tavern Boss menu (client npc_menu gnnpc009: -40005..-40009).
     private void TavernSailors(DialogueAction action)
     {
         EnsureShipState();

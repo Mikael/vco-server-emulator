@@ -215,7 +215,6 @@ public sealed partial class ClientSession
         }
         else
         {
-            // The client rebuilds the shortcut bar with the player object, so a map change empties F1-F12 until the table is resent.
             Send(TablePackets.Clear(GameTables.Shortcut), "(clear shortcuts)");
             SendShortcuts(clear: false);
         }

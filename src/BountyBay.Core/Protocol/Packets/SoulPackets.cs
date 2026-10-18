@@ -4,7 +4,6 @@ public static class SoulPackets
 {
     public const string Empty = "0";
 
-    // Client custom table read by dlgCharmLargeRebuild (batch rebuild results).
     public const int BatchRebuildTable = 87;
 
     public static byte[] ViewArm(IReadOnlyList<string> slots, int chart, int grade, int skillLevel)
@@ -35,7 +34,6 @@ public static class SoulPackets
 
     public static byte[] CloseChangeList() => UiPackets.Custom("scCloseCFightSoulList");
 
-    // 1: the ten results in table 87 are shown with Save/Cancel; 0: cleared, back to Start.
     public static byte[] BatchShown(bool shown) => UiPackets.Custom($"scRefreshCR10Prop {(shown ? 1 : 0)}");
 
     public static byte[] ViewUpQuality(string id, string next, int quality, int nextQuality, int level, int nextLevel,

@@ -9,9 +9,6 @@ public sealed record BboOceanGate(int Id, int Ocean, string Name, float X, float
 
 public sealed partial class ClientSession
 {
-    // 1000001 is the Atlantic/Mediterranean, 1000003 the Indian Ocean, Asia and the Pacific. The client marks the crossings
-    // on 1000001 as "Afro-Asian Outer Coast" (map2/1000001.ini); the 1000003 ends are GUESS (Cape at the same spot, Magellan
-    // and Iceland wrapped round the Pacific). Every position below was checked in the client to be open water.
     private static readonly BboOceanGate[] OceanGates =
     [
         new(8_390_001, 1000001, "Afro-Asian Outer Coast (Cape of Good Hope)", -219.3f, 1042.1f, 1000003, -359.1f, 941.0f),

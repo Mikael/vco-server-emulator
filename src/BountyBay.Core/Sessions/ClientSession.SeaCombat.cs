@@ -204,7 +204,6 @@ public sealed partial class ClientSession
     public void SetShipSail(int sail)
     {
         Character.ShipSail = Math.Clamp(sail, 0, FleetSailMax);
-        // GameProj gives the rigging 100 * S/SailHP / S/MaxSailHP of the sea object; the sails get holes as that drops.
         var ratio = SeaPackets.Known(new PropertyBag
         {
             ["RatioSailHP"] = 100 * ShipSail / Math.Max(1, FleetSailMax),
