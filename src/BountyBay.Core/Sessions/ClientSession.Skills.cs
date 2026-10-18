@@ -213,7 +213,9 @@ public sealed partial class ClientSession
             : $"{ClientNames.Of(Context.Settings, key)} reached level {level}.", SystemMessageKind.Upgrade);
         Log.Info(Tag, $"{Name} raises {key} to {level}");
         KeepTotalSkillCap(key);
-        SendSkillState();
+        Send(TablePackets.Clear(GameTables.Skill), "(clear Skill)");
+        Send(TablePackets.Rows(GameTables.Skill, ProgressSkillRows()), "(skills)");
+        if (InWorld) SendStuntStates();
         RefreshStats();
         Send(UiPackets.Custom($"scUpLevel {TotalSkillLevel}"), "(level up)");
         Save();

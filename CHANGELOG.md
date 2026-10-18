@@ -3,6 +3,7 @@
 ## 2026-10-18
 
 ### Character and equipment
+- **Levelling a skill** no longer pops open the Command Interface.
 - **Damage numbers** float over whoever gets hit again, on land and at sea (the game's number font has no minus sign, so numbers with one were never drawn).
 - **Equip sound** matches the item: clothes and hats use the clothing sound, weapons and other gear the equip sound.
 - **Picking up loot** plays the pick-up sound and says what you obtained.
