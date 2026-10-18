@@ -4,7 +4,7 @@
 
 - **Equip sound** also plays when you drag gear on or off.
 - **Skill Tutor**: choosing Learn skills closes the talk window so the tutor window (with your learned skills lit) is in front.
-- **Sails** no longer show holes on an undamaged ship; holes now follow how damaged the sails are.
+- **Sails** no longer show holes on an undamaged ship (the client needs the ship's sail HP and max sail HP); holes now follow sail damage.
 - **Provisions** go into the ship's hold instead of your bag.
 - **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).
 - **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen.
