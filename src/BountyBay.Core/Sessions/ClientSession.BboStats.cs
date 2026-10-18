@@ -37,6 +37,14 @@ public sealed partial class ClientSession
 
     public void EnterWorldBboCharacter() => SendBboTitles();
 
+    public void OnSceneLoaded()
+    {
+        foreach ((string name, object value) in WorkProperties())
+        {
+            if (PropertyTable.Has(name)) SetProperty(name, value, PublicWorkProperties.Contains(name));
+        }
+    }
+
     public void SendBboTitles()
     {
         Send(CharacterPackets.ClearCustomTable(CharacterPackets.TitleTable), "(clear title list)");
@@ -215,6 +223,7 @@ public sealed partial class ClientSession
     {
         int work = Character.WorkType > 0 && Character.WorkType < WorkNames.Length ? Character.WorkType : 0;
         yield return ("WorkType", work);
+        yield return ("WorkLevel", work == 0 ? Math.Max(1, TotalSkillLevel) : Math.Max(1, Character.WorkLevel));
         (long experience, long needed) = LevelProgress();
         yield return ("MultWorkExp", (int)(experience / int.MaxValue));
         yield return ("WorkExp", (int)(experience % int.MaxValue));

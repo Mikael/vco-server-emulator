@@ -49,7 +49,7 @@ public sealed class InteractHandler : IMessageHandler
         else if (data.Npcs.TryGetValue(target, out NpcDefinition? npc) && npc.Scene == session.Scene)
         {
             Log.Info(session.Tag, $"{session.Name} talks to {npc.Name}");
-            if (!session.OnNpcTalked(npc.Id)) session.Talk(npc);
+            session.ApproachNpc(npc);
         }
         else if (session.ClickPet(target))
         {
@@ -145,5 +145,15 @@ public sealed class TextCommandHandler : IMessageHandler
             session.Send(ChatPackets.Chat(ProtocolConstants.SelfObjectId, text), "(chat echo)");
             session.ToOthers(ChatPackets.Chat(session.ObjectId, text), $"(chat from {session.Name})");
         }
+    }
+}
+
+public sealed class SceneLoadedHandler : IMessageHandler
+{
+    public ClientMsg Id => ClientMsg.SceneLoaded;
+
+    public void Handle(ClientSession session, PacketReader reader)
+    {
+        if (session.InWorld) session.OnSceneLoaded();
     }
 }

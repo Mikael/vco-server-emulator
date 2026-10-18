@@ -450,11 +450,6 @@ public sealed partial class ClientSession
             ["Photo"] = npc.Portrait,
             ["ActionSet"] = 0,
             ["CollideRadius"] = 0.5f,
-            ["HP"] = 100,
-            ["MaxHP"] = 100,
-            ["RatioHP"] = 100,
-            ["RatioSP"] = 100,
-            ["Level"] = 1,
         }), $"(props {npc.Name})");
         Send(ScenePackets.PlaceObject(npc.Id, npc.X, npc.Y, npc.Z), $"(place {npc.Name})");
         Send(ScenePackets.ShowObject(npc.Id), $"(show {npc.Name})");

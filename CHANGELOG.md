@@ -3,6 +3,7 @@
 ## 2026-10-18
 
 ### Character and equipment
+- **Level on the portrait** shows again (also for characters without a profession).
 - **Exp bar** above the F1-F12 keys fills as your skills gain experience; hover it to see "Skill Exp: gained/needed"
   for the next level. The bar in Stats > Skill moves too.
 - **Shortcut keys** (F1-F12) keep their skills and items when you change map.
@@ -33,6 +34,8 @@
 - **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
 
 ### Towns and NPCs
+- **Talking to NPCs**: you walk up to the NPC first instead of talking from far away, and you both play a talk animation.
+- **NPCs** no longer show an HP bar.
 - **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen. Players need the updated client file
   `RESOURCE\ini\scenes\1900026.ini` (a copy of `1018004.ini`) or the tavern shows grey shapes where Valentine's
   decorations with missing textures used to be.
