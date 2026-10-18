@@ -258,8 +258,9 @@ public sealed partial class ClientSession
 
     public void Travel(int scene)
     {
+        SceneLink? harbour = ForceLand ? null : Links.Links.FirstOrDefault(link => link.Sail && link.TargetScene == scene);
         Send(ScenePackets.LeaveScene(), "(leave scene)");
-        EnterScene(scene);
+        EnterScene(scene, harbour == null ? null : new Vector3(harbour.TargetX, 0f, harbour.TargetZ));
     }
 
     public void SailOff()

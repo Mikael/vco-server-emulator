@@ -139,6 +139,14 @@ public sealed partial class ClientSession
             case "engage" when words.Length >= 2 && int.TryParse(words[1], out int shipId):
                 if (!OnSeaObjectClicked(shipId)) SystemMessage($"No sea ship {shipId} here.");
                 return true;
+            case "repairship":
+                ClientSession fixedShip = words.Length >= 2 && GmOnlinePlayer(words[1]) is { } shipOwner ? shipOwner : this;
+                fixedShip.SetShipHull(fixedShip.ShipHullMax);
+                fixedShip.SetShipSail(fixedShip.FleetSailMax);
+                fixedShip.SetSailors(fixedShip.FleetSailorsMax, 0);
+                fixedShip.Save();
+                SystemMessage($"{fixedShip.Name}'s ship is repaired and fully crewed.");
+                return true;
             case "ships":
                 foreach (SeaNpcState ship in Sea.InScene(Scene).Where(ship => !ship.Gone).Take(20))
                     SystemMessage($"{ship.Definition.Id} {ship.Definition.Name} L{ship.Definition.Level} hull {ship.Hull}/{ship.Definition.Hull} at {ship.X:F0}, {ship.Z:F0}{(ship.Definition.Friendly ? " (friendly)" : "")}");
