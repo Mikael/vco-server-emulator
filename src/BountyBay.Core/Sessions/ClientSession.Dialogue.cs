@@ -30,6 +30,7 @@ public sealed partial class ClientSession
         action = ClientMenuAction(action);
         if (HandleBattleOption(target, (int)action)) return;
         if (HandleGuildHallOption(target, (int)action)) return;
+        if (HandleServiceOption(target, (int)action) || HandleExchangeOption(target, (int)action)) return;
         if (HandleAideOption(target, (int)action)) return;
         if (HandleArmUpgradeOption(target, (int)action)) return;
         if (HandleAuctionOption(target, (int)action)) return;

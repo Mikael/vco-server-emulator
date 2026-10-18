@@ -824,6 +824,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -1587,8 +1597,12 @@
     "X": -10.6,
     "Y": 29.75,
     "Z": -454.2,
-    "Greeting": "Good day.",
+    "Greeting": "I verify curiosities found on your travels. Genuine finds earn you reputation.",
     "Options": [
+      {
+        "Action": 606,
+        "Text": "Verify my Authenticating Articles"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2292,6 +2306,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -2346,6 +2370,16 @@
     "Z": -163.0,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -2427,8 +2461,12 @@
     "X": 674.0,
     "Y": -0.0,
     "Z": 1331.0,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2455,8 +2493,12 @@
     "X": -1908.0,
     "Y": -0.0,
     "Z": 386.0,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2483,8 +2525,12 @@
     "X": -745.0,
     "Y": -0.0,
     "Z": -1938.0,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2511,8 +2557,12 @@
     "X": 1775.0,
     "Y": -0.0,
     "Z": -723.0,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2539,8 +2589,12 @@
     "X": -170.64,
     "Y": 14.12,
     "Z": 119.08,
-    "Greeting": "Good day.",
+    "Greeting": "Rest here and your wounds will close.",
     "Options": [
+      {
+        "Action": 607,
+        "Text": "Heal me"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2567,8 +2621,12 @@
     "X": 43.04,
     "Y": 7.65,
     "Z": -213.47,
-    "Greeting": "Good day.",
+    "Greeting": "Rest here and your wounds will close.",
     "Options": [
+      {
+        "Action": 607,
+        "Text": "Heal me"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2597,6 +2655,16 @@
     "Z": 142.03,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -2652,6 +2720,16 @@
     "Z": -155.9,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -2845,8 +2923,12 @@
     "X": -488.0,
     "Y": -0.0,
     "Z": 988.0,
-    "Greeting": "Good day.",
+    "Greeting": "Rest here and your wounds will close.",
     "Options": [
+      {
+        "Action": 607,
+        "Text": "Heal me"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2873,8 +2955,12 @@
     "X": 369.0,
     "Y": -0.0,
     "Z": -1978.0,
-    "Greeting": "Good day.",
+    "Greeting": "Rest here and your wounds will close.",
     "Options": [
+      {
+        "Action": 607,
+        "Text": "Heal me"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2901,8 +2987,12 @@
     "X": 583.5,
     "Y": -0.0,
     "Z": 805.9,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -2929,8 +3019,12 @@
     "X": -726.0,
     "Y": -0.0,
     "Z": -1730.0,
-    "Greeting": "Good day.",
+    "Greeting": "Ships are mended here free of charge.",
     "Options": [
+      {
+        "Action": 605,
+        "Text": "Repair my ship"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -3688,6 +3782,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -3742,6 +3846,16 @@
     "Z": 279.15,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -4012,6 +4126,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -4262,6 +4386,16 @@
     "Z": -75.39,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -5672,6 +5806,16 @@
     "Z": 48.06,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -7149,6 +7293,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -8267,6 +8421,16 @@
     "Z": -95.09,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -9943,6 +10107,16 @@
     "Z": -47.85,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -12012,9 +12186,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation"
+      },
+      {
         "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
+        "Text": "Goodbye"
       }
     ],
     "NameKey": "IDName00004948",
@@ -13659,9 +13840,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation"
+      },
+      {
         "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
+        "Text": "Goodbye"
       }
     ],
     "NameKey": "IDName00004948",
@@ -13793,8 +13981,12 @@
     "X": -6.07,
     "Y": 4.28,
     "Z": 30.18,
-    "Greeting": "Good day.",
+    "Greeting": "I verify curiosities found on your travels. Genuine finds earn you reputation.",
     "Options": [
+      {
+        "Action": 606,
+        "Text": "Verify my Authenticating Articles"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -14397,8 +14589,12 @@
     "X": -44.9,
     "Y": 3.92,
     "Z": 27.8,
-    "Greeting": "Good day.",
+    "Greeting": "Bring me fragments, gems or socket stones and I will exchange them for better ones.",
     "Options": [
+      {
+        "Action": 620,
+        "Text": "Exchange materials"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -15854,6 +16050,16 @@
     "Z": 22.82,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -17435,9 +17641,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation"
+      },
+      {
         "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
+        "Text": "Goodbye"
       }
     ],
     "NameKey": "IDName00004948",
@@ -19187,9 +19400,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation"
+      },
+      {
         "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
+        "Text": "Goodbye"
       }
     ],
     "NameKey": "IDName00004948",
@@ -20617,8 +20837,12 @@
     "X": 90.82,
     "Y": 25.11,
     "Z": -48.33,
-    "Greeting": "Good day.",
+    "Greeting": "I verify curiosities found on your travels. Genuine finds earn you reputation.",
     "Options": [
+      {
+        "Action": 606,
+        "Text": "Verify my Authenticating Articles"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -21630,6 +21854,16 @@
     "Z": 0.0,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -29301,6 +29535,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -34127,6 +34371,16 @@
     "Z": -47.95,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -47618,8 +47872,12 @@
     "X": 39.76,
     "Y": 6.49,
     "Z": 2.87,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -49310,8 +49568,12 @@
     "X": 289.78,
     "Y": 1.09,
     "Z": -353.72,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -50397,8 +50659,12 @@
     "X": -21.83,
     "Y": 4.72,
     "Z": -36.58,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -50667,8 +50933,12 @@
     "X": 29.91,
     "Y": 5.31,
     "Z": -15.63,
-    "Greeting": "Good day.",
+    "Greeting": "Peace be with you. Are you hurt?",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -51432,8 +51702,12 @@
     "X": -15.26,
     "Y": 3.81,
     "Z": 130.85,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -51730,8 +52004,12 @@
     "X": -9.34,
     "Y": 3.81,
     "Z": 75.21,
-    "Greeting": "Good day.",
+    "Greeting": "Peace be with you. Are you hurt?",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -52295,8 +52573,12 @@
     "X": 0.41,
     "Y": 8.05,
     "Z": 31.45,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -53400,8 +53682,12 @@
     "X": 16.61,
     "Y": 11.2,
     "Z": -29.0,
-    "Greeting": "Good day.",
+    "Greeting": "Bring me fragments, gems or socket stones and I will exchange them for better ones.",
     "Options": [
+      {
+        "Action": 620,
+        "Text": "Exchange materials"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -53960,8 +54246,12 @@
     "X": -12.0,
     "Y": 0.04,
     "Z": 74.43,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -55174,8 +55464,12 @@
     "X": -13.03,
     "Y": 11.93,
     "Z": -37.4,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -55389,8 +55683,12 @@
     "X": 77.56,
     "Y": 26.37,
     "Z": -232.74,
-    "Greeting": "Good day.",
+    "Greeting": "Silver kept with me is safe from pirates.",
     "Options": [
+      {
+        "Action": "Bank",
+        "Text": "Bank"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -56521,6 +56819,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -57463,6 +57771,16 @@
     "Z": -105.92,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -58813,6 +59131,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -58867,6 +59195,16 @@
     "Z": 174.62,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -58923,6 +59261,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -58977,6 +59325,16 @@
     "Z": -241.78,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -61382,8 +61740,12 @@
     "X": 58.4,
     "Y": -0.72,
     "Z": -307.3,
-    "Greeting": "Good day.",
+    "Greeting": "Peace be with you. Are you hurt?",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -61410,8 +61772,12 @@
     "X": 59.1,
     "Y": 22.15,
     "Z": -309.9,
-    "Greeting": "Good day.",
+    "Greeting": "Peace be with you. Are you hurt?",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -64719,6 +65085,16 @@
     "Greeting": "God bless you, my child!",
     "Options": [
       {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -65572,6 +65948,16 @@
     "Z": 22.0,
     "Greeting": "God bless you, my child!",
     "Options": [
+      {
+        "Action": 600,
+        "Text": "Healing",
+        "ClientKey": "-45072"
+      },
+      {
+        "Action": 601,
+        "Text": "Donation",
+        "ClientKey": "-45071"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",

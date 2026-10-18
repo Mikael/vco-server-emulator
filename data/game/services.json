@@ -1,0 +1,403 @@
+{
+  "SilverPerHealPoint": 1,
+  "Donations": [
+    1000,
+    10000,
+    100000
+  ],
+  "SilverPerReputation": 1000,
+  "ReputationPerArticle": 50,
+  "AuthenticatingArticles": [
+    "IDName00000260",
+    "IDName00000261",
+    "IDName00000267",
+    "IDName00000268",
+    "IDName00000273",
+    "IDName00000275",
+    "IDName00000965",
+    "IDName00000966",
+    "IDName00000967",
+    "IDName00000968",
+    "IDName00000969",
+    "IDName00000970",
+    "IDName00000971",
+    "IDName00000972",
+    "IDName00000973",
+    "IDName00000974",
+    "IDName00000975",
+    "IDName00000976",
+    "IDName00000977",
+    "IDName00000978",
+    "IDName00000979",
+    "IDName00000980",
+    "IDName00000981",
+    "IDName00000982",
+    "IDName00000983",
+    "IDName00000984",
+    "IDName00000985",
+    "IDName00000986",
+    "IDName00000987",
+    "IDName00000988",
+    "IDName00000989",
+    "IDName00000990",
+    "IDName00000991",
+    "IDName00000992",
+    "IDName00000993",
+    "IDName00000994",
+    "IDName00000995",
+    "IDName00000996",
+    "IDName00000997",
+    "IDName00000998",
+    "IDName00000999",
+    "IDName00001000",
+    "IDName00001001",
+    "IDName00001002",
+    "IDName00001003",
+    "IDName00001004",
+    "IDName00001005",
+    "IDName00001006",
+    "IDName00001007",
+    "IDName00001008",
+    "IDName00001009",
+    "IDName00001010",
+    "IDName00001011",
+    "IDName00001012",
+    "IDName00001013",
+    "IDName00001014",
+    "IDName00001015",
+    "IDName00001016",
+    "IDName00001017",
+    "IDName00001018",
+    "IDName00001019",
+    "IDName00001020",
+    "IDName00001021",
+    "IDName00001022",
+    "IDName00001023",
+    "IDName00001024",
+    "IDName00001025",
+    "IDName00001026",
+    "IDName00001027",
+    "IDName00001028",
+    "IDName00001029",
+    "IDName00001030",
+    "IDName00001031",
+    "IDName00001032",
+    "IDName00001033",
+    "IDName00001034",
+    "IDName00001035",
+    "IDName00001036",
+    "IDName00001037",
+    "IDName00001038",
+    "IDName00001039",
+    "IDName00001040",
+    "IDName00001041",
+    "IDName00001042",
+    "IDName00001043",
+    "IDName00001044",
+    "IDName00001045",
+    "IDName00001046",
+    "IDName00001047",
+    "IDName00001048",
+    "IDName00001049",
+    "IDName00001050",
+    "IDName00001051",
+    "IDName00001052",
+    "IDName00001053",
+    "IDName00001054",
+    "IDNamezhongqiu0002"
+  ],
+  "Exchanges": {
+    "dhnpc1002": [
+      {
+        "Title": "Materials",
+        "Entries": [
+          {
+            "Give": [
+              {
+                "Name": "CWCL0146",
+                "Amount": 50
+              }
+            ],
+            "Fee": 10000,
+            "Get": "CWCL0145",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "CWCL0308",
+                "Amount": 50
+              }
+            ],
+            "Fee": 0,
+            "Get": "CWCL0304",
+            "Amount": 1
+          }
+        ]
+      },
+      {
+        "Title": "Diamonds",
+        "Entries": [
+          {
+            "Give": [
+              {
+                "Name": "DJ006624",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006629",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006629",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006634",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006634",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006639",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006625",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006630",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006630",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006635",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006635",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006640",
+            "Amount": 1
+          }
+        ]
+      },
+      {
+        "Title": "Superior socket stones",
+        "Entries": [
+          {
+            "Give": [
+              {
+                "Name": "DJ006685",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006700",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006686",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006722",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006687",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006723",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006688",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006724",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006689",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006725",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006690",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006726",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006691",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006727",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006692",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006728",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006693",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006729",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006694",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006730",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006695",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006731",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006696",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006732",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006697",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006733",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006698",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006734",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006699",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006735",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006925",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006927",
+            "Amount": 1
+          },
+          {
+            "Give": [
+              {
+                "Name": "DJ006926",
+                "Amount": 3
+              }
+            ],
+            "Fee": 0,
+            "Get": "DJ006928",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -33,19 +33,19 @@ public sealed partial class ClientSession
         _clientMenuOptions.Clear();
         _clientMenuTalk.Clear();
         var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.IniText, 0, textKey) };
-        bool farewell = false;
+        var farewells = new List<(DialogueEntry, int, string)>();
         foreach (DialogueOption option in npc.Options)
         {
+            List<(DialogueEntry, int, string)> into = option.Action == DialogueAction.Bye ? farewells : entries;
             if (option.ClientKey.StartsWith('-') && int.TryParse(option.ClientKey[1..], out int number))
             {
                 _clientMenuOptions[number] = option.Action;
-                entries.Add((DialogueEntry.IniOption, number, option.ClientKey));
+                into.Add((DialogueEntry.IniOption, number, option.ClientKey));
             }
             else
             {
-                entries.Add((DialogueEntry.Option, (int)option.Action, option.Text));
+                into.Add((DialogueEntry.Option, (int)option.Action, option.Text));
             }
-            farewell |= option.Action == DialogueAction.Bye;
         }
         HashSet<int> taken = npc.Options.Select(option => (int)option.Action).ToHashSet();
         HashSet<string> answers = menu.Entries.Where(entry => !entry.Key.StartsWith('-')).Select(entry => entry.Key).ToHashSet();
@@ -57,7 +57,8 @@ public sealed partial class ClientSession
             _clientMenuTalk[number] = answer;
             entries.Add((DialogueEntry.IniOption, number, entry.Key));
         }
-        if (!farewell) entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
+        if (farewells.Count == 0) farewells.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
+        entries.AddRange(farewells);
         Send(ChatPackets.NpcDialogue(npc.Id, entries), "(client npc menu)");
     }
 

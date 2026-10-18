@@ -2,6 +2,14 @@
 
 ## 2026-10-18
 
+- **Priests** heal you for a small fee and take donations (donations raise your reputation). Monks, healers and the
+  battlefield Goddess of Healing / Quick Fix Tower heal for free, and the battlefield Emergency Repair Booths repair
+  your ship.
+- **Identifiers** verify Authenticating Articles from your bag for reputation.
+- **Moneylenders** in the Asian ports keep your silver like a bank.
+- **Material Exchange Staff** (Seville, Zhigu) also exchanges Blood Rose and Power Aquamarine fragments, diamonds
+  (3 of a grade for 1 of the next) and socket stones (3 for a Superior one), next to the materials window.
+- In NPC menus "Goodbye" is always the last line.
 - **Guild construction quests** at the guild hall: take a commercialization or industrialization quest, collect the
   goods and hand them in through the Submit Goods window. A finished quest raises the guild's Economic or Industrial
   degree, your contribution and the guild's vigor.
