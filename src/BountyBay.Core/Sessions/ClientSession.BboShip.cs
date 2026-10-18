@@ -243,7 +243,8 @@ public sealed partial class ClientSession
     private SceneLink DockLink(BboOceanDock dock)
     {
         SceneLink? arrival = Links.Links.FirstOrDefault(link => link.Sail && link.TargetScene == dock.Coast);
-        System.Numerics.Vector3 spawn = arrival == null ? Context.Data.Scenes.SpawnPoint(dock.Coast) : default;
+        System.Numerics.Vector3 spawn = dock.Coast == HurricaneBeach ? HurricaneArrival
+            : arrival == null ? Context.Data.Scenes.SpawnPoint(dock.Coast) : default;
         return new SceneLink
         {
             Id = dock.Id,
@@ -254,6 +255,7 @@ public sealed partial class ClientSession
             Radius = BboSeaPackets.OceanDockReach,
             TargetScene = dock.Coast,
             TargetX = arrival?.TargetX ?? spawn.X,
+            TargetY = arrival == null ? spawn.Y : arrival.TargetY,
             TargetZ = arrival?.TargetZ ?? spawn.Z,
         };
     }
@@ -313,6 +315,11 @@ public sealed partial class ClientSession
                 string? key = section["name"];
                 if (key == null || !TryFloat(section["wx"], out float x) || !TryFloat(section["wz"], out float z)) continue;
                 string label = names.GetValueOrDefault(key, key).Replace('\u0003', ' ').Trim();
+                if (key.Equals(HurricaneOceanKey, StringComparison.OrdinalIgnoreCase) && !docks.Any(dock => dock.Coast == HurricaneBeach))
+                {
+                    docks.Add(new BboOceanDock(BboSeaPackets.FirstOceanDockId + docks.Count, ocean, "Hurricane Island", label, x, z, HurricaneBeach));
+                    continue;
+                }
                 if (!coasts.TryGetValue(CityOf(label), out int coast) || docks.Any(dock => dock.Coast == coast)) continue;
                 docks.Add(new BboOceanDock(BboSeaPackets.FirstOceanDockId + docks.Count, ocean, CityOf(label), label, x, z, coast));
             }

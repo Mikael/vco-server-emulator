@@ -207,12 +207,15 @@ public sealed class ChannelChatCommand : ITextCommand
 
 public sealed class MotionCommands : ITextCommand
 {
-    public IEnumerable<string> Names => ["3DWALK", "3DRUN", "3DST", "3DCS"];
+    public IEnumerable<string> Names => ["3DWALK", "3DRUN", "3DST", "3DCS", "AskSit"];
 
     public bool Execute(ClientSession session, string[] words)
     {
         switch (words[0])
         {
+            case "AskSit":
+                session.ToggleSit();
+                return true;
             case "3DWALK":
                 session.SetWalking(true);
                 return true;

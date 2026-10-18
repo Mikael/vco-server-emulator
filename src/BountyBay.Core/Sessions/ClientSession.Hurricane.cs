@@ -11,6 +11,7 @@ public sealed partial class ClientSession
     private const string HurricaneExplorerKey = "gnnpc0118";
     private const string HurricaneCaptainKey = "npc51001";
     private const string HurricaneOrderItem = "DJ007216";
+    private const string HurricaneOceanKey = "CJ601001";
     public const int HurricaneBeach = 1601002;
     private const int HurricaneGoOption = 47101;
     private const int HurricaneBackOption = 47102;

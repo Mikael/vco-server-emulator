@@ -118,7 +118,17 @@ public sealed partial class ClientSession
         }
         if (link.Scene == HurricaneBeach && link.Name.Contains("Offshore", StringComparison.OrdinalIgnoreCase))
         {
-            LeaveHurricane();
+            BboSailToOcean();
+            return;
+        }
+        if (!InInstanceScene && BattleRules.CopyInScene(link.TargetScene) is { } instance && BattleRules.CopyInScene(Scene) == null)
+        {
+            InstanceEnter(instance);
+            return;
+        }
+        if (InInstanceScene && BattleRules.CopyInScene(link.TargetScene) == null && link.TargetScene == Character.BattleReturnScene)
+        {
+            InstanceLeave();
             return;
         }
         Log.Info(Tag, $"{Name} takes '{link.Name}' from scene {Scene} to scene {link.TargetScene}");

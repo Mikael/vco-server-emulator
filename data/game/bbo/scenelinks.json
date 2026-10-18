@@ -7685,7 +7685,7 @@
         "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [176.177]",
         "Name": "CLIENT CJ601020",
         "Radius": "GUESS",
-        "Target": "GUESS walk-area centre of 1601021",
+        "Target": "CLIENT CopyInfos.ini [CJ601020]: instance entrance on Hurricane Island Beach (-50.5 -320.3)",
         "Arrival": "GUESS moved 4.5 units off the door / onto walk_patch",
         "Model": "CLIENT objects\\4000190.ini (big door, effect wy0114b); size GUESS"
       }
@@ -7693,7 +7693,7 @@
     {
       "Id": 5000304,
       "Scene": 1601002,
-      "Name": "Battled Forest",
+      "Name": "Battle-Torn Forest",
       "Model": 0,
       "ModelId": 0,
       "X": 46.35,
@@ -7702,16 +7702,16 @@
       "Orient": 0.0,
       "Radius": 3.0,
       "Sail": false,
-      "TargetScene": 0,
+      "TargetScene": 1001043,
       "TargetX": 0.0,
       "TargetY": 0.0,
       "TargetZ": 0.0,
-      "Message": "The way to Battled Forest is closed: this client has no scene for it.",
+      "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [176.178]",
         "Name": "CLIENT CJ001043",
         "Radius": "GUESS",
-        "Target": "unresolved name"
+        "Target": "CLIENT CopyInfos.ini [CJ001043]: entrance on Hurricane Island Beach (50.0 -311.6), instance scene 1001043"
       }
     },
     {

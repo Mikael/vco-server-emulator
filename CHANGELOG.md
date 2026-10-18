@@ -71,9 +71,12 @@
   ships sail a bit slower (base speed 9 instead of 14; pirates chase at 7).
 
 ### Towns and NPCs
-- **Hurricane Island**: the Hurricane Island Explorer in Jamestown and New Amsterdam harbours takes you to Hurricane
-  Island Beach once a day (a Hurricane Island Order allows one more trip). Captain Migna or the Offshore exit brings you
-  back. The mine cave, lizard cave and Cliff Valley are linked in both directions.
+- **Hurricane Island**: sail to Hurricane Island on the high seas (1066, -483, the island's mark on the sea map) and
+  click its dock to land on Hurricane Island Beach; the beach's Offshore exit sails you back out. On the beach the
+  marked entrances take you into the Hurricane Island Mine Cave and Battle-Torn Forest instances (leaving the instance
+  brings you back to the beach). The Hurricane Island Explorer in Jamestown and New Amsterdam harbours can also take
+  you there once a day (a Hurricane Island Order allows one more trip), and Captain Migna sails you back.
+- **Sitting down**: the sit button makes your character sit down; press it again or walk to stand up.
 - **Stalls** show the stall table with goods in front of the seller, for the seller and everyone around. Type
   `/booth 1` to `/booth 19` to pick one of the 19 booth looks (weapons, clothes, ship parts, big market stands ...);
   your choice is saved and changes an open stall right away.

@@ -308,6 +308,7 @@ public sealed partial class ClientSession
     public void MoveTo(float x, float z)
     {
         if (Mover == null) return;
+        _sitting = false;
         bool walking = Walking || Overloaded;
         float speed = AtSea ? ShipSpeed : walking ? ProtocolConstants.WalkSpeed : WorldSettings.RunSpeed;
         int action = AtSea ? 0 : walking ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction;
@@ -357,6 +358,17 @@ public sealed partial class ClientSession
         int heading = Mover.HeadingNow();
         Mover = new Mover(x, z, Mover.Speed, heading, Mover.TurnRate);
         ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: heading), $"({Name} stops)");
+    }
+
+    private bool _sitting;
+
+    public void ToggleSit()
+    {
+        if (AtSea || Mover == null || Hp <= 0) return;
+        int action = Context.Data.Actions.Gesture(_sitting ? "standing" : "sitting");
+        if (action < 0) return;
+        _sitting = !_sitting;
+        PlayAction(action, _sitting ? "(sits down)" : "(stands up)");
     }
 
     public void PlayAction(int action, string note, bool attack = false)
