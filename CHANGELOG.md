@@ -2,6 +2,7 @@
 
 ## 2026-10-18
 
+- **Shortcut keys** (F1-F12) keep their skills and items when you change map.
 - **Equip sound** also plays when you drag gear on or off.
 - **Skill Tutor**: choosing Learn skills closes the talk window so the tutor window (with your learned skills lit) is in front.
 - **Sails** no longer show holes on an undamaged ship (the client needs the ship's sail HP and max sail HP); holes now follow sail damage.
