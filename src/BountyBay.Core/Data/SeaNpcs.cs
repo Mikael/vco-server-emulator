@@ -114,6 +114,7 @@ public sealed class ShipRules
     public float WreckedTurnFactor { get; set; } = 0.5f;
     public int TurnRatePerPoint { get; set; } = 30;
     public int NpcVolleyMaxHullPercent { get; set; } = 20;
+    public int NpcDamagePercent { get; set; } = 60;
 }
 
 public sealed class SeaData

@@ -305,7 +305,7 @@ public sealed partial class ClientSession
         int side = BroadsideSide(ship.Heading, x - ship.X, z - ship.Z);
         int balls = Math.Max(1, definition.Cannons);
         int hits = CombatRules.SeaHits(balls, definition.HitPercent);
-        VolleyDamage damage = CombatRules.Volley(hits, cannon.Attack, ammunition, 0, 0);
+        VolleyDamage damage = CombatRules.Volley(hits, cannon.Attack, ammunition, 0, 0, Math.Max(1, rules.NpcDamagePercent));
         int hullPercent = SeaStance switch
         {
             SeaStanceGuard => rules.GuardHullTakenPercent,

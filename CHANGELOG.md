@@ -63,7 +63,8 @@
 - **Sinking** no longer takes your mounted cannons; ships that lost them get their starting cannons back once.
 - **Sailing out to the high seas** puts you right next to your port's harbour instead of far away from it.
 - **Pirate ships are beatable**: hull and cannons now scale with the ship's level (a level 1 pirate has 150 hull and
-  2 cannons, armed ships and flagships more), so a starter ship can win against low-level pirates.
+  2 cannons, armed ships and flagships more), and pirate cannons hit less often (45% + 2% per level) and for 60% of
+  the damage, so a starter ship can win against low-level pirates.
 - **Sea instances** (Crete and North Sea pirate instances) put you on your ship instead of walking on the water.
 - **NPC windows close** when you sail off or change map (the Docker no longer stays open at sea).
 - **Steering**: a sharp turn at sea makes your ship sail a curve (its turning circle) instead of sliding sideways, and
