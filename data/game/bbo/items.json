@@ -169,19 +169,19 @@
       "Label": "Sword"
     },
     "IDName00000344": {
-      "Photo": 0,
+      "Photo": 210002,
       "Price": 300,
       "Heal": 0,
       "Label": "High-level Cutlass"
     },
     "IDName00000345": {
-      "Photo": 0,
+      "Photo": 210002,
       "Price": 300,
       "Heal": 0,
       "Label": "Light Cutlass"
     },
     "IDName00000346": {
-      "Photo": 0,
+      "Photo": 210002,
       "Price": 300,
       "Heal": 0,
       "Label": "Broad Cutlass"
@@ -193,19 +193,19 @@
       "Label": "Cutlass"
     },
     "IDName00000348": {
-      "Photo": 0,
+      "Photo": 210004,
       "Price": 600,
       "Heal": 0,
       "Label": "High-level Knight Cutlass"
     },
     "IDName00000349": {
-      "Photo": 0,
+      "Photo": 210004,
       "Price": 600,
       "Heal": 0,
       "Label": "Light Knight Cutlass"
     },
     "IDName00000350": {
-      "Photo": 0,
+      "Photo": 210004,
       "Price": 600,
       "Heal": 0,
       "Label": "Broad Knight Cutlass"
@@ -217,19 +217,19 @@
       "Label": "Knight Cutlass"
     },
     "IDName00000352": {
-      "Photo": 0,
+      "Photo": 210005,
       "Price": 900,
       "Heal": 0,
       "Label": "High-level Western Sword"
     },
     "IDName00000353": {
-      "Photo": 0,
+      "Photo": 210005,
       "Price": 900,
       "Heal": 0,
       "Label": "Light Western Sword"
     },
     "IDName00000354": {
-      "Photo": 0,
+      "Photo": 210005,
       "Price": 900,
       "Heal": 0,
       "Label": "Broad Western Sword"
@@ -241,19 +241,19 @@
       "Label": "Western Sword"
     },
     "IDName00000356": {
-      "Photo": 0,
+      "Photo": 210006,
       "Price": 1200,
       "Heal": 0,
       "Label": "High-Level Long Sword"
     },
     "IDName00000357": {
-      "Photo": 0,
+      "Photo": 210006,
       "Price": 1200,
       "Heal": 0,
       "Label": "Light Long Sword"
     },
     "IDName00000358": {
-      "Photo": 0,
+      "Photo": 210006,
       "Price": 1200,
       "Heal": 0,
       "Label": "Broad Long Sword"
@@ -265,19 +265,19 @@
       "Label": "Long Sword"
     },
     "IDName00000360": {
-      "Photo": 0,
+      "Photo": 210007,
       "Price": 1500,
       "Heal": 0,
       "Label": "High-Level Double-edged Sword"
     },
     "IDName00000361": {
-      "Photo": 0,
+      "Photo": 210007,
       "Price": 1500,
       "Heal": 0,
       "Label": "Light Double-edged Sword"
     },
     "IDName00000362": {
-      "Photo": 0,
+      "Photo": 210007,
       "Price": 1500,
       "Heal": 0,
       "Label": "Broad Double-edged Sword"
@@ -289,19 +289,19 @@
       "Label": "Double-edged Sword"
     },
     "IDName00000364": {
-      "Photo": 0,
+      "Photo": 210008,
       "Price": 1800,
       "Heal": 0,
       "Label": "High-Level Espandon Sword"
     },
     "IDName00000365": {
-      "Photo": 0,
+      "Photo": 210008,
       "Price": 1800,
       "Heal": 0,
       "Label": "Light Espandon Sword"
     },
     "IDName00000366": {
-      "Photo": 0,
+      "Photo": 210008,
       "Price": 1800,
       "Heal": 0,
       "Label": "Broad Espandon Sword"
@@ -313,19 +313,19 @@
       "Label": "Espandon Sword"
     },
     "IDName00000368": {
-      "Photo": 0,
+      "Photo": 210009,
       "Price": 2100,
       "Heal": 0,
       "Label": "High-Level Pliable Spirit Sword"
     },
     "IDName00000369": {
-      "Photo": 0,
+      "Photo": 210009,
       "Price": 2100,
       "Heal": 0,
       "Label": "Light Pliable Spirit Sword"
     },
     "IDName00000370": {
-      "Photo": 0,
+      "Photo": 210009,
       "Price": 2100,
       "Heal": 0,
       "Label": "Broad Pliable Spirit Sword"
@@ -337,7 +337,7 @@
       "Label": "Pliable Spirit Sword"
     },
     "IDName00000372": {
-      "Photo": 0,
+      "Photo": 210010,
       "Price": 2400,
       "Heal": 0,
       "Label": "High-Level Giant Sword"
@@ -349,13 +349,13 @@
       "Label": "Sword of Damocles"
     },
     "IDName00000374": {
-      "Photo": 0,
+      "Photo": 210010,
       "Price": 2400,
       "Heal": 0,
       "Label": "Light Giant Sword"
     },
     "IDName00000375": {
-      "Photo": 0,
+      "Photo": 210010,
       "Price": 2400,
       "Heal": 0,
       "Label": "Broad Giant Sword"
@@ -367,7 +367,7 @@
       "Label": "Giant Sword"
     },
     "IDName00000377": {
-      "Photo": 0,
+      "Photo": 210011,
       "Price": 2700,
       "Heal": 0,
       "Label": "High-Level Kryss"
@@ -379,13 +379,13 @@
       "Label": "Excalibur Falchion"
     },
     "IDName00000379": {
-      "Photo": 0,
+      "Photo": 210011,
       "Price": 2700,
       "Heal": 0,
       "Label": "Light Kryss"
     },
     "IDName00000380": {
-      "Photo": 0,
+      "Photo": 210011,
       "Price": 2700,
       "Heal": 0,
       "Label": "Broad Kryss"
@@ -409,7 +409,7 @@
       "Label": "Ganjian Sword"
     },
     "IDName00000384": {
-      "Photo": 0,
+      "Photo": 210012,
       "Price": 3000,
       "Heal": 0,
       "Label": "High-Level Paladin Sword"
@@ -421,13 +421,13 @@
       "Label": "Moxie Sword"
     },
     "IDName00000386": {
-      "Photo": 0,
+      "Photo": 210012,
       "Price": 3000,
       "Heal": 0,
       "Label": "Light Paladin Sword"
     },
     "IDName00000387": {
-      "Photo": 0,
+      "Photo": 210012,
       "Price": 3000,
       "Heal": 0,
       "Label": "Broad Paladin Sword"
@@ -445,7 +445,7 @@
       "Label": "Paladin Sword"
     },
     "IDName00000390": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 300,
       "Heal": 0,
       "Label": "High-Level Infantry Falchion"
@@ -457,13 +457,13 @@
       "Label": "Falchion"
     },
     "IDName00000392": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 300,
       "Heal": 0,
       "Label": "Light Infantry Falchion"
     },
     "IDName00000393": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 300,
       "Heal": 0,
       "Label": "Broad Infantry Falchion"
@@ -475,19 +475,19 @@
       "Label": "Infantry Falchion"
     },
     "IDName00000395": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 600,
       "Heal": 0,
       "Label": "High-Level Kukri"
     },
     "IDName00000396": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 600,
       "Heal": 0,
       "Label": "Light Kukri"
     },
     "IDName00000397": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 600,
       "Heal": 0,
       "Label": "Broad Kukri"
@@ -499,19 +499,19 @@
       "Label": "Kukri"
     },
     "IDName00000399": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 900,
       "Heal": 0,
       "Label": "High-Level Sailor Scimitar"
     },
     "IDName00000400": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 900,
       "Heal": 0,
       "Label": "Light Sailor Scimitar"
     },
     "IDName00000401": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 900,
       "Heal": 0,
       "Label": "Broad Sailor Scimitar"
@@ -523,19 +523,19 @@
       "Label": "Sailor Scimitar"
     },
     "IDName00000403": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 1200,
       "Heal": 0,
       "Label": "High-Level Sabre"
     },
     "IDName00000404": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 1200,
       "Heal": 0,
       "Label": "Light Sabre"
     },
     "IDName00000405": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 1200,
       "Heal": 0,
       "Label": "Broad Sabre"
@@ -547,19 +547,19 @@
       "Label": "Sabre"
     },
     "IDName00000407": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 1500,
       "Heal": 0,
       "Label": "High-Level Bayonet"
     },
     "IDName00000408": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 1500,
       "Heal": 0,
       "Label": "Light Bayonet"
     },
     "IDName00000409": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 1500,
       "Heal": 0,
       "Label": "Broad Bayonet"
@@ -571,19 +571,19 @@
       "Label": "Bayonet"
     },
     "IDName00000411": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 1800,
       "Heal": 0,
       "Label": "High-Level Hacking Falchion"
     },
     "IDName00000412": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 1800,
       "Heal": 0,
       "Label": "Light Hacking Falchion"
     },
     "IDName00000413": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 1800,
       "Heal": 0,
       "Label": "Broad Hacking Falchion"
@@ -595,19 +595,19 @@
       "Label": "Hacking Falchion"
     },
     "IDName00000415": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 2100,
       "Heal": 0,
       "Label": "High-Level Katana"
     },
     "IDName00000416": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 2100,
       "Heal": 0,
       "Label": "Light Katana"
     },
     "IDName00000417": {
-      "Photo": 0,
+      "Photo": 210018,
       "Price": 2100,
       "Heal": 0,
       "Label": "Broad Katana"
@@ -619,7 +619,7 @@
       "Label": "Katana"
     },
     "IDName00000419": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 2400,
       "Heal": 0,
       "Label": "High-Level Damascus Scimitar"
@@ -631,13 +631,13 @@
       "Label": "Halfmoon Scimitar"
     },
     "IDName00000421": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 2400,
       "Heal": 0,
       "Label": "Light Damascus Scimitar"
     },
     "IDName00000422": {
-      "Photo": 0,
+      "Photo": 210003,
       "Price": 2400,
       "Heal": 0,
       "Label": "Broad Damascus Scimitar"
@@ -649,7 +649,7 @@
       "Label": "Damascus Scimitar"
     },
     "IDName00000424": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 2700,
       "Heal": 0,
       "Label": "High-Level Dragon Fang Sabre"
@@ -661,13 +661,13 @@
       "Label": "Dragon God Block Moon Falchion"
     },
     "IDName00000426": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 2700,
       "Heal": 0,
       "Label": "Light Dragon Fang Sabre"
     },
     "IDName00000427": {
-      "Photo": 0,
+      "Photo": 210016,
       "Price": 2700,
       "Heal": 0,
       "Label": "Broad Dragon Fang Sabre"
@@ -691,7 +691,7 @@
       "Label": "Mutiple-tempered Falchion"
     },
     "IDName00000431": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 3000,
       "Heal": 0,
       "Label": "High-Level Vague-Moon Scimitars"
@@ -703,13 +703,13 @@
       "Label": "Dragon-scale Falchion"
     },
     "IDName00000433": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 3000,
       "Heal": 0,
       "Label": "Light Vague-Moon Scimitars"
     },
     "IDName00000434": {
-      "Photo": 0,
+      "Photo": 210017,
       "Price": 3000,
       "Heal": 0,
       "Label": "Broad Vague-Moon Scimitars"
@@ -727,7 +727,7 @@
       "Label": "Vague-Moon Scimitars"
     },
     "IDName00000437": {
-      "Photo": 0,
+      "Photo": 210023,
       "Price": 300,
       "Heal": 0,
       "Label": "High-Level Broad Axe"
@@ -739,13 +739,13 @@
       "Label": "Axe"
     },
     "IDName00000439": {
-      "Photo": 0,
+      "Photo": 210023,
       "Price": 300,
       "Heal": 0,
       "Label": "Light Broad Axe"
     },
     "IDName00000440": {
-      "Photo": 0,
+      "Photo": 210023,
       "Price": 300,
       "Heal": 0,
       "Label": "Broad Broad Axe"
@@ -757,19 +757,19 @@
       "Label": "Broad Axe"
     },
     "IDName00000442": {
-      "Photo": 0,
+      "Photo": 210024,
       "Price": 600,
       "Heal": 0,
       "Label": "High-Level Hatchet"
     },
     "IDName00000443": {
-      "Photo": 0,
+      "Photo": 210024,
       "Price": 600,
       "Heal": 0,
       "Label": "Light Hatchet"
     },
     "IDName00000444": {
-      "Photo": 0,
+      "Photo": 210024,
       "Price": 600,
       "Heal": 0,
       "Label": "Broad Hatchet"
@@ -781,19 +781,19 @@
       "Label": "Hatchet"
     },
     "IDName00000446": {
-      "Photo": 0,
+      "Photo": 210025,
       "Price": 900,
       "Heal": 0,
       "Label": "High-Level Broadax"
     },
     "IDName00000447": {
-      "Photo": 0,
+      "Photo": 210025,
       "Price": 900,
       "Heal": 0,
       "Label": "Light Broadaxe"
     },
     "IDName00000448": {
-      "Photo": 0,
+      "Photo": 210025,
       "Price": 900,
       "Heal": 0,
       "Label": "Broad Broadax"
@@ -805,19 +805,19 @@
       "Label": "Broadax"
     },
     "IDName00000450": {
-      "Photo": 0,
+      "Photo": 210151,
       "Price": 1200,
       "Heal": 0,
       "Label": "High-Level Battle-axe"
     },
     "IDName00000451": {
-      "Photo": 0,
+      "Photo": 210151,
       "Price": 1200,
       "Heal": 0,
       "Label": "Light Battle-axe"
     },
     "IDName00000452": {
-      "Photo": 0,
+      "Photo": 210151,
       "Price": 1200,
       "Heal": 0,
       "Label": "Broad Battle-axe"
@@ -829,19 +829,19 @@
       "Label": "Battle-axe"
     },
     "IDName00000454": {
-      "Photo": 0,
+      "Photo": 210152,
       "Price": 1500,
       "Heal": 0,
       "Label": "High-Level Double Edge Axe"
     },
     "IDName00000455": {
-      "Photo": 0,
+      "Photo": 210152,
       "Price": 1500,
       "Heal": 0,
       "Label": "Light Double Edge Axe"
     },
     "IDName00000456": {
-      "Photo": 0,
+      "Photo": 210152,
       "Price": 1500,
       "Heal": 0,
       "Label": "Broad Double Edge Axe"
@@ -853,19 +853,19 @@
       "Label": "Double Edge Axe"
     },
     "IDName00000458": {
-      "Photo": 0,
+      "Photo": 210153,
       "Price": 1800,
       "Heal": 0,
       "Label": "High-Level Poleax"
     },
     "IDName00000459": {
-      "Photo": 0,
+      "Photo": 210153,
       "Price": 1800,
       "Heal": 0,
       "Label": "Light Poleax"
     },
     "IDName00000460": {
-      "Photo": 0,
+      "Photo": 210153,
       "Price": 1800,
       "Heal": 0,
       "Label": "Broad Poleax"
@@ -877,19 +877,19 @@
       "Label": "Poleax"
     },
     "IDName00000462": {
-      "Photo": 0,
+      "Photo": 210154,
       "Price": 2100,
       "Heal": 0,
       "Label": "High-Level Panheaded Axe"
     },
     "IDName00000463": {
-      "Photo": 0,
+      "Photo": 210154,
       "Price": 2100,
       "Heal": 0,
       "Label": "Light Panheaded Axe"
     },
     "IDName00000464": {
-      "Photo": 0,
+      "Photo": 210154,
       "Price": 2100,
       "Heal": 0,
       "Label": "Broad Panheaded Axe"
@@ -901,7 +901,7 @@
       "Label": "Panheaded Axe"
     },
     "IDName00000466": {
-      "Photo": 0,
+      "Photo": 210155,
       "Price": 2400,
       "Heal": 0,
       "Label": "High-Level Hook Stab Axe"
@@ -913,13 +913,13 @@
       "Label": "Pharaoh's Mace"
     },
     "IDName00000468": {
-      "Photo": 0,
+      "Photo": 210155,
       "Price": 2400,
       "Heal": 0,
       "Label": "Light Hook Stab Axe"
     },
     "IDName00000469": {
-      "Photo": 0,
+      "Photo": 210155,
       "Price": 2400,
       "Heal": 0,
       "Label": "Broad Hook Stab Axe"
@@ -931,7 +931,7 @@
       "Label": "Hook Stab Axe"
     },
     "IDName00000471": {
-      "Photo": 0,
+      "Photo": 210156,
       "Price": 2700,
       "Heal": 0,
       "Label": "High-Level Fighter Axe"
@@ -943,13 +943,13 @@
       "Label": "Golden Rod of Monkey King"
     },
     "IDName00000473": {
-      "Photo": 0,
+      "Photo": 210156,
       "Price": 2700,
       "Heal": 0,
       "Label": "Light Fighter Axe"
     },
     "IDName00000474": {
-      "Photo": 0,
+      "Photo": 210156,
       "Price": 2700,
       "Heal": 0,
       "Label": "Broad Fighter Axe"
@@ -973,7 +973,7 @@
       "Label": "Axe of Minotor"
     },
     "IDName00000478": {
-      "Photo": 0,
+      "Photo": 210157,
       "Price": 3000,
       "Heal": 0,
       "Label": "High-Level Overlord Axe"
@@ -985,13 +985,13 @@
       "Label": "Longinus Spear"
     },
     "IDName00000480": {
-      "Photo": 0,
+      "Photo": 210157,
       "Price": 3000,
       "Heal": 0,
       "Label": "Light Overlord Axe"
     },
     "IDName00000481": {
-      "Photo": 0,
+      "Photo": 210157,
       "Price": 3000,
       "Heal": 0,
       "Label": "Broad Overlord Axe"
@@ -11947,7 +11947,7 @@
       "Label": "Squid"
     },
     "IDName00003538": {
-      "Photo": 0,
+      "Photo": 210104,
       "Price": 300,
       "Heal": 0,
       "Label": "High-quality Short Gun"
@@ -11959,13 +11959,13 @@
       "Label": "Gun"
     },
     "IDName00003540": {
-      "Photo": 0,
+      "Photo": 210104,
       "Price": 300,
       "Heal": 0,
       "Label": "Accurate Short Gun"
     },
     "IDName00003541": {
-      "Photo": 0,
+      "Photo": 210104,
       "Price": 300,
       "Heal": 0,
       "Label": "Rapid-fire Short Gun"
@@ -11977,19 +11977,19 @@
       "Label": "Short Gun"
     },
     "IDName00003543": {
-      "Photo": 0,
+      "Photo": 210105,
       "Price": 600,
       "Heal": 0,
       "Label": "High-Level Flintlock"
     },
     "IDName00003544": {
-      "Photo": 0,
+      "Photo": 210105,
       "Price": 600,
       "Heal": 0,
       "Label": "Accurate Flintlock"
     },
     "IDName00003545": {
-      "Photo": 0,
+      "Photo": 210105,
       "Price": 600,
       "Heal": 0,
       "Label": "Rapid-fire Flintlock"
@@ -12001,19 +12001,19 @@
       "Label": "Flintlock"
     },
     "IDName00003547": {
-      "Photo": 0,
+      "Photo": 210101,
       "Price": 900,
       "Heal": 0,
       "Label": "High-Level Shock Fire Gun"
     },
     "IDName00003548": {
-      "Photo": 0,
+      "Photo": 210101,
       "Price": 900,
       "Heal": 0,
       "Label": "Accurate Shock Fire Gun"
     },
     "IDName00003549": {
-      "Photo": 0,
+      "Photo": 210101,
       "Price": 900,
       "Heal": 0,
       "Label": "Rapid-fire Shock Fire Gun"
@@ -12025,19 +12025,19 @@
       "Label": "Shocking Fire Gun"
     },
     "IDName00003551": {
-      "Photo": 0,
+      "Photo": 210102,
       "Price": 1200,
       "Heal": 0,
       "Label": "High-Level Long-barrel Gun"
     },
     "IDName00003552": {
-      "Photo": 0,
+      "Photo": 210102,
       "Price": 1200,
       "Heal": 0,
       "Label": "Accurate Long-barrel Gun"
     },
     "IDName00003553": {
-      "Photo": 0,
+      "Photo": 210102,
       "Price": 1200,
       "Heal": 0,
       "Label": "Rapid-fire Long-barrel Gun"
@@ -12049,19 +12049,19 @@
       "Label": "Long-barrel Gun"
     },
     "IDName00003555": {
-      "Photo": 0,
+      "Photo": 210103,
       "Price": 1500,
       "Heal": 0,
       "Label": "High-Level Breech-loading Gun"
     },
     "IDName00003556": {
-      "Photo": 0,
+      "Photo": 210103,
       "Price": 1500,
       "Heal": 0,
       "Label": "Accurate Breech-loading Gun"
     },
     "IDName00003557": {
-      "Photo": 0,
+      "Photo": 210103,
       "Price": 1500,
       "Heal": 0,
       "Label": "Rapid-fire Breech-loading Gun"
@@ -12073,19 +12073,19 @@
       "Label": "Breech-loading Gun"
     },
     "IDName00003559": {
-      "Photo": 0,
+      "Photo": 210106,
       "Price": 1800,
       "Heal": 0,
       "Label": "High-Level Musket"
     },
     "IDName00003560": {
-      "Photo": 0,
+      "Photo": 210106,
       "Price": 1800,
       "Heal": 0,
       "Label": "Accurate Musket"
     },
     "IDName00003561": {
-      "Photo": 0,
+      "Photo": 210106,
       "Price": 1800,
       "Heal": 0,
       "Label": "Rapid-fire Musket"
@@ -12097,19 +12097,19 @@
       "Label": "Musket"
     },
     "IDName00003563": {
-      "Photo": 0,
+      "Photo": 210107,
       "Price": 2100,
       "Heal": 0,
       "Label": "High-Level Harquebus"
     },
     "IDName00003564": {
-      "Photo": 0,
+      "Photo": 210107,
       "Price": 2100,
       "Heal": 0,
       "Label": "Accurate Harquebus"
     },
     "IDName00003565": {
-      "Photo": 0,
+      "Photo": 210107,
       "Price": 2100,
       "Heal": 0,
       "Label": "Rapid-fire Harquebus"
@@ -12121,19 +12121,19 @@
       "Label": "Harquebus"
     },
     "IDName00003567": {
-      "Photo": 0,
+      "Photo": 210108,
       "Price": 2400,
       "Heal": 0,
       "Label": "High-Level Flintlock Gun"
     },
     "IDName00003568": {
-      "Photo": 0,
+      "Photo": 210108,
       "Price": 2400,
       "Heal": 0,
       "Label": "Accurate Flintlock Gun"
     },
     "IDName00003569": {
-      "Photo": 0,
+      "Photo": 210108,
       "Price": 2400,
       "Heal": 0,
       "Label": "Rapid-fire Flintlock Gun"
@@ -12145,19 +12145,19 @@
       "Label": "Flintlock"
     },
     "IDName00003571": {
-      "Photo": 0,
+      "Photo": 210109,
       "Price": 2700,
       "Heal": 0,
       "Label": "High-Level Revolver"
     },
     "IDName00003572": {
-      "Photo": 0,
+      "Photo": 210109,
       "Price": 2700,
       "Heal": 0,
       "Label": "Accurate Revolver"
     },
     "IDName00003573": {
-      "Photo": 0,
+      "Photo": 210109,
       "Price": 2700,
       "Heal": 0,
       "Label": "Rapid-fire Revolver"
@@ -12169,19 +12169,19 @@
       "Label": "Revolver"
     },
     "IDName00003575": {
-      "Photo": 0,
+      "Photo": 210110,
       "Price": 3000,
       "Heal": 0,
       "Label": "High-Level Detonator Gun"
     },
     "IDName00003576": {
-      "Photo": 0,
+      "Photo": 210110,
       "Price": 3000,
       "Heal": 0,
       "Label": "Accurate Detonator Gun"
     },
     "IDName00003577": {
-      "Photo": 0,
+      "Photo": 210110,
       "Price": 3000,
       "Heal": 0,
       "Label": "Rapid-fire Detonator Gun"

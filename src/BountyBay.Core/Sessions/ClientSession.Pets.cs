@@ -173,6 +173,7 @@ public sealed partial class ClientSession
         {
             ["Name"] = pet.Name,
             ["Model"] = WhistlePetModel,
+            ["Photo"] = WhistlePetPhoto,
             ["ActionSet"] = 0,
             ["CollideRadius"] = 0.5f,
             ["HP"] = health,

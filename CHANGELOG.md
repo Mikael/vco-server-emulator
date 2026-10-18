@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-10-18
+
+- **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
+- **Skill experience bar** in the Stats > Skill tab moves as you gain experience.
+- **Skill names in messages** use the game's names ("You learned Rapid Fire.", "Shooting reached level 6.") instead of
+  SKILL_/US_ keys.
+- **Command Interface**: learned stunts show in the "Activate skill" grid (land stunts on the On Land page, sea stunts
+  on At Sea) and gestures play when clicked.
+- **Guns** use the pistol stance again; the earlier axe/gun swap was wrong and is undone.
+- **Swords and blades** wear a model that matches their icon, and the High-level/Light/Broad versions of weapons have
+  an icon and a model.
+- **Tavern Boss** recruits sailors (necessary, all, a fixed number), heals and dismisses them.
+- **Provisions** are eaten at sea, and you can't sail off without them.
+- **Equip sound** plays when you right-click to equip.
+- **NPC windows** close when you walk away from the NPC.
+- **Pet portrait** shows in the pet frame.
+
 ## 2026-10-17 (evening)
 
 - **Clothes and hats show on the character.** Every wearable outfit now has a model: upgraded versions (High-Level, Refined,

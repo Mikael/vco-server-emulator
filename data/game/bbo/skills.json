@@ -4014,9 +4014,9 @@
   "ActionSets": [
     {
       "ActionSet": 1,
-      "Weapon": "SKILL_SHOT",
+      "Weapon": "SKILL_AXE",
       "Meaning": "axe (also the timber-felling axe: [9] \"equipped axe over a tree pile\")",
-      "Evidence": "CLIENT:MouseShape [1] 1 ;斧头, [9] 1 | USER: in game the axe and gun stances were swapped (2026-10-17), so 1/8 = gun and 5/6 = axe"
+      "Evidence": "CLIENT:MouseShape [1] 1 ;斧头, [9] 1"
     },
     {
       "ActionSet": 0,
@@ -4044,21 +4044,21 @@
     },
     {
       "ActionSet": 5,
-      "Weapon": "SKILL_AXE",
+      "Weapon": "SKILL_SHOT",
       "Meaning": "pistol",
-      "Evidence": "CLIENT:MouseShape [1] 5 ;手枪 | USER: in game the axe and gun stances were swapped (2026-10-17), so 1/8 = gun and 5/6 = axe"
+      "Evidence": "CLIENT:MouseShape [1] 5 ;手枪"
     },
     {
       "ActionSet": 6,
-      "Weapon": "SKILL_AXE",
+      "Weapon": "SKILL_SHOT",
       "Meaning": "pistol (second gun set: load6 reload, ArmsInfoInBattle B0_6 left hand)",
-      "Evidence": "CLIENT:MouseShape [1] 6 ;手枪 | USER: in game the axe and gun stances were swapped (2026-10-17), so 1/8 = gun and 5/6 = axe"
+      "Evidence": "CLIENT:MouseShape [1] 6 ;手枪"
     },
     {
       "ActionSet": 8,
-      "Weapon": "SKILL_SHOT",
+      "Weapon": "SKILL_AXE",
       "Meaning": "axe variant",
-      "Evidence": "CLIENT:MouseShape [1] 8 ;斧头 | USER: in game the axe and gun stances were swapped (2026-10-17), so 1/8 = gun and 5/6 = axe"
+      "Evidence": "CLIENT:MouseShape [1] 8 ;斧头"
     },
     {
       "ActionSet": 9,

@@ -87,9 +87,41 @@ public sealed partial class ClientSession
             case DialogueAction.Sail:
                 SailOff();
                 break;
+            case DialogueAction.TavernHireNeeded or DialogueAction.TavernHireAll or DialogueAction.TavernHireSome
+                or DialogueAction.TavernHeal or DialogueAction.TavernDismiss:
+                TavernSailors(action);
+                break;
             default:
                 if (action != DialogueAction.Bye) Log.Info(Tag, $"{Name}: dialogue option {(int)action} of object {target} has no handler");
                 CloseNpcDialogue();
+                break;
+        }
+    }
+
+    // Tavern Boss menu (client npc_menu gnnpc009: -40005..-40009).
+    private void TavernSailors(DialogueAction action)
+    {
+        EnsureShipState();
+        int aboard = Character.Sailors + Character.SailorsWounded;
+        switch (action)
+        {
+            case DialogueAction.TavernHireNeeded when aboard >= FleetSailorsMax / 2:
+                SystemMessage("Your ship already has the sailors it needs.");
+                break;
+            case DialogueAction.TavernHireNeeded:
+                HireShipSailors(FleetSailorsMax / 2 - aboard);
+                break;
+            case DialogueAction.TavernHireAll:
+                HireShipSailors(FleetSailorsMax - aboard);
+                break;
+            case DialogueAction.TavernHireSome:
+                AskHireSailors();
+                break;
+            case DialogueAction.TavernHeal:
+                HealShipSailors();
+                break;
+            default:
+                AskDismissSailors();
                 break;
         }
     }

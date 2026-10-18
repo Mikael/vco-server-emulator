@@ -214,7 +214,7 @@ public sealed partial class ClientSession
     public void RefreshSupplies()
     {
         if (Character.Items == null) return;
-        int sum = BagCount(ProvisionItem);
+        int sum = ProvisionCount();
         int cost = SupplyCost;
         int days = sum / (cost * Math.Max(1, Sea.Data.Rules.SupplyTicksPerDay));
         if (Properties.Int("SupplySum", -1) != sum) SetProperty("SupplySum", sum);
@@ -524,21 +524,27 @@ public sealed partial class ClientSession
         Send(ChatPackets.Script(0, $"ToolCooling {kind} {milliseconds}"), "(item cooldown)");
     }
 
+    private int ProvisionCount() => BagCount(ProvisionItem) + Cargo.Values.Where(stack => stack.Name == ProvisionItem).Sum(stack => stack.Amount);
+
     private void ConsumeSupplies()
     {
         if (++_supplyClock < Math.Max(1, Sea.Data.Rules.SupplyDaySeconds)) return;
         _supplyClock = 0;
-        int owed = Math.Min(SupplyCost, BagCount(ProvisionItem));
-        foreach (int slot in Items.Where(pair => pair.Value.Name == ProvisionItem).Select(pair => pair.Key).Order().ToList())
+        int owed = Math.Min(SupplyCost, ProvisionCount());
+        foreach (int view in new[] { ViewId.Cargo, ViewId.BagItems })
         {
-            if (owed <= 0) break;
-            int taken = Math.Min(owed, Items[slot].Amount);
-            TakeFromBag(slot, taken, "(provisions eaten)");
-            owed -= taken;
+            Dictionary<int, ItemStack> slots = view == ViewId.Cargo ? Cargo : Items;
+            foreach (int slot in slots.Where(pair => pair.Value.Name == ProvisionItem).Select(pair => pair.Key).Order().ToList())
+            {
+                if (owed <= 0) break;
+                int taken = Math.Min(owed, slots[slot].Amount);
+                TakeFrom(view, slot, taken, "(provisions eaten)");
+                owed -= taken;
+            }
         }
-        if (BagCount(ProvisionItem) > 0 || _suppliesWarned) return;
+        if (ProvisionCount() > 0 || _suppliesWarned) return;
         _suppliesWarned = true;
-        SystemMessage("Your ship has run out of provisions. Buy more from a Docker.", SystemMessageKind.Prompt);
+        SystemMessage("Provision Insufficient, please replenish as soon as possible...", SystemMessageKind.Prompt);
     }
 
     private void GainVoyageExperience()

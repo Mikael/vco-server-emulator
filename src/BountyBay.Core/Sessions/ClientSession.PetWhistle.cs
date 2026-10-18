@@ -30,6 +30,9 @@ public sealed partial class ClientSession
     public int WhistlePetModel
         => CalledPetWhistle is { } whistle && WhistleBook.Whistle(whistle.Key) is { Model: > 0 } definition ? definition.Model : PetModel;
 
+    public int WhistlePetPhoto
+        => CalledPetWhistle is { } whistle && WhistleBook.Whistle(whistle.Key) is { Image: > 0 } definition ? definition.Image : WhistlePetModel;
+
     public void OpenWhistles()
     {
         List<PetWhistleRecord> whistles = PetWhistles;

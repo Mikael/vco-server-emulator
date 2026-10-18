@@ -209,7 +209,7 @@ public sealed partial class ClientSession
         }
     }
 
-    public bool MoveGear(int view, int index)
+    public bool MoveGear(int view, int index, bool sound = true)
     {
         if (view is not (ViewId.BagEquip or ViewId.Equipped)) return false;
         if (!Bags[view].TryGetValue(index, out ItemStack? item)) return false;
@@ -242,6 +242,7 @@ public sealed partial class ClientSession
         RefreshAppearance();
         RefreshStats();
         Save();
+        if (sound) Send(UiPackets.Custom("PlaySound SE3003"), "(equip sound)");
         Log.Info(Tag, $"{Name} {(target == ViewId.Equipped ? "wears" : "takes off")} {item.Name}");
         return true;
     }

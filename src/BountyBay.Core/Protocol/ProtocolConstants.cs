@@ -131,6 +131,11 @@ public enum DialogueAction
     WarehouseExpand = 13,
     Nobility = 14,
     NobilityApply = 15,
+    TavernHireNeeded = 16,
+    TavernHireAll = 17,
+    TavernHireSome = 18,
+    TavernHeal = 19,
+    TavernDismiss = 20,
     Guild = 200,
 }
 

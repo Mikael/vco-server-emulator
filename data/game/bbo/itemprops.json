@@ -210,7 +210,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000040,
+    "WearModelF": 4000040
   },
   "IDName00000345": {
     "Kind": 5,
@@ -220,7 +223,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000040,
+    "WearModelF": 4000040
   },
   "IDName00000346": {
     "Kind": 5,
@@ -230,7 +236,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000040,
+    "WearModelF": 4000040
   },
   "IDName00000347": {
     "Kind": 5,
@@ -245,8 +254,8 @@
     "NeedSkillLevel": 1,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000039,
-    "WearModelF": 4000039,
+    "WearModel": 4000040,
+    "WearModelF": 4000040,
     "ArmType": 1
   },
   "IDName00000348": {
@@ -257,7 +266,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000043,
+    "WearModelF": 4000043
   },
   "IDName00000349": {
     "Kind": 5,
@@ -267,7 +279,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000043,
+    "WearModelF": 4000043
   },
   "IDName00000350": {
     "Kind": 5,
@@ -277,7 +292,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000043,
+    "WearModelF": 4000043
   },
   "IDName00000351": {
     "Kind": 5,
@@ -304,7 +322,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000047,
+    "WearModelF": 4000047
   },
   "IDName00000353": {
     "Kind": 5,
@@ -314,7 +335,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000047,
+    "WearModelF": 4000047
   },
   "IDName00000354": {
     "Kind": 5,
@@ -324,7 +348,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000047,
+    "WearModelF": 4000047
   },
   "IDName00000355": {
     "Kind": 5,
@@ -339,8 +366,8 @@
     "NeedSkillLevel": 21,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000047,
+    "WearModelF": 4000047,
     "ArmType": 1
   },
   "IDName00000356": {
@@ -351,7 +378,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000208,
+    "WearModelF": 4000208
   },
   "IDName00000357": {
     "Kind": 5,
@@ -361,7 +391,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000208,
+    "WearModelF": 4000208
   },
   "IDName00000358": {
     "Kind": 5,
@@ -371,7 +404,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000208,
+    "WearModelF": 4000208
   },
   "IDName00000359": {
     "Kind": 5,
@@ -398,7 +434,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000044,
+    "WearModelF": 4000044
   },
   "IDName00000361": {
     "Kind": 5,
@@ -408,7 +447,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000044,
+    "WearModelF": 4000044
   },
   "IDName00000362": {
     "Kind": 5,
@@ -418,7 +460,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000044,
+    "WearModelF": 4000044
   },
   "IDName00000363": {
     "Kind": 5,
@@ -433,8 +478,8 @@
     "NeedSkillLevel": 41,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000044,
+    "WearModelF": 4000044,
     "ArmType": 1
   },
   "IDName00000364": {
@@ -445,7 +490,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000049,
+    "WearModelF": 4000049
   },
   "IDName00000365": {
     "Kind": 5,
@@ -455,7 +503,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000049,
+    "WearModelF": 4000049
   },
   "IDName00000366": {
     "Kind": 5,
@@ -465,7 +516,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000049,
+    "WearModelF": 4000049
   },
   "IDName00000367": {
     "Kind": 5,
@@ -480,8 +534,8 @@
     "NeedSkillLevel": 51,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000049,
+    "WearModelF": 4000049,
     "ArmType": 1
   },
   "IDName00000368": {
@@ -492,7 +546,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000819,
+    "WearModelF": 4000819
   },
   "IDName00000369": {
     "Kind": 5,
@@ -502,7 +559,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000819,
+    "WearModelF": 4000819
   },
   "IDName00000370": {
     "Kind": 5,
@@ -512,7 +572,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000819,
+    "WearModelF": 4000819
   },
   "IDName00000371": {
     "Kind": 5,
@@ -527,8 +590,8 @@
     "NeedSkillLevel": 61,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000819,
+    "WearModelF": 4000819,
     "ArmType": 1
   },
   "IDName00000372": {
@@ -539,7 +602,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000048,
+    "WearModelF": 4000048
   },
   "IDName00000373": {
     "Weight": 1,
@@ -553,7 +619,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000048,
+    "WearModelF": 4000048
   },
   "IDName00000375": {
     "Kind": 5,
@@ -563,7 +632,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000048,
+    "WearModelF": 4000048
   },
   "IDName00000376": {
     "Kind": 5,
@@ -578,8 +650,8 @@
     "NeedSkillLevel": 71,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000048,
+    "WearModelF": 4000048,
     "ArmType": 1
   },
   "IDName00000377": {
@@ -590,7 +662,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000042,
+    "WearModelF": 4000042
   },
   "IDName00000378": {
     "Kind": 6,
@@ -610,7 +685,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000042,
+    "WearModelF": 4000042
   },
   "IDName00000380": {
     "Kind": 5,
@@ -620,7 +698,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000042,
+    "WearModelF": 4000042
   },
   "IDName00000381": {
     "Kind": 5,
@@ -645,8 +726,8 @@
     "NeedSkillLevel": 81,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208
+    "WearModel": 4000042,
+    "WearModelF": 4000042
   },
   "IDName00000383": {
     "Kind": 5,
@@ -666,7 +747,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000046,
+    "WearModelF": 4000046
   },
   "IDName00000385": {
     "Kind": 5,
@@ -686,7 +770,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000046,
+    "WearModelF": 4000046
   },
   "IDName00000387": {
     "Kind": 5,
@@ -696,7 +783,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SWORD",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000046,
+    "WearModelF": 4000046
   },
   "IDName00000388": {
     "Kind": 5,
@@ -721,8 +811,8 @@
     "NeedSkillLevel": 91,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000046,
+    "WearModelF": 4000046,
     "ArmType": 1
   },
   "IDName00000390": {
@@ -733,7 +823,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000391": {
     "Kind": 6,
@@ -753,7 +846,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000393": {
     "Kind": 6,
@@ -763,7 +859,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000394": {
     "Kind": 6,
@@ -778,8 +877,8 @@
     "NeedSkillLevel": 1,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000048,
-    "WearModelF": 4000048,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1
   },
   "IDName00000395": {
@@ -790,7 +889,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000396": {
     "Kind": 6,
@@ -800,7 +902,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000397": {
     "Kind": 6,
@@ -810,7 +915,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000398": {
     "Kind": 6,
@@ -837,7 +945,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000400": {
     "Kind": 6,
@@ -847,7 +958,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000401": {
     "Kind": 6,
@@ -857,7 +971,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000402": {
     "Kind": 6,
@@ -872,8 +989,8 @@
     "NeedSkillLevel": 21,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000045,
-    "WearModelF": 4000045,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName00000403": {
@@ -884,7 +1001,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000404": {
     "Kind": 6,
@@ -894,7 +1014,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000405": {
     "Kind": 6,
@@ -904,7 +1027,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000406": {
     "Kind": 6,
@@ -931,7 +1057,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000408": {
     "Kind": 6,
@@ -941,7 +1070,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000409": {
     "Kind": 6,
@@ -951,7 +1083,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000410": {
     "Kind": 6,
@@ -966,8 +1101,8 @@
     "NeedSkillLevel": 41,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000411": {
     "Kind": 6,
@@ -977,7 +1112,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000412": {
     "Kind": 6,
@@ -987,7 +1125,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000413": {
     "Kind": 6,
@@ -997,7 +1138,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000414": {
     "Kind": 6,
@@ -1012,8 +1156,8 @@
     "NeedSkillLevel": 51,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001320,
+    "WearModelF": 4001320,
     "ArmType": 1
   },
   "IDName00000415": {
@@ -1024,7 +1168,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000416": {
     "Kind": 6,
@@ -1034,7 +1181,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000417": {
     "Kind": 6,
@@ -1044,7 +1194,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001430,
+    "WearModelF": 4001430
   },
   "IDName00000418": {
     "Kind": 6,
@@ -1059,8 +1212,8 @@
     "NeedSkillLevel": 61,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName00000419": {
@@ -1071,7 +1224,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000420": {
     "Kind": 6,
@@ -1091,7 +1247,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000422": {
     "Kind": 6,
@@ -1101,7 +1260,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000209,
+    "WearModelF": 4000209
   },
   "IDName00000423": {
     "Kind": 6,
@@ -1128,7 +1290,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000425": {
     "Kind": 6,
@@ -1148,7 +1313,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000427": {
     "Kind": 6,
@@ -1158,7 +1326,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001580,
+    "WearModelF": 4001580
   },
   "IDName00000428": {
     "Kind": 5,
@@ -1183,8 +1354,8 @@
     "NeedSkillLevel": 81,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1
   },
   "IDName00000430": {
@@ -1205,7 +1376,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000432": {
     "Kind": 6,
@@ -1225,7 +1399,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000434": {
     "Kind": 6,
@@ -1235,7 +1412,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_FALCHION",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000435": {
     "Weight": 1,
@@ -1254,8 +1434,8 @@
     "NeedSkillLevel": 91,
     "Unrepairable": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209
+    "WearModel": 4001320,
+    "WearModelF": 4001320
   },
   "IDName00000437": {
     "Kind": 7,
@@ -1265,7 +1445,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001220,
+    "WearModelF": 4001220
   },
   "IDName00000438": {
     "Kind": 7,
@@ -1291,7 +1474,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001220,
+    "WearModelF": 4001220
   },
   "IDName00000440": {
     "Kind": 7,
@@ -1301,7 +1487,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001220,
+    "WearModelF": 4001220
   },
   "IDName00000441": {
     "Kind": 7,
@@ -1328,7 +1517,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001230,
+    "WearModelF": 4001230
   },
   "IDName00000443": {
     "Kind": 7,
@@ -1338,7 +1530,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001230,
+    "WearModelF": 4001230
   },
   "IDName00000444": {
     "Kind": 7,
@@ -1348,7 +1543,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001230,
+    "WearModelF": 4001230
   },
   "IDName00000445": {
     "Kind": 7,
@@ -1375,7 +1573,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001240,
+    "WearModelF": 4001240
   },
   "IDName00000447": {
     "Kind": 7,
@@ -1385,7 +1586,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001240,
+    "WearModelF": 4001240
   },
   "IDName00000448": {
     "Kind": 7,
@@ -1395,7 +1599,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001240,
+    "WearModelF": 4001240
   },
   "IDName00000449": {
     "Kind": 7,
@@ -1421,7 +1628,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001250,
+    "WearModelF": 4001250
   },
   "IDName00000451": {
     "Kind": 7,
@@ -1431,7 +1641,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001250,
+    "WearModelF": 4001250
   },
   "IDName00000452": {
     "Kind": 7,
@@ -1441,7 +1654,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001250,
+    "WearModelF": 4001250
   },
   "IDName00000453": {
     "Kind": 7,
@@ -1467,7 +1683,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001260,
+    "WearModelF": 4001260
   },
   "IDName00000455": {
     "Kind": 7,
@@ -1477,7 +1696,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001260,
+    "WearModelF": 4001260
   },
   "IDName00000456": {
     "Kind": 7,
@@ -1487,7 +1709,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001260,
+    "WearModelF": 4001260
   },
   "IDName00000457": {
     "Kind": 7,
@@ -1514,7 +1739,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001270,
+    "WearModelF": 4001270
   },
   "IDName00000459": {
     "Kind": 7,
@@ -1524,7 +1752,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001270,
+    "WearModelF": 4001270
   },
   "IDName00000460": {
     "Kind": 7,
@@ -1534,7 +1765,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001270,
+    "WearModelF": 4001270
   },
   "IDName00000461": {
     "Kind": 7,
@@ -1560,7 +1794,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001280,
+    "WearModelF": 4001280
   },
   "IDName00000463": {
     "Kind": 7,
@@ -1570,7 +1807,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001280,
+    "WearModelF": 4001280
   },
   "IDName00000464": {
     "Kind": 7,
@@ -1580,7 +1820,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001280,
+    "WearModelF": 4001280
   },
   "IDName00000465": {
     "Kind": 7,
@@ -1607,7 +1850,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001290,
+    "WearModelF": 4001290
   },
   "IDName00000467": {
     "Weight": 1,
@@ -1621,7 +1867,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001290,
+    "WearModelF": 4001290
   },
   "IDName00000469": {
     "Kind": 7,
@@ -1631,7 +1880,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001290,
+    "WearModelF": 4001290
   },
   "IDName00000470": {
     "Kind": 7,
@@ -1658,7 +1910,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001300,
+    "WearModelF": 4001300
   },
   "IDName00000472": {
     "Weight": 1,
@@ -1672,7 +1927,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001300,
+    "WearModelF": 4001300
   },
   "IDName00000474": {
     "Kind": 7,
@@ -1682,7 +1940,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001300,
+    "WearModelF": 4001300
   },
   "IDName00000475": {
     "Weight": 1,
@@ -1717,7 +1978,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001310,
+    "WearModelF": 4001310
   },
   "IDName00000479": {
     "Weight": 1,
@@ -1731,7 +1995,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001310,
+    "WearModelF": 4001310
   },
   "IDName00000481": {
     "Kind": 7,
@@ -1741,7 +2008,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_AXE",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001310,
+    "WearModelF": 4001310
   },
   "IDName00000482": {
     "Kind": 7,
@@ -15909,7 +16179,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000160,
+    "WearModelF": 4000160
   },
   "IDName00003539": {
     "Kind": 8,
@@ -15929,7 +16202,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000160,
+    "WearModelF": 4000160
   },
   "IDName00003541": {
     "Kind": 8,
@@ -15939,7 +16215,10 @@
     "Level": 1,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000160,
+    "WearModelF": 4000160
   },
   "IDName00003542": {
     "Kind": 8,
@@ -15966,7 +16245,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001330,
+    "WearModelF": 4001330
   },
   "IDName00003544": {
     "Kind": 8,
@@ -15976,7 +16258,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001330,
+    "WearModelF": 4001330
   },
   "IDName00003545": {
     "Kind": 8,
@@ -15986,7 +16271,10 @@
     "Level": 2,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001330,
+    "WearModelF": 4001330
   },
   "IDName00003546": {
     "Kind": 8,
@@ -16013,7 +16301,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001340,
+    "WearModelF": 4001340
   },
   "IDName00003548": {
     "Kind": 8,
@@ -16023,7 +16314,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001340,
+    "WearModelF": 4001340
   },
   "IDName00003549": {
     "Kind": 8,
@@ -16033,7 +16327,10 @@
     "Level": 3,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001340,
+    "WearModelF": 4001340
   },
   "IDName00003550": {
     "Kind": 8,
@@ -16060,7 +16357,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001350,
+    "WearModelF": 4001350
   },
   "IDName00003552": {
     "Kind": 8,
@@ -16070,7 +16370,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001350,
+    "WearModelF": 4001350
   },
   "IDName00003553": {
     "Kind": 8,
@@ -16080,7 +16383,10 @@
     "Level": 4,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001350,
+    "WearModelF": 4001350
   },
   "IDName00003554": {
     "Kind": 8,
@@ -16107,7 +16413,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001360,
+    "WearModelF": 4001360
   },
   "IDName00003556": {
     "Kind": 8,
@@ -16117,7 +16426,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001360,
+    "WearModelF": 4001360
   },
   "IDName00003557": {
     "Kind": 8,
@@ -16127,7 +16439,10 @@
     "Level": 5,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001360,
+    "WearModelF": 4001360
   },
   "IDName00003558": {
     "Kind": 8,
@@ -16154,7 +16469,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001370,
+    "WearModelF": 4001370
   },
   "IDName00003560": {
     "Kind": 8,
@@ -16164,7 +16482,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001370,
+    "WearModelF": 4001370
   },
   "IDName00003561": {
     "Kind": 8,
@@ -16174,7 +16495,10 @@
     "Level": 6,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001370,
+    "WearModelF": 4001370
   },
   "IDName00003562": {
     "Kind": 8,
@@ -16201,7 +16525,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001380,
+    "WearModelF": 4001380
   },
   "IDName00003564": {
     "Kind": 8,
@@ -16211,7 +16538,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001380,
+    "WearModelF": 4001380
   },
   "IDName00003565": {
     "Kind": 8,
@@ -16221,7 +16551,10 @@
     "Level": 7,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001380,
+    "WearModelF": 4001380
   },
   "IDName00003566": {
     "Kind": 8,
@@ -16247,7 +16580,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003568": {
     "Kind": 8,
@@ -16257,7 +16593,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003569": {
     "Kind": 8,
@@ -16267,7 +16606,10 @@
     "Level": 8,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003570": {
     "Kind": 8,
@@ -16294,7 +16636,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003572": {
     "Kind": 8,
@@ -16304,7 +16649,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003573": {
     "Kind": 8,
@@ -16314,7 +16662,10 @@
     "Level": 9,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003574": {
     "Kind": 8,
@@ -16340,7 +16691,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003576": {
     "Kind": 8,
@@ -16350,7 +16704,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003577": {
     "Kind": 8,
@@ -16360,7 +16717,10 @@
     "Level": 10,
     "ArmType": 1,
     "NeedSkill": "SKILL_SHOT",
-    "NeedSkillLevel": 1
+    "NeedSkillLevel": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4001390,
+    "WearModelF": 4001390
   },
   "IDName00003578": {
     "Kind": 8,
@@ -45059,8 +45419,8 @@
     "NeedSkillLevel": 1,
     "NeedRank": 3,
     "WearProp": "RightHand",
-    "WearModel": 4000039,
-    "WearModelF": 4000039,
+    "WearModel": 4000040,
+    "WearModelF": 4000040,
     "ArmType": 1
   },
   "IDName_XZB000002": {
@@ -45097,8 +45457,8 @@
     "NeedSkillLevel": 21,
     "NeedRank": 5,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000047,
+    "WearModelF": 4000047,
     "ArmType": 1
   },
   "IDName_XZB000004": {
@@ -45135,8 +45495,8 @@
     "NeedSkillLevel": 41,
     "NeedRank": 7,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000044,
+    "WearModelF": 4000044,
     "ArmType": 1
   },
   "IDName_XZB000006": {
@@ -45154,8 +45514,8 @@
     "NeedSkillLevel": 51,
     "NeedRank": 8,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000049,
+    "WearModelF": 4000049,
     "ArmType": 1
   },
   "IDName_XZB000007": {
@@ -45173,8 +45533,8 @@
     "NeedSkillLevel": 61,
     "NeedRank": 9,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000819,
+    "WearModelF": 4000819,
     "ArmType": 1
   },
   "IDName_XZB000008": {
@@ -45192,8 +45552,8 @@
     "NeedSkillLevel": 71,
     "NeedRank": 10,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000048,
+    "WearModelF": 4000048,
     "ArmType": 1
   },
   "IDName_XZB000009": {
@@ -45211,8 +45571,8 @@
     "NeedSkillLevel": 81,
     "NeedRank": 11,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000042,
+    "WearModelF": 4000042,
     "ArmType": 1
   },
   "IDName_XZB000010": {
@@ -45230,8 +45590,8 @@
     "NeedSkillLevel": 91,
     "NeedRank": 12,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000046,
+    "WearModelF": 4000046,
     "ArmType": 1
   },
   "IDName_XZB000011": {
@@ -45248,8 +45608,8 @@
     "NeedSkill": "SKILL_SWORD",
     "NeedSkillLevel": 96,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000819,
+    "WearModelF": 4000819,
     "ArmType": 1
   },
   "IDName_XZB000012": {
@@ -45266,8 +45626,8 @@
     "NeedSkill": "SKILL_SWORD",
     "NeedSkillLevel": 97,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000049,
+    "WearModelF": 4000049,
     "ArmType": 1
   },
   "IDName_XZB000013": {
@@ -45302,8 +45662,8 @@
     "NeedSkill": "SKILL_SWORD",
     "NeedSkillLevel": 99,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000044,
+    "WearModelF": 4000044,
     "ArmType": 1
   },
   "IDName_XZB000015": {
@@ -45320,8 +45680,8 @@
     "NeedSkill": "SKILL_SWORD",
     "NeedSkillLevel": 100,
     "WearProp": "RightHand",
-    "WearModel": 4000208,
-    "WearModelF": 4000208,
+    "WearModel": 4000040,
+    "WearModelF": 4000040,
     "ArmType": 1
   },
   "IDName_XZB000016": {
@@ -45339,8 +45699,8 @@
     "NeedSkillLevel": 1,
     "NeedRank": 3,
     "WearProp": "RightHand",
-    "WearModel": 4000048,
-    "WearModelF": 4000048,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1
   },
   "IDName_XZB000017": {
@@ -45377,8 +45737,8 @@
     "NeedSkillLevel": 21,
     "NeedRank": 5,
     "WearProp": "RightHand",
-    "WearModel": 4000045,
-    "WearModelF": 4000045,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000019": {
@@ -45415,8 +45775,8 @@
     "NeedSkillLevel": 41,
     "NeedRank": 7,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1
   },
   "IDName_XZB000021": {
@@ -45434,8 +45794,8 @@
     "NeedSkillLevel": 51,
     "NeedRank": 8,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001320,
+    "WearModelF": 4001320,
     "ArmType": 1
   },
   "IDName_XZB000022": {
@@ -45453,8 +45813,8 @@
     "NeedSkillLevel": 61,
     "NeedRank": 9,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000023": {
@@ -45491,8 +45851,8 @@
     "NeedSkillLevel": 81,
     "NeedRank": 11,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1
   },
   "IDName_XZB000025": {
@@ -45510,8 +45870,8 @@
     "NeedSkillLevel": 91,
     "NeedRank": 12,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001320,
+    "WearModelF": 4001320,
     "ArmType": 1
   },
   "IDName_XZB000026": {
@@ -45528,8 +45888,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 96,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000027": {
@@ -45546,8 +45906,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 97,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000028": {
@@ -45564,8 +45924,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 98,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000029": {
@@ -45582,8 +45942,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 99,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000030": {
@@ -45600,8 +45960,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 100,
     "WearProp": "RightHand",
-    "WearModel": 4000209,
-    "WearModelF": 4000209,
+    "WearModel": 4001430,
+    "WearModelF": 4001430,
     "ArmType": 1
   },
   "IDName_XZB000031": {
@@ -61710,8 +62070,8 @@
     "NeedSkill": "SKILL_FALCHION",
     "NeedSkillLevel": 1,
     "WearProp": "RightHand",
-    "WearModel": 4000048,
-    "WearModelF": 4000048,
+    "WearModel": 4001580,
+    "WearModelF": 4001580,
     "ArmType": 1,
     "Binding": 1
   },

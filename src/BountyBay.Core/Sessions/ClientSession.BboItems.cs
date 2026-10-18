@@ -67,7 +67,7 @@ public sealed partial class ClientSession
             && (gear.View, view) is (ViewId.BagEquip, ViewId.Equipped) or (ViewId.Equipped, ViewId.BagEquip))
         {
             DropHand();
-            MoveGear(gear.View, gear.Index);
+            MoveGear(gear.View, gear.Index, sound: false);
             return true;
         }
         if (HandSource() is not { } from || from.View != view || from.Index == index)

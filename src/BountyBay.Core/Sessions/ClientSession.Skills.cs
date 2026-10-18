@@ -198,15 +198,19 @@ public sealed partial class ClientSession
         Character.SkillExperience[key] = (int)Math.Min(int.MaxValue, experience);
         if (!raised)
         {
-            int row = SkillRowIndex(key);
-            if (row >= 0) Send(TablePackets.UpdateCell(GameTables.Skill, row, 2, experience.ToString()), "(skill experience)");
+            // The skill window copies the rows when they arrive and ignores cell changes, so the bar only moves on a resend.
+            if (SkillRowIndex(key) >= 0)
+            {
+                Send(TablePackets.Clear(GameTables.Skill), "(clear Skill)");
+                Send(TablePackets.Rows(GameTables.Skill, ProgressSkillRows()), "(skill experience)");
+            }
             return;
         }
         SetSkillLevel(key, level);
         PlayLevelUpEffect();
         SystemMessage(level >= cap && cap == rules.PhaseOneCap
-            ? $"Your skill reached level {level}. Visit a Skill Tutor to open its second phase."
-            : $"Your skill reached level {level}.", SystemMessageKind.Upgrade);
+            ? $"{ClientNames.Of(Context.Settings, key)} reached level {level}. Visit a Skill Tutor to open its second phase."
+            : $"{ClientNames.Of(Context.Settings, key)} reached level {level}.", SystemMessageKind.Upgrade);
         Log.Info(Tag, $"{Name} raises {key} to {level}");
         KeepTotalSkillCap(key);
         SendSkillState();
@@ -283,12 +287,20 @@ public sealed partial class ClientSession
         SendTable(ProgressTables.SkillAdv, Character.AdvancedSkills.Select(key => new object[] { key, 1 }), clear);
         SendTable(ProgressTables.UniqueSkill, Character.UniqueSkills.Select(entry => new object[]
         {
-            entry.Key, entry.Level, 0, UniqueSkillCatalog.FirstOrDefault(definition => definition.Key == entry.Key)?.Skill ?? "",
+            entry.Key, entry.Level, StuntGrid(entry.Key), UniqueSkillCatalog.FirstOrDefault(definition => definition.Key == entry.Key)?.Skill ?? "",
         }), clear);
         string fighting = FightingSkill();
         if (Properties.Text("FightSkill") != fighting) SetKnownProperty("FightSkill", fighting);
     }
 
+    // Third UniqueSkill column = Command Interface grid: 1 land page "Activate skill", 2 sea page, 0 not shown (passives).
+    private int StuntGrid(string key)
+    {
+        BboStuntData? stunt = BboSkills.Stunt(key);
+        if (stunt is not { Active: true }) return 0;
+        int scenes = stunt.Flags & 0x1f;
+        return scenes == 0 || (scenes & (UniqueSkillDefinition.OnLand | UniqueSkillDefinition.Workshop)) != 0 ? 1 : 2;
+    }
     public void OpenSkillTutor()
     {
         SendTutorLists();
@@ -652,7 +664,7 @@ public sealed partial class ClientSession
             Character.UniqueSkills.Add(new UniqueSkillEntry { Key = stunt, Level = 1 });
         if (Rule.Skills.GrantedTools.TryGetValue(key, out string? tool) && HasRoomFor(tool))
             ReceiveIntoBag(tool, Context.Data.PhotoOf(tool), 1, "(tutor's tool)");
-        SystemMessage($"You learned {AideRules.SkillName(key)}.", SystemMessageKind.Upgrade);
+        SystemMessage($"You learned {ClientNames.Of(Context.Settings, key)}.", SystemMessageKind.Upgrade);
         Send(UiPackets.Custom($"scUpLevel {TotalSkillLevel}"), "(skill learned)");
         TutorDone($"learns {key}");
     }
@@ -683,7 +695,7 @@ public sealed partial class ClientSession
         }
         if (!Pay(PromotionCost())) return;
         Character.AdvancedSkills.Add(key);
-        SystemMessage($"{AideRules.SkillName(key)} is now a phase 2 skill.", SystemMessageKind.Upgrade);
+        SystemMessage($"{ClientNames.Of(Context.Settings, key)} is now a phase 2 skill.", SystemMessageKind.Upgrade);
         TutorDone($"promotes {key}");
     }
 
@@ -739,7 +751,7 @@ public sealed partial class ClientSession
         SetMoney(Money - UniqueSkillCost(key));
         if (entry == null) Character.UniqueSkills.Add(new UniqueSkillEntry { Key = key, Level = 1 });
         else entry.Level++;
-        SystemMessage(entry == null ? $"You learned a new special skill of {AideRules.SkillName(definition.Skill)}." : $"Your special skill of {AideRules.SkillName(definition.Skill)} reached level {UniqueSkillLevel(key)}.", SystemMessageKind.Upgrade);
+        SystemMessage(entry == null ? $"You learned {ClientNames.Of(Context.Settings, key)}." : $"{ClientNames.Of(Context.Settings, key)} reached level {UniqueSkillLevel(key)}.", SystemMessageKind.Upgrade);
         TutorDone($"raises {key} to {UniqueSkillLevel(key)}");
     }
 

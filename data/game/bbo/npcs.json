@@ -18830,6 +18830,31 @@
     "Greeting": "I'm the boss of tavern of Genoa. Would you like some drink?",
     "Options": [
       {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -23859,6 +23884,31 @@
     "Z": -7.9,
     "Greeting": "I am the Tavern Boss of Istanbul.  Care for a drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -49069,6 +49119,31 @@
     "Greeting": "I'm the boss of tavern of Tourane. Would you like some drink?",
     "Options": [
       {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -51465,6 +51540,31 @@
     "Z": -6.4,
     "Greeting": "I'm the boss of tavern of Seoul Port. Would you like some drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -53888,6 +53988,31 @@
     "Z": 5.1,
     "Greeting": "I'm the boss of tavern of Edo. Would you like some drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -56550,6 +56675,31 @@
     "Z": -10.4,
     "Greeting": "I'm the boss of tavern of Beijing. Would you like some drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -61610,6 +61760,31 @@
     "Greeting": "I'm the boss of tavern of Corsica Bandit Camp. Would you like some drink?",
     "Options": [
       {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
+      {
         "Action": "Bye",
         "Text": "Cancel",
         "ClientKey": "-45099"
@@ -62135,6 +62310,31 @@
     "Z": -0.7,
     "Greeting": "I am the tavern boss here. Do you want a drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",
@@ -74444,6 +74644,31 @@
     "Z": -85.01,
     "Greeting": "Welcome to the tavern of Athens. Would you like some drink?",
     "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
       {
         "Action": "Bye",
         "Text": "Cancel",

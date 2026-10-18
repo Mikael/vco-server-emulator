@@ -42,9 +42,17 @@ public sealed partial class ClientSession
     public bool ReadyToSail()
     {
         EnsureShipState();
-        if (ShipHull > Sea.Data.Rules.SunkDurability) return true;
-        SystemMessage("Your ship is a wreck. You have to have it repaired at the shipyard before you can sail off.", SystemMessageKind.Prompt);
-        return false;
+        if (ShipHull <= Sea.Data.Rules.SunkDurability)
+        {
+            SystemMessage("Your ship is a wreck. You have to have it repaired at the shipyard before you can sail off.", SystemMessageKind.Prompt);
+            return false;
+        }
+        if (ProvisionCount() < SupplyCost)
+        {
+            SystemMessage("Provision Insufficient, please replenish as soon as possible...", SystemMessageKind.Prompt);
+            return false;
+        }
+        return true;
     }
 
     public bool OpenShipyardMenu(int npcId)
