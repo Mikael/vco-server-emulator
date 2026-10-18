@@ -33,6 +33,13 @@ public sealed class RankArmStuff
     public int Split { get; set; }
 }
 
+public sealed class RankArmSetBonus
+{
+    public int Quality { get; set; }
+    public int Pieces { get; set; }
+    public Dictionary<string, int> Props { get; set; } = [];
+}
+
 public sealed class RankArmBook
 {
     private static readonly object Gate = new();
@@ -50,6 +57,7 @@ public sealed class RankArmBook
     public List<RankArmItem> Items { get; set; } = [];
     public List<RankArmLimit> Limits { get; set; } = [];
     public List<RankArmStuff> Stuff { get; set; } = [];
+    public List<RankArmSetBonus> SetBonuses { get; set; } = [];
 
     public RankArmItem? Item(string key) => Items.FirstOrDefault(item => item.Key == key);
 

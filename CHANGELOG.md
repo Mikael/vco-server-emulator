@@ -2,6 +2,10 @@
 
 ## 2026-10-18
 
+- **Nobility Equipment** window lists all 16 attributes (HP, SP, Attack, Defense, Accuracy, Dodging, Agility, Physique,
+  Shocking Strike, Critical Resist, Damage Bonus/Reduction, Technique, Parry, Reaction, Willpower) with the totals of
+  your worn nobility pieces, and the rank set bonuses apply at 4 and 7 pieces (Baron .. Marquis, from the client's set
+  descriptions). The totals count toward your character stats.
 - **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
 - **Skill experience bar** in the Stats > Skill tab moves as you gain experience.
 - **Skill names in messages** use the game's names ("You learned Rapid Fire.", "Shooting reached level 6.") instead of

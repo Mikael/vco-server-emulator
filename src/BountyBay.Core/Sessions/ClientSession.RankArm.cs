@@ -36,10 +36,22 @@ public sealed partial class ClientSession
     public int RankArmWornSum(string property)
     {
         RankArmBook book = NobleBook;
-        return Character.RankWorn.Values.Where(item => item.Rank != null)
+        int tempered = Character.RankWorn.Values.Where(item => item.Rank != null)
             .SelectMany(item => item.Rank!.Slots)
             .Where(slot => slot != null && NobleProp(slot.Prop) == property)
             .Sum(slot => book.ValueOf(slot!.Prop, slot.Level));
+        return tempered + NobleSetBonus(property);
+    }
+
+    // Suspend_Suit.ini: wearing 4 and 7 pieces of the same rank (Baron .. Marquis) adds the set's buffs.
+    private int NobleSetBonus(string property)
+    {
+        Dictionary<int, int> pieces = Character.RankWorn.Values.Select(item => NobleKey.Match(item.Name))
+            .Where(match => match.Success).GroupBy(match => int.Parse(match.Groups[1].Value))
+            .ToDictionary(group => group.Key, group => group.Count());
+        return NobleBook.SetBonuses
+            .Where(bonus => pieces.GetValueOrDefault(bonus.Quality) >= bonus.Pieces)
+            .Sum(bonus => bonus.Props.GetValueOrDefault(property));
     }
 
     public void OpenRankArm()
@@ -396,14 +408,17 @@ public sealed partial class ClientSession
         Send(RankArmPackets.Essence(Character.TemperEssence), "(tempered essences)");
     }
 
+    // Rows of the Nobility Equipment "Attribute" panel (client DarkEquipUpdate.ini [RankPropView] 0..15).
+    private static readonly string[] NobleViewProps =
+    [
+        "AddMaxHP", "AddMaxSP", "AddAT", "AddDF", "AddHitRatio", "AddDodgeRatio", "Acute", "Physique",
+        "DoubleDamage", "DoubleDamage0", "AddDamageScope", "AddDamageScope0", "SkillHap", "Ward", "Response", "Backbone",
+    ];
+
     private void SendNobleTotals()
     {
         if (!_nobleWornOpen) return;
-        RankArmBook book = NobleBook;
-        List<(string Prop, int Value)> totals = Character.RankWorn.Values.Where(item => item.Rank != null)
-            .SelectMany(item => item.Rank!.Slots).Where(slot => slot != null)
-            .GroupBy(slot => NobleProp(slot!.Prop))
-            .Select(group => (group.Key, group.Sum(slot => book.ValueOf(slot!.Prop, slot.Level)))).ToList();
+        List<(string Prop, int Value)> totals = NobleViewProps.Select(prop => (prop, RankArmWornSum(prop))).ToList();
         Send(RankArmPackets.PropList(totals), "(nobility attribute totals)");
     }
 

@@ -5004,5 +5004,88 @@
    "Cost": 2412,
    "Split": 24716
   }
- ]
+ ],
+ "SetBonuses": [
+  {
+   "Quality": 1,
+   "Pieces": 4,
+   "Props": {
+    "AddMaxHP": 800,
+    "AddMaxSP": 100,
+    "DoubleDamage": 2,
+    "DoubleDamage0": 2
+   }
+  },
+  {
+   "Quality": 1,
+   "Pieces": 7,
+   "Props": {
+    "Acute": 5,
+    "Physique": 5,
+    "AddDamageScope": 2,
+    "AddDamageScope0": 2
+   }
+  },
+  {
+   "Quality": 2,
+   "Pieces": 4,
+   "Props": {
+    "AddMaxHP": 1500,
+    "AddMaxSP": 300,
+    "DoubleDamage": 3,
+    "DoubleDamage0": 3
+   }
+  },
+  {
+   "Quality": 2,
+   "Pieces": 7,
+   "Props": {
+    "Acute": 10,
+    "Physique": 10,
+    "AddDamageScope": 3,
+    "AddDamageScope0": 3
+   }
+  },
+  {
+   "Quality": 3,
+   "Pieces": 4,
+   "Props": {
+    "AddMaxHP": 2200,
+    "AddMaxSP": 500,
+    "DoubleDamage": 4,
+    "DoubleDamage0": 4
+   }
+  },
+  {
+   "Quality": 3,
+   "Pieces": 7,
+   "Props": {
+    "Acute": 15,
+    "Physique": 15,
+    "AddDamageScope": 4,
+    "AddDamageScope0": 4
+   }
+  },
+  {
+   "Quality": 4,
+   "Pieces": 4,
+   "Props": {
+    "AddMaxHP": 3000,
+    "AddMaxSP": 700,
+    "DoubleDamage": 5,
+    "DoubleDamage0": 5
+   }
+  },
+  {
+   "Quality": 4,
+   "Pieces": 7,
+   "Props": {
+    "Acute": 20,
+    "Physique": 20,
+    "AddDamageScope": 5,
+    "AddDamageScope0": 5
+   }
+  }
+ ],
+ "SetBonusSource": "CLIENT ini\\window\\suspend\\data\\Suspend_Suit.ini [JWTZ01..04] SuitBuffNeed0/1 + SuitBuff0/1 (4 and 7 pieces of one rank)"
 }
