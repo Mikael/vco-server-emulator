@@ -2,6 +2,8 @@
 
 ## 2026-10-18
 
+- **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).
+- **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen.
 - **Exp bar** above the F1-F12 keys fills as your skills gain experience, and hovering it shows "Skill Exp: gained/needed"
   for the next level.
 - **Priests** heal you for a small fee and take donations (donations raise your reputation). Monks, healers and the

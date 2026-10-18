@@ -72584,5 +72584,407 @@
       ],
       "23": []
     }
+  },
+  {
+    "Id": 2009910,
+    "Scene": 1900026,
+    "Model": 3101001,
+    "Name": "Tavern Boss",
+    "X": -2.6,
+    "Y": 0.0,
+    "Z": -26.9,
+    "Greeting": "I'm the boss of the tavern of Athens. Would you like some drink?",
+    "Options": [
+      {
+        "Action": "TavernHireNeeded",
+        "Text": "Recruit Necessary Sailors",
+        "ClientKey": "-40005"
+      },
+      {
+        "Action": "TavernHireAll",
+        "Text": "Recruit all sailors.",
+        "ClientKey": "-40006"
+      },
+      {
+        "Action": "TavernHireSome",
+        "Text": "Recruit a fixed number of sailors",
+        "ClientKey": "-40007"
+      },
+      {
+        "Action": "TavernHeal",
+        "Text": "Healing",
+        "ClientKey": "-40008"
+      },
+      {
+        "Action": "TavernDismiss",
+        "Text": "Dismiss a specific number of sailors.",
+        "ClientKey": "-40009"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Cancel",
+        "ClientKey": "-45099"
+      }
+    ],
+    "NameKey": "IDName00004882",
+    "Role": "Tavern Boss",
+    "ChatSet": "gnnpc009",
+    "ClientMenu": [
+      {
+        "Key": "-20",
+        "Number": 20,
+        "Text": "Chat",
+        "Action": ""
+      },
+      {
+        "Key": "-24",
+        "Number": 24,
+        "Text": "Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40008",
+        "Number": 40008,
+        "Text": "Healing",
+        "Action": ""
+      },
+      {
+        "Key": "-40006",
+        "Number": 40006,
+        "Text": "Recruit all sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-40005",
+        "Number": 40005,
+        "Text": "Recruit Necessary Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40007",
+        "Number": 40007,
+        "Text": "Recruit a fixed number of sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40009",
+        "Number": 40009,
+        "Text": "Dismiss a specific number of sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-45905",
+        "Number": 45905,
+        "Text": "Work",
+        "Action": ""
+      },
+      {
+        "Key": "-45906",
+        "Number": 45906,
+        "Text": "Employment",
+        "Action": ""
+      },
+      {
+        "Key": "-45907",
+        "Number": 45907,
+        "Text": "Hunting",
+        "Action": ""
+      },
+      {
+        "Key": "-45099",
+        "Number": 45099,
+        "Text": "Cancel",
+        "Action": "Bye"
+      }
+    ],
+    "SceneName": "Athens Tavern",
+    "Source": {
+      "Position": "CLIENT ini\\window\\map2\\1024004.ini",
+      "Name": "CLIENT IDName00004882",
+      "Model": "GUESS",
+      "Scene": "GUESS 1900026 stands in for 1024004"
+    }
+  },
+  {
+    "Id": 2009911,
+    "Scene": 1900026,
+    "Model": 3101002,
+    "Name": "Wendora",
+    "X": 20.6,
+    "Y": 0.0,
+    "Z": -30.0,
+    "Greeting": "Good day.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "NameKey": "IDName00005388",
+    "Role": "Tavern Boss",
+    "ChatSet": "",
+    "ClientMenu": [
+      {
+        "Key": "-20",
+        "Number": 20,
+        "Text": "Chat",
+        "Action": ""
+      },
+      {
+        "Key": "-24",
+        "Number": 24,
+        "Text": "Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40008",
+        "Number": 40008,
+        "Text": "Healing",
+        "Action": ""
+      },
+      {
+        "Key": "-40006",
+        "Number": 40006,
+        "Text": "Recruit all sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-40005",
+        "Number": 40005,
+        "Text": "Recruit Necessary Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40007",
+        "Number": 40007,
+        "Text": "Recruit a fixed number of sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40009",
+        "Number": 40009,
+        "Text": "Dismiss a specific number of sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-45905",
+        "Number": 45905,
+        "Text": "Work",
+        "Action": ""
+      },
+      {
+        "Key": "-45906",
+        "Number": 45906,
+        "Text": "Employment",
+        "Action": ""
+      },
+      {
+        "Key": "-45907",
+        "Number": 45907,
+        "Text": "Hunting",
+        "Action": ""
+      },
+      {
+        "Key": "-45099",
+        "Number": 45099,
+        "Text": "Cancel",
+        "Action": "Bye"
+      }
+    ],
+    "SceneName": "Athens Tavern",
+    "Source": {
+      "Position": "CLIENT ini\\window\\map2\\1024004.ini",
+      "Name": "CLIENT IDName00005388",
+      "Model": "GUESS",
+      "Scene": "GUESS 1900026 stands in for 1024004"
+    }
+  },
+  {
+    "Id": 2009912,
+    "Scene": 1900026,
+    "Model": 3101003,
+    "Name": "Pamafes",
+    "X": 24.12,
+    "Y": 0.0,
+    "Z": -2.65,
+    "Greeting": "Good day.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "NameKey": "IDName00005389",
+    "Role": "Tavern Boss",
+    "ChatSet": "",
+    "ClientMenu": [
+      {
+        "Key": "-20",
+        "Number": 20,
+        "Text": "Chat",
+        "Action": ""
+      },
+      {
+        "Key": "-24",
+        "Number": 24,
+        "Text": "Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40008",
+        "Number": 40008,
+        "Text": "Healing",
+        "Action": ""
+      },
+      {
+        "Key": "-40006",
+        "Number": 40006,
+        "Text": "Recruit all sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-40005",
+        "Number": 40005,
+        "Text": "Recruit Necessary Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40007",
+        "Number": 40007,
+        "Text": "Recruit a fixed number of sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40009",
+        "Number": 40009,
+        "Text": "Dismiss a specific number of sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-45905",
+        "Number": 45905,
+        "Text": "Work",
+        "Action": ""
+      },
+      {
+        "Key": "-45906",
+        "Number": 45906,
+        "Text": "Employment",
+        "Action": ""
+      },
+      {
+        "Key": "-45907",
+        "Number": 45907,
+        "Text": "Hunting",
+        "Action": ""
+      },
+      {
+        "Key": "-45099",
+        "Number": 45099,
+        "Text": "Cancel",
+        "Action": "Bye"
+      }
+    ],
+    "SceneName": "Athens Tavern",
+    "Source": {
+      "Position": "CLIENT ini\\window\\map2\\1024004.ini",
+      "Name": "CLIENT IDName00005389",
+      "Model": "GUESS",
+      "Scene": "GUESS 1900026 stands in for 1024004"
+    }
+  },
+  {
+    "Id": 2009913,
+    "Scene": 1900026,
+    "Model": 3101002,
+    "Name": "Helen",
+    "X": 2.2,
+    "Y": 0.0,
+    "Z": -8.1,
+    "Greeting": "Good day.",
+    "Options": [
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "NameKey": "IDName00005390",
+    "Role": "Tavern Boss",
+    "ChatSet": "",
+    "ClientMenu": [
+      {
+        "Key": "-20",
+        "Number": 20,
+        "Text": "Chat",
+        "Action": ""
+      },
+      {
+        "Key": "-24",
+        "Number": 24,
+        "Text": "Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40008",
+        "Number": 40008,
+        "Text": "Healing",
+        "Action": ""
+      },
+      {
+        "Key": "-40006",
+        "Number": 40006,
+        "Text": "Recruit all sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-40005",
+        "Number": 40005,
+        "Text": "Recruit Necessary Sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40007",
+        "Number": 40007,
+        "Text": "Recruit a fixed number of sailors",
+        "Action": ""
+      },
+      {
+        "Key": "-40009",
+        "Number": 40009,
+        "Text": "Dismiss a specific number of sailors.",
+        "Action": ""
+      },
+      {
+        "Key": "-45905",
+        "Number": 45905,
+        "Text": "Work",
+        "Action": ""
+      },
+      {
+        "Key": "-45906",
+        "Number": 45906,
+        "Text": "Employment",
+        "Action": ""
+      },
+      {
+        "Key": "-45907",
+        "Number": 45907,
+        "Text": "Hunting",
+        "Action": ""
+      },
+      {
+        "Key": "-45099",
+        "Number": 45099,
+        "Text": "Cancel",
+        "Action": "Bye"
+      }
+    ],
+    "SceneName": "Athens Tavern",
+    "Source": {
+      "Position": "CLIENT ini\\window\\map2\\1024004.ini",
+      "Name": "CLIENT IDName00005390",
+      "Model": "GUESS",
+      "Scene": "GUESS 1900026 stands in for 1024004"
+    }
   }
 ]

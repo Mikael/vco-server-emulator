@@ -4177,7 +4177,10 @@
     "DFG": 100,
     "DFGMax": 100,
     "AddDF": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3402009,
+    "WearModelF": 3402009
   },
   "IDName00000644": {
     "Kind": 3,
@@ -4188,7 +4191,10 @@
     "DFG": 100,
     "DFGMax": 100,
     "AddDF": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3403002,
+    "WearModelF": 3403002
   },
   "IDName00000645": {
     "Kind": 3,
@@ -4196,7 +4202,10 @@
     "GoodsType": "Clothes",
     "Weight": 1,
     "Level": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3402001,
+    "WearModelF": 3402001
   },
   "IDName00000646": {
     "Kind": 3,
@@ -4204,7 +4213,10 @@
     "GoodsType": "Clothes",
     "Weight": 1,
     "Level": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3402006,
+    "WearModelF": 3402006
   },
   "IDName00000647": {
     "Kind": 3,
@@ -4212,7 +4224,10 @@
     "GoodsType": "Clothes",
     "Weight": 1,
     "Level": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3402001,
+    "WearModelF": 3402001
   },
   "IDName00000648": {
     "Kind": 3,
@@ -4220,7 +4235,10 @@
     "GoodsType": "Clothes",
     "Weight": 1,
     "Level": 1,
-    "ArmType": 4
+    "ArmType": 4,
+    "WearProp": "BodyType",
+    "WearModel": 3402006,
+    "WearModelF": 3402006
   },
   "IDName00000649": {
     "Kind": 3,

@@ -2904,18 +2904,18 @@
       "Y": 23.91,
       "Z": -83.51,
       "Orient": 0.0,
-      "Radius": 0.0,
+      "Radius": 2.0,
       "Sail": false,
-      "TargetScene": 0,
-      "TargetX": 0.0,
+      "TargetScene": 1900026,
+      "TargetX": -4.5,
       "TargetY": 0.0,
-      "TargetZ": 0.0,
-      "Message": "The way to Athens Tavern is closed: this client has no scene for it.",
+      "TargetZ": -19.68,
+      "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1024001.ini map2 [82.6]",
         "Name": "CLIENT IDName00006194",
         "Radius": "GUESS 0: closed way with NPCs standing on it",
-        "Target": "CLIENT scene 1024004 has no ini\\scenes file"
+        "Target": "CLIENT scene 1900026 (Genoa tavern model) matches map2 1024004; arrival GUESS beside its exit"
       }
     },
     {
@@ -8204,15 +8204,15 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1024001,
-      "TargetX": 45.6,
-      "TargetY": 23.15,
-      "TargetZ": -47.74,
+      "TargetX": 46.5,
+      "TargetY": 23.2,
+      "TargetZ": -79.5,
       "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1900026.ini map2 [31.1]",
         "Name": "CLIENT IDName00006191",
         "Radius": "GUESS",
-        "Target": "GUESS walk-area centre of 1024001",
+        "Target": "GUESS just outside the Athens tavern door (47.2,-83.51)",
         "Model": "CLIENT objects\\4000189.ini (middle door, effect wy0114b); size GUESS"
       }
     },
