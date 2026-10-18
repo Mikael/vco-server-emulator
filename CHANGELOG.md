@@ -37,6 +37,7 @@
 - **Ship rebuild VIEW** shows the new ship with its own hull, masts and name.
 
 ### Towns and NPCs
+- **Killed animals and monsters** stop where they are and play their death animation straight away instead of walking on.
 - **Talking to NPCs**: you walk up to the NPC first instead of talking from far away, and you both play a talk animation.
 - **NPCs** no longer show an HP bar.
 - **Athens Tavern** is open, with its Tavern Boss, Wendora, Pamafes and Helen. Players need the updated client file
