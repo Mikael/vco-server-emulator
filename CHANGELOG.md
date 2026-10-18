@@ -2,6 +2,7 @@
 
 ## 2026-10-18
 
+- **Skill Tutor**: choosing Learn skills closes the talk window so the tutor window (with your learned skills lit) is in front.
 - **Sails** no longer show holes on an undamaged ship; holes now follow how damaged the sails are.
 - **Provisions** go into the ship's hold instead of your bag.
 - **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).

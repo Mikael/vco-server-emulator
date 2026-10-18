@@ -304,6 +304,7 @@ public sealed partial class ClientSession
     }
     public void OpenSkillTutor()
     {
+        CloseNpcDialogue();
         SendTutorLists();
         Send(ChatPackets.Script(0, "ShowSkillTeacher"), "(skill tutor)");
     }
