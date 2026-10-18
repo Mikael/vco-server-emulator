@@ -2,6 +2,8 @@
 
 ## 2026-10-18
 
+- **Exp bar** above the F1-F12 keys fills as your skills gain experience, and hovering it shows "Skill Exp: gained/needed"
+  for the next level.
 - **Priests** heal you for a small fee and take donations (donations raise your reputation). Monks, healers and the
   battlefield Goddess of Healing / Quick Fix Tower heal for free, and the battlefield Emergency Repair Booths repair
   your ship.

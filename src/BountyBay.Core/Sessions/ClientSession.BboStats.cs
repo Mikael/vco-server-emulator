@@ -218,11 +218,32 @@ public sealed partial class ClientSession
         // The overhead label (Alt) shows "WorkName WorkLevel" and nothing at all without a profession; the client has no name for
         // profession 0, so characters without one show "Adventurer" and their character level.
         yield return ("WorkLevel", work == 0 ? Math.Max(1, TotalSkillLevel) : Math.Max(1, Character.WorkLevel));
-        yield return ("WorkExp", (int)Math.Min(int.MaxValue, Character.WorkExperience));
-        yield return ("WorkExpMax", 1);
+        // The bar above the shortcut keys draws MultWorkExp * 2147483647 + WorkExp against the same pair of maxima, and only when
+        // all four are known. The level beside the portrait is the total skill level, so the bar shows the experience gathered
+        // in the skills against what they need for their next level.
+        (long experience, long needed) = LevelProgress();
+        yield return ("MultWorkExp", (int)(experience / int.MaxValue));
+        yield return ("WorkExp", (int)(experience % int.MaxValue));
+        yield return ("MultWorkExpMax", (int)(needed / int.MaxValue));
+        yield return ("WorkExpMax", (int)(needed % int.MaxValue));
         yield return ("WorkName", work == 0 ? NoWorkName : WorkNames[work]);
         foreach (string pool in WorkPools) yield return (pool, WorkPointsLeft(pool));
     }
+
+    private (long Experience, long Needed) LevelProgress()
+    {
+        long experience = 0, needed = 0;
+        foreach (string key in SkillKeys())
+        {
+            int level = SkillLevel(key);
+            if (level <= 0 || level >= SkillCap(key)) continue;
+            experience += Character.SkillExperience.GetValueOrDefault(key);
+            needed += Rule.Skills.ExperienceToNext(level);
+        }
+        return (experience, Math.Max(1, needed));
+    }
+
+    public void SendLevelProgress() => SendWorkProperties();
 
     private void SendWorkProperties()
     {

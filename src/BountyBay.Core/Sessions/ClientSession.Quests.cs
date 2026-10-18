@@ -535,7 +535,6 @@ public sealed partial class ClientSession
     private void GainProfessionExperience(long amount)
     {
         Character.WorkExperience = Math.Min(long.MaxValue - amount, Character.WorkExperience) + amount;
-        if (Character.WorkType > 0) SetKnownProperty("WorkExp", (int)Math.Min(int.MaxValue, Character.WorkExperience));
         Log.Info(Tag, $"{Name} gains {amount} profession experience ({Character.WorkExperience} in total)");
     }
 

@@ -1028,6 +1028,14 @@
     "Type": "U32"
   },
   {
+    "Name": "MultWorkExp",
+    "Type": "U32"
+  },
+  {
+    "Name": "MultWorkExpMax",
+    "Type": "U32"
+  },
+  {
     "Name": "WorkName",
     "Type": "String"
   },

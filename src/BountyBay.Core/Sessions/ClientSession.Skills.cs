@@ -204,6 +204,7 @@ public sealed partial class ClientSession
                 Send(TablePackets.Clear(GameTables.Skill), "(clear Skill)");
                 Send(TablePackets.Rows(GameTables.Skill, ProgressSkillRows()), "(skill experience)");
             }
+            if (InWorld) SendLevelProgress();
             return;
         }
         SetSkillLevel(key, level);
