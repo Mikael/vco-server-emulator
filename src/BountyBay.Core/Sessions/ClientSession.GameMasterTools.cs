@@ -136,6 +136,13 @@ public sealed partial class ClientSession
                 healed.SetHp(healed.MaxHp);
                 SystemMessage($"{healed.Name} is healed.");
                 return true;
+            case "engage" when words.Length >= 2 && int.TryParse(words[1], out int shipId):
+                if (!OnSeaObjectClicked(shipId)) SystemMessage($"No sea ship {shipId} here.");
+                return true;
+            case "ships":
+                foreach (SeaNpcState ship in Sea.InScene(Scene).Where(ship => !ship.Gone).Take(20))
+                    SystemMessage($"{ship.Definition.Id} {ship.Definition.Name} L{ship.Definition.Level} hull {ship.Hull}/{ship.Definition.Hull} at {ship.X:F0}, {ship.Z:F0}{(ship.Definition.Friendly ? " (friendly)" : "")}");
+                return true;
             default:
                 return false;
         }

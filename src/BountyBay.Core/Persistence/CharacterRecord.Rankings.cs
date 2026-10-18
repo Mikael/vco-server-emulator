@@ -7,4 +7,9 @@ public sealed partial class CharacterRecord
     public DateTime? MutedUntil { get; set; }
     public bool CannonsRestored { get; set; }
     public int StallStyle { get; set; } = 1;
+    public int HurricaneDay { get; set; }
+    public int HurricaneTrips { get; set; }
+    public int HurricaneExtraTrips { get; set; }
+    public int HurricaneReturnScene { get; set; }
+    public float[]? HurricaneReturnPosition { get; set; }
 }

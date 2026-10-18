@@ -16,6 +16,7 @@ public sealed partial class ClientSession
         if (npc.Shop?.ContainsKey(ViewId.Shipyard) == true && OpenShipyardMenu(npc.Id)) return;
         if (BattleTalk(npc)) return;
         TalkingTo = npc.Id;
+        if (TalkHurricane(npc)) return;
         if (TalkWithClientMenu(npc)) return;
         var entries = new List<(DialogueEntry, int, string)> { (DialogueEntry.Text, 0, npc.Greeting) };
         if (npc.Options.Count == 0) entries.Add((DialogueEntry.Option, (int)DialogueAction.Bye, "Goodbye"));
@@ -27,6 +28,7 @@ public sealed partial class ClientSession
     public void ChooseOption(int target, DialogueAction action)
     {
         if (HandleMallOption(target, (int)action)) return;
+        if (HandleHurricaneOption(target, (int)action)) return;
         if (ShowClientMenuTalk(target, (int)action)) return;
         action = ClientMenuAction(action);
         if (HandleBattleOption(target, (int)action)) return;

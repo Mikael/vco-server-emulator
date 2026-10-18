@@ -27,7 +27,11 @@ public sealed partial class ClientSession
         while (points.Count > 1 && Distance(points[0], (nowX, nowZ)) <= PathPointReached) points.RemoveAt(0);
         if (points.Count == 0) return;
         Log.Debug(Tag, $"{Name} follows a path of {points.Count} point(s) to ({points[^1].X:F1}, {points[^1].Z:F1})");
+        FollowLegs(points);
+    }
 
+    private void FollowLegs(List<(float X, float Z)> points)
+    {
         int serial = ++_pathSerial;
         int scene = Scene;
         WalkPathPoint(points[0]);
@@ -65,6 +69,54 @@ public sealed partial class ClientSession
     }
 
     private const float PathLeadSeconds = 0.3f;
+    private const int ArcStartTenths = 450;
+    private const int ArcStepTenths = 200;
+
+    public bool SteerShip(float x, float z)
+    {
+        if (!AtSea || Mover == null || SeaSunk) return false;
+        (float px, float pz) = Mover.Now();
+        float dx = x - px, dz = z - pz;
+        float distance = MathF.Sqrt(dx * dx + dz * dz);
+        if (distance < 1f) return false;
+        double heading = Mover.HeadingNow();
+        double wanted = Math.Atan2(dx, dz) * 1800.0 / Math.PI;
+        double turn = (wanted - heading) % 3600.0;
+        if (turn > 1800) turn -= 3600;
+        if (turn < -1800) turn += 3600;
+        if (Math.Abs(turn) <= ArcStartTenths) return false;
+        float speed = ShipSpeed;
+        float rate = Math.Max(1, ShipTurnRate);
+        float radius = speed / (float)(rate / 1800.0 * Math.PI);
+        if (distance < radius * 1.2f) return false;
+        var points = new List<(float X, float Z)>();
+        double sign = Math.Sign(turn), done = 0, sinceLast = 0;
+        double step = 0.1;
+        float cx = px, cz = pz;
+        double theta = heading;
+        while (done < Math.Abs(turn))
+        {
+            double radians = theta * Math.PI / 1800.0;
+            cx += (float)(Math.Sin(radians) * speed * step);
+            cz += (float)(Math.Cos(radians) * speed * step);
+            double delta = Math.Min(rate * step, Math.Abs(turn) - done);
+            theta += sign * delta;
+            done += delta;
+            sinceLast += delta;
+            double left = Math.Atan2(x - cx, z - cz) * 1800.0 / Math.PI - theta;
+            left = (left % 3600 + 5400) % 3600 - 1800;
+            if (sinceLast >= ArcStepTenths || Math.Abs(left) <= ArcStepTenths / 2)
+            {
+                points.Add((cx, cz));
+                sinceLast = 0;
+                if (Math.Abs(left) <= ArcStepTenths / 2) break;
+            }
+            if (points.Count > 24) break;
+        }
+        points.Add((x, z));
+        FollowLegs(points);
+        return true;
+    }
 
     private TimeSpan TimeToNextLeg()
     {

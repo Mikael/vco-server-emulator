@@ -116,6 +116,11 @@ public sealed partial class ClientSession
             SystemMessage(link.Message.Length > 0 ? link.Message : "This way is closed.");
             return;
         }
+        if (link.Scene == HurricaneBeach && link.Name.Contains("Offshore", StringComparison.OrdinalIgnoreCase))
+        {
+            LeaveHurricane();
+            return;
+        }
         Log.Info(Tag, $"{Name} takes '{link.Name}' from scene {Scene} to scene {link.TargetScene}");
         GoTo(link.TargetScene, link.TargetX, link.TargetY, link.TargetZ);
     }

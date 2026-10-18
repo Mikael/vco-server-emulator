@@ -16,7 +16,7 @@
     "StartY": 5.09,
     "StartZ": -16.2,
     "RunSpeed": 4.0,
-    "ShipSpeed": 14.0,
+    "ShipSpeed": 9.0,
     "ShipModel": 2011001,
     "StartMoney": 1000,
     "RespawnSeconds": 30,

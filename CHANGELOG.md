@@ -66,8 +66,13 @@
   2 cannons, armed ships and flagships more), so a starter ship can win against low-level pirates.
 - **Sea instances** (Crete and North Sea pirate instances) put you on your ship instead of walking on the water.
 - **NPC windows close** when you sail off or change map (the Docker no longer stays open at sea).
+- **Steering**: a sharp turn at sea makes your ship sail a curve (its turning circle) instead of sliding sideways, and
+  ships sail a bit slower (base speed 9 instead of 14; pirates chase at 7).
 
 ### Towns and NPCs
+- **Hurricane Island**: the Hurricane Island Explorer in Jamestown and New Amsterdam harbours takes you to Hurricane
+  Island Beach once a day (a Hurricane Island Order allows one more trip). Captain Migna or the Offshore exit brings you
+  back. The mine cave, lizard cave and Cliff Valley are linked in both directions.
 - **Stalls** show the stall table with goods in front of the seller, for the seller and everyone around. Type
   `/booth 1` to `/booth 19` to pick one of the 19 booth looks (weapons, clothes, ship parts, big market stands ...);
   your choice is saved and changes an open stall right away.
@@ -98,7 +103,8 @@
   `/mute <player> <minutes>`, `/unmute`, `/ban <account or character> <hours|perm> [reason]` (the client shows "Your
   account has been banned!"), `/unban`, `/notice <text>` to everyone, `/goto <player>`, `/summon <player>` (across
   maps), `/hide` / `/unhide`, `/info <player>`, `/give <player> <item> [count]`, `/givemoney <player> <amount>`,
-  `/healplayer <player>`. GMs skip the chat length and speed limits, can open the siege war settings, and get the
+  `/healplayer <player>`.
+  `/ships` lists the ships in your sea and `/engage <ship id>` attacks one. GMs skip the chat length and speed limits, can open the siege war settings, and get the
   client's own GM chat commands (/CF, /ShowPropVec, /SetCamSpeed ...) and Ctrl+E action editor.
 - **Rankings** (Integrated Guild Strength, Land Battle Lord, Ocean Overlord, Honored Officer, Solo Arena, Tempering
   Master) list the top ten players (everyone counts, also with a score of 0), and the bottom line shows your own name

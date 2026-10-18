@@ -83,7 +83,7 @@ public sealed class ShipRules
     public int AggroSeconds { get; set; } = 30;
     public float NpcPatrolRadius { get; set; } = 80f;
     public float NpcPatrolSpeed { get; set; } = 5f;
-    public float NpcChaseSpeed { get; set; } = 9f;
+    public float NpcChaseSpeed { get; set; } = 7f;
     public int NpcPatrolMinSeconds { get; set; } = 20;
     public int NpcPatrolMaxSeconds { get; set; } = 45;
     public float NpcLeashDistance { get; set; } = 450f;

@@ -333,6 +333,7 @@ public sealed partial class ClientSession
         if (!Items.TryGetValue(index, out ItemStack? item)) return false;
         if (UseArmRebuildItem(item)) return true;
         if (UseGuildBuildItem(index, item)) return true;
+        if (UseHurricaneOrder(index, item)) return true;
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);
         if (heal <= 0 && refresh <= 0)

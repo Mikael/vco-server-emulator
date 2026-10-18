@@ -7676,10 +7676,10 @@
       "Orient": 0.0,
       "Radius": 3.0,
       "Sail": false,
-      "TargetScene": 1601021,
-      "TargetX": -6.4,
-      "TargetY": 15.36,
-      "TargetZ": -7.93,
+      "TargetScene": 1601020,
+      "TargetX": -76.13,
+      "TargetY": 23.22,
+      "TargetZ": 36.12,
       "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [176.177]",
@@ -7727,9 +7727,9 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1601021,
-      "TargetX": -6.4,
+      "TargetX": -4.68,
       "TargetY": 15.36,
-      "TargetZ": -7.93,
+      "TargetZ": -12.09,
       "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1601020.ini map2 [1.1]",
@@ -9451,6 +9451,72 @@
         "Radius": "GUESS",
         "Target": "GUESS walk-area centre of 1505006",
         "Model": "CLIENT objects\\4000190.ini (big door, effect wy0114b); size GUESS"
+      }
+    },
+    {
+      "Id": 5000390,
+      "Scene": 1601020,
+      "Name": "To Hurricane Island Beach",
+      "Model": 4000190,
+      "ModelId": 0,
+      "X": -82.13,
+      "Y": 23.22,
+      "Z": 30.119999999999997,
+      "Orient": 0.0,
+      "Radius": 3.0,
+      "Sail": false,
+      "TargetScene": 1601002,
+      "TargetX": -47.0,
+      "TargetY": 7.95,
+      "TargetZ": -310.0,
+      "Message": "",
+      "Source": {
+        "Position": "GUESS 6 units from the scene spawn point",
+        "Target": "GUESS beside the entrance marker in the scene before"
+      }
+    },
+    {
+      "Id": 5000391,
+      "Scene": 1601021,
+      "Name": "To Hurricane Island mine cave",
+      "Model": 4000190,
+      "ModelId": 0,
+      "X": -10.68,
+      "Y": 15.36,
+      "Z": -18.09,
+      "Orient": 0.0,
+      "Radius": 3.0,
+      "Sail": false,
+      "TargetScene": 1601020,
+      "TargetX": -121.0,
+      "TargetY": 22.21,
+      "TargetZ": 50.0,
+      "Message": "",
+      "Source": {
+        "Position": "GUESS 6 units from the scene spawn point",
+        "Target": "GUESS beside the entrance marker in the scene before"
+      }
+    },
+    {
+      "Id": 5000392,
+      "Scene": 1601022,
+      "Name": "To Hurricane island lizard cave",
+      "Model": 4000190,
+      "ModelId": 0,
+      "X": 63.980000000000004,
+      "Y": -1.8,
+      "Z": -64.27000000000001,
+      "Orient": 0.0,
+      "Radius": 3.0,
+      "Sail": false,
+      "TargetScene": 1601021,
+      "TargetX": 182.0,
+      "TargetY": 10.22,
+      "TargetZ": -142.0,
+      "Message": "",
+      "Source": {
+        "Position": "GUESS 6 units from the scene spawn point",
+        "Target": "GUESS beside the entrance marker in the scene before"
       }
     }
   ]

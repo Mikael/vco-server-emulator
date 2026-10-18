@@ -18,7 +18,7 @@ public sealed class MoveHandler : IMessageHandler
         float z = reader.ReadSingle();
         if (float.IsFinite(x) && float.IsFinite(z))
         {
-            session.MoveTo(x, z);
+            if (!session.SteerShip(x, z)) session.MoveTo(x, z);
             session.OnMoveRequested(x, z);
         }
     }

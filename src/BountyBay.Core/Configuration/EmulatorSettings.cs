@@ -18,7 +18,7 @@ public sealed class WorldSettings
     public float StartY { get; set; } = 13.81f;
     public float StartZ { get; set; } = 116.74f;
     public float RunSpeed { get; set; } = 4.0f;
-    public float ShipSpeed { get; set; } = 14.0f;
+    public float ShipSpeed { get; set; } = 9.0f;
     public int ShipModel { get; set; } = 2011001;
     public int StartMoney { get; set; } = 1000;
     public int RespawnSeconds { get; set; } = 30;
