@@ -50,7 +50,13 @@
 - **No more instant sinking**: a ship only sinks when her durability reaches 0 (losing all healthy sailors no longer
   sinks her), and one volley from an NPC ship takes at most a fifth of your durability.
 - **Warning at sea** when you sail out with less than a quarter of your durability or no healthy sailors.
-- **Friendly ships**: merchant and patrol ships sail around the busy seas. They never attack and can't be shot or mined.
+- **Friendly traffic** in every harbour sea and on the high seas: each city's own Trading Ship, Light Merchant Ship
+  and Light Frigate (Athens, Venice, Genoa, Seville, Lisbon, Istanbul, Alexandria, Beirut, Tripoli, Barcelona ...),
+  and a Merchant Ship and Patrol Ship off the other ports. They never attack and can't be shot or mined.
+- **Engaging ships**: clicking an enemy ship keeps your ship firing whenever a battery is loaded and the target is in
+  its arc, instead of a single broadside per click.
+- **Sinking** no longer takes your mounted cannons; ships that lost them get their starting cannons back once.
+- **Sailing out to the high seas** puts you right next to your port's harbour instead of far away from it.
 
 ### Towns and NPCs
 - **Killed animals and monsters** stop where they are and play their death animation straight away instead of walking on.
@@ -76,6 +82,12 @@
   online GMs are told and see the player's messages. GMs answer with `/gm r <player> <text>`, see open requests with
   `/gm list`, take one with `/gm take <player>` and end it with `/gm close <player>`, which opens the rating window
   for the player (ratings go to the GM and the log).
+- **GM tools** (type them in chat, or as `/sc <command>` like the original GM client): `/kick <player> [reason]`,
+  `/mute <player> <minutes>`, `/unmute`, `/ban <account or character> <hours|perm> [reason]` (the client shows "Your
+  account has been banned!"), `/unban`, `/notice <text>` to everyone, `/goto <player>`, `/summon <player>` (across
+  maps), `/hide` / `/unhide`, `/info <player>`, `/give <player> <item> [count]`, `/givemoney <player> <amount>`,
+  `/healplayer <player>`. GMs skip the chat length and speed limits, can open the siege war settings, and get the
+  client's own GM chat commands (/CF, /ShowPropVec, /SetCamSpeed ...) and Ctrl+E action editor.
 - **Rankings** (Integrated Guild Strength, Land Battle Lord, Ocean Overlord, Honored Officer, Solo Arena, Tempering
   Master) list the top ten players (everyone counts, also with a score of 0), and the bottom line shows your own name
   and score.

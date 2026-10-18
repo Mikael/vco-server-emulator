@@ -235,7 +235,7 @@ public sealed partial class ClientSession
             Character.LastPort = Scene;
         }
         Log.Info(Tag, $"{Name} sails out to the high seas ({dock.Ocean}) off {dock.City}");
-        (float outX, float outZ) = ScenePaths.Nearest(Context.Settings, dock.Ocean, dock.X + BboSeaPackets.OceanDockOffset, dock.Z + BboSeaPackets.OceanDockOffset);
+        (float outX, float outZ) = ScenePaths.Nearest(Context.Settings, dock.Ocean, dock.X, dock.Z);
         GoTo(dock.Ocean, outX, 0f, outZ);
         return true;
     }

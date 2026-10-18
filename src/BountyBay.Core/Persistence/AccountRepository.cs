@@ -36,6 +36,17 @@ public sealed class AccountRepository
         }
     }
 
+    public AccountRecord? Find(string account)
+    {
+        lock (_gate) return _accounts.GetValueOrDefault(account);
+    }
+
+    public string? AccountOf(string characterName)
+    {
+        lock (_gate)
+            return _accounts.FirstOrDefault(pair => pair.Value.Characters.Any(character => string.Equals(character.Name, characterName, StringComparison.OrdinalIgnoreCase))).Key;
+    }
+
     public bool CheckPassword(string account, string passwordHash)
     {
         lock (_gate)

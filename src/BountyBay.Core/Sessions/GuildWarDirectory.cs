@@ -462,7 +462,8 @@ public static class GuildWarDirectory
     public static bool IsGm(ClientSession session)
     {
         GuildWarRules rules = Rules(session.Context);
-        return rules.GmOpenToAll || rules.Gms.Any(name => GuildDirectory.Same(name, session.Name) || GuildDirectory.Same(name, session.Account));
+        if (session.IsGameMaster) return true;
+        return rules.GmOpenToAll && session.Context.Settings.GameMasters.Count == 0 || rules.Gms.Any(name => GuildDirectory.Same(name, session.Name) || GuildDirectory.Same(name, session.Account));
     }
 
     public static void ShowCitySettings(ClientSession session)

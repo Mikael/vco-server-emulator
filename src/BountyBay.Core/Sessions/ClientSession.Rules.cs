@@ -129,6 +129,13 @@ public sealed partial class ClientSession
 
     public bool ChatAllowed(string channel, ref string text)
     {
+        if (IsGameMaster) return true;
+        if (Character.MutedUntil is { } muted && muted > DateTime.Now)
+        {
+            int minutes = Math.Max(1, (int)Math.Ceiling((muted - DateTime.Now).TotalMinutes));
+            SystemMessage($"You have been muted by a Game Master for {minutes} more minute{(minutes == 1 ? "" : "s")}.", SystemMessageKind.Prompt);
+            return false;
+        }
         if (text.Length > ChatLength)
         {
             text = text[..ChatLength];

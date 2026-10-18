@@ -13,7 +13,6 @@ public static class BboSeaPackets
     public const int FirstOceanDockId = 8_300_000;
     public const int OceanDockModel = 4000284;
     public const float OceanDockReach = 40f;
-    public const float OceanDockOffset = 25f;
 
     public const byte KindOceanNpc = 0x6a;
     public const byte KindOceanNpcB = 0x78;

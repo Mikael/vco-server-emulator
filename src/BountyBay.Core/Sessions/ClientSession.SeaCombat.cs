@@ -38,6 +38,12 @@ public sealed partial class ClientSession
         ShipRules rules = data.Rules;
         if (Character.CannonsLeft < 0) Character.CannonsLeft = Math.Min(rules.StartCannonsPerSide, rules.CannonsPerSide);
         if (Character.CannonsRight < 0) Character.CannonsRight = Math.Min(rules.StartCannonsPerSide, rules.CannonsPerSide);
+        if (!Character.CannonsRestored)
+        {
+            Character.CannonsRestored = true;
+            if (Character.CannonsLeft == 0 && Character.CannonsRight == 0)
+                Character.CannonsLeft = Character.CannonsRight = Math.Min(rules.StartCannonsPerSide, rules.CannonsPerSide);
+        }
         if (Character.CannonName.Length == 0) Character.CannonName = data.DefaultCannon.Name;
         Character.Ammunition ??= new Dictionary<string, int> { [data.DefaultAmmunition.Name] = rules.StartAmmunition };
         if (!HasAmmunition(Character.AmmunitionLeft)) Character.AmmunitionLeft = FirstAmmunition();
@@ -150,8 +156,42 @@ public sealed partial class ClientSession
             SeaNotice($"The {ship.Definition.Name} is a friendly ship.");
             return true;
         }
-        if (!ship.Dead && !ship.Gone && !SeaSunk) FireBroadside(ship);
+        if (!ship.Dead && !ship.Gone && !SeaSunk)
+        {
+            FireBroadside(ship);
+            EngageSeaTarget(objectId);
+        }
         return true;
+    }
+
+    private int _engageSerial;
+
+    private void EngageSeaTarget(int objectId)
+    {
+        int serial = ++_engageSerial;
+        int scene = Scene;
+        _ = Task.Run(async () =>
+        {
+            while (true)
+            {
+                await Task.Delay(500);
+                lock (Context.World.Sync)
+                {
+                    if (serial != _engageSerial || !InWorld || !AtSea || SeaSunk || Scene != scene || SeaTarget != objectId || Mover == null) return;
+                    SeaNpcState? ship = Sea.Find(objectId, Scene);
+                    if (ship == null || ship.Dead || ship.Gone || ship.Definition.Friendly) return;
+                    try
+                    {
+                        FireBroadside(ship, quiet: true);
+                    }
+                    catch (Exception exception)
+                    {
+                        Log.Error(Tag, exception);
+                        return;
+                    }
+                }
+            }
+        });
     }
 
     public bool SelectAmmunition(int index)
@@ -302,7 +342,7 @@ public sealed partial class ClientSession
         });
     }
 
-    private void FireBroadside(SeaNpcState ship)
+    private void FireBroadside(SeaNpcState ship, bool quiet = false)
     {
         EnsureShipState();
         SeaNpcDefinition definition = ship.Definition;
@@ -313,6 +353,7 @@ public sealed partial class ClientSession
         int side = relative >= 0 ? 1 : 0;
         long now = SeaWorld.Now;
         if (now < _seaReadyAt[side]) return;
+        if (quiet && SeaStance == SeaStanceFullSpeed) return;
         if (FiringEndsFullSpeed()) return;
 
         CannonDefinition cannon = ShipCannon;
@@ -321,23 +362,23 @@ public sealed partial class ClientSession
         int stock = Character.Ammunition!.GetValueOrDefault(ammunitionName);
         if (cannons <= 0)
         {
-            SeaNotice($"You have no cannons on the {(side == 0 ? "port" : "starboard")} side.");
+            if (!quiet) SeaNotice($"You have no cannons on the {(side == 0 ? "port" : "starboard")} side.");
             return;
         }
         if (stock <= 0)
         {
-            SeaNotice("You are out of cannonballs.");
+            if (!quiet) SeaNotice("You are out of cannonballs.");
             return;
         }
         if (distance >= cannon.Range)
         {
-            SeaNotice("The target is out of range.");
+            if (!quiet) SeaNotice("The target is out of range.");
             return;
         }
         double offBeam = Math.Abs(side == 0 ? relative + 900.0 : relative - 900.0);
         if (offBeam > cannon.FireAngle * 5.0 + FireArcSlackTenths)
         {
-            SeaNotice($"The target is outside the firing arc of your {(side == 0 ? "port" : "starboard")} battery.");
+            if (!quiet) SeaNotice($"The target is outside the firing arc of your {(side == 0 ? "port" : "starboard")} battery.");
             return;
         }
 

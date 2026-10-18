@@ -279,7 +279,7 @@ public sealed partial class ClientSession
 
     public void ShowTo(ClientSession other)
     {
-        if (Mover == null) return;
+        if (Mover == null || GmHidden && !other.IsGameMaster) return;
         (float x, float z) = Mover.Now();
         if (AtSea)
         {

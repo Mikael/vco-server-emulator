@@ -61,4 +61,6 @@ public sealed class AccountRecord
 {
     public string PasswordHash { get; set; } = "";
     public List<CharacterRecord> Characters { get; set; } = [];
+    public DateTime? BannedUntil { get; set; }
+    public string BanReason { get; set; } = "";
 }

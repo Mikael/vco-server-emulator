@@ -35,6 +35,12 @@ public sealed class LoginHandler : IMessageHandler
             session.Send(LoginPackets.Result((byte)LoginResult.WrongAccount), "(login refused: password)");
             return;
         }
+        if (session.Context.Accounts.Find(account) is { BannedUntil: { } bannedUntil } banned && bannedUntil > DateTime.Now)
+        {
+            Log.Info(session.Tag, $"Login refused for account {account}: banned until {bannedUntil:yyyy-MM-dd HH:mm} ({banned.BanReason})");
+            session.Send(LoginPackets.Result((byte)LoginResult.Banned), "(login refused: banned)");
+            return;
+        }
         session.Account = account;
         List<CharacterRecord> characters = session.Context.Accounts.Characters(session.Account);
         if (characters.Count(character => CreateCharacterHandler.RepairBody(character, session.Context.Data.Creation)) > 0) session.Context.Accounts.Save();

@@ -77,6 +77,7 @@ public enum LoginResult : byte
     WrongVersion = 10,
     DeleteProtected = 13,
     Kicked = 14,
+    Banned = 34,
     CharacterDataError = 18,
     ServerOverload = 25,
 }

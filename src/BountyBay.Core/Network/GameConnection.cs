@@ -43,6 +43,21 @@ public sealed class GameConnection : IAsyncDisposable
         }
     }
 
+    public void Drop()
+    {
+        try
+        {
+            _client.Client.Shutdown(SocketShutdown.Both);
+        }
+        catch (SocketException)
+        {
+        }
+        catch (ObjectDisposedException)
+        {
+        }
+        _client.Close();
+    }
+
     public ValueTask DisposeAsync()
     {
         _client.Dispose();
