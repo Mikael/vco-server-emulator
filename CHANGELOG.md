@@ -70,6 +70,12 @@
 - **NPC windows** close when you walk away, and "Goodbye" is always the last line of an NPC menu.
 
 ### Guilds, teams and activities
+- **Game Masters and the Help window**: list GM account or character names under `"GameMasters"` in
+  `config/emulator.json`. GMs get the client's GameMaster flag, and only they can use the slash commands (/item,
+  /money, /go ...; while the list is empty everyone still can). Players open Help, pick what they need and press Next:
+  online GMs are told and see the player's messages. GMs answer with `/gm r <player> <text>`, see open requests with
+  `/gm list`, take one with `/gm take <player>` and end it with `/gm close <player>`, which opens the rating window
+  for the player (ratings go to the GM and the log).
 - **Rankings** (Integrated Guild Strength, Land Battle Lord, Ocean Overlord, Honored Officer, Solo Arena, Tempering
   Master) list the top ten players (everyone counts, also with a score of 0), and the bottom line shows your own name
   and score.

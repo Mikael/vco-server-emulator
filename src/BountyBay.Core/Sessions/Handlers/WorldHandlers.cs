@@ -87,15 +87,8 @@ public sealed class ServiceChatHandler : IMessageHandler
 
     public void Handle(ClientSession session, PacketReader reader)
     {
-        string text = reader.ReadCString();
-        if (text.StartsWith("#EXTE#", StringComparison.Ordinal) || text == "BYE")
-        {
-            Log.Debug(session.Tag, $"{session.Name} client extension message: {text}");
-            return;
-        }
-        Log.Info(session.Tag, $"{session.Name} to GM: {text}");
-        session.Send(ChatPackets.ServiceChat("ECHO", text), "(service chat echo)");
-        session.Send(ChatPackets.ServiceChat("GM", "Your message has been written to the server log."), "(service chat reply)");
+        if (!session.InWorld) return;
+        session.OnServiceChat(reader.ReadCString());
     }
 }
 

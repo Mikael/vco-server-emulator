@@ -101,8 +101,13 @@ public sealed partial class ClientSession
 
     private void PetFollow(float x, float z, float speed)
     {
-        if (AtSea || !_petFollowing || Character.Pet is not { Out: true }) return;
-        Send(ScenePackets.MoveObject(PetObjectId, x - 1.2f, z - 1.2f, speed, 0, speed <= ProtocolConstants.WalkSpeed ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction), "(pet follows)");
+        if (AtSea || !_petFollowing || Character.Pet is not { Out: true } || Mover == null) return;
+        int heading = Mover.Heading;
+        double angle = heading * Math.PI / 1800.0;
+        float forwardX = (float)Math.Sin(angle), forwardZ = (float)Math.Cos(angle);
+        float petX = x - forwardX * 1.5f + forwardZ * 0.8f;
+        float petZ = z - forwardZ * 1.5f - forwardX * 0.8f;
+        Send(ScenePackets.MoveObject(PetObjectId, petX, petZ, speed, heading, speed <= ProtocolConstants.WalkSpeed ? ProtocolConstants.WalkAction : ProtocolConstants.RunAction), "(pet follows)");
     }
 
     public void CommandPet(string order)

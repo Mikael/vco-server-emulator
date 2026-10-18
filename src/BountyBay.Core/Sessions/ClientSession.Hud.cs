@@ -16,6 +16,7 @@ public sealed partial class ClientSession
     public void PrepareHudProperties()
     {
         ApplyVipProperty();
+        ApplyGameMasterProperty();
     }
 
     public void AnswerPing(string counter)

@@ -284,6 +284,16 @@ public sealed class SlashCommands
 {
     public void Execute(ClientSession session, string[] words, CommandRouter router)
     {
+        if (words[0] is not ("/where" or "/who" or "/getrich" or "/getcons" or "/getteacher") && !session.MayUseGmCommands)
+        {
+            session.SystemMessage("Only Game Masters can use that command.");
+            return;
+        }
+        if (words[0] == "/gm")
+        {
+            session.GmCommand(words);
+            return;
+        }
         switch (words[0])
         {
             case "/talk" when words.Length == 2 && int.TryParse(words[1], out int npcId)

@@ -43,6 +43,9 @@ public sealed class EmulatorSettings
     public LoggingSettings Logging { get; set; } = new();
     public WorldSettings World { get; set; } = new();
     public BotSettings Bots { get; set; } = new();
+    public List<string> GameMasters { get; set; } = [];
+    public List<string> HelpTypes { get; set; } =
+        ["Account and login", "Bug report", "Items and money", "Quests", "Report a player", "Other"];
 
     [JsonIgnore]
     public string Root { get; private set; } = "";

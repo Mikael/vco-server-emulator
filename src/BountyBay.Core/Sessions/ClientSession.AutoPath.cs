@@ -39,12 +39,12 @@ public sealed partial class ClientSession
                 (float X, float Z) target = points[next - 1];
                 for (int check = 0; check < MaxArrivalChecks; check++)
                 {
-                    await Task.Delay(TimeToDestination());
+                    await Task.Delay(TimeToNextLeg());
                     lock (Context.World.Sync)
                     {
                         if (serial != _pathSerial || Mover == null || Scene != scene) return;
                         if (Distance((Mover.DestinationX, Mover.DestinationZ), target) > PathPointReached) return;
-                        if (Distance(Mover.Now(), target) <= ArrivalSlack) break;
+                        if (Distance(Mover.Now(), target) <= MathF.Max(ArrivalSlack, Mover.Speed * PathLeadSeconds * 1.5f)) break;
                     }
                 }
                 lock (Context.World.Sync)
@@ -62,6 +62,16 @@ public sealed partial class ClientSession
                 }
             }
         });
+    }
+
+    private const float PathLeadSeconds = 0.3f;
+
+    private TimeSpan TimeToNextLeg()
+    {
+        if (Mover == null) return TimeSpan.FromMilliseconds(200);
+        (float x, float z) = Mover.Now();
+        float left = Distance((x, z), (Mover.DestinationX, Mover.DestinationZ)) / MathF.Max(0.5f, Mover.Speed);
+        return TimeSpan.FromSeconds(Math.Clamp(left - PathLeadSeconds, 0.05f, 600f));
     }
 
     private void WalkPathPoint((float X, float Z) point)
