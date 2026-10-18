@@ -1,21 +1,11 @@
 namespace BountyBay.Core.Protocol.Packets;
 
-public static class SoulTables
-{
-    // dlgCharmLargeRebuild reads table 0x57: row index, quality, attributes ("Name-Value-Tier;...").
-    public static readonly TableDefinition BatchRebuild = new(87, "CFightSoulList",
-    [
-        new("Index", PropertyType.U32),
-        new("Quality", PropertyType.U32),
-        new("Prop", PropertyType.String),
-    ]);
-
-    public static TableDefinition[] All => [BatchRebuild];
-}
-
 public static class SoulPackets
 {
     public const string Empty = "0";
+
+    // Client custom table read by dlgCharmLargeRebuild (batch rebuild results).
+    public const int BatchRebuildTable = 87;
 
     public static byte[] ViewArm(IReadOnlyList<string> slots, int chart, int grade, int skillLevel)
         => UiPackets.Custom($"scViewArmFightSoul {string.Join(' ', slots.Select(Field))} {chart + 1} {grade} {skillLevel}");

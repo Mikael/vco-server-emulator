@@ -22909,9 +22909,10 @@
     },
     "CWCL0168": {
       "Photo": 993207,
-      "Price": 50,
+      "Price": 5000,
       "Heal": 0,
-      "Label": "Modification Stone"
+      "Label": "Modification Stone",
+      "PriceSource": "GUESS"
     },
     "CWCL0169": {
       "Photo": 0,
@@ -40443,94 +40444,124 @@
       "Label": ""
     },
     "FG000001": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190938,
+      "Price": 50000,
       "Heal": 0,
-      "Label": "Gentleman's Pocket Watch (1-Primary)"
+      "Label": "Gentleman's Pocket Watch (1-Primary)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000002": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190943,
+      "Price": 50000,
       "Heal": 0,
-      "Label": "Katarina's Pearl Crown (2-Primary)"
+      "Label": "Katarina's Pearl Crown (2-Primary)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000003": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 140701,
+      "Price": 50000,
       "Heal": 0,
-      "Label": "Mediterranean Chart (3-Primary)"
+      "Label": "Mediterranean Chart (3-Primary)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000004": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190963,
+      "Price": 50000,
       "Heal": 0,
-      "Label": "Summary of Leonardo da Vinci's Anatomical Studies (4-Primary)"
+      "Label": "Summary of Leonardo da Vinci's Anatomical Studies (4-Primary)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000005": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190961,
+      "Price": 50000,
       "Heal": 0,
-      "Label": "Manuscript of The Conquest of Gaul (5-Primary)"
+      "Label": "Manuscript of The Conquest of Gaul (5-Primary)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000006": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 140830,
+      "Price": 200000,
       "Heal": 0,
-      "Label": "Ancient Compass (1-Intermediate)"
+      "Label": "Ancient Compass (1-Intermediate)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000007": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190942,
+      "Price": 200000,
       "Heal": 0,
-      "Label": "Golden Crown of Dagama (2-Intermediate)"
+      "Label": "Golden Crown of Dagama (2-Intermediate)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000008": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190936,
+      "Price": 200000,
       "Heal": 0,
-      "Label": "European Chart (3-Intermediate)"
+      "Label": "European Chart (3-Intermediate)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000009": {
-      "Photo": 0,
-      "Price": 100,
+      "Photo": 190964,
+      "Price": 200000,
       "Heal": 0,
-      "Label": "Hippocratic Rescue Manual (4-Intermediate)"
+      "Label": "Hippocratic Rescue Manual (4-Intermediate)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000010": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190956,
+      "Price": 200000,
       "Heal": 0,
-      "Label": "Translation for Tome of Hannibal (5-Intermediate)"
+      "Label": "Translation for Tome of Hannibal (5-Intermediate)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000011": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190930,
+      "Price": 800000,
       "Heal": 0,
-      "Label": "Justice of Themis (1-Advanced)"
+      "Label": "Justice of Themis (1-Advanced)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000012": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190928,
+      "Price": 800000,
       "Heal": 0,
-      "Label": "Living Buddha's Bracelet (2-Advanced)"
+      "Label": "Living Buddha's Bracelet (2-Advanced)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000013": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190937,
+      "Price": 800000,
       "Heal": 0,
-      "Label": "World Chart (3-Advanced)"
+      "Label": "World Chart (3-Advanced)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000014": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190118,
+      "Price": 800000,
       "Heal": 0,
-      "Label": "Pirate Navigation Map (4-Advanced)"
+      "Label": "Pirate Navigation Map (4-Advanced)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FG000015": {
-      "Photo": 0,
-      "Price": 50,
+      "Photo": 190969,
+      "Price": 800000,
       "Heal": 0,
-      "Label": "Black Stone Note (5-Advanced)"
+      "Label": "Black Stone Note (5-Advanced)",
+      "PhotoSource": "GUESS: client has no icon for General equipment; unused prop icon picked by look",
+      "PriceSource": "GUESS"
     },
     "FS001": {
       "Photo": 0,

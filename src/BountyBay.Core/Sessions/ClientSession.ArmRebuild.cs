@@ -15,6 +15,7 @@ public static class ArmRebuildOption
     public const int Nobility = 662;
     public const int FirstNobility = 663;
     public const int LastNobility = 669;
+    public const int GeneralRebuild = 670;
     public const int Leave = 679;
     public const int Last = 679;
 }
@@ -82,6 +83,10 @@ public sealed partial class ClientSession
                 return true;
             case ArmRebuildOption.Nobility:
                 ShowNobleExchange(target);
+                return true;
+            case ArmRebuildOption.GeneralRebuild:
+                CloseNpcDialogue();
+                OpenAideArmRebuild();
                 return true;
             case >= ArmRebuildOption.FirstNobility and <= ArmRebuildOption.LastNobility:
                 NobleExchange(option - ArmRebuildOption.FirstNobility + 1);

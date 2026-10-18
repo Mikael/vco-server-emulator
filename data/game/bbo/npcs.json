@@ -72088,5 +72088,79 @@
       "Y": "GUESS height of nearby Athens City NPCs",
       "Model": "GUESS"
     }
+  },
+  {
+    "Id": 2009900,
+    "Scene": 1012002,
+    "Model": 3201063,
+    "Name": "General Equipment Enhancement Master",
+    "X": 42.5,
+    "Y": 3.92,
+    "Z": 10.4,
+    "Greeting": "Bring me the equipment of your Generals and I will reforge its attributes. Three rebuilds a day are free.",
+    "Options": [
+      {
+        "Action": 670,
+        "Text": "Rebuild General equipment"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "NameKey": "gnnpc063013",
+    "Role": "",
+    "ChatSet": "",
+    "ClientMenu": [],
+    "SceneName": "Seville Port",
+    "Source": {
+      "Position": "GUESS: the client names this NPC (namelist) and points the rebuild window at Seville Port (FGRebuild.ini [Address] AskGoToObj CJ012002 gnnpc063013) but has no placement; stands next to the Forger",
+      "Name": "CLIENT gnnpc063013",
+      "Model": "GUESS name keyword -> Blacksmith model (emulator Athens Blacksmith)",
+      "Greeting": "GUESS (Suspend.ini: three free rebuilds every day)"
+    }
+  },
+  {
+    "Id": 2009901,
+    "Scene": 1012002,
+    "Model": 3201063,
+    "Name": "General Equipment and Material Exchange Officer",
+    "X": 45.5,
+    "Y": 3.92,
+    "Z": 10.4,
+    "Greeting": "General's Primary equipment and Modification Stones are sold here.",
+    "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Trade"
+      },
+      {
+        "Action": "Bye",
+        "Text": "Goodbye"
+      }
+    ],
+    "NameKey": "dhnpc3106",
+    "Role": "",
+    "ChatSet": "",
+    "ClientMenu": [],
+    "SceneName": "Seville Port",
+    "Source": {
+      "Position": "GUESS: no placement in the client; stands next to the Forger",
+      "Name": "CLIENT dhnpc3106",
+      "Shop": "CLIENT Suspend.ini: General's Primary Equipment can be purchased at General Equipment Exchange Officer; Modification Stone GUESS"
+    },
+    "Shop": {
+      "15": [
+        "FG000001",
+        "FG000002",
+        "FG000003",
+        "FG000004",
+        "FG000005"
+      ],
+      "17": [
+        "CWCL0168"
+      ],
+      "23": []
+    }
   }
 ]
