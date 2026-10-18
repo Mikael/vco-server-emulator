@@ -3,6 +3,7 @@
 ## 2026-10-18
 
 ### Character and equipment
+- **VIP 1-7**: spending mall points earns VIP points (1 per point), and your VIP level follows the client's VIP table (VIP 1 at 10,000 up to VIP 7 at 1,050,000 points). The VIP window shows your level and points.
 - **Levelling a skill** no longer pops open the Command Interface.
 - **Damage numbers** float over whoever gets hit again, on land and at sea (the game's number font has no minus sign, so numbers with one were never drawn).
 - **Equip sound** matches the item: clothes and hats use the clothing sound, weapons and other gear the equip sound.

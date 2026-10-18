@@ -388,6 +388,9 @@ public sealed class SlashCommands
                 session.SetMoney(amount);
                 session.Save();
                 break;
+            case "/vip" when words.Length == 2 && long.TryParse(words[1], out long vip) && vip >= 0:
+                session.SetVipScore(vip);
+                break;
             case "/points" when words.Length == 2 && int.TryParse(words[1], out int points) && points >= 0:
                 session.Character.GamePoints = points;
                 session.Save();

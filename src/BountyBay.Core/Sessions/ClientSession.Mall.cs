@@ -94,6 +94,7 @@ public sealed partial class ClientSession
             return true;
         }
         Character.GamePoints -= (int)cost;
+        GainVipScore(cost, "mall purchase");
         Save();
         SendMallPoints();
         Send(UiPackets.Custom("scBuyGameGoodsSuccess"), "(mall purchase done)");

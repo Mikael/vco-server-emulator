@@ -15,7 +15,7 @@ public sealed partial class ClientSession
 
     public void PrepareHudProperties()
     {
-        if (PropertyTable.Has("VIP")) Properties["VIP"] = 0;
+        ApplyVipProperty();
     }
 
     public void AnswerPing(string counter)

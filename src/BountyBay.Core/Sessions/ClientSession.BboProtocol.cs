@@ -185,12 +185,6 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} collects the daily reward");
     }
 
-    public void BboShowVip()
-    {
-        int level = Properties.Int("VIP");
-        Send(BboProtocolPackets.VipInfo(Math.Max(1, level), level > 0 ? "VIP" + level : "-", 0, 0), "(vip info)");
-    }
-
     public void BboSendAwardState()
     {
         List<int> minutes = AwardMinutes();
