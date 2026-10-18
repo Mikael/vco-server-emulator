@@ -24,8 +24,23 @@ public sealed partial class ClientSession
     public const int StallView = 14;
     public const int StallSlots = 18;
     public const int StallState = 21;
-    private const int StallModel = 4002031;
-    private const int FineStallModel = 4002032;
+    private const int FirstStallModel = 4002031;
+    public const int StallStyles = 19;
+
+    private int StallModel => FirstStallModel + Math.Clamp(Character.StallStyle, 1, StallStyles) - 1;
+
+    public void ChooseStallStyle(string[] words)
+    {
+        if (words.Length < 2 || !int.TryParse(words[1], out int style) || style < 1 || style > StallStyles)
+        {
+            SystemMessage($"Your booth style is {Math.Clamp(Character.StallStyle, 1, StallStyles)}. Type /booth 1 to /booth {StallStyles} to pick another look for your stall.");
+            return;
+        }
+        Character.StallStyle = style;
+        Save();
+        if (StallOpen && PropertyTable.Has("StallID")) SetProperty("StallID", StallModel, visibleToOthers: true);
+        SystemMessage($"Booth style {style} chosen.");
+    }
     public const int StallBuyEntry = 255;
     public const int StallInfoLength = 64;
 
@@ -200,7 +215,7 @@ public sealed partial class ClientSession
         StallOpen = true;
         SetProperty("StallInfo", info, visibleToOthers: true);
         SetProperty("SelectState", StallState, visibleToOthers: true);
-        if (PropertyTable.Has("StallID")) SetProperty("StallID", UniqueSkillLevel("US_STALL") > 0 ? FineStallModel : StallModel, visibleToOthers: true);
+        if (PropertyTable.Has("StallID")) SetProperty("StallID", StallModel, visibleToOthers: true);
         SetStallRepair(repairPrice);
         Log.Info(Tag, $"{Name} opens a stall: {info}");
     }

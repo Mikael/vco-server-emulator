@@ -290,6 +290,11 @@ public sealed class SlashCommands
             if (words[1].StartsWith("ut", StringComparison.Ordinal)) return;
             words = [(words[1].StartsWith('/') ? "" : "/") + words[1], .. words[2..]];
         }
+        if (words[0] == "/booth")
+        {
+            session.ChooseStallStyle(words);
+            return;
+        }
         if (words[0] is not ("/where" or "/who" or "/getrich" or "/getcons" or "/getteacher") && !session.MayUseGmCommands)
         {
             session.SystemMessage("Only Game Masters can use that command.");
