@@ -1466,5 +1466,81 @@
   {
     "Name": "LeftCardPoints",
     "Type": "U32"
+  },
+  {
+    "Name": "RandProp",
+    "Type": "String"
+  },
+  {
+    "Name": "LockProp",
+    "Type": "String"
+  },
+  {
+    "Name": "AAddMaxHP",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddHitRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddDodgeRatio",
+    "Type": "U32"
+  },
+  {
+    "Name": "ADoubleDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "ADoubleDamage0",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddDamageSco",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddDamageSc",
+    "Type": "U32"
+  },
+  {
+    "Name": "AWard",
+    "Type": "U32"
+  },
+  {
+    "Name": "ASkillHap",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddCannonHR",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddCannonDR",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddCannonDB",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddCannKeyDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddTorpedoAT",
+    "Type": "U32"
+  },
+  {
+    "Name": "AAddTorpedoDF",
+    "Type": "U32"
+  },
+  {
+    "Name": "ADecShipDamage",
+    "Type": "U32"
+  },
+  {
+    "Name": "AIncShipDamage",
+    "Type": "U32"
   }
 ]

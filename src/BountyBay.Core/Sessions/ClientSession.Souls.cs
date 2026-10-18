@@ -334,11 +334,63 @@ public sealed partial class ClientSession
         Log.Info(Tag, $"{Name} luck soul command: {string.Join(' ', words)}");
     }
 
+    // dlgCharmLargeRebuild: ten rebuilds at once (csStartCFightSoulList <slot>), keep one (csSaveCFightSoulList <slot> <row>).
+    private const int BatchRebuilds = 10;
+
+    private List<List<SoulAttributeRecord>>? _soulBatch;
+
     public void BatchSoulChange(string[] words)
     {
-        if (words[0] == "csStartCFightSoulList")
-            SystemMessage("Batch rebuilding is not available here; use the single rebuild.", SystemMessageKind.Prompt);
-        Log.Info(Tag, $"{Name} batch star soul rebuild: {string.Join(' ', words)}");
+        int[] numbers = words.Skip(1).Select(word => int.TryParse(word, out int value) ? value : -1).ToArray();
+        switch (words[0])
+        {
+            case "csStartCFightSoulList" when numbers.Length >= 1:
+                StartSoulBatch(numbers[0]);
+                break;
+            case "csSaveCFightSoulList" when numbers.Length >= 2:
+                SaveSoulBatch(numbers[0], numbers[1]);
+                break;
+            case "csCancleCFightSoulList":
+                _soulBatch = null;
+                Send(SoulPackets.BatchShown(false), "(star soul batch dropped)");
+                break;
+        }
+    }
+
+    private void StartSoulBatch(int slot)
+    {
+        if (SoulAt(slot) is not { } soul)
+        {
+            SystemMessage("There is no Star Soul in that slot.", SystemMessageKind.Prompt);
+            return;
+        }
+        int quality = SoulRules.Quality(soul.Id);
+        List<(string Item, int Amount)> materials = RebuildMaterials(quality).Select(entry => (entry.Item, entry.Amount * BatchRebuilds)).ToList();
+        if (!PaySoulCost(materials, SoulRules.At(Souls.RebuildFeeGuess, quality) * BatchRebuilds)) return;
+        _soulSlot = slot;
+        _soulBatch = Enumerable.Range(0, BatchRebuilds).Select(_ => RollAttributes(soul.Id)).ToList();
+        Send(TablePackets.Clear(SoulTables.BatchRebuild), "(clear star soul batch)");
+        Send(TablePackets.Rows(SoulTables.BatchRebuild, _soulBatch.Select((rolled, row) => new object[]
+            { row, quality, string.Join(';', SoulRows(soul, rolled)) }).ToList()), "(star soul batch results)");
+        Send(SoulPackets.BatchShown(true), "(star soul batch shown)");
+        Log.Info(Tag, $"{Name} rebuilds star soul {soul.Id} in {_soulItem} slot {slot} ten times");
+    }
+
+    private void SaveSoulBatch(int slot, int row)
+    {
+        if (SoulAt(slot) is not { } soul || _soulBatch == null || row < 0 || row >= _soulBatch.Count)
+        {
+            SystemMessage("There is no rebuilt attribute to keep.", SystemMessageKind.Prompt);
+            return;
+        }
+        soul.Attributes = _soulBatch[row];
+        soul.Pending = null;
+        _soulBatch = null;
+        Save();
+        Send(SoulPackets.BatchShown(false), "(star soul batch kept)");
+        PreviewSoulChange(slot);
+        ShowSoulBox();
+        Log.Info(Tag, $"{Name} keeps batch result {row} for star soul {soul.Id}");
     }
 
     public IReadOnlyDictionary<string, int> SoulBonuses()

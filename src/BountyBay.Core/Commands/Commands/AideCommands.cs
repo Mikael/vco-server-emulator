@@ -63,11 +63,25 @@ public sealed class AideCommands : ITextCommand
             case "csUpdateAideProp" when Arguments.Numbers(words, 1, out int[] refresh):
                 session.RefreshAide(refresh[0]);
                 return true;
-            case "csAideRebuildClose":
-                Log.Debug(session.Tag, $"{session.Name} window notice: {words[0]}");
+            case "csAideRebuildView":
+                session.OpenAideArmRebuild();
                 return true;
-            case "csRecoverArmProp" or "csRecoverArmPropS" or "csSaveArmProp" or "csSaveArmPropS" or "csAideArmActive"
-                or "csAideArmRebuild" or "csAideArmRebuildS" or "csAideRebuildView":
+            case "csAideRebuildClose":
+                session.CloseAideArmRebuild();
+                return true;
+            case "csAideArmRebuild" when Leading(words, 2, out int[] rebuild):
+                session.RebuildAideArm(rebuild[0], Locked(words, 3));
+                return true;
+            case "csSaveArmProp":
+                session.SaveAideArm();
+                return true;
+            case "csRecoverArmProp":
+                session.RecoverAideArm();
+                return true;
+            case "csAideArmActive" when Arguments.Numbers(words, 1, out int[] active):
+                session.ActivateAideArmLine(active[0]);
+                return true;
+            case "csRecoverArmPropS" or "csSaveArmPropS" or "csAideArmRebuildS":
                 session.AideRebuildNotice(string.Join(' ', words));
                 return true;
             default:
@@ -87,6 +101,10 @@ public sealed class AideCommands : ITextCommand
         string skill = x != null && z != null ? string.Join(' ', words[1..^2]) : string.Join(' ', words.Skip(1));
         session.UseAideSkill(skill, x, z);
     }
+
+    // csAideArmRebuild <mode> <n> <prop> <prop> ...: the attribute indices after the count are the locked lines.
+    private static HashSet<int> Locked(string[] words, int first)
+        => words.Skip(first).Select(word => int.TryParse(word, out int prop) ? prop : -1).Where(prop => prop >= 0).ToHashSet();
 
     private static bool Leading(string[] words, int count, out int[] values)
     {

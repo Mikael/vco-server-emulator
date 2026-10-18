@@ -112,6 +112,8 @@ public sealed partial class ClientSession
             case RankArmPackets.TemperView when _temperOpen:
                 TemperSlot(how);
                 return true;
+            case AideArmView when _aideArmOpen:
+                return AideArmSelect(view, how, index);
             default:
                 return false;
         }

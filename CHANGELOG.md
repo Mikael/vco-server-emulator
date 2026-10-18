@@ -2,6 +2,13 @@
 
 ## 2026-10-18
 
+- **General equipment rebuild** (Equipment Rebuild System for General pieces FG000001-015) works: activate lines, lock
+  lines, three free rebuilds a day, then Modification Stones or Special Offer Vouchers (client cost tables), Save/Cancel.
+- **Star soul batch rebuild** rolls ten results at once and keeps the one you pick.
+- **Sailor Recruitment window** (slider, Heal, Optimal/Max) opens from the Tavern Boss and Shipyard.
+- **Switch Team** in the system settings toggles team invitations.
+- 93 duplicate NPCs made from map labels (Weapon Store, Items Store, Bank, Church ...) were removed; the real
+  shopkeepers stand at the same spots.
 - **Nobility Equipment** window lists all 16 attributes (HP, SP, Attack, Defense, Accuracy, Dodging, Agility, Physique,
   Shocking Strike, Critical Resist, Damage Bonus/Reduction, Technique, Parry, Reaction, Willpower) with the totals of
   your worn nobility pieces, and the rank set bonuses apply at 4 and 7 pieces (Baron .. Marquis, from the client's set

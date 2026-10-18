@@ -1,5 +1,18 @@
 namespace BountyBay.Core.Protocol.Packets;
 
+public static class SoulTables
+{
+    // dlgCharmLargeRebuild reads table 0x57: row index, quality, attributes ("Name-Value-Tier;...").
+    public static readonly TableDefinition BatchRebuild = new(87, "CFightSoulList",
+    [
+        new("Index", PropertyType.U32),
+        new("Quality", PropertyType.U32),
+        new("Prop", PropertyType.String),
+    ]);
+
+    public static TableDefinition[] All => [BatchRebuild];
+}
+
 public static class SoulPackets
 {
     public const string Empty = "0";
@@ -31,6 +44,9 @@ public static class SoulPackets
     public static byte[] CloseChange() => UiPackets.Custom("scCloseChangeFightSoul");
 
     public static byte[] CloseChangeList() => UiPackets.Custom("scCloseCFightSoulList");
+
+    // 1: the ten results in table 87 are shown with Save/Cancel; 0: cleared, back to Start.
+    public static byte[] BatchShown(bool shown) => UiPackets.Custom($"scRefreshCR10Prop {(shown ? 1 : 0)}");
 
     public static byte[] ViewUpQuality(string id, string next, int quality, int nextQuality, int level, int nextLevel,
         IReadOnlyList<string> rows, IReadOnlyList<string> nextRows, string materials)

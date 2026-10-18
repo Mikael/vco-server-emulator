@@ -929,62 +929,6 @@
     }
   },
   {
-    "Id": 2000019,
-    "Scene": 1001001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -125.0,
-    "Y": 14.21,
-    "Z": 48.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1001001.ini map mark5",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000020,
-    "Scene": 1001001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -75.0,
-    "Y": 14.31,
-    "Z": 18.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1001001.ini map mark6",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000021,
     "Scene": 1001002,
     "Model": 3201016,
@@ -1316,34 +1260,6 @@
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Adventurer Alliance Master)",
       "Greeting": "GUESS emulator template"
-    }
-  },
-  {
-    "Id": 2000027,
-    "Scene": 1001002,
-    "Model": 3201074,
-    "Name": "Fleet Combat Trainer",
-    "X": -8.7,
-    "Y": 7.71,
-    "Z": -53.2,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "jianduinpc",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1001002.ini map mark6",
-      "Name": "CLIENT jianduinpc",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Skill Tutor model (emulator Athens Skill Tutor)",
-      "Greeting": "GUESS default"
     }
   },
   {
@@ -2166,34 +2082,6 @@
       "Name": "CLIENT SD0002",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000044,
-    "Scene": 1001014,
-    "Model": 3201022,
-    "Name": "Principal of the Merchant Alliance Fleet",
-    "X": 15.0,
-    "Y": 30.51,
-    "Z": -419.5,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "tanshangmen",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Possedonia",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1001014.ini map mark9",
-      "Name": "CLIENT tanshangmen",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -4365,61 +4253,6 @@
     }
   },
   {
-    "Id": 2000110,
-    "Scene": 1001075,
-    "Model": 3201013,
-    "Name": "Priest",
-    "X": 112.21,
-    "Y": 6.14,
-    "Z": 85.23,
-    "Greeting": "God bless you, my child!",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004948",
-    "Role": "Priest",
-    "ChatSet": "gnnpc010",
-    "ClientMenu": [
-      {
-        "Key": "-12",
-        "Number": 12,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      },
-      {
-        "Key": "-45071",
-        "Number": 45071,
-        "Text": "Donation",
-        "Action": ""
-      },
-      {
-        "Key": "-45072",
-        "Number": 45072,
-        "Text": "Healing",
-        "Action": ""
-      }
-    ],
-    "SceneName": "Havana",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1001075.ini map mark0",
-      "Name": "CLIENT IDName00004948",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
-    }
-  },
-  {
     "Id": 2000111,
     "Scene": 1001075,
     "Model": 3201013,
@@ -6332,117 +6165,6 @@
     }
   },
   {
-    "Id": 2000152,
-    "Scene": 1003001,
-    "Model": 3201013,
-    "Name": "Missionary",
-    "X": 47.0,
-    "Y": 4.64,
-    "Z": 48.0,
-    "Greeting": "God bless you, my child!",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004949",
-    "Role": "Priest",
-    "ChatSet": "gnnpc010",
-    "ClientMenu": [
-      {
-        "Key": "-12",
-        "Number": 12,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      },
-      {
-        "Key": "-45071",
-        "Number": 45071,
-        "Text": "Donation",
-        "Action": ""
-      },
-      {
-        "Key": "-45072",
-        "Number": 45072,
-        "Text": "Healing",
-        "Action": ""
-      }
-    ],
-    "SceneName": "Hamburg City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1003001.ini map mark0",
-      "Name": "CLIENT IDName00004949",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
-    }
-  },
-  {
-    "Id": 2000153,
-    "Scene": 1003001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 22.0,
-    "Y": 4.04,
-    "Z": -94.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Hamburg City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1003001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000154,
-    "Scene": 1003001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 23.0,
-    "Y": 4.82,
-    "Z": -146.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Hamburg City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1003001.ini map mark5",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000155,
     "Scene": 1003002,
     "Model": 3201016,
@@ -7643,117 +7365,6 @@
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Merchant Guild Master)",
       "Greeting": "GUESS emulator template"
-    }
-  },
-  {
-    "Id": 2000178,
-    "Scene": 1004001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -54.0,
-    "Y": 14.32,
-    "Z": -2.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Reykjavik City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1004001.ini map mark4",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000179,
-    "Scene": 1004001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -17.0,
-    "Y": 15.8,
-    "Z": -39.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Reykjavik City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1004001.ini map mark6",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000180,
-    "Scene": 1004001,
-    "Model": 3201013,
-    "Name": "Missionary",
-    "X": 18.0,
-    "Y": 7.93,
-    "Z": 42.0,
-    "Greeting": "God bless you, my child!",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004949",
-    "Role": "Priest",
-    "ChatSet": "gnnpc010",
-    "ClientMenu": [
-      {
-        "Key": "-12",
-        "Number": 12,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      },
-      {
-        "Key": "-45071",
-        "Number": 45071,
-        "Text": "Donation",
-        "Action": ""
-      },
-      {
-        "Key": "-45072",
-        "Number": 45072,
-        "Text": "Healing",
-        "Action": ""
-      }
-    ],
-    "SceneName": "Reykjavik City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1004001.ini map mark10",
-      "Name": "CLIENT IDName00004949",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
     }
   },
   {
@@ -9100,90 +8711,6 @@
       "Name": "CLIENT NPC00740",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000209,
-    "Scene": 1007001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -42.0,
-    "Y": 9.14,
-    "Z": -84.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1007001.ini map mark2",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000210,
-    "Scene": 1007001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -60.0,
-    "Y": 9.04,
-    "Z": -56.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1007001.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000211,
-    "Scene": 1007001,
-    "Model": 3201013,
-    "Name": "Church",
-    "X": 53.0,
-    "Y": 12.89,
-    "Z": -95.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00006830",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1007001.ini map mark8",
-      "Name": "CLIENT IDName00006830",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Priest model (emulator Athens Priest)",
       "Greeting": "GUESS default"
     }
   },
@@ -10725,117 +10252,6 @@
     }
   },
   {
-    "Id": 2000242,
-    "Scene": 1008001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -24.0,
-    "Y": 4.58,
-    "Z": 2.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Amsterdam City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1008001.ini map mark0",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000243,
-    "Scene": 1008001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -24.0,
-    "Y": 4.58,
-    "Z": -2.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Amsterdam City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1008001.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000244,
-    "Scene": 1008001,
-    "Model": 3201013,
-    "Name": "Missionary",
-    "X": 31.0,
-    "Y": 4.58,
-    "Z": -48.0,
-    "Greeting": "God bless you, my child!",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004949",
-    "Role": "Priest",
-    "ChatSet": "gnnpc010",
-    "ClientMenu": [
-      {
-        "Key": "-12",
-        "Number": 12,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      },
-      {
-        "Key": "-45071",
-        "Number": 45071,
-        "Text": "Donation",
-        "Action": ""
-      },
-      {
-        "Key": "-45072",
-        "Number": 45072,
-        "Text": "Healing",
-        "Action": ""
-      }
-    ],
-    "SceneName": "Amsterdam City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1008001.ini map mark5",
-      "Name": "CLIENT IDName00004949",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
-    }
-  },
-  {
     "Id": 2000245,
     "Scene": 1010001,
     "Model": 3201016,
@@ -12034,62 +11450,6 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1010001.ini map2 [30.57]",
       "Name": "CLIENT bldNPC001",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000270,
-    "Scene": 1010001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 27.0,
-    "Y": 13.94,
-    "Z": 74.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Bordeaux City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1010001.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000271,
-    "Scene": 1010001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 21.0,
-    "Y": 13.85,
-    "Z": 15.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Bordeaux City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1010001.ini map mark5",
-      "Name": "CLIENT IDName00010063",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
@@ -18792,34 +18152,6 @@
     }
   },
   {
-    "Id": 2000420,
-    "Scene": 1018002,
-    "Model": 3201003,
-    "Name": "Maltese Knightage Award Giver",
-    "X": 101.9,
-    "Y": 21.57,
-    "Z": -156.8,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "mltnpc01",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Genoa Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1018002.ini map mark6",
-      "Name": "CLIENT mltnpc01",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018002.ini)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000421,
     "Scene": 1018004,
     "Model": 3101001,
@@ -20067,34 +19399,6 @@
       "Position": "CLIENT ini\\window\\map2\\1022001.ini map2 [83.33]",
       "Name": "CLIENT xdzhNPC001",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1022001.ini)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000448,
-    "Scene": 1022001,
-    "Model": 3300046,
-    "Name": "Church",
-    "X": 47.0,
-    "Y": 1.85,
-    "Z": -14.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00006830",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Venice City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1022001.ini map mark9",
-      "Name": "CLIENT IDName00006830",
-      "Y": "GUESS nearest walk vertex",
       "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1022001.ini)",
       "Greeting": "GUESS default"
     }
@@ -21827,34 +21131,6 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1024001.ini map2 [46.52]",
       "Name": "CLIENT OfficerJack",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1024001.ini)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000473,
-    "Scene": 1024001,
-    "Model": 3300046,
-    "Name": "Identifiers",
-    "X": 97.1,
-    "Y": 25.11,
-    "Z": -55.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005385",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Athens City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1024001.ini map mark16",
-      "Name": "CLIENT IDName00005385",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1024001.ini)",
       "Greeting": "GUESS default"
@@ -26365,34 +25641,6 @@
     }
   },
   {
-    "Id": 2000564,
-    "Scene": 1032001,
-    "Model": 3202014,
-    "Name": "Bank clerk & warehouseman",
-    "X": 12.0,
-    "Y": 3.49,
-    "Z": 24.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010421",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Alexander City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1032001.ini map mark6",
-      "Name": "CLIENT IDName00010421",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1032001.ini)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000565,
     "Scene": 1032002,
     "Model": 3201016,
@@ -30314,117 +29562,6 @@
     }
   },
   {
-    "Id": 2000639,
-    "Scene": 1035001,
-    "Model": 3201013,
-    "Name": "Missionary",
-    "X": -81.0,
-    "Y": 2.55,
-    "Z": -82.0,
-    "Greeting": "God bless you, my child!",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004949",
-    "Role": "Priest",
-    "ChatSet": "gnnpc010",
-    "ClientMenu": [
-      {
-        "Key": "-12",
-        "Number": 12,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      },
-      {
-        "Key": "-45071",
-        "Number": 45071,
-        "Text": "Donation",
-        "Action": ""
-      },
-      {
-        "Key": "-45072",
-        "Number": 45072,
-        "Text": "Healing",
-        "Action": ""
-      }
-    ],
-    "SceneName": "Stockholm City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1035001.ini map mark4",
-      "Name": "CLIENT IDName00004949",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS role default (emulator Athens Priest)",
-      "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
-    }
-  },
-  {
-    "Id": 2000640,
-    "Scene": 1035001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 31.0,
-    "Y": 0.23,
-    "Z": -28.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Stockholm City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1035001.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000641,
-    "Scene": 1035001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 60.0,
-    "Y": 0.23,
-    "Z": -28.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Stockholm City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1035001.ini map mark8",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000642,
     "Scene": 1035002,
     "Model": 3201016,
@@ -34227,62 +33364,6 @@
     }
   },
   {
-    "Id": 2000710,
-    "Scene": 1038002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 6.0,
-    "Y": 2.2,
-    "Z": 65.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Dakar Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1038002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000711,
-    "Scene": 1038002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -37.0,
-    "Y": 2.46,
-    "Z": 92.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Dakar Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1038002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000712,
     "Scene": 1038020,
     "Model": 3201013,
@@ -35258,62 +34339,6 @@
     }
   },
   {
-    "Id": 2000728,
-    "Scene": 1039002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -25.0,
-    "Y": 3.95,
-    "Z": -55.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Accra Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1039002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000729,
-    "Scene": 1039002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 30.0,
-    "Y": 5.09,
-    "Z": -13.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Accra Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1039002.ini map mark6",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000730,
     "Scene": 1040002,
     "Model": 3201016,
@@ -36258,62 +35283,6 @@
       "Name": "CLIENT NPC04025",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000746,
-    "Scene": 1040002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -118.0,
-    "Y": 6.86,
-    "Z": 2.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Luanda Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1040002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000747,
-    "Scene": 1040002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -81.0,
-    "Y": 5.89,
-    "Z": 61.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Luanda Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1040002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -37470,62 +36439,6 @@
     }
   },
   {
-    "Id": 2000771,
-    "Scene": 1041002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 19.0,
-    "Y": 9.63,
-    "Z": 13.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Cape Town Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1041002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000772,
-    "Scene": 1041002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 12.0,
-    "Y": 9.75,
-    "Z": 13.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Cape Town Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1041002.ini map mark5",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000773,
     "Scene": 1041999,
     "Model": 3201047,
@@ -38446,62 +37359,6 @@
     }
   },
   {
-    "Id": 2000788,
-    "Scene": 1042002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -19.0,
-    "Y": 19.69,
-    "Z": 24.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Mozambique Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1042002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000789,
-    "Scene": 1042002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -22.0,
-    "Y": 19.21,
-    "Z": 22.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Mozambique Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1042002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000790,
     "Scene": 1043002,
     "Model": 3201016,
@@ -39391,62 +38248,6 @@
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Merchant Guild Master)",
       "Greeting": "GUESS emulator template"
-    }
-  },
-  {
-    "Id": 2000804,
-    "Scene": 1043002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -7.0,
-    "Y": 5.03,
-    "Z": -41.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Mogadishu Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1043002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000805,
-    "Scene": 1043002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 7.0,
-    "Y": 5.06,
-    "Z": -41.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Mogadishu Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1043002.ini map mark6",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
     }
   },
   {
@@ -40569,62 +39370,6 @@
     }
   },
   {
-    "Id": 2000826,
-    "Scene": 1044002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -34.0,
-    "Y": 2.72,
-    "Z": 9.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Aden Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1044002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000827,
-    "Scene": 1044002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -15.0,
-    "Y": 2.73,
-    "Z": 4.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Aden Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1044002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000828,
     "Scene": 1045002,
     "Model": 3201016,
@@ -41605,62 +40350,6 @@
     }
   },
   {
-    "Id": 2000845,
-    "Scene": 1045002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 21.0,
-    "Y": 2.69,
-    "Z": 20.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Suez Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1045002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000846,
-    "Scene": 1045002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 1.0,
-    "Y": 2.81,
-    "Z": -16.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Suez Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1045002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000847,
     "Scene": 1046002,
     "Model": 3201016,
@@ -42549,34 +41238,6 @@
       "Name": "CLIENT hdnpc021",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Adventurer Alliance Master model (emulator Athens Adventurer Alliance Master)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000861,
-    "Scene": 1046002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 21.0,
-    "Y": 4.57,
-    "Z": 3.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Muscat Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1046002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -43581,62 +42242,6 @@
       "Name": "CLIENT NPC04725",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000880,
-    "Scene": 1047002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 105.0,
-    "Y": 3.16,
-    "Z": -280.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Basra Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1047002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000881,
-    "Scene": 1047002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 45.0,
-    "Y": 3.16,
-    "Z": -261.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Basra Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1047002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -44669,62 +43274,6 @@
       "Name": "CLIENT NPC04826",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000901,
-    "Scene": 1048002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -30.0,
-    "Y": 11.43,
-    "Z": 53.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Bombay Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1048002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000902,
-    "Scene": 1048002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -92.0,
-    "Y": 16.49,
-    "Z": 9.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Bombay Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1048002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -45817,62 +44366,6 @@
     }
   },
   {
-    "Id": 2000924,
-    "Scene": 1049002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -94.0,
-    "Y": 6.34,
-    "Z": -457.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Sri Lanka Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1049002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000925,
-    "Scene": 1049002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 31.0,
-    "Y": 6.93,
-    "Z": -383.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Sri Lanka Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1049002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000926,
     "Scene": 1050002,
     "Model": 3201016,
@@ -46845,62 +45338,6 @@
       "Name": "CLIENT NPC05025",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000943,
-    "Scene": 1050002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 6.1,
-    "Y": 1.91,
-    "Z": 8.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Malacca Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1050002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000944,
-    "Scene": 1050002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 20.7,
-    "Y": 2.1,
-    "Z": 9.8,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Malacca Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1050002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -47937,62 +46374,6 @@
     }
   },
   {
-    "Id": 2000964,
-    "Scene": 1051002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 24.0,
-    "Y": 11.92,
-    "Z": -109.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Semarang Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1051002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000965,
-    "Scene": 1051002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 51.0,
-    "Y": 12.14,
-    "Z": -60.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Semarang Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1051002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2000966,
     "Scene": 1051999,
     "Model": 3201047,
@@ -49021,62 +47402,6 @@
       "Name": "CLIENT NPC05232",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000985,
-    "Scene": 1052002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -37.0,
-    "Y": 10.01,
-    "Z": 138.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Tourane Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1052002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2000986,
-    "Scene": 1052002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -38.0,
-    "Y": 9.81,
-    "Z": 146.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Tourane Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1052002.ini map mark6",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -50322,90 +48647,6 @@
     }
   },
   {
-    "Id": 2001012,
-    "Scene": 1053002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 53.7,
-    "Y": 5.1,
-    "Z": 19.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Quanzhou Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1053002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001013,
-    "Scene": 1053002,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": 37.1,
-    "Y": 6.49,
-    "Z": 2.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Quanzhou Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1053002.ini map mark3",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001014,
-    "Scene": 1053002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 52.0,
-    "Y": 3.89,
-    "Z": 63.8,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Quanzhou Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1053002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001015,
     "Scene": 1054001,
     "Model": 3201047,
@@ -51443,90 +49684,6 @@
       "Name": "CLIENT NPC05434",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001037,
-    "Scene": 1054001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 320.0,
-    "Y": 0.77,
-    "Z": -387.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seoul Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1054001.ini map mark3",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001038,
-    "Scene": 1054001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 277.0,
-    "Y": 1.06,
-    "Z": -412.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seoul Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1054001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001039,
-    "Scene": 1054001,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": 290.0,
-    "Y": 1.03,
-    "Z": -354.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seoul Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1054001.ini map mark5",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
       "Greeting": "GUESS default"
     }
   },
@@ -52688,90 +50845,6 @@
     }
   },
   {
-    "Id": 2001062,
-    "Scene": 1055002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 38.0,
-    "Y": 5.19,
-    "Z": -25.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Nagasaki Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1055002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001063,
-    "Scene": 1055002,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": -22.0,
-    "Y": 4.72,
-    "Z": -37.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Nagasaki Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1055002.ini map mark3",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001064,
-    "Scene": 1055002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 28.0,
-    "Y": 4.96,
-    "Z": -42.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Nagasaki Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1055002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001065,
     "Scene": 1056002,
     "Model": 3201016,
@@ -53863,90 +51936,6 @@
       "Name": "CLIENT NPC05630",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001088,
-    "Scene": 1056002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 10.0,
-    "Y": 3.81,
-    "Z": 124.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Edo Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1056002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001089,
-    "Scene": 1056002,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": -15.0,
-    "Y": 3.81,
-    "Z": 131.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Edo Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1056002.ini map mark3",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001090,
-    "Scene": 1056002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -75.0,
-    "Y": 3.81,
-    "Z": 128.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Edo Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1056002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -55424,90 +53413,6 @@
     }
   },
   {
-    "Id": 2001124,
-    "Scene": 1057002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -25.0,
-    "Y": 8.05,
-    "Z": 23.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Zhigu Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1057002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001125,
-    "Scene": 1057002,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": 1.0,
-    "Y": 8.05,
-    "Z": 32.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Zhigu Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1057002.ini map mark3",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001126,
-    "Scene": 1057002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 9.0,
-    "Y": 11.2,
-    "Z": -24.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Zhigu Port",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1057002.ini map mark7",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001127,
     "Scene": 1057002,
     "Model": 3201047,
@@ -56494,90 +54399,6 @@
       "Name": "CLIENT NPC05838",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001154,
-    "Scene": 1058001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 23.0,
-    "Y": 0.04,
-    "Z": 48.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Beijing City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1058001.ini map mark0",
-      "Name": "CLIENT IDName00010064",
-      "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001155,
-    "Scene": 1058001,
-    "Model": 3201005,
-    "Name": "Bank",
-    "X": -12.0,
-    "Y": 0.04,
-    "Z": 74.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010822",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Beijing City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1058001.ini map mark1",
-      "Name": "CLIENT IDName00010822",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Bank Clerk model (emulator Athens Bank Clerk)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001156,
-    "Scene": 1058001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 23.0,
-    "Y": 0.04,
-    "Z": 70.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Beijing City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1058001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -58709,62 +56530,6 @@
     }
   },
   {
-    "Id": 2001197,
-    "Scene": 1064001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 60.5,
-    "Y": 6.4,
-    "Z": -131.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Jamestown Harbor",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1064001.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001198,
-    "Scene": 1064001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 81.27,
-    "Y": 6.4,
-    "Z": -131.76,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Jamestown Harbor",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1064001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001199,
     "Scene": 1064999,
     "Model": 3201047,
@@ -59906,62 +57671,6 @@
       "Name": "CLIENT npc06513",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS name keyword -> Official model (emulator Athens Official)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001222,
-    "Scene": 1065001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -50.4,
-    "Y": 4.26,
-    "Z": -68.1,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "New Amsterdam Harbor",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1065001.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001223,
-    "Scene": 1065001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -57.7,
-    "Y": 4.26,
-    "Z": -82.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "New Amsterdam Harbor",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1065001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
       "Greeting": "GUESS default"
     }
   },
@@ -62031,34 +59740,6 @@
     }
   },
   {
-    "Id": 2001283,
-    "Scene": 1505001,
-    "Model": 3201100,
-    "Name": "Blackmarket",
-    "X": 134.0,
-    "Y": 11.33,
-    "Z": -64.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010973",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Crete Bandit Camp",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1505001.ini map mark1",
-      "Name": "CLIENT IDName00010973",
-      "Y": "GUESS nearest walk vertex",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1505001.ini)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001284,
     "Scene": 1505002,
     "Model": 3201016,
@@ -62270,34 +59951,6 @@
       "ChatSet": "CLIENT npc_menu\\npc50502.ini (city 505, role Shipyard Boss)",
       "Greeting": "CLIENT npc_menu\\npc50507.ini 12=NpcTxt00002903",
       "Shop": "GUESS copy of emulator Athens Shipyard Boss shop (client has no shop lists)"
-    }
-  },
-  {
-    "Id": 2001286,
-    "Scene": 1505002,
-    "Model": 3201047,
-    "Name": "Dockhand and dockyard boss",
-    "X": 40.0,
-    "Y": 6.02,
-    "Z": 17.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "CTEXT_001",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Crete Dock",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1505002.ini map mark0",
-      "Name": "CLIENT CTEXT_001",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
     }
   },
   {
@@ -63316,62 +60969,6 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1521001.ini map2 [29.19]",
       "Name": "CLIENT hdnpc064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS fallback townsman model",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001312,
-    "Scene": 1521001,
-    "Model": 3201022,
-    "Name": "Prop merchant",
-    "X": -112.8,
-    "Y": 6.14,
-    "Z": 17.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "changjing0002",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Tortue City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1521001.ini map mark3",
-      "Name": "CLIENT changjing0002",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001313,
-    "Scene": 1521001,
-    "Model": 3201047,
-    "Name": "Manage the cashbox",
-    "X": -19.6,
-    "Y": 22.66,
-    "Z": -20.8,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "changjing0006",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Tortue City",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1521001.ini map mark7",
-      "Name": "CLIENT changjing0006",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS fallback townsman model",
       "Greeting": "GUESS default"
@@ -64419,62 +62016,6 @@
     }
   },
   {
-    "Id": 2001336,
-    "Scene": 1603001,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 27.0,
-    "Y": 4.12,
-    "Z": 4.7,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seward",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603001.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001337,
-    "Scene": 1603001,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -2.5,
-    "Y": 2.74,
-    "Z": -52.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seward",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603001.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001338,
     "Scene": 1603002,
     "Model": 3201016,
@@ -65150,62 +62691,6 @@
     }
   },
   {
-    "Id": 2001346,
-    "Scene": 1603002,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -58.0,
-    "Y": 34.91,
-    "Z": 83.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Cruz",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603002.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001347,
-    "Scene": 1603002,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 32.1,
-    "Y": 34.91,
-    "Z": -51.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Cruz",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603002.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001348,
     "Scene": 1603003,
     "Model": 3201016,
@@ -65855,62 +63340,6 @@
     }
   },
   {
-    "Id": 2001356,
-    "Scene": 1603003,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 1.8,
-    "Y": 26.63,
-    "Z": -154.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Salinas",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603003.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001357,
-    "Scene": 1603003,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -43.7,
-    "Y": 25.15,
-    "Z": -118.6,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Salinas",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603003.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001358,
     "Scene": 1603004,
     "Model": 3201016,
@@ -66557,62 +63986,6 @@
       "ChatSet": "GUESS role Trader -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc004.ini 12=NpcTxt00000205",
       "Shop": "GUESS copy of emulator Athens Trader shop (client has no shop lists)"
-    }
-  },
-  {
-    "Id": 2001366,
-    "Scene": 1603004,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 101.2,
-    "Y": 5.63,
-    "Z": -14.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Magellan Supply Station",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603004.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001367,
-    "Scene": 1603004,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 150.0,
-    "Y": 5.77,
-    "Z": 0.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Magellan Supply Station",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603004.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
     }
   },
   {
@@ -67470,62 +64843,6 @@
     }
   },
   {
-    "Id": 2001379,
-    "Scene": 1603011,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": -79.5,
-    "Y": 6.9,
-    "Z": 13.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "San Francisco",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603011.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001380,
-    "Scene": 1603011,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": -29.1,
-    "Y": 6.9,
-    "Z": 66.6,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "San Francisco",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603011.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
     "Id": 2001381,
     "Scene": 1603012,
     "Model": 3201016,
@@ -68377,62 +65694,6 @@
       "ChatSet": "GUESS role Trader -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc004.ini 12=NpcTxt00000205",
       "Shop": "GUESS copy of emulator Athens Trader shop (client has no shop lists)"
-    }
-  },
-  {
-    "Id": 2001392,
-    "Scene": 1603012,
-    "Model": 3201022,
-    "Name": "Items Store",
-    "X": 30.3,
-    "Y": 9.37,
-    "Z": -17.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010064",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "San Diego",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603012.ini map mark1",
-      "Name": "CLIENT IDName00010064",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
-    }
-  },
-  {
-    "Id": 2001393,
-    "Scene": 1603012,
-    "Model": 3201022,
-    "Name": "Weapon Store",
-    "X": 16.0,
-    "Y": 9.37,
-    "Z": -50.4,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00010063",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "San Diego",
-    "Source": {
-      "Position": "CLIENT ini\\window\\map\\1603012.ini map mark4",
-      "Name": "CLIENT IDName00010063",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS name keyword -> Trader model (emulator Athens Trader)",
-      "Greeting": "GUESS default"
     }
   },
   {

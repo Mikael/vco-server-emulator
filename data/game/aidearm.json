@@ -1,0 +1,10 @@
+{
+  "Source": "CLIENT ini\\window\\suspend\\data\\Suspend.ini: 'Can rebuild General equipment three times for free every day'; numtostring.ini 'Are you sure you want to spend ... special offer vouchers' for the second cost table",
+  "FreeRebuildsPerDay": 3,
+  "Lines": 3,
+  "Materials": [
+    "CWCL0168",
+    "propDJ3206"
+  ],
+  "MaterialSource": "CLIENT: mode 1 is the 'Modification Stone' the window names (CWCL0168, FGRebuildNum_1 counts); GUESS: mode 2 pays Special Offer Vouchers propDJ3206 (FGRebuildNum_2 counts)"
+}

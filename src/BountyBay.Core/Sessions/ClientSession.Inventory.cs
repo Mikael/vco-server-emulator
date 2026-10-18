@@ -58,6 +58,7 @@ public sealed partial class ClientSession
         ItemCatalog.Extend(bag, item.Name);
         ArmUpgradeProperties(bag, item);
         ArmRebuildItemProperties(bag, item);
+        AideArmItemProperties(bag, item);
         AddGuildArmProperties(GuildBuildData.Shared.Medals, bag, item.Name);
         return bag;
     }
