@@ -23,9 +23,18 @@ public sealed class SwitchExchangeCommand : ITextCommand
 
     public bool Execute(ClientSession session, string[] words)
     {
-        if (words.Length != 2 || words[1] != "Exchange") return false;
-        session.SwitchExchange();
-        return true;
+        if (words.Length != 2) return false;
+        switch (words[1])
+        {
+            case "Exchange":
+                session.SwitchExchange();
+                return true;
+            case "Team":
+                session.SwitchTeam();
+                return true;
+            default:
+                return false;
+        }
     }
 }
 
