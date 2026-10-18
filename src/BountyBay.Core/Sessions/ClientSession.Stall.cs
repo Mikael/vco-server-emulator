@@ -24,6 +24,8 @@ public sealed partial class ClientSession
     public const int StallView = 14;
     public const int StallSlots = 18;
     public const int StallState = 21;
+    private const int StallModel = 4002031;
+    private const int FineStallModel = 4002032;
     public const int StallBuyEntry = 255;
     public const int StallInfoLength = 64;
 
@@ -198,6 +200,7 @@ public sealed partial class ClientSession
         StallOpen = true;
         SetProperty("StallInfo", info, visibleToOthers: true);
         SetProperty("SelectState", StallState, visibleToOthers: true);
+        if (PropertyTable.Has("StallID")) SetProperty("StallID", UniqueSkillLevel("US_STALL") > 0 ? FineStallModel : StallModel, visibleToOthers: true);
         SetStallRepair(repairPrice);
         Log.Info(Tag, $"{Name} opens a stall: {info}");
     }
@@ -209,6 +212,7 @@ public sealed partial class ClientSession
         SetStallRepair(0);
         foreach (ClientSession visitor in StallVisitors()) visitor.CloseBooth();
         SetProperty("SelectState", 0, visibleToOthers: true);
+        if (PropertyTable.Has("StallID")) SetProperty("StallID", 0, visibleToOthers: true);
         SetProperty("StallInfo", "", visibleToOthers: true);
         foreach ((int slot, StallEntry entry) in _stall.ToList())
         {

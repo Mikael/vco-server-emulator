@@ -59,6 +59,8 @@
 - **Sailing out to the high seas** puts you right next to your port's harbour instead of far away from it.
 
 ### Towns and NPCs
+- **Stalls** show the stall table with goods in front of the seller (a finer one with the Stall unique skill),
+  for the seller and everyone around.
 - **Killed animals and monsters** stop where they are and play their death animation straight away instead of walking on.
 - **Talking to NPCs**: you walk up to the NPC first instead of talking from far away, and you both play a talk animation.
 - **NPCs** no longer show an HP bar.

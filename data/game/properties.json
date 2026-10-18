@@ -536,6 +536,10 @@
     "Type": "String"
   },
   {
+    "Name": "StallID",
+    "Type": "U32"
+  },
+  {
     "Name": "SeeRw_ListNum",
     "Type": "U32"
   },
