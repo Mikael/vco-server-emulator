@@ -210,8 +210,21 @@ public sealed partial class ClientSession
         TutorDone($"erases {related.Count} stunt(s) of {skill} for {price}");
     }
 
+    private void SetFightSkill(string fighting)
+    {
+        SetKnownProperty("FightSkill", fighting);
+        if (InWorld) SendStuntStates();
+    }
+
+    private void SendStuntStates()
+    {
+        foreach (UniqueSkillEntry entry in Character.UniqueSkills)
+            Send(BboSkillPackets.SkillState(entry.Key, true), "(special skill state)");
+    }
+
     public void SendBboStuntCooldowns()
     {
+        SendStuntStates();
         DateTime now = DateTime.UtcNow;
         foreach ((string key, DateTime ready) in _skillReady.Where(pair => pair.Value > now))
             Send(BboSkillPackets.UniqueSkillReload(key, (int)(ready - now).TotalMilliseconds), "(special skill cooldown)");

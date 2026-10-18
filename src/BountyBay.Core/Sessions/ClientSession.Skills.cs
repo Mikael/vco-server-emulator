@@ -290,7 +290,8 @@ public sealed partial class ClientSession
             entry.Key, entry.Level, StuntGrid(entry.Key), UniqueSkillCatalog.FirstOrDefault(definition => definition.Key == entry.Key)?.Skill ?? "",
         }), clear);
         string fighting = FightingSkill();
-        if (Properties.Text("FightSkill") != fighting) SetKnownProperty("FightSkill", fighting);
+        if (Properties.Text("FightSkill") != fighting) SetFightSkill(fighting);
+        else if (InWorld) SendStuntStates();
     }
 
     private int StuntGrid(string key)

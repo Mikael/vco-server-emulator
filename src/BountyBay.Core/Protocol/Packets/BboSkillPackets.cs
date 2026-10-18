@@ -8,6 +8,8 @@ public static class BboSkillPackets
     public const string WardEffect = "ward";
     public const string DodgeEffect = "dodge";
 
+    public static byte[] SkillState(string stunt, bool enabled) => ChatPackets.Script(0, $"scEnableSoulSkill {stunt} {(enabled ? 1 : 0)}");
+
     public static byte[] UniqueSkillReload(string stunt, int milliseconds)
         => ChatPackets.Script(0, $"UniqueSkillReload {stunt} {Math.Max(0, milliseconds)}");
 

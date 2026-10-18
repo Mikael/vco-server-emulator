@@ -185,7 +185,7 @@ public sealed partial class ClientSession
         }
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, at.X, at.Y, at.Z), "(place player)");
         Send(ScenePackets.ShowObject(ProtocolConstants.SelfObjectId), "(show player)");
-        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather, CityName, SceneName, scene: Scene), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType), "(time, weather, wind)");
 
         Mover = new Mover(at.X, at.Z, AtSea ? ShipSpeed : WorldSettings.RunSpeed, 0, AtSea ? ShipTurnRate : 0);
         Height = at.Y;

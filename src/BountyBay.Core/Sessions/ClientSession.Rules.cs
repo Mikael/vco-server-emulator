@@ -94,7 +94,7 @@ public sealed partial class ClientSession
         if (Properties.Int("MaxHP") != before["MaxHP"]) SetHp(Hp);
         if (Properties.Int("MaxSP") != before["MaxSP"]) SetSp(Sp);
         string fighting = FightingSkill();
-        if (Properties.Text("FightSkill") != fighting) SetKnownProperty("FightSkill", fighting);
+        if (Properties.Text("FightSkill") != fighting) SetFightSkill(fighting);
         RefreshLoad();
     }
 
@@ -105,7 +105,7 @@ public sealed partial class ClientSession
     public void SendSceneState(GameTime time)
     {
         if (!InWorld) return;
-        Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName, SceneName, scene: Scene), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType), "(time, weather, wind)");
         if (CurrentBattle is { } room) Send(BattlePackets.SceneKind(room.Definition.SceneKind), "(battle scene kind)");
     }
 

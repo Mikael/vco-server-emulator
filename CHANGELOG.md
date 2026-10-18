@@ -6,6 +6,8 @@
 - **Exp bar** above the F1-F12 keys fills as your skills gain experience; hover it to see "Skill Exp: gained/needed"
   for the next level. The bar in Stats > Skill moves too.
 - **Shortcut keys** (F1-F12) keep their skills and items when you change map.
+- **Weapon skills** on the shortcut bar and in the Command Interface show red (unusable) unless you hold the weapon
+  they need, and only on the kind of map they work on (land skills turn red at sea).
 - **Equip sound** plays when you put gear on or take it off, by right-click or by dragging.
 - **Casual dresses** show their own outfit when worn (European male: the long robe from its icon).
 - **Swords and blades** wear a model that matches their icon, and the High-level/Light/Broad weapon versions have an
