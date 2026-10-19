@@ -18376,7 +18376,7 @@
   {
     "Id": 2000421,
     "Scene": 1018004,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": -3.7,
     "Y": 0.0,
@@ -18490,7 +18490,7 @@
       "Position": "CLIENT ini\\window\\map2\\1018004.ini map2 [88.2]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -18498,7 +18498,7 @@
   {
     "Id": 2000422,
     "Scene": 1018004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Yacchini",
     "X": 31.3,
     "Y": 0.0,
@@ -18519,14 +18519,14 @@
       "Position": "CLIENT ini\\window\\map2\\1018004.ini map2 [89.3]",
       "Name": "CLIENT IDName00005358",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000423,
     "Scene": 1018004,
-    "Model": 3101003,
+    "Model": 3201057,
     "Name": "Boupha",
     "X": 24.3,
     "Y": 0.0,
@@ -18547,7 +18547,7 @@
       "Position": "CLIENT ini\\window\\map2\\1018004.ini map2 [90.4]",
       "Name": "CLIENT IDName00005361",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -18582,7 +18582,7 @@
   {
     "Id": 2000425,
     "Scene": 1018999,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Escalate",
     "X": -124.15,
     "Y": 25.82,
@@ -18603,14 +18603,14 @@
       "Position": "CLIENT ini\\window\\map2\\1018999.ini map2 [1009.1009]",
       "Name": "CLIENT IDName00005369",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018999.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000426,
     "Scene": 1018999,
-    "Model": 3101003,
+    "Model": 3201057,
     "Name": "Barbera",
     "X": -153.39,
     "Y": 25.9,
@@ -18631,7 +18631,7 @@
       "Position": "CLIENT ini\\window\\map2\\1018999.ini map2 [1010.1010]",
       "Name": "CLIENT IDName00005362",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1018999.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -21849,8 +21849,8 @@
     "Scene": 1024006,
     "Model": 3201013,
     "Name": "Priest",
-    "X": 38.71,
-    "Y": 2.67,
+    "X": 44.4,
+    "Y": 3.19,
     "Z": 0.0,
     "Greeting": "God bless you, my child!",
     "Options": [
@@ -21901,13 +21901,15 @@
     ],
     "SceneName": "Athens Church",
     "Source": {
-      "Position": "CLIENT ini\\window\\map2\\1024006.ini map2 [99.2]",
+      "Position": "CLIENT ini\\window\\map2\\1024006.ini map2 [99.2] (a 1-unit grid), moved behind the lectern: the walk mesh (walk_patch.GM) has the lectern hole at x 42.8-43.9, z -0.6..0.6 on the altar platform",
       "Name": "CLIENT IDName00004948",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS role default (emulator Athens Priest)",
       "ChatSet": "GUESS role Priest -> generic menu",
-      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308"
-    }
+      "Greeting": "CLIENT npc_menu\\gnnpc010.ini 11=NpcTxt00000308",
+      "Orient": "GUESS facing the pews (-X)"
+    },
+    "Orient": 2700
   },
   {
     "Id": 2000483,
@@ -23405,7 +23407,7 @@
   {
     "Id": 2000515,
     "Scene": 1026004,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": 26.5,
     "Y": -0.39,
@@ -23519,7 +23521,7 @@
       "Position": "CLIENT ini\\window\\map2\\1026004.ini map2 [93.2]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1026004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "CLIENT npc_menu\\npc02609.ini (city 026, role Tavern Boss)",
       "Greeting": "CLIENT npc_menu\\npc02612.ini 12=NpcTxt00001297"
     }
@@ -23527,7 +23529,7 @@
   {
     "Id": 2000516,
     "Scene": 1026004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Julia",
     "X": -0.47,
     "Y": -0.39,
@@ -23548,14 +23550,14 @@
       "Position": "CLIENT ini\\window\\map2\\1026004.ini map2 [94.3]",
       "Name": "CLIENT IDName00005397",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1026004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2000517,
     "Scene": 1026004,
-    "Model": 3101003,
+    "Model": 3201057,
     "Name": "Axiom",
     "X": 37.3,
     "Y": -1.52,
@@ -23576,7 +23578,7 @@
       "Position": "CLIENT ini\\window\\map2\\1026004.ini map2 [95.4]",
       "Name": "CLIENT IDName00005401",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1026004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -47717,7 +47719,7 @@
   {
     "Id": 2000988,
     "Scene": 1052004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": -38.4,
     "Y": 3.33,
@@ -47831,7 +47833,7 @@
       "Position": "CLIENT ini\\window\\map2\\1052004.ini map2 [91.2]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1052004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -49979,7 +49981,7 @@
   {
     "Id": 2001040,
     "Scene": 1054004,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": 14.8,
     "Y": -0.0,
@@ -50093,7 +50095,7 @@
       "Position": "CLIENT ini\\window\\map2\\1054004.ini map2 [99.2]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1054004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -52275,7 +52277,7 @@
   {
     "Id": 2001092,
     "Scene": 1056004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": 27.7,
     "Y": -0.07,
@@ -52389,7 +52391,7 @@
       "Position": "CLIENT ini\\window\\map2\\1056004.ini map2 [92.3]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1056004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -54759,7 +54761,7 @@
   {
     "Id": 2001158,
     "Scene": 1058004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Butcher Li",
     "X": 28.5,
     "Y": -0.01,
@@ -54780,14 +54782,14 @@
       "Position": "CLIENT ini\\window\\map2\\1058004.ini map2 [96.2]",
       "Name": "CLIENT IDName00005581",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1058004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001159,
     "Scene": 1058004,
-    "Model": 3101003,
+    "Model": 3201057,
     "Name": "Scholar Li",
     "X": 4.71,
     "Y": 0.57,
@@ -54808,14 +54810,14 @@
       "Position": "CLIENT ini\\window\\map2\\1058004.ini map2 [97.3]",
       "Name": "CLIENT IDName00005582",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1058004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
   {
     "Id": 2001160,
     "Scene": 1058004,
-    "Model": 3101004,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": 36.7,
     "Y": -0.01,
@@ -54929,7 +54931,7 @@
       "Position": "CLIENT ini\\window\\map2\\1058004.ini map2 [98.4]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1058004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -55459,7 +55461,7 @@
   {
     "Id": 2001174,
     "Scene": 1059001,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Moneylender",
     "X": -13.03,
     "Y": 11.93,
@@ -55484,7 +55486,7 @@
       "Position": "CLIENT ini\\window\\map2\\1059001.ini map2 [16.17]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1059001.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -55678,7 +55680,7 @@
   {
     "Id": 2001177,
     "Scene": 1060001,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Moneylender",
     "X": 77.56,
     "Y": 26.37,
@@ -55703,7 +55705,7 @@
       "Position": "CLIENT ini\\window\\map2\\1060001.ini map2 [3.3]",
       "Name": "CLIENT IDName00004967",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1060001.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -59855,7 +59857,7 @@
   {
     "Id": 2001277,
     "Scene": 1504004,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": -40.8,
     "Y": 3.33,
@@ -59969,7 +59971,7 @@
       "Position": "CLIENT ini\\window\\map2\\1504004.ini map2 [18.3]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1504004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> generic menu",
       "Greeting": "CLIENT npc_menu\\gnnpc009.ini 12=NpcTxt00000274"
     }
@@ -59977,7 +59979,7 @@
   {
     "Id": 2001278,
     "Scene": 1504004,
-    "Model": 3101002,
+    "Model": 3201057,
     "Name": "Ye Du",
     "X": -16.4,
     "Y": 4.33,
@@ -59998,7 +60000,7 @@
       "Position": "CLIENT ini\\window\\map2\\1504004.ini map2 [19.4]",
       "Name": "CLIENT IDName00005590",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1504004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Greeting": "GUESS default"
     }
   },
@@ -60350,7 +60352,7 @@
   {
     "Id": 2001287,
     "Scene": 1505004,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": -40.8,
     "Y": 3.33,
@@ -60446,7 +60448,7 @@
       "Position": "CLIENT ini\\window\\map2\\1505004.ini map2 [27.3]",
       "Name": "CLIENT IDName00004882",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS scene Premodel list (CLIENT ini\\scenes\\1505004.ini)",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "ChatSet": "GUESS role Tavern Boss -> city menu (file role from its option set, CLIENT)",
       "Greeting": "CLIENT npc_menu\\npc50506.ini 12=NpcTxt00002901"
     }
@@ -72318,200 +72320,6 @@
     }
   },
   {
-    "Id": 2009341,
-    "Scene": 1024001,
-    "Model": 3101001,
-    "Name": "Tavern Boss",
-    "X": 45.2,
-    "Y": 24.3,
-    "Z": -85.01,
-    "Greeting": "Welcome to the tavern of Athens. Would you like some drink?",
-    "Options": [
-      {
-        "Action": "TavernHireNeeded",
-        "Text": "Recruit Necessary Sailors",
-        "ClientKey": "-40005"
-      },
-      {
-        "Action": "TavernHireAll",
-        "Text": "Recruit all sailors.",
-        "ClientKey": "-40006"
-      },
-      {
-        "Action": "TavernHireSome",
-        "Text": "Recruit a fixed number of sailors",
-        "ClientKey": "-40007"
-      },
-      {
-        "Action": "TavernHeal",
-        "Text": "Healing",
-        "ClientKey": "-40008"
-      },
-      {
-        "Action": "TavernDismiss",
-        "Text": "Dismiss a specific number of sailors.",
-        "ClientKey": "-40009"
-      },
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00004882",
-    "Role": "Tavern Boss",
-    "SceneName": "Athens City",
-    "Source": {
-      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
-      "Y": "GUESS height of nearby Athens City NPCs",
-      "Model": "GUESS"
-    },
-    "ChatSet": "gnnpc009",
-    "ClientMenu": [
-      {
-        "Key": "-20",
-        "Number": 20,
-        "Text": "Chat",
-        "Action": ""
-      },
-      {
-        "Key": "-24",
-        "Number": 24,
-        "Text": "Sailors",
-        "Action": ""
-      },
-      {
-        "Key": "-40008",
-        "Number": 40008,
-        "Text": "Healing",
-        "Action": ""
-      },
-      {
-        "Key": "-40006",
-        "Number": 40006,
-        "Text": "Recruit all sailors.",
-        "Action": ""
-      },
-      {
-        "Key": "-40005",
-        "Number": 40005,
-        "Text": "Recruit Necessary Sailors",
-        "Action": ""
-      },
-      {
-        "Key": "-40007",
-        "Number": 40007,
-        "Text": "Recruit a fixed number of sailors",
-        "Action": ""
-      },
-      {
-        "Key": "-40009",
-        "Number": 40009,
-        "Text": "Dismiss a specific number of sailors.",
-        "Action": ""
-      },
-      {
-        "Key": "-45905",
-        "Number": 45905,
-        "Text": "Work",
-        "Action": ""
-      },
-      {
-        "Key": "-45906",
-        "Number": 45906,
-        "Text": "Employment",
-        "Action": ""
-      },
-      {
-        "Key": "-45907",
-        "Number": 45907,
-        "Text": "Hunting",
-        "Action": ""
-      },
-      {
-        "Key": "-45099",
-        "Number": 45099,
-        "Text": "Cancel",
-        "Action": "Bye"
-      }
-    ]
-  },
-  {
-    "Id": 2009342,
-    "Scene": 1024001,
-    "Model": 3201022,
-    "Name": "Wendora",
-    "X": 49.2,
-    "Y": 24.3,
-    "Z": -85.01,
-    "Greeting": "Hello, captain.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00005388",
-    "Role": "",
-    "SceneName": "Athens City",
-    "Source": {
-      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
-      "Y": "GUESS height of nearby Athens City NPCs",
-      "Model": "GUESS"
-    }
-  },
-  {
-    "Id": 2009343,
-    "Scene": 1024001,
-    "Model": 3201022,
-    "Name": "Pamafes",
-    "X": 44.2,
-    "Y": 24.3,
-    "Z": -82.01,
-    "Greeting": "Hello, captain.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00005389",
-    "Role": "",
-    "SceneName": "Athens City",
-    "Source": {
-      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
-      "Y": "GUESS height of nearby Athens City NPCs",
-      "Model": "GUESS"
-    }
-  },
-  {
-    "Id": 2009344,
-    "Scene": 1024001,
-    "Model": 3201022,
-    "Name": "Helen",
-    "X": 50.2,
-    "Y": 24.3,
-    "Z": -82.01,
-    "Greeting": "Hello, captain.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Cancel",
-        "ClientKey": "-45099"
-      }
-    ],
-    "NameKey": "IDName00005390",
-    "Role": "",
-    "SceneName": "Athens City",
-    "Source": {
-      "Position": "GUESS: the Athens Tavern scene 1024004 has no ini\\scenes, PATH or map files in this client, so its NPCs (CLIENT ini\\window\\map2\\1024004.ini) stand at the tavern door of Athens City (CLIENT map2\\1024001.ini \"To Athens Tavern\" 47.20,-83.51)",
-      "Y": "GUESS height of nearby Athens City NPCs",
-      "Model": "GUESS"
-    }
-  },
-  {
     "Id": 2009900,
     "Scene": 1012002,
     "Model": 3201063,
@@ -72588,7 +72396,7 @@
   {
     "Id": 2009910,
     "Scene": 1900026,
-    "Model": 3101001,
+    "Model": 3201057,
     "Name": "Tavern Boss",
     "X": -2.6,
     "Y": 0.0,
@@ -72701,14 +72509,14 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1024004.ini",
       "Name": "CLIENT IDName00004882",
-      "Model": "GUESS",
+      "Model": "GUESS NPC body model 3201057 (an apron); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Scene": "GUESS 1900026 stands in for 1024004"
     }
   },
   {
     "Id": 2009911,
     "Scene": 1900026,
-    "Model": 3101002,
+    "Model": 3201010,
     "Name": "Wendora",
     "X": 20.6,
     "Y": 0.0,
@@ -72795,14 +72603,14 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1024004.ini",
       "Name": "CLIENT IDName00005388",
-      "Model": "GUESS",
+      "Model": "GUESS NPC body model 3201010 (a dress); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Scene": "GUESS 1900026 stands in for 1024004"
     }
   },
   {
     "Id": 2009912,
     "Scene": 1900026,
-    "Model": 3101003,
+    "Model": 3201060,
     "Name": "Pamafes",
     "X": 24.12,
     "Y": 0.0,
@@ -72889,14 +72697,14 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1024004.ini",
       "Name": "CLIENT IDName00005389",
-      "Model": "GUESS",
+      "Model": "GUESS NPC body model 3201060 (a dress); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Scene": "GUESS 1900026 stands in for 1024004"
     }
   },
   {
     "Id": 2009913,
     "Scene": 1900026,
-    "Model": 3101002,
+    "Model": 3201061,
     "Name": "Helen",
     "X": 2.2,
     "Y": 0.0,
@@ -72983,7 +72791,7 @@
     "Source": {
       "Position": "CLIENT ini\\window\\map2\\1024004.ini",
       "Name": "CLIENT IDName00005390",
-      "Model": "GUESS",
+      "Model": "GUESS NPC body model 3201061 (a dress); the scene Premodel list only had player head models 3101xxx, which draw nothing as an NPC",
       "Scene": "GUESS 1900026 stands in for 1024004"
     }
   },
@@ -73046,7 +72854,7 @@
   {
     "Id": 2010000,
     "Scene": 1001002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Viktor",
     "X": 1.61,
     "Y": 15.71,
@@ -73072,37 +72880,9 @@
     }
   },
   {
-    "Id": 2010001,
-    "Scene": 1001002,
-    "Model": 3201017,
-    "Name": "Fleet Combat Trainer",
-    "X": -0.2,
-    "Y": 15.7,
-    "Z": -119.62,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "jianduinpc",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Dock",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001002 jianduinpc",
-      "Name": "CLIENT namelist jianduinpc",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010002,
     "Scene": 1001014,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Agosou",
     "X": -33.43,
     "Y": 27.59,
@@ -73130,7 +72910,7 @@
   {
     "Id": 2010003,
     "Scene": 1001014,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "King(Bodisis)",
     "X": -30.68,
     "Y": 27.59,
@@ -73158,7 +72938,7 @@
   {
     "Id": 2010004,
     "Scene": 1001014,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Bomule",
     "X": -27.93,
     "Y": 27.59,
@@ -73186,7 +72966,7 @@
   {
     "Id": 2010005,
     "Scene": 1001014,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Sherim patriarch",
     "X": -26.81,
     "Y": 27.59,
@@ -73242,7 +73022,7 @@
   {
     "Id": 2010007,
     "Scene": 1001014,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Postal Administration",
     "X": -30.76,
     "Y": 27.84,
@@ -73268,37 +73048,9 @@
     }
   },
   {
-    "Id": 2010008,
-    "Scene": 1001014,
-    "Model": 3201017,
-    "Name": "Oracle of Atlantis",
-    "X": -33.51,
-    "Y": 27.59,
-    "Z": -381.61,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "gnnpc0098",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Possedonia",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001014 gnnpc0098",
-      "Name": "CLIENT namelist gnnpc0098",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010009,
     "Scene": 1001015,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Captain Plerdy",
     "X": 13.63,
     "Y": 2.29,
@@ -73354,7 +73106,7 @@
   {
     "Id": 2010011,
     "Scene": 1001017,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "General Apino",
     "X": -9.65,
     "Y": 5.95,
@@ -73382,7 +73134,7 @@
   {
     "Id": 2010012,
     "Scene": 1001017,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "General Botiven",
     "X": -6.62,
     "Y": 5.73,
@@ -73410,7 +73162,7 @@
   {
     "Id": 2010013,
     "Scene": 1001017,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "The Old Sheikh of Dead wood",
     "X": -4.15,
     "Y": 6.13,
@@ -73466,7 +73218,7 @@
   {
     "Id": 2010015,
     "Scene": 1001018,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Jarode",
     "X": 168.07,
     "Y": 33.68,
@@ -73494,7 +73246,7 @@
   {
     "Id": 2010016,
     "Scene": 1001018,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Smith God's Descendant Bazacris",
     "X": 166.95,
     "Y": 33.06,
@@ -73520,65 +73272,9 @@
     }
   },
   {
-    "Id": 2010017,
-    "Scene": 1001018,
-    "Model": 3201017,
-    "Name": "Doke",
-    "X": 164.21,
-    "Y": 32.65,
-    "Z": -126.61,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "mdnpc01",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001018 mdnpc01",
-      "Name": "CLIENT namelist mdnpc01",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010018,
-    "Scene": 1001026,
-    "Model": 3201017,
-    "Name": "Big craftsman Cardman",
-    "X": -18.33,
-    "Y": -1.97,
-    "Z": -6.51,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "SD0001",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Poseidon Temple Lv 1",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001026 SD0001",
-      "Name": "CLIENT namelist SD0001",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010019,
     "Scene": 1001029,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Kron",
     "X": 4.61,
     "Y": 0.28,
@@ -73632,345 +73328,9 @@
     }
   },
   {
-    "Id": 2010021,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "New Colonial Governor",
-    "X": 4.08,
-    "Y": 0.05,
-    "Z": -3.06,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc1813",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hdnpc1813",
-      "Name": "CLIENT namelist hdnpc1813",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010022,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "St. Deus Bounty Crew",
-    "X": 5.68,
-    "Y": 0.05,
-    "Z": -5.53,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc6039",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hdnpc6039",
-      "Name": "CLIENT namelist hdnpc6039",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010023,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "Arena Mobilization Officer",
-    "X": 2.87,
-    "Y": 0.05,
-    "Z": -5.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc7066",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hdnpc7066",
-      "Name": "CLIENT namelist hdnpc7066",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010024,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "Palenque Battle Explorer",
-    "X": 8.63,
-    "Y": 0.05,
-    "Z": -4.89,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc7095",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hdnpc7095",
-      "Name": "CLIENT namelist hdnpc7095",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010025,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Mysterious Continent> Teleporter",
-    "X": 7.39,
-    "Y": 0.05,
-    "Z": -7.46,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc001",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc001",
-      "Name": "CLIENT namelist hydtnpc001",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010026,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Calm Before The Storm> Teleporter",
-    "X": 4.63,
-    "Y": 0.05,
-    "Z": -8.28,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc002",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc002",
-      "Name": "CLIENT namelist hydtnpc002",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010027,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Cursed Treasure> Teleporter",
-    "X": 8.32,
-    "Y": 0.05,
-    "Z": -1.99,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc003",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc003",
-      "Name": "CLIENT namelist hydtnpc003",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010028,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Colonial Era> Teleporter",
-    "X": 12.0,
-    "Y": 0.05,
-    "Z": -3.99,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc004",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc004",
-      "Name": "CLIENT namelist hydtnpc004",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010029,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Caribbean Pirates> Teleporter",
-    "X": 10.45,
-    "Y": 0.05,
-    "Z": 0.11,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc005",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc005",
-      "Name": "CLIENT namelist hydtnpc005",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010030,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Loveboat> Teleporter",
-    "X": 4.19,
-    "Y": 0.05,
-    "Z": 1.16,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc006",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc006",
-      "Name": "CLIENT namelist hydtnpc006",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010031,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Atlantis> Teleporter",
-    "X": 8.49,
-    "Y": 0.05,
-    "Z": 2.14,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc007",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc007",
-      "Name": "CLIENT namelist hydtnpc007",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010032,
-    "Scene": 1001041,
-    "Model": 3201017,
-    "Name": "<Embargo On The Harbor> Teleporter",
-    "X": 1.19,
-    "Y": 0.05,
-    "Z": -1.47,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hydtnpc008",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Oslo Offshore",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ001041 hydtnpc008",
-      "Name": "CLIENT namelist hydtnpc008",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010033,
     "Scene": 1001066,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Patriarch",
     "X": -75.49,
     "Y": -0.84,
@@ -73998,7 +73358,7 @@
   {
     "Id": 2010034,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Roderick the Explorer",
     "X": 76.03,
     "Y": 3.01,
@@ -74026,7 +73386,7 @@
   {
     "Id": 2010035,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Digal",
     "X": 78.79,
     "Y": 2.73,
@@ -74082,7 +73442,7 @@
   {
     "Id": 2010037,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Indigenous Elders",
     "X": 82.66,
     "Y": 2.86,
@@ -74110,7 +73470,7 @@
   {
     "Id": 2010038,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Indigenous village",
     "X": 77.06,
     "Y": 3.38,
@@ -74138,7 +73498,7 @@
   {
     "Id": 2010039,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Son of the Patriarch",
     "X": 74.98,
     "Y": 3.39,
@@ -74194,7 +73554,7 @@
   {
     "Id": 2010041,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Spanish Patrol Guard",
     "X": 72.45,
     "Y": 3.43,
@@ -74222,7 +73582,7 @@
   {
     "Id": 2010042,
     "Scene": 1001081,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Spanish Drinker",
     "X": 76.5,
     "Y": 2.53,
@@ -74250,7 +73610,7 @@
   {
     "Id": 2010043,
     "Scene": 1001082,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Indigenous chief",
     "X": -10.74,
     "Y": 18.02,
@@ -74278,7 +73638,7 @@
   {
     "Id": 2010044,
     "Scene": 1001082,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Wounded Soldier",
     "X": -6.55,
     "Y": 17.88,
@@ -74334,7 +73694,7 @@
   {
     "Id": 2010046,
     "Scene": 1001083,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Indigenous Leader",
     "X": 37.43,
     "Y": 11.0,
@@ -74362,7 +73722,7 @@
   {
     "Id": 2010047,
     "Scene": 1003001,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Arms Merchant Brownman",
     "X": 19.94,
     "Y": 4.04,
@@ -74390,7 +73750,7 @@
   {
     "Id": 2010048,
     "Scene": 1003001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Minister of the Interior",
     "X": 22.71,
     "Y": 4.04,
@@ -74416,65 +73776,9 @@
     }
   },
   {
-    "Id": 2010049,
-    "Scene": 1004002,
-    "Model": 3201017,
-    "Name": "Murato",
-    "X": -316.1,
-    "Y": 13.32,
-    "Z": 62.75,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "mulatu",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Reykjavik Dock",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ004002 mulatu",
-      "Name": "CLIENT namelist mulatu",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010050,
-    "Scene": 1007001,
-    "Model": 3201017,
-    "Name": "Adventurer Alliance Master",
-    "X": -1.42,
-    "Y": 9.04,
-    "Z": -81.5,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005231",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London City",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ007001 IDName00005231",
-      "Name": "CLIENT namelist IDName00005231",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010051,
     "Scene": 1007001,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "North Expedition event steward",
     "X": 1.37,
     "Y": 9.04,
@@ -74502,7 +73806,7 @@
   {
     "Id": 2010052,
     "Scene": 1007001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Fandmont",
     "X": 4.11,
     "Y": 9.04,
@@ -74530,7 +73834,7 @@
   {
     "Id": 2010053,
     "Scene": 1007001,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "The gifted sailors",
     "X": 5.2,
     "Y": 9.04,
@@ -74586,7 +73890,7 @@
   {
     "Id": 2010055,
     "Scene": 1007001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Everton",
     "X": 1.18,
     "Y": 9.04,
@@ -74612,65 +73916,9 @@
     }
   },
   {
-    "Id": 2010056,
-    "Scene": 1007001,
-    "Model": 3201017,
-    "Name": "Wedding Favors Shop",
-    "X": -1.57,
-    "Y": 9.04,
-    "Z": -76.0,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "marry_sell_npc",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London City",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ007001 marry_sell_npc",
-      "Name": "CLIENT namelist marry_sell_npc",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010057,
-    "Scene": 1007002,
-    "Model": 3201017,
-    "Name": "Supply Officer",
-    "X": -25.18,
-    "Y": 15.58,
-    "Z": -94.97,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "HWhdnpc004",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London Dock",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ007002 HWhdnpc004",
-      "Name": "CLIENT namelist HWhdnpc004",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010058,
     "Scene": 1007002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "James.Tiago",
     "X": -23.0,
     "Y": 15.59,
@@ -74698,7 +73946,7 @@
   {
     "Id": 2010059,
     "Scene": 1007002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Howard Knight",
     "X": -22.88,
     "Y": 15.39,
@@ -74726,7 +73974,7 @@
   {
     "Id": 2010060,
     "Scene": 1007002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Lieutenant Snyderman",
     "X": -24.9,
     "Y": 15.38,
@@ -74754,7 +74002,7 @@
   {
     "Id": 2010061,
     "Scene": 1007002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Colonel Merdi",
     "X": -27.85,
     "Y": 15.33,
@@ -74808,34 +74056,6 @@
     }
   },
   {
-    "Id": 2010063,
-    "Scene": 1007002,
-    "Model": 3201017,
-    "Name": "Censor Bruce",
-    "X": -21.18,
-    "Y": 15.4,
-    "Z": -88.2,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "gnnpc015",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "London Dock",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ007002 gnnpc015",
-      "Name": "CLIENT namelist gnnpc015",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010064,
     "Scene": 1007002,
     "Model": 3201017,
@@ -74866,7 +74086,7 @@
   {
     "Id": 2010065,
     "Scene": 1008001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Mond.Raphael",
     "X": 10.12,
     "Y": 4.58,
@@ -74894,7 +74114,7 @@
   {
     "Id": 2010066,
     "Scene": 1008001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Merchant's Alliance Officer",
     "X": 12.89,
     "Y": 4.58,
@@ -74922,7 +74142,7 @@
   {
     "Id": 2010067,
     "Scene": 1010001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Merchant's Alliance Officer",
     "X": 69.56,
     "Y": 13.73,
@@ -74950,7 +74170,7 @@
   {
     "Id": 2010068,
     "Scene": 1011001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Merchant's Alliance Officer",
     "X": -1.51,
     "Y": 11.87,
@@ -74978,7 +74198,7 @@
   {
     "Id": 2010069,
     "Scene": 1011002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Icarus",
     "X": -9.67,
     "Y": 3.04,
@@ -75006,7 +74226,7 @@
   {
     "Id": 2010070,
     "Scene": 1011002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Lani",
     "X": -7.0,
     "Y": 3.04,
@@ -75062,7 +74282,7 @@
   {
     "Id": 2010072,
     "Scene": 1012001,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Priest",
     "X": 51.3,
     "Y": 4.53,
@@ -75088,37 +74308,9 @@
     }
   },
   {
-    "Id": 2010073,
-    "Scene": 1012001,
-    "Model": 3201017,
-    "Name": "Consul",
-    "X": 50.08,
-    "Y": 4.53,
-    "Z": 28.45,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc178",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seville City",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ012001 hdnpc178",
-      "Name": "CLIENT namelist hdnpc178",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010074,
     "Scene": 1012001,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Jim",
     "X": 47.27,
     "Y": 4.53,
@@ -75144,37 +74336,9 @@
     }
   },
   {
-    "Id": 2010075,
-    "Scene": 1012002,
-    "Model": 3201017,
-    "Name": "Exotic Pets Trader",
-    "X": 60.78,
-    "Y": 4.3,
-    "Z": -13.74,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "cwrc",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seville Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ012002 cwrc",
-      "Name": "CLIENT namelist cwrc",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010076,
     "Scene": 1012002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Fortune God",
     "X": 59.02,
     "Y": 4.3,
@@ -75230,7 +74394,7 @@
   {
     "Id": 2010078,
     "Scene": 1012002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Careless Merchant",
     "X": 63.64,
     "Y": 4.26,
@@ -75284,37 +74448,9 @@
     }
   },
   {
-    "Id": 2010080,
-    "Scene": 1012002,
-    "Model": 3201017,
-    "Name": "Account Safety Angel",
-    "X": 58.2,
-    "Y": 4.3,
-    "Z": -13.68,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc6038",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Seville Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ012002 hdnpc6038",
-      "Name": "CLIENT namelist hdnpc6038",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010081,
     "Scene": 1012002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Morientes",
     "X": 64.13,
     "Y": 4.26,
@@ -75342,7 +74478,7 @@
   {
     "Id": 2010082,
     "Scene": 1012002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Sanctum of Memories Teleporter",
     "X": 67.9,
     "Y": 4.23,
@@ -75370,7 +74506,7 @@
   {
     "Id": 2010083,
     "Scene": 1012002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Bart",
     "X": 72.24,
     "Y": 4.21,
@@ -75566,7 +74702,7 @@
   {
     "Id": 2010090,
     "Scene": 1018002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Captious Refiner",
     "X": 101.28,
     "Y": 17.98,
@@ -75594,7 +74730,7 @@
   {
     "Id": 2010091,
     "Scene": 1022001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Merchant's Alliance Officer",
     "X": 17.23,
     "Y": 0.73,
@@ -75624,9 +74760,9 @@
     "Scene": 1024001,
     "Model": 3201013,
     "Name": "Atos.Willtay",
-    "X": 50.68,
-    "Y": 23.95,
-    "Z": -55.5,
+    "X": 52.15,
+    "Y": 23.16,
+    "Z": -50.18,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75650,11 +74786,11 @@
   {
     "Id": 2010093,
     "Scene": 1024001,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Apothecary Donodi",
-    "X": 52.74,
+    "X": 53.21,
     "Y": 23.16,
-    "Z": -53.29,
+    "Z": -47.36,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75680,9 +74816,9 @@
     "Scene": 1024001,
     "Model": 3201017,
     "Name": "Paul.Deloach",
-    "X": 52.62,
+    "X": 51.97,
     "Y": 23.16,
-    "Z": -50.27,
+    "Z": -44.62,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75708,9 +74844,9 @@
     "Scene": 1024001,
     "Model": 3201017,
     "Name": "Eos",
-    "X": 50.41,
+    "X": 49.14,
     "Y": 23.16,
-    "Z": -48.22,
+    "Z": -43.56,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75736,9 +74872,9 @@
     "Scene": 1024001,
     "Model": 3201017,
     "Name": "Kratos",
-    "X": 47.39,
+    "X": 46.4,
     "Y": 23.16,
-    "Z": -48.34,
+    "Z": -44.82,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75764,9 +74900,9 @@
     "Scene": 1024001,
     "Model": 3201017,
     "Name": "Athenian Diplomat",
-    "X": 55.1,
-    "Y": 23.16,
-    "Z": -51.16,
+    "X": 45.35,
+    "Y": 23.15,
+    "Z": -47.65,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75788,41 +74924,13 @@
     }
   },
   {
-    "Id": 2010098,
-    "Scene": 1024001,
-    "Model": 3201017,
-    "Name": "Natasha",
-    "X": 53.04,
-    "Y": 23.16,
-    "Z": -47.12,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc6034",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Athens City",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ024001 hdnpc6034",
-      "Name": "CLIENT namelist hdnpc6034",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010099,
     "Scene": 1024001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Alchemist Grimm DeVoe",
-    "X": 48.73,
+    "X": 51.04,
     "Y": 23.16,
-    "Z": -45.72,
+    "Z": -41.52,
     "Greeting": "Good day.",
     "Options": [
       {
@@ -75844,37 +74952,9 @@
     }
   },
   {
-    "Id": 2010100,
-    "Scene": 1024002,
-    "Model": 3201017,
-    "Name": "Karmonge",
-    "X": 26.88,
-    "Y": 5.09,
-    "Z": -45.25,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "CardMan01",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Athens Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ024002 CardMan01",
-      "Name": "CLIENT namelist CardMan01",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010101,
     "Scene": 1024002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Coaching Quest Guide",
     "X": 29.6,
     "Y": 5.09,
@@ -75902,7 +74982,7 @@
   {
     "Id": 2010102,
     "Scene": 1024002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Thomas",
     "X": 32.36,
     "Y": 5.09,
@@ -76152,34 +75232,6 @@
     }
   },
   {
-    "Id": 2010111,
-    "Scene": 1032001,
-    "Model": 3202014,
-    "Name": "Adventurer Alliance Master",
-    "X": 15.78,
-    "Y": 3.24,
-    "Z": 23.03,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005231",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Alexander City",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ032001 IDName00005231",
-      "Name": "CLIENT namelist IDName00005231",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS unused preloaded scene model"
-    }
-  },
-  {
     "Id": 2010112,
     "Scene": 1032001,
     "Model": 3202017,
@@ -76258,90 +75310,6 @@
     "Source": {
       "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ032001 suyishiNpc08",
       "Name": "CLIENT namelist suyishiNpc08",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS unused preloaded scene model"
-    }
-  },
-  {
-    "Id": 2010115,
-    "Scene": 1032002,
-    "Model": 3201005,
-    "Name": "Ser",
-    "X": 136.85,
-    "Y": 5.19,
-    "Z": 61.73,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "NS_Nseer",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Alexander Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ032002 NS_Nseer",
-      "Name": "CLIENT namelist NS_Nseer",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS unused preloaded scene model"
-    }
-  },
-  {
-    "Id": 2010116,
-    "Scene": 1032999,
-    "Model": 3201005,
-    "Name": "Tomb Raider (Musketeer)",
-    "X": -177.9,
-    "Y": 6.27,
-    "Z": -309.49,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005078",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Alexander Suburb",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ032999 IDName00005078",
-      "Name": "CLIENT namelist IDName00005078",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS unused preloaded scene model"
-    }
-  },
-  {
-    "Id": 2010117,
-    "Scene": 1032999,
-    "Model": 3300048,
-    "Name": "Tomb Raider Leader",
-    "X": -175.86,
-    "Y": 6.28,
-    "Z": -311.46,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005079",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Alexander Suburb",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ032999 IDName00005079",
-      "Name": "CLIENT namelist IDName00005079",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS unused preloaded scene model"
@@ -76462,7 +75430,7 @@
   {
     "Id": 2010122,
     "Scene": 1035001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Stan",
     "X": 7.59,
     "Y": 0.23,
@@ -76482,34 +75450,6 @@
     "Source": {
       "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ035001 ZXTASKNPC001",
       "Name": "CLIENT namelist ZXTASKNPC001",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010123,
-    "Scene": 1036002,
-    "Model": 3201017,
-    "Name": "Parker",
-    "X": -50.29,
-    "Y": 1.45,
-    "Z": -35.3,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "FightSoulNpc01",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Madeira Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ036002 FightSoulNpc01",
-      "Name": "CLIENT namelist FightSoulNpc01",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS generic townsman"
@@ -76546,7 +75486,7 @@
   {
     "Id": 2010125,
     "Scene": 1036002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Winal",
     "X": -44.03,
     "Y": 2.23,
@@ -76602,7 +75542,7 @@
   {
     "Id": 2010127,
     "Scene": 1037002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Made.Christ",
     "X": -21.66,
     "Y": 1.05,
@@ -76630,7 +75570,7 @@
   {
     "Id": 2010128,
     "Scene": 1038002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Lurtas",
     "X": 4.12,
     "Y": 2.36,
@@ -76658,7 +75598,7 @@
   {
     "Id": 2010129,
     "Scene": 1039002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Mysterious Augur",
     "X": -3.03,
     "Y": 3.5,
@@ -76686,7 +75626,7 @@
   {
     "Id": 2010130,
     "Scene": 1041002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "South Pacific Merchant",
     "X": -6.48,
     "Y": 10.47,
@@ -76714,7 +75654,7 @@
   {
     "Id": 2010131,
     "Scene": 1042002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Wilfred",
     "X": -34.28,
     "Y": 17.74,
@@ -76798,7 +75738,7 @@
   {
     "Id": 2010134,
     "Scene": 1045002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Route Officer",
     "X": 2.04,
     "Y": 2.8,
@@ -76826,7 +75766,7 @@
   {
     "Id": 2010135,
     "Scene": 1046002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Muscat's External Lead",
     "X": -11.43,
     "Y": 1.6,
@@ -76854,7 +75794,7 @@
   {
     "Id": 2010136,
     "Scene": 1047002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Basra's External Lead",
     "X": 61.11,
     "Y": 3.16,
@@ -76938,7 +75878,7 @@
   {
     "Id": 2010139,
     "Scene": 1051002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Rem the Explorer",
     "X": 71.2,
     "Y": 13.37,
@@ -76964,37 +75904,9 @@
     }
   },
   {
-    "Id": 2010140,
-    "Scene": 1053002,
-    "Model": 3201017,
-    "Name": "Luck God",
-    "X": 56.16,
-    "Y": 6.49,
-    "Z": 6.99,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc003",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Quanzhou Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ053002 hdnpc003",
-      "Name": "CLIENT namelist hdnpc003",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
     "Id": 2010141,
     "Scene": 1053002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Zheng Village Girl",
     "X": 55.35,
     "Y": 6.49,
@@ -77022,7 +75934,7 @@
   {
     "Id": 2010142,
     "Scene": 1053002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "General Zheng",
     "X": 53.63,
     "Y": 5.63,
@@ -77050,7 +75962,7 @@
   {
     "Id": 2010143,
     "Scene": 1053002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Quito",
     "X": 53.2,
     "Y": 6.49,
@@ -77078,7 +75990,7 @@
   {
     "Id": 2010144,
     "Scene": 1055002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Nagasaki Inspector",
     "X": 10.54,
     "Y": 4.67,
@@ -77106,7 +76018,7 @@
   {
     "Id": 2010145,
     "Scene": 1056002,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Edo Inspector",
     "X": -26.61,
     "Y": 3.81,
@@ -77126,34 +76038,6 @@
     "Source": {
       "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ056002 IDName_npc05655",
       "Name": "CLIENT namelist IDName_npc05655",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010146,
-    "Scene": 1056020,
-    "Model": 3201017,
-    "Name": "Shogun",
-    "X": 16.29,
-    "Y": 0.0,
-    "Z": 141.05,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "IDName00005100",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Shogun's Residence",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ056020 IDName00005100",
-      "Name": "CLIENT namelist IDName00005100",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS generic townsman"
@@ -77182,62 +76066,6 @@
     "Source": {
       "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ057002 IDName_npc05737",
       "Name": "CLIENT namelist IDName_npc05737",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010148,
-    "Scene": 1057002,
-    "Model": 3201017,
-    "Name": "JiaWu Cultural Exploration Officer",
-    "X": 2.1,
-    "Y": 8.05,
-    "Z": 18.32,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "JWCardMan02",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Zhigu Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ057002 JWCardMan02",
-      "Name": "CLIENT namelist JWCardMan02",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010149,
-    "Scene": 1057002,
-    "Model": 3201017,
-    "Name": "Power God",
-    "X": 6.39,
-    "Y": 9.55,
-    "Z": 16.9,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "hdnpc001",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Zhigu Port",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ057002 hdnpc001",
-      "Name": "CLIENT namelist hdnpc001",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS generic townsman"
@@ -77274,7 +76102,7 @@
   {
     "Id": 2010151,
     "Scene": 1057002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "March 8th Envoy",
     "X": -2.35,
     "Y": 8.05,
@@ -77302,7 +76130,7 @@
   {
     "Id": 2010152,
     "Scene": 1057002,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Li Fushou",
     "X": 0.57,
     "Y": 8.05,
@@ -77330,7 +76158,7 @@
   {
     "Id": 2010153,
     "Scene": 1058001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Grand Secretary",
     "X": 15.37,
     "Y": 0.04,
@@ -77386,7 +76214,7 @@
   {
     "Id": 2010155,
     "Scene": 1058001,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Liu Mingcai",
     "X": 20.93,
     "Y": 0.04,
@@ -77414,7 +76242,7 @@
   {
     "Id": 2010156,
     "Scene": 1058001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Grandma Li",
     "X": 21.99,
     "Y": 0.04,
@@ -77470,7 +76298,7 @@
   {
     "Id": 2010158,
     "Scene": 1058001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Military Department Officer",
     "X": 17.93,
     "Y": 0.04,
@@ -77498,7 +76326,7 @@
   {
     "Id": 2010159,
     "Scene": 1058001,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Bob",
     "X": 15.18,
     "Y": 0.04,
@@ -77526,7 +76354,7 @@
   {
     "Id": 2010160,
     "Scene": 1058999,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Middle-Aged Man",
     "X": -150.93,
     "Y": -11.12,
@@ -77554,7 +76382,7 @@
   {
     "Id": 2010161,
     "Scene": 1058999,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "King's Bodyguard",
     "X": -148.31,
     "Y": -11.1,
@@ -77582,7 +76410,7 @@
   {
     "Id": 2010162,
     "Scene": 1058999,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Master Deathly Silence",
     "X": -145.55,
     "Y": -10.99,
@@ -77602,34 +76430,6 @@
     "Source": {
       "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ058999 hdnpc101",
       "Name": "CLIENT namelist hdnpc101",
-      "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
-      "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS generic townsman"
-    }
-  },
-  {
-    "Id": 2010163,
-    "Scene": 1058999,
-    "Model": 3201017,
-    "Name": "Dungeon Teleporter",
-    "X": -144.31,
-    "Y": -10.71,
-    "Z": -96.22,
-    "Greeting": "Good day.",
-    "Options": [
-      {
-        "Action": "Bye",
-        "Text": "Goodbye"
-      }
-    ],
-    "NameKey": "jiheshi005",
-    "Role": "",
-    "ChatSet": "",
-    "ClientMenu": [],
-    "SceneName": "Beijing Suburb",
-    "Source": {
-      "Scene": "CLIENT mapped\\*.idres \\LAskGoToObj CJ058999 jiheshi005",
-      "Name": "CLIENT namelist jiheshi005",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
       "Model": "GUESS generic townsman"
@@ -77666,7 +76466,7 @@
   {
     "Id": 2010165,
     "Scene": 1503001,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Arian",
     "X": -14.39,
     "Y": 3.05,
@@ -77694,7 +76494,7 @@
   {
     "Id": 2010166,
     "Scene": 1503001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Saltar",
     "X": -12.36,
     "Y": 2.82,
@@ -77806,7 +76606,7 @@
   {
     "Id": 2010170,
     "Scene": 1508002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Kennon",
     "X": 445.65,
     "Y": 13.58,
@@ -77834,7 +76634,7 @@
   {
     "Id": 2010171,
     "Scene": 1508008,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Explorer",
     "X": 10.48,
     "Y": 30.4,
@@ -77862,7 +76662,7 @@
   {
     "Id": 2010172,
     "Scene": 1510001,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Lucky Zhao",
     "X": -80.92,
     "Y": 16.64,
@@ -77890,7 +76690,7 @@
   {
     "Id": 2010173,
     "Scene": 1521001,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Queen's Confidant",
     "X": -55.63,
     "Y": 22.86,
@@ -77918,7 +76718,7 @@
   {
     "Id": 2010174,
     "Scene": 1601002,
-    "Model": 3201017,
+    "Model": 3201057,
     "Name": "Statham",
     "X": 55.03,
     "Y": 5.4,
@@ -77946,7 +76746,7 @@
   {
     "Id": 2010175,
     "Scene": 1602301,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Captain Gotia",
     "X": 127.48,
     "Y": -0.72,
@@ -77974,7 +76774,7 @@
   {
     "Id": 2010176,
     "Scene": 1602301,
-    "Model": 3201017,
+    "Model": 3201058,
     "Name": "Alog",
     "X": 130.79,
     "Y": -0.72,
@@ -78002,7 +76802,7 @@
   {
     "Id": 2010177,
     "Scene": 1602301,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "King of Ice",
     "X": 126.37,
     "Y": -0.72,
@@ -78030,7 +76830,7 @@
   {
     "Id": 2010178,
     "Scene": 1602301,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Captain Novis",
     "X": 123.27,
     "Y": -0.72,
@@ -78086,7 +76886,7 @@
   {
     "Id": 2010180,
     "Scene": 1900022,
-    "Model": 3201017,
+    "Model": 3201059,
     "Name": "Guild Token Envoy",
     "X": -9.4,
     "Y": 0.44,

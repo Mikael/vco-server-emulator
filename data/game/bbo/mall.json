@@ -1088,6 +1088,166 @@
       "Source": "CLIENT text of taskbook: \"This item can be replaced by buying it from the Item Mall\"",
       "PriceSource": "GUESS: the client has no mall prices",
       "Category": 1
+    },
+    {
+      "Item": "HZ000127",
+      "Name": "Han Minority Clothes (Male)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000128",
+      "Name": "Han Minority Clothes (Female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000131",
+      "Name": "Gandu Battle Armor(Male)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Gandu Battle Armor = Gandu Spirit (Male)",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000132",
+      "Name": "Spirit Clothes(Female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Spirit Clothes = Gandu Spirit (Female)",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000133",
+      "Name": "Grim Reaper's Clothes (Male)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000134",
+      "Name": "Grim Reaper's Clothes (Female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000137",
+      "Name": "Ming Minority Clothes(Male)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000138",
+      "Name": "Ming Minority Clothes(Female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000139",
+      "Name": "Zhongsan Clothes(Male)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Zhongsan Clothes = Chinese Hanfu (Male)",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000140",
+      "Name": "Youth Clothes (Female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Youth Clothes = Chinese Hanfu (Female)",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000194",
+      "Name": "Atlantis Male Suit",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000195",
+      "Name": "Atlantis Female Suit",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000334",
+      "Name": "Tiger Suit",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 12 (Male: Tiger Suit (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000371",
+      "Name": "White Rabbit's Dress",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 16 (Male: White Rabbit Dress (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000372",
+      "Name": "Black Rabbit's Dress",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 17 (Male: Black Rabbit Dress (Male)), matched by name",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000115",
+      "Name": "Fancy Male Oriental Lover Dress",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 38 (Male: Oriental Lover's Dress (Male)), matched by GUESS Male Oriental Lover Dress = Oriental Lover's Dress",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000099",
+      "Name": "Fancy Charming Evening Dress (female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000100",
+      "Name": "Fancy Peerless Evening Dress (female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000101",
+      "Name": "Fancy Attractive Evening Dress (female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "PriceSource": "GUESS: the client has no mall prices"
+    },
+    {
+      "Item": "HZ000102",
+      "Name": "Fancy Gentlewomanly Evening Dress (female)",
+      "Price": 300,
+      "Category": 6,
+      "Source": "tools/bbo/extract/fashion.py: GUESS fashion suit sold in the mall; CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "PriceSource": "GUESS: the client has no mall prices"
     }
   ]
 }

@@ -88,7 +88,7 @@ public sealed partial class ClientSession
     }
 
     public IEnumerable<ClientSession> Others()
-        => Context.World.Sessions.Where(other => other != this && other.Scene == Scene && other.InWorld).ToList();
+        => Context.World.Sessions.Where(other => other != this && other.Scene == Scene && other.Room == Room && other.InWorld).ToList();
 
     public void ToOthers(byte[] body, string note)
     {
@@ -110,10 +110,12 @@ public sealed partial class ClientSession
             LeaveWorldSocial();
             LeaveWorldGuild();
             LeaveWorldGuildWar();
+            OceanBattleRoom? oceanBattle = _oceanBattle;
             LeaveScene();
             (float x, float z) = Mover!.Now();
             Character.Position = [MathF.Round(x, 2), MathF.Round(Height, 2), MathF.Round(z, 2)];
             Character.Scene = Scene;
+            if (oceanBattle != null) OceanBattleLeaveWorld(oceanBattle);
             BattleLeaveWorld();
             LeaveWorldOnlineRewards();
             Save();

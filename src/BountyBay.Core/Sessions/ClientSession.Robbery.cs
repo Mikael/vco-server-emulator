@@ -24,6 +24,8 @@ public sealed partial class ClientSession
 
     private RobberyDeal? _robbery;
 
+    public bool RobberyPending => _robbery is { Settled: false };
+
     public void SendRobberyLevels()
     {
         if (PropertyTable.Has("RobLevel")) SetProperty("RobLevel", Character.RobberyLevel);
@@ -45,7 +47,7 @@ public sealed partial class ClientSession
         if (targetId == 0) targetId = SeaTarget;
         ClientSession? player = Context.World.Sessions.FirstOrDefault(other => other != this && other.ObjectId == targetId
             && other.InWorld && other.AtSea && other.Scene == Scene);
-        SeaNpcState? ship = player == null ? Sea.Find(targetId, Scene) : null;
+        SeaNpcState? ship = player == null ? Sea.Find(targetId, Scene, Room) : null;
         if (player == null && (ship == null || ship.Dead || ship.Gone))
         {
             SystemMessage("Choose a ship to extort first.", SystemMessageKind.Prompt);
@@ -119,8 +121,10 @@ public sealed partial class ClientSession
                 Log.Info(Tag, $"{Name} extorts {money} from {definition.Name}");
                 return;
             }
+            ship.DemandedFrom = this;
             Sea.Provoke(ship, this);
             SystemMessage($"The {definition.Name} refuses and opens fire!", SystemMessageKind.Prompt);
+            if (BboAtOcean) StartOceanBattle(ship);
         });
     }
 
@@ -141,6 +145,7 @@ public sealed partial class ClientSession
         if (deal.Pirate is { } pirate)
         {
             pirate.Target = null;
+            victim.OceanBattleSafeUntil = Environment.TickCount64 + OceanBattleRules.PaidOffSeconds * 1000L;
             victim.SystemMessage($"The {pirate.Definition.Name} takes your {deal.Money} silver coins and sails away.");
         }
         else victim.SystemMessage($"You paid {deal.Money} silver coins.");

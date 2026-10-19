@@ -10,8 +10,8 @@ public sealed partial class ClientSession
 {
     public void ItemObtained(string name, int amount, string verb)
     {
-        Send(UiPackets.Custom("PlaySound SE3004"), "(item obtained sound)");
-        if (verb.Length > 0) SystemMessage($"You {verb} {ItemLabel(name)} x{amount}.");
+        if (verb.Length > 0 || name.Length > 0) SystemMessage($"You {(verb.Length > 0 ? verb : "obtained")} {ItemLabel(name)} x{amount}.", SystemMessageKind.Gain);
+        else Send(UiPackets.Custom("PlaySound SE3004"), "(item obtained sound)");
     }
 
     public const int LootView = 25;

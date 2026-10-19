@@ -451,7 +451,7 @@ public sealed partial class ClientSession
                 StartSeaStance(SeaStanceGuard, 30 + 5 * level);
                 return true;
             case "US_CHASE":
-                if (Sea.Find(SeaTarget, Scene) is not { Dead: false })
+                if (Sea.Find(SeaTarget, Scene, Room) is not { Dead: false })
                 {
                     SystemMessage("Pursuit needs a target: attack a ship first.");
                     return false;

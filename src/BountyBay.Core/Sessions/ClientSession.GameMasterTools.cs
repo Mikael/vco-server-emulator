@@ -1,3 +1,4 @@
+using BountyBay.Core.Data;
 using System.Globalization;
 using BountyBay.Core.Logging;
 using BountyBay.Core.Persistence;
@@ -150,12 +151,13 @@ public sealed partial class ClientSession
                 SystemMessage($"{fixedShip.Name}'s ship is repaired and fully crewed.");
                 return true;
             case "sinkall":
-                List<SeaNpcState> targets = Sea.InScene(Scene).Where(ship => !ship.Dead && !ship.Definition.Friendly).ToList();
+                List<SeaNpcState> targets = Sea.InScene(Scene, Room).Where(ship => !ship.Dead && !ship.Definition.Friendly).ToList();
                 foreach (SeaNpcState ship in targets)
                 {
                     Sea.Sink(ship);
                     OnSeaNpcSunk(ship.Definition.Name);
                     SeaInstanceShipSunk(ship.Definition);
+                    OceanBattleShipSunk(ship);
                 }
                 SystemMessage($"{targets.Count} ship(s) sunk.");
                 Log.Info(Tag, $"GM {Name} sinks {targets.Count} ship(s) in scene {Scene}");
@@ -169,8 +171,30 @@ public sealed partial class ClientSession
                 Send(ScenePackets.ShowObject(objId), "(gm test object)");
                 SystemMessage($"Object {objId} (model {objModel}, kind {objKind}) placed next to you.");
                 return true;
+            case "equip" when words.Length >= 2:
+                string wanted = words[1];
+                int gearSlot = Bags[ViewId.BagEquip].FirstOrDefault(pair => pair.Value.Name.Equals(wanted, StringComparison.OrdinalIgnoreCase)).Key;
+                int itemSlot = Items.FirstOrDefault(pair => pair.Value.Name.Equals(wanted, StringComparison.OrdinalIgnoreCase)).Key;
+                if (gearSlot != 0) MoveGear(ViewId.BagEquip, gearSlot);
+                else if (itemSlot != 0) UseItem(itemSlot);
+                else SystemMessage($"You do not carry {wanted}.");
+                return true;
+            case "gathernear" when Mover != null:
+                (float gx, float gz) = Mover.Now();
+                GatherNode? nearest = Gathering.InScene(Scene).OrderBy(node => (node.X - gx) * (node.X - gx) + (node.Z - gz) * (node.Z - gz)).FirstOrDefault();
+                if (nearest == null) SystemMessage("No gathering point in this scene.");
+                else
+                {
+                    SystemMessage($"Gathering point {nearest.ObjectId}: {nearest.Skill} grade {nearest.Grade} at {nearest.X:F1}, {nearest.Z:F1}.");
+                    OnGatherNodeClicked(nearest.ObjectId);
+                }
+                return true;
+            case "hurt" when words.Length >= 2 && int.TryParse(words[1], out int hurt) && hurt > 0:
+                SetHp(Math.Max(1, Hp - hurt));
+                SystemMessage($"HP {Hp}/{MaxHp}.");
+                return true;
             case "ships":
-                foreach (SeaNpcState ship in Sea.InScene(Scene).Where(ship => !ship.Gone).Take(20))
+                foreach (SeaNpcState ship in Sea.InScene(Scene, Room).Where(ship => !ship.Gone).Take(20))
                     SystemMessage($"{ship.Definition.Id} {ship.Definition.Name} L{ship.Definition.Level} hull {ship.Hull}/{ship.Definition.Hull} at {ship.X:F0}, {ship.Z:F0}{(ship.Definition.Friendly ? " (friendly)" : "")}");
                 return true;
             default:

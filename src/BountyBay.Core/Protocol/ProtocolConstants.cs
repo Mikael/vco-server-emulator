@@ -104,6 +104,10 @@ public enum SystemMessageKind : byte
     Prompt = 1,
     Information = 2,
     Upgrade = 3,
+
+    // [Gain] / [Lose] (ini\window\systeminfo.ini); the client plays SE3004 / SE3005 for them itself.
+    Gain = 5,
+    Lose = 6,
 }
 
 public enum DialogueEntry : byte

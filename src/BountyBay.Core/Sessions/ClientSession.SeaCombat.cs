@@ -88,9 +88,11 @@ public sealed partial class ClientSession
         if (!AtSea) return;
 
         Sea.EnsureTicking();
-        foreach (SeaNpcState ship in Sea.InScene(Scene))
+        // A grace period on arrival, so raiders do not drag a ship into battle the moment it reaches the open sea (GUESS).
+        if (BboAtOcean) OceanBattleSafeUntil = Math.Max(OceanBattleSafeUntil, Environment.TickCount64 + OceanBattleRules.ArrivalGraceSeconds * 1000L);
+        foreach (SeaNpcState ship in Sea.InScene(Scene, Room))
         {
-            if (!ship.Gone) SendSeaNpc(ship);
+            if (!ship.Gone && !ship.Engaged) SendSeaNpc(ship);
         }
         Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, SeaPackets.Known(new PropertyBag
         {
@@ -139,6 +141,7 @@ public sealed partial class ClientSession
             ["Bumping"] = 0,
         })
             shipProperties[name] = value;
+        if (BboOceanScene(definition.Scene) && PropertyTable.Has("FirstAttack")) shipProperties["FirstAttack"] = OceanBattleRules.Hunts(ship) ? 1 : 0;
         Send(ScenePackets.ObjectProperties(definition.Id, SeaPackets.Known(shipProperties)), note);
         BboSendNpcFiringArc(ship);
         Send(ScenePackets.PlaceObject(definition.Id, ship.X, 0f, ship.Z, ship.Moving ? ship.DestX : null, ship.Moving ? ship.DestZ : null, ship.Speed, orient: ship.Heading), note);
@@ -148,9 +151,14 @@ public sealed partial class ClientSession
     public bool OnSeaObjectClicked(int objectId)
     {
         if (!AtSea || Mover == null) return false;
-        SeaNpcState? ship = Sea.Find(objectId, Scene);
+        SeaNpcState? ship = Sea.Find(objectId, Scene, Room);
         if (ship == null) return false;
         SeaTarget = objectId;
+        if (BboAtOcean && !ship.Definition.Friendly && !ship.Dead && !ship.Gone)
+        {
+            StartOceanBattle(ship);
+            return true;
+        }
         if (ship.Definition.Friendly)
         {
             SeaNotice($"The {ship.Definition.Name} is a friendly ship.");
@@ -178,7 +186,7 @@ public sealed partial class ClientSession
                 lock (Context.World.Sync)
                 {
                     if (serial != _engageSerial || !InWorld || !AtSea || SeaSunk || Scene != scene || SeaTarget != objectId || Mover == null) return;
-                    SeaNpcState? ship = Sea.Find(objectId, Scene);
+                    SeaNpcState? ship = Sea.Find(objectId, Scene, Room);
                     if (ship == null || ship.Dead || ship.Gone || ship.Definition.Friendly) return;
                     try
                     {
@@ -419,7 +427,7 @@ public sealed partial class ClientSession
         SeaNpcDefinition definition = ship.Definition;
         byte[] volley = SeaPackets.Volley(definition.Id, shellType, balls, SeaPackets.HitChance(hits, balls), fromX, fromZ,
             hits > 0 ? $"{damage.Hull}" : "Miss", 0xffff00);
-        List<ClientSession> watchers = Sea.Sailors(definition.Scene).ToList();
+        List<ClientSession> watchers = Sea.Sailors(ship).ToList();
         foreach (ClientSession session in watchers) session.Send(volley, "(broadside lands)");
         if (hits <= 0) return;
 
@@ -443,6 +451,7 @@ public sealed partial class ClientSession
         GainReputation(definition.Reputation > 0 ? definition.Reputation : Rule.Economy.PirateReputationPerLevel * definition.Level);
         OnSeaNpcSunk(definition.Name);
         SeaInstanceShipSunk(definition);
+        OceanBattleShipSunk(ship);
         Save();
         Log.Info(Tag, $"{Name} sank {definition.Name}");
     }

@@ -2898,7 +2898,7 @@
       "Id": 706,
       "Scene": 1024001,
       "Name": "To Athens Tavern",
-      "Model": 0,
+      "Model": 4000190,
       "ModelId": 0,
       "X": 47.2,
       "Y": 23.91,
@@ -2914,8 +2914,9 @@
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1024001.ini map2 [82.6]",
         "Name": "CLIENT IDName00006194",
-        "Radius": "GUESS 0: closed way with NPCs standing on it",
-        "Target": "CLIENT scene 1900026 (Genoa tavern model) matches map2 1024004; arrival GUESS beside its exit"
+        "Radius": "GUESS",
+        "Target": "CLIENT scene 1900026 (Genoa tavern model) matches map2 1024004; arrival GUESS beside its exit",
+        "Model": "CLIENT objects\\4000190.ini (door effect, as the church door); GUESS same door model"
       }
     },
     {
@@ -7703,15 +7704,16 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1001043,
-      "TargetX": 0.0,
-      "TargetY": 0.0,
-      "TargetZ": 0.0,
+      "TargetX": -15.59,
+      "TargetY": 5.57,
+      "TargetZ": -9.0,
       "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1601002.ini map2 [176.178]",
         "Name": "CLIENT CJ001043",
         "Radius": "GUESS",
-        "Target": "CLIENT CopyInfos.ini [CJ001043]: entrance on Hurricane Island Beach (50.0 -311.6), instance scene 1001043"
+        "Target": "CLIENT CopyInfos.ini [CJ001043]: entrance on Hurricane Island Beach (50.0 -311.6), instance scene 1001043",
+        "Arrival": "GUESS nearest walkable spot (walk_patch.GM) to the old arrival point, which was off the walk mesh"
       }
     },
     {
@@ -7727,7 +7729,7 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1601021,
-      "TargetX": -4.68,
+      "TargetX": -4.18,
       "TargetY": 15.36,
       "TargetZ": -12.09,
       "Message": "",
@@ -7736,7 +7738,7 @@
         "Name": "CLIENT CJ601021",
         "Radius": "GUESS",
         "Target": "GUESS walk-area centre of 1601021",
-        "Arrival": "GUESS moved 4.5 units off the door / onto walk_patch",
+        "Arrival": "GUESS nearest walkable spot (walk_patch.GM) to the old arrival point, which was off the walk mesh",
         "Model": "CLIENT objects\\4000190.ini (big door, effect wy0114b); size GUESS"
       }
     },
@@ -8204,16 +8206,17 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1024001,
-      "TargetX": 46.5,
-      "TargetY": 23.2,
-      "TargetZ": -79.5,
+      "TargetX": 46.37,
+      "TargetY": 23.43,
+      "TargetZ": -79.02,
       "Message": "",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1900026.ini map2 [31.1]",
         "Name": "CLIENT IDName00006191",
         "Radius": "GUESS",
         "Target": "GUESS just outside the Athens tavern door (47.2,-83.51)",
-        "Model": "CLIENT objects\\4000189.ini (middle door, effect wy0114b); size GUESS"
+        "Model": "CLIENT objects\\4000189.ini (middle door, effect wy0114b); size GUESS",
+        "Arrival": "GUESS nearest walkable spot (walk_patch.GM) to the old arrival point, which was off the walk mesh"
       }
     },
     {
@@ -9466,13 +9469,14 @@
       "Radius": 3.0,
       "Sail": false,
       "TargetScene": 1601002,
-      "TargetX": -47.0,
-      "TargetY": 7.95,
-      "TargetZ": -310.0,
+      "TargetX": -50.38,
+      "TargetY": 7.09,
+      "TargetZ": -309.09,
       "Message": "",
       "Source": {
         "Position": "GUESS 6 units from the scene spawn point",
-        "Target": "GUESS beside the entrance marker in the scene before"
+        "Target": "GUESS beside the entrance marker in the scene before",
+        "Arrival": "GUESS nearest walkable spot (walk_patch.GM) to the old arrival point, which was off the walk mesh"
       }
     },
     {

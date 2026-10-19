@@ -139918,7 +139918,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -139934,7 +139935,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 191005
   },
   "HZ000100": {
     "Key": "HZ000100",
@@ -139951,7 +139953,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -139967,7 +139970,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 191005
   },
   "HZ000101": {
     "Key": "HZ000101",
@@ -139984,7 +139988,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140000,7 +140005,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 191005
   },
   "HZ000102": {
     "Key": "HZ000102",
@@ -140017,7 +140023,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 40 (Male: Full Dress (Male)), matched by GUESS Evening Dress = Full Dress"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140033,7 +140040,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 191005
   },
   "HZ000106": {
     "Key": "HZ000106",
@@ -140154,7 +140162,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 38 (Male: Oriental Lover's Dress (Male)), matched by GUESS Male Oriental Lover Dress = Oriental Lover's Dress",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 38 (Male: Oriental Lover's Dress (Male)), matched by GUESS Male Oriental Lover Dress = Oriental Lover's Dress"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140170,7 +140179,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 190985
   },
   "HZ000120": {
     "Key": "HZ000120",
@@ -140378,7 +140388,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140394,7 +140405,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192202
   },
   "HZ000128": {
     "Key": "HZ000128",
@@ -140411,7 +140423,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140427,7 +140440,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192202
   },
   "HZ000129": {
     "Key": "HZ000129",
@@ -140476,7 +140490,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Gandu Battle Armor = Gandu Spirit (Male)",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Gandu Battle Armor = Gandu Spirit (Male)"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140492,7 +140507,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192206
   },
   "HZ000132": {
     "Key": "HZ000132",
@@ -140509,7 +140525,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Spirit Clothes = Gandu Spirit (Female)",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Spirit Clothes = Gandu Spirit (Female)"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140525,7 +140542,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192206
   },
   "HZ000133": {
     "Key": "HZ000133",
@@ -140542,7 +140560,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140558,7 +140577,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192208
   },
   "HZ000134": {
     "Key": "HZ000134",
@@ -140575,7 +140595,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140591,7 +140612,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192208
   },
   "HZ000135": {
     "Key": "HZ000135",
@@ -140640,7 +140662,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140656,7 +140679,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192212
   },
   "HZ000138": {
     "Key": "HZ000138",
@@ -140673,7 +140697,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140689,7 +140714,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192212
   },
   "HZ000139": {
     "Key": "HZ000139",
@@ -140706,7 +140732,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Zhongsan Clothes = Chinese Hanfu (Male)",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Zhongsan Clothes = Chinese Hanfu (Male)"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140722,7 +140749,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192214
   },
   "HZ000140": {
     "Key": "HZ000140",
@@ -140739,7 +140767,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Youth Clothes = Chinese Hanfu (Female)",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Youth Clothes = Chinese Hanfu (Female)"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -140755,7 +140784,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192214
   },
   "HZ000141": {
     "Key": "HZ000141",
@@ -141093,7 +141123,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 23 (Male: Imperial Guardian's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 23 (Male: Imperial Guardian's Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -141109,7 +141140,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192476
   },
   "HZ000183": {
     "Key": "HZ000183",
@@ -141126,7 +141158,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 23 (Male: Imperial Guardian's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 23 (Male: Imperial Guardian's Clothes (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.5."
@@ -141142,7 +141175,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192476
   },
   "HZ000184": {
     "Key": "HZ000184",
@@ -141323,7 +141357,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire"
     },
     "Text": [
       "Improve movement speed by 1.8"
@@ -141339,7 +141374,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192856
   },
   "HZ000195": {
     "Key": "HZ000195",
@@ -141356,7 +141392,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 9 (Male: Atlantis Attire (Male)), matched by GUESS Atlantis Suit = Atlantis Attire"
     },
     "Text": [
       "Improve movement speed by 1.8"
@@ -141372,7 +141409,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192856
   },
   "HZ000196": {
     "Key": "HZ000196",
@@ -141810,10 +141848,11 @@
       "ArmType": "CLIENT-ENUM:numtostring[ArmType] 4 Clothes (by name GUESS)",
       "Gear": "GUESS:slot from ArmType 4",
       "WearProp": "CLIENT:ModelInfos.ini[ChangeModel]/12 (ChangeModelSuit12, photo 3325064) matched by item name/icon",
-      "WearModel": "CLIENT:ModelInfos.ini[ChangeModel]/12 (ChangeModelSuit12, photo 3325064) matched by item name/icon",
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 12 (Male: Tiger Suit (Male)), matched by name",
       "WearModelF": "CLIENT:ModelInfos.ini[ChangeModel]/12 (ChangeModelSuit12, photo 3325064) matched by item name/icon",
       "Level": "GUESS:1",
-      "Price": "GUESS:300 per level by ItemType"
+      "Price": "GUESS:300 per level by ItemType",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 12 (Male: Tiger Suit (Male)), matched by name"
     },
     "Text": [
       "Improve movement speed by 1.8"
@@ -141832,7 +141871,8 @@
     "WearProp": "BodyType",
     "WearModel": 3325064,
     "WearModelF": 3325065,
-    "Price": 300
+    "Price": 300,
+    "Photo": 3325064
   },
   "HZ000335": {
     "Key": "HZ000335",
@@ -141946,7 +141986,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -141962,7 +142003,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192202
   },
   "HZ000342": {
     "Key": "HZ000342",
@@ -141979,7 +142021,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -141995,7 +142038,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192202
   },
   "HZ000343": {
     "Key": "HZ000343",
@@ -142044,7 +142088,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Gandu Battle Armor = Gandu Spirit",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Gandu Battle Armor = Gandu Spirit"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142060,7 +142105,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192206
   },
   "HZ000346": {
     "Key": "HZ000346",
@@ -142077,7 +142123,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Spirit Clothes = Gandu Spirit",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 4 (Male: Gandu Spirit (Male)), matched by GUESS Spirit Clothes = Gandu Spirit"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142093,7 +142140,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192206
   },
   "HZ000347": {
     "Key": "HZ000347",
@@ -142110,7 +142158,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142126,7 +142175,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192208
   },
   "HZ000348": {
     "Key": "HZ000348",
@@ -142143,7 +142193,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142159,7 +142210,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192208
   },
   "HZ000349": {
     "Key": "HZ000349",
@@ -142176,7 +142228,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 6 (Male: Noble Attire (Male)), matched by GUESS Gentleman Clothes = Noble Attire",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 6 (Male: Noble Attire (Male)), matched by GUESS Gentleman Clothes = Noble Attire"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142192,7 +142245,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192210
   },
   "HZ000350": {
     "Key": "HZ000350",
@@ -142209,7 +142263,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 6 (Male: Noble Attire (Male)), matched by GUESS Gentlewoman Clothes = Noble Attire",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 6 (Male: Noble Attire (Male)), matched by GUESS Gentlewoman Clothes = Noble Attire"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142225,7 +142280,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192210
   },
   "HZ000351": {
     "Key": "HZ000351",
@@ -142242,7 +142298,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by GUESS Ming Dynasty Clothes = Ming Minority Clothes",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by GUESS Ming Dynasty Clothes = Ming Minority Clothes"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142258,7 +142315,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192212
   },
   "HZ000352": {
     "Key": "HZ000352",
@@ -142275,7 +142333,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by GUESS Ming Dynasty Clothes = Ming Minority Clothes",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by GUESS Ming Dynasty Clothes = Ming Minority Clothes"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142291,7 +142350,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192212
   },
   "HZ000353": {
     "Key": "HZ000353",
@@ -142308,7 +142368,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Sun Yatsen Uniform = Chinese Hanfu",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Sun Yatsen Uniform = Chinese Hanfu"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142324,7 +142385,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192214
   },
   "HZ000354": {
     "Key": "HZ000354",
@@ -142341,7 +142403,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Youth Clothes = Chinese Hanfu",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Youth Clothes = Chinese Hanfu"
     },
     "Text": [
       "Increase movement speed by 1.8"
@@ -142357,7 +142420,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192214
   },
   "HZ000355": {
     "Key": "HZ000355",
@@ -142502,7 +142566,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 53 (Male: Christmas Charm (Male)), matched by GUESS Christmas Revelry = Christmas Charm",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 53 (Male: Christmas Charm (Male)), matched by GUESS Christmas Revelry = Christmas Charm"
     },
     "Text": [
       "Increase movement speed by 1.8",
@@ -142519,7 +142584,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005169
   },
   "HZ000369": {
     "Key": "HZ000369",
@@ -142536,7 +142602,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 53 (Male: Christmas Charm (Male)), matched by GUESS Christmas Revelry = Christmas Charm",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 53 (Male: Christmas Charm (Male)), matched by GUESS Christmas Revelry = Christmas Charm"
     },
     "Text": [
       "Increase movement speed by 1.8",
@@ -142553,7 +142620,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005169
   },
   "HZ000370": {
     "Key": "HZ000370",
@@ -142586,7 +142654,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 16 (Male: White Rabbit Dress (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 16 (Male: White Rabbit Dress (Male)), matched by name"
     },
     "Text": [
       "Increases Moving Speed by 1.8",
@@ -142603,7 +142672,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005046
   },
   "HZ000372": {
     "Key": "HZ000372",
@@ -142620,7 +142690,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 17 (Male: Black Rabbit Dress (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 17 (Male: Black Rabbit Dress (Male)), matched by name"
     },
     "Text": [
       "Increases Moving Speed by 1.8",
@@ -142637,7 +142708,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005044
   },
   "HZ000374": {
     "Key": "HZ000374",
@@ -142766,7 +142838,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 2 (Male: Han Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -142782,7 +142855,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192202
   },
   "HZ000382": {
     "Key": "HZ000382",
@@ -142831,7 +142905,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 5 (Male: Grim Reaper's Clothes (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -142847,7 +142922,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192208
   },
   "HZ000385": {
     "Key": "HZ000385",
@@ -142880,7 +142956,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 7 (Male: Ming Minority Clothes (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -142896,7 +142973,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192212
   },
   "HZ000387": {
     "Key": "HZ000387",
@@ -142913,7 +142991,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Chinese Clothes = Chinese Hanfu",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 8 (Male: Chinese Hanfu (Male)), matched by GUESS Chinese Clothes = Chinese Hanfu"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -142929,7 +143008,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 192214
   },
   "HZ000388": {
     "Key": "HZ000388",
@@ -142962,7 +143042,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: same outfit as HZ000334 (Tiger Suit)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 12 (Male: Tiger Suit (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 12 (Male: Tiger Suit (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -142978,7 +143059,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 3325064
   },
   "HZ000390": {
     "Key": "HZ000390",
@@ -143042,10 +143124,11 @@
       "ArmType": "CLIENT-ENUM:numtostring[ArmType] 4 Clothes (by name GUESS)",
       "Gear": "GUESS:slot from ArmType 4",
       "WearProp": "CLIENT:ModelInfos.ini[ChangeModel]/18 (ChangeModelSuit18, photo 4005040) matched by item name/icon",
-      "WearModel": "CLIENT:ModelInfos.ini[ChangeModel]/18 (ChangeModelSuit18, photo 4005040) matched by item name/icon",
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 18 (Male: Blackforest Combat Armor (Male)), matched by name",
       "WearModelF": "CLIENT:ModelInfos.ini[ChangeModel]/18 (ChangeModelSuit18, photo 4005040) matched by item name/icon",
       "Level": "GUESS:1",
-      "Price": "GUESS:300 per level by ItemType"
+      "Price": "GUESS:300 per level by ItemType",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 18 (Male: Blackforest Combat Armor (Male)), matched by name"
     },
     "Text": [
       "Note: Usable only in Battled Forest Instance",
@@ -143065,7 +143148,8 @@
     "WearProp": "BodyType",
     "WearModel": 4005040,
     "WearModelF": 4005041,
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005040
   },
   "HZ000395": {
     "Key": "HZ000395",
@@ -143309,7 +143393,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 17 (Male: Black Rabbit Dress (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 17 (Male: Black Rabbit Dress (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -143325,7 +143410,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005044
   },
   "HZ000409": {
     "Key": "HZ000409",
@@ -143342,7 +143428,8 @@
       "Gear": "GUESS:slot from ArmType 4",
       "Level": "GUESS:1",
       "Price": "GUESS:300 per level by ItemType",
-      "WearModel": "GUESS: no outfit in the client for this item; tier outfit for item level 1, IDName00000651 (European Male Battle Uniform)"
+      "WearModel": "CLIENT ModelInfos.ini [ChangeModel] 16 (Male: White Rabbit Dress (Male)), matched by name",
+      "Photo": "CLIENT ModelInfos.ini [ChangeModel] 16 (Male: White Rabbit Dress (Male)), matched by name"
     },
     "Text": [
       "Increases movement speed by 1.8"
@@ -143358,7 +143445,8 @@
       "Slot": "body",
       "Type": null
     },
-    "Price": 300
+    "Price": 300,
+    "Photo": 4005046
   },
   "HZ000410": {
     "Key": "HZ000410",

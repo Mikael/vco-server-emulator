@@ -6,6 +6,11 @@
 - **Item mall purchases ask first**: after picking the amount, the client's own confirmation box opens ("Please confirm. It costs [100point] ... Are you sure you want to buy it?"). Points are only taken when you press Yes, and the chat then shows the client's "You purchased [item] from the Item Mall" line.
 - **Gestures work** (Command Interface > Gesture: wave, blow kiss, salute, nod, pray...). The client only has gesture animations for empty hands, so your weapon is put away for the gesture and comes back afterwards.
 - **Gathering tools are worn, not used up**: pickaxes, felling axes, hoes, hammers and fishing nets now go to the equipment tab and are held in the weapon hand (pickaxe, felling axe and hoe show in the hand). Using one from the item tab equips it; tools already sitting in the item tab move to the equipment tab when you log in.
+- **Equip sounds match the item**: weapons play the client's own sword / falchion / axe / gun sounds (ini\window\viewsound.ini) instead of the ship-equipment sound; clothes keep the clothes sound.
+- **[Gain] messages for items**: items you mine, fell, buy, make, loot or get from the mall show as a [Gain] line with the pickup sound, like the original.
+- **Item mall Clothes tab**: 20 fashion suits (Han Minority, Gandu Battle Armor, Spirit Clothes, Grim Reaper, Ming Minority, Zhongsan, Youth Clothes, Atlantis, Tiger Suit, the rabbit dresses, the evening dresses...). They and their Improved/Refined versions now wear the client's own fashion models and icons (ini\ModelInfos.ini change-model list) instead of the battle uniform.
+- **Smelting the mined ores**: Iron Ore, Copper Ore and Violet Gold Ore can now be smelted (into Pure Iron, Copper and Purple Gold), and a finished craft that does not fit in your bag says so instead of disappearing.
+- **Cannons can be taken off**: right-click a cannon slot in the ship window to put those cannons into your bag; right-click cannon items in the bag to mount them again (one type per ship, empty gun ports first).
 - **Mining and timber-felling**: the suburbs have ore points (at the rocks) and timber points (by the trees). With the pickaxe or felling axe equipped, click one: you walk there, gather for a few seconds and get ore (Ore, Iron Ore, Impure Copper Ore...) or logs (Level 1-10 log) for Mining/Timber-felling experience. Ore Study / Log Study decide the highest grade you can take; a point is used up for a while after someone takes from it.
 
 ### Ships and sea
@@ -13,11 +18,16 @@
 - **Sea instances start on the water** at the instance exit instead of on land, and sailing into the exit ring takes you back out.
 - **Battle Info button** shows in sea instances: credits, difficulty and the enemy ships left in each quarter of the map.
 - **Sea instance report**: sinking the last enemy ship opens the client's report with every player's ships sunk and credits, and who sank the boss.
+- **Ocean battles**: the high sea has no broadsides in the client, so attacking an NPC fleet there now takes you into a sea battle field (the open-sea scene 1900001) with the fleet's flagship and its escorts, fought in real time with cannons. Sink them all to win and you are back on the open sea where the fight started; sail far enough away from them to escape; get sunk and you are towed to port as before. Team mates sailing close by join the battle with you.
+- **Pirates on the high sea come after you**: raiders and pirate fleets that spot you sail up and demand silver (the client's pay-or-fight box). Pay and they leave you alone for a while; refuse and the battle starts. You get a few seconds of peace when you reach the open sea and after a battle.
 
 ### Towns and NPCs
 - **Refresh players button** (battle toolbar) now sends the players around you again instead of doing nothing.
 - **The Veteran and the Skill Tutor (Battle and Trade)** stand at the foot of the stairs up to Athens City. The Veteran's storyline (Asking for enlightenment, Lesson One, Retraining...) and the life-skill training quests are back.
-- **181 more quest NPCs** that the client's quest links point to (Karmonge, Coaching Quest Guide, Thomas, Kratos, Glaucus, Stan, Akbar, the Atlantis and Lima NPCs...) now stand in their towns, and 359 quests that were missing because nobody could give or take them are back. Their exact spots were kept by the original server, so they stand near the other NPCs of their town.
+- **145 more quest NPCs** that the client's quest links point to (Coaching Quest Guide, Thomas, Kratos, Glaucus, Stan, Akbar, Atos.Willtay, the Atlantis and Lima NPCs...) now stand in their towns, and the quests that were missing because nobody could give or take them are back. Their exact spots were kept by the original server, so they stand near the other NPCs of their town. Event NPCs without a quest the emulator can run (Natasha and the other holiday envoys) are left out, so towns are no longer full of NPCs that only say "Good day", and the added NPCs wear a few different townsfolk outfits.
+- **Taverns have their staff**: the Tavern Boss and the barmaids used player head models and so were invisible; they now wear NPC bodies. The Athens tavern staff no longer also stand outside the tavern door.
+- **Athens tavern door** has its door marker, and leaving the tavern puts you on the street again (you landed just off the walkable ground, which showed an empty sky until you moved). Three other scene exits that dropped you off the walkable ground were moved too.
+- **The Athens priest** stands behind the lectern on the altar platform, facing the pews.
 - **Tower info window** (Golden Tower button) shows the server's best floor, your best floor, the current floor and its prizes.
 - **GM `/ui <keyword>`** sends a raw interface keyword to your own client, for testing client windows. **GM `/sinkall`** sinks every enemy ship in your scene.
 

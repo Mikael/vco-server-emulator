@@ -19279,6 +19279,84 @@
     "OldSkillLevel": 21
   },
   {
+    "Name": "IDName00003831",
+    "Label": "Purple Gold",
+    "Category": "SKILL_MINING",
+    "Group": "Ore Processing",
+    "SkillLevel": 81,
+    "Photo": 190159,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      {
+        "Name": "IDName00004600",
+        "Amount": 3,
+        "Level": 1,
+        "AnyHigher": true
+      }
+    ],
+    "Sources": {
+      "Name/Category/Group/SkillLevel": "CLIENT:makingitem.ini[ChildSection29]/22 + [ProduceSkill5] (skill from the ;comment)",
+      "Amount": "GUESS:1",
+      "Seconds": "GUESS:3",
+      "Photo": "see items_catalog.json",
+      "Ingredients": "GUESS: 3 Violet Gold Ore like the other ore processing recipes (the client lists the product, the old recipe file has no ingredients)"
+    },
+    "OldSkillLevel": 81
+  },
+  {
+    "Name": "IDName00003827",
+    "Label": "Copper",
+    "Category": "SKILL_MINING",
+    "Group": "Ore Processing",
+    "SkillLevel": 41,
+    "Photo": 190154,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      {
+        "Name": "IDName00004596",
+        "Amount": 3,
+        "Level": 1,
+        "AnyHigher": true
+      }
+    ],
+    "Sources": {
+      "Name/Category/Group/SkillLevel": "CLIENT:makingitem.ini[ChildSection29]/22 + [ProduceSkill5] (skill from the ;comment)",
+      "Amount": "GUESS:1",
+      "Seconds": "GUESS:3",
+      "Photo": "see items_catalog.json",
+      "Ingredients": "GUESS: 3 Copper Ore like the other ore processing recipes (the client lists the product, the old recipe file has no ingredients)"
+    },
+    "OldSkillLevel": 41
+  },
+  {
+    "Name": "IDName00003824",
+    "Label": "Pure Iron",
+    "Category": "SKILL_MINING",
+    "Group": "Ore Processing",
+    "SkillLevel": 11,
+    "Photo": 190151,
+    "Amount": 1,
+    "Seconds": 3,
+    "Ingredients": [
+      {
+        "Name": "IDName00004593",
+        "Amount": 3,
+        "Level": 1,
+        "AnyHigher": true
+      }
+    ],
+    "Sources": {
+      "Name/Category/Group/SkillLevel": "CLIENT:makingitem.ini[ChildSection29]/22 + [ProduceSkill5] (skill from the ;comment)",
+      "Amount": "GUESS:1",
+      "Seconds": "GUESS:3",
+      "Photo": "see items_catalog.json",
+      "Ingredients": "GUESS: 3 Iron Ore like the other ore processing recipes (the client lists the product, the old recipe file has no ingredients)"
+    },
+    "OldSkillLevel": 11
+  },
+  {
     "Name": "IDName00003846",
     "Label": "Level 1 Timber",
     "Category": "SKILL_LUMBER",

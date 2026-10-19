@@ -123,9 +123,11 @@ public sealed partial class ClientSession
             SystemMessage("You do not have all the materials for that.");
             return false;
         }
-        bool room = Items.Count < ViewId.BagSlots
-            || Items.Values.Any(item => item.Name == recipe.Name)
-            || recipe.Ingredients.Any(ingredient => CraftCarried(ingredient.Name) == ingredient.Amount);
+        bool room = ItemCatalog.IsGear(recipe.Name)
+            ? FreeSlot(Bags[ViewId.BagEquip], ViewId.BagSlots) != 0
+            : Items.Count < ViewId.BagSlots
+                || Items.Values.Any(item => item.Name == recipe.Name)
+                || recipe.Ingredients.Any(ingredient => CraftCarried(ingredient.Name) == ingredient.Amount);
         if (!room) SystemMessage("Your bag is full.");
         return room;
     }
@@ -141,17 +143,8 @@ public sealed partial class ClientSession
 
     private void CraftStore(ItemStack product)
     {
-        foreach ((int used, ItemStack stack) in Items)
-        {
-            if (stack.Name != product.Name) continue;
-            stack.Amount += product.Amount;
-            Send(ViewPackets.UpdateItem(ViewId.BagItems, used, new PropertyBag { ["Amount"] = stack.Amount }), "(crafted item)");
-            return;
-        }
-        int slot = FreeSlot(Items, ViewId.BagSlots);
-        if (slot == 0) return;
-        Items[slot] = product;
-        Send(ViewPackets.AddItem(ViewId.BagItems, slot, ItemProperties(product, slot)), "(crafted item)");
+        if (!GiveItem(product, "(crafted item)")) SystemMessage("Your bag is full.");
+        else ItemObtained(product.Name, product.Amount, "made");
     }
 
     private void SendRecipeNeeds(RecipeDefinition recipe)

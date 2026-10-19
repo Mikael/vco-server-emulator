@@ -70,6 +70,17 @@ public sealed class SeaNpcState
 
     public SeaNpcDefinition Definition { get; }
 
+    // An ocean battle room (0 = the shared scene). Room ships exist only for that battle and never respawn.
+    public int Room { get; init; }
+
+    public bool Temporary => Room != 0;
+
+    // An ocean fleet that is fighting in a battle room is hidden on the ocean until the battle ends.
+    public bool Engaged { get; set; }
+
+    // The player this ocean pirate already demanded silver from (pay, or refuse and fight).
+    public ClientSession? DemandedFrom { get; set; }
+
     public int Hull { get; set; }
 
     public int Sail { get; set; }
@@ -128,17 +139,38 @@ public sealed class SeaWorld
 
     public static long Now => Environment.TickCount64;
 
-    public IEnumerable<SeaNpcState> InScene(int scene) => _ships.Values.Where(ship => ship.Definition.Scene == scene);
+    public IEnumerable<SeaNpcState> InScene(int scene, int room = 0)
+        => _ships.Values.Where(ship => ship.Definition.Scene == scene && ship.Room == room).ToList();
 
-    public SeaNpcState? Find(int objectId, int scene)
-        => _ships.TryGetValue(objectId, out SeaNpcState? ship) && ship.Definition.Scene == scene ? ship : null;
+    public SeaNpcState? Find(int objectId, int scene, int room = 0)
+        => _ships.TryGetValue(objectId, out SeaNpcState? ship) && ship.Definition.Scene == scene && ship.Room == room ? ship : null;
+
+    public SeaNpcState? Find(int objectId) => _ships.GetValueOrDefault(objectId);
+
+    private int _nextRoomShip = OceanBattleRules.FirstShipId;
+
+    public SeaNpcState AddRoomShip(SeaNpcDefinition definition, int room)
+    {
+        definition.Id = _nextRoomShip++;
+        if (_nextRoomShip >= OceanBattleRules.FirstShipId + 1_000_000) _nextRoomShip = OceanBattleRules.FirstShipId;
+        var ship = new SeaNpcState(definition) { Room = room };
+        _ships[definition.Id] = ship;
+        return ship;
+    }
+
+    public void RemoveRoom(int room)
+    {
+        foreach (int id in _ships.Values.Where(ship => ship.Room == room).Select(ship => ship.Definition.Id).ToList()) _ships.Remove(id);
+    }
 
     public CannonDefinition CannonOf(SeaNpcDefinition definition) => Data.FindCannon(definition.Cannon) ?? Data.DefaultCannon;
 
     public bool IsSeaNpc(int objectId) => _ships.ContainsKey(objectId);
 
-    public IEnumerable<ClientSession> Sailors(int scene)
-        => _context.World.Sessions.Where(session => session.Scene == scene && session.InWorld && session.AtSea).ToList();
+    public IEnumerable<ClientSession> Sailors(int scene, int room = 0)
+        => _context.World.Sessions.Where(session => session.Scene == scene && session.Room == room && session.InWorld && session.AtSea).ToList();
+
+    public IEnumerable<ClientSession> Sailors(SeaNpcState ship) => Sailors(ship.Definition.Scene, ship.Room);
 
     public void Later(double seconds, Action action)
     {
@@ -213,14 +245,15 @@ public sealed class SeaWorld
             ["RatioShipHP"] = 0,
             ["RatioHP"] = 0,
         }));
-        foreach (ClientSession session in Sailors(definition.Scene)) session.Send(sinking, $"({definition.Name} sinks)");
+        foreach (ClientSession session in Sailors(ship)) session.Send(sinking, $"({definition.Name} sinks)");
 
         Later(Data.Rules.SinkSeconds, () =>
         {
             ship.Gone = true;
-            foreach (ClientSession session in Sailors(definition.Scene))
+            foreach (ClientSession session in Sailors(ship))
                 session.Send(ScenePackets.RemoveObject(definition.Id), $"({definition.Name} gone)");
         });
+        if (ship.Temporary) return;
         Later(Math.Max(Data.Rules.SinkSeconds + 2, definition.RespawnSeconds), () =>
         {
             ship.Hull = definition.Hull;
@@ -229,6 +262,7 @@ public sealed class SeaWorld
             ship.Dead = false;
             ship.Gone = false;
             ship.Target = null;
+            ship.Engaged = false;
             ship.ResetPosition();
             foreach (ClientSession session in Sailors(definition.Scene)) session.SendSeaNpc(ship);
             Log.Debug("Sea", $"{definition.Name} returned");
@@ -239,13 +273,14 @@ public sealed class SeaWorld
     {
         long now = Now;
         ShipRules rules = Data.Rules;
-        HashSet<int> occupied = _context.World.Sessions.Where(session => session.InWorld && session.AtSea).Select(session => session.Scene).ToHashSet();
-        foreach (SeaNpcState ship in _ships.Values)
+        HashSet<(int, int)> occupied = _context.World.Sessions.Where(session => session.InWorld && session.AtSea).Select(session => (session.Scene, session.Room)).ToHashSet();
+        foreach (SeaNpcState ship in _ships.Values.ToList())
         {
-            if (ship.Dead || !occupied.Contains(ship.Definition.Scene)) continue;
+            if (ship.Dead || ship.Engaged || !occupied.Contains((ship.Definition.Scene, ship.Room))) continue;
             ship.Advance(now);
             ClientSession? target = ship.Target;
-            if (target != null && (now > ship.AggroUntil || !target.InWorld || !target.AtSea || target.Scene != ship.Definition.Scene || target.SeaSunk))
+            if (target == null && OceanBattleRules.Hunts(ship)) target = ship.Target = HuntOnOcean(ship, now);
+            if (target != null && (now > ship.AggroUntil || !target.InWorld || !target.AtSea || target.Scene != ship.Definition.Scene || target.Room != ship.Room || target.SeaSunk))
             {
                 ship.Target = null;
                 target = null;
@@ -277,6 +312,18 @@ public sealed class SeaWorld
                 float aimZ = ship.Z + dz * stop / apart;
                 bool sameAim = ship.Moving && MathF.Abs(ship.DestX - aimX) + MathF.Abs(ship.DestZ - aimZ) < range * 0.2f;
                 if (!sameAim) Steer(ship, aimX, aimZ, rules.NpcChaseSpeed, "(ship closes in)");
+                continue;
+            }
+            // The high sea has no broadsides (DOceanRole/DOceanNPC have no 3Dfd): a fleet that reaches you there starts a battle.
+            if (BountyBay.Core.Sessions.ClientSession.BboOceanScene(ship.Definition.Scene))
+            {
+                if (target.RobberyPending) continue;
+                if (ship.DemandedFrom != target)
+                {
+                    ship.DemandedFrom = target;
+                    if (target.PirateDemand(ship)) continue;
+                }
+                target.StartOceanBattle(ship, attacked: true);
                 continue;
             }
             if (now < ship.NextShotAt) continue;
@@ -314,6 +361,26 @@ public sealed class SeaWorld
         ship.MoveStart = Environment.TickCount64;
         ship.Heading = heading;
         byte[] move = ScenePackets.MoveObject(ship.Definition.Id, x, z, speed, heading);
-        foreach (ClientSession session in Sailors(ship.Definition.Scene)) session.Send(move, note);
+        foreach (ClientSession session in Sailors(ship)) session.Send(move, note);
+    }
+
+    // FirstAttack fleets on the ocean go after the nearest ship that comes within OceanBattleRules.HuntRange.
+    private ClientSession? HuntOnOcean(SeaNpcState ship, long now)
+    {
+        ClientSession? prey = Sailors(ship)
+            .Where(session => !session.SeaSunk && session.Mover != null && session.OceanBattleSafeUntil <= now)
+            .Select(session => (session, distance: Distance(session, ship)))
+            .Where(pair => pair.distance <= OceanBattleRules.HuntRange)
+            .OrderBy(pair => pair.distance)
+            .Select(pair => pair.session)
+            .FirstOrDefault();
+        if (prey != null) ship.AggroUntil = now + Data.Rules.AggroSeconds * 1000L;
+        return prey;
+    }
+
+    private static float Distance(ClientSession session, SeaNpcState ship)
+    {
+        (float x, float z) = session.Mover!.Now();
+        return MathF.Sqrt((x - ship.X) * (x - ship.X) + (z - ship.Z) * (z - ship.Z));
     }
 }

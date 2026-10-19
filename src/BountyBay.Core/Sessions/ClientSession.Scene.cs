@@ -169,6 +169,7 @@ public sealed partial class ClientSession
         CloseCompound();
         ResetSceneState();
         if (InWorld) LeaveScene();
+        TakeEnteringRoom();
 
         Scene = scene;
         Send(ScenePackets.EnterScene(scene), $"(enter scene {scene})");
@@ -254,6 +255,7 @@ public sealed partial class ClientSession
     {
         CancelTradeAndStall();
         LeaveSeaCombat();
+        LeaveOceanBattleRoom();
         ToOthers(ScenePackets.RemoveObject(ObjectId), $"(player {Name} leaves)");
         Context.World.Remove(this);
     }
@@ -509,7 +511,7 @@ public sealed partial class ClientSession
             ["ActionSet"] = 0,
             ["CollideRadius"] = 0.5f,
         }), $"(props {npc.Name})");
-        Send(ScenePackets.PlaceObject(npc.Id, npc.X, npc.Y, npc.Z), $"(place {npc.Name})");
+        Send(ScenePackets.PlaceObject(npc.Id, npc.X, npc.Y, npc.Z, orient: npc.Orient), $"(place {npc.Name})");
         Send(ScenePackets.ShowObject(npc.Id), $"(show {npc.Name})");
     }
 

@@ -55,6 +55,9 @@ public sealed class NpcDefinition
     public float X { get; set; }
     public float Y { get; set; }
     public float Z { get; set; }
+
+    // Facing in tenths of a degree (0 = +Z, 900 = +X, 2700 = -X).
+    public int Orient { get; set; }
     public string Greeting { get; set; } = "Good day.";
     public List<DialogueOption> Options { get; set; } = [];
     public Dictionary<int, List<string>>? Shop { get; set; }

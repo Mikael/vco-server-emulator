@@ -9,7 +9,7 @@ public sealed class CraftingCommands : ITextCommand
     public bool Execute(ClientSession session, string[] words)
     {
         if (words.Length > 3) return false;
-        string name = words.Length == 2 ? words[1] : "";
+        string name = words.Length >= 2 ? words[1] : "";
         if (words[0] == "QMI")
         {
             session.QueryRecipe(name);

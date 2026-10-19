@@ -248,10 +248,27 @@ public sealed partial class ClientSession
         RefreshAppearance();
         RefreshStats();
         Save();
-        if (sound) Send(UiPackets.Custom(GearClass(item.Name) is 2 or 3 ? "PlaySound SE3007" : "PlaySound SE3008"), "(equip sound)");
+        if (sound) Send(UiPackets.Custom("PlaySound " + ItemSound(item.Name)), "(equip sound)");
         Log.Info(Tag, $"{Name} {(target == ViewId.Equipped ? "wears" : "takes off")} {item.Name}");
         return true;
     }
+
+    // The client's own pick-up/put-down sounds (ini\window\viewsound.ini): [KIND] by item Kind (3 coat, 5 sword, 6 falchion,
+    // 7 axe, 8 gun, 11/12 figurehead/mine = ship gear), otherwise [IT] by ItemType (13 ship equipment).
+    private static readonly Dictionary<int, string> KindSounds = new()
+    {
+        [1] = "SE3023", [2] = "SE3012", [3] = "SE3007", [4] = "SE3012", [5] = "SE3013", [6] = "SE3026", [7] = "SE3025",
+        [8] = "SE3015", [10] = "SE3006", [11] = "SE3008", [12] = "SE3008", [13] = "SE3012", [14] = "SE3012",
+    };
+
+    private static readonly Dictionary<int, string> ItemTypeSounds = new()
+    {
+        [10] = "SE3012", [11] = "SE3012", [12] = "SE3012", [13] = "SE3008", [14] = "SE3012", [15] = "SE3012", [16] = "SE3022", [17] = "SE3012",
+    };
+
+    public static string ItemSound(string name)
+        => KindSounds.TryGetValue(ItemCatalog.Number(name, "Kind"), out string? sound) ? sound
+            : ItemTypeSounds.TryGetValue(ItemCatalog.Number(name, "ItemType"), out sound) ? sound : "SE3012";
 
     // Older characters got their gathering tools in the item tab, where using one only consumed it.
     private void MoveToolsToGearBag()
@@ -370,6 +387,7 @@ public sealed partial class ClientSession
         if (UseGuildBuildItem(index, item)) return true;
         if (UseHurricaneOrder(index, item)) return true;
         if (ItemCatalog.IsTool(item.Name)) return EquipToolFromItems(index, item);
+        if (MountCannonItem(index, item)) return true;
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);
         if (heal <= 0 && refresh <= 0)
