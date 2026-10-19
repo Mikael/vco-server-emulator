@@ -191,7 +191,7 @@ public sealed partial class ClientSession
         }
         Send(ScenePackets.PlaceObject(ProtocolConstants.SelfObjectId, at.X, at.Y, at.Z), "(place player)");
         Send(ScenePackets.ShowObject(ProtocolConstants.SelfObjectId), "(show player)");
-        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(Context.World.Time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType, iconSwitch: SceneIcons), "(time, weather, wind)");
 
         Mover = new Mover(at.X, at.Z, AtSea ? ShipSpeed : WorldSettings.RunSpeed, 0, AtSea ? ShipTurnRate : 0);
         Height = at.Y;
@@ -381,6 +381,41 @@ public sealed partial class ClientSession
         ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: facing), note);
         Send(ScenePackets.PlayAction(ProtocolConstants.SelfObjectId, action, attack), note);
         ToOthers(ScenePackets.PlayAction(ObjectId, action, attack), note);
+    }
+
+    public const int GestureMilliseconds = 3000;
+
+    private int _gestureSerial;
+
+    // Emotes from the Command window (DoAction <name>). The gesture animations exist only in action set 0
+    // (animation_new\mainman.ani / mainwoman.ani hold wave0_1, kiss0_1, ... but no wave3_1), so a character holding
+    // a weapon is switched to set 0 for the gesture and back afterwards. Sent like gathering, as a timed action (0x30).
+    public void PlayGesture(int action)
+    {
+        if (Mover == null || AtSea) return;
+        (float x, float z) = Mover.Now();
+        if (Mover.DestinationX != x || Mover.DestinationZ != z)
+        {
+            Mover.MoveTo(x, z);
+            ToOthers(ScenePackets.PlaceObject(ObjectId, x, Height, z, orient: Mover.HeadingNow()), "(emote stop)");
+        }
+        _sitting = false;
+        int serial = ++_gestureSerial;
+        if (PropertyTable.Has("ActionSet") && Properties.Int("ActionSet", 0) != 0)
+            SetProperty("ActionSet", 0, visibleToOthers: true);
+        // The hands are emptied too, so no weapon floats in a waving hand.
+        foreach (string hand in new[] { "LeftHand", "RightHand" })
+        {
+            if (PropertyTable.Has(hand) && Properties.Int(hand, 0) != 0) SetProperty(hand, 0, visibleToOthers: true);
+        }
+        Send(ScenePackets.TimedAction(ProtocolConstants.SelfObjectId, action, GestureMilliseconds), "(emote)");
+        ToOthers(ScenePackets.TimedAction(ObjectId, action, GestureMilliseconds), "(emote)");
+        Sea.Later(GestureMilliseconds / 1000.0, () =>
+        {
+            if (serial != _gestureSerial || !InWorld) return;
+            RefreshAppearance();
+            RefreshBboActionSet();
+        });
     }
 
     public const float SailLowest = 0.3f;

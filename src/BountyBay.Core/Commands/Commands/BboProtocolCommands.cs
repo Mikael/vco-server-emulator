@@ -80,7 +80,7 @@ public sealed class BboUnsupportedCommands : ITextCommand
         "csCloseChangeFightSoul", "csCloseConsArm", "csCloseConsWarBid", "csCloseFightSoulView", "csCloseImpawn", "csCloseLuckSoul",
         "csCloseNewUpdate", "csCloseRankArmView", "csCloseWakeArmView", "csBonTotemBoxClose", "csArmRebuildClose", "csAideRebuildClose",
         "csFuseClose", "csCancleCFightSoulList", "csCancleChangeFightSoul", "csCancleStartMap", "csCancelTotemReset", "csCancelTrainResult",
-        "exclose", "transclose", "csPVPTipInfo", "csNoticeShipInfo", "csFreshReadyTime", "csAskCurDetail", "BYE", "SetVisitedSea",
+        "exclose", "transclose", "csPVPTipInfo", "csFreshReadyTime", "BYE", "SetVisitedSea",
         "csAskQueueST", "csAskConWarEntryTimes", "csOpenGlobalView", "csAskBlog", "ShowCopyInfo", "csCheckPhoneVerify", "AskToBattle_No",
     ];
 

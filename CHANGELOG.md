@@ -4,10 +4,20 @@
 
 ### Character and equipment
 - **Item mall purchases ask first**: after picking the amount, the client's own confirmation box opens ("Please confirm. It costs [100point] ... Are you sure you want to buy it?"). Points are only taken when you press Yes, and the chat then shows the client's "You purchased [item] from the Item Mall" line.
+- **Gestures work** (Command Interface > Gesture: wave, blow kiss, salute, nod, pray...). The client only has gesture animations for empty hands, so your weapon is put away for the gesture and comes back afterwards.
+
+### Ships and sea
+- **Sea instances have enemies**: English Channel (Spanish Armada with Medina-Sidonia's Flagship), Crete Pirates (Iron Hand Edward), Gibraltar (Steel Tooth / Golden Eye / Jackal armed ships) and North Sea Pirates (Nordic Pirate Admiral Carl Emanuel's Zeus), placed at the boss and fleet marks of the client maps.
+- **Sea instances start on the water** at the instance exit instead of on land, and sailing into the exit ring takes you back out.
+- **Battle Info button** shows in sea instances: credits, difficulty and the enemy ships left in each quarter of the map.
+- **Sea instance report**: sinking the last enemy ship opens the client's report with every player's ships sunk and credits, and who sank the boss.
 
 ### Towns and NPCs
 - **Refresh players button** (battle toolbar) now sends the players around you again instead of doing nothing.
-- **GM `/ui <keyword>`** sends a raw interface keyword to your own client, for testing client windows.
+- **The Veteran and the Skill Tutor (Battle and Trade)** stand at the foot of the stairs up to Athens City. The Veteran's storyline (Asking for enlightenment, Lesson One, Retraining...) and the life-skill training quests are back.
+- **181 more quest NPCs** that the client's quest links point to (Karmonge, Coaching Quest Guide, Thomas, Kratos, Glaucus, Stan, Akbar, the Atlantis and Lima NPCs...) now stand in their towns, and 359 quests that were missing because nobody could give or take them are back. Their exact spots were kept by the original server, so they stand near the other NPCs of their town.
+- **Tower info window** (Golden Tower button) shows the server's best floor, your best floor, the current floor and its prizes.
+- **GM `/ui <keyword>`** sends a raw interface keyword to your own client, for testing client windows. **GM `/sinkall`** sinks every enemy ship in your scene.
 
 ## 2026-10-18
 

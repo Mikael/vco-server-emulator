@@ -442,6 +442,7 @@ public sealed partial class ClientSession
         SystemMessage($"You sank the {definition.Name} and salvaged {definition.Gold} silver coins.");
         GainReputation(definition.Reputation > 0 ? definition.Reputation : Rule.Economy.PirateReputationPerLevel * definition.Level);
         OnSeaNpcSunk(definition.Name);
+        SeaInstanceShipSunk(definition);
         Save();
         Log.Info(Tag, $"{Name} sank {definition.Name}");
     }

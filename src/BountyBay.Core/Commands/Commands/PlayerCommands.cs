@@ -53,7 +53,7 @@ public sealed class DoActionCommand : ITextCommand
     {
         if (words.Length != 2) return false;
         int action = session.Context.Data.Actions.Gesture(words[1]);
-        if (action >= 0) session.PlayAction(action, "(emote)");
+        if (action >= 0) session.PlayGesture(action);
         Log.Debug(session.Tag, $"{session.Name} emote {words[1]}");
         return true;
     }

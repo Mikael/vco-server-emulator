@@ -29,6 +29,7 @@ public sealed class SeaNpcDefinition
     public bool Roams { get; set; }
     public float RoamRadius { get; set; } = 250f;
     public bool Friendly { get; set; }
+    public bool Boss { get; set; }
 }
 
 public sealed class AmmunitionDefinition

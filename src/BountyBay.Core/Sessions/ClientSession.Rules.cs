@@ -105,7 +105,7 @@ public sealed partial class ClientSession
     public void SendSceneState(GameTime time)
     {
         if (!InWorld) return;
-        Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType), "(time, weather, wind)");
+        Send(ScenePackets.SceneState(time, WorldSettings.Weather, CityName, SceneName, scene: Scene, sceneType: SceneType, iconSwitch: SceneIcons), "(time, weather, wind)");
         if (CurrentBattle is { } room) Send(BattlePackets.SceneKind(room.Definition.SceneKind), "(battle scene kind)");
     }
 

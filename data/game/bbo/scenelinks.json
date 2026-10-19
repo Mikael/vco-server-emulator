@@ -383,18 +383,18 @@
       "Y": 0.0,
       "Z": 491.5,
       "Orient": 0.0,
-      "Radius": 3.0,
+      "Radius": 40.0,
       "Sail": false,
       "TargetScene": 0,
       "TargetX": 0.0,
       "TargetY": 0.0,
       "TargetZ": 0.0,
-      "Message": "The way to Leave is closed: this client has no scene for it.",
+      "Message": "Sail here to leave the instance.",
       "Source": {
         "Position": "CLIENT ini\\window\\map2\\1001025.ini map2 [58.11]",
         "Name": "CLIENT men001026",
-        "Radius": "GUESS",
-        "Target": "unresolved name"
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
       }
     },
     {
@@ -9517,6 +9517,150 @@
       "Source": {
         "Position": "GUESS 6 units from the scene spawn point",
         "Target": "GUESS beside the entrance marker in the scene before"
+      }
+    },
+    {
+      "Id": 5000393,
+      "Scene": 1001030,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": -1419.28,
+      "Y": 0.0,
+      "Z": -906.56,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001030.ini mark0 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
+      }
+    },
+    {
+      "Id": 5000394,
+      "Scene": 1001030,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": -2707.11,
+      "Y": 0.0,
+      "Z": 283.81,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001030.ini mark1 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
+      }
+    },
+    {
+      "Id": 5000395,
+      "Scene": 1001031,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": 1050.8,
+      "Y": 0.0,
+      "Z": 2451.5,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001031.ini mark0 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
+      }
+    },
+    {
+      "Id": 5000396,
+      "Scene": 1001031,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": -772.8,
+      "Y": 0.0,
+      "Z": 2677.0,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001031.ini mark1 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
+      }
+    },
+    {
+      "Id": 5000397,
+      "Scene": 1001038,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": 4383.5,
+      "Y": 0.0,
+      "Z": -122.1,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001038.ini mark0 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
+      }
+    },
+    {
+      "Id": 5000398,
+      "Scene": 1001038,
+      "Name": "Leave",
+      "Model": 0,
+      "ModelId": 0,
+      "X": -1440.1,
+      "Y": 0.0,
+      "Z": 22.1,
+      "Orient": 0.0,
+      "Radius": 40.0,
+      "Sail": false,
+      "TargetScene": 0,
+      "TargetX": 0.0,
+      "TargetY": 0.0,
+      "TargetZ": 0.0,
+      "Message": "Sail here to leave the instance.",
+      "Source": {
+        "Position": "CLIENT ini\\window\\map\\1001038.ini mark1 (part9 exit icon)",
+        "Name": "GUESS",
+        "Radius": "GUESS: wide enough to sail into",
+        "Target": "instance exit (back to where you entered)"
       }
     }
   ]

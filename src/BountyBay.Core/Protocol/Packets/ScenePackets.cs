@@ -11,7 +11,7 @@ public static class ScenePackets
 
     public static byte[] LeaveScene() => new PacketWriter(ServerMsg.LeaveScene).ToArray();
 
-    public static byte[] SceneState(Data.GameTime time, int weather, string cityName = "", string sceneName = "", float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f, int scene = 0, int sceneType = -1)
+    public static byte[] SceneState(Data.GameTime time, int weather, string cityName = "", string sceneName = "", float windLevel = 1f, float windOrient = 0f, float streamOrient = 0f, int scene = 0, int sceneType = -1, int iconSwitch = 0)
     {
         var state = new PropertyBag
         {
@@ -29,6 +29,8 @@ public static class ScenePackets
         if (sceneType >= 0 && PropertyTable.Has("Type")) state["Type"] = sceneType;
         if (sceneName.Length > 0) state["Name"] = sceneName;
         if (scene > 0 && PropertyTable.Has("SceneSerial")) state["SceneSerial"] = $"L{scene}";
+        // InterFace_Main shows the instance info buttons from this: 1 sea instance, 2 land tower, 4 sea tower.
+        if (PropertyTable.Has("IconSwitchMsg")) state["IconSwitchMsg"] = iconSwitch;
         return PropertyTable.WriteValues(new PacketWriter(ServerMsg.SceneState), state).ToArray();
     }
 

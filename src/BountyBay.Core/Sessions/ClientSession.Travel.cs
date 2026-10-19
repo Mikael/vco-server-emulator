@@ -111,6 +111,11 @@ public sealed partial class ClientSession
     {
         _linkSerial++;
         if (SceneLocked()) return;
+        if (link.TargetScene <= 0 && InInstanceScene && link.Name.Equals("Leave", StringComparison.OrdinalIgnoreCase))
+        {
+            InstanceLeave();
+            return;
+        }
         if (link.TargetScene <= 0 || !Context.Data.Scenes.Exists(link.TargetScene))
         {
             SystemMessage(link.Message.Length > 0 ? link.Message : "This way is closed.");
