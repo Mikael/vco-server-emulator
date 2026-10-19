@@ -115,6 +115,8 @@ public sealed partial class ClientSession
         string note = $"(sea npc {definition.Name})";
         Send(ScenePackets.CreateObject(definition.Id, BboOceanScene(definition.Scene) ? ObjectKind.OceanNpc : ObjectKind.SeaNpc, definition.Model), note);
         PropertyBag shipProperties = ship.Bars();
+        // The hull's own masts: the client loads them from object\ship\<hull>\<mast>, and drops a ship whose mast is missing.
+        ShipDefinition hull = Yard.Find(definition.Model) ?? new ShipDefinition();
         foreach ((string name, object value) in new PropertyBag
         {
             ["Name"] = definition.Name,
@@ -122,7 +124,7 @@ public sealed partial class ClientSession
             ["Model"] = definition.Model,
             ["ShipModel"] = definition.Model,
             ["Level"] = definition.Level,
-            ["Photo"] = Yard.Find(definition.Model)?.Photo ?? new ShipDefinition().Photo,
+            ["Photo"] = hull.Photo,
             ["Dead"] = ship.Dead ? 1 : 0,
             ["S/ModelCannonL"] = Sea.CannonOf(definition).Model,
             ["S/ModelCannonR"] = Sea.CannonOf(definition).Model,
@@ -132,9 +134,9 @@ public sealed partial class ClientSession
             ["S/Flag"] = 0,
             ["S/RandSeed"] = 1,
             ["S/Level"] = 0,
-            ["S/MastFront"] = 2211101,
-            ["S/MastMiddle"] = 2211401,
-            ["S/MastBack"] = 2211101,
+            ["S/MastFront"] = hull.MastFront,
+            ["S/MastMiddle"] = hull.MastMiddle,
+            ["S/MastBack"] = hull.MastBack,
             ["S/ShipDamage"] = 0,
             ["S/FishNet"] = 0,
             ["SailState"] = 0,

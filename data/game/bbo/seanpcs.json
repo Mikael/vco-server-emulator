@@ -4328,8 +4328,8 @@
    "Id": 7000128,
    "Scene": 1009001,
    "Name": "Bay Sniper Mothership",
-   "X": -599.8,
-   "Z": -825.1,
+   "X": -572.82,
+   "Z": -790.35,
    "Heading": 2700,
    "Model": 2011016,
    "Level": 10,
@@ -4349,7 +4349,7 @@
    "Source": {
     "Name": "CLIENT namelist Realship8107",
     "Scene": "CLIENT world_markers 1009001 Realship8107 (map mark18); CLIENT world_markers 1009001 Realship8107 (map mark19)",
-    "Position": "CLIENT marker position",
+    "Position": "CLIENT marker position | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS region tier of the scene; kind 0 (battle); class kind/tier 0/10 of ships.json x0.9; balanced: hull/sail (100+50*level) x1.5 armed x2 flagship/boss, cannons level+1",
     "Model": "GUESS shipinfo.ini size series by kind/tier"
    },
@@ -11486,15 +11486,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -103.8,
-   "Z": 566.2,
+   "X": -86.65,
+   "Z": 539.18,
    "Heading": 2078,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005699",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -11517,15 +11517,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -74.4,
-   "Z": 575.0,
+   "X": -61.82,
+   "Z": 554.56,
    "Heading": 1712,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005711",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -11858,15 +11858,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 388.1,
-   "Z": 237.2,
+   "X": 374.21,
+   "Z": 274.71,
    "Heading": 2382,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005735",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -11982,15 +11982,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 264.0,
-   "Z": -900.9,
+   "X": 255.19,
+   "Z": -882.94,
    "Heading": 843,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005705",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12261,15 +12261,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -125.9,
-   "Z": 542.5,
+   "X": -90.54,
+   "Z": 516.31,
    "Heading": 2494,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12385,15 +12385,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -245.6,
-   "Z": -425.1,
+   "X": -247.6,
+   "Z": -365.13,
    "Heading": 3585,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12416,15 +12416,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -231.4,
-   "Z": -409.4,
+   "X": -232.41,
+   "Z": -361.41,
    "Heading": 1434,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12447,15 +12447,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -116.8,
-   "Z": -42.1,
+   "X": -102.78,
+   "Z": -49.81,
    "Heading": 1868,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12633,15 +12633,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -190.6,
-   "Z": -1259.0,
+   "X": -238.56,
+   "Z": -1261.01,
    "Heading": 688,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12726,7 +12726,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -134.2,
+   "X": -78.2,
    "Z": 16.7,
    "Heading": 2033,
    "Roams": true,
@@ -12734,7 +12734,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005723",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12912,15 +12912,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 770.8,
-   "Z": 507.2,
+   "X": 741.05,
+   "Z": 518.98,
    "Heading": 618,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005713",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -12943,15 +12943,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 745.3,
-   "Z": 577.7,
+   "X": 706.12,
+   "Z": 569.65,
    "Heading": 2697,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005714",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13098,7 +13098,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -448.4,
+   "X": -408.4,
    "Z": -56.7,
    "Heading": 16,
    "Roams": true,
@@ -13106,7 +13106,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005706",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13160,7 +13160,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -482.9,
+   "X": -406.9,
    "Z": -65.2,
    "Heading": 2828,
    "Roams": true,
@@ -13168,7 +13168,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005734",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13253,15 +13253,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 1430.4,
-   "Z": 115.2,
+   "X": 1374.44,
+   "Z": 117.22,
    "Heading": 3030,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005715",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13408,7 +13408,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -841.7,
+   "X": -817.7,
    "Z": 1530.2,
    "Heading": 2598,
    "Roams": true,
@@ -13416,7 +13416,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13439,7 +13439,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -845.4,
+   "X": -817.4,
    "Z": 1532.5,
    "Heading": 855,
    "Roams": true,
@@ -13447,7 +13447,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13501,7 +13501,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 859.8,
+   "X": 827.8,
    "Z": 291.9,
    "Heading": 619,
    "Roams": true,
@@ -13509,7 +13509,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13532,15 +13532,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 590.3,
-   "Z": -783.8,
+   "X": 562.74,
+   "Z": -754.81,
    "Heading": 2513,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13718,15 +13718,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 444.5,
-   "Z": -525.7,
+   "X": 425.35,
+   "Z": -495.22,
    "Heading": 1981,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13873,15 +13873,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -254.7,
-   "Z": 523.0,
+   "X": -240.92,
+   "Z": 537.5,
    "Heading": 2163,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13904,15 +13904,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 251.3,
-   "Z": 557.5,
+   "X": 265.21,
+   "Z": 499.13,
    "Heading": 110,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -13997,15 +13997,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -836.7,
-   "Z": -156.7,
+   "X": -776.2,
+   "Z": -125.65,
    "Heading": 1456,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14090,15 +14090,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -857.6,
-   "Z": -597.4,
+   "X": -804.05,
+   "Z": -570.34,
    "Heading": 1350,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005704",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14121,15 +14121,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -829.7,
-   "Z": -629.2,
+   "X": -787.99,
+   "Z": -586.07,
    "Heading": 3229,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005716",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14245,7 +14245,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -825.5,
+   "X": -765.5,
    "Z": 177.9,
    "Heading": 818,
    "Roams": true,
@@ -14253,7 +14253,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14276,7 +14276,7 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": -816.1,
+   "X": -768.1,
    "Z": 131.6,
    "Heading": 118,
    "Roams": true,
@@ -14284,7 +14284,7 @@
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14307,15 +14307,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 925.4,
-   "Z": -771.4,
+   "X": 881.45,
+   "Z": -773.4,
    "Heading": 1934,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00004577",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14400,15 +14400,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 931.8,
-   "Z": -454.3,
+   "X": 906.43,
+   "Z": -418.35,
    "Heading": 903,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist Realship7109",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },
@@ -14555,15 +14555,15 @@
    "Reputation": 0,
    "RespawnSeconds": 60,
    "SailCloth": 2900000,
-   "X": 15.6,
-   "Z": -830.1,
+   "X": -60.37,
+   "Z": -832.11,
    "Heading": 1409,
    "Roams": true,
    "RoamRadius": 140.0,
    "Friendly": true,
    "Source": {
     "Name": "CLIENT namelist IDName00005719",
-    "Position": "GUESS near the city's sail-off point or harbour",
+    "Position": "GUESS near the city's sail-off point or harbour | moved off the island to open water (coastwater.py)",
     "Stats": "GUESS friendly traffic"
    }
   },

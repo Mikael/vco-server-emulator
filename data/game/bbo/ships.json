@@ -720,7 +720,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011001]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011001.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011001.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011001\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -773,8 +774,12 @@
         "Photo": "GUESS:prop\\200132.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011032.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011032.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011032\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211132,
+      "MastMiddle": 2211432,
+      "MastBack": 2211732
     },
     {
       "Model": 2011034,
@@ -826,8 +831,12 @@
         "Photo": "GUESS:prop\\200134.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011034.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011034.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011034\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211134,
+      "MastMiddle": 2211434,
+      "MastBack": 2211734
     },
     {
       "Model": 2011028,
@@ -879,8 +888,12 @@
         "Photo": "GUESS:prop\\200128.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011028.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011028.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011028\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211128,
+      "MastMiddle": 2211428,
+      "MastBack": 2211728
     },
     {
       "Model": 2011029,
@@ -932,8 +945,12 @@
         "Photo": "GUESS:prop\\200129.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011029.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011029.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011029\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211129,
+      "MastMiddle": 2211429,
+      "MastBack": 2211729
     },
     {
       "Model": 2011013,
@@ -987,7 +1004,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011013]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011013.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011013.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011013\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -1040,8 +1058,12 @@
         "Photo": "GUESS:prop\\200105.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011005.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011005.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011005\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211105,
+      "MastMiddle": 2211405,
+      "MastBack": 2211705
     },
     {
       "Model": 2011036,
@@ -1093,8 +1115,12 @@
         "Photo": "GUESS:prop\\200136.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011036.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011036.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011036\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211136,
+      "MastMiddle": 2211436,
+      "MastBack": 2211736
     },
     {
       "Model": 2011010,
@@ -1146,8 +1172,12 @@
         "Photo": "GUESS:prop\\200110.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011010.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011010.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011010\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211110,
+      "MastMiddle": 2211410,
+      "MastBack": 2211710
     },
     {
       "Model": 2011009,
@@ -1199,8 +1229,12 @@
         "Photo": "GUESS:prop\\200109.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011009.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011009.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011009\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211109,
+      "MastMiddle": 2211409,
+      "MastBack": 2211709
     },
     {
       "Model": 2011016,
@@ -1252,8 +1286,12 @@
         "Photo": "GUESS:prop\\200116.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011016.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011016.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011016\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211116,
+      "MastMiddle": 2211416,
+      "MastBack": 2211716
     },
     {
       "Model": 2011004,
@@ -1305,8 +1343,12 @@
         "Photo": "GUESS:prop\\200104.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011004.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011004.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011004\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211404,
+      "MastMiddle": 2211404,
+      "MastBack": 2211704
     },
     {
       "Model": 2011006,
@@ -1360,7 +1402,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011006]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011006.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011006.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011006\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -1415,7 +1458,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011019]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011019.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011019.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011019\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -1468,8 +1512,12 @@
         "Photo": "GUESS:prop\\200120.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011020.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011020.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011020\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211120,
+      "MastMiddle": 2211420,
+      "MastBack": 2211720
     },
     {
       "Model": 2011035,
@@ -1521,8 +1569,12 @@
         "Photo": "GUESS:prop\\200135.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011035.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011035.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011035\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211135,
+      "MastMiddle": 2211435,
+      "MastBack": 2211735
     },
     {
       "Model": 2011015,
@@ -1574,8 +1626,12 @@
         "Photo": "GUESS:prop\\200115.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011015.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011015.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011015\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211115,
+      "MastMiddle": 2211415,
+      "MastBack": 2211715
     },
     {
       "Model": 2011007,
@@ -1627,8 +1683,12 @@
         "Photo": "GUESS:prop\\200107.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011007.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011007.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011007\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211107,
+      "MastMiddle": 2211407,
+      "MastBack": 2211707
     },
     {
       "Model": 2011003,
@@ -1680,8 +1740,12 @@
         "Photo": "GUESS:prop\\200103.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011003.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011003.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011003\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211103,
+      "MastMiddle": 2211403,
+      "MastBack": 2211703
     },
     {
       "Model": 2011023,
@@ -1734,8 +1798,12 @@
         "Photo": "GUESS:prop\\200123.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011023.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011023.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011023\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211123,
+      "MastMiddle": 2211423,
+      "MastBack": 2211723
     },
     {
       "Model": 2011024,
@@ -1787,8 +1855,12 @@
         "Photo": "GUESS:prop\\200124.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011024.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011024.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011024\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211124,
+      "MastMiddle": 2211424,
+      "MastBack": 2211124
     },
     {
       "Model": 2011017,
@@ -1842,7 +1914,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011017]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011017.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011017.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011017\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -1894,8 +1967,12 @@
         "Photo": "GUESS:prop\\200118.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011018.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011018.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011018\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211118,
+      "MastMiddle": 2211418,
+      "MastBack": 2211118
     },
     {
       "Model": 2011002,
@@ -1949,7 +2026,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011002]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011002.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011002.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011002\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -2002,8 +2080,12 @@
         "Photo": "GUESS:prop\\200126.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011026.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011026.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011026\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211126,
+      "MastMiddle": 2211426,
+      "MastBack": 2211726
     },
     {
       "Model": 2011008,
@@ -2057,7 +2139,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011008]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011008.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011008.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011008\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -2112,7 +2195,8 @@
       "Sources": {
         "Model/ShipSize/Speed*/Offsets/FishNet/HideCannon": "CLIENT:shipinfo.ini[2011014]",
         "Name/Label/Photo/Kind/Tier/Price/Sold/Masts": "EMU",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011014.ini"
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011014.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011014\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
       }
     },
     {
@@ -2165,8 +2249,12 @@
         "Photo": "GUESS:prop\\200121.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011021.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011021.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011021\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211121,
+      "MastMiddle": 2211421,
+      "MastBack": 2211721
     },
     {
       "Model": 2011030,
@@ -2218,8 +2306,12 @@
         "Photo": "GUESS:prop\\200130.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011030.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011030.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011030\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211130,
+      "MastMiddle": 2211430,
+      "MastBack": 2211730
     },
     {
       "Model": 2011027,
@@ -2271,8 +2363,12 @@
         "Photo": "GUESS:prop\\200127.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011027.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011027.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011027\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211127,
+      "MastMiddle": 2211427,
+      "MastBack": 2211727
     },
     {
       "Model": 2011031,
@@ -2324,8 +2420,12 @@
         "Photo": "GUESS:prop\\200131.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011031.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011031.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011031\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211131,
+      "MastMiddle": 2211431,
+      "MastBack": 2211731
     },
     {
       "Model": 2011039,
@@ -2377,8 +2477,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011039.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011039.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011039\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211139,
+      "MastMiddle": 2211439,
+      "MastBack": 2211739
     },
     {
       "Model": 2011040,
@@ -2427,8 +2531,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011040.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011040.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011040\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211140,
+      "MastMiddle": 2211140,
+      "MastBack": 2211140
     },
     {
       "Model": 2011041,
@@ -2479,8 +2587,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011041.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011041.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011041\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211141,
+      "MastMiddle": 2211441,
+      "MastBack": 2211741
     },
     {
       "Model": 2011042,
@@ -2531,8 +2643,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011042.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011042.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011042\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211142,
+      "MastMiddle": 2211142,
+      "MastBack": 2211142
     },
     {
       "Model": 2011043,
@@ -2577,8 +2693,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011043.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011043.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011043\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211143,
+      "MastMiddle": 2211143,
+      "MastBack": 2211143
     },
     {
       "Model": 2011044,
@@ -2629,8 +2749,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011044.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011044.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011044\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211144,
+      "MastMiddle": 2211444,
+      "MastBack": 2211744
     },
     {
       "Model": 2011045,
@@ -2681,8 +2805,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011045.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011045.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011045\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211145,
+      "MastMiddle": 2211445,
+      "MastBack": 2211745
     },
     {
       "Model": 2011037,
@@ -2733,8 +2861,12 @@
         "Photo": "GUESS:prop\\200137.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011037.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011037.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011037\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211137,
+      "MastMiddle": 2211437,
+      "MastBack": 2211137
     },
     {
       "Model": 2011038,
@@ -2785,8 +2917,12 @@
         "Photo": "GUESS:prop\\200138.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011038.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011038.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011038\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211138,
+      "MastMiddle": 2211438,
+      "MastBack": 2211138
     },
     {
       "Model": 2011061,
@@ -2838,8 +2974,12 @@
         "Photo": "GUESS:prop\\200161.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011061.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011061.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011061\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211461,
+      "MastMiddle": 2211461,
+      "MastBack": 2211761
     },
     {
       "Model": 2011062,
@@ -2891,8 +3031,12 @@
         "Photo": "GUESS:prop\\200162.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011062.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011062.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011062\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211162,
+      "MastMiddle": 2211462,
+      "MastBack": 2211762
     },
     {
       "Model": 2011063,
@@ -2944,8 +3088,12 @@
         "Photo": "GUESS:prop\\200163.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011063.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011063.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011063\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211163,
+      "MastMiddle": 2211463,
+      "MastBack": 2211763
     },
     {
       "Model": 2011065,
@@ -2998,8 +3146,12 @@
         "Photo": "GUESS:prop\\200165.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011065.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011065.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011065\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211165,
+      "MastMiddle": 2211465,
+      "MastBack": 2211765
     },
     {
       "Model": 2011066,
@@ -3051,8 +3203,12 @@
         "Photo": "GUESS:prop\\200166.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011066.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011066.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011066\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211166,
+      "MastMiddle": 2211466,
+      "MastBack": 2211766
     },
     {
       "Model": 2011067,
@@ -3104,8 +3260,12 @@
         "Photo": "GUESS:prop\\200167.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011067.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011067.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011067\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211167,
+      "MastMiddle": 2211467,
+      "MastBack": 2211767
     },
     {
       "Model": 2011068,
@@ -3157,8 +3317,12 @@
         "Photo": "GUESS:prop\\200168.tga exists; numbering 2011xxx -> 2001xx as for 2011001 -> 200101 (EMU)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011068.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011068.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011068\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211168,
+      "MastMiddle": 2211468,
+      "MastBack": 2211768
     },
     {
       "Model": 2011071,
@@ -3209,8 +3373,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011071.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011071.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011071\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211171,
+      "MastMiddle": 2211471,
+      "MastBack": 2211771
     },
     {
       "Model": 2011072,
@@ -3261,8 +3429,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011072.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011072.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011072\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211172,
+      "MastMiddle": 2211472,
+      "MastBack": 2211772
     },
     {
       "Model": 2011073,
@@ -3313,8 +3485,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011073.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011073.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011073\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211173,
+      "MastMiddle": 2211473,
+      "MastBack": 2211773
     },
     {
       "Model": 2011074,
@@ -3365,8 +3541,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011074.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011074.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011074\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211174,
+      "MastMiddle": 2211474,
+      "MastBack": 2211774
     },
     {
       "Model": 2011075,
@@ -3417,8 +3597,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011075.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011075.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011075\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211175,
+      "MastMiddle": 2211475,
+      "MastBack": 2211775
     },
     {
       "Model": 2011076,
@@ -3469,8 +3653,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011076.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011076.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011076\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211176,
+      "MastMiddle": 2211476,
+      "MastBack": 2211776
     },
     {
       "Model": 2011077,
@@ -3521,8 +3709,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011077.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011077.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011077\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211177,
+      "MastMiddle": 2211477,
+      "MastBack": 2211777
     },
     {
       "Model": 2011078,
@@ -3574,8 +3766,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011078.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011078.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011078\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211178,
+      "MastMiddle": 2211478,
+      "MastBack": 2211778
     },
     {
       "Model": 2011079,
@@ -3627,8 +3823,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011079.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011079.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011079\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211179,
+      "MastMiddle": 2211479,
+      "MastBack": 2211779
     },
     {
       "Model": 2011080,
@@ -3676,8 +3876,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011080.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011080.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011080\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211480,
+      "MastMiddle": 2211480,
+      "MastBack": 2211780
     },
     {
       "Model": 2011081,
@@ -3725,8 +3929,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011081.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011081.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011081\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211181,
+      "MastMiddle": 2211481,
+      "MastBack": 2211781
     },
     {
       "Model": 2011082,
@@ -3777,8 +3985,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011082.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011082.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011082\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211182,
+      "MastMiddle": 2211482,
+      "MastBack": 2211782
     },
     {
       "Model": 2011164,
@@ -4094,8 +4306,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011050.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011050.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011050\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211150,
+      "MastMiddle": 2211450,
+      "MastBack": 2211750
     },
     {
       "Model": 2011051,
@@ -4147,8 +4363,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011051.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011051.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011051\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211151,
+      "MastMiddle": 2211451,
+      "MastBack": 2211751
     },
     {
       "Model": 2011052,
@@ -4200,8 +4420,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011052.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011052.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011052\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211152,
+      "MastMiddle": 2211452,
+      "MastBack": 2211752
     },
     {
       "Model": 2011053,
@@ -4253,8 +4477,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011053.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011053.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011053\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211153,
+      "MastMiddle": 2211453,
+      "MastBack": 2211753
     },
     {
       "Model": 2011054,
@@ -4306,8 +4534,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011054.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011054.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011054\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211154,
+      "MastMiddle": 2211454,
+      "MastBack": 2211754
     },
     {
       "Model": 2011055,
@@ -4359,8 +4591,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011055.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011055.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011055\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211155,
+      "MastMiddle": 2211455,
+      "MastBack": 2211755
     },
     {
       "Model": 2011083,
@@ -4395,8 +4631,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011083.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011083.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011083\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211183,
+      "MastMiddle": 2211483,
+      "MastBack": 2211783
     },
     {
       "Model": 2011084,
@@ -4447,8 +4687,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011084.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011084.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011084\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211184,
+      "MastMiddle": 2211484,
+      "MastBack": 2211784
     },
     {
       "Model": 2011085,
@@ -4501,8 +4745,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011085.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011085.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011085\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211185,
+      "MastMiddle": 2211485,
+      "MastBack": 2211785
     },
     {
       "Model": 2011086,
@@ -4554,8 +4802,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011086.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011086.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011086\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211186,
+      "MastMiddle": 2211486,
+      "MastBack": 2211786
     },
     {
       "Model": 2011087,
@@ -4606,8 +4858,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011087.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011087.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011087\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211187,
+      "MastMiddle": 2211487,
+      "MastBack": 2211787
     },
     {
       "Model": 2011095,
@@ -4654,8 +4910,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011095.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011095.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011095\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211195,
+      "MastMiddle": 2211495,
+      "MastBack": 2211795
     },
     {
       "Model": 2011173,
@@ -4709,8 +4969,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011173.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011173.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011173\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211173,
+      "MastMiddle": 2211473,
+      "MastBack": 2211773
     },
     {
       "Model": 2011174,
@@ -4764,8 +5028,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011174.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011174.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011174\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211174,
+      "MastMiddle": 2211474,
+      "MastBack": 2211774
     },
     {
       "Model": 2014053,
@@ -4988,8 +5256,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011181.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011181.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011181\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211181,
+      "MastMiddle": 2211481,
+      "MastBack": 2211781
     },
     {
       "Model": 2014057,
@@ -5689,8 +5961,12 @@
         "Photo": "GUESS:0 (no prop\\2001xx texture for this model)",
         "Name/Kind/Tier": "NONE: the client does not map hull models to ship types (server data)",
         "Tier": "GUESS:-1 so ShipCatalogData.Find(kind, tier) never picks an unmapped model",
-        "Radius/Height/ObjectSections": "CLIENT:objects\\2011202.ini"
-      }
+        "Radius/Height/ObjectSections": "CLIENT:objects\\2011202.ini",
+        "Masts": "CLIENT:MODELS\\object\\ship\\2011202\\221xxxx.gm (objects\\<hull>.ini loads S/MastFront/Middle/Back from the hull folder, so a mast of another hull makes the client drop the ship); a slot without a file repeats another mast of the hull, as the starter ship 2011001 does"
+      },
+      "MastFront": 2211102,
+      "MastMiddle": 2211402,
+      "MastBack": 2211702
     }
   ],
   "Dyes": [

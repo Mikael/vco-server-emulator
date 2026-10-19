@@ -26,6 +26,8 @@
 - **Storms and floating goods on the high sea**: storms drift across the oceans and tear at the sails and hull of any ship inside; drifting goods can be fished out of the water for silver or cannonballs.
 - **Discovery**: the Discovery command on the high sea searches the waters around you. Finds pop up with their picture and go into the logbook window (natural wonders, animals, plants, relics, shells), and you get the "Discovery Logbook" record. The Adventurer Alliance search-and-authenticate quests (Termites, Violet, the Colosseum of Rome, Gorillas, Baboons...) now run: search at the place the quest names (or anywhere for the ones without a place) and bring the logbook back.
 - **Pirates on the high sea come after you**: raiders and pirate fleets that spot you sail up and demand silver (the client's pay-or-fight box). Pay and they leave you alone for a while; refuse and the battle starts. You get a few seconds of peace when you reach the open sea and after a battle.
+- **NPC ships show up again**: every NPC ship was sent the masts of the starter ship, and the client quietly drops a ship whose masts are missing from its hull, so only starter-hull pirates were drawn (merchants, frigates, the enemies of ocean battles and most fleets were invisible). Each hull now gets its own masts from the client models.
+- **NPC ships stay on the water**: roaming traders and patrolling ships in coastal waters picked random spots around their home, often inside the island, where the terrain hid them. They now only sail across open water (worked out from the island models), and 31 ships that started on land were moved out to sea.
 
 ### Towns and NPCs
 - **Refresh players button** (battle toolbar) now sends the players around you again instead of doing nothing.

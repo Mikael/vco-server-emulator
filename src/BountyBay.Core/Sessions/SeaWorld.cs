@@ -343,6 +343,13 @@ public sealed class SeaWorld
             Steer(ship, waypoint.X, waypoint.Z, rules.NpcPatrolSpeed, "(ship roams)");
             return;
         }
+        if (CoastWater.Known(_context.Settings, ship.Definition.Scene))
+        {
+            if (CoastWater.RandomRoute(_context.Settings, ship.Definition.Scene, ship.X, ship.Z, ship.Definition.X, ship.Definition.Z,
+                    radius * (ship.Definition.Roams ? 0.4f : 0.1f), radius) is { } open)
+                Steer(ship, open.X, open.Z, rules.NpcPatrolSpeed, "(ship patrols)");
+            return;
+        }
         float angle = (float)(Random.Shared.NextDouble() * Math.PI * 2);
         float distance = ship.Definition.Roams ? radius * (0.4f + 0.6f * (float)Random.Shared.NextDouble()) : (float)Random.Shared.NextDouble() * radius;
         Steer(ship, ship.Definition.X + MathF.Cos(angle) * distance, ship.Definition.Z + MathF.Sin(angle) * distance, rules.NpcPatrolSpeed, "(ship patrols)");
