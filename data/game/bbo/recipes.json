@@ -9809,7 +9809,7 @@
     "Seconds": 3,
     "Ingredients": [
       {
-        "Name": "IDName00006670",
+        "Name": "IDName00000255",
         "Amount": 2,
         "Level": 1,
         "AnyHigher": true
@@ -9820,7 +9820,8 @@
       "Amount": "GUESS:1",
       "Seconds": "EMU",
       "Photo": "see items_catalog.json",
-      "Ingredients": "CLIENT-OLD:2007 makingitem.ini[IDName00003637] attribR lines (names mapped to keys via namelist.idres)"
+      "Ingredients": "CLIENT-OLD:2007 makingitem.ini[IDName00003637] attribR lines (names mapped to keys via namelist.idres)",
+      "Ingredients.IDName00006670": "GUESS: the 2007 recipe names \"Sage\" (IDName00006670 is the class title Sage); Affine Cudweed, a healing herb crop, stands in"
     },
     "OldSkillLevel": 1
   },

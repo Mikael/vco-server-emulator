@@ -9,7 +9,7 @@ public sealed class SystemCommands : ITextCommand
     private static readonly HashSet<string> Acknowledged =
     [
         "csBuffTable", "ASkTable39", "csWindow_ObjFactory_AskInit", "csAskRole",
-        "csCloseNewArmUpdate", "csCloseFlagView", "AskTeamPos", "csAskPaleBoss", "csHideSailorBarWnd",
+        "csCloseNewArmUpdate", "csCloseFlagView", "csAskPaleBoss", "csHideSailorBarWnd",
     ];
 
     private static readonly Dictionary<string, int> ChatCommands = new()
@@ -19,7 +19,7 @@ public sealed class SystemCommands : ITextCommand
         ["c15"] = BboChatKind.Trumpet,
     };
 
-    public IEnumerable<string> Names => [.. Acknowledged, .. ChatCommands.Keys, "csNetPing", "csMACAddress", "csAskVisibleTable", "csSetVisualPlayers", ClientSession.MallConfirmCommand];
+    public IEnumerable<string> Names => [.. Acknowledged, .. ChatCommands.Keys, "AskTeamPos", "csNetPing", "csMACAddress", "csAskVisibleTable", "csSetVisualPlayers", ClientSession.MallConfirmCommand];
 
     public bool Execute(ClientSession session, string[] words)
     {
@@ -30,6 +30,9 @@ public sealed class SystemCommands : ITextCommand
         }
         switch (words[0])
         {
+            case "AskTeamPos":
+                session.SendTeamPositions();
+                return true;
             case "csNetPing":
                 session.AnswerPing(words.Length > 1 ? words[1] : "0");
                 return true;

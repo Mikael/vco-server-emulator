@@ -1,0 +1,232 @@
+{
+  "_Sources": {
+    "Seeds": "tools\\bbo\\extract\\planting.py (see its header)",
+    "Farms": "GUESS"
+  },
+  "FarmRadius": 30.0,
+  "HarvestReach": 4.0,
+  "HarvestSeconds": 3,
+  "ExperiencePerGrade": 40,
+  "ByProducts": [
+    {
+      "Item": "IDName00004614",
+      "Grade": 1
+    },
+    {
+      "Item": "IDName00004615",
+      "Grade": 4
+    },
+    {
+      "Item": "IDName00004616",
+      "Grade": 7
+    }
+  ],
+  "Seeds": [
+    {
+      "Seed": "IDName00004413",
+      "Crop": "IDName00003456",
+      "Name": "Linen",
+      "Grade": 1,
+      "Model": 4000548,
+      "GrowSeconds": 180,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004414",
+      "Crop": "IDName00000247",
+      "Name": "IDName00000247",
+      "Grade": 1,
+      "Model": 4000548,
+      "GrowSeconds": 180,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004426",
+      "Crop": "fuzhu41",
+      "Name": "Rosemary",
+      "Grade": 2,
+      "Model": 4000552,
+      "GrowSeconds": 240,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004425",
+      "Crop": "IDName00000258",
+      "Name": "IDName00000258",
+      "Grade": 2,
+      "Model": 4000552,
+      "GrowSeconds": 240,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004416",
+      "Crop": "IDName00000249",
+      "Name": "IDName00000249",
+      "Grade": 2,
+      "Model": 4000548,
+      "GrowSeconds": 240,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004422",
+      "Crop": "IDName00000255",
+      "Name": "IDName00000255",
+      "Grade": 3,
+      "Model": 4000550,
+      "GrowSeconds": 300,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004418",
+      "Crop": "IDName00000251",
+      "Name": "IDName00000251",
+      "Grade": 3,
+      "Model": 4000551,
+      "GrowSeconds": 300,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004430",
+      "Crop": "IDName00000263",
+      "Name": "IDName00000263",
+      "Grade": 3,
+      "Model": 4000552,
+      "GrowSeconds": 300,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004433",
+      "Crop": "IDName00000266",
+      "Name": "Coffee",
+      "Grade": 4,
+      "Model": 4000551,
+      "GrowSeconds": 360,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004431",
+      "Crop": "IDName00000264",
+      "Name": "IDName00000264",
+      "Grade": 4,
+      "Model": 4000549,
+      "GrowSeconds": 360,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004437",
+      "Crop": "IDName00000270",
+      "Name": "IDName00000270",
+      "Grade": 4,
+      "Model": 4000549,
+      "GrowSeconds": 360,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004432",
+      "Crop": "IDName00000265",
+      "Name": "IDName00000265",
+      "Grade": 5,
+      "Model": 4000553,
+      "GrowSeconds": 420,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004419",
+      "Crop": "IDName00000252",
+      "Name": "IDName00000252",
+      "Grade": 6,
+      "Model": 4000548,
+      "GrowSeconds": 480,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004421",
+      "Crop": "IDName00000254",
+      "Name": "IDName00000254",
+      "Grade": 7,
+      "Model": 4000548,
+      "GrowSeconds": 540,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004438",
+      "Crop": "IDName00000271",
+      "Name": "Ginseng",
+      "Grade": 7,
+      "Model": 4000553,
+      "GrowSeconds": 540,
+      "Yield": [
+        2,
+        4
+      ]
+    },
+    {
+      "Seed": "IDName00004440",
+      "Crop": "IDName00000273",
+      "Name": "Reishi",
+      "Grade": 8,
+      "Model": 4000550,
+      "GrowSeconds": 600,
+      "Yield": [
+        2,
+        4
+      ]
+    }
+  ],
+  "Farms": [
+    {
+      "Scene": 1024999,
+      "X": 95.1,
+      "Z": 44.26,
+      "Source": "GUESS around the Farmer NPC 2010106"
+    },
+    {
+      "Scene": 1506001,
+      "X": -334.7,
+      "Z": 14.2,
+      "Source": "GUESS by the Cyprus Island camp (quest: \"the farm in Cyprus Island\")"
+    }
+  ]
+}

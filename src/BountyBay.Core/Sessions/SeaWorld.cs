@@ -273,6 +273,7 @@ public sealed class SeaWorld
     {
         long now = Now;
         ShipRules rules = Data.Rules;
+        foreach (ClientSession sailor in _context.World.Sessions.Where(session => session.InWorld && session.AtSea).ToList()) sailor.FishTick(now);
         HashSet<(int, int)> occupied = _context.World.Sessions.Where(session => session.InWorld && session.AtSea).Select(session => (session.Scene, session.Room)).ToHashSet();
         foreach (SeaNpcState ship in _ships.Values.ToList())
         {

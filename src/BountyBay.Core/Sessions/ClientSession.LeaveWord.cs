@@ -72,7 +72,11 @@ public sealed partial class ClientSession
     {
         if (table < LeaveWordFirstFindingTable || table > LeaveWordLastFindingTable) return;
         string kind = LeaveWordFindingKinds[table - LeaveWordFirstFindingTable];
-        SystemMessage($"You have not recorded any {kind} finding yet.", SystemMessageKind.Prompt);
-        Log.Debug(Tag, $"{Name} opens the {kind} findings (table {table})");
+        TableDefinition findings = DiscoveryTables[table - LeaveWordFirstFindingTable];
+        List<int> ids = Discovered(findings.Name);
+        Send(TablePackets.Clear(findings), $"(clear {findings.Name})");
+        if (ids.Count > 0) Send(TablePackets.Rows(findings, ids.Select(id => new object[] { id }).ToList()), $"({findings.Name})");
+        else SystemMessage($"You have not recorded any {kind} finding yet.", SystemMessageKind.Prompt);
+        Log.Debug(Tag, $"{Name} opens the {kind} findings (table {table}, {ids.Count} found)");
     }
 }

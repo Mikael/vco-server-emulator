@@ -100,7 +100,8 @@
       "GoodsType": "GUESS",
       "Level": "GUESS:1",
       "Photo": "GUESS:buyview BaleIcon number (only a .bmp exists in TEXTURES\\prop)",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
     },
     "TradeGoods": true,
     "BaleIcon": 180205,
@@ -160,7 +161,8 @@
       "GoodsType": "GUESS",
       "Level": "GUESS:1",
       "Photo": "GUESS:buyview BaleIcon number (only a .bmp exists in TEXTURES\\prop)",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
     },
     "TradeGoods": true,
     "BaleIcon": 180408,
@@ -188,7 +190,8 @@
       "GoodsType": "GUESS",
       "Level": "GUESS:1",
       "Photo": "GUESS:buyview BaleIcon number (only a .bmp exists in TEXTURES\\prop)",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
     },
     "Text": [
       "It is an Authenticating Article.",
@@ -41849,7 +41852,8 @@
       "ItemType(props)": "EMU",
       "GoodsType(props)": "EMU",
       "Photo": "EMU",
-      "Price": "EMU"
+      "Price": "EMU",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
     },
     "TradeGoods": true,
     "BaleIcon": 180305,
@@ -60306,9 +60310,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004414": {
     "Key": "IDName00004414",
@@ -60318,9 +60324,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004415": {
     "Key": "IDName00004415",
@@ -60342,9 +60350,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004417": {
     "Key": "IDName00004417",
@@ -60366,9 +60376,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004419": {
     "Key": "IDName00004419",
@@ -60378,9 +60390,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004420": {
     "Key": "IDName00004420",
@@ -60402,9 +60416,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 170305
   },
   "IDName00004422": {
     "Key": "IDName00004422",
@@ -60414,9 +60430,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004423": {
     "Key": "IDName00004423",
@@ -60450,9 +60468,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180409
   },
   "IDName00004426": {
     "Key": "IDName00004426",
@@ -60462,9 +60482,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004427": {
     "Key": "IDName00004427",
@@ -60510,9 +60532,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004431": {
     "Key": "IDName00004431",
@@ -60522,9 +60546,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180409
   },
   "IDName00004432": {
     "Key": "IDName00004432",
@@ -60534,9 +60560,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180411
   },
   "IDName00004433": {
     "Key": "IDName00004433",
@@ -60546,9 +60574,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180205
   },
   "IDName00004434": {
     "Key": "IDName00004434",
@@ -60594,9 +60624,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180409
   },
   "IDName00004438": {
     "Key": "IDName00004438",
@@ -60606,9 +60638,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180408
   },
   "IDName00004439": {
     "Key": "IDName00004439",
@@ -60630,9 +60664,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: seed (usable at a farm), icon of the crop"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180402
   },
   "IDName00004441": {
     "Key": "IDName00004441",
@@ -63086,9 +63122,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: harvest by-product (alchemy)"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004615": {
     "Key": "IDName00004615",
@@ -63098,9 +63136,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: harvest by-product (alchemy)"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004616": {
     "Key": "IDName00004616",
@@ -63110,9 +63150,11 @@
     ],
     "Sources": {
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: harvest by-product (alchemy)"
     },
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "IDName00004617": {
     "Key": "IDName00004617",
@@ -214206,13 +214248,15 @@
     "Sources": {
       "Text": "CLIENT:Suspend_Goods.ini[only]/fuzhu41.N",
       "Level": "GUESS:1",
-      "Price": "GUESS:50 per level by ItemType"
+      "Price": "GUESS:50 per level by ItemType",
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
     },
     "Text": [
       "Can be found in the wilderness and desert, can be used as auxiliary materials for fermentation. The higher quality, the better fermentation effect, but also harder to find.",
       "Not saving after leaving the Desire World"
     ],
-    "Price": 50
+    "Price": 50,
+    "Photo": 180401
   },
   "fuzhu42": {
     "Key": "fuzhu42",
@@ -237975,5 +238019,93 @@
       "2. Leaving the Desire World to save, delete after each season"
     ],
     "Price": 50
+  },
+  "IDName00000247": {
+    "Key": "IDName00000247",
+    "Name": "IDName00000247",
+    "Photo": 170305,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000258": {
+    "Key": "IDName00000258",
+    "Name": "IDName00000258",
+    "Photo": 180409,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000249": {
+    "Key": "IDName00000249",
+    "Name": "IDName00000249",
+    "Photo": 170305,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000255": {
+    "Key": "IDName00000255",
+    "Name": "IDName00000255",
+    "Photo": 180401,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000251": {
+    "Key": "IDName00000251",
+    "Name": "IDName00000251",
+    "Photo": 170305,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000263": {
+    "Key": "IDName00000263",
+    "Name": "IDName00000263",
+    "Photo": 180401,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000264": {
+    "Key": "IDName00000264",
+    "Name": "IDName00000264",
+    "Photo": 180409,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000270": {
+    "Key": "IDName00000270",
+    "Name": "IDName00000270",
+    "Photo": 180409,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000265": {
+    "Key": "IDName00000265",
+    "Name": "IDName00000265",
+    "Photo": 180411,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000252": {
+    "Key": "IDName00000252",
+    "Name": "IDName00000252",
+    "Photo": 170305,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
+  },
+  "IDName00000254": {
+    "Key": "IDName00000254",
+    "Name": "IDName00000254",
+    "Photo": 170305,
+    "Sources": {
+      "Planting": "GUESS tools\\bbo\\extract\\planting.py: crop material, icon of a similar buyview good"
+    }
   }
 }

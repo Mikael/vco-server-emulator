@@ -75099,8 +75099,12 @@
     "X": 95.1,
     "Y": 3.43,
     "Z": 44.26,
-    "Greeting": "Good day.",
+    "Greeting": "Seeds for every field! Plant them here around the farm with a hoe in hand, and come back when they are ripe.",
     "Options": [
+      {
+        "Action": "Trade",
+        "Text": "Buy seeds"
+      },
       {
         "Action": "Bye",
         "Text": "Goodbye"
@@ -75116,7 +75120,29 @@
       "Name": "CLIENT namelist npc02477",
       "Position": "GUESS free walkable spot near the scene NPCs (the server kept the real one)",
       "Y": "CLIENT walk_patch.GM",
-      "Model": "GUESS unused preloaded scene model"
+      "Model": "GUESS unused preloaded scene model",
+      "Shop": "GUESS tools\\bbo\\extract\\planting.py: the Farmer sells the seeds and the hoe"
+    },
+    "Shop": {
+      "17": [
+        "IDName00004413",
+        "IDName00004414",
+        "IDName00004426",
+        "IDName00004425",
+        "IDName00004416",
+        "IDName00004422",
+        "IDName00004418",
+        "IDName00004430",
+        "IDName00004433",
+        "IDName00004431",
+        "IDName00004437",
+        "IDName00004432",
+        "IDName00004419",
+        "IDName00004421",
+        "IDName00004438",
+        "IDName00004440",
+        "IDName00003403"
+      ]
     }
   },
   {

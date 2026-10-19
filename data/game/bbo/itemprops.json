@@ -21989,11 +21989,17 @@
   },
   "IDName00004413": {
     "Weight": 1,
-    "Level": 1
+    "Level": 1,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004414": {
     "Weight": 1,
-    "Level": 1
+    "Level": 1,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004415": {
     "Weight": 1,
@@ -22001,7 +22007,10 @@
   },
   "IDName00004416": {
     "Weight": 1,
-    "Level": 1
+    "Level": 2,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004417": {
     "Weight": 1,
@@ -22009,11 +22018,17 @@
   },
   "IDName00004418": {
     "Weight": 1,
-    "Level": 1
+    "Level": 3,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004419": {
     "Weight": 1,
-    "Level": 1
+    "Level": 6,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004420": {
     "Weight": 1,
@@ -22021,11 +22036,17 @@
   },
   "IDName00004421": {
     "Weight": 1,
-    "Level": 1
+    "Level": 7,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004422": {
     "Weight": 1,
-    "Level": 1
+    "Level": 3,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004423": {
     "Weight": 1,
@@ -22037,11 +22058,17 @@
   },
   "IDName00004425": {
     "Weight": 1,
-    "Level": 1
+    "Level": 2,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004426": {
     "Weight": 1,
-    "Level": 1
+    "Level": 2,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004427": {
     "Weight": 1,
@@ -22057,19 +22084,31 @@
   },
   "IDName00004430": {
     "Weight": 1,
-    "Level": 1
+    "Level": 3,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004431": {
     "Weight": 1,
-    "Level": 1
+    "Level": 4,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004432": {
     "Weight": 1,
-    "Level": 1
+    "Level": 5,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004433": {
     "Weight": 1,
-    "Level": 1
+    "Level": 4,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004434": {
     "Weight": 1,
@@ -22085,11 +22124,17 @@
   },
   "IDName00004437": {
     "Weight": 1,
-    "Level": 1
+    "Level": 4,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004438": {
     "Weight": 1,
-    "Level": 1
+    "Level": 7,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004439": {
     "Weight": 1,
@@ -22097,7 +22142,10 @@
   },
   "IDName00004440": {
     "Weight": 1,
-    "Level": 1
+    "Level": 8,
+    "Kind": 0,
+    "ItemType": 12,
+    "GoodsType": "Seed"
   },
   "IDName00004441": {
     "Weight": 1,
@@ -22845,15 +22893,24 @@
   },
   "IDName00004614": {
     "Weight": 1,
-    "Level": 1
+    "Level": 1,
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop"
   },
   "IDName00004615": {
     "Weight": 1,
-    "Level": 1
+    "Level": 4,
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop"
   },
   "IDName00004616": {
     "Weight": 1,
-    "Level": 1
+    "Level": 7,
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop"
   },
   "IDName00004617": {
     "Weight": 1,
@@ -63564,7 +63621,10 @@
   },
   "fuzhu41": {
     "Weight": 1,
-    "Level": 1
+    "Level": 2,
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop"
   },
   "fuzhu42": {
     "Weight": 1,
@@ -69591,5 +69651,82 @@
   "zuanshi004": {
     "Weight": 1,
     "Level": 1
+  },
+  "IDName00000247": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 1
+  },
+  "IDName00000258": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 2
+  },
+  "IDName00000249": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 2
+  },
+  "IDName00000255": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 3
+  },
+  "IDName00000251": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 3
+  },
+  "IDName00000263": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 3
+  },
+  "IDName00000264": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 4
+  },
+  "IDName00000270": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 4
+  },
+  "IDName00000265": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 5
+  },
+  "IDName00000252": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 6
+  },
+  "IDName00000254": {
+    "Kind": 0,
+    "ItemType": 15,
+    "GoodsType": "Crop",
+    "Weight": 1,
+    "Level": 7
   }
 }

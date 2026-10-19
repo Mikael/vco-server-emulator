@@ -40,6 +40,8 @@ public sealed class InteractHandler : IMessageHandler
         if (session.OnLinkClicked(target)) return;
         if (session.BboOceanDockClicked(target)) return;
         if (session.OnGatherNodeClicked(target)) return;
+        if (session.OnOceanHazardClicked(target)) return;
+        if (session.OnCropClicked(target)) return;
 
         if (data.Monsters.TryGetValue(target, out MonsterDefinition? monster) && monster.Scene == session.Scene)
         {
@@ -57,6 +59,7 @@ public sealed class InteractHandler : IMessageHandler
         }
         else if (session.Context.World.Sessions.FirstOrDefault(other => other.ObjectId == target) is { } player)
         {
+            if (session.OnSeaPlayerClicked(player, reader.Seek(0x1e).ReadByte())) return;
             if (!session.OnPlayerClicked(player, reader.Seek(0x1e).ReadByte()))
                 Log.Debug(session.Tag, $"{session.Name} clicked player object {target}");
         }

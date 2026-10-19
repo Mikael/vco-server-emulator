@@ -388,6 +388,7 @@ public sealed partial class ClientSession
         if (UseHurricaneOrder(index, item)) return true;
         if (ItemCatalog.IsTool(item.Name)) return EquipToolFromItems(index, item);
         if (MountCannonItem(index, item)) return true;
+        if (PlantSeed(index, item)) return true;
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);
         if (heal <= 0 && refresh <= 0)

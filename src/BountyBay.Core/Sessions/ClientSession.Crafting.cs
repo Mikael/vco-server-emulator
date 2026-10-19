@@ -101,6 +101,13 @@ public sealed partial class ClientSession
                 TakeFromBag(slot, used, "(crafting material)");
                 needed -= used;
             }
+            foreach (int slot in Cargo.Where(pair => pair.Value.Name == ingredient.Name).Select(pair => pair.Key).Order().ToList())
+            {
+                if (needed <= 0) break;
+                int used = Math.Min(needed, Cargo[slot].Amount);
+                TakeFrom(ViewId.Cargo, slot, used, "(crafting material from the hold)");
+                needed -= used;
+            }
         }
         CraftStore(CraftProduct(recipe));
         SystemMessage("The item was made successfully.");
@@ -132,7 +139,9 @@ public sealed partial class ClientSession
         return room;
     }
 
-    private int CraftCarried(string name) => Items.Values.Where(item => item.Name == name).Sum(item => item.Amount);
+    // Trade goods (Linen, Wool, Ginseng, Reishi, Coffee...) sit in the ship's hold, so it counts as carried too.
+    private int CraftCarried(string name)
+        => Items.Values.Where(item => item.Name == name).Sum(item => item.Amount) + Cargo.Values.Where(item => item.Name == name).Sum(item => item.Amount);
 
     private ItemStack CraftProduct(RecipeDefinition recipe) => new()
     {

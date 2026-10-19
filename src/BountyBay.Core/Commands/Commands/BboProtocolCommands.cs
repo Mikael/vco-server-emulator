@@ -6,7 +6,7 @@ namespace BountyBay.Core.Commands.Commands;
 
 public sealed class BboSeaRouteCommands : ITextCommand
 {
-    public IEnumerable<string> Names => ["LeaveGroup", "GoPort", "OpenMapOnOcean", "CloseMapOnOcean", "EscTeamPos"];
+    public IEnumerable<string> Names => ["LeaveGroup", "GoPort", "OpenMapOnOcean", "CloseMapOnOcean", "EscTeamPos", "SetVisitedSea", "explore"];
 
     public bool Execute(ClientSession session, string[] words)
     {
@@ -17,6 +17,15 @@ public sealed class BboSeaRouteCommands : ITextCommand
                 return true;
             case "GoPort":
                 session.BboGoPort();
+                return true;
+            case "OpenMapOnOcean":
+                session.SendOceanMapMarks();
+                return true;
+            case "SetVisitedSea":
+                session.SetVisitedSea();
+                return true;
+            case "explore":
+                session.Explore();
                 return true;
             default:
                 Log.Debug(session.Tag, $"{session.Name} map notice: {words[0]}");
@@ -80,7 +89,7 @@ public sealed class BboUnsupportedCommands : ITextCommand
         "csCloseChangeFightSoul", "csCloseConsArm", "csCloseConsWarBid", "csCloseFightSoulView", "csCloseImpawn", "csCloseLuckSoul",
         "csCloseNewUpdate", "csCloseRankArmView", "csCloseWakeArmView", "csBonTotemBoxClose", "csArmRebuildClose", "csAideRebuildClose",
         "csFuseClose", "csCancleCFightSoulList", "csCancleChangeFightSoul", "csCancleStartMap", "csCancelTotemReset", "csCancelTrainResult",
-        "exclose", "transclose", "csPVPTipInfo", "csFreshReadyTime", "BYE", "SetVisitedSea",
+        "exclose", "transclose", "csPVPTipInfo", "csFreshReadyTime", "BYE",
         "csAskQueueST", "csAskConWarEntryTimes", "csOpenGlobalView", "csAskBlog", "ShowCopyInfo", "csCheckPhoneVerify", "AskToBattle_No",
     ];
 

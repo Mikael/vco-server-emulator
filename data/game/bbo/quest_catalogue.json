@@ -163,9 +163,9 @@
  },
  "DropReasons": {
   "objective not understood": 338,
-  "objective item/monster not in client name list": 252,
-  "unsupported objective: discovery": 179,
+  "objective item/monster not in client name list": 245,
   "report-to NPC missing in emulator npcs.json (named in the text: client NPC)": 154,
+  "unsupported objective: discovery": 87,
   "report-to NPC missing in emulator npcs.json (named in the text: no client key)": 76,
   "unsupported objective: instance": 51,
   "report-to NPC missing in emulator npcs.json": 42,
@@ -174,9 +174,9 @@
   "summary of alternative quests": 3,
   "unsupported objective: stunt level": 2,
   "unsupported objective: rank": 2,
+  "objective partly unsupported: discovery": 2,
   "unsupported objective: learn skill": 1,
-  "objective partly unsupported: learn skill": 1,
-  "objective partly unsupported: discovery": 1
+  "objective partly unsupported: learn skill": 1
  },
  "Quests": [
   {
@@ -14516,12 +14516,14 @@
    "Objective": "I was talking to Explorer in Sicily Caves with the letter written by Andrews held in my hand.",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [
-    "discovery"
-   ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005377",
+    "Id": 2000440,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "ZXTASKNPC003",
     "Scene": 1508008,
@@ -14529,7 +14531,7 @@
     "Id": 2010171,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 1082,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 5500000,
@@ -14549,8 +14551,14 @@
    },
    "MapMarks": [],
    "TalkLines": 4,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    1082
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 1084,
@@ -14566,8 +14574,8 @@
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
-    "Key": "IDName00005377",
-    "Id": 2000440,
+    "Key": "ZXTASKNPC003",
+    "Id": 2010171,
     "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
@@ -14578,7 +14586,7 @@
     "Id": 2010171,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 1082,
+   "Prerequisite": 1083,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 4900000,
@@ -14598,7 +14606,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    1082
+    1083
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
@@ -22874,12 +22882,14 @@
    "Objective": "Go and find the leader of North Joint Expedition in London dock James.Tiago to sign up for the explore event in North Islands",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [
-    "discovery"
-   ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "NorthNpc0001",
+    "Id": 2010058,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "NorthNpc0001",
     "Scene": 1007002,
@@ -22901,8 +22911,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 1611,
@@ -47085,14 +47097,24 @@
    "Title": "Discovery of Insects",
    "Story": "Rumor has it that some people have found Termites in Athens, the Athens Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Termites at around -315.9 -243.5, and authenticate them, then talk to the Athens Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Termite Discovery Logbook",
+     "Key": "IDName00001195",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47122,8 +47144,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 92403,
@@ -47134,14 +47158,24 @@
    "Title": "Bouquet Attraction",
    "Story": "Rumor has it that some people have found violet near Venice, the Athens Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for violet at around -107.3 -267.2, and authenticate them, then talk to the Athens Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Violet Discovery Logbook",
+     "Key": "IDName00001577",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47149,7 +47183,7 @@
     "Id": 109,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92402,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47165,8 +47199,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92402
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92404,
@@ -47177,14 +47217,24 @@
    "Title": "Ancient Footprints-",
    "Story": "Rumor has it that some people have found Hunter's Gazelle in Algiers, the Athens Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Hunter's Gazelle at around 18.5;-268.5, and authenticate them, then talk to the Athens Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Hunter's Gazelle Discovery Logbook",
+     "Key": "IDName00001113",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47192,7 +47242,7 @@
     "Id": 109,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92403,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47208,8 +47258,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92403
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92405,
@@ -47220,14 +47276,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found pangolins near Black Sea, the Athens Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for pangolins near Black Sea at around -514.8;-353.5, and authenticate them, then talk to the Athens Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pangolin Discovery Logbook",
+     "Key": "IDName00001214",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47235,7 +47301,7 @@
     "Id": 109,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92404,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47251,8 +47317,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92404
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92406,
@@ -47263,14 +47335,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found African Ostriches near Tripoli, the Athens Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for African Ostriches near Tripoli at around -106.5;-148.0, and authenticate them, then talk to the Athens Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "African Ostrich Discovery Logbook",
+     "Key": "IDName00001095",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47278,7 +47360,7 @@
     "Id": 109,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92405,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47300,8 +47382,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92405
+   ],
+   "AutoAccept": true,
+   "Chain": "series (same title, file order)"
   },
   {
    "Id": 92407,
@@ -47312,14 +47400,38 @@
    "Title": "Hero's Test",
    "Story": "The Alliance needs someone to search for the specific locations of Athens, Istanbul, Beirut and Alexandria, and to bring back information about the Apollo Sanctuary, Olympia, the Clove and the Giraffe. If you could do this, it would certainly prove your mettle to the Alliance. Are you up for it?",
    "Objective": "Please try to find out the 4 Ports: Athens, Istanbul, Beirut and Alexandria. Then find and authenticate the Temple of Apollo, Olympia, Clove and Giraffe, after that, talk to the Athens Exploration Alliance Master.",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Olympia Discovery Logbook",
+     "Key": "IDName00002024",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Clove Discovery Logbook",
+     "Key": "IDName00001506",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Giraffe Discovery Logbook",
+     "Key": "IDName00001077",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 109,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1024001,
@@ -47327,7 +47439,7 @@
     "Id": 109,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92406,
    "Reward": {
     "Gold": 50000,
     "ProfessionExp": 0,
@@ -47343,8 +47455,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92406
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92601,
@@ -47441,14 +47559,24 @@
    "Title": "Historical Miniature",
    "Story": "Rumor has it that some people have found Relic of the Colossus of Rhodes near Athens, the Istanbul Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Relic of the Colossus of Rhodes near Athens at around -220.9;-261.5, and authenticate them, then talk to the Istanbul Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Relic of the Colossus of Rhodes Discovery Logbook",
+     "Key": "IDName00002088",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000513,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1026002,
@@ -47478,8 +47606,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 92603,
@@ -47533,14 +47663,24 @@
    "Title": "Ancient Trail",
    "Story": "Rumor has it that some people have found Liverwort near Black Sea, the Istanbul Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Liverwort near Black Sea at around -445.3;-333.3, and authenticate them, then talk to the Istanbul Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Liverwort Discovery Logbook",
+     "Key": "IDName00001580",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000513,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1026002,
@@ -47548,7 +47688,7 @@
     "Id": 2000513,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92602,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47564,8 +47704,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92602
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92605,
@@ -47576,14 +47722,24 @@
    "Title": "Natural Footprints",
    "Story": "Rumor has it that some people have found Eisriesenwelt Cave near Corsica Island, the Istanbul Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Eisriesenwelt Cave near Corsica Island at around 24.5;-370.5, and authenticate them, then talk to the Istanbul Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Eisriesenwelt Cave Discovery Logbook",
+     "Key": "IDName00000932",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000513,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1026002,
@@ -47591,7 +47747,7 @@
     "Id": 2000513,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92604,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47607,8 +47763,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92604
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92606,
@@ -47619,14 +47781,24 @@
    "Title": "Natural Footprints",
    "Story": "Rumor has it that some people have found Auvergne volcanic area near Barcelona, the Istanbul Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Auvergne volcanic area near Barcelona, at around 102.9;-345.5, and authenticate them, then talk to the Istanbul Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Auvergne volcanic area Discovery Logbook",
+     "Key": "IDName00000934",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000513,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1026002,
@@ -47634,7 +47806,7 @@
     "Id": 2000513,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92605,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47650,8 +47822,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92605
+   ],
+   "AutoAccept": true,
+   "Chain": "series (same title, file order)"
   },
   {
    "Id": 92607,
@@ -47662,14 +47840,38 @@
    "Title": "Hero's Test",
    "Story": "The Alliance needs someone to search for the specific locations of Athens, Istanbul, Beirut and Alexandria, and to bring back information about the Apollo Sanctuary, Olympia, the Clove and the Giraffe. If you could do this, it would certainly prove your mettle to the Alliance. Are you up for it?",
    "Objective": "Please try to find out the 4 Ports: Athens, Istanbul, Beirut and Alexandria. Then find and authenticate the Temple of Apollo, Olympia, Clove and Giraffe, after that, talk to the Istanbul Exploration Alliance Master.",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Olympia Discovery Logbook",
+     "Key": "IDName00002024",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Clove Discovery Logbook",
+     "Key": "IDName00001506",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Giraffe Discovery Logbook",
+     "Key": "IDName00001077",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000513,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1026002,
@@ -47677,7 +47879,7 @@
     "Id": 2000513,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92606,
    "Reward": {
     "Gold": 50000,
     "ProfessionExp": 0,
@@ -47693,8 +47895,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92606
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93001,
@@ -47791,14 +47999,24 @@
    "Title": "unveil the mystic old--aged veil",
    "Story": "Rumor has it that some people have found the Ancient City of Aleppo near Beirut, the Beirut Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Ancient City of Aleppo near Beirut at around \"-414.2;-153.5\", and authenticate them, then talk to the Beirut Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Ancient City of Aleppo Discovery Logbook",
+     "Key": "IDName00002017",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000543,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1030002,
@@ -47822,8 +48040,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93003,
@@ -47883,14 +48103,24 @@
    "Title": "Hero's Proceeding",
    "Story": "Rumor has it that some people have found the Vesuvius near Sicily Adventure Island, the Beirut Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Vesuvius near Sicily Adventure Island at around \"-87.5;-272.5\", and authenticate them, then talk to the Beirut Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Vesuvius Discovery Logbook",
+     "Key": "IDName00000960",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000543,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1030002,
@@ -47898,7 +48128,7 @@
     "Id": 2000543,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93002,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47914,8 +48144,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93002
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93005,
@@ -47926,14 +48162,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found Baboons between Libya and Algiers, the Beirut Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Baboons between Libya and Algiers at around \"17.5, -253.5\", and authenticate them, then talk to the Beirut Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Baboon Discovery Logbook",
+     "Key": "IDName00001098",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000543,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1030002,
@@ -47941,7 +48187,7 @@
     "Id": 2000543,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93004,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -47957,8 +48203,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93004
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93006,
@@ -47969,14 +48221,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found white rhinoceros near Tripoli, the Beirut Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for white rhinoceros near Tripoli around '-110.5;-144.6, and authenticate them, then talk to the Beirut Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "White rhinoceros Discovery Logbook",
+     "Key": "IDName00001068",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000543,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1030002,
@@ -47984,7 +48246,7 @@
     "Id": 2000543,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93005,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -48006,8 +48268,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93005
+   ],
+   "AutoAccept": true,
+   "Chain": "series (same title, file order)"
   },
   {
    "Id": 93007,
@@ -48018,14 +48286,38 @@
    "Title": "Hero's Test",
    "Story": "The Alliance needs someone to search for the specific locations of Athens, Istanbul, Beirut and Alexandria, and to bring back information about the Apollo Sanctuary, Olympia, the Clove and the Giraffe. If you could do this, it would certainly prove your mettle to the Alliance. Are you up for it?",
    "Objective": "Please try to find out the 4 Ports: Athens, Istanbul, Beirut and Alexandria. Then find and authenticate the Temple of Apollo, Olympia, Clove and Giraffe, after that, talk to the Beirut Exploration Alliance Master.",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Olympia Discovery Logbook",
+     "Key": "IDName00002024",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Clove Discovery Logbook",
+     "Key": "IDName00001506",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Giraffe Discovery Logbook",
+     "Key": "IDName00001077",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000543,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1030002,
@@ -48033,7 +48325,7 @@
     "Id": 2000543,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93006,
    "Reward": {
     "Gold": 50000,
     "ProfessionExp": 0,
@@ -48049,8 +48341,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93006
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93201,
@@ -48061,14 +48359,24 @@
    "Title": "Test of Will",
    "Story": "Rumor has it that some people have found African elephant between Tripoli and Alexandria, the Alexandria Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for African elephant between Tripoli and Alexandria around -215.5;-157.7, and authenticate them, then talk to the Alexandria Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "African Elephant Discovery Logbook",
+     "Key": "IDName00001096",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032002,
@@ -48092,8 +48400,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93209,
@@ -48147,14 +48457,24 @@
    "Title": "Discovery of Insects",
    "Story": "Rumor has it that some people have found Snails between Venice and Athens, the Alexandria Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Snails between Venice and Athens around -382.0;-234.5, and authenticate them, then talk to the Alexandria Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Snail Discovery Logbook",
+     "Key": "IDName00001197",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032002,
@@ -48162,7 +48482,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93201,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -48184,8 +48504,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93201
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93203,
@@ -48239,14 +48565,24 @@
    "Title": "Ancient Footprints-",
    "Story": "Rumor has it that some people have found baobab near Tripoli, the Alexandria Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for baobab near Tripoli around -40.9;-186.8, and authenticate them, then talk to the Alexandria Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Baobab Discovery Logbook",
+     "Key": "IDName00001518",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032002,
@@ -48254,7 +48590,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93202,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -48270,8 +48606,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93202
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93205,
@@ -48282,14 +48624,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found Sable Antelope near Tripoli, the Alexandria Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Sable Antelope near Tripoli around -4.5;-198.0, and authenticate them, then talk to the Alexandria Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Sable Antelope Discovery Logbook",
+     "Key": "IDName00001089",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032002,
@@ -48297,7 +48649,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93204,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -48313,8 +48665,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93204
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93206,
@@ -48325,14 +48683,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found Gorilla near Tripoli, the Alexandria Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Gorilla near Tripoli around 114.8;-248.5, and authenticate them, then talk to the Alexandria Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Gorilla Discovery Logbook",
+     "Key": "IDName00001084",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032002,
@@ -48340,7 +48708,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93205,
    "Reward": {
     "Gold": 6000,
     "ProfessionExp": 0,
@@ -48356,8 +48724,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93205
+   ],
+   "AutoAccept": true,
+   "Chain": "series (same title, file order)"
   },
   {
    "Id": 93207,
@@ -48368,14 +48742,38 @@
    "Title": "Hero's Test",
    "Story": "The Alliance needs someone to search for the specific locations of Athens, Istanbul, Beirut and Alexandria, and to bring back information about the Apollo Sanctuary, Olympia, the Clove and the Giraffe. If you could do this, it would certainly prove your mettle to the Alliance. Are you up for it?",
    "Objective": "Please try to find out the 4 Ports: Athens, Istanbul, Beirut and Alexandria. Then find and authenticate the Temple of Apollo, Olympia, Clove and Giraffe, after that, talk to the Alexandria Exploration Alliance Master.",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Olympia Discovery Logbook",
+     "Key": "IDName00002024",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Clove Discovery Logbook",
+     "Key": "IDName00001506",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
+     "Name": "Giraffe Discovery Logbook",
+     "Key": "IDName00001077",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000571,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1032001,
@@ -48383,7 +48781,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93206,
    "Reward": {
     "Gold": 50000,
     "ProfessionExp": 0,
@@ -48399,8 +48797,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93206
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91801,
@@ -48601,14 +49005,24 @@
    "Title": "City Site of Baalbek Found",
    "Story": "Rumor has it that some people have found Baalbek near Cyprus Island, the Genoa Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Baalbek near Cyprus Island at around \"-430.2;-190.0\", and authenticate them, then talk to the Genoa Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Baalbek Discovery Logbook",
+     "Key": "IDName00002026",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000415,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1018002,
@@ -48632,8 +49046,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 91806,
@@ -48644,14 +49060,24 @@
    "Title": "The finding of Civilization",
    "Story": "Rumor has it that some people have found the Leaning Tower of Pisa near Sardinia, the Genoa Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Leaning Tower of Pisa near Sardinia at around \"- 88.8;-305.0\", and authenticate them, then talk to the Genoa Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "The Leaning Tower of Pisa Discovery Logbook",
+     "Key": "IDName00002031",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000415,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1018002,
@@ -48659,7 +49085,7 @@
     "Id": 2000415,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 91805,
    "Reward": {
     "Gold": 8000,
     "ProfessionExp": 0,
@@ -48675,8 +49101,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    91805
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91807,
@@ -48920,14 +49352,24 @@
    "Title": "The finding of Marmots",
    "Story": "Rumor has it that some people have found Marmots near Barcelona, the Venice Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Marmots near Barcelona at around \"143.1;-306.3\", and authenticate them, then talk to the Venice Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Marmot Discovery Logbook",
+     "Key": "IDName00001183",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000455,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1022002,
@@ -48957,8 +49399,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 92206,
@@ -48969,14 +49413,24 @@
    "Title": "The finding of Civilization",
    "Story": "Rumor has it that some people have found the Colosseum of Rome near Venice, the Venice Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Colosseum of Rome near Venice at around \"-55.5;-375.5\", and authenticate them, then talk to the Venice Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "The Colosseum of Rome Discovery Logbook",
+     "Key": "IDName00002089",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000455,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1022002,
@@ -48984,7 +49438,7 @@
     "Id": 2000455,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 92205,
    "Reward": {
     "Gold": 8000,
     "ProfessionExp": 0,
@@ -49000,8 +49454,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    92205
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 92207,
@@ -49159,14 +49619,24 @@
    "Title": "The finding of Sloth Bears",
    "Story": "Rumor has it that some people have found Sloth Bears near Mallorca Island, the Tripoli Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Sloth Bears near Mallorca Island at around \"126.7;-294.5\", and authenticate them, then talk to the Tripoli Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Sloth bear Discovery Logbook",
+     "Key": "IDName00001126",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000455,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1022002,
@@ -49174,7 +49644,7 @@
     "Id": 2000455,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93302,
    "Reward": {
     "Gold": 8000,
     "ProfessionExp": 0,
@@ -49190,8 +49660,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93302
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93304,
@@ -49245,14 +49721,24 @@
    "Title": "The finding of the European laniidae",
    "Story": "Rumor has it that some people have found European Laniidaes near Athens, the Tripoli Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for European Laniidaes near Athens at around \"-226.6;-255.5\", and authenticate them, then talk to the Tripoli Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "European laniidae Discovery Logbook",
+     "Key": "IDName00001216",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000600,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1033002,
@@ -49260,7 +49746,7 @@
     "Id": 2000600,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93303,
    "Reward": {
     "Gold": 8000,
     "ProfessionExp": 0,
@@ -49276,8 +49762,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93303
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93306,
@@ -49288,14 +49780,24 @@
    "Title": "The finding of Civilization",
    "Story": "Rumor has it that some people have found the Boyana Church near The Black Sea, the Tripoli Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Boyana Church near The Black Sea at around \"-307.7;- 303.7\", and authenticate them, then talk to the Tripoli Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Boyana Church Discovery Logbook",
+     "Key": "IDName00002035",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000600,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1033002,
@@ -49303,7 +49805,7 @@
     "Id": 2000600,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93305,
    "Reward": {
     "Gold": 8000,
     "ProfessionExp": 0,
@@ -49319,8 +49821,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93305
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93307,
@@ -49601,14 +50109,24 @@
    "Title": "Heroic Feats",
    "Story": "Rumor has it that some people have found the European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, the Lisbon Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, authenticate them, then talk to the Lisbon Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "European Beech Discovery Logbook",
+     "Key": "IDName00001548",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000301,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1011002,
@@ -49643,8 +50161,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 91201,
@@ -49672,7 +50192,7 @@
     "Id": 2000338,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 91106,
    "Reward": {
     "Gold": 30000,
     "ProfessionExp": 0,
@@ -49691,7 +50211,11 @@
    "Emitted": true,
    "DropReason": "",
    "Alternatives": [],
-   "AutoAccept": false
+   "PrerequisiteAny": [
+    91106
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91202,
@@ -49882,14 +50406,24 @@
    "Title": "Heroic Feats",
    "Story": "Rumor has it that some people have found the European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, the Seville Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, authenticate them, then talk to the Seville Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "European Beech Discovery Logbook",
+     "Key": "IDName00001548",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000338,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1012002,
@@ -49919,8 +50453,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 91601,
@@ -50031,10 +50567,10 @@
    "Objective": "Please try to find a kind of butterfly named Mitchell Marsh Satyr near Bordeaux at around \"195.5;-378.0\", and authenticate them, then talk to the Barcelona Exploration Alliance Master",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "kind of butterfly named Mitchell Marsh Satyr"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": {
@@ -50061,7 +50597,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 91604,
@@ -50117,10 +50653,10 @@
    "Objective": "Please try to find a kind of beautiful fish called Cichlid in sea area of West Africa, at around \"123.0;344.4\", and authenticate them, then talk to the Barcelona Exploration Alliance Master",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "kind of beautiful fish called Cichlid"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": {
@@ -50153,7 +50689,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 91606,
@@ -50403,14 +50939,24 @@
    "Title": "Study of Architecture",
    "Story": "Rumor has it that some people have found the Defence Line of Amsterdam near Amsterdam's coastal areas, the Algiers Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Defence Line of Amsterdam near Amsterdam's coastal areas(around 77.7, -560.0), authenticate them, then talk to the Algiers Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Defence Line of Amsterdam Discovery Logbook",
+     "Key": "IDName00002018",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000621,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1034002,
@@ -50434,8 +50980,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93406,
@@ -50446,14 +50994,24 @@
    "Title": "Heroic Feats",
    "Story": "Rumor has it that some people have found the European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, the Algiers Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for European Beech, Burgos Cathedral, moose and Naja haje in the four cities of Lisbon, Seville,Barcelona and Algiers, authenticate them, then talk to the Algiers Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "European Beech Discovery Logbook",
+     "Key": "IDName00001548",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000621,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1034002,
@@ -50461,7 +51019,7 @@
     "Id": 2000621,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93405,
    "Reward": {
     "Gold": 150000,
     "ProfessionExp": 0,
@@ -50483,8 +51041,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93405
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90101,
@@ -50495,14 +51059,24 @@
    "Title": "Surtsey Island Discovery",
    "Story": "Rumor has it that some people have found the Surtsey in the nearby areas of Iceland, the Oslo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Surtsey in the nearby areas of Iceland, authenticate them, then talk to the Oslo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Surtsey Discovery Logbook",
+     "Key": "IDName00000956",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000026,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1001002,
@@ -50526,8 +51100,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 90102,
@@ -50538,14 +51114,24 @@
    "Title": "European Horse Chestnut Discovery",
    "Story": "Rumor has it that some people have found the European Horse Chestnut in the northern island of Amsterdam, the Oslo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the European Horse Chestnut in the northern island of Amsterdam, authenticate them, then talk to the Oslo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "European horse chestnut Discovery Logbook",
+     "Key": "IDName00001575",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000026,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1001002,
@@ -50553,7 +51139,7 @@
     "Id": 2000026,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90101,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -50569,8 +51155,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90101
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90103,
@@ -50581,14 +51173,24 @@
    "Title": "Ferocious Animals Discovery",
    "Story": "Rumor has it that some people have found the Nile crocodile in the nearby areas of the Nile River in north Africa, the Oslo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Nile crocodile in the nearby areas of the Nile River in north Africa, authenticate them, then talk to the Oslo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Nile crocodile Discovery Logbook",
+     "Key": "IDName00001146",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000026,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1001002,
@@ -50596,7 +51198,7 @@
     "Id": 2000026,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90102,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -50612,8 +51214,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90102
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90104,
@@ -50624,14 +51232,24 @@
    "Title": "Preparation for Winter",
    "Story": "Rumor has it that some people have found the Peregrine falcon in Sardinia, the Oslo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Peregrine falcon in Sardinia, authenticate them, then talk to the Oslo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Peregrine Falcon Discovery Logbook",
+     "Key": "IDName00001188",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000026,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1001002,
@@ -50639,7 +51257,7 @@
     "Id": 2000026,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90103,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -50655,8 +51273,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90103
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90105,
@@ -50667,14 +51291,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found the Peregrine falcon in Sardinia, the Oslo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Peregrine falcon in Sardinia, authenticate them, then talk to the Oslo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Peregrine Falcon Discovery Logbook",
+     "Key": "IDName00001188",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000026,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1001002,
@@ -50682,7 +51316,7 @@
     "Id": 2000026,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90104,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -50698,8 +51332,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90104
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90301,
@@ -50839,14 +51479,24 @@
    "Title": "Rare Plants Discovery",
    "Story": "Rumor has it that some people have found the Taiwania flousiana Gaussen in Ireland, the Hamburg Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Taiwania flousiana Gaussen in Ireland, authenticate them, then talk to the Hamburg Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Taiwania flousiana Gaussen Discovery Logbook",
+     "Key": "IDName00001559",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000159,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1003002,
@@ -50870,8 +51520,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 90305,
@@ -50882,14 +51534,24 @@
    "Title": "Collecting Goods",
    "Story": "Rumor has it that some people have found the Rubber plant and Palm along the coastline of Western Africa in northern Luanda, the Hamburg Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Rubber plant and Palm along the coastline of Western Africa in northern Luanda, authenticate them, then talk to the Hamburg Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Rubber plant Discovery Logbook",
+     "Key": "IDName00001562",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000159,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1003002,
@@ -50897,7 +51559,7 @@
     "Id": 2000159,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90304,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -50919,8 +51581,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90304
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90401,
@@ -50931,14 +51599,24 @@
    "Title": "State Bird Protection",
    "Story": "Rumor has it that some people have found the Gyrfalcon, the national bird of Iceland, the Reykjavik Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Gyrfalcon, the national bird of Iceland, authenticate them, then talk to the Reykjavik Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Gyrfalcon Discovery Logbook",
+     "Key": "IDName00001066",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000185,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1004002,
@@ -50946,7 +51624,7 @@
     "Id": 2000185,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90305,
    "Reward": {
     "Gold": 24000,
     "ProfessionExp": 0,
@@ -50962,8 +51640,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90305
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90402,
@@ -50974,14 +51658,24 @@
    "Title": "Nature Discovery",
    "Story": "Rumor has it that some people have found the Pinus sylvestris in South-western of Athens, the Reykjavik Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Pinus sylvestris in South-western of Athens, authenticate them, then talk to the Reykjavik Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pinus sylvestris Discovery Logbook",
+     "Key": "IDName00001542",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000185,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1004002,
@@ -50989,7 +51683,7 @@
     "Id": 2000185,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90401,
    "Reward": {
     "Gold": 24000,
     "ProfessionExp": 0,
@@ -51005,8 +51699,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90401
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90403,
@@ -51017,14 +51717,24 @@
    "Title": "The Discovery Of European Red Pine",
    "Story": "Rumor has it that some people have found the Pinus sylvestris in South-western of Athens, the Reykjavik Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Pinus sylvestris in South-western of Athens, authenticate them, then talk to the Reykjavik Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pinus sylvestris Discovery Logbook",
+     "Key": "IDName00001542",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000185,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1004002,
@@ -51032,7 +51742,7 @@
     "Id": 2000185,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90402,
    "Reward": {
     "Gold": 24000,
     "ProfessionExp": 0,
@@ -51048,8 +51758,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90402
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90404,
@@ -51146,14 +51862,24 @@
    "Title": "Ancient Remains",
    "Story": "Rumor has it that some people have found the Ruins of the Temple of Artemis in the nearby areas of Athens, the London Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Ruins of the Temple of Artemis in the nearby areas of Athens, authenticate them, then talk to the London Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Ruins of the Temple of Artemis Discovery Logbook",
+     "Key": "IDName00002020",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000215,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1007001,
@@ -51177,8 +51903,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 90702,
@@ -51189,14 +51917,24 @@
    "Title": "Pulse of Life",
    "Story": "Rumor has it that some people have found the South African Springbok in Southern Luanda, the London Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the South African Springbok in Southern Luanda, authenticate them, then talk to the London Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "South African Springbok Discovery Logbook",
+     "Key": "IDName00001144",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000215,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1007001,
@@ -51204,7 +51942,7 @@
     "Id": 2000215,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90701,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51220,8 +51958,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90701
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90703,
@@ -51232,14 +51976,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found the Ovis musimons in the south of Italia Peninsula, the London Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Ovis musimons in the south of Italia Peninsula, authenticate them, then talk to the London Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Ovis Musimons Discovery Logbook",
+     "Key": "IDName00001143",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000215,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1007001,
@@ -51247,7 +52001,7 @@
     "Id": 2000215,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90702,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51263,8 +52017,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90702
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90704,
@@ -51275,14 +52035,24 @@
    "Title": "Vessel on Dessert",
    "Story": "Rumor has it that some people have found the Dromedary Camel in the nearby areas of Alexandria, the London Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Dromedary Camel in the nearby areas of Alexandria, authenticate them, then talk to the London Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Dromedary Camel Discovery Logbook",
+     "Key": "IDName00001135",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000215,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1007001,
@@ -51290,7 +52060,7 @@
     "Id": 2000215,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90703,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51306,8 +52076,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90703
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90705,
@@ -51318,14 +52094,24 @@
    "Title": "Great Discovery",
    "Story": "Rumor has it that some people have found the Budapest Palace in Hungary which is in South-eastern Venice, the London Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Budapest Palace in Hungary which is in South-eastern Venice, authenticate them, then talk to the London Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Budapest Palace Discovery Logbook",
+     "Key": "IDName00002037",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000215,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1007001,
@@ -51333,7 +52119,7 @@
     "Id": 2000215,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90704,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51349,8 +52135,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90704
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90801,
@@ -51361,14 +52153,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found the Amsterdam Albatross in the nearby areas of Amsterdam, the Amsterdam Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Amsterdam Albatross in the nearby areas of Amsterdam, authenticate them, then talk to the Amsterdam Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Amsterdam Albatross Discovery Logbook",
+     "Key": "IDName00001211",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1008001,
@@ -51376,7 +52178,7 @@
     "Id": 2000238,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90705,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51392,8 +52194,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90705
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90802,
@@ -51404,14 +52212,24 @@
    "Title": "Birds Discovery",
    "Story": "Rumor has it that some people have found the marten in the east of Athens, the Amsterdam Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the marten in the east of Athens, authenticate them, then talk to the Amsterdam Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Marten Discovery Logbook",
+     "Key": "IDName00001169",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1008001,
@@ -51419,7 +52237,7 @@
     "Id": 2000238,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90801,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51435,8 +52253,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90801
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90803,
@@ -51447,14 +52271,24 @@
    "Title": "Ancient Civilization",
    "Story": "Rumor has it that some people have found the Owl in Lisbon, the Amsterdam Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Owl in Lisbon, authenticate them, then talk to the Amsterdam Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Owl Discovery Logbook",
+     "Key": "IDName00001200",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1008001,
@@ -51462,7 +52296,7 @@
     "Id": 2000238,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90802,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51478,8 +52312,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90802
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90804,
@@ -51490,14 +52330,24 @@
    "Title": "Mice Plague Treatment",
    "Story": "Rumor has it that some people have found the Owl in Lisbon, the Amsterdam Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Owl in Lisbon, authenticate them, then talk to the Amsterdam Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Owl Discovery Logbook",
+     "Key": "IDName00001200",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1008001,
@@ -51505,7 +52355,7 @@
     "Id": 2000238,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90803,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51521,8 +52371,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90803
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 90805,
@@ -51533,14 +52389,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found the Guineafowl in North-western Athens, the Amsterdam Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Guineafowl in North-western Athens, authenticate them, then talk to the Amsterdam Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Guineafowl Discovery Logbook",
+     "Key": "IDName00001173",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1008001,
@@ -51548,7 +52414,7 @@
     "Id": 2000238,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90804,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51564,8 +52430,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90804
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91001,
@@ -51576,14 +52448,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found the Small Lemur in the nearby areas of Alexandria, the Bordeaux Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Small Lemur in the nearby areas of Alexandria, authenticate them, then talk to the Bordeaux Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Small lemur Discovery Logbook",
+     "Key": "IDName00001155",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000238,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1010001,
@@ -51591,7 +52473,7 @@
     "Id": 2000267,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 90805,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51607,8 +52489,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    90805
+   ],
+   "AutoAccept": true,
+   "Chain": "series (same title, file order)"
   },
   {
    "Id": 91002,
@@ -51619,14 +52507,24 @@
    "Title": "Opera Effect",
    "Story": "Rumor has it that some people have found the Whistling Swan in North-western Stockholm, the Bordeaux Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Whistling Swan in North-western Stockholm, authenticate them, then talk to the Bordeaux Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Whistling Swan Discovery Logbook",
+     "Key": "IDName00001156",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000267,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1010001,
@@ -51634,7 +52532,7 @@
     "Id": 2000267,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 91001,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51650,8 +52548,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    91001
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91003,
@@ -51705,14 +52609,24 @@
    "Title": "Mystic Temple",
    "Story": "Rumor has it that some people have found the Erechtheum in the area between Athens and Istanbul, the Bordeaux Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Erechtheum in the area between Athens and Istanbul, authenticate them, then talk to the Bordeaux Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Erechtheum Discovery Logbook",
+     "Key": "IDName00002050",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000267,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1010001,
@@ -51720,7 +52634,7 @@
     "Id": 2000267,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 91002,
    "Reward": {
     "Gold": 18000,
     "ProfessionExp": 0,
@@ -51736,8 +52650,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    91002
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 91005,
@@ -51791,14 +52711,24 @@
    "Title": "Amazing Nature",
    "Story": "Rumor has it that some people have found the Strokkur Geyser in Iceland, the Stockholm Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Strokkur Geyser in Iceland, authenticate them, then talk to the Stockholm Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Strokkur Geyser Discovery Logbook",
+     "Key": "IDName00000955",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000644,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1035002,
@@ -51822,8 +52752,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93502,
@@ -51920,14 +52852,24 @@
    "Title": "Strange Animal",
    "Story": "Rumor has it that some people have found elks between Tripoli and Alexandria, the Stockholm Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for elks between Tripoli and Alexandria, authenticate them, then talk to the Stockholm Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Elk Discovery Logbook",
+     "Key": "IDName00001141",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000644,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1035002,
@@ -51951,8 +52893,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93505,
@@ -52049,14 +52993,24 @@
    "Title": "The Most Poisonous Plant",
    "Story": "Rumor has it that some people have found Antiaris toxicarias in Yunnan, south of China, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Antiaris toxicarias in Yunnan, south of China, authenticate them, then talk to the Madeira Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Antiaris toxicaria Discovery Logbook",
+     "Key": "IDName00001702",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000666,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1036002,
@@ -52080,8 +53034,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93604,
@@ -52092,14 +53048,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found White Flag Dolphins in Philippine archipelago in the middle and lower reaches of China Yangtse River, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for White Flag Dolphins in Philippine archipelago in the middle and lower reaches of China Yangtse River, authenticate them, then talk to the Madeira Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "White Flag Dolphin Discovery Logbook",
+     "Key": "IDName00001065",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000666,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1036002,
@@ -52107,7 +53073,7 @@
     "Id": 2000666,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93602,
    "Reward": {
     "Gold": 48000,
     "ProfessionExp": 0,
@@ -52123,8 +53089,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93602
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93605,
@@ -52152,7 +53124,7 @@
     "Id": 2000571,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93604,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 0,
@@ -52169,7 +53141,11 @@
    "Emitted": true,
    "DropReason": "",
    "Alternatives": [],
-   "AutoAccept": false
+   "PrerequisiteAny": [
+    93604
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93208,
@@ -52231,14 +53207,12 @@
    "Objective": "Try to find the Taishang Mountain in China's Shandong province, and then talk to the Las Palmas Adventurer Alliance Master after it is authenticated",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
+   "Unsupported": [
+    "discovery"
+   ],
    "Unresolved": [],
-   "Giver": {
-    "Key": "IDName00005231",
-    "Id": 2000687,
-    "Source": "GUESS report-to NPC"
-   },
-   "GiverSource": "GUESS report-to NPC",
+   "Giver": null,
+   "GiverSource": "",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1037002,
@@ -52246,7 +53220,7 @@
     "Id": 2000687,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 93605,
+   "Prerequisite": 0,
    "Reward": {
     "Gold": 48000,
     "ProfessionExp": 0,
@@ -52262,14 +53236,8 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": true,
-   "DropReason": "",
-   "Alternatives": [],
-   "PrerequisiteAny": [
-    93605
-   ],
-   "AutoAccept": false,
-   "Chain": "GUESS next quest in file order"
+   "Emitted": false,
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 93702,
@@ -52282,14 +53250,12 @@
    "Objective": "Try to find Chengde Imperial Summer Resort in China's northeast Tianjin Province, and then talk to the Las Palmas Adventurer Alliance Master after it is authenticated",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
+   "Unsupported": [
+    "discovery"
+   ],
    "Unresolved": [],
-   "Giver": {
-    "Key": "IDName00005231",
-    "Id": 2000687,
-    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
-   },
-   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
+   "Giver": null,
+   "GiverSource": "",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1037002,
@@ -52297,7 +53263,7 @@
     "Id": 2000687,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 93701,
+   "Prerequisite": 0,
    "Reward": {
     "Gold": 48000,
     "ProfessionExp": 0,
@@ -52313,14 +53279,8 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": true,
-   "DropReason": "",
-   "Alternatives": [],
-   "PrerequisiteAny": [
-    93701
-   ],
-   "AutoAccept": true,
-   "Chain": "series (same title, file order)"
+   "Emitted": false,
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 93703,
@@ -52333,14 +53293,12 @@
    "Objective": "Try to find Fontainebleaus on the France seacoast, and then talk to the Las Palmas Adventurer Alliance Master after it is authenticated",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
+   "Unsupported": [
+    "discovery"
+   ],
    "Unresolved": [],
-   "Giver": {
-    "Key": "IDName00005231",
-    "Id": 2000687,
-    "Source": "GUESS report-to NPC"
-   },
-   "GiverSource": "GUESS report-to NPC",
+   "Giver": null,
+   "GiverSource": "",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1037002,
@@ -52348,7 +53306,7 @@
     "Id": 2000687,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 93702,
+   "Prerequisite": 0,
    "Reward": {
     "Gold": 48000,
     "ProfessionExp": 0,
@@ -52364,14 +53322,8 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": true,
-   "DropReason": "",
-   "Alternatives": [],
-   "PrerequisiteAny": [
-    93702
-   ],
-   "AutoAccept": false,
-   "Chain": "GUESS next quest in file order"
+   "Emitted": false,
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 93704,
@@ -52384,14 +53336,12 @@
    "Objective": "Try to find Grey Bear Palms, and then give 10 of them to the Las Palmas Adventurer Alliance Master after it is authenticated",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [],
+   "Unsupported": [
+    "discovery"
+   ],
    "Unresolved": [],
-   "Giver": {
-    "Key": "IDName00005231",
-    "Id": 2000687,
-    "Source": "GUESS report-to NPC"
-   },
-   "GiverSource": "GUESS report-to NPC",
+   "Giver": null,
+   "GiverSource": "",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1037002,
@@ -52399,7 +53349,7 @@
     "Id": 2000687,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 93703,
+   "Prerequisite": 0,
    "Reward": {
     "Gold": 48000,
     "ProfessionExp": 0,
@@ -52421,14 +53371,8 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": true,
-   "DropReason": "",
-   "Alternatives": [],
-   "PrerequisiteAny": [
-    93703
-   ],
-   "AutoAccept": false,
-   "Chain": "GUESS next quest in file order"
+   "Emitted": false,
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 93801,
@@ -52439,14 +53383,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found Oriental White Cranes in China's northeast Tianjin Province, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Oriental White Cranes in China's northeast Tianjin Province, authenticate them, then talk to the Dakar Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "White crane Discovery Logbook",
+     "Key": "IDName00001154",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000706,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1038002,
@@ -52470,8 +53424,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93802,
@@ -52482,14 +53438,24 @@
    "Title": "Amazing Nature",
    "Story": "Rumor has it that some people have found Chocolate Hills in Philippine archipelago in the south of Taiwan, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Chocolate Hills in Philippine archipelago in the south of Taiwan, authenticate them, then talk to the Dakar Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "The Chocolate Hill Discovery Logbook",
+     "Key": "IDName00000952",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000706,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1038002,
@@ -52497,7 +53463,7 @@
     "Id": 2000706,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93801,
    "Reward": {
     "Gold": 60000,
     "ProfessionExp": 0,
@@ -52513,8 +53479,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93801
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93803,
@@ -52525,14 +53497,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found Cheetahs in West Africa Mogadishu, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Cheetahs in West Africa Mogadishu, authenticate them, then talk to the Dakar Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Cheetah Discovery Logbook",
+     "Key": "IDName00001127",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000706,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1038002,
@@ -52540,7 +53522,7 @@
     "Id": 2000706,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93802,
    "Reward": {
     "Gold": 60000,
     "ProfessionExp": 0,
@@ -52556,8 +53538,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    93802
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93804,
@@ -52568,14 +53556,24 @@
    "Title": "Kingdom of Ice Discovery",
    "Story": "Rumor has it that some people have found Adies Sibirica Ledebs in the north of Korean peninsular, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Adies Sibirica Ledebs in the north of Korean peninsular, authenticate them, then talk to the Dakar Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Adies sibirica Ledeb Discovery Logbook",
+     "Key": "IDName00001611",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000706,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1038002,
@@ -52583,7 +53581,7 @@
     "Id": 2000706,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93803,
    "Reward": {
     "Gold": 60000,
     "ProfessionExp": 0,
@@ -52599,8 +53597,16 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [
+    93805
+   ],
+   "PrerequisiteAny": [
+    93803
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93805,
@@ -52611,14 +53617,24 @@
    "Title": "Kingdom of Ice Discovery",
    "Story": "Rumor has it that some people have found Pinus Sibiricas in the north of Korean peninsular, the Dakar Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Pinus Sibiricas in the north of Korean peninsular, authenticate them, then talk to the Dakar Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pinus Sibirica Discovery Logbook",
+     "Key": "IDName00001610",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000706,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1038002,
@@ -52626,7 +53642,7 @@
     "Id": 2000706,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 93803,
    "Reward": {
     "Gold": 60000,
     "ProfessionExp": 0,
@@ -52642,8 +53658,16 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [
+    93804
+   ],
+   "PrerequisiteAny": [
+    93803
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 93901,
@@ -52740,14 +53764,24 @@
    "Title": "Plant Discovery",
    "Story": "Rumor has it that some people have found Kingdonia unifloras in south of Mozambique, the Accra Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Kingdonia unifloras in south of Mozambique, authenticate them, then talk to the Accra Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Kingdonia uniflora Discovery Logbook",
+     "Key": "IDName00001656",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000723,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1039002,
@@ -52771,8 +53805,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 93904,
@@ -52875,14 +53911,24 @@
    "Title": "Ancient Remains",
    "Story": "Rumor has it that some people have found the Hanseatic City of Lubeck in Oslo, the Luanda Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Hanseatic City of Lubeck in Oslo, authenticate them, then talk to the Luanda Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Hanseatic City of Lubeck Discovery Logbook",
+     "Key": "IDName00002060",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000740,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1040002,
@@ -52906,8 +53952,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 94002,
@@ -52918,14 +53966,24 @@
    "Title": "Beautiful Flowers",
    "Story": "Rumor has it that some people have found Paeonia Suffruticosas in Taiwan Island's seacoast, the Luanda Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Paeonia Suffruticosas in Taiwan Island's seacoast, authenticate them, then talk to the Luanda Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Paeonia suffruticosa Discovery Logbook",
+     "Key": "IDName00001617",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000740,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1040002,
@@ -52933,7 +53991,7 @@
     "Id": 2000740,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94001,
    "Reward": {
     "Gold": 72000,
     "ProfessionExp": 0,
@@ -52949,8 +54007,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94001
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94003,
@@ -52961,14 +54025,24 @@
    "Title": "Rare Animals Discovery",
    "Story": "Rumor has it that some people have found Capricornis sumatraensis in China north of Quanzhou in China, the Luanda Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Capricornis sumatraensis in China north of Quanzhou in China, authenticate them, then talk to the Luanda Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Capricornis Sumatraensis Discovery Logbook",
+     "Key": "IDName00001128",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000740,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1040002,
@@ -52976,7 +54050,7 @@
     "Id": 2000740,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94002,
    "Reward": {
     "Gold": 72000,
     "ProfessionExp": 0,
@@ -52992,8 +54066,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94002
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94004,
@@ -53047,14 +54127,24 @@
    "Title": "Rare Plants Discovery",
    "Story": "Rumor has it that some people have found Gynocardia odoratas in Shikoku, Japan, the Luanda Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Gynocardia odoratas in Shikoku, Japan, authenticate them, then talk to the Luanda Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Gynocardia odorata Discovery Logbook",
+     "Key": "IDName00001727",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000740,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1040002,
@@ -53062,7 +54152,7 @@
     "Id": 2000740,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94003,
    "Reward": {
     "Gold": 72000,
     "ProfessionExp": 0,
@@ -53078,8 +54168,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94003
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94101,
@@ -53090,14 +54186,24 @@
    "Title": "Grandeur Remain",
    "Story": "Rumor has it that some people have found the Angkor Wat in Thailand's Bangkok, the Cape Town Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Angkor Wat in Thailand's Bangkok, authenticate them, then talk to the Cape Town Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Angkor Wat Discovery Logbook",
+     "Key": "IDName00002125",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000760,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1041002,
@@ -53105,7 +54211,7 @@
     "Id": 2000760,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94005,
    "Reward": {
     "Gold": 72000,
     "ProfessionExp": 0,
@@ -53121,8 +54227,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94005
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94102,
@@ -53176,14 +54288,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found Malayan Tapirs in Bombay, the Cape Town Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Malayan Tapirs in Bombay, authenticate them, then talk to the Cape Town Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Malayan Tapir Discovery Logbook",
+     "Key": "IDName00001165",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000760,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1041002,
@@ -53191,7 +54313,7 @@
     "Id": 2000760,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94101,
    "Reward": {
     "Gold": 72000,
     "ProfessionExp": 0,
@@ -53207,8 +54329,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94101
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94104,
@@ -53391,14 +54519,24 @@
    "Title": "Animal Discovery",
    "Story": "Rumor has it that some people have found Komodo dragons and Indian rhinoceroses in Southeast Asia, the Mogadishu Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Komodo dragons and Indian rhinoceroses in Southeast Asia, authenticate them, then talk to the Mogadishu Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Komodo dragon Discovery Logbook",
+     "Key": "IDName00001123",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000801,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1043002,
@@ -53422,8 +54560,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 94302,
@@ -53434,14 +54574,24 @@
    "Title": "Plant Discovery",
    "Story": "Rumor has it that some people have found Bole Trees (Bretschneidara sinensis Hemsi) and Chinese Primroses (Primula sinensis Sabine ex Lindl) in Southeast Asia, the Mogadishu Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Bole Trees (Bretschneidara sinensis Hemsi) and Chinese Primroses (Primula sinensis Sabine ex Lindl) in Southeast Asia, authenticate them, then talk to the Mogadishu Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Bretschneidara sinensis Hemsi Discovery Logbook",
+     "Key": "IDName00001630",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000801,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1043002,
@@ -53449,7 +54599,7 @@
     "Id": 2000801,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94301,
    "Reward": {
     "Gold": 180000,
     "ProfessionExp": 0,
@@ -53465,8 +54615,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94301
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94303,
@@ -53520,14 +54676,24 @@
    "Title": "Strange Plants",
    "Story": "Rumor has it that some people have found Couple trees in south China, the Aden Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Couple trees in south China, authenticate them, then talk to the Aden Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Couple tree Discovery Logbook",
+     "Key": "IDName00001576",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000820,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1044002,
@@ -53535,7 +54701,7 @@
     "Id": 2000820,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94302,
    "Reward": {
     "Gold": 240000,
     "ProfessionExp": 0,
@@ -53551,8 +54717,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94302
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94402,
@@ -53610,6 +54782,13 @@
    "Targets": [
     {
      "Kind": "Bring",
+     "Name": "Ginseng Discovery Logbook",
+     "Key": "IDName00001545",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    },
+    {
+     "Kind": "Bring",
      "Name": "Ginseng",
      "Key": "IDName00000271",
      "Count": 20
@@ -53630,7 +54809,7 @@
     "Id": 2000820,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94401,
    "Reward": {
     "Gold": 240000,
     "ProfessionExp": 0,
@@ -53649,7 +54828,11 @@
    "Emitted": true,
    "DropReason": "",
    "Alternatives": [],
-   "AutoAccept": false
+   "PrerequisiteAny": [
+    94401
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94501,
@@ -53660,14 +54843,24 @@
    "Title": "Gorgeous Animals",
    "Story": "Rumor has it that some people have found Green Peafowls in Southeast Asia, the Suez Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Green Peafowls in Southeast Asia, authenticate them, then talk to the Suez Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Green Peafowl Discovery Logbook",
+     "Key": "IDName00001133",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000841,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1045002,
@@ -53675,7 +54868,7 @@
     "Id": 2000841,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94403,
    "Reward": {
     "Gold": 240000,
     "ProfessionExp": 0,
@@ -53691,8 +54884,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94403
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94502,
@@ -53703,14 +54902,24 @@
    "Title": "Seduction of Flowers",
    "Story": "Rumor has it that some people have found Rhododendron liliiflorum Levls and Stilpnolepis centifloras in Philipines' group of Islands, the Suez Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Rhododendron liliiflorum Levls and Stilpnolepis centifloras in Philipines' group of Islands, authenticate them, then talk to the Suez Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Rhododendron liliiflorum Levl. Discovery Logbook",
+     "Key": "IDName00001625",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000841,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1045002,
@@ -53718,7 +54927,7 @@
     "Id": 2000841,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94501,
    "Reward": {
     "Gold": 240000,
     "ProfessionExp": 0,
@@ -53734,8 +54943,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94501
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94503,
@@ -53746,14 +54961,24 @@
    "Title": "Architecture Study",
    "Story": "Rumor has it that some people have found the Kyoto in east Asia and Hatra in west Asia, the Suez Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Kyoto in east Asia and Hatra in west Asia, authenticate them, then talk to the Suez Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Historic Monuments of Ancient Kyoto Discovery Logbook",
+     "Key": "IDName00002061",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000841,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1045002,
@@ -53761,7 +54986,7 @@
     "Id": 2000841,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94502,
    "Reward": {
     "Gold": 240000,
     "ProfessionExp": 0,
@@ -53777,8 +55002,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94502
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94601,
@@ -53832,14 +55063,24 @@
    "Title": "Grandeurs Yellow Mountain",
    "Story": "Rumor has it that some people have found the Yellow Mountain and Yellow Wax Bells in China, the Muscat Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Yellow Mountain and Yellow Wax Bells in China, authenticate them, then talk to the Muscat Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Yellow Mountain Discovery Logbook",
+     "Key": "IDName00000941",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000856,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1046002,
@@ -53847,7 +55088,7 @@
     "Id": 2000856,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94503,
    "Reward": {
     "Gold": 300000,
     "ProfessionExp": 0,
@@ -53863,8 +55104,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94503
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94603,
@@ -53875,14 +55122,24 @@
    "Title": "Mystic Tomb",
    "Story": "Rumor has it that some people have found the Lion Hill Tomb of the Chu King and the Ming tombs in China's east coast, the Muscat Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Lion Hill Tomb of the Chu King and the Ming tombs in China's east coast, authenticate them, then talk to the Muscat Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Lion Hill Tomb of the Chu King Discovery Logbook",
+     "Key": "IDName00002112",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000856,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1046002,
@@ -53890,7 +55147,7 @@
     "Id": 2000856,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94602,
    "Reward": {
     "Gold": 300000,
     "ProfessionExp": 0,
@@ -53906,8 +55163,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94602
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94701,
@@ -53918,14 +55181,24 @@
    "Title": "Ancient Remains",
    "Story": "Rumor has it that some people have found the Town of Luang Prabang and the Ancient City of Li Jiang in Asia's southeast region, the Basora Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Town of Luang Prabang and the Ancient City of Li Jiang in Asia's southeast region, authenticate them, then talk to the Basora Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Town of Luang Prabang Discovery Logbook",
+     "Key": "IDName00002081",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000874,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1047002,
@@ -53933,7 +55206,7 @@
     "Id": 2000874,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94603,
    "Reward": {
     "Gold": 300000,
     "ProfessionExp": 0,
@@ -53949,8 +55222,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94603
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94702,
@@ -53961,14 +55240,24 @@
    "Title": "Rare Animal Discovery",
    "Story": "Rumor has it that some people have found Sika Deer and South China Tiger in East Asia region, the Basora Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Sika Deer and South China Tiger in East Asia region, authenticate them, then talk to the Basora Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Sika Deer Discovery Logbook",
+     "Key": "IDName00001137",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000874,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1047002,
@@ -53976,7 +55265,7 @@
     "Id": 2000874,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 94701,
    "Reward": {
     "Gold": 300000,
     "ProfessionExp": 0,
@@ -53992,8 +55281,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    94701
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 94703,
@@ -54096,14 +55391,24 @@
    "Title": "Various Chameleons",
    "Story": "Rumor has it that some people have found two kinds of Chameleons in Africa, the Bombay Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for two kinds of Chameleons, authenticate them, then talk to the Bombay Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Chameleon Discovery Logbook",
+     "Key": "IDName00001076",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000895,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1048002,
@@ -54133,8 +55438,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 94803,
@@ -54231,14 +55538,24 @@
    "Title": "Rare Plant Discovery",
    "Story": "Rumor has it that some people have found Red Lotus Trees (Manglietia insignis) and Michelia Martini near Tianjin, the Sri Lanka Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Red Lotus Trees (Manglietia insignis) and Michelia Martini, authenticate them, then talk to the Sri Lanka Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Manglietia insignis Discovery Logbook",
+     "Key": "IDName00001686",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000918,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1049002,
@@ -54262,8 +55579,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 94903,
@@ -54317,8 +55636,16 @@
    "Title": "Beautiful Orchids",
    "Story": "Rumor has it that some people have found two kinds of orchids: Cymbidium spp. and D.chrysanthum near Semarang Islands, the Malacca Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for two kinds of orchids: Cymbidium spp. and D.chrysanthum, authenticate them, then talk to the Malacca Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Cymbidium spp. Discovery Logbook",
+     "Key": "IDName00001761",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
+   ],
    "Unsupported": [
     "discovery"
    ],
@@ -54349,7 +55676,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "DropReason": "objective partly unsupported: discovery"
   },
   {
    "Id": 95002,
@@ -54360,14 +55687,24 @@
    "Title": "Famous Buildings Discovery",
    "Story": "Rumor has it that some people have found Hadrian's Wall and Monastery of Horezu near London, the Malacca Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Hadrian's Wall and Monastery of Horezu, authenticate them, then talk to the Malacca Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Hadrian's Wall Discovery Logbook",
+     "Key": "IDName00002064",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000935,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1050002,
@@ -54391,8 +55728,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 95003,
@@ -54403,14 +55742,24 @@
    "Title": "Ancient Cities Discovery",
    "Story": "Rumor has it that some people have found City of Pompeii and Ancient City of Salamanca near Tripoli, the Malacca Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for City of Pompeii and Ancient City of Salamanca, authenticate them, then talk to the Malacca Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "City of Pompeii Discovery Logbook",
+     "Key": "IDName00002101",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000935,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1050002,
@@ -54418,7 +55767,7 @@
     "Id": 2000935,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95002,
    "Reward": {
     "Gold": 540000,
     "ProfessionExp": 0,
@@ -54440,8 +55789,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95002
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95101,
@@ -54452,14 +55807,24 @@
    "Title": "Precious Vipers",
    "Story": "Rumor has it that some people have found Stripe-faced Viper(Agkistrodon bilineatus) and Leaf Viper(Lachesis muta) near Istanbul, the Semarang Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Stripe-faced Viper(Agkistrodon bilineatus) and Leaf Viper(Lachesis muta), authenticate them, then talk to the Semarang Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Agkistrodon Bilineatus Discovery Logbook",
+     "Key": "IDName00001243",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000960,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1051002,
@@ -54467,7 +55832,7 @@
     "Id": 2000960,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95003,
    "Reward": {
     "Gold": 630000,
     "ProfessionExp": 0,
@@ -54483,8 +55848,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95003
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95102,
@@ -54587,14 +55958,24 @@
    "Title": "Ancient Architecture",
    "Story": "Rumor has it that some people have found roses and Changienia amoenas, the Tourane Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for roses and Changienia amoenas, authenticate them, then talk to the Tourane Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Rose Discovery Logbook",
+     "Key": "IDName00001732",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000979,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1052002,
@@ -54618,8 +55999,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 95202,
@@ -54630,14 +56013,24 @@
    "Title": "Beautiful Flower",
    "Story": "Rumor has it that some people have found roses and Changienia amoenas, the Tourane Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for roses and Changienia amoenas, authenticate them, then talk to the Tourane Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Rose Discovery Logbook",
+     "Key": "IDName00001732",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000979,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1052002,
@@ -54645,7 +56038,7 @@
     "Id": 2000979,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95201,
    "Reward": {
     "Gold": 540000,
     "ProfessionExp": 0,
@@ -54661,8 +56054,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95201
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95203,
@@ -54673,14 +56072,24 @@
    "Title": "Grandiose Architecture",
    "Story": "Rumor has it that some people have found Pont du Gard and Kinkakuji Temple, the Tourane Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Pont du Gard and Kinkakuji Temple, authenticate them, then talk to the Tourane Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pont du Gard Discovery Logbook",
+     "Key": "IDName00002068",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2000979,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1052002,
@@ -54688,7 +56097,7 @@
     "Id": 2000979,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95202,
    "Reward": {
     "Gold": 540000,
     "ProfessionExp": 0,
@@ -54710,8 +56119,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95202
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95301,
@@ -54722,14 +56137,24 @@
    "Title": "Biggest Animal--The finding of Whale",
    "Story": "Rumor has it that some people have found pygmy killer whales, killer whales and belugas in the Atlantic Ocean and South China Sea, the Quan Zhou Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for pygmy killer whales, killer whales and belugas in the Atlantic Ocean and South China Sea, authenticate them, then talk to the Quan Zhou Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Killer whale Discovery Logbook",
+     "Key": "IDName00001219",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001005,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1053002,
@@ -54737,7 +56162,7 @@
     "Id": 2001005,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95203,
    "Reward": {
     "Gold": 720000,
     "ProfessionExp": 0,
@@ -54753,8 +56178,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95203
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95302,
@@ -54980,14 +56411,24 @@
    "Title": "Tropical Penguin Discovery",
    "Story": "Rumor has it that some people have found penguin in the tropics, the Beijing Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for penguin in the tropics, authenticate them, then talk to the Beijing Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Adelie Penguin Discovery Logbook",
+     "Key": "IDName00001227",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001149,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1058001,
@@ -55011,8 +56452,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 95802,
@@ -55023,14 +56466,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found Lemming, Tibetan Macaque(Macaca thibetana) and Assamese Macaque, the Beijing Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Lemming, Tibetan Macaque(Macaca thibetana) and Assamese Macaque, authenticate them, then talk to the Beijing Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Lemming Discovery Logbook",
+     "Key": "IDName00001223",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001149,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1058001,
@@ -55038,7 +56491,7 @@
     "Id": 2001149,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95801,
    "Reward": {
     "Gold": 2160000,
     "ProfessionExp": 0,
@@ -55054,8 +56507,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95801
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95803,
@@ -55201,14 +56660,24 @@
    "Title": "Birds Discovery",
    "Story": "Rumor has it that some people have found Kagu, Mallard, Sunbird and Seychelles culver, the Seoul Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Kagu, Mallard, Sunbird and Seychelles culver, authenticate them, then talk to the Seoul Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Kagu Discovery Logbook",
+     "Key": "IDName00001289",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001030,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1054001,
@@ -55238,8 +56707,10 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "AutoAccept": false
   },
   {
    "Id": 95501,
@@ -55250,14 +56721,24 @@
    "Title": "Fish Discovery",
    "Story": "Rumor has it that some people have found Sturgeon, Batfish and Alaska Greenling, the Nagasaki Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Catfish, Sturgeon, Batfish and Alaska Greenling, authenticate them, then talk to the Nagasaki Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Catfish Discovery Logbook",
+     "Key": "IDName00001313",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001058,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1055002,
@@ -55265,7 +56746,7 @@
     "Id": 2001058,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95403,
    "Reward": {
     "Gold": 2160000,
     "ProfessionExp": 0,
@@ -55281,8 +56762,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95403
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95502,
@@ -55342,14 +56829,24 @@
    "Title": "Rare Birds Discovery",
    "Story": "Rumor has it that some people have found White--breasted Guineafowl, Cattle Egret, Oriental White Stork and Nipponia Nippon, the Nagasaki Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for White--breasted Guineafowl, Cattle Egret, Oriental White Stork and Nipponia Nippon, authenticate them, then talk to the Nagasaki Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "White-breasted Guineafowl Discovery Logbook",
+     "Key": "IDName00001253",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001058,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1055002,
@@ -55357,7 +56854,7 @@
     "Id": 2001058,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95501,
    "Reward": {
     "Gold": 2160000,
     "ProfessionExp": 0,
@@ -55379,8 +56876,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95501
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95601,
@@ -55391,14 +56894,24 @@
    "Title": "Animal that Flies Highest",
    "Story": "Rumor has it that some people have found the Animal that Flies Highest, the Edo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for the Animal that Flies Highest(Goshawks) and authenticate them, then talk to the Edo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Goshawk Discovery Logbook",
+     "Key": "IDName00001294",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001083,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1056002,
@@ -55406,7 +56919,7 @@
     "Id": 2001083,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95503,
    "Reward": {
     "Gold": 1080000,
     "ProfessionExp": 0,
@@ -55428,8 +56941,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95503
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95602,
@@ -55440,14 +56959,24 @@
    "Title": "Discovery of Animails",
    "Story": "Rumor has it that some people have found Pyrrhula pyrrhual murina, Mauritius Bulbul, Tringa Guttifer and Seychelles Bebrormis, the Edo Exploration Alliance Master wants to confirm it. Don't pass anything suspicious, you can ask the Identifier for help, Good Luck!",
    "Objective": "Search for Pyrrhula pyrrhual murina, Mauritius Bulbul, Tringa Guttifer, Seychelles Bebrormis, and authenticate them, then talk to the Edo Exploration Alliance Master",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [
-    "discovery"
+   "ObjectiveKind": "Bring",
+   "Targets": [
+    {
+     "Kind": "Bring",
+     "Name": "Pyrrhula pyrrhual murina Discovery Logbook",
+     "Key": "IDName00001260",
+     "Count": 1,
+     "Source": "GUESS discovery: the logbook the Discovery command gives (discoveries.json)"
+    }
    ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "IDName00005231",
+    "Id": 2001083,
+    "Source": "GUESS report-to NPC"
+   },
+   "GiverSource": "GUESS report-to NPC",
    "TurnIn": {
     "Key": "IDName00005231",
     "Scene": 1056002,
@@ -55455,7 +56984,7 @@
     "Id": 2001083,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 95601,
    "Reward": {
     "Gold": 2160000,
     "ProfessionExp": 0,
@@ -55477,8 +57006,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    95601
+   ],
+   "AutoAccept": false,
+   "Chain": "GUESS next quest in file order"
   },
   {
    "Id": 95603,
@@ -71280,6 +72815,47 @@
    "Objective": "Go to Crete prophet to search for clues.",
    "ObjectiveKind": "Talk",
    "Targets": [],
+   "Unsupported": [
+    "discovery"
+   ],
+   "Unresolved": [],
+   "Giver": null,
+   "GiverSource": "",
+   "TurnIn": {
+    "Key": "IDName00005592",
+    "Scene": 1505001,
+    "Name": "Crete Prophet",
+    "Id": 2001281,
+    "Source": "CLIENT -N link"
+   },
+   "Prerequisite": 0,
+   "Reward": {
+    "Gold": 0,
+    "ProfessionExp": 0,
+    "SkillExp": {},
+    "Reputation": 0,
+    "Amity": 0,
+    "Items": [],
+    "ChooseOne": false,
+    "Random": false,
+    "Text": ""
+   },
+   "MapMarks": [],
+   "TalkLines": 0,
+   "Emitted": false,
+   "DropReason": "unsupported objective: discovery"
+  },
+  {
+   "Id": 5450500,
+   "Group": 904,
+   "GroupName": "Quest Storyline",
+   "Order": 1330,
+   "OldTaskGroup": 904,
+   "Title": "The Treasure of Genghis Khan: Search",
+   "Story": "According to the prophet from Crete, I guessed the easterner had gone to Corsica Island.",
+   "Objective": "Go to Corsica to find YeDu",
+   "ObjectiveKind": "Talk",
+   "Targets": [],
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
@@ -71289,10 +72865,10 @@
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
-    "Key": "IDName00005592",
-    "Scene": 1505001,
-    "Name": "Crete Prophet",
-    "Id": 2001281,
+    "Key": "IDName00005590",
+    "Scene": 1504004,
+    "Name": "Ye Du",
+    "Id": 2001278,
     "Source": "CLIENT -N link"
    },
    "Prerequisite": 5450200,
@@ -71314,55 +72890,6 @@
    "Alternatives": [],
    "PrerequisiteAny": [
     5450200
-   ],
-   "AutoAccept": true,
-   "Chain": "story chain (file order)"
-  },
-  {
-   "Id": 5450500,
-   "Group": 904,
-   "GroupName": "Quest Storyline",
-   "Order": 1330,
-   "OldTaskGroup": 904,
-   "Title": "The Treasure of Genghis Khan: Search",
-   "Story": "According to the prophet from Crete, I guessed the easterner had gone to Corsica Island.",
-   "Objective": "Go to Corsica to find YeDu",
-   "ObjectiveKind": "Talk",
-   "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [],
-   "Giver": {
-    "Key": "IDName00005592",
-    "Id": 2001281,
-    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
-   },
-   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
-   "TurnIn": {
-    "Key": "IDName00005590",
-    "Scene": 1504004,
-    "Name": "Ye Du",
-    "Id": 2001278,
-    "Source": "CLIENT -N link"
-   },
-   "Prerequisite": 5450400,
-   "Reward": {
-    "Gold": 0,
-    "ProfessionExp": 0,
-    "SkillExp": {},
-    "Reputation": 0,
-    "Amity": 0,
-    "Items": [],
-    "ChooseOne": false,
-    "Random": false,
-    "Text": ""
-   },
-   "MapMarks": [],
-   "TalkLines": 0,
-   "Emitted": true,
-   "DropReason": "",
-   "Alternatives": [],
-   "PrerequisiteAny": [
-    5450400
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
@@ -94970,21 +96497,12 @@
    "Title": "Bellwether Hunting",
    "Story": "The previous commotion left me feeling somewhat uneasy. I always feel like someone's following me, especially when I'm preparing to go out to sea... The Veteran is worried for me too. Guess I'll stop going out to sea for a while. Let's see what the mainland has to offer.",
    "Objective": "Press CTRL+C to open Character Attributes Interface. Choose Inventory, left click on a weapon to equip.(Press ALT+C to open Quick Equipment Shift Interface. There will be 3 setting interfaces for equipment and items. Click on the middle Change item Set to quickly equip the items in the interface.) Then, kill 1 Bellwether and obtain 1 Authenticating Article Sheep Horn (Random drop). Report back to Veteran.",
-   "ObjectiveKind": "Kill",
-   "Targets": [
-    {
-     "Kind": "Kill",
-     "Name": "Bellwether",
-     "Key": "IDName00002174",
-     "Count": 1,
-     "Sink": false,
-     "Spawned": true
-    }
+   "ObjectiveKind": "Talk",
+   "Targets": [],
+   "Unsupported": [
+    "discovery"
    ],
-   "Unsupported": [],
-   "Unresolved": [
-    "Authenticating Article Sheep Horn (Random drop)"
-   ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": {
@@ -95015,7 +96533,7 @@
    "MapMarks": [],
    "TalkLines": 3,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 1945,
@@ -100077,10 +101595,10 @@
    "Objective": "Obtain 1 Authenticating Article from the Giant Sea Serpent",
    "ObjectiveKind": "",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "Authenticating Article"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": null,
@@ -100099,7 +101617,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 2166,
@@ -100112,10 +101630,10 @@
    "Objective": "Obtain 1 Authenticating Article from the Caveman Champions",
    "ObjectiveKind": "",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "Authenticating Article"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": null,
@@ -100134,7 +101652,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 2167,
@@ -100147,10 +101665,10 @@
    "Objective": "Obtain 1 Authenticating Article from the Animated Bronze Buddhas",
    "ObjectiveKind": "",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "Authenticating Article"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": null,
@@ -100169,7 +101687,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 2168,
@@ -100182,10 +101700,10 @@
    "Objective": "Obtain 1 Authenticating Article from the Foxdevils",
    "ObjectiveKind": "",
    "Targets": [],
-   "Unsupported": [],
-   "Unresolved": [
-    "Authenticating Article"
+   "Unsupported": [
+    "discovery"
    ],
+   "Unresolved": [],
    "Giver": null,
    "GiverSource": "",
    "TurnIn": null,
@@ -100204,7 +101722,7 @@
    "MapMarks": [],
    "TalkLines": 0,
    "Emitted": false,
-   "DropReason": "objective item/monster not in client name list"
+   "DropReason": "unsupported objective: discovery"
   },
   {
    "Id": 2169,
@@ -136160,12 +137678,14 @@
    "Objective": "Collect some herbs nearby, and bring it to Roderick the Explorer.",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [
-    "discovery"
-   ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "yjnpc002",
+    "Id": 2010034,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "yjnpc002",
     "Scene": 1001081,
@@ -136173,7 +137693,7 @@
     "Id": 2010034,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 4515,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 1000000000,
@@ -136198,8 +137718,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    4515
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 4517,
@@ -136227,7 +137753,7 @@
     "Id": 2010034,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 4515,
+   "Prerequisite": 4516,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 800000000,
@@ -136251,7 +137777,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    4515
+    4516
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
@@ -136842,12 +138368,14 @@
    "Objective": "Go back to camp and talk to Roderick the Explorer.",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [
-    "discovery"
-   ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "yjnpc004",
+    "Id": 2010036,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "yjnpc002",
     "Scene": 1001081,
@@ -136855,7 +138383,7 @@
     "Id": 2010034,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 4527,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 500000000,
@@ -136875,8 +138403,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    4527
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 4529,
@@ -136892,8 +138426,8 @@
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
-    "Key": "yjnpc004",
-    "Id": 2010036,
+    "Key": "yjnpc002",
+    "Id": 2010034,
     "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
@@ -136904,7 +138438,7 @@
     "Id": 2010037,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 4527,
+   "Prerequisite": 4528,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 500000000,
@@ -136928,7 +138462,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    4527
+    4528
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"
@@ -137186,12 +138720,14 @@
    "Objective": "Go back to camp and talk to Roderick the Explorer.",
    "ObjectiveKind": "Talk",
    "Targets": [],
-   "Unsupported": [
-    "discovery"
-   ],
+   "Unsupported": [],
    "Unresolved": [],
-   "Giver": null,
-   "GiverSource": "",
+   "Giver": {
+    "Key": "yjnpc008",
+    "Id": 2010040,
+    "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
+   },
+   "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
    "TurnIn": {
     "Key": "yjnpc002",
     "Scene": 1001081,
@@ -137199,7 +138735,7 @@
     "Id": 2010034,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 0,
+   "Prerequisite": 4533,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 500000000,
@@ -137219,8 +138755,14 @@
    },
    "MapMarks": [],
    "TalkLines": 0,
-   "Emitted": false,
-   "DropReason": "unsupported objective: discovery"
+   "Emitted": true,
+   "DropReason": "",
+   "Alternatives": [],
+   "PrerequisiteAny": [
+    4533
+   ],
+   "AutoAccept": true,
+   "Chain": "story chain (file order)"
   },
   {
    "Id": 4535,
@@ -137245,8 +138787,8 @@
    "Unsupported": [],
    "Unresolved": [],
    "Giver": {
-    "Key": "yjnpc008",
-    "Id": 2010040,
+    "Key": "yjnpc002",
+    "Id": 2010034,
     "Source": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)"
    },
    "GiverSource": "GUESS report-to NPC of the previous quest (the quest is also handed out automatically)",
@@ -137257,7 +138799,7 @@
     "Id": 2010035,
     "Source": "CLIENT -N link"
    },
-   "Prerequisite": 4533,
+   "Prerequisite": 4534,
    "Reward": {
     "Gold": 0,
     "ProfessionExp": 1500000000,
@@ -137286,7 +138828,7 @@
    "DropReason": "",
    "Alternatives": [],
    "PrerequisiteAny": [
-    4533
+    4534
    ],
    "AutoAccept": true,
    "Chain": "story chain (file order)"

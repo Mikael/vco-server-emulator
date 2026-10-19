@@ -150,6 +150,9 @@ public sealed partial class ClientSession
                 fixedShip.Save();
                 SystemMessage($"{fixedShip.Name}'s ship is repaired and fully crewed.");
                 return true;
+            case "learn" when words.Length >= 2:
+                LearnSkill(words[1].ToUpperInvariant());
+                return true;
             case "sinkall":
                 List<SeaNpcState> targets = Sea.InScene(Scene, Room).Where(ship => !ship.Dead && !ship.Definition.Friendly).ToList();
                 foreach (SeaNpcState ship in targets)

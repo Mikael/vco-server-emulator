@@ -471,6 +471,8 @@ public sealed partial class ClientSession
                 return RapidRepair(3, itemView, itemIndex);
             case "US_FOUNDRY3":
                 return RapidRepair(0, itemView, itemIndex);
+            case "US_PLANTING3":
+                return HarvestNearby(level);
             default:
                 SystemMessage("That special skill has no effect on this server yet.");
                 return false;

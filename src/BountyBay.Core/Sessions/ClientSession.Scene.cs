@@ -124,7 +124,7 @@ public sealed partial class ClientSession
         Send(LoginPackets.PropertyTableDefinition(), "(property table)");
         ApplyTotemProperties();
         Send(LoginPackets.OwnProperties(Properties), "(own properties)");
-        foreach (TableDefinition table in GameTables.All.Concat(ProgressTables.All).Concat(MailTables.All).Concat(CraftingTables.All).Concat(FleetTables.All).Concat(BboSocialTables.All).Concat(QuestMarkTables.All).Concat(AideTables.All).Concat(BattleTables.All))
+        foreach (TableDefinition table in GameTables.All.Concat(ProgressTables.All).Concat(MailTables.All).Concat(CraftingTables.All).Concat(FleetTables.All).Concat(BboSocialTables.All).Concat(QuestMarkTables.All).Concat(AideTables.All).Concat(BattleTables.All).Append(VisitedOceanTable).Concat(DiscoveryTables))
             Send(LoginPackets.TableCreate(table), $"({table.Name} table)");
 
         bool legacyScene = character.Scene / 1000 == 1001;
@@ -207,6 +207,7 @@ public sealed partial class ClientSession
         }
         SendSceneLinks();
         SendGatherNodes();
+        SendCropPlots();
         BboSendOceanDocks();
         if (AtSea) WarnShipCondition();
 
@@ -223,6 +224,8 @@ public sealed partial class ClientSession
             SendProgress();
             SendMail();
             SendRecipes();
+            SendVisitedOcean();
+            SendDiscoveries();
         }
         else
         {

@@ -94,6 +94,7 @@ public sealed partial class ClientSession
         {
             if (!ship.Gone && !ship.Engaged) SendSeaNpc(ship);
         }
+        SendOceanHazards();
         Send(ScenePackets.ObjectProperties(ProtocolConstants.SelfObjectId, SeaPackets.Known(new PropertyBag
         {
             ["RatioShipHP"] = 100 * ShipHull / Math.Max(1, ShipHullMax),
