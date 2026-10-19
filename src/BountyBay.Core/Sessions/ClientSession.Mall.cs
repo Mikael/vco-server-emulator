@@ -100,6 +100,12 @@ public sealed partial class ClientSession
         return true;
     }
 
+    public const string MallConfirmCommand = "csMallBuyYes";
+
+    private (MallGoods Goods, int Quantity)? _mallPending;
+
+    // The original server asks before taking points: scBuyItemByCard "<goods> <price> <yes command>" opens the
+    // client's BuyGameGoods2 question box, and scBuyItemByCardSucc "<goods> <price>" prints the purchase line.
     public bool MallBuy(int view, int index, int quantity)
     {
         if (view != MallView || _mall == null) return false;
@@ -112,6 +118,23 @@ public sealed partial class ClientSession
             SystemMessage($"Not enough points: {quantity} x {goods.Name} costs {cost} points and you have {Character.GamePoints}.");
             return true;
         }
+        _mallPending = (goods, quantity);
+        Send(UiPackets.Custom($"scBuyItemByCard {MallGoodsToken(goods, quantity)} {cost} {MallConfirmCommand}"), "(mall purchase question)");
+        return true;
+    }
+
+    public void MallBuyConfirmed()
+    {
+        if (_mallPending is not { } pending) return;
+        _mallPending = null;
+        MallGoods goods = pending.Goods;
+        int quantity = pending.Quantity;
+        long cost = (long)goods.Price * quantity;
+        if (cost > Character.GamePoints)
+        {
+            SystemMessage($"Not enough points: {quantity} x {goods.Name} costs {cost} points and you have {Character.GamePoints}.");
+            return;
+        }
         if (WhistleBook.Whistle(goods.Item) != null)
         {
             int given = 0;
@@ -121,7 +144,7 @@ public sealed partial class ClientSession
             if (given == 0)
             {
                 SystemMessage($"You cannot keep more than {WhistleMostOwned} pet whistles.", SystemMessageKind.Prompt);
-                return true;
+                return;
             }
             quantity = given;
             cost = (long)goods.Price * quantity;
@@ -129,18 +152,18 @@ public sealed partial class ClientSession
         else if (!GiveItem(new ItemStack { Name = goods.Item, Photo = Context.Data.PhotoOf(goods.Item), Amount = quantity }, "(mall purchase)"))
         {
             SystemMessage("Your bag is full.");
-            return true;
+            return;
         }
         Character.GamePoints -= (int)cost;
         GainVipScore(cost, "mall purchase");
         Save();
         SendMallPoints();
-        Send(UiPackets.Custom("scBuyGameGoodsSuccess"), "(mall purchase done)");
-        SystemMessage(WhistleBook.Whistle(goods.Item) != null
-            ? $"You bought {quantity} x {goods.Name} for {cost} points. Open the pet list to call your pet."
-            : $"You bought {quantity} x {goods.Name} for {cost} points.");
+        Send(UiPackets.Custom($"scBuyItemByCardSucc {MallGoodsToken(goods, quantity)} {cost}"), "(mall purchase done)");
+        if (WhistleBook.Whistle(goods.Item) != null) SystemMessage("Open the pet list to call your pet.");
         ItemObtained(goods.Item, quantity, "");
         Log.Info(Tag, $"{Name} buys {quantity} x {goods.Item} in the item mall for {cost} points");
-        return true;
     }
+
+    private static string MallGoodsToken(MallGoods goods, int quantity)
+        => UiPackets.Token(quantity > 1 ? $"{quantity} x {goods.Name}" : goods.Name);
 }

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-19
+
+### Character and equipment
+- **Item mall purchases ask first**: after picking the amount, the client's own confirmation box opens ("Please confirm. It costs [100point] ... Are you sure you want to buy it?"). Points are only taken when you press Yes, and the chat then shows the client's "You purchased [item] from the Item Mall" line.
+
+### Towns and NPCs
+- **Refresh players button** (battle toolbar) now sends the players around you again instead of doing nothing.
+- **GM `/ui <keyword>`** sends a raw interface keyword to your own client, for testing client windows.
+
 ## 2026-10-18
 
 ### Character and equipment

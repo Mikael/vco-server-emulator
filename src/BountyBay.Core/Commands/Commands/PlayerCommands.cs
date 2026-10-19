@@ -390,6 +390,9 @@ public sealed class SlashCommands
                 session.Send(Protocol.Packets.ChatPackets.Script(Protocol.ProtocolConstants.SelfObjectId,
                     string.Join(' ', words.Skip(1)).Replace("\\n", "\n")), "(script test)");
                 break;
+            case "/ui" when words.Length >= 2:
+                session.Send(Protocol.Packets.UiPackets.Custom(string.Join(' ', words.Skip(1)).Replace("\\n", "\n")), "(ui keyword test)");
+                break;
             case "/view" when words.Length >= 2 && int.TryParse(words[1], out int probeView) && probeView is >= 0 and <= 255:
                 session.Send(Protocol.Packets.ViewPackets.Create(probeView, 18), "(probe view)");
                 session.Send(Protocol.Packets.ViewPackets.AddItem(probeView, 1, ClientSession.ItemProperties(
@@ -422,7 +425,7 @@ public sealed class SlashCommands
                 session.SystemMessage($"Remaining Point: {points}");
                 break;
             default:
-                session.SystemMessage("commands: /go <scene id>, /ship <scene id>, /sail, /land, /where, /who, /talk <npc id>, /opt <n>, /tp <x> <z>, /cmd <command>, /as <player> <command>, /bring <player>, /script <text>, /prop <name> <value>, /heal, /exp <amount>, /money <amount>, /points <amount>");
+                session.SystemMessage("commands: /go <scene id>, /ship <scene id>, /sail, /land, /where, /who, /talk <npc id>, /opt <n>, /tp <x> <z>, /cmd <command>, /as <player> <command>, /bring <player>, /script <text>, /ui <keyword>, /prop <name> <value>, /heal, /exp <amount>, /money <amount>, /points <amount>");
                 break;
         }
     }

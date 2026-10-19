@@ -8,7 +8,7 @@ public sealed class SystemCommands : ITextCommand
 {
     private static readonly HashSet<string> Acknowledged =
     [
-        "csSetVisualPlayers", "csBuffTable", "ASkTable39", "csWindow_ObjFactory_AskInit", "csAskRole",
+        "csBuffTable", "ASkTable39", "csWindow_ObjFactory_AskInit", "csAskRole",
         "csCloseNewArmUpdate", "csCloseFlagView", "AskTeamPos", "csAskPaleBoss", "csHideSailorBarWnd",
     ];
 
@@ -19,7 +19,7 @@ public sealed class SystemCommands : ITextCommand
         ["c15"] = BboChatKind.Trumpet,
     };
 
-    public IEnumerable<string> Names => [.. Acknowledged, .. ChatCommands.Keys, "csNetPing", "csMACAddress", "csAskVisibleTable"];
+    public IEnumerable<string> Names => [.. Acknowledged, .. ChatCommands.Keys, "csNetPing", "csMACAddress", "csAskVisibleTable", "csSetVisualPlayers", ClientSession.MallConfirmCommand];
 
     public bool Execute(ClientSession session, string[] words)
     {
@@ -35,6 +35,12 @@ public sealed class SystemCommands : ITextCommand
                 return true;
             case "csMACAddress":
                 Log.Debug(session.Tag, $"{session.Name} reports a network address");
+                return true;
+            case "csSetVisualPlayers":
+                session.RefreshVisiblePlayers();
+                return true;
+            case ClientSession.MallConfirmCommand:
+                session.MallBuyConfirmed();
                 return true;
             case "csAskVisibleTable":
                 session.SendVisibleTable(words.Length > 1 ? words[1] : "");
