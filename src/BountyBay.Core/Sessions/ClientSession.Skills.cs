@@ -666,7 +666,7 @@ public sealed partial class ClientSession
         if (Rule.Skills.GrantedStunts.TryGetValue(key, out string? stunt) && UniqueSkillLevel(stunt) == 0)
             Character.UniqueSkills.Add(new UniqueSkillEntry { Key = stunt, Level = 1 });
         if (Rule.Skills.GrantedTools.TryGetValue(key, out string? tool) && HasRoomFor(tool))
-            ReceiveIntoBag(tool, Context.Data.PhotoOf(tool), 1, "(tutor's tool)");
+            GiveItem(new ItemStack { Name = tool, Photo = Context.Data.PhotoOf(tool), Amount = 1 }, "(tutor's tool)");
         SystemMessage($"You learned {ClientNames.Of(Context.Settings, key)}.", SystemMessageKind.Upgrade);
         Send(UiPackets.Custom($"scUpLevel {TotalSkillLevel}"), "(skill learned)");
         TutorDone($"learns {key}");

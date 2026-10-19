@@ -253,6 +253,43 @@ public sealed partial class ClientSession
         return true;
     }
 
+    // Older characters got their gathering tools in the item tab, where using one only consumed it.
+    private void MoveToolsToGearBag()
+    {
+        foreach ((int index, ItemStack tool) in Items.Where(pair => ItemCatalog.IsTool(pair.Value.Name)).ToList())
+        {
+            while (tool.Amount > 0)
+            {
+                int free = FreeSlot(Bags[ViewId.BagEquip], ViewId.BagSlots);
+                if (free == 0) return;
+                ItemStack one = tool.Clone();
+                one.Amount = 1;
+                Bags[ViewId.BagEquip][free] = one;
+                tool.Amount--;
+            }
+            Items.Remove(index);
+            Log.Info(Tag, $"{Name}: {tool.Name} moved from the item tab to the gear tab");
+        }
+    }
+
+    // A gathering tool used from the item tab moves to the gear tab and goes straight into the hands.
+    private bool EquipToolFromItems(int index, ItemStack tool)
+    {
+        int free = FreeSlot(Bags[ViewId.BagEquip], ViewId.BagSlots);
+        if (free == 0)
+        {
+            SystemMessage("Your equipment bag is full.");
+            return true;
+        }
+        ItemStack one = tool.Clone();
+        one.Amount = 1;
+        TakeFrom(ViewId.BagItems, index, 1, "(tool to the gear bag)");
+        Bags[ViewId.BagEquip][free] = one;
+        Send(ViewPackets.AddItem(ViewId.BagEquip, free, ItemProperties(one, free)), "(tool to the gear bag)");
+        MoveGear(ViewId.BagEquip, free);
+        return true;
+    }
+
     private void TakeOffWrongSexClothes()
     {
         bool female = WornLook.IsFemale(Character);
@@ -303,7 +340,7 @@ public sealed partial class ClientSession
     private int WeaponSkillLevel(string skill)
         => skill == "SKILL_BOW" ? Math.Max(SkillLevel(skill), SkillLevel("SKILL_SHOT")) : SkillLevel(skill);
 
-    private static int GearClass(string name) => ItemCatalog.Number(name, "ArmType") switch
+    private static int GearClass(string name) => ItemCatalog.IsTool(name) ? 1 : ItemCatalog.Number(name, "ArmType") switch
     {
         1 or 2 => 1,
         4 => 2,
@@ -326,21 +363,20 @@ public sealed partial class ClientSession
         return 0;
     }
 
-    private const int ToolItemType = 12;
-
     public bool UseItem(int index)
     {
         if (!Items.TryGetValue(index, out ItemStack? item)) return false;
         if (UseArmRebuildItem(item)) return true;
         if (UseGuildBuildItem(index, item)) return true;
         if (UseHurricaneOrder(index, item)) return true;
+        if (ItemCatalog.IsTool(item.Name)) return EquipToolFromItems(index, item);
         int heal = Context.Data.HealOf(item.Name);
         int refresh = Context.Data.SpOf(item.Name);
         if (heal <= 0 && refresh <= 0)
         {
             string label = ItemLabel(item.Name);
-            SystemMessage(ItemCatalog.Number(item.Name, "ItemType") == ToolItemType
-                ? $"{label} is used automatically when you gather; keep it in your bag."
+            SystemMessage(ItemCatalog.IsTool(item.Name)
+                ? $"Equip {label} from the equipment tab of your bag to use it."
                 : $"{label} cannot be used this way.", SystemMessageKind.Prompt);
             return true;
         }

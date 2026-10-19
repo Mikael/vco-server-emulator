@@ -5,6 +5,8 @@
 ### Character and equipment
 - **Item mall purchases ask first**: after picking the amount, the client's own confirmation box opens ("Please confirm. It costs [100point] ... Are you sure you want to buy it?"). Points are only taken when you press Yes, and the chat then shows the client's "You purchased [item] from the Item Mall" line.
 - **Gestures work** (Command Interface > Gesture: wave, blow kiss, salute, nod, pray...). The client only has gesture animations for empty hands, so your weapon is put away for the gesture and comes back afterwards.
+- **Gathering tools are worn, not used up**: pickaxes, felling axes, hoes, hammers and fishing nets now go to the equipment tab and are held in the weapon hand (pickaxe, felling axe and hoe show in the hand). Using one from the item tab equips it; tools already sitting in the item tab move to the equipment tab when you log in.
+- **Mining and timber-felling**: the suburbs have ore points (at the rocks) and timber points (by the trees). With the pickaxe or felling axe equipped, click one: you walk there, gather for a few seconds and get ore (Ore, Iron Ore, Impure Copper Ore...) or logs (Level 1-10 log) for Mining/Timber-felling experience. Ore Study / Log Study decide the highest grade you can take; a point is used up for a while after someone takes from it.
 
 ### Ships and sea
 - **Sea instances have enemies**: English Channel (Spanish Armada with Medina-Sidonia's Flagship), Crete Pirates (Iron Hand Edward), Gibraltar (Steel Tooth / Golden Eye / Jackal armed ships) and North Sea Pirates (Nordic Pirate Admiral Carl Emanuel's Zeus), placed at the boss and fleet marks of the client maps.

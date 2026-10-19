@@ -10,6 +10,8 @@ public sealed partial class ClientSession
 {
     public bool GmHidden { get; private set; }
 
+    private int _gmObjects;
+
     public void Kick(string reason)
     {
         SystemMessage(reason.Length > 0 ? $"You were disconnected by a Game Master: {reason}" : "You were disconnected by a Game Master.", SystemMessageKind.Prompt);
@@ -157,6 +159,15 @@ public sealed partial class ClientSession
                 }
                 SystemMessage($"{targets.Count} ship(s) sunk.");
                 Log.Info(Tag, $"GM {Name} sinks {targets.Count} ship(s) in scene {Scene}");
+                return true;
+            case "obj" when words.Length >= 2 && int.TryParse(words[1], out int objModel) && Mover != null:
+                byte objKind = words.Length >= 3 && byte.TryParse(words[2], out byte k) ? k : (byte)ObjectKind.Goods;
+                (float objX, float objZ) = Mover.Now();
+                int objId = 0x7f000000 + ++_gmObjects;
+                Send(ScenePackets.CreateObject(objId, (ObjectKind)objKind, objModel), "(gm test object)");
+                Send(ScenePackets.ObjectProperties(objId, new PropertyBag { ["X"] = objX + 2f, ["Y"] = Height, ["Z"] = objZ, ["Orient"] = 0f }), "(gm test object)");
+                Send(ScenePackets.ShowObject(objId), "(gm test object)");
+                SystemMessage($"Object {objId} (model {objModel}, kind {objKind}) placed next to you.");
                 return true;
             case "ships":
                 foreach (SeaNpcState ship in Sea.InScene(Scene).Where(ship => !ship.Gone).Take(20))

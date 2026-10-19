@@ -205,6 +205,7 @@ public sealed partial class ClientSession
             if (!Context.World.Monster(monster).Dead) SendMonster(monster, "(monster)");
         }
         SendSceneLinks();
+        SendGatherNodes();
         BboSendOceanDocks();
         if (AtSea) WarnShipCondition();
 
@@ -214,6 +215,7 @@ public sealed partial class ClientSession
             Send(TablePackets.Rows(GameTables.Skill, SkillRows()), "(skills)");
             SendShortcuts(clear: false);
             SendSocialTables(clear: false);
+            MoveToolsToGearBag();
             SendInventory();
             TakeOffWrongSexClothes();
             SendDurability();

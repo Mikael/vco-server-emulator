@@ -39,6 +39,7 @@ public sealed class InteractHandler : IMessageHandler
         if (session.OnSeaObjectClicked(target)) return;
         if (session.OnLinkClicked(target)) return;
         if (session.BboOceanDockClicked(target)) return;
+        if (session.OnGatherNodeClicked(target)) return;
 
         if (data.Monsters.TryGetValue(target, out MonsterDefinition? monster) && monster.Scene == session.Scene)
         {

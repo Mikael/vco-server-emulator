@@ -288,7 +288,7 @@ public sealed partial class ClientSession
     {
         if (!_warehouseOpen || !Character.Warehouse.TryGetValue(index, out ItemStack? stored) || amount <= 0) return;
         amount = Math.Min(amount, stored.Amount);
-        int view = ItemCatalog.Number(stored.Name, "ItemType") == SeaPackets.ItemTypeEquipment ? ViewId.BagEquip : ViewId.BagItems;
+        int view = ItemCatalog.IsGear(stored.Name) ? ViewId.BagEquip : ViewId.BagItems;
         if (!MailStore(view, new ItemStack { Name = stored.Name, Photo = stored.Photo, Amount = amount }, "(taken from warehouse)"))
         {
             SystemMessage("Your bag is full.");
@@ -330,7 +330,7 @@ public sealed partial class ClientSession
     public bool WarehouseStore(ItemStack item, bool anySlot = false)
     {
         Dictionary<int, ItemStack> stored = Character.Warehouse;
-        bool stacks = ItemCatalog.Number(item.Name, "ItemType") != SeaPackets.ItemTypeEquipment;
+        bool stacks = !ItemCatalog.IsGear(item.Name);
         int slot = stacks ? stored.FirstOrDefault(pair => pair.Value.Name == item.Name).Key : 0;
         if (slot != 0)
         {

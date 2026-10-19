@@ -594,5 +594,5 @@ public sealed partial class ClientSession
         return taken;
     }
 
-    private static bool Stackable(string name) => ItemCatalog.Number(name, "ItemType") != SeaPackets.ItemTypeEquipment;
+    private static bool Stackable(string name) => !ItemCatalog.IsGear(name);
 }

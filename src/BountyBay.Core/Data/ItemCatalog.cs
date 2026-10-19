@@ -24,6 +24,15 @@ public static class ItemCatalog
             ? Convert.ToInt32(value)
             : fallback;
 
+    public const int EquipmentItemType = 10;
+
+    // Tools you hold (pickaxe, felling axe, hoe, hammer, fishing net): GoodsType "Tool" with ArmType 3. ItemType 12 alone
+    // is every usable article (books and potions too).
+    public static bool IsTool(string itemName) => Text(itemName, "GoodsType") == "Tool" && Number(itemName, "ArmType") == 3;
+
+    // Equipment and tools are worn, live in the gear tab and never stack.
+    public static bool IsGear(string itemName) => Number(itemName, "ItemType") == EquipmentItemType || IsTool(itemName);
+
     public static string Text(string itemName, string property)
         => Find(itemName) is { } properties && properties.TryGetValue(property, out object? value) && value is string text ? text : "";
 

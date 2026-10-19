@@ -15258,7 +15258,10 @@
     "Level": 1,
     "UseCount": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000050,
+    "WearModelF": 4000050
   },
   "IDName00003398": {
     "Kind": 0,
@@ -15267,7 +15270,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000050,
+    "WearModelF": 4000050
   },
   "IDName00003399": {
     "Kind": 0,
@@ -15276,7 +15282,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000050,
+    "WearModelF": 4000050
   },
   "IDName00003400": {
     "Kind": 0,
@@ -15286,7 +15295,10 @@
     "Level": 1,
     "UseCount": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000051,
+    "WearModelF": 4000051
   },
   "IDName00003401": {
     "Kind": 0,
@@ -15295,7 +15307,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000051,
+    "WearModelF": 4000051
   },
   "IDName00003402": {
     "Kind": 0,
@@ -15304,7 +15319,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000051,
+    "WearModelF": 4000051
   },
   "IDName00003403": {
     "Kind": 0,
@@ -15314,7 +15332,10 @@
     "Level": 1,
     "UseCount": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000052,
+    "WearModelF": 4000052
   },
   "IDName00003404": {
     "Kind": 0,
@@ -15323,7 +15344,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000052,
+    "WearModelF": 4000052
   },
   "IDName00003405": {
     "Kind": 0,
@@ -15332,7 +15356,10 @@
     "Weight": 1,
     "Level": 1,
     "ArmType": 3,
-    "Unrepairable": 1
+    "Unrepairable": 1,
+    "WearProp": "RightHand",
+    "WearModel": 4000052,
+    "WearModelF": 4000052
   },
   "IDName00003406": {
     "Kind": 0,
@@ -21403,7 +21430,10 @@
     "GoodsType": "Tool",
     "Weight": 1,
     "Level": 1,
-    "ArmType": 3
+    "ArmType": 3,
+    "WearProp": "RightHand",
+    "WearModel": 4000052,
+    "WearModelF": 4000052
   },
   "IDName00004292": {
     "Kind": 2,

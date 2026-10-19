@@ -73,7 +73,7 @@ public sealed partial class ClientSession
             ?? index?.Entries.FirstOrDefault(stored => stored.Name == item);
         if (index == null || entry == null || amount <= 0) return;
         amount = Math.Min(amount, entry.Amount);
-        int view = ItemCatalog.Number(entry.Name, "ItemType") == SeaPackets.ItemTypeEquipment ? ViewId.BagEquip : ViewId.BagItems;
+        int view = ItemCatalog.IsGear(entry.Name) ? ViewId.BagEquip : ViewId.BagItems;
         if (!MailStore(view, new ItemStack { Name = entry.Name, Photo = entry.Photo, Amount = amount }, "(taken from the carrying bank)"))
         {
             SystemMessage("Your bag is full.", SystemMessageKind.Prompt);
